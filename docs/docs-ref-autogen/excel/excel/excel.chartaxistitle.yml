@@ -1,0 +1,157 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTitle:class'
+    summary: Representa el título del eje de un gráfico.
+    name: Excel.ChartAxisTitle
+    fullName: Excel.ChartAxisTitle
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisTitle#context:member'
+      - 'excel!Excel.ChartAxisTitle#format:member'
+      - 'excel!Excel.ChartAxisTitle#load:member(1)'
+      - 'excel!Excel.ChartAxisTitle#load:member(2)'
+      - 'excel!Excel.ChartAxisTitle#set:member(1)'
+      - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+      - 'excel!Excel.ChartAxisTitle#text:member'
+      - 'excel!Excel.ChartAxisTitle#visible:member'
+  - uid: 'excel!Excel.ChartAxisTitle#context:member'
+    summary: Contexto de la solicitud asociado al objeto. Esto conecta el proceso del complemento con el proceso de la aplicación host de Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxisTitle#format:member'
+    summary: Representa el formato del título del eje del gráfico. Solo lectura.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartAxisTitleFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitleFormat:class'
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxisTitle;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitle:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(2)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxisTitle;
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitle:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`es una cadena delimitada por comas que especifica las propiedades que se van `propertyNamesAndPaths.expand` a cargar y es una cadena delimitada por comas que especifica las propiedades de navegación que se deben cargar.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartAxisTitle#set:member(1)'
+    summary: 'Establece varias propiedades en el objeto al mismo tiempo, basándose en un objeto cargado existente.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxisTitle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartAxisTitle:class'
+  - uid: 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+    summary: Un valor de cadena que representa la fórmula del título del eje del gráfico mediante la notación de estilo A1.
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: una cadena que presenta la fórmula que se va a establecer
+          type:
+            - string
+  - uid: 'excel!Excel.ChartAxisTitle#text:member'
+    summary: Representa el título del eje.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartAxisTitle#visible:member'
+    summary: Un valor booleano que especifica la visibilidad del título de un eje.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
+    name: ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
+  - uid: 'excel!Excel.ChartAxisTitle:class'
+    name: ChartAxisTitle
+    fullName: Excel.ChartAxisTitle

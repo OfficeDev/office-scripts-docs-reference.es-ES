@@ -1,0 +1,216 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentReplyCollection:class'
+    summary: Representa una colección de objetos de respuesta de comentario que forman parte del comentario.
+    name: Excel.CommentReplyCollection
+    fullName: Excel.CommentReplyCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.CommentReplyCollection#add:member(1)'
+      - 'excel!Excel.CommentReplyCollection#add:member(2)'
+      - 'excel!Excel.CommentReplyCollection#context:member'
+      - 'excel!Excel.CommentReplyCollection#getCount:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
+      - 'excel!Excel.CommentReplyCollection#items:member'
+      - 'excel!Excel.CommentReplyCollection#load:member(1)'
+  - uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
+    summary: Crea una respuesta comentario por comentario.
+    name: 'add(content, contentType)'
+    fullName: 'add(content, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(content: CommentRichContent | string, contentType?: Excel.ContentType): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              // Adds a reply to the first comment in this worksheet.
+              let sheet = context.workbook.worksheets.getItem("Comments");
+              let comment = sheet.comments.getItemAt(0);
+              comment.replies.add("Add content to this worksheet.");
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: content
+          description: 'Contenido del comentario. Puede ser una cadena o una interfaz CommentRichContent (por ejemplo, para comentarios con menciones).'
+          type:
+            - 'excel!Excel.CommentReplyCollection#add~0:complex'
+        - id: contentType
+          description: Opcional. Tipo de contenido incluido en el comentario. El valor predeterminado es enum.`ContentType.Plain`<!-- -->.
+          type:
+            - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentReplyCollection#add:member(2)'
+    summary: Crea una respuesta comentario por comentario.
+    name: 'add(content, contentTypeString)'
+    fullName: 'add(content, contentTypeString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
+      parameters:
+        - id: content
+          description: 'Contenido del comentario. Puede ser una cadena o una interfaz CommentRichContent (por ejemplo, para comentarios con menciones).'
+          type:
+            - 'excel!Excel.CommentReplyCollection#add~1:complex'
+        - id: contentTypeString
+          description: Opcional. Tipo de contenido incluido en el comentario. El valor predeterminado es enum.`ContentType.Plain`<!-- -->.
+          type:
+            - '"Plain" | "Mention"'
+  - uid: 'excel!Excel.CommentReplyCollection#context:member'
+    summary: Contexto de la solicitud asociado al objeto. Esto conecta el proceso del complemento con el proceso de la aplicación host de Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
+    summary: Obtiene el número de respuestas de comentarios de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.CommentReplyCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+    summary: Devuelve una respuesta de comentario identificada por su Id. Solo lectura.
+    name: getItem(commentReplyId)
+    fullName: getItem(commentReplyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(commentReplyId: string): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
+      parameters:
+        - id: commentReplyId
+          description: Identificador de la respuesta de comentario.
+          type:
+            - string
+  - uid: 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
+    summary: Obtiene una respuesta comentario en función de su posición en la colección.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:class'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice de la respuesta de comentario que se va a recuperar. La colección usa indización basada en cero.
+          type:
+            - number
+  - uid: 'excel!Excel.CommentReplyCollection#items:member'
+    summary: Obtiene los elementos secundarios cargados en esta colección.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.CommentReply[];'
+      return:
+        type:
+          - 'excel!Excel.CommentReplyCollection#items~0:complex'
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.CommentReplyCollection;'
+      return:
+        type:
+          - 'excel!Excel.CommentReplyCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CommentReply:class'
+    name: CommentReply
+    fullName: Excel.CommentReply
+  - uid: 'excel!Excel.CommentReplyCollection#add~0:complex'
+    name: CommentRichContent | string
+    fullName: Excel.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: Excel.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ContentType:enum'
+    name: ContentType
+    fullName: Excel.ContentType
+  - uid: 'excel!Excel.CommentReplyCollection#add~1:complex'
+    name: CommentRichContent | string
+    fullName: Excel.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: Excel.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.CommentReplyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.CommentReplyCollection#items~0:complex'
+    name: 'Excel.CommentReply[]'
+    fullName: 'Excel.CommentReply[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentReply:class'
+        name: Excel.CommentReply
+        fullName: Excel.CommentReply
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.CommentReplyCollection:class'
+    name: CommentReplyCollection
+    fullName: Excel.CommentReplyCollection
