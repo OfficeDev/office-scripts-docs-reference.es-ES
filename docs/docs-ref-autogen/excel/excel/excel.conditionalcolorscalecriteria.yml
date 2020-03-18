@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+    summary: Representa los criterios de la escala de colores.
+    name: Excel.ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
+      - 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
+      - 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
+    summary: Criterio de escala de colores de punto máximo.
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
+    summary: Criterio de escala de colores de punto medio si la escala de colores es una escala de 3 colores.
+    name: midpoint
+    fullName: midpoint
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
+    summary: Criterio de escala de colores de punto mínimo.
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
+    name: ConditionalColorScaleCriterion
+    fullName: Excel.ConditionalColorScaleCriterion
