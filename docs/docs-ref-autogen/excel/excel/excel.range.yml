@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Range:class'
-    summary: 'Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc. Para obtener más información sobre cómo se usan los rangos en la API, vea [trabajar con rangos mediante la API de JavaScript de Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) y [trabajar con rangos mediante la API de JavaScript de Excel (avanzado)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced) .<!-- -->.'
+    summary: 'Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc.'
     name: Excel.Range
     fullName: Excel.Range
     langs:
