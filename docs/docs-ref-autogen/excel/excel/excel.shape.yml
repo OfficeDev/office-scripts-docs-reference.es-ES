@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Shape:class'
-    summary: 'Representa un objeto Shape genérico de la hoja de cálculo. Una forma puede ser una forma geométrica, una línea, un grupo de formas, etc. Para obtener más información sobre el modelo de objetos de forma, vea [trabajar con formas mediante la API de JavaScript de Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    summary: 'Representa un objeto Shape genérico de la hoja de cálculo. Una forma puede ser una forma geométrica, una línea, un grupo de formas, etc.'
     name: Excel.Shape
     fullName: Excel.Shape
     langs:
