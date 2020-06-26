@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart:interface'
+    summary: Representa un objeto de un elemento XML personalizado en un libro.
+    name: ExcelScript.CustomXmlPart
+    fullName: ExcelScript.CustomXmlPart
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CustomXmlPart#delete:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#getId:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#getNamespaceUri:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#getXml:member(1)'
+      - 'ExcelScript!ExcelScript.CustomXmlPart#setXml:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#delete:member(1)'
+    summary: Elimina el elemento XML personalizado.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#getId:member(1)'
+    summary: IDENTIFICADOR del elemento XML personalizado.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#getNamespaceUri:member(1)'
+    summary: El URI del espacio de nombres del elemento XML personalizado.
+    name: getNamespaceUri()
+    fullName: getNamespaceUri()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNamespaceUri(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#getXml:member(1)'
+    summary: Obtiene el contenido XML completo del elemento XML personalizado.
+    name: getXml()
+    fullName: getXml()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getXml(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CustomXmlPart#setXml:member(1)'
+    summary: Establece el contenido XML completo del elemento XML personalizado.
+    name: setXml(xml)
+    fullName: setXml(xml)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setXml(xml: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xml
+          description: Contenido XML del elemento.
+          type:
+            - string

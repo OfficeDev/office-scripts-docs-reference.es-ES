@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface'
+    summary: Representa los criterios de la escala de colores.
+    name: ExcelScript.ConditionalColorScaleCriteria
+    fullName: ExcelScript.ConditionalColorScaleCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#maximum:member'
+      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#midpoint:member'
+      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#minimum:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#maximum:member'
+    summary: Criterio de escala de colores de punto máximo.
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum: ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#midpoint:member'
+    summary: Criterio de escala de colores de punto medio si la escala de colores es una escala de 3 colores.
+    name: midpoint
+    fullName: midpoint
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'midpoint?: ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria#minimum:member'
+    summary: Criterio de escala de colores de punto mínimo.
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum: ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
+    name: ConditionalColorScaleCriterion
+    fullName: ExcelScript.ConditionalColorScaleCriterion

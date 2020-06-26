@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Icon:interface'
+    summary: Representa un icono de celda.
+    name: ExcelScript.Icon
+    fullName: ExcelScript.Icon
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Icon#index:member'
+      - 'ExcelScript!ExcelScript.Icon#set:member'
+  - uid: 'ExcelScript!ExcelScript.Icon#index:member'
+    summary: Especifica el índice del icono en el conjunto especificado.
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.Icon#set:member'
+    summary: Especifica el conjunto del que forma parte el icono.
+    name: set
+    fullName: set
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'set: IconSet;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.IconSet:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.IconSet:enum'
+    name: IconSet
+    fullName: ExcelScript.IconSet

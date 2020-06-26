@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions:interface'
+    summary: Representa las opciones de los márgenes de diseño de página.
+    name: ExcelScript.PageLayoutMarginOptions
+    fullName: ExcelScript.PageLayoutMarginOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
+      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
+    summary: Especifica el margen inferior del diseño de página en la unidad especificada para usar para la impresión.
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
+    summary: Especifica el margen del pie de página de diseño de página en la unidad especificada para usar para la impresión.
+    name: footer
+    fullName: footer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'footer?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
+    summary: Especifica el margen del encabezado de diseño de página en la unidad especificada para usar para la impresión.
+    name: header
+    fullName: header
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'header?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
+    summary: Especifica el margen izquierdo de diseño de página en la unidad especificada para usar para la impresión.
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
+    summary: Especifica el margen derecho de diseño de página en la unidad especificada para usar para la impresión.
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
+    summary: Especifica el margen superior de diseño de página en la unidad especificada para usar para la impresión.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
