@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
+    name: ExcelScript.ChartAxisType
+    fullName: ExcelScript.ChartAxisType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisType.category:member'
+      - 'ExcelScript!ExcelScript.ChartAxisType.invalid:member'
+      - 'ExcelScript!ExcelScript.ChartAxisType.series:member'
+      - 'ExcelScript!ExcelScript.ChartAxisType.value:member'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType.category:member'
+    summary: El eje muestra categorías.
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType.invalid:member'
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType.series:member'
+    summary: El eje muestra series de datos.
+    name: series
+    fullName: series
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType.value:member'
+    summary: El eje muestra valores.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field

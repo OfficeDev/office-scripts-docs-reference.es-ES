@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
+    summary: Encapsula las propiedades de formato del eje del gráfico.
+    name: ExcelScript.ChartAxisFormat
+    fullName: ExcelScript.ChartAxisFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
+    summary: Especifica el formato de relleno del gráfico.
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
+    summary: 'Especifica los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un elemento de eje de gráfico.'
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFont:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
+    summary: Especifica el formato de la línea del gráfico.
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    name: ChartFont
+    fullName: ExcelScript.ChartFont
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

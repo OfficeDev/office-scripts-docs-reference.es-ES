@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Image:interface'
+    summary: 'Representa una imagen de la hoja de cálculo. Para obtener el objeto Shape correspondiente, use Image. Shape.'
+    name: ExcelScript.Image
+    fullName: ExcelScript.Image
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.Image#getId:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Image#getFormat:member(1)'
+    summary: Devuelve el formato de la imagen.
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): PictureFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PictureFormat:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Image#getId:member(1)'
+    summary: Especifica el identificador de la forma del objeto Image.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
+    name: PictureFormat
+    fullName: ExcelScript.PictureFormat
