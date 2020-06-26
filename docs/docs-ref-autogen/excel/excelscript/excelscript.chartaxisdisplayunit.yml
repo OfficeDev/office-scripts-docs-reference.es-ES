@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
+    name: ExcelScript.ChartAxisDisplayUnit
+    fullName: ExcelScript.ChartAxisDisplayUnit
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
+      - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
+    summary: Se establecerá el eje en unidades de miles de millones.
+    name: billions
+    fullName: billions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
+    summary: Se establecerá el eje en unidades de valor personalizado.
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
+    summary: Esto hará que el eje se establezca en unidades de centenas de millones.
+    name: hundredMillions
+    fullName: hundredMillions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
+    summary: Se establecerá el eje en unidades de centenas.
+    name: hundreds
+    fullName: hundreds
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
+    summary: Esto hará que el eje se configurará en unidades de cientos de miles.
+    name: hundredThousands
+    fullName: hundredThousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
+    summary: Se establecerá el eje en unidades de millones.
+    name: millions
+    fullName: millions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
+    summary: Opción predeterminada. Esto restablecerá la unidad de visualización en el eje y la etiqueta de unidad será invisible.
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
+    summary: Esto hará que el eje se establezca en unidades de decenas de millones.
+    name: tenMillions
+    fullName: tenMillions
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
+    summary: Se establecerá el eje en unidades de decenas de miles.
+    name: tenThousands
+    fullName: tenThousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
+    summary: Se establecerá el eje en unidades de miles.
+    name: thousands
+    fullName: thousands
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
+    summary: Esto hará que el eje se establezca en unidades de billones.
+    name: trillions
+    fullName: trillions
+    langs:
+      - typeScript
+    type: field

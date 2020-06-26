@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TextRange:interface'
+    summary: 'Contiene el texto que hay unido a una forma, además de las propiedades y los métodos de manipulación del texto.'
+    name: ExcelScript.TextRange
+    fullName: ExcelScript.TextRange
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
+      - 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
+      - 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
+      - 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TextRange#getFont:member(1)'
+    summary: Devuelve un objeto ShapeFont que representa los atributos de fuente para el intervalo de texto.
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ShapeFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeFont:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TextRange#getSubstring:member(1)'
+    summary: Devuelve un objeto TextRange para la subcadena en el rango especificado.
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length?: number): TextRange;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TextRange:interface'
+        description: ''
+      parameters:
+        - id: start
+          description: Índice de base cero del primer carácter que se va a obtener del intervalo de texto.
+          type:
+            - number
+        - id: length
+          description: 'Opcional. Número de caracteres que se devolverán en el nuevo intervalo de texto. Si se omite length, se devolverán todos los caracteres desde el principio hasta el final del último párrafo del intervalo de texto.'
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.TextRange#getText:member(1)'
+    summary: Indica el contenido de texto sin formato del intervalo de texto.
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TextRange#setText:member(1)'
+    summary: Indica el contenido de texto sin formato del intervalo de texto.
+    name: setText(text)
+    fullName: setText(text)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setText(text: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: text
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
+    name: ShapeFont
+    fullName: ExcelScript.ShapeFont
+  - uid: 'ExcelScript!ExcelScript.TextRange:interface'
+    name: TextRange
+    fullName: ExcelScript.TextRange

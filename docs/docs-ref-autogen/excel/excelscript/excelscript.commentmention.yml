@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
+    summary: Representa la entidad que se menciona en los comentarios.
+    name: ExcelScript.CommentMention
+    fullName: ExcelScript.CommentMention
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CommentMention#email:member'
+      - 'ExcelScript!ExcelScript.CommentMention#id:member'
+      - 'ExcelScript!ExcelScript.CommentMention#name:member'
+  - uid: 'ExcelScript!ExcelScript.CommentMention#email:member'
+    summary: La dirección de correo electrónico de la entidad que se menciona en el comentario.
+    name: email
+    fullName: email
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'email: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.CommentMention#id:member'
+    summary: Identificador de la entidad. El identificador coincide con uno de los identificadores de`CommentRichContent.richContent`<!-- -->.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.CommentMention#name:member'
+    summary: Nombre de la entidad que se menciona en el comentario.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string

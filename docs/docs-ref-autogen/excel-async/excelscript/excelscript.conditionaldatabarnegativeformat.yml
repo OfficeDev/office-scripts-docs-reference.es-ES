@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat:interface'
+    summary: Representa un formato de barra de datos de formato condicional para el lado negativo de la barra de datos.
+    name: Excel.ConditionalDataBarNegativeFormat
+    fullName: Excel.ConditionalDataBarNegativeFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
+    summary: 'Código de color HTML que representa el color de la línea de borde, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). "Cadena vacía" si no hay ningún borde presente o establecido.'
+    name: borderColor
+    fullName: borderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
+    summary: 'Código de color HTML que representa el color de relleno, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: fillColor
+    fullName: fillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fillColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
+    summary: Especifica si la barra de la barra de la barra de la barra de la barra de la barra de la barra positiva es igual.
+    name: matchPositiveBorderColor
+    fullName: matchPositiveBorderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPositiveBorderColor: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
+    summary: Especifica si la barra de la barra de números negativo tiene el mismo color de relleno que la barra de la barra de números positivo.
+    name: matchPositiveFillColor
+    fullName: matchPositiveFillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPositiveFillColor: boolean;'
+      return:
+        type:
+          - boolean

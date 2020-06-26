@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
+    summary: Representa los ejes del gráfico.
+    name: ExcelScript.ChartAxes
+    fullName: ExcelScript.ChartAxes
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
+    summary: Representa el eje de categorías de un gráfico.
+    name: getCategoryAxis()
+    fullName: getCategoryAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCategoryAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
+    summary: Devuelve el eje específico identificado por tipo y grupo.
+    name: 'getChartAxis(type, group)'
+    fullName: 'getChartAxis(type, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Especifica el tipo de eje. Consulte Excel. ChartAxisType para obtener información detallada.
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisType:enum'
+        - id: group
+          description: Opcional. Especifica el grupo de ejes. Consulte Excel. ChartAxisGroup para obtener información detallada.
+          type:
+            - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
+    summary: Representa el eje de series de un gráfico tridimensional.
+    name: getSeriesAxis()
+    fullName: getSeriesAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSeriesAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
+    summary: Representa el eje de valores de un eje.
+    name: getValueAxis()
+    fullName: getValueAxis()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValueAxis(): ChartAxis;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxis:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
+    name: ChartAxis
+    fullName: ExcelScript.ChartAxis
+  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: ExcelScript.ChartAxisType
+  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: ExcelScript.ChartAxisGroup

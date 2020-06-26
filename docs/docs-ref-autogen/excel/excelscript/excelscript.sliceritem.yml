@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
+    summary: Representa un elemento de segmentación de un rebanador.
+    name: ExcelScript.SlicerItem
+    fullName: ExcelScript.SlicerItem
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+      - 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+    summary: True si el elemento de segmentación tiene datos.
+    name: getHasData()
+    fullName: getHasData()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHasData(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+    summary: 'Es True si se selecciona el elemento de segmentación. Establecer esta valor no limpiará el estado de selección de otros SlicerItems. De forma predeterminada, si el elemento de segmentación de elementos es el único seleccionado, al anular la selección, se seleccionarán todos los elementos.'
+    name: getIsSelected()
+    fullName: getIsSelected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsSelected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+    summary: Indica el valor único que representa el elemento de segmentación.
+    name: getKey()
+    fullName: getKey()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+    summary: Representa el título que se muestra en la interfaz de usuario.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+    summary: 'Es True si se selecciona el elemento de segmentación. Establecer esta valor no limpiará el estado de selección de otros SlicerItems. De forma predeterminada, si el elemento de segmentación de elementos es el único seleccionado, al anular la selección, se seleccionarán todos los elementos.'
+    name: setIsSelected(isSelected)
+    fullName: setIsSelected(isSelected)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIsSelected(isSelected: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: isSelected
+          description: ''
+          type:
+            - boolean

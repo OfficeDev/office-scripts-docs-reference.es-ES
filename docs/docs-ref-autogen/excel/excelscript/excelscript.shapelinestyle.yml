@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+    summary: Estilo de una línea.
+    name: ExcelScript.ShapeLineStyle
+    fullName: ExcelScript.ShapeLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+      - 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+    summary: Línea única.
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+    summary: Línea gruesa con una línea fina a cada lado.
+    name: thickBetweenThin
+    fullName: thickBetweenThin
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+    summary: 'Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por encima de la línea fina. Para líneas verticales, la línea gruesa está a la izquierda de la línea fina.'
+    name: thickThin
+    fullName: thickThin
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+    summary: 'Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por debajo de la línea fina. Para líneas verticales, la línea gruesa está a la derecha de la línea fina.'
+    name: thinThick
+    fullName: thinThick
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+    summary: Dos líneas finas.
+    name: thinThin
+    fullName: thinThin
+    langs:
+      - typeScript
+    type: field

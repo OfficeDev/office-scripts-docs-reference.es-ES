@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
+    summary: Representa los criterios de búsqueda que se van a usar.
+    name: ExcelScript.SearchCriteria
+    fullName: ExcelScript.SearchCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
+      - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
+      - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
+    summary: 'Especifica si la coincidencia debe estar completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, `cat` coincidencias parciales `caterpillar` y`scatter`<!-- -->). El valor predeterminado es false (parcial).'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
+    summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor predeterminado es false (no se distinguen).
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
+    summary: Especifica la dirección de la búsqueda El valor predeterminado es adelante. Vea Excel.SearchDirection.
+    name: searchDirection
+    fullName: searchDirection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'searchDirection?: SearchDirection;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SearchDirection:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
+    name: SearchDirection
+    fullName: ExcelScript.SearchDirection

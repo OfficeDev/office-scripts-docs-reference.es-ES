@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartGridlines:interface'
+    summary: Representa las líneas de división principales o secundarias del eje de un gráfico.
+    name: ExcelScript.ChartGridlines
+    fullName: ExcelScript.ChartGridlines
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)'
+    summary: Representa el formato de las líneas de cuadrícula del gráfico.
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartGridlinesFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartGridlinesFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)'
+    summary: Especifica si las líneas de cuadrícula del eje están visibles.
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)'
+    summary: Especifica si las líneas de cuadrícula del eje están visibles.
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartGridlinesFormat:interface'
+    name: ChartGridlinesFormat
+    fullName: ExcelScript.ChartGridlinesFormat
