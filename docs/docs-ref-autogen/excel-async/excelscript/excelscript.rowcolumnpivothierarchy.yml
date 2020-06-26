@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RowColumnPivotHierarchy:interface'
+    summary: Representa el RowColumnPivotHierarchy de Excel.
+    name: Excel.RowColumnPivotHierarchy
+    fullName: Excel.RowColumnPivotHierarchy
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RowColumnPivotHierarchy#fields:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#id:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#load:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchy#name:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#position:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#fields:member'
+    summary: Devuelve los PivotFields asociados con la RowColumnPivotHierarchy.
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fields: PivotFieldCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotFieldCollection:interface'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#id:member'
+    summary: Identificador de la RowColumnPivotHierarchy.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#name:member'
+    summary: Nombre de la RowColumnPivotHierarchy.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#position:member'
+    summary: Posición de la RowColumnPivotHierarchy.
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)'
+    summary: Restablece la RowColumnPivotHierarchy a sus valores predeterminados.
+    name: setToDefault()
+    fullName: setToDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setToDefault(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.PivotFieldCollection:interface'
+    name: PivotFieldCollection
+    fullName: Excel.PivotFieldCollection

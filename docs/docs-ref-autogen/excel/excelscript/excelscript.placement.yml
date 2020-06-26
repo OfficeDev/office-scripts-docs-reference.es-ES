@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Placement:enum'
+    summary: Especifica la manera en que se adjunta un objeto a sus celdas subyacentes.
+    name: ExcelScript.Placement
+    fullName: ExcelScript.Placement
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Placement.absolute:member'
+      - 'ExcelScript!ExcelScript.Placement.oneCell:member'
+      - 'ExcelScript!ExcelScript.Placement.twoCell:member'
+  - uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
+    summary: El objeto es flotante libre.
+    name: absolute
+    fullName: absolute
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
+    summary: El objeto se mueve y cambia de tamaño con las celdas.
+    name: oneCell
+    fullName: oneCell
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
+    summary: El objeto se mueve con las celdas.
+    name: twoCell
+    fullName: twoCell
+    langs:
+      - typeScript
+    type: field

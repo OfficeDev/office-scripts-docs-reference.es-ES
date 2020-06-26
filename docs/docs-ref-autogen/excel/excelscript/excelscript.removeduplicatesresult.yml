@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
+    summary: Representa los resultados del método removeDuplicates en el rango.
+    name: ExcelScript.RemoveDuplicatesResult
+    fullName: ExcelScript.RemoveDuplicatesResult
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
+    summary: Número de filas duplicadas quitadas por la operación.
+    name: getRemoved()
+    fullName: getRemoved()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRemoved(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
+    summary: Número de filas únicas restantes presentes en el intervalo resultante.
+    name: getUniqueRemaining()
+    fullName: getUniqueRemaining()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUniqueRemaining(): number;'
+      return:
+        type:
+          - number
+        description: ''

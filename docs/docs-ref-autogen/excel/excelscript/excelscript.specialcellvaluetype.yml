@@ -1,0 +1,130 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+    name: ExcelScript.SpecialCellValueType
+    fullName: ExcelScript.SpecialCellValueType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+      - 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+    summary: 'Celdas que tienen errores, true/false, Numeric o un valor de cadena.'
+    name: all
+    fullName: all
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+    summary: Celdas que tienen errores.
+    name: errors
+    fullName: errors
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+    summary: Celdas que tienen errores o un valor verdadero/falso.
+    name: errorsLogical
+    fullName: errorsLogical
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+    summary: 'Celdas con errores, true/false o un valor numérico.'
+    name: errorsLogicalNumber
+    fullName: errorsLogicalNumber
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+    summary: 'Celdas que tienen errores, true/false o un valor de cadena.'
+    name: errorsLogicalText
+    fullName: errorsLogicalText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+    summary: Celdas que tienen errores o un valor numérico.
+    name: errorsNumbers
+    fullName: errorsNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+    summary: 'Celdas que tienen errores, números o un valor de cadena.'
+    name: errorsNumberText
+    fullName: errorsNumberText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+    summary: Celdas que tienen errores o un valor de cadena.
+    name: errorsText
+    fullName: errorsText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+    summary: Celdas que tienen un valor true/false.
+    name: logical
+    fullName: logical
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+    summary: Celdas que tienen un valor true/false o un valor numérico.
+    name: logicalNumbers
+    fullName: logicalNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+    summary: 'Celdas que tienen un valor de tipo verdadero/falso, numérico o de cadena.'
+    name: logicalNumbersText
+    fullName: logicalNumbersText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+    summary: Celdas que tienen un valor true/false o String.
+    name: logicalText
+    fullName: logicalText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+    summary: Celdas que tienen un valor numérico.
+    name: numbers
+    fullName: numbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+    summary: Celdas que tienen un valor numérico o de cadena.
+    name: numbersText
+    fullName: numbersText
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+    summary: Celdas que tienen un valor de cadena.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: field

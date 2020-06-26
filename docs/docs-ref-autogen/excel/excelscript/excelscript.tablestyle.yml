@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    summary: 'Representa un TableStyle, que define los elementos de estilo por región de la tabla.'
+    name: ExcelScript.TableStyle
+    fullName: ExcelScript.TableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
+      - 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
+  - uid: 'ExcelScript!ExcelScript.TableStyle#delete:member(1)'
+    summary: Elimina TableStyle.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#duplicate:member(1)'
+    summary: Crea un duplicado de este TableStyle con copias de todos los elementos de estilo.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TableStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.TableStyle:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#getName:member(1)'
+    summary: Obtiene el nombre del TableStyle.
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)'
+    summary: Especifica si este objeto TableStyle es de solo lectura.
+    name: getReadOnly()
+    fullName: getReadOnly()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.TableStyle#setName:member(1)'
+    summary: Obtiene el nombre del TableStyle.
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.TableStyle:interface'
+    name: TableStyle
+    fullName: ExcelScript.TableStyle

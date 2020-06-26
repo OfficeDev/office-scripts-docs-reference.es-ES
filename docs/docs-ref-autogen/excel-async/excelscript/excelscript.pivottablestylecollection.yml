@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableStyleCollection:interface'
+    summary: Representa una colección de estilos de tabla dinámica.
+    name: Excel.PivotTableStyleCollection
+    fullName: Excel.PivotTableStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableStyleCollection#add:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#load:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.PivotTableStyleCollection#add:member(1)'
+    summary: Crea un PivotTableStyle en blanco con el nombre especificado.
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre único del nuevo PivotTableStyle. Producirá una excepción de argumento no válido si el nombre ya está en uso.
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Opcional, el valor predeterminado es false. Si es true, se agregarán números al nombre para que sea único, si es necesario.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
+    summary: Obtiene el PivotTableStyle predeterminado para el ámbito del objeto principal.
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtiene un PivotTableStyle por nombre. Si no existe PivotTableStyle, devolverá un objeto nulo.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre de la PivotTableStyle que se va a recuperar.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableStyleCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
+    summary: Establece el PivotTableStyle predeterminado para usar en el ámbito del objeto principal.
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: PivotTableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: El objeto PivotTableStyle o el nombre del objeto PivotTableStyle que debe ser el nuevo valor predeterminado.
+          type:
+            - 'excel!Excel.PivotTableStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.PivotTableStyle:interface'
+    name: PivotTableStyle
+    fullName: Excel.PivotTableStyle
+  - uid: 'excel!Excel.PivotTableStyleCollection#setDefault~0:complex'
+    name: PivotTableStyle | string
+    fullName: Excel.PivotTableStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotTableStyle:interface'
+        name: PivotTableStyle
+        fullName: Excel.PivotTableStyle
+      - name: ' | string'
+        fullName: ' | string'

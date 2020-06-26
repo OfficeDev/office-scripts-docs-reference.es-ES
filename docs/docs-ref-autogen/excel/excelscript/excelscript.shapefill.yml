@@ -1,0 +1,128 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeFill:interface'
+    summary: Representa el formato de relleno de un objeto Shape.
+    name: ExcelScript.ShapeFill
+    fullName: ExcelScript.ShapeFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeFill#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeFill#clear:member(1)'
+    summary: Limpia el formato de relleno de esta forma.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)'
+    summary: 'Representa el color de primer plano de relleno de la forma en formato de color HTML, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: getForegroundColor()
+    fullName: getForegroundColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getForegroundColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)'
+    summary: 'Especifica el porcentaje de transparencia del relleno como un valor de 0,0 (opaco) a 1,0 (claro). Devuelve un valor nulo si el tipo de forma no es compatible con la transparencia o si la transparencia no es coherente en el relleno de forma, como en un tipo de relleno de degradado.'
+    name: getTransparency()
+    fullName: getTransparency()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTransparency(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
+    summary: 'Devuelve el tipo de relleno de la forma. Para obtener más detalles, vea Excel.ShapeFillType.'
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): ShapeFillType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeFillType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)'
+    summary: 'Representa el color de primer plano de relleno de la forma en formato de color HTML, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: setForegroundColor(foregroundColor)
+    fullName: setForegroundColor(foregroundColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setForegroundColor(foregroundColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: foregroundColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFill#setSolidColor:member(1)'
+    summary: Establece el formato de relleno de la forma en un color uniforme. Esto cambia el tipo de relleno a "Sólido".
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'Una cadena que representa el color de relleno en formato de color HTML, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)'
+    summary: 'Especifica el porcentaje de transparencia del relleno como un valor de 0,0 (opaco) a 1,0 (claro). Devuelve un valor nulo si el tipo de forma no es compatible con la transparencia o si la transparencia no es coherente en el relleno de forma, como en un tipo de relleno de degradado.'
+    name: setTransparency(transparency)
+    fullName: setTransparency(transparency)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTransparency(transparency: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: transparency
+          description: ''
+          type:
+            - number
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
+    name: ShapeFillType
+    fullName: ExcelScript.ShapeFillType

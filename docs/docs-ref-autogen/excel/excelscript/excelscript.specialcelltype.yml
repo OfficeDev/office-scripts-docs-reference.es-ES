@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
+    name: ExcelScript.SpecialCellType
+    fullName: ExcelScript.SpecialCellType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
+      - 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
+    summary: Celdas sin contenido.
+    name: blanks
+    fullName: blanks
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
+    summary: Todas las celdas con formatos condicionales
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
+    summary: Celdas que contienen constantes.
+    name: constants
+    fullName: constants
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
+    summary: Celdas con criterios de validación.
+    name: dataValidations
+    fullName: dataValidations
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
+    summary: Celdas que contienen fórmulas.
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
+    summary: Celdas que tengan el mismo formato condicional que la primera celda del rango.
+    name: sameConditionalFormat
+    fullName: sameConditionalFormat
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
+    summary: Celdas que tengan los mismos criterios de validación de datos que la primera celda del rango.
+    name: sameDataValidation
+    fullName: sameDataValidation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
+    summary: Celdas que están visibles.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: field

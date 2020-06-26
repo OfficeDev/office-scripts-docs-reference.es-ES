@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShowAsRule:interface'
+    name: ExcelScript.ShowAsRule
+    fullName: ExcelScript.ShowAsRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShowAsRule#baseField:member'
+      - 'ExcelScript!ExcelScript.ShowAsRule#baseItem:member'
+      - 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
+  - uid: 'ExcelScript!ExcelScript.ShowAsRule#baseField:member'
+    summary: 'El PivotField de base para el cálculo de ShowAs, si procede, será en función del tipo de ShowAsCalculation, en el resto de casos será null.'
+    name: baseField
+    fullName: baseField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseField?: PivotField;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotField:interface'
+  - uid: 'ExcelScript!ExcelScript.ShowAsRule#baseItem:member'
+    summary: 'El elemento base para el cálculo de ShowAs, si procede, será en función del tipo de ShowAsCalculation, en el resto de casos será null.'
+    name: baseItem
+    fullName: baseItem
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseItem?: PivotItem;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.PivotItem:interface'
+  - uid: 'ExcelScript!ExcelScript.ShowAsRule#calculation:member'
+    summary: El cálculo de ShowAs que se usará para el PivotField de datos. Consulte Excel. ShowAsCalculation para obtener información detallada.
+    name: calculation
+    fullName: calculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculation: ShowAsCalculation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.PivotField:interface'
+    name: PivotField
+    fullName: ExcelScript.PivotField
+  - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
+    name: PivotItem
+    fullName: ExcelScript.PivotItem
+  - uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
+    name: ShowAsCalculation
+    fullName: ExcelScript.ShowAsCalculation

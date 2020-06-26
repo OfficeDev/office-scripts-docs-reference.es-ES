@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PageBreak:interface'
+    name: Excel.PageBreak
+    fullName: Excel.PageBreak
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PageBreak#columnIndex:member'
+      - 'excel!Excel.PageBreak#delete:member(1)'
+      - 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
+      - 'excel!Excel.PageBreak#load:member(1)'
+  - uid: 'excel!Excel.PageBreak#columnIndex:member'
+    summary: Especifica el índice de columna del salto de página.
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnIndex: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.PageBreak#delete:member(1)'
+    summary: Elimina un objeto de salto de página.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
+    summary: Obtiene la primera celda después del salto de página.
+    name: getCellAfterBreak()
+    fullName: getCellAfterBreak()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCellAfterBreak(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PageBreak#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

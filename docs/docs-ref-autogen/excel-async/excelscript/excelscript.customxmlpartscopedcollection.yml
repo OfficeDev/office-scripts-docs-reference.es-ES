@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
+    summary: 'Una colección con ámbito de elementos XML personalizados. Una colección con ámbito es el resultado de alguna operación (por ejemplo, filtrado por espacio de nombres). Una colección con ámbito no puede tener ningún ámbito.'
+    name: Excel.CustomXmlPartScopedCollection
+    fullName: Excel.CustomXmlPartScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtiene un elemento XML personalizado a partir de su identificador. Si el objeto CustomXmlPart no existe, la propiedad isNull del objeto devuelto será true.'
+    name: getItemOrNullObject(id)
+    fullName: getItemOrNullObject(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
+              await context.sync();
+
+              if (xmlPartIDSetting.value) {   
+                  let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+                  let xmlBlob = customXmlPart.getXml();
+                  customXmlPart.delete();
+                  customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
+
+                  await context.sync();
+
+                  if (customXmlPart.isNullObject) {
+                      $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
+
+                      // Delete the unneeded setting too.
+                      xmlPartIDSetting.delete();            
+                  } else {
+                      let readableXml = addLineBreaksToXML(xmlBlob.value);
+                      let strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
+                      $("#display-xml").text(strangeMessage);
+                  }
+
+                  await context.sync();
+              }
+          }
+          ```
+      parameters:
+        - id: id
+          description: IDENTIFICADOR del objeto que se va a recuperar.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
+    summary: 'Si la colección contiene exactamente un elemento, este método lo devuelve. De lo contrario, este método devuelve NULL.'
+    name: getOnlyItemOrNullObject()
+    fullName: getOnlyItemOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOnlyItemOrNullObject(): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CustomXmlPart:interface'
+    name: CustomXmlPart
+    fullName: Excel.CustomXmlPart
