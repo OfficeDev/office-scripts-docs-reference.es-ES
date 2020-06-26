@@ -1,0 +1,274 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeCollection:interface'
+    summary: Representa una colección de todas las formas de la hoja de cálculo.
+    name: Excel.ShapeCollection
+    fullName: Excel.ShapeCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
+      - 'excel!Excel.ShapeCollection#addGroup:member(1)'
+      - 'excel!Excel.ShapeCollection#addImage:member(1)'
+      - 'excel!Excel.ShapeCollection#addLine:member(1)'
+      - 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+      - 'excel!Excel.ShapeCollection#getItem:member(1)'
+      - 'excel!Excel.ShapeCollection#load:member(1)'
+  - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
+    summary: Agrega una forma geométrica a la hoja de cálculo. Devuelve un objeto Shape que representa la nueva forma.
+    name: addGeometricShape(geometricShapeType)
+    fullName: addGeometricShape(geometricShapeType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+              shape.left = 5;
+              shape.top = 5;
+              shape.height = 175;
+              shape.width = 200;
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: geometricShapeType
+          description: 'Representa el tipo de la forma geométrica. Para obtener más detalles, vea Excel.GeometricShapeType.'
+          type:
+            - 'excel!Excel.GeometricShapeType:enum'
+  - uid: 'excel!Excel.ShapeCollection#addGroup:member(1)'
+    summary: Agrupa un subconjunto de formas en la hoja de cálculo de esta colección. Devuelve un objeto Shape que representa el nuevo grupo de formas.
+    name: addGroup(values)
+    fullName: addGroup(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addGroup(values: Array<string | Shape>): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let square = sheet.shapes.getItem("Square");
+              let pentagon = sheet.shapes.getItem("Pentagon");
+              let octagon = sheet.shapes.getItem("Octagon");
+
+              let shapeGroup = sheet.shapes.addGroup([square, pentagon, octagon]);
+              shapeGroup.name = "Group";
+              console.log("Shapes grouped");
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: values
+          description: Una matriz de objetos Shape ID o Shape.
+          type:
+            - 'excel!Excel.ShapeCollection#addGroup~0:complex'
+  - uid: 'excel!Excel.ShapeCollection#addImage:member(1)'
+    summary: Crea una imagen de una cadena con codificación base64 y la agrega a la hoja de cálculo. Devuelve el objeto Shape que representa la nueva imagen.
+    name: addImage(base64ImageString)
+    fullName: addImage(base64ImageString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addImage(base64ImageString: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```javascript
+          let myFile = <HTMLInputElement>document.getElementById("selectedFile");
+          let reader = new FileReader();
+
+          reader.onload = (event) => {
+              Excel.run((context) => {
+                  let startIndex = reader.result.toString().indexOf("base64,");
+                  let mybase64 = reader.result.toString().substr(startIndex + 7);
+                  let sheet = context.workbook.worksheets.getItem("Shapes");
+                  let image = sheet.shapes.addImage(mybase64);
+                  image.name = "Image";
+                  return context.sync();
+              });
+          };
+
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(myFile.files[0]);
+          ```
+      parameters:
+        - id: base64ImageString
+          description: Una cadena codificada en Base64 que representa una imagen en formato JPEG o PNG.
+          type:
+            - string
+  - uid: 'excel!Excel.ShapeCollection#addLine:member(1)'
+    summary: Agrega una línea a la hoja de cálculo. Devuelve un objeto Shape que representa la nueva línea.
+    name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addLine(
+                    startLeft: number,
+                    startTop: number,
+                    endLeft: number,
+                    endTop: number,
+                    connectorType?: ConnectorType
+                ): Shape;
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+              line.name = "StraightLine";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: startLeft
+          description: 'Distancia, en puntos, desde el principio de la línea hasta el lado izquierdo de la hoja de cálculo.'
+          type:
+            - number
+        - id: startTop
+          description: 'Distancia, en puntos, desde el principio de la línea hasta la parte superior de la hoja de cálculo.'
+          type:
+            - number
+        - id: endLeft
+          description: 'Distancia, en puntos, desde el final de la línea a la izquierda de la hoja de cálculo.'
+          type:
+            - number
+        - id: endTop
+          description: 'Distancia, en puntos, desde el final de la línea hasta la parte superior de la hoja de cálculo.'
+          type:
+            - number
+        - id: connectorType
+          description: Representa el tipo de conector. Consulte Excel. ConnectorType para obtener información detallada.
+          type:
+            - 'excel!Excel.ConnectorType:enum'
+  - uid: 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+    summary: Agrega un cuadro de texto a la hoja de cálculo con el texto proporcionado como contenido. Devuelve un objeto Shape que representa el nuevo cuadro de texto.
+    name: addTextBox(text)
+    fullName: addTextBox(text)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTextBox(text?: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let textbox = shapes.addTextBox("A box with text");
+              textbox.left = 100;
+              textbox.top = 100;
+              textbox.height = 20;
+              textbox.width = 175;
+              textbox.name = "Textbox";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: text
+          description: Representa el texto que se mostrará en el cuadro de texto creado.
+          type:
+            - string
+  - uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
+    summary: Obtiene una forma mediante su nombre o identificador.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Nombre o identificador de la forma que se va a recuperar.
+          type:
+            - string
+  - uid: 'excel!Excel.ShapeCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.GeometricShapeType:enum'
+    name: GeometricShapeType
+    fullName: Excel.GeometricShapeType
+  - uid: 'excel!Excel.ShapeCollection#addGroup~0:complex'
+    name: Array<string | Shape>
+    fullName: Array<string | Excel.Shape>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: '<string | '
+        fullName: '<string | '
+      - uid: 'excel!Excel.Shape:interface'
+        name: Shape
+        fullName: Excel.Shape
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.ConnectorType:enum'
+    name: ConnectorType
+    fullName: Excel.ConnectorType

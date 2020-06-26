@@ -1,0 +1,167 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartPlotArea:interface'
+    summary: Este objeto representa los atributos de un objeto plotArea de Chart.
+    name: Excel.ChartPlotArea
+    fullName: Excel.ChartPlotArea
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartPlotArea#format:member'
+      - 'excel!Excel.ChartPlotArea#height:member'
+      - 'excel!Excel.ChartPlotArea#insideHeight:member'
+      - 'excel!Excel.ChartPlotArea#insideLeft:member'
+      - 'excel!Excel.ChartPlotArea#insideTop:member'
+      - 'excel!Excel.ChartPlotArea#insideWidth:member'
+      - 'excel!Excel.ChartPlotArea#left:member'
+      - 'excel!Excel.ChartPlotArea#load:member(1)'
+      - 'excel!Excel.ChartPlotArea#position:member'
+      - 'excel!Excel.ChartPlotArea#top:member'
+      - 'excel!Excel.ChartPlotArea#width:member'
+  - uid: 'excel!Excel.ChartPlotArea#format:member'
+    summary: Especifica el formato del plotArea de un gráfico.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartPlotAreaFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartPlotAreaFormat:interface'
+  - uid: 'excel!Excel.ChartPlotArea#height:member'
+    summary: Especifica el valor del alto de plotArea.
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideHeight:member'
+    summary: Especifica el valor de insideHeight de plotArea.
+    name: insideHeight
+    fullName: insideHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideHeight: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideLeft:member'
+    summary: Especifica el valor insideLeft de plotArea.
+    name: insideLeft
+    fullName: insideLeft
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideLeft: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideTop:member'
+    summary: Especifica el valor insideTop de plotArea.
+    name: insideTop
+    fullName: insideTop
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideTop: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#insideWidth:member'
+    summary: Especifica el valor de insideWidth de plotArea.
+    name: insideWidth
+    fullName: insideWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'insideWidth: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#left:member'
+    summary: Especifica el valor de la izquierda de plotArea.
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartPlotArea#position:member'
+    summary: Especifica la posición de plotArea.
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: ChartPlotAreaPosition;'
+      return:
+        type:
+          - 'excel!Excel.ChartPlotAreaPosition:enum'
+  - uid: 'excel!Excel.ChartPlotArea#top:member'
+    summary: Especifica el valor superior de plotArea.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartPlotArea#width:member'
+    summary: Especifica el valor del ancho de plotArea.
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartPlotAreaFormat:interface'
+    name: ChartPlotAreaFormat
+    fullName: Excel.ChartPlotAreaFormat
+  - uid: 'excel!Excel.ChartPlotAreaPosition:enum'
+    name: ChartPlotAreaPosition
+    fullName: Excel.ChartPlotAreaPosition

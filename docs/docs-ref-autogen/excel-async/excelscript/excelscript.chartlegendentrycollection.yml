@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLegendEntryCollection:interface'
+    summary: Representa una colección de legendEntries.
+    name: Excel.ChartLegendEntryCollection
+    fullName: Excel.ChartLegendEntryCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLegendEntryCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartLegendEntryCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
