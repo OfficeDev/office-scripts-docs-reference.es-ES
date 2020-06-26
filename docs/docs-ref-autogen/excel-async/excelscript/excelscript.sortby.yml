@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SortBy:enum'
+    summary: Representa la dirección de ordenación.
+    name: Excel.SortBy
+    fullName: Excel.SortBy
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.SortBy.ascending:member'
+      - 'excel!Excel.SortBy.descending:member'
+  - uid: 'excel!Excel.SortBy.ascending:member'
+    summary: Ordenación ascendente. Menor a mayor o de la a a la Z.
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ascending"'
+  - uid: 'excel!Excel.SortBy.descending:member'
+    summary: Orden descendente. De mayor a menor o de Z a A.
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"descending"'

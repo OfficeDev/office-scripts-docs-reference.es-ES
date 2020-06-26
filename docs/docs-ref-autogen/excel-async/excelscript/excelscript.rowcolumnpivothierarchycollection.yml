@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
+    summary: Representa una colección de elementos RowColumnPivotHierarchy asociados a la tabla dinámica.
+    name: Excel.RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
+    summary: 'Agrega PivotHierarchy al eje actual. Si la jerarquía está presente en otra parte de la fila, la columna o el eje de filtro, se eliminará de esa ubicación.'
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: PivotHierarchy): RowColumnPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtiene una RowColumnPivotHierarchy por su nombre. Si no existe la RowColumnPivotHierarchy, devolverá un objeto NULL.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): RowColumnPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.RowColumnPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre de la RowColumnPivotHierarchy que se va a recuperar.
+          type:
+            - string
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#remove:member(1)'
+    summary: Elimina PivotHierarchy del eje actual.
+    name: remove(rowColumnPivotHierarchy)
+    fullName: remove(rowColumnPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(rowColumnPivotHierarchy: RowColumnPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rowColumnPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.RowColumnPivotHierarchy:interface'
+references:
+  - uid: 'excel!Excel.RowColumnPivotHierarchy:interface'
+    name: RowColumnPivotHierarchy
+    fullName: Excel.RowColumnPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy

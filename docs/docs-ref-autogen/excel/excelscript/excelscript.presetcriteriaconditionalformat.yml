@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface'
+    summary: 'Representa el formato condicional de criterios preestablecidos como por encima de la media, por debajo de la media, valores únicos, contiene espacio en blanco, no en blanco, error y no error.'
+    name: ExcelScript.PresetCriteriaConditionalFormat
+    fullName: ExcelScript.PresetCriteriaConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
+      - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
+    summary: 'Devuelve un objeto Format que encapsula la fuente, el relleno, los bordes y otras propiedades del formato condicional.'
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
+    summary: Regla del formato condicional.
+    name: getRule()
+    fullName: getRule()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRule(): ConditionalPresetCriteriaRule;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
+    summary: Regla del formato condicional.
+    name: setRule(rule)
+    fullName: setRule(rule)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRule(rule: ConditionalPresetCriteriaRule): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rule
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: ExcelScript.ConditionalRangeFormat
+  - uid: 'ExcelScript!ExcelScript.ConditionalPresetCriteriaRule:interface'
+    name: ConditionalPresetCriteriaRule
+    fullName: ExcelScript.ConditionalPresetCriteriaRule

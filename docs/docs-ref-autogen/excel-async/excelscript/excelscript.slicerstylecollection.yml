@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerStyleCollection:interface'
+    summary: Representa una colección de objetos SlicerStyle.
+    name: Excel.SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerStyleCollection#add:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#load:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.SlicerStyleCollection#add:member(1)'
+    summary: Crea un SlicerStyle en blanco con el nombre especificado.
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre único del nuevo SlicerStyle. Producirá una excepción de argumento no válido si el nombre ya está en uso.
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Opcional, el valor predeterminado es false. Si es true, se agregarán números al nombre para que sea único, si es necesario.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+    summary: Obtiene el SlicerStyle predeterminado para el ámbito del objeto principal.
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtiene un SlicerStyle por nombre. Si no existe SlicerStyle, devolverá un objeto nulo.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre de la SlicerStyle que se va a recuperar.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerStyleCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+    summary: Establece el SlicerStyle predeterminado para usar en el ámbito del objeto principal.
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: SlicerStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: El objeto SlicerStyle o el nombre del objeto SlicerStyle que debe ser el nuevo valor predeterminado.
+          type:
+            - 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: Excel.SlicerStyle
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+    name: SlicerStyle | string
+    fullName: Excel.SlicerStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerStyle:interface'
+        name: SlicerStyle
+        fullName: Excel.SlicerStyle
+      - name: ' | string'
+        fullName: ' | string'

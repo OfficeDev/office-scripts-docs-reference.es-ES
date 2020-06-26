@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Setting:interface'
+    summary: 'Setting representa un par clave-valor de una configuración que se conserva en el documento (por archivo y por complemento). Se pueden usar estos pares clave-valor personalizados para almacenar la información de estado o ciclo de vida que necesita el complemento de panel de tareas o de contenido. Tenga en cuenta que la configuración persiste en el documento y, por lo tanto, no es un lugar donde almacenar información confidencial o protegida, como la información del usuario y la contraseña.'
+    name: Excel.Setting
+    fullName: Excel.Setting
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Setting#delete:member(1)'
+      - 'excel!Excel.Setting#key:member'
+      - 'excel!Excel.Setting#load:member(1)'
+      - 'excel!Excel.Setting#value:member'
+  - uid: 'excel!Excel.Setting#delete:member(1)'
+    summary: Elimina la configuración.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let settings = context.workbook.settings;
+              let needsReview = settings.getItem("NeedsReview");
+              needsReview.delete();
+              needsReview = settings.getItemOrNullObject("NeedsReview");
+
+              await context.sync();
+
+              if (needsReview.isNullObject) {
+                  console.log("The setting has been deleted");
+              } else {
+                  console.log("The setting was not deleted");
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Setting#key:member'
+    summary: Clave que representa el identificador de la configuración.
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Setting#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Setting#value:member'
+    summary: Representa el valor almacenado para esta configuración.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any

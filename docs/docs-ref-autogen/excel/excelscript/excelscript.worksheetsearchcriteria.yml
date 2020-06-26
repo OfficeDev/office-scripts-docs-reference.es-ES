@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria:interface'
+    summary: Representa los criterios de búsqueda de la hoja de cálculo que se usarán.
+    name: ExcelScript.WorksheetSearchCriteria
+    fullName: ExcelScript.WorksheetSearchCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+      - 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member'
+    summary: 'Especifica si la coincidencia debe estar completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, `cat` coincidencias parciales `caterpillar` y`scatter`<!-- -->). El valor predeterminado es false (parcial).'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member'
+    summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor predeterminado es false (no se distinguen).
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
