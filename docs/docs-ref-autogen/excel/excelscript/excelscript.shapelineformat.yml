@@ -1,0 +1,216 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat:interface'
+    summary: 'Representa el formato de línea del objeto Shape. Para imágenes y formas geométricas, el formato de línea representa el borde de la forma.'
+    name: ExcelScript.ShapeLineFormat
+    fullName: ExcelScript.ShapeLineFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getColor:member(1)'
+    summary: 'Representa el color de línea en formato de color HTML, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
+    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos de guión. Para obtener más información, vea Excel.ShapeLineStyle.'
+    name: getDashStyle()
+    fullName: getDashStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDashStyle(): ShapeLineDashStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
+    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos. Para obtener más información, vea Excel.ShapeLineStyle.'
+    name: getStyle()
+    fullName: getStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(): ShapeLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getTransparency:member(1)'
+    summary: 'Indica o establece el grado de transparencia de la línea especificada como valor entre 0,0 (opaco) y 1,0 (transparente). Devuelve un valor nulo cuando la transparencia de la forma es incoherente.'
+    name: getTransparency()
+    fullName: getTransparency()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTransparency(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)'
+    summary: Especifica si el formato de línea de un elemento Shape es visible. Devuelve un valor nulo cuando la visibilidad de la forma es incoherente.
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)'
+    summary: 'Indica el grosor de la línea, en puntos. Devuelve un valor null cuando la línea no es visible o hay distintos grosores de línea.'
+    name: getWeight()
+    fullName: getWeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setColor:member(1)'
+    summary: 'Representa el color de línea en formato de color HTML, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
+    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos de guión. Para obtener más información, vea Excel.ShapeLineStyle.'
+    name: setDashStyle(dashStyle)
+    fullName: setDashStyle(dashStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDashStyle(dashStyle: ShapeLineDashStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: dashStyle
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
+    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos. Para obtener más información, vea Excel.ShapeLineStyle.'
+    name: setStyle(style)
+    fullName: setStyle(style)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStyle(style: ShapeLineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: style
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setTransparency:member(1)'
+    summary: 'Indica o establece el grado de transparencia de la línea especificada como valor entre 0,0 (opaco) y 1,0 (transparente). Devuelve un valor nulo cuando la transparencia de la forma es incoherente.'
+    name: setTransparency(transparency)
+    fullName: setTransparency(transparency)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTransparency(transparency: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: transparency
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)'
+    summary: Especifica si el formato de línea de un elemento Shape es visible. Devuelve un valor nulo cuando la visibilidad de la forma es incoherente.
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)'
+    summary: 'Indica el grosor de la línea, en puntos. Devuelve un valor null cuando la línea no es visible o hay distintos grosores de línea.'
+    name: setWeight(weight)
+    fullName: setWeight(weight)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWeight(weight: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: weight
+          description: ''
+          type:
+            - number
+references:
+  - uid: 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
+    name: ShapeLineDashStyle
+    fullName: ExcelScript.ShapeLineDashStyle
+  - uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
+    name: ShapeLineStyle
+    fullName: ExcelScript.ShapeLineStyle

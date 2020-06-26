@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomDataValidation:interface'
+    summary: Representa los criterios de validación de datos personalizados.
+    name: Excel.CustomDataValidation
+    fullName: Excel.CustomDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomDataValidation#formula:member'
+  - uid: 'excel!Excel.CustomDataValidation#formula:member'
+    summary: 'Una fórmula de validación de datos personalizados. Esto crea reglas de entrada especiales, como evitar duplicados o limitar el total de un rango de celdas.'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string

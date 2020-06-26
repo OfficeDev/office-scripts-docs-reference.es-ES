@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
+    summary: 'Representa una forma geométrica dentro de una hoja de cálculo. Una forma geométrica puede ser un rectángulo, una flecha de bloque, un símbolo de ecuación, un elemento de diagrama de flujo, una estrella, un banner, una llamada o cualquier otra forma básica en Excel.'
+    name: ExcelScript.GeometricShape
+    fullName: ExcelScript.GeometricShape
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+  - uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+    summary: Devuelve el identificador de la forma.
+    name: getId()
+    fullName: getId()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type:
+          - string
+        description: ''

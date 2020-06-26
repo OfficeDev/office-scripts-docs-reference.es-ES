@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill:interface'
+    summary: Representa el fondo de un objeto de rango condicional.
+    name: ExcelScript.ConditionalRangeFill
+    fullName: ExcelScript.ConditionalRangeFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
+    summary: Restablece el relleno.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
+    summary: 'Código de color HTML que representa el color del relleno, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
+    summary: 'Código de color HTML que representa el color del relleno, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string

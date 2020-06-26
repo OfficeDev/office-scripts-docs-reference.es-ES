@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
+    summary: Representa las propiedades de alerta de error para la validación de datos.
+    name: ExcelScript.DataValidationErrorAlert
+    fullName: ExcelScript.DataValidationErrorAlert
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+      - 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+    summary: Representa el mensaje de alerta de error.
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    summary: Especifica si se muestra un cuadro de diálogo de alerta de error cuando un usuario escribe datos no válidos. El valor predeterminado es true.
+    name: showAlert
+    fullName: showAlert
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+    summary: 'El tipo de alerta de validación de datos, consulte Excel. DataValidationAlertStyle para obtener información detallada.'
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: DataValidationAlertStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+    summary: Representa el título del cuadro de diálogo de alerta de error.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.DataValidationAlertStyle:enum'
+    name: DataValidationAlertStyle
+    fullName: ExcelScript.DataValidationAlertStyle

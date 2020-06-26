@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
+    name: ExcelScript.WorksheetFreezePanes
+    fullName: ExcelScript.WorksheetFreezePanes
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+    summary: Establece las celdas inmovilizadas en la vista de la hoja de cálculo activa. El rango proporcionado corresponde a las celdas que se van a inmovilizar en los paneles superior e izquierdo.
+    name: freezeAt(frozenRange)
+    fullName: freezeAt(frozenRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeAt(frozenRange: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: frozenRange
+          description: Rango que representa las celdas que se van a inmovilizar o null para quitar todas las secciones inmovilizadas.
+          type:
+            - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+    summary: Inmoviliza la primera o primeras columnas de la hoja de cálculo en su lugar.
+    name: freezeColumns(count)
+    fullName: freezeColumns(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeColumns(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: Número opcional de columnas que se van a inmovilizar o cero para liberar todas las columnas
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+    summary: Inmovilizar la fila o filas superiores de la hoja de cálculo en su lugar.
+    name: freezeRows(count)
+    fullName: freezeRows(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeRows(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: Número opcional de filas que se van a inmovilizar o cero para liberar todas las filas
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+    summary: 'Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado se corresponde con las celdas que están inmovilizadas en los paneles superior e izquierdo. Si no hay ningún panel inmovilizado, devuelve un objeto null.'
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+    summary: Elimina todos los paneles inmovilizados de la hoja de cálculo.
+    name: unfreeze()
+    fullName: unfreeze()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unfreeze(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range

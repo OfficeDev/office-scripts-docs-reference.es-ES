@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotAxis:enum'
+    summary: Representa el eje desde el que se va a obtener el PivotItems.
+    name: ExcelScript.PivotAxis
+    fullName: ExcelScript.PivotAxis
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotAxis.column:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.data:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.row:member'
+      - 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.column:member'
+    summary: El eje de columna.
+    name: column
+    fullName: column
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.data:member'
+    summary: El eje de datos.
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+    summary: El eje de filtro.
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.row:member'
+    summary: El eje de filas.
+    name: row
+    fullName: row
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+    summary: El eje o la región son desconocidos o no son compatibles.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

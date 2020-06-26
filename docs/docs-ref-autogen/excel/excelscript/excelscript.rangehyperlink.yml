@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
+    summary: Representa las cadenas necesarias para obtener o establecer un objeto Hyperlink (XHL).
+    name: ExcelScript.RangeHyperlink
+    fullName: ExcelScript.RangeHyperlink
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
+      - 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
+      - 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
+      - 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
+    summary: Representa la dirección url de destino del hipervínculo.
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
+    summary: Representa el destino de referencia de documento para el hipervínculo.
+    name: documentReference
+    fullName: documentReference
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'documentReference?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
+    summary: Representa la cadena que se muestra al mantener el puntero sobre el hipervínculo.
+    name: screenTip
+    fullName: screenTip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
+    summary: Representa la cadena que se muestra en la celda superior izquierda del rango.
+    name: textToDisplay
+    fullName: textToDisplay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type:
+          - string

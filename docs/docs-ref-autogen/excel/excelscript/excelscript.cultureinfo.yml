@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
+    summary: 'Proporciona información basada en la configuración actual de la referencia cultural del sistema. Esto incluye los nombres de las referencias culturales, el formato de los números y otras configuraciones que dependen de la referencia cultural.'
+    name: ExcelScript.CultureInfo
+    fullName: ExcelScript.CultureInfo
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+      - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
+    summary: 'Obtiene el nombre de la referencia cultural en el formato languagecode2-Country/regioncode2 (por ejemplo, "zh-CN" o "en-US"). Esto se basa en la configuración actual del sistema.'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
+    summary: Define el formato adecuado culturalmente para mostrar números. Esto se basa en la configuración actual de la referencia cultural del sistema.
+    name: getNumberFormat()
+    fullName: getNumberFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormat(): NumberFormatInfo;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
+    name: NumberFormatInfo
+    fullName: ExcelScript.NumberFormatInfo

@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
+    summary: Especifica el desbordamiento vertical para el marco de texto de una forma.
+    name: ExcelScript.ShapeTextVerticalOverflow
+    fullName: ExcelScript.ShapeTextVerticalOverflow
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
+    summary: Oculta el texto que no cabe verticalmente en el marco de texto.
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
+    summary: Oculta el texto que no cabe verticalmente en el marco de texto y agrega puntos suspensivos (...) al final del texto visible.
+    name: ellipsis
+    fullName: ellipsis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
+    summary: 'Permite que el texto desborde el marco de texto verticalmente (puede ser desde la parte superior, la parte inferior o ambas según la alineación del texto).'
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field

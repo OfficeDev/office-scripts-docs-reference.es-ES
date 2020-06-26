@@ -1,0 +1,224 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItem:interface'
+    summary: 'Representa un nombre definido para un rango de celdas o un valor. Los nombres pueden ser objetos con nombre primitivo (como se ve en el tipo siguiente), un objeto de intervalo o una referencia a un rango. Este objeto puede usarse para obtener un objeto de rango asociado a nombres.'
+    name: Excel.NamedItem
+    fullName: Excel.NamedItem
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItem#arrayValues:member'
+      - 'excel!Excel.NamedItem#comment:member'
+      - 'excel!Excel.NamedItem#delete:member(1)'
+      - 'excel!Excel.NamedItem#formula:member'
+      - 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.NamedItem#load:member(1)'
+      - 'excel!Excel.NamedItem#name:member'
+      - 'excel!Excel.NamedItem#scope:member'
+      - 'excel!Excel.NamedItem#type:member'
+      - 'excel!Excel.NamedItem#value:member'
+      - 'excel!Excel.NamedItem#visible:member'
+  - uid: 'excel!Excel.NamedItem#arrayValues:member'
+    summary: Devuelve un objeto que contiene los valores y tipos del elemento con nombre.
+    name: arrayValues
+    fullName: arrayValues
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly arrayValues: NamedItemArrayValues;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues:interface'
+  - uid: 'excel!Excel.NamedItem#comment:member'
+    summary: Especifica el comentario asociado con este nombre.
+    name: comment
+    fullName: comment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comment: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.NamedItem#delete:member(1)'
+    summary: Elimina el nombre especificado.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let totalName = sheet.names.getItemOrNullObject("TotalAmount");
+              totalName.load();
+              await context.sync();
+
+              if (totalName.value) {
+                  totalName.delete();
+
+                  // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
+                  sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
+              } else {
+                  console.log("No named item created for the formula.");
+              }
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.NamedItem#formula:member'
+    summary: Fórmula del elemento con nombre. La fórmula siempre comienza con el signo "=".
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: any;'
+      return:
+        type:
+          - any
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              // Get the named item
+              let myNamedItem = sheet.names.getItemOrNullObject("MyRange");
+              myNamedItem.load("name, formula");
+              await context.sync();
+
+              if (myNamedItem.isNullObject) {
+                  console.log(`There is no named item. Create it with "Add named item for a range" first.`);
+              } else {                    
+                  // Update named item to point to the second range
+                  myNamedItem.formula = "=Sample!$B$10:$D$14";
+                  sheet.getRange("B10:D14").select();
+                  await context.sync();
+
+                  console.log(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
+              }
+          }
+          ```
+  - uid: 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
+    summary: Devuelve el objeto de rango asociado al nombre. Devuelve un objeto NULL si el tipo de elemento con nombre no es un rango.
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.NamedItem#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NamedItem#name:member'
+    summary: Nombre del objeto.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.NamedItem#scope:member'
+    summary: 'Especifica si el nombre está en el ámbito del libro o en una hoja de cálculo específica. Los valores posibles son: Worksheet, Workbook.'
+    name: scope
+    fullName: scope
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly scope: NamedItemScope;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemScope:enum'
+  - uid: 'excel!Excel.NamedItem#type:member'
+    summary: Especifica el tipo de valor devuelto por la fórmula del nombre. Consulte Excel. NamedItemType para obtener información detallada.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: NamedItemType;'
+      return:
+        type:
+          - 'excel!Excel.NamedItemType:enum'
+  - uid: 'excel!Excel.NamedItem#value:member'
+    summary: 'Representa el valor calculado por la fórmula del nombre. Para un rango con nombre, devolverá la dirección del rango.'
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.NamedItem#visible:member'
+    summary: Especifica si el objeto es visible.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.NamedItemArrayValues:interface'
+    name: NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.NamedItemScope:enum'
+    name: NamedItemScope
+    fullName: Excel.NamedItemScope
+  - uid: 'excel!Excel.NamedItemType:enum'
+    name: NamedItemType
+    fullName: Excel.NamedItemType
