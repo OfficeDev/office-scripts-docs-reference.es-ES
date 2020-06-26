@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CalculationType:enum'
+    name: Excel.CalculationType
+    fullName: Excel.CalculationType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.CalculationType.full:member'
+      - 'excel!Excel.CalculationType.fullRebuild:member'
+      - 'excel!Excel.CalculationType.recalculate:member'
+  - uid: 'excel!Excel.CalculationType.full:member'
+    summary: ' Esto marca todas las celdas como modificadas y, a continuación, vuelva a calcularlas.'
+    name: full
+    fullName: full
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"full"'
+  - uid: 'excel!Excel.CalculationType.fullRebuild:member'
+    summary: 'De este modo, se reconstruirá la cadena de dependencias completa, se marcarán todas las celdas como desfasadas y, a continuación, se actualizarán.'
+    name: fullRebuild
+    fullName: fullRebuild
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"fullRebuild"'
+  - uid: 'excel!Excel.CalculationType.recalculate:member'
+    summary: 'Actualiza todas las celdas que Excel marca como desfasadas, es decir, los dependientes de datos vol�tiles o modificados, y las celdas marcadas mediante programaci�n como desfasadas.'
+    name: recalculate
+    fullName: recalculate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"recalculate"'

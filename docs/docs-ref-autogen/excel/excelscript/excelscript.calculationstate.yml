@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CalculationState:enum'
+    summary: Representa el estado de cálculo de toda la aplicación de Excel.
+    name: ExcelScript.CalculationState
+    fullName: ExcelScript.CalculationState
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CalculationState.calculating:member'
+      - 'ExcelScript!ExcelScript.CalculationState.done:member'
+      - 'ExcelScript!ExcelScript.CalculationState.pending:member'
+  - uid: 'ExcelScript!ExcelScript.CalculationState.calculating:member'
+    summary: Cálculos en curso.
+    name: calculating
+    fullName: calculating
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationState.done:member'
+    summary: Cálculos completados.
+    name: done
+    fullName: done
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationState.pending:member'
+    summary: 'Se han realizado cambios que desencadenan la actualización de los cálculos, pero todavía no se ha efectuado la actualización.'
+    name: pending
+    fullName: pending
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeFill:interface'
+    summary: Representa el fondo de un objeto de intervalo.
+    name: Excel.RangeFill
+    fullName: Excel.RangeFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeFill#clear:member(1)'
+      - 'excel!Excel.RangeFill#color:member'
+      - 'excel!Excel.RangeFill#load:member(1)'
+      - 'excel!Excel.RangeFill#pattern:member'
+      - 'excel!Excel.RangeFill#patternColor:member'
+      - 'excel!Excel.RangeFill#patternTintAndShade:member'
+      - 'excel!Excel.RangeFill#tintAndShade:member'
+  - uid: 'excel!Excel.RangeFill#clear:member(1)'
+    summary: Restablece el fondo del intervalo.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.RangeFill#color:member'
+    summary: 'Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeFill#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeFill#pattern:member'
+    summary: 'Modelo de un intervalo. Para obtener más información, vea Excel.FillPattern. LinearGradient y RectangularGradient no son compatibles. Un valor null indica que el intervalo completo no tiene una configuración de patrón uniforme.'
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern: FillPattern;'
+      return:
+        type:
+          - 'excel!Excel.FillPattern:enum'
+  - uid: 'excel!Excel.RangeFill#patternColor:member'
+    summary: 'El código de color HTML que representa el color del patrón de intervalo, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeFill#patternTintAndShade:member'
+    summary: 'Especifica un doble que aclara u oscurece un color de trama para el relleno de rango, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Si el patrón tintAndShades no es uniforme, se devolverá null.'
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeFill#tintAndShade:member'
+    summary: 'Especifica un doble que aclara u oscurece un color para el relleno de rango, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Si los tintAndShades no son uniformes, se devolverá null.'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.FillPattern:enum'
+    name: FillPattern
+    fullName: Excel.FillPattern

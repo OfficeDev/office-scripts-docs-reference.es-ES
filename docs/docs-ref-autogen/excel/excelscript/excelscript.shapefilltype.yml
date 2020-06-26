@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
+    summary: Especifica el tipo de relleno de una forma.
+    name: ExcelScript.ShapeFillType
+    fullName: ExcelScript.ShapeFillType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+    summary: Relleno degradado.
+    name: gradient
+    fullName: gradient
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+    summary: Relleno mismo.
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+    summary: Sin relleno.
+    name: noFill
+    fullName: noFill
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+    summary: Relleno de trama.
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+    summary: Relleno de imagen y textura.
+    name: pictureAndTexture
+    fullName: pictureAndTexture
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+    summary: Relleno sólido.
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field

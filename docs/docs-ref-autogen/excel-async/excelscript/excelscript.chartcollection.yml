@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartCollection:interface'
+    summary: Colección de todos los objetos de gráfico en una hoja de cálculo.
+    name: Excel.ChartCollection
+    fullName: Excel.ChartCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
+    summary: Crea un nuevo gráfico.
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    type: ChartType,
+                    sourceData: Range,
+                    seriesBy?: ChartSeriesBy
+                ): Chart;
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: type
+          description: Representa el tipo de un gráfico. Consulte Excel. ChartType para obtener información detallada.
+          type:
+            - 'excel!Excel.ChartType:enum'
+        - id: sourceData
+          description: El objeto Range correspondiente a los datos de origen.
+          type:
+            - 'excel!Excel.Range:interface'
+        - id: seriesBy
+          description: Opcional. Especifica la manera en que las columnas o las filas se usan como series de datos en el gráfico. Consulte Excel. ChartSeriesBy para obtener información detallada.
+          type:
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtiene un gráfico mediante su nombre. Si hay varias tablas con el mismo nombre, se devolverá la primera. Si el gráfico no existe, se devolverá un objeto null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre del gráfico que se va a recuperar.
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Chart:interface'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: ChartType
+    fullName: Excel.ChartType
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: ChartSeriesBy
+    fullName: Excel.ChartSeriesBy

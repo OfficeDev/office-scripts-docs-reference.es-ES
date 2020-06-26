@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CultureInfo:interface'
+    summary: 'Proporciona información basada en la configuración actual de la referencia cultural del sistema. Esto incluye los nombres de las referencias culturales, el formato de los números y otras configuraciones que dependen de la referencia cultural.'
+    name: Excel.CultureInfo
+    fullName: Excel.CultureInfo
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CultureInfo#load:member(1)'
+      - 'excel!Excel.CultureInfo#name:member'
+      - 'excel!Excel.CultureInfo#numberFormat:member'
+  - uid: 'excel!Excel.CultureInfo#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.CultureInfo#name:member'
+    summary: 'Obtiene el nombre de la referencia cultural en el formato languagecode2-Country/regioncode2 (por ejemplo, "zh-CN" o "en-US"). Esto se basa en la configuración actual del sistema.'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CultureInfo#numberFormat:member'
+    summary: Define el formato adecuado culturalmente para mostrar números. Esto se basa en la configuración actual de la referencia cultural del sistema.
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly numberFormat: NumberFormatInfo;'
+      return:
+        type:
+          - 'excel!Excel.NumberFormatInfo:interface'
+references:
+  - uid: 'excel!Excel.NumberFormatInfo:interface'
+    name: NumberFormatInfo
+    fullName: Excel.NumberFormatInfo

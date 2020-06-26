@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
+    summary: Especifica el tipo del eje de categorías.
+    name: ExcelScript.ChartAxisCategoryType
+    fullName: ExcelScript.ChartAxisCategoryType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+    summary: Excel controla el tipo de eje.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+    summary: El eje agrupa los datos en una escala de tiempo.
+    name: dateAxis
+    fullName: dateAxis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+    summary: El eje agrupa los datos según un conjunto arbitrario de categorías.
+    name: textAxis
+    fullName: textAxis
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,328 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Line:interface'
+    summary: 'Representa una línea dentro de una hoja de cálculo. Para obtener el objeto Shape correspondiente, use`Line.shape`<!-- -->.'
+    name: Excel.Line
+    fullName: Excel.Line
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Line#beginArrowheadLength:member'
+      - 'excel!Excel.Line#beginArrowheadStyle:member'
+      - 'excel!Excel.Line#beginArrowheadWidth:member'
+      - 'excel!Excel.Line#beginConnectedSite:member'
+      - 'excel!Excel.Line#connectBeginShape:member(1)'
+      - 'excel!Excel.Line#connectEndShape:member(1)'
+      - 'excel!Excel.Line#connectorType:member'
+      - 'excel!Excel.Line#disconnectBeginShape:member(1)'
+      - 'excel!Excel.Line#disconnectEndShape:member(1)'
+      - 'excel!Excel.Line#endArrowheadLength:member'
+      - 'excel!Excel.Line#endArrowheadStyle:member'
+      - 'excel!Excel.Line#endArrowheadWidth:member'
+      - 'excel!Excel.Line#endConnectedSite:member'
+      - 'excel!Excel.Line#id:member'
+      - 'excel!Excel.Line#isBeginConnected:member'
+      - 'excel!Excel.Line#isEndConnected:member'
+      - 'excel!Excel.Line#load:member(1)'
+  - uid: 'excel!Excel.Line#beginArrowheadLength:member'
+    summary: Representa la longitud de la punta de flecha al comienzo de la línea especificada.
+    name: beginArrowheadLength
+    fullName: beginArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadLength: ArrowheadLength;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadLength:enum'
+  - uid: 'excel!Excel.Line#beginArrowheadStyle:member'
+    summary: Representa el estilo de la punta de flecha al principio de la línea especificada.
+    name: beginArrowheadStyle
+    fullName: beginArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadStyle: ArrowheadStyle;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadStyle:enum'
+  - uid: 'excel!Excel.Line#beginArrowheadWidth:member'
+    summary: Representa el ancho de la punta de flecha al comienzo de la línea especificada.
+    name: beginArrowheadWidth
+    fullName: beginArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadWidth: ArrowheadWidth;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#beginConnectedSite:member'
+    summary: Representa el sitio de conexión al que está conectado el principio de un conector. Devuelve un valor nulo si el principio de la línea no está unido a ninguna forma.
+    name: beginConnectedSite
+    fullName: beginConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Line#connectBeginShape:member(1)'
+    summary: Une el principio del conector especificado a una forma específica.
+    name: 'connectBeginShape(shape, connectionSite)'
+    fullName: 'connectBeginShape(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: shape
+          description: Forma que se va a conectar.
+          type:
+            - 'excel!Excel.Shape:interface'
+        - id: connectionSite
+          description: El sitio de conexión en la forma a la que se adjunta el principio del conector. Debe ser un número entero entre 0 (ambos inclusive) y el número de sitios de conexión de la forma especificada (exclusiva).
+          type:
+            - number
+  - uid: 'excel!Excel.Line#connectEndShape:member(1)'
+    summary: Une el final del conector especificado a una forma específica.
+    name: 'connectEndShape(shape, connectionSite)'
+    fullName: 'connectEndShape(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.connectBeginShape(shapes.getItem("Left"), 2);
+              line.connectEndShape(shapes.getItem("Right"), 0);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: shape
+          description: Forma que se va a conectar.
+          type:
+            - 'excel!Excel.Shape:interface'
+        - id: connectionSite
+          description: El sitio de conexión en la forma a la que se adjunta el final del conector. Debe ser un número entero entre 0 (ambos inclusive) y el número de sitios de conexión de la forma especificada (exclusiva).
+          type:
+            - number
+  - uid: 'excel!Excel.Line#connectorType:member'
+    summary: Indica el tipo de conector de la línea.
+    name: connectorType
+    fullName: connectorType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectorType: ConnectorType;'
+      return:
+        type:
+          - 'excel!Excel.ConnectorType:enum'
+  - uid: 'excel!Excel.Line#disconnectBeginShape:member(1)'
+    summary: Separa el principio del conector especificado de una forma.
+    name: disconnectBeginShape()
+    fullName: disconnectBeginShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'disconnectBeginShape(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Line#disconnectEndShape:member(1)'
+    summary: Separa el final del conector especificado de una forma.
+    name: disconnectEndShape()
+    fullName: disconnectEndShape()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'disconnectEndShape(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let line = shapes.getItem("StraightLine").line;
+              line.disconnectBeginShape();
+              line.disconnectEndShape();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Line#endArrowheadLength:member'
+    summary: Representa la longitud de la punta de flecha al final de la línea especificada.
+    name: endArrowheadLength
+    fullName: endArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadLength: ArrowheadLength;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadLength:enum'
+  - uid: 'excel!Excel.Line#endArrowheadStyle:member'
+    summary: Representa el estilo de la punta de flecha al final de la línea especificada.
+    name: endArrowheadStyle
+    fullName: endArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadStyle: ArrowheadStyle;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadStyle:enum'
+  - uid: 'excel!Excel.Line#endArrowheadWidth:member'
+    summary: Representa el ancho de la punta de flecha al final de la línea especificada.
+    name: endArrowheadWidth
+    fullName: endArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadWidth: ArrowheadWidth;'
+      return:
+        type:
+          - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#endConnectedSite:member'
+    summary: Representa el sitio de conexión al que está conectado el extremo de un conector. Devuelve un valor nulo si el final de la línea no está unido a ninguna forma.
+    name: endConnectedSite
+    fullName: endConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Line#id:member'
+    summary: Especifica el identificador de la forma.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Line#isBeginConnected:member'
+    summary: Especifica si el principio de la línea especificada está conectado a una forma.
+    name: isBeginConnected
+    fullName: isBeginConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isBeginConnected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Line#isEndConnected:member'
+    summary: Especifica si el final de la línea especificada está conectado a una forma.
+    name: isEndConnected
+    fullName: isEndConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEndConnected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Line#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ArrowheadLength:enum'
+    name: ArrowheadLength
+    fullName: Excel.ArrowheadLength
+  - uid: 'excel!Excel.ArrowheadStyle:enum'
+    name: ArrowheadStyle
+    fullName: Excel.ArrowheadStyle
+  - uid: 'excel!Excel.ArrowheadWidth:enum'
+    name: ArrowheadWidth
+    fullName: Excel.ArrowheadWidth
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.ConnectorType:enum'
+    name: ConnectorType
+    fullName: Excel.ConnectorType

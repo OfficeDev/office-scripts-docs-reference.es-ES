@@ -1,0 +1,170 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLegend:interface'
+    summary: Representa la leyenda de un gráfico.
+    name: Excel.ChartLegend
+    fullName: Excel.ChartLegend
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLegend#format:member'
+      - 'excel!Excel.ChartLegend#height:member'
+      - 'excel!Excel.ChartLegend#left:member'
+      - 'excel!Excel.ChartLegend#legendEntries:member'
+      - 'excel!Excel.ChartLegend#load:member(1)'
+      - 'excel!Excel.ChartLegend#overlay:member'
+      - 'excel!Excel.ChartLegend#position:member'
+      - 'excel!Excel.ChartLegend#showShadow:member'
+      - 'excel!Excel.ChartLegend#top:member'
+      - 'excel!Excel.ChartLegend#visible:member'
+      - 'excel!Excel.ChartLegend#width:member'
+  - uid: 'excel!Excel.ChartLegend#format:member'
+    summary: 'Representa el formato de una leyenda del gráfico, que incluye el formato de relleno y de fuente.'
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartLegendFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendFormat:interface'
+  - uid: 'excel!Excel.ChartLegend#height:member'
+    summary: 'Especifica el alto, en puntos, de la leyenda en el gráfico. NULL si la leyenda no es visible.'
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#left:member'
+    summary: 'Especifica la izquierda, en puntos, de la leyenda en el gráfico. NULL si la leyenda no es visible.'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#legendEntries:member'
+    summary: Representa una colección de legendEntries en la leyenda.
+    name: legendEntries
+    fullName: legendEntries
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly legendEntries: ChartLegendEntryCollection;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendEntryCollection:interface'
+  - uid: 'excel!Excel.ChartLegend#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLegend#overlay:member'
+    summary: Especifica si la leyenda del gráfico debe superponerse con el cuerpo principal del gráfico.
+    name: overlay
+    fullName: overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#position:member'
+    summary: Especifica la posición de la leyenda en el gráfico. Consulte Excel. ChartLegendPosition para obtener información detallada.
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: ChartLegendPosition;'
+      return:
+        type:
+          - 'excel!Excel.ChartLegendPosition:enum'
+  - uid: 'excel!Excel.ChartLegend#showShadow:member'
+    summary: Especifica si la leyenda tiene una sombra en el gráfico.
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#top:member'
+    summary: Especifica la parte superior de la leyenda de un gráfico.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartLegend#visible:member'
+    summary: Especifica si ChartLegend es visible.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartLegend#width:member'
+    summary: 'Especifica el ancho, en puntos, de la leyenda en el gráfico. NULL si la leyenda no es visible.'
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartLegendFormat:interface'
+    name: ChartLegendFormat
+    fullName: Excel.ChartLegendFormat
+  - uid: 'excel!Excel.ChartLegendEntryCollection:interface'
+    name: ChartLegendEntryCollection
+    fullName: Excel.ChartLegendEntryCollection
+  - uid: 'excel!Excel.ChartLegendPosition:enum'
+    name: ChartLegendPosition
+    fullName: Excel.ChartLegendPosition

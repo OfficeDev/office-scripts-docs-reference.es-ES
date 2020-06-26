@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    summary: Representa el formato de relleno para un elemento de gráfico.
+    name: ExcelScript.ChartFill
+    fullName: ExcelScript.ChartFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+    summary: Borra el color de relleno de un elemento de gráfico.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+    summary: Establece el formato de relleno de un elemento de gráfico en un color uniforme.
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: 'Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+          type:
+            - string

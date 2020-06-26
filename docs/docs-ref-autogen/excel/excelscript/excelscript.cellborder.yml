@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellBorder:interface'
+    summary: 'Representa las propiedades de un solo borde devuelto por`getCellProperties`<!-- -->, `getRowProperties`<!-- -->, y `getColumnProperties` o el parámetro de entrada de propiedad de borde de`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, y`setColumnProperties`<!-- -->.'
+    name: ExcelScript.CellBorder
+    fullName: ExcelScript.CellBorder
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellBorder#color:member'
+      - 'ExcelScript!ExcelScript.CellBorder#style:member'
+      - 'ExcelScript!ExcelScript.CellBorder#tintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellBorder#weight:member'
+  - uid: 'ExcelScript!ExcelScript.CellBorder#color:member'
+    summary: Representa la propiedad `color` de un único borde.
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.CellBorder#style:member'
+    summary: Representa la propiedad `style` de un único borde.
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: BorderLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.CellBorder#tintAndShade:member'
+    summary: Representa la propiedad `tintAndShade` de un único borde.
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.CellBorder#weight:member'
+    summary: Representa la propiedad `weight` de un único borde.
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: BorderWeight;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderWeight:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: ExcelScript.BorderLineStyle
+  - uid: 'ExcelScript!ExcelScript.BorderWeight:enum'
+    name: BorderWeight
+    fullName: ExcelScript.BorderWeight

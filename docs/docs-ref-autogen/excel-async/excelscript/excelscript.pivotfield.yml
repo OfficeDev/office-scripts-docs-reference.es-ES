@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotField:interface'
+    summary: Representa el campo dinámico de Excel.
+    name: Excel.PivotField
+    fullName: Excel.PivotField
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotField#id:member'
+      - 'excel!Excel.PivotField#items:member'
+      - 'excel!Excel.PivotField#load:member(1)'
+      - 'excel!Excel.PivotField#name:member'
+      - 'excel!Excel.PivotField#showAllItems:member'
+      - 'excel!Excel.PivotField#sortByLabels:member(1)'
+      - 'excel!Excel.PivotField#sortByValues:member(1)'
+      - 'excel!Excel.PivotField#subtotals:member'
+  - uid: 'excel!Excel.PivotField#id:member'
+    summary: Identificador de PivotField.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotField#items:member'
+    summary: Devuelve los PivotFields asociados con el PivotField.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: PivotItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection:interface'
+  - uid: 'excel!Excel.PivotField#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotField#name:member'
+    summary: Nombre de PivotField.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotField#showAllItems:member'
+    summary: Determina si se muestran todos los elementos de PivotField.
+    name: showAllItems
+    fullName: showAllItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllItems: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotField#sortByLabels:member(1)'
+    summary: 'Ordena el PivotField. Si se especifica una DataPivotHierarchy, entonces el orden se aplicará basándose en ella, si no, se basará en el propio PivotField.'
+    name: sortByLabels(sortBy)
+    fullName: sortByLabels(sortBy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByLabels(sortBy: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: Especifica si la ordenación se realiza en orden ascendente o descendente.
+          type:
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
+    summary: Ordena el campo de tabla dinámica por los valores especificados en un ámbito determinado. El ámbito define los valores específicos que se usarán para ordenar cuando hay varios valores de la misma DataPivotHierarchy.
+    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        sortByValues(
+                    sortBy: SortBy,
+                    valuesHierarchy: DataPivotHierarchy,
+                    pivotItemScope?: Array<PivotItem | string>
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: Especifica si la ordenación se realiza en orden ascendente o descendente.
+          type:
+            - 'excel!Excel.SortBy:enum'
+        - id: valuesHierarchy
+          description: Especifica la jerarquía de valores del eje de datos que se va a usar para la ordenación.
+          type:
+            - 'excel!Excel.DataPivotHierarchy:interface'
+        - id: pivotItemScope
+          description: 'Elementos que se deben usar para el ámbito de la ordenación. Estos serán los elementos que componen la fila o la columna por la que desea ordenar. Si se usa una cadena en lugar de un PivotItem, la cadena representa el identificador de PivotItem. Si no hay ningún elemento que no sea una jerarquía de datos en el eje que desea ordenar, puede estar vacío.'
+          type:
+            - 'excel!Excel.PivotField#sortByValues~0:complex'
+  - uid: 'excel!Excel.PivotField#subtotals:member'
+    summary: "Subtotales del PivotField.\t"
+    name: subtotals
+    fullName: subtotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotals: Subtotals;'
+      return:
+        type:
+          - 'excel!Excel.Subtotals:interface'
+references:
+  - uid: 'excel!Excel.PivotItemCollection:interface'
+    name: PivotItemCollection
+    fullName: Excel.PivotItemCollection
+  - uid: 'excel!Excel.SortBy:enum'
+    name: SortBy
+    fullName: Excel.SortBy
+  - uid: 'excel!Excel.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<Excel.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:interface'
+        name: PivotItem
+        fullName: Excel.PivotItem
+      - name: |2-
+           | string>
+                  
+        fullName: |2-
+           | string>
+                  
+  - uid: 'excel!Excel.Subtotals:interface'
+    name: Subtotals
+    fullName: Excel.Subtotals

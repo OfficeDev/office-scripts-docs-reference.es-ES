@@ -1,0 +1,166 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentCollection:interface'
+    summary: Representa una colección de objetos Comment que forman parte del libro.
+    name: Excel.CommentCollection
+    fullName: Excel.CommentCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CommentCollection#add:member(1)'
+      - 'excel!Excel.CommentCollection#getItem:member(1)'
+      - 'excel!Excel.CommentCollection#getItemByCell:member(1)'
+      - 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
+      - 'excel!Excel.CommentCollection#load:member(1)'
+  - uid: 'excel!Excel.CommentCollection#add:member(1)'
+    summary: 'Crea un nuevo comentario con el contenido específico de la celda. `InvalidArgument`Si el rango proporcionado tiene más de una celda, se produce un error.'
+    name: 'add(cellAddress, content, contentType)'
+    fullName: 'add(cellAddress, content, contentType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    cellAddress: Range | string,
+                    content: CommentRichContent | string,
+                    contentType?: ContentType
+                ): Comment;
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Comments");
+
+              // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+              sheet.comments.add("A2", "TODO: add data.");
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: cellAddress
+          description: 'Celda a la que se agrega el comentario. Puede ser un objeto de rango o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. `InvalidArgument`Si el rango proporcionado tiene más de una celda, se produce un error.'
+          type:
+            - 'excel!Excel.CommentCollection#add~0:complex'
+        - id: content
+          description: 'Contenido del comentario. Puede ser una cadena o un objeto CommentRichContent. Las cadenas se usan para texto sin formato. Los objetos CommentRichContent permiten otras características de comentarios, como menciones.'
+          type:
+            - 'excel!Excel.CommentCollection#add~1:complex'
+        - id: contentType
+          description: Opcional. Tipo de contenido incluido en el comentario. El valor predeterminado es enum.`ContentType.Plain`<!-- -->.
+          type:
+            - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
+    summary: Obtiene un comentario de la colección en función de su identificador.
+    name: getItem(commentId)
+    fullName: getItem(commentId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(commentId: string): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: commentId
+          description: El identificador del comentario.
+          type:
+            - string
+  - uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
+    summary: Obtiene el comentario de la celda especificada.
+    name: getItemByCell(cellAddress)
+    fullName: getItemByCell(cellAddress)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemByCell(cellAddress: Range | string): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: 'La celda en la que se encuentra el comentario. Puede ser un objeto de rango o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. `InvalidArgument`Si el rango proporcionado tiene más de una celda, se produce un error.'
+          type:
+            - 'excel!Excel.CommentCollection#getItemByCell~0:complex'
+  - uid: 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
+    summary: Obtiene el comentario al que está conectada la respuesta determinada.
+    name: getItemByReplyId(replyId)
+    fullName: getItemByReplyId(replyId)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemByReplyId(replyId: string): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: replyId
+          description: Identificador de la respuesta de comentario.
+          type:
+            - string
+  - uid: 'excel!Excel.CommentCollection#load:member(1)'
+    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Comment:interface'
+    name: Comment
+    fullName: Excel.Comment
+  - uid: 'excel!Excel.CommentCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.CommentCollection#add~1:complex'
+    name: CommentRichContent | string
+    fullName: Excel.CommentRichContent | string
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentRichContent:interface'
+        name: CommentRichContent
+        fullName: Excel.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ContentType:enum'
+    name: ContentType
+    fullName: Excel.ContentType
+  - uid: 'excel!Excel.CommentCollection#getItemByCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
