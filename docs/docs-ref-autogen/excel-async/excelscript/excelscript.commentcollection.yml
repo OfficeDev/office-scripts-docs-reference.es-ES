@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CommentCollection#add:member(1)'
+      - 'excel!Excel.CommentCollection#getCount:member(1)'
       - 'excel!Excel.CommentCollection#getItem:member(1)'
+      - 'excel!Excel.CommentCollection#getItemAt:member(1)'
       - 'excel!Excel.CommentCollection#getItemByCell:member(1)'
       - 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
       - 'excel!Excel.CommentCollection#load:member(1)'
@@ -58,6 +60,19 @@ items:
           description: Opcional. Tipo de contenido incluido en el comentario. El valor predeterminado es enum.`ContentType.Plain`<!-- -->.
           type:
             - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentCollection#getCount:member(1)'
+    summary: Obtiene el número de comentarios de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     summary: Obtiene un comentario de la colección en función de su identificador.
     name: getItem(commentId)
@@ -76,6 +91,24 @@ items:
           description: El identificador del comentario.
           type:
             - string
+  - uid: 'excel!Excel.CommentCollection#getItemAt:member(1)'
+    summary: Obtiene un comentario de la colección en función de su posición.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice del objeto que se va a recuperar. Indizado con cero.
+          type:
+            - number
   - uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
     summary: Obtiene el comentario de la celda especificada.
     name: getItemByCell(cellAddress)

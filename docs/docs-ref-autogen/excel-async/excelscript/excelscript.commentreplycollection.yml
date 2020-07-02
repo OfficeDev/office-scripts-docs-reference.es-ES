@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CommentReplyCollection#add:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getCount:member(1)'
       - 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
       - 'excel!Excel.CommentReplyCollection#load:member(1)'
   - uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
     summary: Crea una respuesta comentario por comentario.
@@ -51,6 +53,19 @@ items:
           description: Opcional. Tipo de contenido incluido en el comentario. El valor predeterminado es enum.`ContentType.Plain`<!-- -->.
           type:
             - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
+    summary: Obtiene el número de respuestas de comentarios de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
     summary: Devuelve una respuesta de comentario identificada por su Id.
     name: getItem(commentReplyId)
@@ -69,6 +84,24 @@ items:
           description: Identificador de la respuesta de comentario.
           type:
             - string
+  - uid: 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
+    summary: Obtiene una respuesta comentario en función de su posición en la colección.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): CommentReply;'
+      return:
+        type:
+          - 'excel!Excel.CommentReply:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice de la respuesta de comentario que se va a recuperar. La colección usa indización basada en cero.
+          type:
+            - number
   - uid: 'excel!Excel.CommentReplyCollection#load:member(1)'
     summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
     name: load(propertyNames)

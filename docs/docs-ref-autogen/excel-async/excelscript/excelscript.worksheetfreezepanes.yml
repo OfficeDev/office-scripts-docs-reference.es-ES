@@ -11,6 +11,7 @@ items:
       - 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#load:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
@@ -110,6 +111,19 @@ items:
           description: Número opcional de filas que se van a inmovilizar o cero para liberar todas las filas
           type:
             - number
+  - uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
+    summary: Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado se corresponde con las celdas que están inmovilizadas en los paneles superior e izquierdo.
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
     summary: 'Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado se corresponde con las celdas que están inmovilizadas en los paneles superior e izquierdo. Si no hay ningún panel inmovilizado, devuelve un objeto null.'
     name: getLocationOrNullObject()

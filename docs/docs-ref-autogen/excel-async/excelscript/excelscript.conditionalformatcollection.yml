@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.ConditionalFormatCollection#add:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalFormatCollection#load:member(1)'
   - uid: 'excel!Excel.ConditionalFormatCollection#add:member(1)'
     summary: Agrega un nuevo formato condicional a la colección en la primera o máxima prioridad.
@@ -79,6 +81,19 @@ items:
               $(".conditional-formats").hide();
           }
           ```
+  - uid: 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
+    summary: Devuelve el número de formatos condicionales del libro.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
     summary: Devuelve un formato condicional para el identificador especificado.
     name: getItem(id)
@@ -97,6 +112,24 @@ items:
           description: Identificador del formato condicional.
           type:
             - string
+  - uid: 'excel!Excel.ConditionalFormatCollection#getItemAt:member(1)'
+    summary: Devuelve un formato condicional en el índice especificado.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Índice de los formatos condicionales que se van a recuperar.
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
     summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
     name: load(propertyNames)

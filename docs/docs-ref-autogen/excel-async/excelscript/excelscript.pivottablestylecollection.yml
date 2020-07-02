@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PivotTableStyleCollection#add:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#load:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 'Opcional, el valor predeterminado es false. Si es true, se agregarán números al nombre para que sea único, si es necesario.'
           type:
             - boolean
+  - uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
+    summary: Obtiene el número de estilos de tabla dinámica en la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
     summary: Obtiene el PivotTableStyle predeterminado para el ámbito del objeto principal.
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.PivotTableStyle:interface'
         description: ''
+  - uid: 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
+    summary: Obtiene un PivotTableStyle por nombre.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre de la PivotTableStyle que se va a recuperar.
+          type:
+            - string
   - uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un PivotTableStyle por nombre. Si no existe PivotTableStyle, devolverá un objeto nulo.'
     name: getItemOrNullObject(name)

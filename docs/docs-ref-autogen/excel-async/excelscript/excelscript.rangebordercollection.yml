@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeBorderCollection#count:member'
       - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeBorderCollection#load:member(1)'
       - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+  - uid: 'excel!Excel.RangeBorderCollection#count:member'
+    summary: Número de objetos de borde de la colección.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
     summary: Obtiene un objeto de borde mediante su nombre.
     name: getItem(index)
@@ -30,6 +44,24 @@ items:
           description: Valor de índice del objeto de borde que va a recuperarse. Consulte Excel. BorderIndex para obtener información detallada.
           type:
             - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+    summary: Obtiene un objeto de borde mediante su índice.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice del objeto que se va a recuperar. Indizado con cero.
+          type:
+            - number
   - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
     summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
     name: load(propertyNames)

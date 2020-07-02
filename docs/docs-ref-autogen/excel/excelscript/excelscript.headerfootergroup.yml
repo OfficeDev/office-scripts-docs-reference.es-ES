@@ -71,7 +71,7 @@ items:
           - 'ExcelScript!ExcelScript.HeaderFooter:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: 'Qué encabezados y pies de página están configurados. Para obtener más información, vea Excel.HeaderFooterState.'
+    summary: 'El estado por el que se establecen los encabezados y pies de página. Para obtener más información, vea Excel.HeaderFooterState.'
     name: getState()
     fullName: getState()
     langs:
@@ -110,7 +110,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: 'Qué encabezados y pies de página están configurados. Para obtener más información, vea Excel.HeaderFooterState.'
+    summary: 'El estado por el que se establecen los encabezados y pies de página. Para obtener más información, vea Excel.HeaderFooterState.'
     name: setState(state)
     fullName: setState(state)
     langs:

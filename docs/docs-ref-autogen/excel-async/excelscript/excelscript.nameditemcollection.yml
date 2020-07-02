@@ -11,6 +11,8 @@ items:
     children:
       - 'excel!Excel.NamedItemCollection#add:member(1)'
       - 'excel!Excel.NamedItemCollection#addFormulaLocal:member(1)'
+      - 'excel!Excel.NamedItemCollection#getCount:member(1)'
+      - 'excel!Excel.NamedItemCollection#getItem:member(1)'
       - 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.NamedItemCollection#load:member(1)'
   - uid: 'excel!Excel.NamedItemCollection#add:member(1)'
@@ -88,6 +90,37 @@ items:
             - string
         - id: comment
           description: Opcional. Comentario asociado al elemento con nombre.
+          type:
+            - string
+  - uid: 'excel!Excel.NamedItemCollection#getCount:member(1)'
+    summary: Obtiene el número de elementos con nombre de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
+    summary: Obtiene un objeto NamedItem mediante su nombre.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): NamedItem;'
+      return:
+        type:
+          - 'excel!Excel.NamedItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre de Nameditem.
           type:
             - string
   - uid: 'excel!Excel.NamedItemCollection#getItemOrNullObject:member(1)'

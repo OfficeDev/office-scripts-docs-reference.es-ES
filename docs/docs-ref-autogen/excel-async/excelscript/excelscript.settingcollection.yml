@@ -10,6 +10,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.SettingCollection#add:member(1)'
+      - 'excel!Excel.SettingCollection#getCount:member(1)'
+      - 'excel!Excel.SettingCollection#getItem:member(1)'
       - 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SettingCollection#load:member(1)'
   - uid: 'excel!Excel.SettingCollection#add:member(1)'
@@ -38,6 +40,37 @@ items:
           description: Valor de la nueva configuración.
           type:
             - 'excel!Excel.SettingCollection#add~0:complex'
+  - uid: 'excel!Excel.SettingCollection#getCount:member(1)'
+    summary: Obtiene el número de configuraciones de una colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SettingCollection#getItem:member(1)'
+    summary: Obtiene una entrada de configuración mediante la clave.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Setting;'
+      return:
+        type:
+          - 'excel!Excel.Setting:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Clave de la configuración.
+          type:
+            - string
   - uid: 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene una entrada de configuración mediante la clave. Si el valor no existe, devolverá un objeto NULL.'
     name: getItemOrNullObject(key)

@@ -17,6 +17,8 @@ items:
       - 'excel!Excel.Application#decimalSeparator:member'
       - 'excel!Excel.Application#iterativeCalculation:member'
       - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
       - 'excel!Excel.Application#thousandsSeparator:member'
       - 'excel!Excel.Application#useSystemSeparators:member'
   - uid: 'excel!Excel.Application#calculate:member(1)'
@@ -127,6 +129,35 @@ items:
           description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+    summary: 'Suspends calculation until the next "context.sync()" is called. Once set, it is the developer''s responsibility to re-calc the workbook, to ensure that any dependencies are propagated.'
+    name: suspendApiCalculationUntilNextSync()
+    fullName: suspendApiCalculationUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendApiCalculationUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+    summary: |-
+      Suspende la actualización de la pantalla hasta que `context.sync()` se llama al siguiente.
+
+      **Nota**: no llamar `suspendScreenUpdatingUntilNextSync` repetidamente (como en un bucle). Las llamadas repetidas harán que la ventana de Excel parpadee.
+    name: suspendScreenUpdatingUntilNextSync()
+    fullName: suspendScreenUpdatingUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendScreenUpdatingUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'excel!Excel.Application#thousandsSeparator:member'
     summary: Obtiene la cadena que se usa para separar los grupos de dígitos a la izquierda de la coma decimal para los valores numéricos. Esto se basa en la configuración local de Excel.
     name: thousandsSeparator

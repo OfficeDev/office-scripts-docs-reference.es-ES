@@ -24,9 +24,13 @@ items:
       - 'excel!Excel.RangeAreas#format:member'
       - 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
       - 'excel!Excel.RangeAreas#getEntireRow:member(1)'
+      - 'excel!Excel.RangeAreas#getIntersection:member(1)'
       - 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#getOffsetRangeAreas:member(1)'
+      - 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
       - 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
+      - 'excel!Excel.RangeAreas#getTables:member(1)'
+      - 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
       - 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
       - 'excel!Excel.RangeAreas#isEntireColumn:member'
       - 'excel!Excel.RangeAreas#isEntireRow:member'
@@ -280,6 +284,24 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.RangeAreas#getIntersection:member(1)'
+    summary: 'Devuelve el objeto RangeAreas que representa la intersección de los rangos o RangeAreas especificados. Si no se encuentra ninguna intersección, se producirá un error ItemNotFound.'
+    name: getIntersection(anotherRange)
+    fullName: getIntersection(anotherRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: anotherRange
+          description: 'El intervalo, el objeto RangeAreas o la dirección de intervalo que se utilizará para determinar la intersección.'
+          type:
+            - 'excel!Excel.RangeAreas#getIntersection~0:complex'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject:member(1)'
     summary: 'Devuelve el objeto RangeAreas que representa la intersección de los rangos o RangeAreas especificados. Si no se encuentra ninguna intersección, se devuelve un objeto null.'
     name: getIntersectionOrNullObject(anotherRange)
@@ -327,6 +349,32 @@ items:
           description: 'Número de columnas (positivo, negativo o 0) que se va a desplazar la RangeAreas. Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.'
           type:
             - number
+  - uid: 'excel!Excel.RangeAreas#getSpecialCells:member(1)'
+    summary: Devuelve un objeto RangeAreas que representa todas las celdas que coinciden con el tipo y valor especificados. Si no se encuentra ninguna celda especial que coincida con los criterios se produce un error.
+    name: 'getSpecialCells(cellType, cellValueType)'
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        getSpecialCells(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: cellType
+          description: Tipo de las celdas que se van a incluir.
+          type:
+            - 'excel!Excel.SpecialCellType:enum'
+        - id: cellValueType
+          description: 'Si el argumento cellType es constante o fórmulas, este argumento se usa para determinar los tipos de celdas que se van a incluir en el resultado. Estos valores se pueden combinar para que devuelvan más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.'
+          type:
+            - 'excel!Excel.SpecialCellValueType:enum'
   - uid: 'excel!Excel.RangeAreas#getSpecialCellsOrNullObject:member(1)'
     summary: Devuelve un objeto RangeAreas que representa todas las celdas que coinciden con el tipo y valor especificados. Devuelve un objeto null si no se encuentra ninguna celda especial que coincida con los criterios.
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
@@ -353,6 +401,42 @@ items:
           description: 'Si el argumento cellType es constante o fórmulas, este argumento se usa para determinar los tipos de celdas que se van a incluir en el resultado. Estos valores se pueden combinar para que devuelvan más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.'
           type:
             - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.RangeAreas#getTables:member(1)'
+    summary: Devuelve una colección con ámbito de tablas que se superpone con cualquier rango en este objeto RangeAreas.
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableScopedCollection:interface'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 'Si es true, devuelve solo las tablas que están completamente contenidas dentro de los límites del rango. El valor predeterminado es false.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.RangeAreas#getUsedRangeAreas:member(1)'
+    summary: 'Devuelve el RangeAreas usado que incluye todas las áreas usadas de intervalos rectangulares individuales en el objeto RangeAreas. Si no hay ninguna celda usada dentro de RangeAreas, se producirá el error ItemNotFound.'
+    name: getUsedRangeAreas(valuesOnly)
+    fullName: getUsedRangeAreas(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: Si sólo se deben tener en cuenta las celdas con valores como celdas usadas. El valor predeterminado es false.
+          type:
+            - boolean
   - uid: 'excel!Excel.RangeAreas#getUsedRangeAreasOrNullObject:member(1)'
     summary: 'Devuelve el RangeAreas usado que incluye todas las áreas usadas de intervalos rectangulares individuales en el objeto RangeAreas. Si no hay ninguna celda usada en la RangeAreas, se devolverá un objeto null.'
     name: getUsedRangeAreasOrNullObject(valuesOnly)
@@ -486,6 +570,20 @@ references:
   - uid: 'excel!Excel.RangeAreas:interface'
     name: RangeAreas
     fullName: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreas#getIntersection~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:interface'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'excel!Excel.RangeAreas#getIntersectionOrNullObject~0:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -510,6 +608,9 @@ references:
   - uid: 'excel!Excel.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: Excel.SpecialCellValueType
+  - uid: 'excel!Excel.TableScopedCollection:interface'
+    name: TableScopedCollection
+    fullName: Excel.TableScopedCollection
   - uid: 'excel!Excel.Worksheet:interface'
     name: Worksheet
     fullName: Excel.Worksheet

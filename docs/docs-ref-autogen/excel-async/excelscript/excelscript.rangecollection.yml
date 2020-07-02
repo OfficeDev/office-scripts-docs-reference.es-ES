@@ -8,7 +8,40 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.RangeCollection#getCount:member(1)'
+      - 'excel!Excel.RangeCollection#getItemAt:member(1)'
       - 'excel!Excel.RangeCollection#load:member(1)'
+  - uid: 'excel!Excel.RangeCollection#getCount:member(1)'
+    summary: Devuelve el número de intervalos del RangeCollection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.RangeCollection#getItemAt:member(1)'
+    summary: Devuelve el objeto de intervalo según su posición en el RangeCollection.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice del objeto Range que se va a recuperar. Indizado con cero.
+          type:
+            - number
   - uid: 'excel!Excel.RangeCollection#load:member(1)'
     summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
     name: load(propertyNames)
@@ -27,3 +60,7 @@ items:
           description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
           type:
             - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

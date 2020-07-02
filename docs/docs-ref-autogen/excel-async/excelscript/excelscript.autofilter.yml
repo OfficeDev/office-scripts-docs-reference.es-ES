@@ -13,6 +13,7 @@ items:
       - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
       - 'excel!Excel.AutoFilter#criteria:member'
       - 'excel!Excel.AutoFilter#enabled:member'
+      - 'excel!Excel.AutoFilter#getRange:member(1)'
       - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
       - 'excel!Excel.AutoFilter#isDataFiltered:member'
       - 'excel!Excel.AutoFilter#load:member(1)'
@@ -100,6 +101,19 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.AutoFilter#getRange:member(1)'
+    summary: Devuelve un objeto Range que representa el intervalo al que se aplica el objeto AutoFilter.
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
     summary: 'Devuelve un objeto Range que representa el intervalo al que se aplica el objeto AutoFilter. Si no hay ningún objeto Range asociado al Autofiltro, este método devuelve un objeto null.'
     name: getRangeOrNullObject()

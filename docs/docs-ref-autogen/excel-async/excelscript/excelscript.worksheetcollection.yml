@@ -11,7 +11,9 @@ items:
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
       - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
       - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
       - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.WorksheetCollection#getLast:member(1)'
       - 'excel!Excel.WorksheetCollection#load:member(1)'
@@ -46,6 +48,24 @@ items:
         type:
           - 'excel!Excel.Worksheet:interface'
         description: ''
+  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
+    summary: Obtiene el número de hojas de cálculo de la colección.
+    name: getCount(visibleOnly)
+    fullName: getCount(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(visibleOnly?: boolean): number;'
+      return:
+        type:
+          - number
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Opcional. Si es true, solo tiene en cuenta las hojas de cálculo visibles y se omite sobre las ocultas.'
+          type:
+            - boolean
   - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     summary: Obtiene la primera hoja de cálculo de la colección.
     name: getFirst(visibleOnly)
@@ -94,6 +114,24 @@ items:
           description: 'Opcional. Si es true, solo tiene en cuenta las hojas de cálculo visibles y se omite sobre las ocultas.'
           type:
             - boolean
+  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
+    summary: Obtiene un objeto de hoja de cálculo mediante su nombre o identificador.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Nombre o identificador de la hoja de cálculo.
+          type:
+            - string
   - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un objeto de hoja de cálculo mediante su nombre o identificador. Si la hoja de cálculo no existe, devolverá un objeto NULL.'
     name: getItemOrNullObject(key)

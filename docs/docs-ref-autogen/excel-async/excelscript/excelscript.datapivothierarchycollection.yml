@@ -10,6 +10,8 @@ items:
     package: excel!
     children:
       - 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
       - 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
       - 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
@@ -31,6 +33,37 @@ items:
           description: ''
           type:
             - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
+    summary: Obtiene el número de jerarquías dinámicas en la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
+    summary: "Obtiene una DataPivotHierarchy por su nombre o identificador.\t"
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre de la DataPivotHierarchy que se va a recuperar.
+          type:
+            - string
   - uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene una DataPivotHierarchy por su nombre. Si no existe DataPivotHierarchy, devolverá un objeto NULL.'
     name: getItemOrNullObject(name)

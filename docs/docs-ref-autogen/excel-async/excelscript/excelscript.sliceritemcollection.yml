@@ -9,8 +9,60 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerItemCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+    summary: Indica el número de elementos de segmentación en la segmentación.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+    summary: Obtiene una objeto de elemento de segmentación con su nombre o clave.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: La clave o el nombre del elemento de rebanador.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
+    summary: Obtiene un elemento de segmentación basándose en su posición en la colección.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice del objeto que se va a recuperar. Indizado con cero.
+          type:
+            - number
   - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un elemento de segmentación mediante su nombre o la clave. Si el elemento de segmentación no existe, devolverá un objeto null.'
     name: getItemOrNullObject(key)

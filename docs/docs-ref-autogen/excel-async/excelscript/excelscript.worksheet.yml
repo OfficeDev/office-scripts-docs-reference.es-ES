@@ -17,14 +17,18 @@ items:
       - 'excel!Excel.Worksheet#copy:member(1)'
       - 'excel!Excel.Worksheet#delete:member(1)'
       - 'excel!Excel.Worksheet#enableCalculation:member'
+      - 'excel!Excel.Worksheet#findAll:member(1)'
       - 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#freezePanes:member'
       - 'excel!Excel.Worksheet#getCell:member(1)'
+      - 'excel!Excel.Worksheet#getNext:member(1)'
       - 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#getPrevious:member(1)'
       - 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#getRange:member(1)'
       - 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
       - 'excel!Excel.Worksheet#getRanges:member(1)'
+      - 'excel!Excel.Worksheet#getUsedRange:member(1)'
       - 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
       - 'excel!Excel.Worksheet#horizontalPageBreaks:member'
       - 'excel!Excel.Worksheet#id:member'
@@ -198,6 +202,28 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Worksheet#findAll:member(1)'
+    summary: 'Busca todas las repeticiones de la cadena especificada, según los criterios especificados y las devuelve como un objeto RangeAreas, que incluye uno o más intervalos rectangulares.'
+    name: 'findAll(text, criteria)'
+    fullName: 'findAll(text, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
+      parameters:
+        - id: text
+          description: Cadena que se va a buscar.
+          type:
+            - string
+        - id: criteria
+          description: 'Criterios de búsqueda adicionales, incluidos si la búsqueda debe coincidir con toda la celda o con distinción de mayúsculas y minúsculas.'
+          type:
+            - 'excel!Excel.WorksheetSearchCriteria:interface'
   - uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
     summary: 'Busca todas las repeticiones de la cadena especificada, según los criterios especificados y las devuelve como un objeto RangeAreas, que incluye uno o más intervalos rectangulares.'
     name: 'findAllOrNullObject(text, criteria)'
@@ -279,6 +305,24 @@ items:
           description: Número de columna de la celda que se va a recuperar. Indexado con cero.
           type:
             - number
+  - uid: 'excel!Excel.Worksheet#getNext:member(1)'
+    summary: 'Obtiene la hoja de cálculo que sigue a este. Si no hay ninguna hoja de cálculo después de esta, este método producirá un error.'
+    name: getNext(visibleOnly)
+    fullName: getNext(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Opcional. Si es true, solo tiene en cuenta las hojas de cálculo visibles y se omite sobre las ocultas.'
+          type:
+            - boolean
   - uid: 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
     summary: 'Obtiene la hoja de cálculo que sigue a este. Si no hay ninguna hoja de cálculo después de ésta, este método devolverá un objeto null.'
     name: getNextOrNullObject(visibleOnly)
@@ -288,6 +332,24 @@ items:
     type: method
     syntax:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: 'Opcional. Si es true, solo tiene en cuenta las hojas de cálculo visibles y se omite sobre las ocultas.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
+    summary: 'Obtiene la hoja de cálculo que precede a esta. Si no hay ninguna hoja de cálculo anterior, este método producirá un error.'
+    name: getPrevious(visibleOnly)
+    fullName: getPrevious(visibleOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
       return:
         type:
           - 'excel!Excel.Worksheet:interface'
@@ -401,6 +463,24 @@ items:
           description: 'Opcional. Una cadena que contiene las direcciones separadas por comas o los nombres de los intervalos individuales. Por ejemplo, "a1: B2, A5: B5". Si no se especifica, se devuelve un objeto RangeArea para toda la hoja de cálculo.'
           type:
             - string
+  - uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
+    summary: 'El rango usado es el rango más pequeño que abarque todas las celdas que tengan asignado un valor o un formato. Si toda la hoja de cálculo está en blanco, esta función devolverá la celda superior izquierda (es decir, *no* generará un error).'
+    name: getUsedRange(valuesOnly)
+    fullName: getUsedRange(valuesOnly)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: 'Opcional. Si es true, solo tiene en cuenta las celdas con valores como celdas usadas (ignora el formato).'
+          type:
+            - boolean
   - uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
     summary: 'The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.'
     name: getUsedRangeOrNullObject(valuesOnly)
