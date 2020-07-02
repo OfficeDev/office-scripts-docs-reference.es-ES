@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.TableScopedCollection#getCount:member(1)'
       - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
       - 'excel!Excel.TableScopedCollection#getItem:member(1)'
       - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getCount:member(1)'
+    summary: Obtiene el número de tablas de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
     summary: 'Obtiene la primera tabla de la colección. Las tablas de la colección están ordenadas de arriba a abajo y de izquierda a derecha, de forma que la tabla superior izquierda es la primera tabla de la colección.'
     name: getFirst()

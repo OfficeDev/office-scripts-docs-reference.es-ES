@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
@@ -27,6 +29,18 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
+    summary: Número de objetos de borde de la colección.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
     summary: Obtiene un objeto de borde mediante su nombre.
     name: getItem(index)
@@ -45,6 +59,24 @@ items:
           description: Valor de índice del objeto de borde que va a recuperarse. Consulte Excel. ConditionalRangeBorderIndex para obtener información detallada.
           type:
             - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
+    summary: Obtiene un objeto de borde mediante su índice.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice del objeto que se va a recuperar. Indizado con cero.
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     summary: Obtiene el borde izquierdo.
     name: left

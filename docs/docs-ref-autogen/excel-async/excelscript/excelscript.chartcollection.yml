@@ -10,6 +10,10 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getCount:member(1)'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.ChartCollection#load:member(1)'
   - uid: 'excel!Excel.ChartCollection#add:member(1)'
@@ -43,6 +47,67 @@ items:
           description: Opcional. Especifica la manera en que las columnas o las filas se usan como series de datos en el gráfico. Consulte Excel. ChartSeriesBy para obtener información detallada.
           type:
             - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#count:member'
+    summary: Devuelve el número de gráficos de la hoja de cálculo.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartCollection#getCount:member(1)'
+    summary: Devuelve el número de gráficos de la hoja de cálculo.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
+    summary: 'Obtiene un gráfico mediante su nombre. Si hay varias tablas con el mismo nombre, se devolverá la primera.'
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre del gráfico que se va a recuperar.
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
+    summary: Obtiene un gráfico en función de su posición en la colección.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valor de índice del objeto que se va a recuperar. Indizado con cero.
+          type:
+            - number
   - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un gráfico mediante su nombre. Si hay varias tablas con el mismo nombre, se devolverá la primera. Si el gráfico no existe, se devolverá un objeto null.'
     name: getItemOrNullObject(name)

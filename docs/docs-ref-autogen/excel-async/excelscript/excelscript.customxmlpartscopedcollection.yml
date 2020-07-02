@@ -9,9 +9,43 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.CustomXmlPartScopedCollection#getCount:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#getItem:member(1)'
       - 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
       - 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
       - 'excel!Excel.CustomXmlPartScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getCount:member(1)'
+    summary: Obtiene el número de elementos CustomXML de esta colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getItem:member(1)'
+    summary: Obtiene un elemento XML personalizado a partir de su identificador.
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: IDENTIFICADOR del objeto que se va a recuperar.
+          type:
+            - string
   - uid: 'excel!Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un elemento XML personalizado a partir de su identificador. Si el objeto CustomXmlPart no existe, la propiedad isNull del objeto devuelto será true.'
     name: getItemOrNullObject(id)
@@ -63,6 +97,19 @@ items:
           description: IDENTIFICADOR del objeto que se va a recuperar.
           type:
             - string
+  - uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)'
+    summary: 'Si la colección contiene exactamente un elemento, este método lo devuelve. De lo contrario, este método genera un error.'
+    name: getOnlyItem()
+    fullName: getOnlyItem()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOnlyItem(): CustomXmlPart;'
+      return:
+        type:
+          - 'excel!Excel.CustomXmlPart:interface'
+        description: ''
   - uid: 'excel!Excel.CustomXmlPartScopedCollection#getOnlyItemOrNullObject:member(1)'
     summary: 'Si la colección contiene exactamente un elemento, este método lo devuelve. De lo contrario, este método devuelve NULL.'
     name: getOnlyItemOrNullObject()

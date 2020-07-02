@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.TimelineStyleCollection#add:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getCount:member(1)'
       - 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TimelineStyleCollection#getItem:member(1)'
       - 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TimelineStyleCollection#load:member(1)'
       - 'excel!Excel.TimelineStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 'Opcional, el valor predeterminado es false. Si es true, se agregarán números al nombre para que sea único, si es necesario.'
           type:
             - boolean
+  - uid: 'excel!Excel.TimelineStyleCollection#getCount:member(1)'
+    summary: Obtiene el número de estilos de escala de tiempo de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TimelineStyleCollection#getDefault:member(1)'
     summary: Obtiene el TimelineStyle predeterminado para el ámbito del objeto principal.
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.TimelineStyle:interface'
         description: ''
+  - uid: 'excel!Excel.TimelineStyleCollection#getItem:member(1)'
+    summary: Obtiene un TimelineStyle por nombre.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): TimelineStyle;'
+      return:
+        type:
+          - 'excel!Excel.TimelineStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre de la TimelineStyle que se va a recuperar.
+          type:
+            - string
   - uid: 'excel!Excel.TimelineStyleCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un TimelineStyle por nombre. Si no existe TimelineStyle, devolverá un objeto nulo.'
     name: getItemOrNullObject(name)

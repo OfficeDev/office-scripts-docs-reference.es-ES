@@ -9,8 +9,41 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.PivotItemCollection#getCount:member(1)'
+      - 'excel!Excel.PivotItemCollection#getItem:member(1)'
       - 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotItemCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotItemCollection#getCount:member(1)'
+    summary: Obtiene el número de PivotItems de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotItemCollection#getItem:member(1)'
+    summary: Obtiene un PivotItem por su nombre o identificador.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre del PivotItem que se va a recuperar.
+          type:
+            - string
   - uid: 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un PivotItem por nombre. Si el PivotItem no existe, se devolverá un objeto null.'
     name: getItemOrNullObject(name)

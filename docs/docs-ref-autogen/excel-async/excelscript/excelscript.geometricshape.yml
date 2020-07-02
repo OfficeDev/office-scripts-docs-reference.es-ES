@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.GeometricShape#id:member'
       - 'excel!Excel.GeometricShape#load:member(1)'
+      - 'excel!Excel.GeometricShape#shape:member'
   - uid: 'excel!Excel.GeometricShape#id:member'
     summary: Devuelve el identificador de la forma.
     name: id
@@ -41,3 +42,19 @@ items:
           description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.GeometricShape#shape:member'
+    summary: Devuelve el objeto de forma de la forma geométrica.
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
+references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape

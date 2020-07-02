@@ -9,8 +9,41 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.PivotFieldCollection#getCount:member(1)'
+      - 'excel!Excel.PivotFieldCollection#getItem:member(1)'
       - 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotFieldCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotFieldCollection#getCount:member(1)'
+    summary: Obtiene el número de campos dinámicos de la colección.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotFieldCollection#getItem:member(1)'
+    summary: Obtiene un campo dinámico por su nombre o identificador.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotField;'
+      return:
+        type:
+          - 'excel!Excel.PivotField:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nombre del campo dinámico que se va a recuperar.
+          type:
+            - string
   - uid: 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'
     summary: 'Obtiene un PivotField por nombre. Si el campo dinámico no existe, se devolverá un objeto null.'
     name: getItemOrNullObject(name)

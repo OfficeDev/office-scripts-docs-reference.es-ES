@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Image#format:member'
       - 'excel!Excel.Image#id:member'
       - 'excel!Excel.Image#load:member(1)'
+      - 'excel!Excel.Image#shape:member'
   - uid: 'excel!Excel.Image#format:member'
     summary: Devuelve el formato de la imagen.
     name: format
@@ -70,7 +71,22 @@ items:
           description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Image#shape:member'
+    summary: Devuelve el objeto de forma asociado con la imagen.
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
 references:
   - uid: 'excel!Excel.PictureFormat:enum'
     name: PictureFormat
     fullName: Excel.PictureFormat
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape

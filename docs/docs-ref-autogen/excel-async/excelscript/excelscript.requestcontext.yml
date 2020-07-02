@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RequestContext:interface'
+    summary: El objeto RequestContext facilita las solicitudes al libro de Excel. El script y el libro de Excel se ejecutan en procesos independientes. El contexto de la solicitud se usa para sincronizar datos y acciones entre el script y el libro.
+    name: Excel.RequestContext
+    fullName: Excel.RequestContext
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RequestContext#sync:member(1)'
+      - 'excel!Excel.RequestContext#workbook:member'
+  - uid: 'excel!Excel.RequestContext#sync:member(1)'
+    name: sync()
+    fullName: sync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sync(): Promise<void>;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext#sync~0:complex'
+        description: ''
+  - uid: 'excel!Excel.RequestContext#workbook:member'
+    name: workbook
+    fullName: workbook
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly workbook: Workbook;'
+      return:
+        type:
+          - 'excel!Excel.Workbook:interface'
+references:
+  - uid: 'excel!Excel.RequestContext#sync~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>
+  - uid: 'excel!Excel.Workbook:interface'
+    name: Workbook
+    fullName: Excel.Workbook

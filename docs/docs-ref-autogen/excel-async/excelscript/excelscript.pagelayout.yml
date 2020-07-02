@@ -16,8 +16,11 @@ items:
       - 'excel!Excel.PageLayout#draftMode:member'
       - 'excel!Excel.PageLayout#firstPageNumber:member'
       - 'excel!Excel.PageLayout#footerMargin:member'
+      - 'excel!Excel.PageLayout#getPrintArea:member(1)'
       - 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
       - 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
+      - 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
       - 'excel!Excel.PageLayout#getPrintTitleRowsOrNullObject:member(1)'
       - 'excel!Excel.PageLayout#headerMargin:member'
       - 'excel!Excel.PageLayout#headersFooters:member'
@@ -147,6 +150,19 @@ items:
       return:
         type:
           - number
+  - uid: 'excel!Excel.PageLayout#getPrintArea:member(1)'
+    summary: 'Obtiene el objeto RangeAreas, que incluye uno o más intervalos rectangulares, que representa el área de impresión de la hoja de cálculo. Si no hay ningún área de impresión, se producirá un error ItemNotFound.'
+    name: getPrintArea()
+    fullName: getPrintArea()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintArea(): RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:interface'
+        description: ''
   - uid: 'excel!Excel.PageLayout#getPrintAreaOrNullObject:member(1)'
     summary: 'Obtiene el objeto RangeAreas, que incluye uno o más intervalos rectangulares, que representa el área de impresión de la hoja de cálculo. Si no hay ningún área de impresión, se devolverá un objeto null.'
     name: getPrintAreaOrNullObject()
@@ -160,6 +176,19 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleColumns:member(1)'
+    summary: Obtiene el objeto de intervalo que representa las columnas de título.
+    name: getPrintTitleColumns()
+    fullName: getPrintTitleColumns()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleColumns(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.PageLayout#getPrintTitleColumnsOrNullObject:member(1)'
     summary: 'Obtiene el objeto de intervalo que representa las columnas de título. Si no se establece, se devolverá un objeto null.'
     name: getPrintTitleColumnsOrNullObject()
@@ -169,6 +198,19 @@ items:
     type: method
     syntax:
       content: 'getPrintTitleColumnsOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PageLayout#getPrintTitleRows:member(1)'
+    summary: Obtiene el objeto de intervalo que representa las filas de título.
+    name: getPrintTitleRows()
+    fullName: getPrintTitleRows()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleRows(): Range;'
       return:
         type:
           - 'excel!Excel.Range:interface'
