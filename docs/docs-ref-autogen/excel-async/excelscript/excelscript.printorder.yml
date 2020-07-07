@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"downThenOver"'
+    numericValue: '"DownThenOver"'
   - uid: 'excel!Excel.PrintOrder.overThenDown:member'
     summary: Procesar las celdas en sentido horizontal hacia la derecha a otras páginas o campos de página antes de pasar las filas hacia abajo.
     name: overThenDown
@@ -25,4 +25,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overThenDown"'
+    numericValue: '"OverThenDown"'

@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"full"'
+    numericValue: '"Full"'
   - uid: 'excel!Excel.CalculationType.fullRebuild:member'
     summary: 'De este modo, se reconstruirá la cadena de dependencias completa, se marcarán todas las celdas como desfasadas y, a continuación, se actualizarán.'
     name: fullRebuild
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fullRebuild"'
+    numericValue: '"FullRebuild"'
   - uid: 'excel!Excel.CalculationType.recalculate:member'
     summary: 'Actualiza todas las celdas que Excel marca como desfasadas, es decir, los dependientes de datos vol�tiles o modificados, y las celdas marcadas mediante programaci�n como desfasadas.'
     name: recalculate
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"recalculate"'
+    numericValue: '"Recalculate"'

@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"calculating"'
+    numericValue: '"Calculating"'
   - uid: 'excel!Excel.CalculationState.done:member'
     summary: Cálculos completados.
     name: done
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"done"'
+    numericValue: '"Done"'
   - uid: 'excel!Excel.CalculationState.pending:member'
     summary: 'Se han realizado cambios que desencadenan la actualización de los cálculos, pero todavía no se ha efectuado la actualización.'
     name: pending
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"pending"'
+    numericValue: '"Pending"'

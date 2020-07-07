@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"clip"'
+    numericValue: '"Clip"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.ellipsis:member'
     summary: Oculta el texto que no cabe verticalmente en el marco de texto y agrega puntos suspensivos (...) al final del texto visible.
     name: ellipsis
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ellipsis"'
+    numericValue: '"Ellipsis"'
   - uid: 'excel!Excel.ShapeTextVerticalOverflow.overflow:member'
     summary: 'Permite que el texto desborde el marco de texto verticalmente (puede ser desde la parte superior, la parte inferior o ambas según la alineación del texto).'
     name: overflow
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overflow"'
+    numericValue: '"Overflow"'

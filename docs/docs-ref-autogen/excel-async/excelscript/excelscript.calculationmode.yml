@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automatic"'
+    numericValue: '"Automatic"'
   - uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
     summary: 'Calcula nuevos resultados de fórmula cada vez que se cambian los datos relevantes, a menos que la fórmula se encuentra en una tabla de datos.'
     name: automaticExceptTables
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"automaticExceptTables"'
+    numericValue: '"AutomaticExceptTables"'
   - uid: 'excel!Excel.CalculationMode.manual:member'
     summary: Los cálculos solo se producen cuando el usuario o el complemento los solicita.
     name: manual
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"manual"'
+    numericValue: '"Manual"'

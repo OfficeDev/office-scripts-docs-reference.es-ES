@@ -28,7 +28,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillCopy"'
+    numericValue: '"FillCopy"'
   - uid: 'excel!Excel.AutoFillType.fillDays:member'
     summary: 'Una versión de "FillSeries" para las fechas que basan el patrón en el día del mes o en el día de la semana, en función del contexto.'
     name: fillDays
@@ -36,7 +36,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDays"'
+    numericValue: '"FillDays"'
   - uid: 'excel!Excel.AutoFillType.fillDefault:member'
     summary: Rellena las celdas adyacentes con los datos de los datos seleccionados.
     name: fillDefault
@@ -44,7 +44,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillDefault"'
+    numericValue: '"FillDefault"'
   - uid: 'excel!Excel.AutoFillType.fillFormats:member'
     summary: Rellena las celdas adyacentes con las fórmulas seleccionadas.
     name: fillFormats
@@ -52,7 +52,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillFormats"'
+    numericValue: '"FillFormats"'
   - uid: 'excel!Excel.AutoFillType.fillMonths:member'
     summary: Una versión de "FillSeries" para las fechas que basan el patrón en el mes.
     name: fillMonths
@@ -60,7 +60,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillMonths"'
+    numericValue: '"FillMonths"'
   - uid: 'excel!Excel.AutoFillType.fillSeries:member'
     summary: Rellena las celdas adyacentes con datos que siguen un patrón en las celdas copiadas.
     name: fillSeries
@@ -68,7 +68,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillSeries"'
+    numericValue: '"FillSeries"'
   - uid: 'excel!Excel.AutoFillType.fillValues:member'
     summary: Rellena las celdas adyacentes con los valores seleccionados.
     name: fillValues
@@ -76,7 +76,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillValues"'
+    numericValue: '"FillValues"'
   - uid: 'excel!Excel.AutoFillType.fillWeekdays:member'
     summary: Una versión de "FillSeries" para las fechas que basa el patrón en el día de la semana y solo incluye días de la semana.
     name: fillWeekdays
@@ -84,7 +84,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillWeekdays"'
+    numericValue: '"FillWeekdays"'
   - uid: 'excel!Excel.AutoFillType.fillYears:member'
     summary: Una versión de "FillSeries" para las fechas que basan el patrón en el año.
     name: fillYears
@@ -92,7 +92,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fillYears"'
+    numericValue: '"FillYears"'
   - uid: 'excel!Excel.AutoFillType.flashFill:member'
     summary: Rellena las celdas adyacentes mediante el uso de la característica FlashFill de Excel.
     name: flashFill
@@ -100,7 +100,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"flashFill"'
+    numericValue: '"FlashFill"'
   - uid: 'excel!Excel.AutoFillType.growthTrend:member'
     summary: Una versión de "FillSeries" para números que rellenan los valores de las celdas adyacentes de acuerdo con un modelo de tendencia geométrica.
     name: growthTrend
@@ -108,7 +108,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"growthTrend"'
+    numericValue: '"GrowthTrend"'
   - uid: 'excel!Excel.AutoFillType.linearTrend:member'
     summary: Una versión de "FillSeries" para números que rellenan los valores de las celdas adyacentes de acuerdo con un modelo de tendencia lineal.
     name: linearTrend
@@ -116,4 +116,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"linearTrend"'
+    numericValue: '"LinearTrend"'
