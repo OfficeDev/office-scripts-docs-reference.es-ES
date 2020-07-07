@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.ClearApplyTo.contents:member'
     summary: Borra el contenido del rango.
     name: contents
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"contents"'
+    numericValue: '"Contents"'
   - uid: 'excel!Excel.ClearApplyTo.formats:member'
     summary: Borra todo el formato del rango.
     name: formats
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"formats"'
+    numericValue: '"Formats"'
   - uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
     summary: 'Borra todos los hipervínculos, pero deja intacto todo el contenido y el formato.'
     name: hyperlinks
@@ -43,7 +43,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hyperlinks"'
+    numericValue: '"Hyperlinks"'
   - uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
     summary: 'Quita los hipervínculos y el formato de la celda, pero deja el contenido, los formatos condicionales y la validación de datos intactos.'
     name: removeHyperlinks
@@ -51,4 +51,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"removeHyperlinks"'
+    numericValue: '"RemoveHyperlinks"'

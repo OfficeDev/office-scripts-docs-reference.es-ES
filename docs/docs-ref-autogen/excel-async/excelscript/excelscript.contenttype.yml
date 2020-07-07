@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"mention"'
+    numericValue: '"Mention"'
   - uid: 'excel!Excel.ContentType.plain:member'
     summary: Indica el tipo de formato sin formato del contenido del comentario.
     name: plain
@@ -25,4 +25,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"plain"'
+    numericValue: '"Plain"'
