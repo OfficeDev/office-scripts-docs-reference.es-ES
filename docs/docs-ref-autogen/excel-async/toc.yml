@@ -569,6 +569,8 @@ items:
           - *ref_47
           - *ref_48
           - *ref_49
+          - name: ClientResult
+            uid: 'excel!Excel.ClientResult:interface'
           - name: ColorScaleConditionalFormat
             uid: 'excel!Excel.ColorScaleConditionalFormat:interface'
           - name: Comentario
@@ -711,7 +713,7 @@ items:
           - *ref_81
           - name: IconSetConditionalFormat
             uid: 'excel!Excel.IconSetConditionalFormat:interface'
-          - name: Image (Imagen)
+          - name: Imagen
             uid: 'excel!Excel.Image:interface'
           - *ref_82
           - *ref_83
