@@ -21,7 +21,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"column"'
+    numericValue: '"Column"'
   - uid: 'excel!Excel.PivotAxis.data:member'
     summary: El eje de datos.
     name: data
@@ -29,7 +29,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"data"'
+    numericValue: '"Data"'
   - uid: 'excel!Excel.PivotAxis.filter:member'
     summary: El eje de filtro.
     name: filter
@@ -37,7 +37,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"filter"'
+    numericValue: '"Filter"'
   - uid: 'excel!Excel.PivotAxis.row:member'
     summary: El eje de filas.
     name: row
@@ -45,7 +45,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"row"'
+    numericValue: '"Row"'
   - uid: 'excel!Excel.PivotAxis.unknown:member'
     summary: El eje o la región son desconocidos o no son compatibles.
     name: unknown
@@ -53,4 +53,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'

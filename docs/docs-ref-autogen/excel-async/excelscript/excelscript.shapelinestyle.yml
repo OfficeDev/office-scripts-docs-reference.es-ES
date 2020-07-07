@@ -21,7 +21,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"single"'
+    numericValue: '"Single"'
   - uid: 'excel!Excel.ShapeLineStyle.thickBetweenThin:member'
     summary: Línea gruesa con una línea fina a cada lado.
     name: thickBetweenThin
@@ -29,7 +29,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thickBetweenThin"'
+    numericValue: '"ThickBetweenThin"'
   - uid: 'excel!Excel.ShapeLineStyle.thickThin:member'
     summary: 'Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por encima de la línea fina. Para líneas verticales, la línea gruesa está a la izquierda de la línea fina.'
     name: thickThin
@@ -37,7 +37,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thickThin"'
+    numericValue: '"ThickThin"'
   - uid: 'excel!Excel.ShapeLineStyle.thinThick:member'
     summary: 'Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por debajo de la línea fina. Para líneas verticales, la línea gruesa está a la derecha de la línea fina.'
     name: thinThick
@@ -45,7 +45,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thinThick"'
+    numericValue: '"ThinThick"'
   - uid: 'excel!Excel.ShapeLineStyle.thinThin:member'
     summary: Dos líneas finas.
     name: thinThin
@@ -53,4 +53,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thinThin"'
+    numericValue: '"ThinThin"'

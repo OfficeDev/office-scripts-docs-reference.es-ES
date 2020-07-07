@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"default"'
+    numericValue: '"Default"'
   - uid: 'excel!Excel.HeaderFooterState.firstAndDefault:member'
     summary: Hay un encabezado o pie de página en primera página independiente y un encabezado o pie de página general que se usa para todas las demás páginas.
     name: firstAndDefault
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"firstAndDefault"'
+    numericValue: '"FirstAndDefault"'
   - uid: 'excel!Excel.HeaderFooterState.firstOddAndEven:member'
     summary: 'Hay un encabezado o pie de página en primera página independiente y, a continuación, hay un encabezado o pie de página independiente para las páginas pares e impares.'
     name: firstOddAndEven
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"firstOddAndEven"'
+    numericValue: '"FirstOddAndEven"'
   - uid: 'excel!Excel.HeaderFooterState.oddAndEven:member'
     summary: Hay un encabezado o pie de página diferente para las páginas pares e impares.
     name: oddAndEven
@@ -43,4 +43,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"oddAndEven"'
+    numericValue: '"OddAndEven"'

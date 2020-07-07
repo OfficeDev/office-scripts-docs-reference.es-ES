@@ -91,7 +91,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'sortByLabels(sortBy: SortBy): void;'
+      content: 'sortByLabels(sortBy: SortBy | "Ascending" | "Descending"): void;'
       return:
         type:
           - void
@@ -100,7 +100,7 @@ items:
         - id: sortBy
           description: Especifica si la ordenación se realiza en orden ascendente o descendente.
           type:
-            - 'excel!Excel.SortBy:enum'
+            - 'excel!Excel.PivotField#sortByLabels~0:complex'
   - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
     summary: Ordena el campo de tabla dinámica por los valores especificados en un ámbito determinado. El ámbito define los valores específicos que se usarán para ordenar cuando hay varios valores de la misma DataPivotHierarchy.
     name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
@@ -111,7 +111,7 @@ items:
     syntax:
       content: |-
         sortByValues(
-                    sortBy: SortBy,
+                    sortBy: SortBy | "Ascending" | "Descending",
                     valuesHierarchy: DataPivotHierarchy,
                     pivotItemScope?: Array<PivotItem | string>
                 ): void;
@@ -123,7 +123,7 @@ items:
         - id: sortBy
           description: Especifica si la ordenación se realiza en orden ascendente o descendente.
           type:
-            - 'excel!Excel.SortBy:enum'
+            - 'excel!Excel.PivotField#sortByValues~0:complex'
         - id: valuesHierarchy
           description: Especifica la jerarquía de valores del eje de datos que se va a usar para la ordenación.
           type:
@@ -131,7 +131,7 @@ items:
         - id: pivotItemScope
           description: 'Elementos que se deben usar para el ámbito de la ordenación. Estos serán los elementos que componen la fila o la columna por la que desea ordenar. Si se usa una cadena en lugar de un PivotItem, la cadena representa el identificador de PivotItem. Si no hay ningún elemento que no sea una jerarquía de datos en el eje que desea ordenar, puede estar vacío.'
           type:
-            - 'excel!Excel.PivotField#sortByValues~0:complex'
+            - 'excel!Excel.PivotField#sortByValues~1:complex'
   - uid: 'excel!Excel.PivotField#subtotals:member'
     summary: "Subtotales del PivotField.\t"
     name: subtotals
@@ -148,13 +148,28 @@ references:
   - uid: 'excel!Excel.PivotItemCollection:interface'
     name: PivotItemCollection
     fullName: Excel.PivotItemCollection
-  - uid: 'excel!Excel.SortBy:enum'
-    name: SortBy
-    fullName: Excel.SortBy
+  - uid: 'excel!Excel.PivotField#sortByLabels~0:complex'
+    name: SortBy | "Ascending" | "Descending"
+    fullName: Excel.SortBy | "Ascending" | "Descending"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortBy:enum'
+        name: SortBy
+        fullName: Excel.SortBy
+      - name: ' | "Ascending" | "Descending"'
+        fullName: ' | "Ascending" | "Descending"'
+  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+    name: SortBy | "Ascending" | "Descending"
+    fullName: Excel.SortBy | "Ascending" | "Descending"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortBy:enum'
+        name: SortBy
+        fullName: Excel.SortBy
+      - name: ' | "Ascending" | "Descending"'
+        fullName: ' | "Ascending" | "Descending"'
   - uid: 'excel!Excel.DataPivotHierarchy:interface'
     name: DataPivotHierarchy
     fullName: Excel.DataPivotHierarchy
-  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+  - uid: 'excel!Excel.PivotField#sortByValues~1:complex'
     name: Array<PivotItem | string>
     fullName: Array<Excel.PivotItem | string>
     spec.typeScript:
