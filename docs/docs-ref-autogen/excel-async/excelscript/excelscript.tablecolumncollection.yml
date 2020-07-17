@@ -40,7 +40,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.'
+          description: 'Opcional. Especifica la posición relativa de la nueva columna. Si es NULL o -1, la columna se agrega al final. Las columnas con un índice más alto se desplazarán a un lado. Indizado con cero.'
           type:
             - number
         - id: values

@@ -67,7 +67,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeView#getFormulasLocal:member(1)'
-    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.'
     name: getFormulasLocal()
     fullName: getFormulasLocal()
     langs:
@@ -215,7 +215,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.RangeView#setFormulasLocal:member(1)'
-    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.'
     name: setFormulasLocal(formulasLocal)
     fullName: setFormulasLocal(formulasLocal)
     langs:
