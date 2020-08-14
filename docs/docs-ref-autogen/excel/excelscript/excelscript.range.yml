@@ -15,7 +15,6 @@ items:
       - 'ExcelScript!ExcelScript.Range#clear:member(1)'
       - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.Range#delete:member(1)'
       - 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -260,32 +259,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
-    summary: Convierte el intervalo de celdas en un tipo de datos vinculado en la hoja de cálculo.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: IDENTIFICADOR del servicio que se usará para consultar los datos.
-          type:
-            - number
-        - id: languageCulture
-          description: Referencia cultural del idioma en el que se va a consultar el servicio.
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
     summary: Copia el formato o los datos de la celda del intervalo de origen o RangeAreas al intervalo actual. El rango de destino puede tener un tamaño diferente al del rango de origen o RangeAreas. El destino se expandirá automáticamente si es menor que el origen.
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -1991,7 +1964,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 'Establece el valor sin formato del intervalo especificado. Los datos que se están configurando podrían ser de tipo String, Number o Boolean. `null`el valor se omitirá (no se establece o se sobrescribirá en Excel). Si el rango contiene varias celdas, todas las celdas del rango dado se actualizarán con los datos de entrada.'
+    summary: 'Establece el valor sin formato del intervalo especificado. Los datos que se están configurando podrían ser de tipo String, Number o Boolean. `null` el valor se omitirá (no se establece o se sobrescribirá en Excel). Si el rango contiene varias celdas, todas las celdas del rango dado se actualizarán con los datos de entrada.'
     name: setValue(value)
     fullName: setValue(value)
     langs:
