@@ -43,7 +43,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartBorder#getLineStyle:member(1)'
-    summary: Representa el estilo de línea del borde. Consulte Excel. ChartLineStyle para obtener información detallada.
+    summary: Representa el estilo de línea del borde. Consulte ExcelScript. ChartLineStyle para obtener información detallada.
     name: getLineStyle()
     fullName: getLineStyle()
     langs:
@@ -87,7 +87,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartBorder#setLineStyle:member(1)'
-    summary: Representa el estilo de línea del borde. Consulte Excel. ChartLineStyle para obtener información detallada.
+    summary: Representa el estilo de línea del borde. Consulte ExcelScript. ChartLineStyle para obtener información detallada.
     name: setLineStyle(lineStyle)
     fullName: setLineStyle(lineStyle)
     langs:

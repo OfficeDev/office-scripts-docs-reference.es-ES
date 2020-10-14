@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter:interface'
+    summary: Plantilla configurable para aplicar un filtro de etiqueta a un campo dinámico. `condition`Define qué criterios se deben establecer para que funcione el filtro.
+    name: ExcelScript.PivotLabelFilter
+    fullName: ExcelScript.PivotLabelFilter
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
+      - 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#condition:member'
+    summary: 'Especifica la condición del filtro, que define los criterios de filtrado necesarios.'
+    name: condition
+    fullName: condition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'condition: LabelFilterCondition;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member'
+    summary: 'Si es true, Filter *excluye* los elementos que cumplen los criterios. El valor predeterminado es false (filtrar para incluir los elementos que cumplen los criterios).'
+    name: exclusive
+    fullName: exclusive
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member'
+    summary: 'Límite inferior del intervalo para la condición de filtro between. Nota: una cadena numérica se trata como un número cuando se compara con otras cadenas numéricas.'
+    name: lowerBound
+    fullName: lowerBound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lowerBound?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#substring:member'
+    summary: 'La subcadena usada para `BeginsWith`<!-- -->, `EndsWith`<!-- -->y `Contains` condiciones de filtrado.'
+    name: substring
+    fullName: substring
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'substring?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member'
+    summary: 'Límite superior del intervalo para la condición de filtro between. Nota: una cadena numérica se trata como un número cuando se compara con otras cadenas numéricas.'
+    name: upperBound
+    fullName: upperBound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'upperBound?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
+    name: LabelFilterCondition
+    fullName: ExcelScript.LabelFilterCondition

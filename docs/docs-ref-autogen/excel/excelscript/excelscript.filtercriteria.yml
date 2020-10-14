@@ -58,7 +58,7 @@ items:
         type:
           - string
   - uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
-    summary: Criterios dinámicos del conjunto Excel.DynamicFilterCriteria que se van a aplicar a esta columna. Se usa con el filtrado "dinámico".
+    summary: Los criterios dinámicos del conjunto ExcelScript. DynamicFilterCriteria para aplicar en esta columna. Se usa con el filtrado "dinámico".
     name: dynamicCriteria
     fullName: dynamicCriteria
     langs:

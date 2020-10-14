@@ -65,7 +65,7 @@ items:
           - 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)'
-    summary: Especifica la alineación horizontal de la etiqueta de datos del gráfico. Consulte Excel. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es 0.
+    summary: Especifica la alineación horizontal de la etiqueta de datos del gráfico. Consulte ExcelScript. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es 0.
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -104,7 +104,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)'
-    summary: Valor DataLabelPosition que representa la posición de la etiqueta de datos. Consulte Excel. ChartDataLabelPosition para obtener información detallada.
+    summary: Valor DataLabelPosition que representa la posición de la etiqueta de datos. Consulte ExcelScript. ChartDataLabelPosition para obtener información detallada.
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -221,7 +221,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)'
-    summary: 'Representa la alineación vertical de la etiqueta de datos del gráfico. Consulte Excel. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es-90, 90 o 180.'
+    summary: 'Representa la alineación vertical de la etiqueta de datos del gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es-90, 90 o 180.'
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -252,7 +252,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)'
-    summary: Especifica la alineación horizontal de la etiqueta de datos del gráfico. Consulte Excel. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es 0.
+    summary: Especifica la alineación horizontal de la etiqueta de datos del gráfico. Consulte ExcelScript. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es 0.
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -309,7 +309,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)'
-    summary: Valor DataLabelPosition que representa la posición de la etiqueta de datos. Consulte Excel. ChartDataLabelPosition para obtener información detallada.
+    summary: Valor DataLabelPosition que representa la posición de la etiqueta de datos. Consulte ExcelScript. ChartDataLabelPosition para obtener información detallada.
     name: setPosition(position)
     fullName: setPosition(position)
     langs:
@@ -471,7 +471,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)'
-    summary: 'Representa la alineación vertical de la etiqueta de datos del gráfico. Consulte Excel. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es-90, 90 o 180.'
+    summary: 'Representa la alineación vertical de la etiqueta de datos del gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es-90, 90 o 180.'
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

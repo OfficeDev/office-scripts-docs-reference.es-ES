@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
       - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    summary: 'Especifica si la coincidencia debe estar completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, `cat` coincidencias parciales `caterpillar` y`scatter`<!-- -->). El valor predeterminado es false (parcial).'
+    summary: 'Especifica si la coincidencia debe estar completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, `cat` coincidencias parciales `caterpillar` y `scatter`<!-- -->). El valor predeterminado es false (parcial).'
     name: completeMatch
     fullName: completeMatch
     langs:
@@ -37,7 +37,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    summary: Especifica la dirección de la búsqueda El valor predeterminado es adelante. Vea Excel.SearchDirection.
+    summary: Especifica la dirección de la búsqueda El valor predeterminado es adelante. Consulte ExcelScript. SearchDirection.
     name: searchDirection
     fullName: searchDirection
     langs:

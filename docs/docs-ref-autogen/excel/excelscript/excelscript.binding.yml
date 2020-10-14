@@ -81,7 +81,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: Devuelve el tipo de enlace. Consulte Excel. BindingType para obtener más información.
+    summary: Devuelve el tipo de enlace. Consulte ExcelScript. BindingType para obtener información detallada.
     name: getType()
     fullName: getType()
     langs:

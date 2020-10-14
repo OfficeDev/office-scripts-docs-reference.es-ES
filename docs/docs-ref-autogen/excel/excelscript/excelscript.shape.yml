@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    summary: 'Representa un objeto Shape genérico de la hoja de cálculo. Una forma puede ser una forma geométrica, una línea, un grupo de formas, etc. Para obtener más información sobre el modelo de objetos de forma, vea [trabajar con formas mediante la API de JavaScript de Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.'
+    summary: 'Representa un objeto Shape genérico de la hoja de cálculo. Una forma puede ser una forma geométrica, una línea, un grupo de formas, etc.'
     name: ExcelScript.Shape
     fullName: ExcelScript.Shape
     langs:
@@ -113,7 +113,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getAsImage:member(1)'
-    summary: 'Convierte la forma a una imagen y devuelve la imagen como una cadena con codificación base 64. El valor de PPP es 96. Los únicos formatos admitidos son`Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!-- -->, y`Excel.PictureFormat.GIF`<!-- -->.'
+    summary: 'Convierte la forma a una imagen y devuelve la imagen como una cadena con codificación base 64. El valor de PPP es 96. Los únicos formatos admitidos son `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->, y `ExcelScript.PictureFormat.GIF`<!-- -->.'
     name: getAsImage(format)
     fullName: getAsImage(format)
     langs:
@@ -170,7 +170,7 @@ items:
           - 'ExcelScript!ExcelScript.GeometricShape:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)'
-    summary: 'Especifica el tipo de forma geométrica de esta forma geométrica. Para obtener más detalles, vea Excel.GeometricShapeType. Devuelve un valor nulo si el tipo de forma no es "GeometricShape".'
+    summary: Especifica el tipo de forma geométrica de esta forma geométrica. Consulte ExcelScript. GeometricShapeType para obtener información detallada. Devuelve un valor nulo si el tipo de forma no es "GeometricShape".
     name: getGeometricShapeType()
     fullName: getGeometricShapeType()
     langs:
@@ -378,7 +378,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Shape#getType:member(1)'
-    summary: 'Devuelve el tipo de esta forma. Para obtener más detalles, vea Excel.ShapeType.'
+    summary: Devuelve el tipo de esta forma. Consulte ExcelScript. TipoForma para obtener más información.
     name: getType()
     fullName: getType()
     langs:
@@ -582,7 +582,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)'
-    summary: 'Especifica el tipo de forma geométrica de esta forma geométrica. Para obtener más detalles, vea Excel.GeometricShapeType. Devuelve un valor nulo si el tipo de forma no es "GeometricShape".'
+    summary: Especifica el tipo de forma geométrica de esta forma geométrica. Consulte ExcelScript. GeometricShapeType para obtener información detallada. Devuelve un valor nulo si el tipo de forma no es "GeometricShape".
     name: setGeometricShapeType(geometricShapeType)
     fullName: setGeometricShapeType(geometricShapeType)
     langs:
@@ -776,7 +776,7 @@ items:
         description: ''
       parameters:
         - id: position
-          description: Dónde mover la forma en la pila del orden z con relación a las otras formas. Consulte Excel. ShapeZOrder para obtener información detallada.
+          description: Dónde mover la forma en la pila del orden z con relación a las otras formas. Consulte ExcelScript. ShapeZOrder para obtener información detallada.
           type:
             - 'ExcelScript!ExcelScript.ShapeZOrder:enum'
 references:

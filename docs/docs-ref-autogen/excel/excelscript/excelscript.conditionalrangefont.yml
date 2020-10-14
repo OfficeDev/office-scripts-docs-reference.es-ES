@@ -86,7 +86,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)'
-    summary: Tipo de subrayado aplicado a la fuente. Consulte Excel. ConditionalRangeFontUnderlineStyle para obtener información detallada.
+    summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ConditionalRangeFontUnderlineStyle para obtener información detallada.
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -171,7 +171,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)'
-    summary: Tipo de subrayado aplicado a la fuente. Consulte Excel. ConditionalRangeFontUnderlineStyle para obtener información detallada.
+    summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ConditionalRangeFontUnderlineStyle para obtener información detallada.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

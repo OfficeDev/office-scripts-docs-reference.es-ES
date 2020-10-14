@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: 'Un objeto que encapsula el intervalo, el formato, la regla y otras propiedades del formato condicional. Para obtener más información sobre el modelo de objetos de formato condicional, vea [aplicar formato condicional a los rangos de Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.'
+    summary: 'Un objeto que encapsula el intervalo, el formato, la regla y otras propiedades del formato condicional.'
     name: ExcelScript.ConditionalFormat
     fullName: ExcelScript.ConditionalFormat
     langs:
@@ -118,7 +118,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: Devuelve el formato condicional de criterios preestablecidos. Consulte Excel. PresetCriteriaConditionalFormat para obtener más información.
+    summary: Devuelve el formato condicional de criterios preestablecidos. Consulte ExcelScript. PresetCriteriaConditionalFormat para obtener más información.
     name: getPreset()
     fullName: getPreset()
     langs:

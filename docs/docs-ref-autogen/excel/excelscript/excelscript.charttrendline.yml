@@ -83,7 +83,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
-    summary: Representa el valor de la intersección de la línea de tendencia. Puede establecerse en un valor numérico o una cadena vacía (para valores automáticos). El valor devuelto siempre es un número.
+    summary: Especifica el valor de intercepción de la tendencia.
     name: getIntercept()
     fullName: getIntercept()
     langs:
@@ -223,7 +223,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
-    summary: Representa el valor de la intersección de la línea de tendencia. Puede establecerse en un valor numérico o una cadena vacía (para valores automáticos). El valor devuelto siempre es un número.
+    summary: Especifica el valor de intercepción de la tendencia.
     name: setIntercept(intercept)
     fullName: setIntercept(intercept)
     langs:

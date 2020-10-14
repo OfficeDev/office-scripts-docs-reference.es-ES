@@ -35,7 +35,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos de guión. Para obtener más información, vea Excel.ShapeLineStyle.'
+    summary: Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos de guión. Consulte ExcelScript. ShapeLineStyle para obtener información detallada.
     name: getDashStyle()
     fullName: getDashStyle()
     langs:
@@ -48,7 +48,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos. Para obtener más información, vea Excel.ShapeLineStyle.'
+    summary: Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos. Consulte ExcelScript. ShapeLineStyle para obtener información detallada.
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos de guión. Para obtener más información, vea Excel.ShapeLineStyle.'
+    summary: Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos de guión. Consulte ExcelScript. ShapeLineStyle para obtener información detallada.
     name: setDashStyle(dashStyle)
     fullName: setDashStyle(dashStyle)
     langs:
@@ -136,7 +136,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-    summary: 'Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos. Para obtener más información, vea Excel.ShapeLineStyle.'
+    summary: Indica el estilo de línea de la forma. Devuelve un valor null cuando la línea no es visible o hay distintos estilos. Consulte ExcelScript. ShapeLineStyle para obtener información detallada.
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
