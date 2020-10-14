@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Table:interface'
-    summary: 'Representa una tabla de Excel. Para obtener más información sobre el modelo de objetos de tabla, vea [trabajar con tablas mediante la API de JavaScript de Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.'
+    summary: Representa una tabla de Excel.
     name: ExcelScript.Table
     fullName: ExcelScript.Table
     langs:
@@ -30,6 +30,7 @@ items:
       - 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
       - 'ExcelScript!ExcelScript.Table#getRange:member(1)'
       - 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
+      - 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
       - 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
@@ -330,10 +331,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Table#getName:member(1)'
-    summary: |-
-      Nombre de la tabla.
-
-      El nombre de conjunto de la tabla debe seguir las instrucciones especificadas en el artículo [cambiar el nombre de una tabla de Excel](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) .
+    summary: Nombre de la tabla.
     name: getName()
     fullName: getName()
     langs:
@@ -383,6 +381,19 @@ items:
       return:
         type:
           - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
+    summary: Obtiene el número de filas de la tabla.
+    name: getRowCount()
+    fullName: getRowCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type:
+          - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
     summary: Especifica si las columnas muestran un formato con bandas en el que las columnas impares se resaltan de manera diferente que las pares para facilitar la lectura de la tabla.
@@ -538,10 +549,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Table#setName:member(1)'
-    summary: |-
-      Nombre de la tabla.
-
-      El nombre de conjunto de la tabla debe seguir las instrucciones especificadas en el artículo [cambiar el nombre de una tabla de Excel](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) .
+    summary: Nombre de la tabla.
     name: setName(name)
     fullName: setName(name)
     langs:

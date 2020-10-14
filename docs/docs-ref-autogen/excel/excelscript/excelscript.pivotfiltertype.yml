@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
+    summary: Enumeración simple que representa un tipo de filtro para un campo dinámico.
+    name: ExcelScript.PivotFilterType
+    fullName: ExcelScript.PivotFilterType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    summary: 'Filtra PivotItems con una fecha en vez de una etiqueta. Nota: un campo dinámico no puede tener simultáneamente un filtro de etiqueta y un filtro de fecha aplicado.'
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    summary: 'Filtra PivotItems según sus etiquetas. Nota: un campo dinámico no puede tener simultáneamente un filtro de etiqueta y un filtro de fecha aplicado.'
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    summary: Filtra de la tabla dinámica un PivotItems específico manualmente seleccionado.
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    summary: PivotFilterType es desconocido o no es compatible.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    summary: Filtra según el valor de un PivotItem con respecto a un DataPivotHierarchy.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field

@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getRule:member(1)'
       - 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#setRule:member(1)'
   - uid: 'ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)'
-    summary: 'Devuelve un objeto Format que encapsula la fuente, el relleno, los bordes y otras propiedades del formato condicional.'
+    summary: 'Devuelve un objeto Format, encapsulando la fuente de los formatos condicionales, el relleno, los bordes y otras propiedades.'
     name: getFormat()
     fullName: getFormat()
     langs:

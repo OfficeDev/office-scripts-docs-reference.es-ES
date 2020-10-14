@@ -56,7 +56,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-    summary: 'Devuelve el tipo de relleno de la forma. Para obtener más detalles, vea Excel.ShapeFillType.'
+    summary: Devuelve el tipo de relleno de la forma. Consulte ExcelScript. ShapeFillType para obtener información detallada.
     name: getType()
     fullName: getType()
     langs:

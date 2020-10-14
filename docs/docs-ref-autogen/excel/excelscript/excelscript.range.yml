@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Range:interface'
-    summary: 'Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc. Para obtener más información sobre cómo se usan los rangos en la API, vea [trabajar con rangos mediante la API de JavaScript de Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) y [trabajar con rangos mediante la API de JavaScript de Excel (avanzado)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced) .<!-- -->.'
+    summary: 'Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc.'
     name: ExcelScript.Range
     fullName: ExcelScript.Range
     langs:
@@ -34,6 +34,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
       - 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
       - 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
       - 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
@@ -43,6 +44,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
@@ -56,7 +58,9 @@ items:
       - 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
       - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
       - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
@@ -70,8 +74,11 @@ items:
       - 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
       - 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
       - 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSort:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
       - 'ExcelScript!ExcelScript.Range#getTables:member(1)'
       - 'ExcelScript!ExcelScript.Range#getText:member(1)'
@@ -154,14 +161,11 @@ items:
           ```
       parameters:
         - id: type
-          description: Tipo de formato condicional que se va a agregar. Consulte Excel. ConditionalFormatType para obtener información detallada.
+          description: Tipo de formato condicional que se va a agregar. Consulte ExcelScript. ConditionalFormatType para obtener información detallada.
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
-    summary: |-
-      Rellena el intervalo actual con el rango de destino utilizando la lógica de Autorrelleno especificada. El rango de destino puede ser null o puede extender el código fuente tanto horizontal como verticalmente. No se admiten rangos discontinuos.
-
-      Para obtener más información, lea [usar Autorrellenar y relleno rápido](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
+    summary: Rellena el intervalo actual con el rango de destino utilizando la lógica de Autorrelleno especificada. El rango de destino puede ser null o puede extender el código fuente tanto horizontal como verticalmente. No se admiten rangos discontinuos.
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -230,7 +234,7 @@ items:
           ```
       parameters:
         - id: applyTo
-          description: Opcional. Determina el tipo de acción de borrado. Consulte Excel. ClearApplyTo para obtener información detallada.
+          description: Opcional. Determina el tipo de acción de borrado. Consulte ExcelScript. ClearApplyTo para obtener información detallada.
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
@@ -310,7 +314,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: Especifica hacia dónde se desplazarán las celdas. Consulte Excel. DeleteShiftDirection para obtener información detallada.
+          description: Especifica hacia dónde se desplazarán las celdas. Consulte ExcelScript. DeleteShiftDirection para obtener información detallada.
           type:
             - 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
   - uid: 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -620,6 +624,19 @@ items:
         type:
           - 'ExcelScript!ExcelScript.DataValidation:interface'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
+    summary: Devuelve un objeto WorkbookRangeAreas que representa el rango que contiene todas las celdas precedentes directas de una celda en la misma hoja de cálculo o en varias hojas de cálculo.
+    name: getDirectPrecedents()
+    fullName: getDirectPrecedents()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
     summary: 'Obtiene un objeto que representa toda la columna del rango (por ejemplo, si el rango actual representa las celdas "B4: E11", `getEntireColumn` es un rango que representa las columnas "B:E").'
     name: getEntireColumn()
@@ -723,7 +740,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
-    summary: Representa la fórmula en notación de estilo A1.
+    summary: 'Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, se devuelve su valor en su lugar.'
     name: getFormulas()
     fullName: getFormulas()
     langs:
@@ -736,7 +753,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.'
+    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, se devuelve su valor en su lugar.'
     name: getFormulasLocal()
     fullName: getFormulasLocal()
     langs:
@@ -749,7 +766,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
-    summary: Representa la fórmula en notación de estilo R1C1.
+    summary: 'Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, se devuelve su valor en su lugar.'
     name: getFormulasR1C1()
     fullName: getFormulasR1C1()
     langs:
@@ -760,6 +777,19 @@ items:
       return:
         type:
           - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
+    summary: Indica si todas las celdas tienen un borde de desbordamiento. Devuelve true si todas las celdas tienen un borde de derrame o false si todas las celdas no tienen borde de derrame. Devuelve NULL si hay celdas con y sin bordes derramados dentro del rango.
+    name: getHasSpill()
+    fullName: getHasSpill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHasSpill(): boolean;'
+      return:
+        type:
+          - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
     summary: 'Devuelve la distancia en puntos, con un zoom del 100%, desde el borde superior del rango hasta el borde inferior del mismo.'
@@ -801,7 +831,7 @@ items:
           - 'ExcelScript!ExcelScript.RangeHyperlink:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getImage:member(1)'
-    summary: Representa el intervalo como una imagen PNG codificada en Base64.
+    summary: 'Representa el intervalo como una imagen PNG codificada en Base64. **Importante**: Actualmente, esta API no es compatible con Excel para Mac. Visite \[ OfficeDev/Office-js Issue \# 235 \] ( https://github.com/OfficeDev/office-js/issues/235) para obtener el estado actual.'
     name: getImage()
     fullName: getImage()
     langs:
@@ -935,6 +965,19 @@ items:
         type:
           - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
+    summary: 'Devuelve un objeto RangeAreas que representa las áreas combinadas de este intervalo. Tenga en cuenta que si el número de áreas combinadas de este intervalo es superior a 512, la API no podrá devolver el resultado.'
+    name: getMergedAreas()
+    fullName: getMergedAreas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMergedAreas(): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
     summary: 'Representa el código de formato de número de Excel de la celda para el intervalo especificado. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna 0).'
     name: getNumberFormat()
@@ -947,6 +990,19 @@ items:
       return:
         type:
           - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
+    summary: Representa la categoría del formato de número de cada celda.
+    name: getNumberFormatCategories()
+    fullName: getNumberFormatCategories()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
     summary: 'Representa el código de formato de número de Excel de la celda para el intervalo determinado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto utiliza las cadenas con formato local según el idioma especificado en la configuración del sistema. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna 0).'
@@ -1246,6 +1302,19 @@ items:
           description: 'Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.'
           type:
             - number
+  - uid: 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
+    summary: Representa si todas las celdas se guardarían como una fórmula de matriz. Devuelve true si todas las celdas se guardarían como una fórmula de matriz o false si no se guardan todas las celdas como una fórmula de matriz. Devuelve NULL si algunas celdas se guardarían como una fórmula de matriz y otras no.
+    name: getSavedAsArray()
+    fullName: getSavedAsArray()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSavedAsArray(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
     summary: Representa la ordenación del intervalo del intervalo actual.
     name: getSort()
@@ -1285,6 +1354,32 @@ items:
           description: 'Si el argumento cellType es constante o fórmulas, este argumento se usa para determinar los tipos de celdas que se van a incluir en el resultado. Estos valores se pueden combinar para que devuelvan más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.'
           type:
             - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
+    summary: 'Obtiene el objeto de intervalo que contiene el intervalo de desbordamiento al llamar en una celda de delimitador. Si el rango no es una celda de anclaje o no se encuentra un intervalo de derrame, se devolverá un objeto null.'
+    name: getSpillingToRange()
+    fullName: getSpillingToRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillingToRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
+    summary: 'Obtiene el intervalo que contiene la celda de delimitador de una celda en la que se derrama. Si no es una celda de derrame o si se proporcionan más de una vez, se devolverá un objeto null.'
+    name: getSpillParent()
+    fullName: getSpillParent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillParent(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
     summary: Devuelve un objeto Range que representa la región circundante para la celda superior izquierda de este intervalo. Una región circundante es un intervalo limitado por cualquier combinación de filas y columnas en blanco en relación a este intervalo.
     name: getSurroundingRegion()
@@ -1534,7 +1629,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: Especifica hacia dónde se desplazarán las celdas. Consulte Excel. InsertShiftDirection para obtener información detallada.
+          description: Especifica hacia dónde se desplazarán las celdas. Consulte ExcelScript. InsertShiftDirection para obtener información detallada.
           type:
             - 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
   - uid: 'ExcelScript!ExcelScript.Range#merge:member(1)'
@@ -1753,7 +1848,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
-    summary: Representa la fórmula en notación de estilo A1.
+    summary: 'Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, se devuelve su valor en su lugar.'
     name: setFormulas(formulas)
     fullName: setFormulas(formulas)
     langs:
@@ -1771,7 +1866,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.'
+    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, se devuelve su valor en su lugar.'
     name: setFormulasLocal(formulasLocal)
     fullName: setFormulasLocal(formulasLocal)
     langs:
@@ -1789,7 +1884,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
-    summary: Representa la fórmula en notación de estilo R1C1.
+    summary: 'Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, se devuelve su valor en su lugar.'
     name: setFormulasR1C1(formulasR1C1)
     fullName: setFormulasR1C1(formulasR1C1)
     langs:
@@ -2170,6 +2265,9 @@ references:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
     name: DataValidation
     fullName: ExcelScript.DataValidation
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+    name: WorkbookRangeAreas
+    fullName: ExcelScript.WorkbookRangeAreas
   - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
     name: RangeFormat
     fullName: ExcelScript.RangeFormat
@@ -2197,6 +2295,18 @@ references:
         fullName: ExcelScript.LinkedDataTypeState
       - name: '[][]'
         fullName: '[][]'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
+    name: 'NumberFormatCategory[][]'
+    fullName: 'ExcelScript.NumberFormatCategory[][]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
+        name: NumberFormatCategory
+        fullName: ExcelScript.NumberFormatCategory
+      - name: '[][]'
+        fullName: '[][]'
   - uid: 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
     name: 'PivotTable[]'
     fullName: 'ExcelScript.PivotTable[]'
@@ -2209,9 +2319,6 @@ references:
   - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
     name: RangeSort
     fullName: ExcelScript.RangeSort
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
   - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
     name: SpecialCellType
     fullName: ExcelScript.SpecialCellType

@@ -69,7 +69,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
-    summary: 'Nombre de fuente (por ejemplo, "Calibri")'
+    summary: 'Nombre de fuente (por ejemplo, "Calibri"). La longitud del nombre no debe ser superior a 31 caracteres.'
     name: getName()
     fullName: getName()
     langs:
@@ -134,7 +134,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
-    summary: 'Especifica un doble que aclara u oscurece un color para la fuente del rango. El valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor nulo indica que el rango completo no tiene una configuración de fuente uniforme.'
+    summary: 'Especifica un doble que aclara u oscurece un color para la fuente del rango, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor nulo indica que el rango completo no tiene una configuración de fuente uniforme.'
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -147,7 +147,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
-    summary: Tipo de subrayado aplicado a la fuente. Consulte Excel. RangeUnderlineStyle para obtener información detallada.
+    summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. RangeUnderlineStyle para obtener información detallada.
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -214,7 +214,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
-    summary: 'Nombre de fuente (por ejemplo, "Calibri")'
+    summary: 'Nombre de fuente (por ejemplo, "Calibri"). La longitud del nombre no debe ser superior a 31 caracteres.'
     name: setName(name)
     fullName: setName(name)
     langs:
@@ -304,7 +304,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
-    summary: 'Especifica un doble que aclara u oscurece un color para la fuente del rango. El valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor nulo indica que el rango completo no tiene una configuración de fuente uniforme.'
+    summary: 'Especifica un doble que aclara u oscurece un color para la fuente del rango, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor nulo indica que el rango completo no tiene una configuración de fuente uniforme.'
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -322,7 +322,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
-    summary: Tipo de subrayado aplicado a la fuente. Consulte Excel. RangeUnderlineStyle para obtener información detallada.
+    summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. RangeUnderlineStyle para obtener información detallada.
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

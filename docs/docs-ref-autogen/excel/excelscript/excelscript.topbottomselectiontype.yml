@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
+    summary: 'Una enumeración simple para los filtros superiores o inferiores para seleccionar si se debe filtrar por el n? mero superior o inferior, o por el número o suma de valores.'
+    name: ExcelScript.TopBottomSelectionType
+    fullName: ExcelScript.TopBottomSelectionType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+      - 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    summary: Filtrar el número superior o inferior de los elementos según el valor elegido.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    summary: Filtrar el N% superior/inferior de los elementos según el valor elegido.
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    summary: Filtrar la suma superior o inferior medida según el valor elegido.
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field

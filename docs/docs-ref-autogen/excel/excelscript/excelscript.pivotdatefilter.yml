@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter:interface'
+    summary: Plantilla configurable para un filtro de fecha que se va a aplicar a un campo dinámico. `condition`Define qué criterios se deben establecer para que funcione el filtro.
+    name: ExcelScript.PivotDateFilter
+    fullName: ExcelScript.PivotDateFilter
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
+      - 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
+      - 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
+      - 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
+      - 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
+      - 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#comparator:member'
+    summary: El Comparator es el valor estático con el que se comparan otros valores. El tipo de comparación se define por la condición.
+    name: comparator
+    fullName: comparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comparator?: FilterDatetime;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#condition:member'
+    summary: 'Especifica la condición del filtro, que define los criterios de filtrado necesarios.'
+    name: condition
+    fullName: condition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'condition: DateFilterCondition;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DateFilterCondition:enum'
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#exclusive:member'
+    summary: 'Si es true, Filter *excluye* los elementos que cumplen los criterios. El valor predeterminado es false (filtrar para incluir los elementos que cumplen los criterios).'
+    name: exclusive
+    fullName: exclusive
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'exclusive?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member'
+    summary: Límite inferior del intervalo para la `Between` condición de filtro.
+    name: lowerBound
+    fullName: lowerBound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lowerBound?: FilterDatetime;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#upperBound:member'
+    summary: Límite superior del intervalo para la `Between` condición de filtro.
+    name: upperBound
+    fullName: upperBound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'upperBound?: FilterDatetime;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FilterDatetime:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member'
+    summary: 'Para `Equals`<!-- -->, `Before`<!-- -->, `After`<!-- -->y `Between` condiciones de filtrado, indica si las comparaciones deben realizarse como días completos.'
+    name: wholeDays
+    fullName: wholeDays
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wholeDays?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+    name: FilterDatetime
+    fullName: ExcelScript.FilterDatetime
+  - uid: 'ExcelScript!ExcelScript.DateFilterCondition:enum'
+    name: DateFilterCondition
+    fullName: ExcelScript.DateFilterCondition

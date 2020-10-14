@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
+    summary: Representa las dimensiones al obtener los valores de la serie del gráfico.
+    name: ExcelScript.ChartSeriesDimension
+    fullName: ExcelScript.ChartSeriesDimension
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+    summary: Eje de series del gráfico para los tamaños de burbuja en los gráficos de burbujas.
+    name: bubbleSizes
+    fullName: bubbleSizes
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+    summary: El eje de series del gráfico para las categorías.
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+    summary: El eje de series del gráfico para los valores.
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+    summary: El eje de series del gráfico para los valores del eje x en los gráficos de dispersión y de burbujas.
+    name: xvalues
+    fullName: xvalues
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+    summary: Eje de series del gráfico para los valores del eje y en los gráficos de dispersión y de burbujas.
+    name: yvalues
+    fullName: yvalues
+    langs:
+      - typeScript
+    type: field

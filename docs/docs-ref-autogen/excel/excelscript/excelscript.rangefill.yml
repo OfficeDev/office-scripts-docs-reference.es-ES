@@ -47,7 +47,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-    summary: 'Modelo de un intervalo. Para obtener más información, vea Excel.FillPattern. LinearGradient y RectangularGradient no son compatibles. Un valor null indica que el intervalo completo no tiene una configuración de patrón uniforme.'
+    summary: Modelo de un intervalo. Consulte ExcelScript. FillPattern para obtener información detallada. LinearGradient y RectangularGradient no son compatibles. Un valor null indica que el intervalo completo no tiene una configuración de patrón uniforme.
     name: getPattern()
     fullName: getPattern()
     langs:
@@ -73,7 +73,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 'Especifica un doble que aclara u oscurece un color de trama para el relleno de rango. El valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Si el patrón tintAndShades no es uniforme, se devolverá null.'
+    summary: 'Especifica un doble que aclara u oscurece un color de trama para el relleno de rango, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Si el patrón tintAndShades no es uniforme, se devolverá null.'
     name: getPatternTintAndShade()
     fullName: getPatternTintAndShade()
     langs:
@@ -117,7 +117,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-    summary: 'Modelo de un intervalo. Para obtener más información, vea Excel.FillPattern. LinearGradient y RectangularGradient no son compatibles. Un valor null indica que el intervalo completo no tiene una configuración de patrón uniforme.'
+    summary: Modelo de un intervalo. Consulte ExcelScript. FillPattern para obtener información detallada. LinearGradient y RectangularGradient no son compatibles. Un valor null indica que el intervalo completo no tiene una configuración de patrón uniforme.
     name: setPattern(pattern)
     fullName: setPattern(pattern)
     langs:
@@ -153,7 +153,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 'Especifica un doble que aclara u oscurece un color de trama para el relleno de rango. El valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Si el patrón tintAndShades no es uniforme, se devolverá null.'
+    summary: 'Especifica un doble que aclara u oscurece un color de trama para el relleno de rango, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Si el patrón tintAndShades no es uniforme, se devolverá null.'
     name: setPatternTintAndShade(patternTintAndShade)
     fullName: setPatternTintAndShade(patternTintAndShade)
     langs:

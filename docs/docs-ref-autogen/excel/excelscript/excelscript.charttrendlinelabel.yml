@@ -85,7 +85,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)'
-    summary: 'Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Consulte Excel. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de la tendencia es-90, 90 o 180.'
+    summary: 'Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Consulte ExcelScript. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de la tendencia es-90, 90 o 180.'
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -176,7 +176,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)'
-    summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Consulte Excel. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad sólo es válida cuando TextOrientation de la etiqueta de la tendencia es 0.
+    summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad sólo es válida cuando TextOrientation de la etiqueta de la tendencia es 0.
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -238,7 +238,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)'
-    summary: 'Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Consulte Excel. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de la tendencia es-90, 90 o 180.'
+    summary: 'Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Consulte ExcelScript. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de la tendencia es-90, 90 o 180.'
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -367,7 +367,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)'
-    summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Consulte Excel. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad sólo es válida cuando TextOrientation de la etiqueta de la tendencia es 0.
+    summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Consulte ExcelScript. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad sólo es válida cuando TextOrientation de la etiqueta de la tendencia es 0.
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:
