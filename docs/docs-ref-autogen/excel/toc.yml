@@ -803,8 +803,6 @@ items:
           - name: SearchCriteria
             uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
           - *ref_108
-          - name: Configuración
-            uid: 'ExcelScript!ExcelScript.Setting:interface'
           - name: Forma
             uid: 'ExcelScript!ExcelScript.Shape:interface'
           - *ref_109
