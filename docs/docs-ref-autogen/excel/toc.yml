@@ -1,7 +1,7 @@
 items:
-  - name: Referencia de la API
+  - name: Referencia de las API
     items:
-      - name: Introducción a la referencia de API
+      - name: Información general de referencia de las API
         href: overview.md
       - name: ExcelScript
         uid: ExcelScript!
@@ -376,7 +376,7 @@ items:
                 name: ShapeTextVerticalOverflow
                 uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
               - &ref_122
-                name: TipoForma
+                name: ShapeType
                 uid: 'ExcelScript!ExcelScript.ShapeType:enum'
               - &ref_123
                 name: ShapeZOrder
@@ -465,7 +465,7 @@ items:
             uid: 'ExcelScript!ExcelScript.CellPropertiesProtection:interface'
           - name: CellValueConditionalFormat
             uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat:interface'
-          - name: Gráfico
+          - name: Chart
             uid: 'ExcelScript!ExcelScript.Chart:interface'
           - name: ChartAreaFormat
             uid: 'ExcelScript!ExcelScript.ChartAreaFormat:interface'
@@ -674,7 +674,7 @@ items:
           - *ref_73
           - *ref_74
           - *ref_75
-          - name: Filter
+          - name: Filtrar
             uid: 'ExcelScript!ExcelScript.Filter:interface'
           - name: FilterCriteria
             uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
@@ -785,7 +785,7 @@ items:
             uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-          - name: ReferenciaRango
+          - name: RangeReference
             uid: 'ExcelScript!ExcelScript.RangeReference:interface'
           - name: RangeSort
             uid: 'ExcelScript!ExcelScript.RangeSort:interface'
@@ -837,7 +837,7 @@ items:
           - name: SlicerItem
             uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
           - *ref_126
-          - name: SlicerStyle
+          - name: Estilo de segmentación
             uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
           - *ref_127
           - *ref_128
