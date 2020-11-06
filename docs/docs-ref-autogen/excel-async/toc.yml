@@ -1,7 +1,7 @@
 items:
-  - name: Referencia de la API
+  - name: Referencia de las API
     items:
-      - name: Introducción a la referencia de API
+      - name: Información general de referencia de las API
         href: overview.md
       - name: Excel
         uid: excel!
@@ -361,7 +361,7 @@ items:
                 name: ShapeTextVerticalOverflow
                 uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
               - &ref_117
-                name: TipoForma
+                name: ShapeType
                 uid: 'excel!Excel.ShapeType:enum'
               - &ref_118
                 name: ShapeZOrder
@@ -446,7 +446,7 @@ items:
             uid: 'excel!Excel.CellPropertiesProtection:interface'
           - name: CellValueConditionalFormat
             uid: 'excel!Excel.CellValueConditionalFormat:interface'
-          - name: Gráfico
+          - name: Chart
             uid: 'excel!Excel.Chart:interface'
           - name: ChartAreaFormat
             uid: 'excel!Excel.ChartAreaFormat:interface'
@@ -681,7 +681,7 @@ items:
           - *ref_71
           - *ref_72
           - *ref_73
-          - name: Filtro
+          - name: Filtrar
             uid: 'excel!Excel.Filter:interface'
           - name: FilterCriteria
             uid: 'excel!Excel.FilterCriteria:interface'
@@ -801,7 +801,7 @@ items:
             uid: 'excel!Excel.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'excel!Excel.RangeHyperlink:interface'
-          - name: ReferenciaRango
+          - name: RangeReference
             uid: 'excel!Excel.RangeReference:interface'
           - name: RangeSort
             uid: 'excel!Excel.RangeSort:interface'
@@ -869,7 +869,7 @@ items:
           - name: SlicerItemCollection
             uid: 'excel!Excel.SlicerItemCollection:interface'
           - *ref_121
-          - name: SlicerStyle
+          - name: Estilo de segmentación
             uid: 'excel!Excel.SlicerStyle:interface'
           - name: SlicerStyleCollection
             uid: 'excel!Excel.SlicerStyleCollection:interface'
@@ -887,7 +887,7 @@ items:
           - name: StyleCollection
             uid: 'excel!Excel.StyleCollection:interface'
           - *ref_129
-          - name: Subtotals
+          - name: Subtotales
             uid: 'excel!Excel.Subtotals:interface'
           - name: Table
             uid: 'excel!Excel.Table:interface'
