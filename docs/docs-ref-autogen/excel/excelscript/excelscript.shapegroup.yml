@@ -1,99 +1,87 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeGroup:interface'
-    summary: 'Representa un grupo de formas dentro de una hoja de cálculo. Para obtener el objeto Shape correspondiente, use`ShapeGroup.shape`<!-- -->.'
-    name: ExcelScript.ShapeGroup
-    fullName: ExcelScript.ShapeGroup
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
-      - 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)'
-    summary: Devuelve el objeto de forma asociado con el grupo.
-    name: getGroupShape()
-    fullName: getGroupShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getGroupShape(): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getId:member(1)'
-    summary: Especifica el identificador de la forma.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)'
-    summary: Obtiene una forma mediante su nombre o identificador.
-    name: getShape(key)
-    fullName: getShape(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShape(key: string): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Nombre o identificador de la forma que se va a recuperar.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)'
-    summary: Devuelve una colección de objetos de forma.
-    name: getShapes()
-    fullName: getShapes()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShapes(): Shape[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShapeGroup#getShapes~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)'
-    summary: Desagrupa las formas agrupadas en el grupo de formas especificado.
-    name: ungroup()
-    fullName: ungroup()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'ungroup(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    name: Shape
-    fullName: ExcelScript.Shape
-  - uid: 'ExcelScript!ExcelScript.ShapeGroup#getShapes~0:complex'
-    name: 'Shape[]'
-    fullName: 'ExcelScript.Shape[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Shape:interface'
-        name: Shape
-        fullName: ExcelScript.Shape
-      - name: '[]'
-        fullName: '[]'
+### YamlMime:TSType
+name: ExcelScript.ShapeGroup
+uid: ExcelScript!ExcelScript.ShapeGroup:interface
+package: ExcelScript!
+fullName: ExcelScript.ShapeGroup
+summary: Representa un grupo de formas dentro de una hoja de cálculo. Para obtener el objeto Shape correspondiente, use `ShapeGroup.shape`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getGroupShape()
+  uid: ExcelScript!ExcelScript.ShapeGroup#getGroupShape:member(1)
+  package: ExcelScript!
+  fullName: getGroupShape()
+  summary: Devuelve el objeto de forma asociado con el grupo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getGroupShape(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.ShapeGroup#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Especifica el identificador de la forma.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getShape(key)
+  uid: ExcelScript!ExcelScript.ShapeGroup#getShape:member(1)
+  package: ExcelScript!
+  fullName: getShape(key)
+  summary: Obtiene una forma mediante su nombre o identificador.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShape(key: string): Shape;'
+    parameters:
+    - id: key
+      description: Nombre o identificador de la forma que se va a recuperar.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: getShapes()
+  uid: ExcelScript!ExcelScript.ShapeGroup#getShapes:member(1)
+  package: ExcelScript!
+  fullName: getShapes()
+  summary: Devuelve una colección de objetos de forma.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShapes(): Shape[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />[]
+      description: ''
+- name: ungroup()
+  uid: ExcelScript!ExcelScript.ShapeGroup#ungroup:member(1)
+  package: ExcelScript!
+  fullName: ungroup()
+  summary: Desagrupa las formas agrupadas en el grupo de formas especificado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'ungroup(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7aa8ade3b8eb551378ae316ced0864f037bee30f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420639"

@@ -1,54 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
-    summary: Representa los criterios de búsqueda que se van a usar.
-    name: ExcelScript.SearchCriteria
-    fullName: ExcelScript.SearchCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
-      - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-  - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    summary: 'Especifica si la coincidencia debe estar completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, `cat` coincidencias parciales `caterpillar` y `scatter`<!-- -->). El valor predeterminado es false (parcial).'
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
-    summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor predeterminado es false (no se distinguen).
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    summary: Especifica la dirección de la búsqueda El valor predeterminado es adelante. Consulte ExcelScript. SearchDirection.
-    name: searchDirection
-    fullName: searchDirection
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'searchDirection?: SearchDirection;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SearchDirection:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
-    name: SearchDirection
-    fullName: ExcelScript.SearchDirection
+### YamlMime:TSType
+name: ExcelScript.SearchCriteria
+uid: ExcelScript!ExcelScript.SearchCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.SearchCriteria
+summary: Representa los criterios de búsqueda que se van a usar.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: Especifica si la coincidencia debe estar completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, `cat` coincidencias parciales `caterpillar` y `scatter`<!-- -->). El valor predeterminado es false (parcial).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor predeterminado es false (no se distinguen).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+- name: searchDirection
+  uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
+  package: ExcelScript!
+  fullName: searchDirection
+  summary: Especifica la dirección de la búsqueda El valor predeterminado es adelante. Consulte ExcelScript. SearchDirection.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'searchDirection?: SearchDirection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
+metadata:
+  ms.openlocfilehash: d89bc86f6e879e686895008e09b83f2c36780279
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420674"

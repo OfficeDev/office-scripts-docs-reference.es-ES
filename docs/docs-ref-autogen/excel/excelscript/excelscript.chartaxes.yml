@@ -1,86 +1,77 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
-    summary: Representa los ejes del gráfico.
-    name: ExcelScript.ChartAxes
-    fullName: ExcelScript.ChartAxes
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
-    summary: Representa el eje de categorías de un gráfico.
-    name: getCategoryAxis()
-    fullName: getCategoryAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCategoryAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
-    summary: Devuelve el eje específico identificado por tipo y grupo.
-    name: 'getChartAxis(type, group)'
-    fullName: 'getChartAxis(type, group)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-      parameters:
-        - id: type
-          description: Especifica el tipo de eje. Consulte ExcelScript. ChartAxisType para obtener información detallada.
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisType:enum'
-        - id: group
-          description: Opcional. Especifica el grupo de ejes. Consulte ExcelScript. ChartAxisGroup para obtener información detallada.
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
-    summary: Representa el eje de series de un gráfico tridimensional.
-    name: getSeriesAxis()
-    fullName: getSeriesAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSeriesAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
-    summary: Representa el eje de valores de un eje.
-    name: getValueAxis()
-    fullName: getValueAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValueAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
-    name: ChartAxis
-    fullName: ExcelScript.ChartAxis
-  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
-    name: ChartAxisType
-    fullName: ExcelScript.ChartAxisType
-  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-    name: ChartAxisGroup
-    fullName: ExcelScript.ChartAxisGroup
+### YamlMime:TSType
+name: ExcelScript.ChartAxes
+uid: ExcelScript!ExcelScript.ChartAxes:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxes
+summary: Representa los ejes del gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getCategoryAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)
+  package: ExcelScript!
+  fullName: getCategoryAxis()
+  summary: Representa el eje de categorías de un gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCategoryAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getChartAxis(type, group)
+  uid: ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)
+  package: ExcelScript!
+  fullName: getChartAxis(type, group)
+  summary: Devuelve el eje específico identificado por tipo y grupo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+    parameters:
+    - id: type
+      description: Especifica el tipo de eje. Consulte ExcelScript. ChartAxisType para obtener información detallada.
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
+    - id: group
+      description: Opcional. Especifica el grupo de ejes. Consulte ExcelScript. ChartAxisGroup para obtener información detallada.
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getSeriesAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)
+  package: ExcelScript!
+  fullName: getSeriesAxis()
+  summary: Representa el eje de series de un gráfico tridimensional.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSeriesAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getValueAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)
+  package: ExcelScript!
+  fullName: getValueAxis()
+  summary: Representa el eje de valores de un eje.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 5228c8107a7d138be68485c568f89a67578a44dd
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420114"
