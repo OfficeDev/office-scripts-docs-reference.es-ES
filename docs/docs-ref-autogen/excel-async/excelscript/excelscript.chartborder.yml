@@ -1,55 +1,52 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartBorder:interface'
-    summary: Representa el formato de borde de un elemento de gráfico.
-    name: Excel.ChartBorder
-    fullName: Excel.ChartBorder
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartBorder#clear:member(1)'
-      - 'excel!Excel.ChartBorder#color:member'
-      - 'excel!Excel.ChartBorder#lineStyle:member'
-      - 'excel!Excel.ChartBorder#load:member(1)'
-      - 'excel!Excel.ChartBorder#weight:member'
-  - uid: 'excel!Excel.ChartBorder#clear:member(1)'
-    summary: "Borra el formato del borde de un elemento del gráfico.\t"
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.ChartBorder#color:member'
-    summary: Código de color HTML que representa el color de los bordes del gráfico.
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartBorder#lineStyle:member'
-    summary: Representa el estilo de línea del borde. Consulte Excel. ChartLineStyle para obtener información detallada.
-    name: lineStyle
-    fullName: lineStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        lineStyle:
-                    | ChartLineStyle
+### YamlMime:TSType
+name: Excel.ChartBorder
+uid: excel!Excel.ChartBorder:interface
+package: excel!
+fullName: Excel.ChartBorder
+summary: Representa el formato de borde de un elemento de gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: excel!Excel.ChartBorder#color:member
+  package: excel!
+  fullName: color
+  summary: Código de color HTML que representa el color de los bordes del gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color: string;'
+    return:
+      type: string
+- name: lineStyle
+  uid: excel!Excel.ChartBorder#lineStyle:member
+  package: excel!
+  fullName: lineStyle
+  summary: Representa el estilo de línea del borde. Consulte Excel. ChartLineStyle para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      lineStyle:
+                  | ChartLineStyle
+                  | "None"
+                  | "Continuous"
+                  | "Dash"
+                  | "DashDot"
+                  | "DashDotDot"
+                  | "Dot"
+                  | "Grey25"
+                  | "Grey50"
+                  | "Grey75"
+                  | "Automatic"
+                  | "RoundDot";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartLineStyle:enum" />
                     | "None"
                     | "Continuous"
                     | "Dash"
@@ -60,97 +57,54 @@ items:
                     | "Grey50"
                     | "Grey75"
                     | "Automatic"
-                    | "RoundDot";
-      return:
-        type:
-          - 'excel!Excel.ChartBorder#lineStyle~0:complex'
-  - uid: 'excel!Excel.ChartBorder#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartBorder#weight:member'
-    summary: 'Representa el grosor del borde, en puntos.'
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartBorder#lineStyle~0:complex'
-    name: |-
-      | ChartLineStyle
-                  | "None"
-                  | "Continuous"
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "Dot"
-                  | "Grey25"
-                  | "Grey50"
-                  | "Grey75"
-                  | "Automatic"
-                  | "RoundDot"
-    fullName: |-
-      | Excel.ChartLineStyle
-                  | "None"
-                  | "Continuous"
-                  | "Dash"
-                  | "DashDot"
-                  | "DashDotDot"
-                  | "Dot"
-                  | "Grey25"
-                  | "Grey50"
-                  | "Grey75"
-                  | "Automatic"
-                  | "RoundDot"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartLineStyle:enum'
-        name: ChartLineStyle
-        fullName: Excel.ChartLineStyle
-      - name: |2-
-
-                      | "None"
-                      | "Continuous"
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "Dot"
-                      | "Grey25"
-                      | "Grey50"
-                      | "Grey75"
-                      | "Automatic"
-                      | "RoundDot"
-        fullName: |2-
-
-                      | "None"
-                      | "Continuous"
-                      | "Dash"
-                      | "DashDot"
-                      | "DashDotDot"
-                      | "Dot"
-                      | "Grey25"
-                      | "Grey50"
-                      | "Grey75"
-                      | "Automatic"
-                      | "RoundDot"
+                    | "RoundDot"
+- name: weight
+  uid: excel!Excel.ChartBorder#weight:member
+  package: excel!
+  fullName: weight
+  summary: Representa el grosor del borde, en puntos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'weight: number;'
+    return:
+      type: number
+methods:
+- name: clear()
+  uid: excel!Excel.ChartBorder#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: Borra el formato del borde de un elemento del gráfico.	
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartBorder#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 5c4c3e0948e94b42aeb7c063a4776415ab147491
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415023"

@@ -1,52 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DateTimeDataValidation:interface'
-    summary: Representa los criterios de validación de datos de fecha.
-    name: Excel.DateTimeDataValidation
-    fullName: Excel.DateTimeDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.DateTimeDataValidation#formula1:member'
-      - 'excel!Excel.DateTimeDataValidation#formula2:member'
-      - 'excel!Excel.DateTimeDataValidation#operator:member'
-  - uid: 'excel!Excel.DateTimeDataValidation#formula1:member'
-    summary: 'Especifica el operando derecho cuando la propiedad Operator se establece en un operador binario como GreaterThan (el operando izquierdo es el valor que el usuario intenta escribir en la celda). Con los operadores ternarios between y NotBetween, especifica el operando de límite inferior. Al establecer el valor, se puede pasar como una fecha, un objeto Range o una fórmula de cadena (donde la cadena es una fecha y hora de stringified en formato ISO8601, una referencia de celda como "= a1" o una fórmula como "= MIN (a1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
-    name: formula1
-    fullName: formula1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula1: string | Date | Range;'
-      return:
-        type:
-          - 'excel!Excel.DateTimeDataValidation#formula1~0:complex'
-  - uid: 'excel!Excel.DateTimeDataValidation#formula2:member'
-    summary: 'Con los operadores ternarios between y NotBetween, especifica el operando de límite superior. No se utiliza con los operadores binarios, como GreaterThan. Al establecer el valor, se puede pasar como una fecha, un objeto Range o una cadena (donde la cadena es una fecha y hora de stringified en formato ISO8601, una referencia de celda como "= a1" o una fórmula como "= MIN (a1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
-    name: formula2
-    fullName: formula2
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula2?: string | Date | Range;'
-      return:
-        type:
-          - 'excel!Excel.DateTimeDataValidation#formula2~0:complex'
-  - uid: 'excel!Excel.DateTimeDataValidation#operator:member'
-    summary: El operador para validar los datos.
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        operator:
-                    | DataValidationOperator
+### YamlMime:TSType
+name: Excel.DateTimeDataValidation
+uid: excel!Excel.DateTimeDataValidation:interface
+package: excel!
+fullName: Excel.DateTimeDataValidation
+summary: Representa los criterios de validación de datos de fecha.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula1
+  uid: excel!Excel.DateTimeDataValidation#formula1:member
+  package: excel!
+  fullName: formula1
+  summary: 'Especifica el operando derecho cuando la propiedad Operator se establece en un operador binario como GreaterThan (el operando izquierdo es el valor que el usuario intenta escribir en la celda). Con los operadores ternarios between y NotBetween, especifica el operando de límite inferior. Al establecer el valor, se puede pasar como una fecha, un objeto Range o una fórmula de cadena (donde la cadena es una fecha y hora de stringified en formato ISO8601, una referencia de celda como "= a1" o una fórmula como "= MIN (a1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string | Date | Range;'
+    return:
+      type: string | Date | <xref uid="excel!Excel.Range:interface" />
+- name: formula2
+  uid: excel!Excel.DateTimeDataValidation#formula2:member
+  package: excel!
+  fullName: formula2
+  summary: 'Con los operadores ternarios between y NotBetween, especifica el operando de límite superior. No se utiliza con los operadores binarios, como GreaterThan. Al establecer el valor, se puede pasar como una fecha, un objeto Range o una cadena (donde la cadena es una fecha y hora de stringified en formato ISO8601, una referencia de celda como "= a1" o una fórmula como "= MIN (a1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string | Date | Range;'
+    return:
+      type: string | Date | <xref uid="excel!Excel.Range:interface" />
+- name: operator
+  uid: excel!Excel.DateTimeDataValidation#operator:member
+  package: excel!
+  fullName: operator
+  summary: El operador para validar los datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      operator:
+                  | DataValidationOperator
+                  | "Between"
+                  | "NotBetween"
+                  | "EqualTo"
+                  | "NotEqualTo"
+                  | "GreaterThan"
+                  | "LessThan"
+                  | "GreaterThanOrEqualTo"
+                  | "LessThanOrEqualTo";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.DataValidationOperator:enum" />
                     | "Between"
                     | "NotBetween"
                     | "EqualTo"
@@ -54,83 +63,11 @@ items:
                     | "GreaterThan"
                     | "LessThan"
                     | "GreaterThanOrEqualTo"
-                    | "LessThanOrEqualTo";
-      return:
-        type:
-          - 'excel!Excel.DateTimeDataValidation#operator~0:complex'
-references:
-  - uid: 'excel!Excel.DateTimeDataValidation#formula1~0:complex'
-    name: string | Date | Range
-    fullName: string | Date | Excel.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-  - uid: 'excel!Excel.DateTimeDataValidation#formula2~0:complex'
-    name: string | Date | Range
-    fullName: string | Date | Excel.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-  - uid: 'excel!Excel.DateTimeDataValidation#operator~0:complex'
-    name: |-
-      | DataValidationOperator
-                  | "Between"
-                  | "NotBetween"
-                  | "EqualTo"
-                  | "NotEqualTo"
-                  | "GreaterThan"
-                  | "LessThan"
-                  | "GreaterThanOrEqualTo"
-                  | "LessThanOrEqualTo"
-    fullName: |-
-      | Excel.DataValidationOperator
-                  | "Between"
-                  | "NotBetween"
-                  | "EqualTo"
-                  | "NotEqualTo"
-                  | "GreaterThan"
-                  | "LessThan"
-                  | "GreaterThanOrEqualTo"
-                  | "LessThanOrEqualTo"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.DataValidationOperator:enum'
-        name: DataValidationOperator
-        fullName: Excel.DataValidationOperator
-      - name: |2-
-
-                      | "Between"
-                      | "NotBetween"
-                      | "EqualTo"
-                      | "NotEqualTo"
-                      | "GreaterThan"
-                      | "LessThan"
-                      | "GreaterThanOrEqualTo"
-                      | "LessThanOrEqualTo"
-        fullName: |2-
-
-                      | "Between"
-                      | "NotBetween"
-                      | "EqualTo"
-                      | "NotEqualTo"
-                      | "GreaterThan"
-                      | "LessThan"
-                      | "GreaterThanOrEqualTo"
-                      | "LessThanOrEqualTo"
+                    | "LessThanOrEqualTo"
+metadata:
+  ms.openlocfilehash: 4e82013e25f0d47e82bea290278c7e6e0e653ca7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414002"

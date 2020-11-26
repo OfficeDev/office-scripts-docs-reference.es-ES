@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
-    summary: Enumeración simple que representa un tipo de filtro para un campo dinámico.
-    name: ExcelScript.PivotFilterType
-    fullName: ExcelScript.PivotFilterType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
-      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
-    summary: 'Filtra PivotItems con una fecha en vez de una etiqueta. Nota: un campo dinámico no puede tener simultáneamente un filtro de etiqueta y un filtro de fecha aplicado.'
-    name: date
-    fullName: date
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
-    summary: 'Filtra PivotItems según sus etiquetas. Nota: un campo dinámico no puede tener simultáneamente un filtro de etiqueta y un filtro de fecha aplicado.'
-    name: label
-    fullName: label
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
-    summary: Filtra de la tabla dinámica un PivotItems específico manualmente seleccionado.
-    name: manual
-    fullName: manual
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
-    summary: PivotFilterType es desconocido o no es compatible.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
-    summary: Filtra según el valor de un PivotItem con respecto a un DataPivotHierarchy.
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PivotFilterType
+uid: ExcelScript!ExcelScript.PivotFilterType:enum
+package: ExcelScript!
+fullName: ExcelScript.PivotFilterType
+summary: Enumeración simple que representa un tipo de filtro para un campo dinámico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: date
+  uid: ExcelScript!ExcelScript.PivotFilterType.date:member
+  package: ExcelScript!
+  summary: 'Filtra PivotItems con una fecha en vez de una etiqueta. Nota: un campo dinámico no puede tener simultáneamente un filtro de etiqueta y un filtro de fecha aplicado.'
+- name: label
+  uid: ExcelScript!ExcelScript.PivotFilterType.label:member
+  package: ExcelScript!
+  summary: 'Filtra PivotItems según sus etiquetas. Nota: un campo dinámico no puede tener simultáneamente un filtro de etiqueta y un filtro de fecha aplicado.'
+- name: manual
+  uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
+  package: ExcelScript!
+  summary: Filtra de la tabla dinámica un PivotItems específico manualmente seleccionado.
+- name: unknown
+  uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
+  package: ExcelScript!
+  summary: PivotFilterType es desconocido o no es compatible.
+- name: value
+  uid: ExcelScript!ExcelScript.PivotFilterType.value:member
+  package: ExcelScript!
+  summary: Filtra según el valor de un PivotItem con respecto a un DataPivotHierarchy.
+metadata:
+  ms.openlocfilehash: 3c8b99c254d001d641d6a9cb6ae7de55c404b69a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415249"

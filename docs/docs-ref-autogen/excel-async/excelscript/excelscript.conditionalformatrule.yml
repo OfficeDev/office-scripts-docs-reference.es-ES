@@ -1,72 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalFormatRule:interface'
-    summary: Representa una regla para todos los pares de regla/formato tradicionales.
-    name: Excel.ConditionalFormatRule
-    fullName: Excel.ConditionalFormatRule
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalFormatRule#formula:member'
-      - 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
-      - 'excel!Excel.ConditionalFormatRule#load:member(1)'
-  - uid: 'excel!Excel.ConditionalFormatRule#formula:member'
-    summary: 'La fórmula, si es necesaria, en la que se debe evaluar la regla de formato condicional.'
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B8:E13");
-              let conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-              conditionalFormat.custom.format.font.color = "green";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
-    summary: 'La fórmula, si es necesaria, en la que se debe evaluar la regla de formato condicional en el idioma del usuario.'
-    name: formulaLocal
-    fullName: formulaLocal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulaLocal: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ConditionalFormatRule#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
+### YamlMime:TSType
+name: Excel.ConditionalFormatRule
+uid: excel!Excel.ConditionalFormatRule:interface
+package: excel!
+fullName: Excel.ConditionalFormatRule
+summary: Representa una regla para todos los pares de regla/formato tradicionales.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula
+  uid: excel!Excel.ConditionalFormatRule#formula:member
+  package: excel!
+  fullName: formula
+  summary: La fórmula, si es necesaria, en la que se debe evaluar la regla de formato condicional.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B8:E13\");\n    let conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);\n    conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT(\"RC[-1]\",0),TRUE)';\n    conditionalFormat.custom.format.font.color = \"green\";\n\n    await context.sync();\n}\n```"
+- name: formulaLocal
+  uid: excel!Excel.ConditionalFormatRule#formulaLocal:member
+  package: excel!
+  fullName: formulaLocal
+  summary: La fórmula, si es necesaria, en la que se debe evaluar la regla de formato condicional en el idioma del usuario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulaLocal: string;'
+    return:
+      type: string
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ConditionalFormatRule#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: df3f77ec34f7fdb6f1bc417c1f25ff1e88fc81e2
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414219"

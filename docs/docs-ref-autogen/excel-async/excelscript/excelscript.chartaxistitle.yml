@@ -1,105 +1,101 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisTitle:interface'
-    summary: Representa el título del eje de un gráfico.
-    name: Excel.ChartAxisTitle
-    fullName: Excel.ChartAxisTitle
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartAxisTitle#format:member'
-      - 'excel!Excel.ChartAxisTitle#load:member(1)'
-      - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
-      - 'excel!Excel.ChartAxisTitle#text:member'
-      - 'excel!Excel.ChartAxisTitle#textOrientation:member'
-      - 'excel!Excel.ChartAxisTitle#visible:member'
-  - uid: 'excel!Excel.ChartAxisTitle#format:member'
-    summary: Especifica el formato del título del eje del gráfico.
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ChartAxisTitleFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartAxisTitleFormat:interface'
-  - uid: 'excel!Excel.ChartAxisTitle#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
-    summary: Un valor de cadena que representa la fórmula del título del eje del gráfico mediante la notación de estilo A1.
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formula
-          description: una cadena que presenta la fórmula que se va a establecer
-          type:
-            - string
-  - uid: 'excel!Excel.ChartAxisTitle#text:member'
-    summary: Especifica el título del eje.
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'text: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartAxisTitle#textOrientation:member'
-    summary: 'Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.'
-    name: textOrientation
-    fullName: textOrientation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textOrientation: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartAxisTitle#visible:member'
-    summary: Especifica si el título del eje es visibile.
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visible: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.ChartAxisTitleFormat:interface'
-    name: ChartAxisTitleFormat
-    fullName: Excel.ChartAxisTitleFormat
+### YamlMime:TSType
+name: Excel.ChartAxisTitle
+uid: excel!Excel.ChartAxisTitle:interface
+package: excel!
+fullName: Excel.ChartAxisTitle
+summary: Representa el título del eje de un gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: format
+  uid: excel!Excel.ChartAxisTitle#format:member
+  package: excel!
+  fullName: format
+  summary: Especifica el formato del título del eje del gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ChartAxisTitleFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartAxisTitleFormat:interface" />
+- name: text
+  uid: excel!Excel.ChartAxisTitle#text:member
+  package: excel!
+  fullName: text
+  summary: Especifica el título del eje.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'text: string;'
+    return:
+      type: string
+- name: textOrientation
+  uid: excel!Excel.ChartAxisTitle#textOrientation:member
+  package: excel!
+  fullName: textOrientation
+  summary: Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textOrientation: number;'
+    return:
+      type: number
+- name: visible
+  uid: excel!Excel.ChartAxisTitle#visible:member
+  package: excel!
+  fullName: visible
+  summary: Especifica si el título del eje es visibile.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'visible: boolean;'
+    return:
+      type: boolean
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartAxisTitle#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setFormula(formula)
+  uid: excel!Excel.ChartAxisTitle#setFormula:member(1)
+  package: excel!
+  fullName: setFormula(formula)
+  summary: Un valor de cadena que representa la fórmula del título del eje del gráfico mediante la notación de estilo A1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: una cadena que presenta la fórmula que se va a establecer
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1e0e91ed425e72451195b25cc8fb24a67a061b9c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415085"

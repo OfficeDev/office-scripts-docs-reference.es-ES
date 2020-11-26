@@ -1,60 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
-    summary: 'Proporciona información basada en la configuración actual de la referencia cultural del sistema. Esto incluye los nombres de las referencias culturales, el formato de los números y otras configuraciones que dependen de la referencia cultural.'
-    name: ExcelScript.CultureInfo
-    fullName: ExcelScript.CultureInfo
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
-      - 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
-      - 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
-  - uid: 'ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)'
-    summary: Define el formato adecuado culturalmente para mostrar la fecha y la hora. Esto se basa en la configuración actual de la referencia cultural del sistema.
-    name: getDatetimeFormat()
-    fullName: getDatetimeFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDatetimeFormat(): DatetimeFormatInfo;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CultureInfo#getName:member(1)'
-    summary: 'Obtiene el nombre de la referencia cultural en el formato languagecode2-Country/regioncode2 (por ejemplo, "zh-CN" o "en-US"). Esto se basa en la configuración actual del sistema.'
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)'
-    summary: Define el formato adecuado culturalmente para mostrar números. Esto se basa en la configuración actual de la referencia cultural del sistema.
-    name: getNumberFormat()
-    fullName: getNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormat(): NumberFormatInfo;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
-    name: DatetimeFormatInfo
-    fullName: ExcelScript.DatetimeFormatInfo
-  - uid: 'ExcelScript!ExcelScript.NumberFormatInfo:interface'
-    name: NumberFormatInfo
-    fullName: ExcelScript.NumberFormatInfo
+### YamlMime:TSType
+name: ExcelScript.CultureInfo
+uid: ExcelScript!ExcelScript.CultureInfo:interface
+package: ExcelScript!
+fullName: ExcelScript.CultureInfo
+summary: Proporciona información basada en la configuración actual de la referencia cultural del sistema. Esto incluye los nombres de las referencias culturales, el formato de los números y otras configuraciones que dependen de la referencia cultural.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getDatetimeFormat()
+  uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
+  package: ExcelScript!
+  fullName: getDatetimeFormat()
+  summary: Define el formato adecuado culturalmente para mostrar la fecha y la hora. Esto se basa en la configuración actual de la referencia cultural del sistema.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDatetimeFormat(): DatetimeFormatInfo;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DatetimeFormatInfo:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Obtiene el nombre de la referencia cultural en el formato languagecode2-Country/regioncode2 (por ejemplo, "zh-CN" o "en-US"). Esto se basa en la configuración actual del sistema.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: Define el formato adecuado culturalmente para mostrar números. Esto se basa en la configuración actual de la referencia cultural del sistema.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): NumberFormatInfo;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: a399c6a2970feddfa20b995cbb9e55cb565f9f07
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415662"

@@ -1,37 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CalculationMode:enum'
-    name: Excel.CalculationMode
-    fullName: Excel.CalculationMode
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.CalculationMode.automatic:member'
-      - 'excel!Excel.CalculationMode.automaticExceptTables:member'
-      - 'excel!Excel.CalculationMode.manual:member'
-  - uid: 'excel!Excel.CalculationMode.automatic:member'
-    summary: Comportamiento de recálculo predeterminado en el que Excel calcula los resultados de una nueva fórmula cada vez que se modifican los datos relevantes.
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.CalculationMode.automaticExceptTables:member'
-    summary: 'Calcula nuevos resultados de fórmula cada vez que se cambian los datos relevantes, a menos que la fórmula se encuentra en una tabla de datos.'
-    name: automaticExceptTables
-    fullName: automaticExceptTables
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"AutomaticExceptTables"'
-  - uid: 'excel!Excel.CalculationMode.manual:member'
-    summary: Los cálculos solo se producen cuando el usuario o el complemento los solicita.
-    name: manual
-    fullName: manual
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Manual"'
+### YamlMime:TSEnum
+name: Excel.CalculationMode
+uid: excel!Excel.CalculationMode:enum
+package: excel!
+fullName: Excel.CalculationMode
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: excel!Excel.CalculationMode.automatic:member
+  package: excel!
+  summary: Comportamiento de recálculo predeterminado en el que Excel calcula los resultados de una nueva fórmula cada vez que se modifican los datos relevantes.
+- name: automaticExceptTables
+  uid: excel!Excel.CalculationMode.automaticExceptTables:member
+  package: excel!
+  summary: Calcula nuevos resultados de fórmula cada vez que se cambian los datos relevantes, a menos que la fórmula se encuentra en una tabla de datos.
+- name: manual
+  uid: excel!Excel.CalculationMode.manual:member
+  package: excel!
+  summary: Los cálculos solo se producen cuando el usuario o el complemento los solicita.
+metadata:
+  ms.openlocfilehash: 039d1e22c000baae0e15e788c8df68173ebf984d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414436"
