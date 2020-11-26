@@ -1,72 +1,74 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
-    summary: Representa una propiedad personalizada en el nivel de hoja de cálculo.
-    name: ExcelScript.WorksheetCustomProperty
-    fullName: ExcelScript.WorksheetCustomProperty
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
-    summary: Elimina la propiedad personalizada.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
-    summary: Obtiene la clave de la propiedad personalizada. Las claves de propiedades personalizadas no distinguen mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes harán que se produzca un error "InvalidArgument").
-    name: getKey()
-    fullName: getKey()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getKey(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
-    summary: Obtiene o establece el valor de la propiedad personalizada.
-    name: getValue()
-    fullName: getValue()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValue(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
-    summary: Obtiene o establece el valor de la propiedad personalizada.
-    name: setValue(value)
-    fullName: setValue(value)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValue(value: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: value
-          description: ''
-          type:
-            - string
+### YamlMime:TSType
+name: ExcelScript.WorksheetCustomProperty
+uid: ExcelScript!ExcelScript.WorksheetCustomProperty:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetCustomProperty
+summary: Representa una propiedad personalizada en el nivel de hoja de cálculo.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Elimina la propiedad personalizada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getKey()
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
+  package: ExcelScript!
+  fullName: getKey()
+  summary: Obtiene la clave de la propiedad personalizada. Las claves de propiedades personalizadas no distinguen mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes harán que se produzca un error "InvalidArgument").
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getKey(): string;'
+    return:
+      type: string
+      description: ''
+- name: getValue()
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)
+  package: ExcelScript!
+  fullName: getValue()
+  summary: Obtiene o establece el valor de la propiedad personalizada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValue(): string;'
+    return:
+      type: string
+      description: ''
+- name: setValue(value)
+  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)
+  package: ExcelScript!
+  fullName: setValue(value)
+  summary: Obtiene o establece el valor de la propiedad personalizada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValue(value: string): void;'
+    parameters:
+    - id: value
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 663e655b4570ccbf1294b000127f86bf21e2d844
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419239"
