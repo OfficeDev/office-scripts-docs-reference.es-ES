@@ -1,168 +1,150 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartDataLabel:interface'
-    summary: Representa la etiqueta de datos de un punto del gráfico.
-    name: Excel.ChartDataLabel
-    fullName: Excel.ChartDataLabel
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartDataLabel#autoText:member'
-      - 'excel!Excel.ChartDataLabel#format:member'
-      - 'excel!Excel.ChartDataLabel#formula:member'
-      - 'excel!Excel.ChartDataLabel#height:member'
-      - 'excel!Excel.ChartDataLabel#horizontalAlignment:member'
-      - 'excel!Excel.ChartDataLabel#left:member'
-      - 'excel!Excel.ChartDataLabel#linkNumberFormat:member'
-      - 'excel!Excel.ChartDataLabel#load:member(1)'
-      - 'excel!Excel.ChartDataLabel#numberFormat:member'
-      - 'excel!Excel.ChartDataLabel#position:member'
-      - 'excel!Excel.ChartDataLabel#separator:member'
-      - 'excel!Excel.ChartDataLabel#showBubbleSize:member'
-      - 'excel!Excel.ChartDataLabel#showCategoryName:member'
-      - 'excel!Excel.ChartDataLabel#showLegendKey:member'
-      - 'excel!Excel.ChartDataLabel#showPercentage:member'
-      - 'excel!Excel.ChartDataLabel#showSeriesName:member'
-      - 'excel!Excel.ChartDataLabel#showValue:member'
-      - 'excel!Excel.ChartDataLabel#text:member'
-      - 'excel!Excel.ChartDataLabel#textOrientation:member'
-      - 'excel!Excel.ChartDataLabel#top:member'
-      - 'excel!Excel.ChartDataLabel#verticalAlignment:member'
-      - 'excel!Excel.ChartDataLabel#width:member'
-  - uid: 'excel!Excel.ChartDataLabel#autoText:member'
-    summary: Especifica si la etiqueta de datos genera automáticamente un texto apropiado basado en el contexto.
-    name: autoText
-    fullName: autoText
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'autoText: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#format:member'
-    summary: Representa el formato de la etiqueta de datos del gráfico.
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ChartDataLabelFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartDataLabelFormat:interface'
-  - uid: 'excel!Excel.ChartDataLabel#formula:member'
-    summary: Valor de cadena que representa la fórmula de la etiqueta de datos del gráfico mediante la notación de estilo A1.
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartDataLabel#height:member'
-    summary: 'Devuelve la altura, en puntos, de la etiqueta de datos del gráfico. Null si la etiqueta de datos del gráfico no está visible. '
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly height: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartDataLabel#horizontalAlignment:member'
-    summary: 'Representa la alineación horizontal de la etiqueta de datos del gráfico. Consulte Excel. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es-90, 90 o 180.'
-    name: horizontalAlignment
-    fullName: horizontalAlignment
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        horizontalAlignment:
-                    | ChartTextHorizontalAlignment
+### YamlMime:TSType
+name: Excel.ChartDataLabel
+uid: excel!Excel.ChartDataLabel:interface
+package: excel!
+fullName: Excel.ChartDataLabel
+summary: Representa la etiqueta de datos de un punto del gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: autoText
+  uid: excel!Excel.ChartDataLabel#autoText:member
+  package: excel!
+  fullName: autoText
+  summary: Especifica si la etiqueta de datos genera automáticamente un texto apropiado basado en el contexto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autoText: boolean;'
+    return:
+      type: boolean
+- name: format
+  uid: excel!Excel.ChartDataLabel#format:member
+  package: excel!
+  fullName: format
+  summary: Representa el formato de la etiqueta de datos del gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ChartDataLabelFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartDataLabelFormat:interface" />
+- name: formula
+  uid: excel!Excel.ChartDataLabel#formula:member
+  package: excel!
+  fullName: formula
+  summary: Valor de cadena que representa la fórmula de la etiqueta de datos del gráfico mediante la notación de estilo A1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula: string;'
+    return:
+      type: string
+- name: height
+  uid: excel!Excel.ChartDataLabel#height:member
+  package: excel!
+  fullName: height
+  summary: 'Devuelve la altura, en puntos, de la etiqueta de datos del gráfico. Null si la etiqueta de datos del gráfico no está visible. '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly height: number;'
+    return:
+      type: number
+- name: horizontalAlignment
+  uid: excel!Excel.ChartDataLabel#horizontalAlignment:member
+  package: excel!
+  fullName: horizontalAlignment
+  summary: Representa la alineación horizontal de la etiqueta de datos del gráfico. Consulte Excel. ChartTextHorizontalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es-90, 90 o 180.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      horizontalAlignment:
+                  | ChartTextHorizontalAlignment
+                  | "Center"
+                  | "Left"
+                  | "Right"
+                  | "Justify"
+                  | "Distributed";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" />
                     | "Center"
                     | "Left"
                     | "Right"
                     | "Justify"
-                    | "Distributed";
-      return:
-        type:
-          - 'excel!Excel.ChartDataLabel#horizontalAlignment~0:complex'
-  - uid: 'excel!Excel.ChartDataLabel#left:member'
-    summary: 'Representa la distancia, en puntos, desde el borde izquierdo de la etiqueta de datos del gráfico hasta el borde izquierdo del área del gráfico. Null si la etiqueta de datos del gráfico no está visible. '
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartDataLabel#linkNumberFormat:member'
-    summary: Especifica si el formato de número está vinculado a las celdas (de modo que el formato de número cambie en los rótulos cuando cambie en las celdas).
-    name: linkNumberFormat
-    fullName: linkNumberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'linkNumberFormat: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartDataLabel#numberFormat:member'
-    summary: Valor de cadena que representa el código de formato de la etiqueta de datos.
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'numberFormat: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartDataLabel#position:member'
-    summary: Valor DataLabelPosition que representa la posición de la etiqueta de datos. Consulte Excel. ChartDataLabelPosition para obtener información detallada.
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        position:
-                    | ChartDataLabelPosition
+                    | "Distributed"
+- name: left
+  uid: excel!Excel.ChartDataLabel#left:member
+  package: excel!
+  fullName: left
+  summary: 'Representa la distancia, en puntos, desde el borde izquierdo de la etiqueta de datos del gráfico hasta el borde izquierdo del área del gráfico. Null si la etiqueta de datos del gráfico no está visible. '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left: number;'
+    return:
+      type: number
+- name: linkNumberFormat
+  uid: excel!Excel.ChartDataLabel#linkNumberFormat:member
+  package: excel!
+  fullName: linkNumberFormat
+  summary: Especifica si el formato de número está vinculado a las celdas (de modo que el formato de número cambie en los rótulos cuando cambie en las celdas).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'linkNumberFormat: boolean;'
+    return:
+      type: boolean
+- name: numberFormat
+  uid: excel!Excel.ChartDataLabel#numberFormat:member
+  package: excel!
+  fullName: numberFormat
+  summary: Valor de cadena que representa el código de formato de la etiqueta de datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'numberFormat: string;'
+    return:
+      type: string
+- name: position
+  uid: excel!Excel.ChartDataLabel#position:member
+  package: excel!
+  fullName: position
+  summary: Valor DataLabelPosition que representa la posición de la etiqueta de datos. Consulte Excel. ChartDataLabelPosition para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      position:
+                  | ChartDataLabelPosition
+                  | "Invalid"
+                  | "None"
+                  | "Center"
+                  | "InsideEnd"
+                  | "InsideBase"
+                  | "OutsideEnd"
+                  | "Left"
+                  | "Right"
+                  | "Top"
+                  | "Bottom"
+                  | "BestFit"
+                  | "Callout";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartDataLabelPosition:enum" />
                     | "Invalid"
                     | "None"
                     | "Center"
@@ -174,295 +156,186 @@ items:
                     | "Top"
                     | "Bottom"
                     | "BestFit"
-                    | "Callout";
-      return:
-        type:
-          - 'excel!Excel.ChartDataLabel#position~0:complex'
-  - uid: 'excel!Excel.ChartDataLabel#separator:member'
-    summary: Cadena que representa el separador empleado para la etiqueta de datos de un gráfico.
-    name: separator
-    fullName: separator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'separator: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartDataLabel#showBubbleSize:member'
-    summary: Especifica si el tamaño de la burbuja de la etiqueta de datos es visible.
-    name: showBubbleSize
-    fullName: showBubbleSize
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showBubbleSize: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#showCategoryName:member'
-    summary: Especifica si el nombre de categoría de la etiqueta de datos es visible.
-    name: showCategoryName
-    fullName: showCategoryName
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showCategoryName: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#showLegendKey:member'
-    summary: Especifica si la clave de la leyenda de la etiqueta de datos está visible.
-    name: showLegendKey
-    fullName: showLegendKey
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showLegendKey: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#showPercentage:member'
-    summary: Especifica si el porcentaje de la etiqueta de datos es visible.
-    name: showPercentage
-    fullName: showPercentage
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showPercentage: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#showSeriesName:member'
-    summary: Especifica si el nombre de serie de la etiqueta de datos es visible.
-    name: showSeriesName
-    fullName: showSeriesName
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showSeriesName: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#showValue:member'
-    summary: Especifica si el valor de la etiqueta de datos es visible.
-    name: showValue
-    fullName: showValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showValue: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartDataLabel#text:member'
-    summary: Cadena que representa el texto de la etiqueta de datos en un gráfico.
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'text: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartDataLabel#textOrientation:member'
-    summary: 'Representa el ángulo al que está orientado el texto para la etiqueta de datos del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.'
-    name: textOrientation
-    fullName: textOrientation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textOrientation: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartDataLabel#top:member'
-    summary: 'Representa la distancia, en puntos, desde el borde superior de la etiqueta de datos del gráfico hasta el borde superior del área del gráfico.  Null si la etiqueta de datos del gráfico no está visible. '
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartDataLabel#verticalAlignment:member'
-    summary: Representa la alineación vertical de la etiqueta de datos del gráfico. Consulte Excel. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es 0.
-    name: verticalAlignment
-    fullName: verticalAlignment
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        verticalAlignment:
-                    | ChartTextVerticalAlignment
+                    | "Callout"
+- name: separator
+  uid: excel!Excel.ChartDataLabel#separator:member
+  package: excel!
+  fullName: separator
+  summary: Cadena que representa el separador empleado para la etiqueta de datos de un gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'separator: string;'
+    return:
+      type: string
+- name: showBubbleSize
+  uid: excel!Excel.ChartDataLabel#showBubbleSize:member
+  package: excel!
+  fullName: showBubbleSize
+  summary: Especifica si el tamaño de la burbuja de la etiqueta de datos es visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showBubbleSize: boolean;'
+    return:
+      type: boolean
+- name: showCategoryName
+  uid: excel!Excel.ChartDataLabel#showCategoryName:member
+  package: excel!
+  fullName: showCategoryName
+  summary: Especifica si el nombre de categoría de la etiqueta de datos es visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showCategoryName: boolean;'
+    return:
+      type: boolean
+- name: showLegendKey
+  uid: excel!Excel.ChartDataLabel#showLegendKey:member
+  package: excel!
+  fullName: showLegendKey
+  summary: Especifica si la clave de la leyenda de la etiqueta de datos está visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showLegendKey: boolean;'
+    return:
+      type: boolean
+- name: showPercentage
+  uid: excel!Excel.ChartDataLabel#showPercentage:member
+  package: excel!
+  fullName: showPercentage
+  summary: Especifica si el porcentaje de la etiqueta de datos es visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showPercentage: boolean;'
+    return:
+      type: boolean
+- name: showSeriesName
+  uid: excel!Excel.ChartDataLabel#showSeriesName:member
+  package: excel!
+  fullName: showSeriesName
+  summary: Especifica si el nombre de serie de la etiqueta de datos es visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showSeriesName: boolean;'
+    return:
+      type: boolean
+- name: showValue
+  uid: excel!Excel.ChartDataLabel#showValue:member
+  package: excel!
+  fullName: showValue
+  summary: Especifica si el valor de la etiqueta de datos es visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showValue: boolean;'
+    return:
+      type: boolean
+- name: text
+  uid: excel!Excel.ChartDataLabel#text:member
+  package: excel!
+  fullName: text
+  summary: Cadena que representa el texto de la etiqueta de datos en un gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'text: string;'
+    return:
+      type: string
+- name: textOrientation
+  uid: excel!Excel.ChartDataLabel#textOrientation:member
+  package: excel!
+  fullName: textOrientation
+  summary: Representa el ángulo al que está orientado el texto para la etiqueta de datos del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textOrientation: number;'
+    return:
+      type: number
+- name: top
+  uid: excel!Excel.ChartDataLabel#top:member
+  package: excel!
+  fullName: top
+  summary: 'Representa la distancia, en puntos, desde el borde superior de la etiqueta de datos del gráfico hasta el borde superior del área del gráfico.  Null si la etiqueta de datos del gráfico no está visible. '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top: number;'
+    return:
+      type: number
+- name: verticalAlignment
+  uid: excel!Excel.ChartDataLabel#verticalAlignment:member
+  package: excel!
+  fullName: verticalAlignment
+  summary: Representa la alineación vertical de la etiqueta de datos del gráfico. Consulte Excel. ChartTextVerticalAlignment para obtener información detallada. Esta propiedad es válida sólo cuando TextOrientation de la etiqueta de datos es 0.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      verticalAlignment:
+                  | ChartTextVerticalAlignment
+                  | "Center"
+                  | "Bottom"
+                  | "Top"
+                  | "Justify"
+                  | "Distributed";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" />
                     | "Center"
                     | "Bottom"
                     | "Top"
                     | "Justify"
-                    | "Distributed";
-      return:
-        type:
-          - 'excel!Excel.ChartDataLabel#verticalAlignment~0:complex'
-  - uid: 'excel!Excel.ChartDataLabel#width:member'
-    summary: 'Devuelve la anchura, en puntos, de la etiqueta de datos del gráfico. Null si la etiqueta de datos del gráfico no está visible. '
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly width: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartDataLabelFormat:interface'
-    name: ChartDataLabelFormat
-    fullName: Excel.ChartDataLabelFormat
-  - uid: 'excel!Excel.ChartDataLabel#horizontalAlignment~0:complex'
-    name: |-
-      | ChartTextHorizontalAlignment
-                  | "Center"
-                  | "Left"
-                  | "Right"
-                  | "Justify"
-                  | "Distributed"
-    fullName: |-
-      | Excel.ChartTextHorizontalAlignment
-                  | "Center"
-                  | "Left"
-                  | "Right"
-                  | "Justify"
-                  | "Distributed"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
-        name: ChartTextHorizontalAlignment
-        fullName: Excel.ChartTextHorizontalAlignment
-      - name: |2-
-
-                      | "Center"
-                      | "Left"
-                      | "Right"
-                      | "Justify"
-                      | "Distributed"
-        fullName: |2-
-
-                      | "Center"
-                      | "Left"
-                      | "Right"
-                      | "Justify"
-                      | "Distributed"
-  - uid: 'excel!Excel.ChartDataLabel#position~0:complex'
-    name: |-
-      | ChartDataLabelPosition
-                  | "Invalid"
-                  | "None"
-                  | "Center"
-                  | "InsideEnd"
-                  | "InsideBase"
-                  | "OutsideEnd"
-                  | "Left"
-                  | "Right"
-                  | "Top"
-                  | "Bottom"
-                  | "BestFit"
-                  | "Callout"
-    fullName: |-
-      | Excel.ChartDataLabelPosition
-                  | "Invalid"
-                  | "None"
-                  | "Center"
-                  | "InsideEnd"
-                  | "InsideBase"
-                  | "OutsideEnd"
-                  | "Left"
-                  | "Right"
-                  | "Top"
-                  | "Bottom"
-                  | "BestFit"
-                  | "Callout"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartDataLabelPosition:enum'
-        name: ChartDataLabelPosition
-        fullName: Excel.ChartDataLabelPosition
-      - name: |2-
-
-                      | "Invalid"
-                      | "None"
-                      | "Center"
-                      | "InsideEnd"
-                      | "InsideBase"
-                      | "OutsideEnd"
-                      | "Left"
-                      | "Right"
-                      | "Top"
-                      | "Bottom"
-                      | "BestFit"
-                      | "Callout"
-        fullName: |2-
-
-                      | "Invalid"
-                      | "None"
-                      | "Center"
-                      | "InsideEnd"
-                      | "InsideBase"
-                      | "OutsideEnd"
-                      | "Left"
-                      | "Right"
-                      | "Top"
-                      | "Bottom"
-                      | "BestFit"
-                      | "Callout"
-  - uid: 'excel!Excel.ChartDataLabel#verticalAlignment~0:complex'
-    name: |-
-      | ChartTextVerticalAlignment
-                  | "Center"
-                  | "Bottom"
-                  | "Top"
-                  | "Justify"
-                  | "Distributed"
-    fullName: |-
-      | Excel.ChartTextVerticalAlignment
-                  | "Center"
-                  | "Bottom"
-                  | "Top"
-                  | "Justify"
-                  | "Distributed"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
-        name: ChartTextVerticalAlignment
-        fullName: Excel.ChartTextVerticalAlignment
-      - name: |2-
-
-                      | "Center"
-                      | "Bottom"
-                      | "Top"
-                      | "Justify"
-                      | "Distributed"
-        fullName: |2-
-
-                      | "Center"
-                      | "Bottom"
-                      | "Top"
-                      | "Justify"
-                      | "Distributed"
+                    | "Distributed"
+- name: width
+  uid: excel!Excel.ChartDataLabel#width:member
+  package: excel!
+  fullName: width
+  summary: 'Devuelve la anchura, en puntos, de la etiqueta de datos del gráfico. Null si la etiqueta de datos del gráfico no está visible. '
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly width: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartDataLabel#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: a4e7d43375305e22a416e6ef8bdc1be7ea999761
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417669"
