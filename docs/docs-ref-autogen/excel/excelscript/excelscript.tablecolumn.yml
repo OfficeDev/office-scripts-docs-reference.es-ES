@@ -1,163 +1,152 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TableColumn:interface'
-    summary: Representa una columna en una tabla.
-    name: ExcelScript.TableColumn
-    fullName: ExcelScript.TableColumn
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TableColumn#delete:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getFilter:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getHeaderRowRange:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getId:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getIndex:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getName:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getRangeBetweenHeaderAndTotal:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#getTotalRowRange:member(1)'
-      - 'ExcelScript!ExcelScript.TableColumn#setName:member(1)'
-  - uid: 'ExcelScript!ExcelScript.TableColumn#delete:member(1)'
-    summary: Elimina la columna de la tabla.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getFilter:member(1)'
-    summary: Recupera el filtro aplicado a la columna.
-    name: getFilter()
-    fullName: getFilter()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFilter(): Filter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Filter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getHeaderRowRange:member(1)'
-    summary: Obtiene el objeto de rango asociado a la fila de encabezado de la columna.
-    name: getHeaderRowRange()
-    fullName: getHeaderRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeaderRowRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getId:member(1)'
-    summary: Devuelve una clave única que identifica la columna de la tabla.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getIndex:member(1)'
-    summary: Devuelve el número de índice de la columna dentro de la colección de columnas de la tabla. Indizado con cero.
-    name: getIndex()
-    fullName: getIndex()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIndex(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getName:member(1)'
-    summary: Especifica el nombre de la columna de la tabla.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getRange:member(1)'
-    summary: Obtiene el objeto de rango asociado a toda la columna.
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getRangeBetweenHeaderAndTotal:member(1)'
-    summary: Obtiene el objeto de rango asociado al cuerpo de datos de la columna.
-    name: getRangeBetweenHeaderAndTotal()
-    fullName: getRangeBetweenHeaderAndTotal()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRangeBetweenHeaderAndTotal(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#getTotalRowRange:member(1)'
-    summary: Obtiene el objeto de rango asociado a la fila de totales de la columna.
-    name: getTotalRowRange()
-    fullName: getTotalRowRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTotalRowRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TableColumn#setName:member(1)'
-    summary: Especifica el nombre de la columna de la tabla.
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-references:
-  - uid: 'ExcelScript!ExcelScript.Filter:interface'
-    name: Filter
-    fullName: ExcelScript.Filter
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
+### YamlMime:TSType
+name: ExcelScript.TableColumn
+uid: ExcelScript!ExcelScript.TableColumn:interface
+package: ExcelScript!
+fullName: ExcelScript.TableColumn
+summary: Representa una columna en una tabla.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.TableColumn#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Elimina la columna de la tabla.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getFilter()
+  uid: ExcelScript!ExcelScript.TableColumn#getFilter:member(1)
+  package: ExcelScript!
+  fullName: getFilter()
+  summary: Recupera el filtro aplicado a la columna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFilter(): Filter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Filter:interface" />
+      description: ''
+- name: getHeaderRowRange()
+  uid: ExcelScript!ExcelScript.TableColumn#getHeaderRowRange:member(1)
+  package: ExcelScript!
+  fullName: getHeaderRowRange()
+  summary: Obtiene el objeto de rango asociado a la fila de encabezado de la columna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeaderRowRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.TableColumn#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Devuelve una clave única que identifica la columna de la tabla.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): number;'
+    return:
+      type: number
+      description: ''
+- name: getIndex()
+  uid: ExcelScript!ExcelScript.TableColumn#getIndex:member(1)
+  package: ExcelScript!
+  fullName: getIndex()
+  summary: Devuelve el número de índice de la columna dentro de la colección de columnas de la tabla. Indizado con cero.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIndex(): number;'
+    return:
+      type: number
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.TableColumn#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Especifica el nombre de la columna de la tabla.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.TableColumn#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Obtiene el objeto de rango asociado a toda la columna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRangeBetweenHeaderAndTotal()
+  uid: ExcelScript!ExcelScript.TableColumn#getRangeBetweenHeaderAndTotal:member(1)
+  package: ExcelScript!
+  fullName: getRangeBetweenHeaderAndTotal()
+  summary: Obtiene el objeto de rango asociado al cuerpo de datos de la columna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBetweenHeaderAndTotal(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getTotalRowRange()
+  uid: ExcelScript!ExcelScript.TableColumn#getTotalRowRange:member(1)
+  package: ExcelScript!
+  fullName: getTotalRowRange()
+  summary: Obtiene el objeto de rango asociado a la fila de totales de la columna.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTotalRowRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.TableColumn#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Especifica el nombre de la columna de la tabla.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 151e90d88fa5994995a3f8e244b6af9163e72929
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420303"
