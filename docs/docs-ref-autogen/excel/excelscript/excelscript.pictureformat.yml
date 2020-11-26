@@ -1,58 +1,41 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
-    summary: El formato de la imagen.
-    name: ExcelScript.PictureFormat
-    fullName: ExcelScript.PictureFormat
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.gif:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.png:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.svg:member'
-      - 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
-    summary: Imagen de mapa de bits.
-    name: bmp
-    fullName: bmp
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.gif:member'
-    summary: Formato de intercambio de gráficos.
-    name: gif
-    fullName: gif
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
-    summary: Grupo de expertos fotográficos Unidos.
-    name: jpeg
-    fullName: jpeg
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.png:member'
-    summary: Gráficos de red portátiles.
-    name: png
-    fullName: png
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.svg:member'
-    summary: Gráfico vectorial escalable.
-    name: svg
-    fullName: svg
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PictureFormat
+uid: ExcelScript!ExcelScript.PictureFormat:enum
+package: ExcelScript!
+fullName: ExcelScript.PictureFormat
+summary: El formato de la imagen.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bmp
+  uid: ExcelScript!ExcelScript.PictureFormat.bmp:member
+  package: ExcelScript!
+  summary: Imagen de mapa de bits.
+- name: gif
+  uid: ExcelScript!ExcelScript.PictureFormat.gif:member
+  package: ExcelScript!
+  summary: Formato de intercambio de gráficos.
+- name: jpeg
+  uid: ExcelScript!ExcelScript.PictureFormat.jpeg:member
+  package: ExcelScript!
+  summary: Grupo de expertos fotográficos Unidos.
+- name: png
+  uid: ExcelScript!ExcelScript.PictureFormat.png:member
+  package: ExcelScript!
+  summary: Gráficos de red portátiles.
+- name: svg
+  uid: ExcelScript!ExcelScript.PictureFormat.svg:member
+  package: ExcelScript!
+  summary: Gráfico vectorial escalable.
+- name: unknown
+  uid: ExcelScript!ExcelScript.PictureFormat.unknown:member
+  package: ExcelScript!
+  summary: ''
+metadata:
+  ms.openlocfilehash: 17f4104923cd1c1d008f67c9e2b2b4190ea26dcf
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415270"

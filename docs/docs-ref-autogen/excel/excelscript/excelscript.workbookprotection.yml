@@ -1,63 +1,65 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
-    summary: Representa la protección de un objeto Workbook.
-    name: ExcelScript.WorkbookProtection
-    fullName: ExcelScript.WorkbookProtection
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
-      - 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
-      - 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
-    summary: Especifica si el libro está protegido.
-    name: getProtected()
-    fullName: getProtected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getProtected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
-    summary: Protege un libro. Produce un error si se ha protegido el libro.
-    name: protect(password)
-    fullName: protect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: password
-          description: contraseña de protección del libro.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
-    summary: Desprotege un libro.
-    name: unprotect(password)
-    fullName: unprotect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unprotect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: password
-          description: contraseña de protección del libro.
-          type:
-            - string
+### YamlMime:TSType
+name: ExcelScript.WorkbookProtection
+uid: ExcelScript!ExcelScript.WorkbookProtection:interface
+package: ExcelScript!
+fullName: ExcelScript.WorkbookProtection
+summary: Representa la protección de un objeto Workbook.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getProtected()
+  uid: ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)
+  package: ExcelScript!
+  fullName: getProtected()
+  summary: Especifica si el libro está protegido.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtected(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: protect(password)
+  uid: ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)
+  package: ExcelScript!
+  fullName: protect(password)
+  summary: Protege un libro. Produce un error si se ha protegido el libro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'protect(password?: string): void;'
+    parameters:
+    - id: password
+      description: contraseña de protección del libro.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: unprotect(password)
+  uid: ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)
+  package: ExcelScript!
+  fullName: unprotect(password)
+  summary: Desprotege un libro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unprotect(password?: string): void;'
+    parameters:
+    - id: password
+      description: contraseña de protección del libro.
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 78fcc6042f655d841c8330506ca305e7533ac0f6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415165"

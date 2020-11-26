@@ -1,85 +1,49 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTrendlineFormat:interface'
-    summary: Representa las propiedades de formato de la tendencia del gráfico.
-    name: Excel.ChartTrendlineFormat
-    fullName: Excel.ChartTrendlineFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartTrendlineFormat#line:member'
-      - 'excel!Excel.ChartTrendlineFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartTrendlineFormat#line:member'
-    summary: Indica el formato de línea de gráfico.
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly line: ChartLineFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartLineFormat:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series; 
-
-              // Get the color of the chart trendline. 
-              // In this example, it's #4472c4 which is blue.
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-              let line = trendline.format.line;
-              line.load("color");
-
-              await context.sync();
-
-              console.log("The trendline color is:" + line.color);
-          }
-          ```
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series; 
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-
-              // Set format of the trendline to a solid, red line.
-              let line = trendline.format.line;
-              line.color = '#FF0000';
-
-              await context.sync();
-
-              console.log("The trendline color has been set to:" + line.color);
-          }
-          ```
-  - uid: 'excel!Excel.ChartTrendlineFormat#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartLineFormat:interface'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+### YamlMime:TSType
+name: Excel.ChartTrendlineFormat
+uid: excel!Excel.ChartTrendlineFormat:interface
+package: excel!
+fullName: Excel.ChartTrendlineFormat
+summary: Representa las propiedades de formato de la tendencia del gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: line
+  uid: excel!Excel.ChartTrendlineFormat#line:member
+  package: excel!
+  fullName: line
+  summary: Indica el formato de línea de gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly line: ChartLineFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartLineFormat:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    let seriesCollection = sheet.charts.getItemAt(0).series; \n\n    // Get the color of the chart trendline. \n    // In this example, it's #4472c4 which is blue.\n    let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);\n    let line = trendline.format.line;\n    line.load(\"color\");\n\n    await context.sync();\n\n    console.log(\"The trendline color is:\" + line.color);\n}\n```\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    let seriesCollection = sheet.charts.getItemAt(0).series; \n    let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);\n\n    // Set format of the trendline to a solid, red line.\n    let line = trendline.format.line;\n    line.color = '#FF0000';\n\n    await context.sync();\n\n    console.log(\"The trendline color has been set to:\" + line.color);\n}\n```"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartTrendlineFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: aa324170a1b793b2704c2b37eb5066ec2ced51bc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414806"
