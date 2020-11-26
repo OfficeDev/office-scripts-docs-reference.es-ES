@@ -1,213 +1,198 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
-    summary: 'Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un objeto de gráfico.'
-    name: ExcelScript.ChartFont
-    fullName: ExcelScript.ChartFont
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartFont#getBold:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#getItalic:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#setBold:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#setItalic:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
-      - 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartFont#getBold:member(1)'
-    summary: Representa el estado de negrita de la fuente.
-    name: getBold()
-    fullName: getBold()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBold(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartFont#getColor:member(1)'
-    summary: 'Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).'
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartFont#getItalic:member(1)'
-    summary: Representa el estado de cursiva de la fuente.
-    name: getItalic()
-    fullName: getItalic()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItalic(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartFont#getName:member(1)'
-    summary: 'Nombre de fuente (por ejemplo, "Calibri")'
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartFont#getSize:member(1)'
-    summary: 'Tamaño de la fuente (por ejemplo, 11)'
-    name: getSize()
-    fullName: getSize()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSize(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-    summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ChartUnderlineStyle para obtener información detallada.
-    name: getUnderline()
-    fullName: getUnderline()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUnderline(): ChartUnderlineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartFont#setBold:member(1)'
-    summary: Representa el estado de negrita de la fuente.
-    name: setBold(bold)
-    fullName: setBold(bold)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBold(bold: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: bold
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartFont#setColor:member(1)'
-    summary: 'Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).'
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartFont#setItalic:member(1)'
-    summary: Representa el estado de cursiva de la fuente.
-    name: setItalic(italic)
-    fullName: setItalic(italic)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setItalic(italic: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: italic
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartFont#setName:member(1)'
-    summary: 'Nombre de fuente (por ejemplo, "Calibri")'
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartFont#setSize:member(1)'
-    summary: 'Tamaño de la fuente (por ejemplo, 11)'
-    name: setSize(size)
-    fullName: setSize(size)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSize(size: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: size
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-    summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ChartUnderlineStyle para obtener información detallada.
-    name: setUnderline(underline)
-    fullName: setUnderline(underline)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUnderline(underline: ChartUnderlineStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: underline
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartUnderlineStyle:enum'
-    name: ChartUnderlineStyle
-    fullName: ExcelScript.ChartUnderlineStyle
+### YamlMime:TSType
+name: ExcelScript.ChartFont
+uid: ExcelScript!ExcelScript.ChartFont:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartFont
+summary: Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un objeto de gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBold()
+  uid: ExcelScript!ExcelScript.ChartFont#getBold:member(1)
+  package: ExcelScript!
+  fullName: getBold()
+  summary: Representa el estado de negrita de la fuente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBold(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getItalic()
+  uid: ExcelScript!ExcelScript.ChartFont#getItalic:member(1)
+  package: ExcelScript!
+  fullName: getItalic()
+  summary: Representa el estado de cursiva de la fuente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItalic(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.ChartFont#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Nombre de fuente (por ejemplo, "Calibri")
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getSize()
+  uid: ExcelScript!ExcelScript.ChartFont#getSize:member(1)
+  package: ExcelScript!
+  fullName: getSize()
+  summary: Tamaño de la fuente (por ejemplo, 11)
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSize(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUnderline()
+  uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
+  package: ExcelScript!
+  fullName: getUnderline()
+  summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ChartUnderlineStyle para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUnderline(): ChartUnderlineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartUnderlineStyle:enum" />
+      description: ''
+- name: setBold(bold)
+  uid: ExcelScript!ExcelScript.ChartFont#setBold:member(1)
+  package: ExcelScript!
+  fullName: setBold(bold)
+  summary: Representa el estado de negrita de la fuente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBold(bold: boolean): void;'
+    parameters:
+    - id: bold
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setItalic(italic)
+  uid: ExcelScript!ExcelScript.ChartFont#setItalic:member(1)
+  package: ExcelScript!
+  fullName: setItalic(italic)
+  summary: Representa el estado de cursiva de la fuente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setItalic(italic: boolean): void;'
+    parameters:
+    - id: italic
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.ChartFont#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Nombre de fuente (por ejemplo, "Calibri")
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setSize(size)
+  uid: ExcelScript!ExcelScript.ChartFont#setSize:member(1)
+  package: ExcelScript!
+  fullName: setSize(size)
+  summary: Tamaño de la fuente (por ejemplo, 11)
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSize(size: number): void;'
+    parameters:
+    - id: size
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setUnderline(underline)
+  uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
+  package: ExcelScript!
+  fullName: setUnderline(underline)
+  summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ChartUnderlineStyle para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUnderline(underline: ChartUnderlineStyle): void;'
+    parameters:
+    - id: underline
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartUnderlineStyle:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: ef4d91ec8835380a3af1b0de7def9ab52d8dda8c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419939"

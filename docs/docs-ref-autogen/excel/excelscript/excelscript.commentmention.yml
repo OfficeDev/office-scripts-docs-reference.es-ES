@@ -1,50 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
-    summary: Representa la entidad que se menciona en los comentarios.
-    name: ExcelScript.CommentMention
-    fullName: ExcelScript.CommentMention
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CommentMention#email:member'
-      - 'ExcelScript!ExcelScript.CommentMention#id:member'
-      - 'ExcelScript!ExcelScript.CommentMention#name:member'
-  - uid: 'ExcelScript!ExcelScript.CommentMention#email:member'
-    summary: La dirección de correo electrónico de la entidad que se menciona en el comentario.
-    name: email
-    fullName: email
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'email: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.CommentMention#id:member'
-    summary: Identificador de la entidad. El identificador coincide con uno de los identificadores de`CommentRichContent.richContent`<!-- -->.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'id: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.CommentMention#name:member'
-    summary: Nombre de la entidad que se menciona en el comentario.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: ExcelScript.CommentMention
+uid: ExcelScript!ExcelScript.CommentMention:interface
+package: ExcelScript!
+fullName: ExcelScript.CommentMention
+summary: Representa la entidad que se menciona en los comentarios.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: email
+  uid: ExcelScript!ExcelScript.CommentMention#email:member
+  package: ExcelScript!
+  fullName: email
+  summary: La dirección de correo electrónico de la entidad que se menciona en el comentario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'email: string;'
+    return:
+      type: string
+- name: id
+  uid: ExcelScript!ExcelScript.CommentMention#id:member
+  package: ExcelScript!
+  fullName: id
+  summary: Identificador de la entidad. El identificador coincide con uno de los identificadores de `CommentRichContent.richContent`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'id: number;'
+    return:
+      type: number
+- name: name
+  uid: ExcelScript!ExcelScript.CommentMention#name:member
+  package: ExcelScript!
+  fullName: name
+  summary: Nombre de la entidad que se menciona en el comentario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 82bf472cdb4e1dae90dc50e8f4d52deae37ed1ef
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419512"

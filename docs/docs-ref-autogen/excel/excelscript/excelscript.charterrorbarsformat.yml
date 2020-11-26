@@ -1,29 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBarsFormat:interface'
-    summary: Encapsula las propiedades de formato de las barras de error de gráfico.
-    name: ExcelScript.ChartErrorBarsFormat
-    fullName: ExcelScript.ChartErrorBarsFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartErrorBarsFormat#getLine:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBarsFormat#getLine:member(1)'
-    summary: Representa el formato de línea de gráfico.
-    name: getLine()
-    fullName: getLine()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLine(): ChartLineFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
-    name: ChartLineFormat
-    fullName: ExcelScript.ChartLineFormat
+### YamlMime:TSType
+name: ExcelScript.ChartErrorBarsFormat
+uid: ExcelScript!ExcelScript.ChartErrorBarsFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartErrorBarsFormat
+summary: Encapsula las propiedades de formato de las barras de error de gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getLine()
+  uid: ExcelScript!ExcelScript.ChartErrorBarsFormat#getLine:member(1)
+  package: ExcelScript!
+  fullName: getLine()
+  summary: Representa el formato de línea de gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLine(): ChartLineFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 9be8de50a5ecadd099da95092eac027a9a948979
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419953"
