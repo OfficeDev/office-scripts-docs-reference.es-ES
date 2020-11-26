@@ -1,42 +1,33 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-    name: ExcelScript.HeaderFooterState
-    fullName: ExcelScript.HeaderFooterState
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
-      - 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.default:member'
-    summary: Solo se usa un encabezado o pie de página general para todas las páginas impresas.
-    name: default
-    fullName: default
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member'
-    summary: Hay un encabezado o pie de página en primera página independiente y un encabezado o pie de página general que se usa para todas las demás páginas.
-    name: firstAndDefault
-    fullName: firstAndDefault
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member'
-    summary: 'Hay un encabezado o pie de página en primera página independiente y, a continuación, hay un encabezado o pie de página independiente para las páginas pares e impares.'
-    name: firstOddAndEven
-    fullName: firstOddAndEven
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member'
-    summary: Hay un encabezado o pie de página diferente para las páginas pares e impares.
-    name: oddAndEven
-    fullName: oddAndEven
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.HeaderFooterState
+uid: ExcelScript!ExcelScript.HeaderFooterState:enum
+package: ExcelScript!
+fullName: ExcelScript.HeaderFooterState
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: default
+  uid: ExcelScript!ExcelScript.HeaderFooterState.default:member
+  package: ExcelScript!
+  summary: Solo se usa un encabezado o pie de página general para todas las páginas impresas.
+- name: firstAndDefault
+  uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
+  package: ExcelScript!
+  summary: Hay un encabezado o pie de página en primera página independiente y un encabezado o pie de página general que se usa para todas las demás páginas.
+- name: firstOddAndEven
+  uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
+  package: ExcelScript!
+  summary: Hay un encabezado o pie de página en primera página independiente y, a continuación, hay un encabezado o pie de página independiente para las páginas pares e impares.
+- name: oddAndEven
+  uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
+  package: ExcelScript!
+  summary: Hay un encabezado o pie de página diferente para las páginas pares e impares.
+metadata:
+  ms.openlocfilehash: c8340881b74c9fb1761bbe3721c6031136668e3b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412347"

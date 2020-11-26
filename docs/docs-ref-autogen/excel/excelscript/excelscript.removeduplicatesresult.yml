@@ -1,39 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult:interface'
-    summary: Representa los resultados del método removeDuplicates en el rango.
-    name: ExcelScript.RemoveDuplicatesResult
-    fullName: ExcelScript.RemoveDuplicatesResult
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-      - 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)'
-    summary: Número de filas duplicadas quitadas por la operación.
-    name: getRemoved()
-    fullName: getRemoved()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRemoved(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)'
-    summary: Número de filas únicas restantes presentes en el intervalo resultante.
-    name: getUniqueRemaining()
-    fullName: getUniqueRemaining()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUniqueRemaining(): number;'
-      return:
-        type:
-          - number
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.RemoveDuplicatesResult
+uid: ExcelScript!ExcelScript.RemoveDuplicatesResult:interface
+package: ExcelScript!
+fullName: ExcelScript.RemoveDuplicatesResult
+summary: Representa los resultados del método removeDuplicates en el rango.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getRemoved()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getRemoved:member(1)
+  package: ExcelScript!
+  fullName: getRemoved()
+  summary: Número de filas duplicadas quitadas por la operación.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRemoved(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUniqueRemaining()
+  uid: ExcelScript!ExcelScript.RemoveDuplicatesResult#getUniqueRemaining:member(1)
+  package: ExcelScript!
+  fullName: getUniqueRemaining()
+  summary: Número de filas únicas restantes presentes en el intervalo resultante.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUniqueRemaining(): number;'
+    return:
+      type: number
+      description: ''
+metadata:
+  ms.openlocfilehash: 1b7a861288171b4c69d9ed8f0cc1089cabf14c16
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411890"

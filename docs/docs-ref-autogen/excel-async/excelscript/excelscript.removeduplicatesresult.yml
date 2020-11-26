@@ -1,74 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.RemoveDuplicatesResult:interface'
-    summary: Representa los resultados del método removeDuplicates en el rango.
-    name: Excel.RemoveDuplicatesResult
-    fullName: Excel.RemoveDuplicatesResult
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.RemoveDuplicatesResult#load:member(1)'
-      - 'excel!Excel.RemoveDuplicatesResult#removed:member'
-      - 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.RemoveDuplicatesResult#removed:member'
-    summary: Número de filas duplicadas quitadas por la operación.
-    name: removed
-    fullName: removed
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly removed: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member'
-    summary: Número de filas únicas restantes presentes en el intervalo resultante.
-    name: uniqueRemaining
-    fullName: uniqueRemaining
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly uniqueRemaining: number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B2:D11");
-
-              let deleteResult = range.removeDuplicates([0],true);    
-              deleteResult.load();    
-              await context.sync();
-
-              console.log(deleteResult.removed + " entries with duplicate names removed.");
-              console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
-          }
-          ```
+### YamlMime:TSType
+name: Excel.RemoveDuplicatesResult
+uid: excel!Excel.RemoveDuplicatesResult:interface
+package: excel!
+fullName: Excel.RemoveDuplicatesResult
+summary: Representa los resultados del método removeDuplicates en el rango.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: removed
+  uid: excel!Excel.RemoveDuplicatesResult#removed:member
+  package: excel!
+  fullName: removed
+  summary: Número de filas duplicadas quitadas por la operación.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly removed: number;'
+    return:
+      type: number
+- name: uniqueRemaining
+  uid: excel!Excel.RemoveDuplicatesResult#uniqueRemaining:member
+  package: excel!
+  fullName: uniqueRemaining
+  summary: Número de filas únicas restantes presentes en el intervalo resultante.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly uniqueRemaining: number;'
+    return:
+      type: number
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B2:D11\");\n\n    let deleteResult = range.removeDuplicates([0],true);    \n    deleteResult.load();    \n    await context.sync();\n\n    console.log(deleteResult.removed + \" entries with duplicate names removed.\");\n    console.log(deleteResult.uniqueRemaining + \" entries with unique names remain in the range.\");\n}\n```"
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.RemoveDuplicatesResult#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b700e54311e2b2caa7044b061cbd4bd6f40588ac
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413163"

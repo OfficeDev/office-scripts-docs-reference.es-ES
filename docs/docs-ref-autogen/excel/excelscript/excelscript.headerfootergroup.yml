@@ -1,172 +1,160 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup:interface'
-    name: ExcelScript.HeaderFooterGroup
-    fullName: ExcelScript.HeaderFooterGroup
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
-      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
-    summary: 'El encabezado o pie general, utilizado para todas las páginas, salvo que se indique par, impar o primera página.'
-    name: getDefaultForAllPages()
-    fullName: getDefaultForAllPages()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDefaultForAllPages(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
-    summary: 'El encabezado o pie de página para páginas pares, debe especificarse el encabezado o pie de página para páginas impares.'
-    name: getEvenPages()
-    fullName: getEvenPages()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEvenPages(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
-    summary: 'El encabezado o pie de página de la primera página, para las demás páginas se usa el encabezado o pie de página general, par o impar.'
-    name: getFirstPage()
-    fullName: getFirstPage()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFirstPage(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
-    summary: 'El encabezado o pie de página para páginas impares, debe especificarse el encabezado o pie de página para páginas pares.'
-    name: getOddPages()
-    fullName: getOddPages()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOddPages(): HeaderFooter;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: El estado por el que se establecen los encabezados y pies de página. Consulte ExcelScript. HeaderFooterState para obtener información detallada.
-    name: getState()
-    fullName: getState()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getState(): HeaderFooterState;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
-    summary: Obtiene o establece una marca que indica si los encabezados o pies de página están alineados con los márgenes de página establecidos en las opciones de diseño de página de la hoja de cálculo.
-    name: getUseSheetMargins()
-    fullName: getUseSheetMargins()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseSheetMargins(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
-    summary: Obtiene o establece una marca que indica si los encabezados o pies de página deben escalarse según la escala de porcentaje de página establecida en las opciones de diseño de página de la hoja de cálculo.
-    name: getUseSheetScale()
-    fullName: getUseSheetScale()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseSheetScale(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: El estado por el que se establecen los encabezados y pies de página. Consulte ExcelScript. HeaderFooterState para obtener información detallada.
-    name: setState(state)
-    fullName: setState(state)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setState(state: HeaderFooterState): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: state
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
-    summary: Obtiene o establece una marca que indica si los encabezados o pies de página están alineados con los márgenes de página establecidos en las opciones de diseño de página de la hoja de cálculo.
-    name: setUseSheetMargins(useSheetMargins)
-    fullName: setUseSheetMargins(useSheetMargins)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useSheetMargins
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
-    summary: Obtiene o establece una marca que indica si los encabezados o pies de página deben escalarse según la escala de porcentaje de página establecida en las opciones de diseño de página de la hoja de cálculo.
-    name: setUseSheetScale(useSheetScale)
-    fullName: setUseSheetScale(useSheetScale)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUseSheetScale(useSheetScale: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useSheetScale
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.HeaderFooter:interface'
-    name: HeaderFooter
-    fullName: ExcelScript.HeaderFooter
-  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
-    name: HeaderFooterState
-    fullName: ExcelScript.HeaderFooterState
+### YamlMime:TSType
+name: ExcelScript.HeaderFooterGroup
+uid: ExcelScript!ExcelScript.HeaderFooterGroup:interface
+package: ExcelScript!
+fullName: ExcelScript.HeaderFooterGroup
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getDefaultForAllPages()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)
+  package: ExcelScript!
+  fullName: getDefaultForAllPages()
+  summary: El encabezado o pie general, utilizado para todas las páginas, salvo que se indique par, impar o primera página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDefaultForAllPages(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getEvenPages()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)
+  package: ExcelScript!
+  fullName: getEvenPages()
+  summary: El encabezado o pie de página para páginas pares, debe especificarse el encabezado o pie de página para páginas impares.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEvenPages(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getFirstPage()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)
+  package: ExcelScript!
+  fullName: getFirstPage()
+  summary: El encabezado o pie de página de la primera página, para las demás páginas se usa el encabezado o pie de página general, par o impar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFirstPage(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getOddPages()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)
+  package: ExcelScript!
+  fullName: getOddPages()
+  summary: El encabezado o pie de página para páginas impares, debe especificarse el encabezado o pie de página para páginas pares.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOddPages(): HeaderFooter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooter:interface" />
+      description: ''
+- name: getState()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)
+  package: ExcelScript!
+  fullName: getState()
+  summary: El estado por el que se establecen los encabezados y pies de página. Consulte ExcelScript. HeaderFooterState para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getState(): HeaderFooterState;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />
+      description: ''
+- name: getUseSheetMargins()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)
+  package: ExcelScript!
+  fullName: getUseSheetMargins()
+  summary: Obtiene o establece una marca que indica si los encabezados o pies de página están alineados con los márgenes de página establecidos en las opciones de diseño de página de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseSheetMargins(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getUseSheetScale()
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)
+  package: ExcelScript!
+  fullName: getUseSheetScale()
+  summary: Obtiene o establece una marca que indica si los encabezados o pies de página deben escalarse según la escala de porcentaje de página establecida en las opciones de diseño de página de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseSheetScale(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setState(state)
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)
+  package: ExcelScript!
+  fullName: setState(state)
+  summary: El estado por el que se establecen los encabezados y pies de página. Consulte ExcelScript. HeaderFooterState para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setState(state: HeaderFooterState): void;'
+    parameters:
+    - id: state
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooterState:enum" />
+    return:
+      type: void
+      description: ''
+- name: setUseSheetMargins(useSheetMargins)
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)
+  package: ExcelScript!
+  fullName: setUseSheetMargins(useSheetMargins)
+  summary: Obtiene o establece una marca que indica si los encabezados o pies de página están alineados con los márgenes de página establecidos en las opciones de diseño de página de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
+    parameters:
+    - id: useSheetMargins
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUseSheetScale(useSheetScale)
+  uid: ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)
+  package: ExcelScript!
+  fullName: setUseSheetScale(useSheetScale)
+  summary: Obtiene o establece una marca que indica si los encabezados o pies de página deben escalarse según la escala de porcentaje de página establecida en las opciones de diseño de página de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseSheetScale(useSheetScale: boolean): void;'
+    parameters:
+    - id: useSheetScale
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 71e09d8afcb0e5bc03f61d0b33deaf1c8ae71fa0
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412380"

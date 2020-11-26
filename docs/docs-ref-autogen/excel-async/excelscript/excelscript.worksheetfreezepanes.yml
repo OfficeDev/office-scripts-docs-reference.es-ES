@@ -1,214 +1,125 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorksheetFreezePanes:interface'
-    name: Excel.WorksheetFreezePanes
-    fullName: Excel.WorksheetFreezePanes
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#load:member(1)'
-      - 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
-    summary: Establece las celdas inmovilizadas en la vista de la hoja de cálculo activa. El rango proporcionado corresponde a las celdas que se van a inmovilizar en los paneles superior e izquierdo.
-    name: freezeAt(frozenRange)
-    fullName: freezeAt(frozenRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'freezeAt(frozenRange: Range | string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Freeze the specified range in top-and-left-most pane of the worksheet.
-              sheet.freezePanes.freezeAt(sheet.getRange("H2:K5"));
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: frozenRange
-          description: Rango que representa las celdas que se van a inmovilizar o null para quitar todas las secciones inmovilizadas.
-          type:
-            - 'excel!Excel.WorksheetFreezePanes#freezeAt~0:complex'
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
-    summary: Inmoviliza la primera o primeras columnas de la hoja de cálculo en su lugar.
-    name: freezeColumns(count)
-    fullName: freezeColumns(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'freezeColumns(count?: number): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Freeze the first two columns in the worksheet.
-              sheet.freezePanes.freezeColumns(2);
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: count
-          description: Número opcional de columnas que se van a inmovilizar o cero para liberar todas las columnas
-          type:
-            - number
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
-    summary: Inmovilizar la fila o filas superiores de la hoja de cálculo en su lugar.
-    name: freezeRows(count)
-    fullName: freezeRows(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'freezeRows(count?: number): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Freeze the top two rows in the worksheet.
-              sheet.freezePanes.freezeRows(2);
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: count
-          description: Número opcional de filas que se van a inmovilizar o cero para liberar todas las filas
-          type:
-            - number
-  - uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
-    summary: Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado se corresponde con las celdas que están inmovilizadas en los paneles superior e izquierdo.
-    name: getLocation()
-    fullName: getLocation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLocation(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
-    summary: 'Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado se corresponde con las celdas que están inmovilizadas en los paneles superior e izquierdo. Si no hay ningún panel inmovilizado, devuelve un objeto null.'
-    name: getLocationOrNullObject()
-    fullName: getLocationOrNullObject()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLocationOrNullObject(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let frozenRange = sheet.freezePanes.getLocationOrNullObject();
-              frozenRange.load("address");
-
-              await context.sync();
-
-              if (frozenRange.isNullObject) {
-                  console.log(`The worksheet does not contain a frozen pane.`);
-              } else {
-                  console.log(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
-              }
-          }
-          ```
-  - uid: 'excel!Excel.WorksheetFreezePanes#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
-    summary: Elimina todos los paneles inmovilizados de la hoja de cálculo.
-    name: unfreeze()
-    fullName: unfreeze()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unfreeze(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.freezePanes.unfreeze();
-
-              await context.sync();
-          }
-          ```
-references:
-  - uid: 'excel!Excel.WorksheetFreezePanes#freezeAt~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
+### YamlMime:TSType
+name: Excel.WorksheetFreezePanes
+uid: excel!Excel.WorksheetFreezePanes:interface
+package: excel!
+fullName: Excel.WorksheetFreezePanes
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: freezeAt(frozenRange)
+  uid: excel!Excel.WorksheetFreezePanes#freezeAt:member(1)
+  package: excel!
+  fullName: freezeAt(frozenRange)
+  summary: Establece las celdas inmovilizadas en la vista de la hoja de cálculo activa. El rango proporcionado corresponde a las celdas que se van a inmovilizar en los paneles superior e izquierdo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeAt(frozenRange: Range | string): void;'
+    parameters:
+    - id: frozenRange
+      description: Rango que representa las celdas que se van a inmovilizar o null para quitar todas las secciones inmovilizadas.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    // Freeze the specified range in top-and-left-most pane of the worksheet.\n    sheet.freezePanes.freezeAt(sheet.getRange(\"H2:K5\"));\n\n    await context.sync();\n}\n```"
+- name: freezeColumns(count)
+  uid: excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)
+  package: excel!
+  fullName: freezeColumns(count)
+  summary: Inmoviliza la primera o primeras columnas de la hoja de cálculo en su lugar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeColumns(count?: number): void;'
+    parameters:
+    - id: count
+      description: Número opcional de columnas que se van a inmovilizar o cero para liberar todas las columnas
+      type: number
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    // Freeze the first two columns in the worksheet.\n    sheet.freezePanes.freezeColumns(2);\n\n    await context.sync();\n}\n```"
+- name: freezeRows(count)
+  uid: excel!Excel.WorksheetFreezePanes#freezeRows:member(1)
+  package: excel!
+  fullName: freezeRows(count)
+  summary: Inmovilizar la fila o filas superiores de la hoja de cálculo en su lugar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeRows(count?: number): void;'
+    parameters:
+    - id: count
+      description: Número opcional de filas que se van a inmovilizar o cero para liberar todas las filas
+      type: number
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    // Freeze the top two rows in the worksheet.\n    sheet.freezePanes.freezeRows(2);\n\n    await context.sync();\n}\n```"
+- name: getLocation()
+  uid: excel!Excel.WorksheetFreezePanes#getLocation:member(1)
+  package: excel!
+  fullName: getLocation()
+  summary: Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado se corresponde con las celdas que están inmovilizadas en los paneles superior e izquierdo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocation(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getLocationOrNullObject()
+  uid: excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)
+  package: excel!
+  fullName: getLocationOrNullObject()
+  summary: Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado se corresponde con las celdas que están inmovilizadas en los paneles superior e izquierdo. Si no hay ningún panel inmovilizado, devuelve un objeto null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocationOrNullObject(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let frozenRange = sheet.freezePanes.getLocationOrNullObject();\n    frozenRange.load(\"address\");\n\n    await context.sync();\n\n    if (frozenRange.isNullObject) {\n        console.log(`The worksheet does not contain a frozen pane.`);\n    } else {\n        console.log(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is \"${frozenRange.address}\"`);\n    }\n}\n```"
+- name: load(propertyNames)
+  uid: excel!Excel.WorksheetFreezePanes#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: unfreeze()
+  uid: excel!Excel.WorksheetFreezePanes#unfreeze:member(1)
+  package: excel!
+  fullName: unfreeze()
+  summary: Elimina todos los paneles inmovilizados de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unfreeze(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    sheet.freezePanes.unfreeze();\n\n    await context.sync();\n}\n```"
+metadata:
+  ms.openlocfilehash: 1d336cf2ff466b64a59f0e70a1392c4a77081c18
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412611"

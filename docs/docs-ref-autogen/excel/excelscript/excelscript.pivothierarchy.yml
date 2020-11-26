@@ -1,110 +1,91 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-    summary: Representa el PivotHierarchy de Excel.
-    name: ExcelScript.PivotHierarchy
-    fullName: ExcelScript.PivotHierarchy
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
-      - 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
-    summary: Devuelve los PivotFields asociados con PivotHierarchy.
-    name: getFields()
-    fullName: getFields()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFields(): PivotField[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
-    summary: Id. de la PivotHierarchy.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
-    summary: Nombre de la PivotHierarchy.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
-    summary: 'Obtiene un PivotField por nombre. Si el campo dinámico no existe, se devolverá un objeto null.'
-    name: getPivotField(name)
-    fullName: getPivotField(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotField(name: string): PivotField | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Nombre del campo dinámico que se va a recuperar.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
-    summary: Nombre de la PivotHierarchy.
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-references:
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields~0:complex'
-    name: 'PivotField[]'
-    fullName: 'ExcelScript.PivotField[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-        name: PivotField
-        fullName: ExcelScript.PivotField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField~0:complex'
-    name: PivotField | undefined
-    fullName: ExcelScript.PivotField | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-        name: PivotField
-        fullName: ExcelScript.PivotField
-      - name: ' | undefined'
-        fullName: ' | undefined'
+### YamlMime:TSType
+name: ExcelScript.PivotHierarchy
+uid: ExcelScript!ExcelScript.PivotHierarchy:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotHierarchy
+summary: Representa el PivotHierarchy de Excel.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFields()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)
+  package: ExcelScript!
+  fullName: getFields()
+  summary: Devuelve los PivotFields asociados con PivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFields(): PivotField[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Id. de la PivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Nombre de la PivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotField(name)
+  uid: ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)
+  package: ExcelScript!
+  fullName: getPivotField(name)
+  summary: Obtiene un PivotField por nombre. Si el campo dinámico no existe, se devolverá un objeto null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotField(name: string): PivotField | undefined;'
+    parameters:
+    - id: name
+      description: Nombre del campo dinámico que se va a recuperar.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Nombre de la PivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d309351e36fb6a2514b9dce517212670bf8141ae
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412072"
