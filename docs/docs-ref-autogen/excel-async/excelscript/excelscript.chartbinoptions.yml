@@ -1,131 +1,120 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartBinOptions:interface'
-    summary: Contiene las opciones de intervalo para gráficos de histograma y diagramas de Pareto.
-    name: Excel.ChartBinOptions
-    fullName: Excel.ChartBinOptions
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartBinOptions#allowOverflow:member'
-      - 'excel!Excel.ChartBinOptions#allowUnderflow:member'
-      - 'excel!Excel.ChartBinOptions#count:member'
-      - 'excel!Excel.ChartBinOptions#load:member(1)'
-      - 'excel!Excel.ChartBinOptions#overflowValue:member'
-      - 'excel!Excel.ChartBinOptions#type:member'
-      - 'excel!Excel.ChartBinOptions#underflowValue:member'
-      - 'excel!Excel.ChartBinOptions#width:member'
-  - uid: 'excel!Excel.ChartBinOptions#allowOverflow:member'
-    summary: Especifica si la saturación de ubicación está habilitada en un gráfico de histograma o en un diagrama de Pareto.
-    name: allowOverflow
-    fullName: allowOverflow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowOverflow: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartBinOptions#allowUnderflow:member'
-    summary: Especifica si se habilita el subdesbordamiento de bin en un gráfico de histograma o en un diagrama de Pareto.
-    name: allowUnderflow
-    fullName: allowUnderflow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'allowUnderflow: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartBinOptions#count:member'
-    summary: Especifica el recuento de la ubicación de un gráfico de histograma o diagrama de Pareto.
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartBinOptions#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartBinOptions#overflowValue:member'
-    summary: Especifica el valor de desbordamiento de la bandeja de un gráfico de histograma o diagrama de Pareto.
-    name: overflowValue
-    fullName: overflowValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'overflowValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartBinOptions#type:member'
-    summary: Especifica el tipo de bin para un gráfico de histograma o diagrama de Pareto.
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'type: ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
-      return:
-        type:
-          - 'excel!Excel.ChartBinOptions#type~0:complex'
-  - uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
-    summary: Especifica el valor subdesbordamiento de la bandeja de un gráfico de histograma o diagrama de Pareto.
-    name: underflowValue
-    fullName: underflowValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'underflowValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartBinOptions#width:member'
-    summary: Especifica el valor de ancho de bin de un gráfico de histograma o diagrama de Pareto.
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'width: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartBinOptions#type~0:complex'
-    name: ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
-    fullName: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartBinType:enum'
-        name: ChartBinType
-        fullName: Excel.ChartBinType
-      - name: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
-        fullName: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
+### YamlMime:TSType
+name: Excel.ChartBinOptions
+uid: excel!Excel.ChartBinOptions:interface
+package: excel!
+fullName: Excel.ChartBinOptions
+summary: Contiene las opciones de intervalo para gráficos de histograma y diagramas de Pareto.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: allowOverflow
+  uid: excel!Excel.ChartBinOptions#allowOverflow:member
+  package: excel!
+  fullName: allowOverflow
+  summary: Especifica si la saturación de ubicación está habilitada en un gráfico de histograma o en un diagrama de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowOverflow: boolean;'
+    return:
+      type: boolean
+- name: allowUnderflow
+  uid: excel!Excel.ChartBinOptions#allowUnderflow:member
+  package: excel!
+  fullName: allowUnderflow
+  summary: Especifica si se habilita el subdesbordamiento de bin en un gráfico de histograma o en un diagrama de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'allowUnderflow: boolean;'
+    return:
+      type: boolean
+- name: count
+  uid: excel!Excel.ChartBinOptions#count:member
+  package: excel!
+  fullName: count
+  summary: Especifica el recuento de la ubicación de un gráfico de histograma o diagrama de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'count: number;'
+    return:
+      type: number
+- name: overflowValue
+  uid: excel!Excel.ChartBinOptions#overflowValue:member
+  package: excel!
+  fullName: overflowValue
+  summary: Especifica el valor de desbordamiento de la bandeja de un gráfico de histograma o diagrama de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'overflowValue: number;'
+    return:
+      type: number
+- name: type
+  uid: excel!Excel.ChartBinOptions#type:member
+  package: excel!
+  fullName: type
+  summary: Especifica el tipo de bin para un gráfico de histograma o diagrama de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'type: ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
+    return:
+      type: <xref uid="excel!Excel.ChartBinType:enum" /> | "Category" | "Auto" | "BinWidth" | "BinCount"
+- name: underflowValue
+  uid: excel!Excel.ChartBinOptions#underflowValue:member
+  package: excel!
+  fullName: underflowValue
+  summary: Especifica el valor subdesbordamiento de la bandeja de un gráfico de histograma o diagrama de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'underflowValue: number;'
+    return:
+      type: number
+- name: width
+  uid: excel!Excel.ChartBinOptions#width:member
+  package: excel!
+  fullName: width
+  summary: Especifica el valor de ancho de bin de un gráfico de histograma o diagrama de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'width: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartBinOptions#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 416f4544478ca34e9751a8ef2cb1d0398d675aad
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413632"

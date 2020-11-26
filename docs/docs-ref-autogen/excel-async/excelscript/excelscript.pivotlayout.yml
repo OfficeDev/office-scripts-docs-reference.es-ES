@@ -1,378 +1,250 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotLayout:interface'
-    summary: Representa el diseño visual de la tabla dinámica.
-    name: Excel.PivotLayout
-    fullName: Excel.PivotLayout
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.PivotLayout#autoFormat:member'
-      - 'excel!Excel.PivotLayout#enableFieldList:member'
-      - 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
-      - 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
-      - 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
-      - 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
-      - 'excel!Excel.PivotLayout#getPivotItems:member(1)'
-      - 'excel!Excel.PivotLayout#getRange:member(1)'
-      - 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
-      - 'excel!Excel.PivotLayout#layoutType:member'
-      - 'excel!Excel.PivotLayout#load:member(1)'
-      - 'excel!Excel.PivotLayout#preserveFormatting:member'
-      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
-      - 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
-      - 'excel!Excel.PivotLayout#showRowGrandTotals:member'
-      - 'excel!Excel.PivotLayout#subtotalLocation:member'
-  - uid: 'excel!Excel.PivotLayout#autoFormat:member'
-    summary: Especifica si se aplica formato automáticamente al formato cuando se actualiza o cuando se mueven los campos.
-    name: autoFormat
-    fullName: autoFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'autoFormat: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotLayout#enableFieldList:member'
-    summary: Especifica si se puede mostrar la lista de campos en la interfaz de usuario.
-    name: enableFieldList
-    fullName: enableFieldList
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableFieldList: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
-    summary: Devuelve el intervalo donde residen las etiquetas de columna de la tabla dinámica.
-    name: getColumnLabelRange()
-    fullName: getColumnLabelRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnLabelRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
-    summary: Devuelve el intervalo donde residen los valores de datos de tabla dinámica.
-    name: getDataBodyRange()
-    fullName: getDataBodyRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataBodyRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-
-              // the layout controls the ranges used by the PivotTable
-              let range = pivotTable.layout.getDataBodyRange();
-
-              // get all the data hierarchy totals
-              let grandTotalRange = range.getLastRow();
-              grandTotalRange.load("address");
-              await context.sync();
-              
-              // use the wholesale and farm sale totals to make a final sum
-              let masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange("B27:C27");
-              masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
-    summary: Obtiene la DataHierarchy que se usa para calcular el valor de un intervalo especificado en la tabla dinámica.
-    name: getDataHierarchy(cell)
-    fullName: getDataHierarchy(cell)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
-      return:
-        type:
-          - 'excel!Excel.DataPivotHierarchy:interface'
-        description: ''
-      parameters:
-        - id: cell
-          description: Una sola celda del cuerpo de datos de la tabla dinámica.
-          type:
-            - 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
-  - uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
-    summary: Devuelve el intervalo del área de filtro de la tabla dinámica.
-    name: getFilterAxisRange()
-    fullName: getFilterAxisRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFilterAxisRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PivotLayout#getPivotItems:member(1)'
-    summary: Obtiene los elementos dinámicos de un eje que componen el valor de un intervalo especificado en la tabla dinámica.
-    name: 'getPivotItems(axis, cell)'
-    fullName: 'getPivotItems(axis, cell)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getPivotItems(
-                    axis: PivotAxis | "Unknown" | "Row" | "Column" | "Data" | "Filter",
-                    cell: Range | string
-                ): ClientResult<PivotItem[]>;
-      return:
-        type:
-          - 'excel!Excel.PivotLayout#getPivotItems~0:complex'
-        description: ''
-      parameters:
-        - id: axis
-          description: Eje del que se va a obtener el PivotItems. Debe ser "fila" o "columna".
-          type:
-            - 'excel!Excel.PivotLayout#getPivotItems~1:complex'
-        - id: cell
-          description: Una sola celda del cuerpo de datos de la tabla dinámica.
-          type:
-            - 'excel!Excel.PivotLayout#getPivotItems~2:complex'
-  - uid: 'excel!Excel.PivotLayout#getRange:member(1)'
-    summary: 'Devuelve el intervalo en el que existe la tabla dinámica, excluyendo el área de filtro.'
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
-    summary: Devuelve el intervalo donde residen las etiquetas de fila de la tabla dinámica.
-    name: getRowLabelRange()
-    fullName: getRowLabelRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowLabelRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.PivotLayout#layoutType:member'
-    summary: 'Esta propiedad indica el PivotLayoutType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.'
-    name: layoutType
-    fullName: layoutType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'layoutType: PivotLayoutType | "Compact" | "Tabular" | "Outline";'
-      return:
-        type:
-          - 'excel!Excel.PivotLayout#layoutType~0:complex'
-  - uid: 'excel!Excel.PivotLayout#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
-    summary: 'Especifica si se conserva el formato cuando el informe se actualiza o se vuelve a calcular por operaciones como la dinamización, ordenación o cambio de elementos del campo de página.'
-    name: preserveFormatting
-    fullName: preserveFormatting
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'preserveFormatting: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
-    summary: Establece la tabla dinámica para la ordenación automática mediante la celda especificada para seleccionar automáticamente el contexto y todos los criterios necesarios. Esto funciona igual que aplicar un Autoordenar desde la interfaz de usuario.
-    name: 'setAutoSortOnCell(cell, sortBy)'
-    fullName: 'setAutoSortOnCell(cell, sortBy)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setAutoSortOnCell(
-                    cell: Range | string,
-                    sortBy: SortBy | "Ascending" | "Descending"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: cell
-          description: Una sola celda que se utiliza para obtener los criterios de para aplicar la ordenación.
-          type:
-            - 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
-        - id: sortBy
-          description: Dirección de la ordenación.
-          type:
-            - 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
-  - uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
-    summary: Especifica si el informe de tabla dinámica muestra el total general de las columnas.
-    name: showColumnGrandTotals
-    fullName: showColumnGrandTotals
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showColumnGrandTotals: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
-    summary: Especifica si el informe de tabla dinámica muestra el total general de las filas.
-    name: showRowGrandTotals
-    fullName: showRowGrandTotals
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showRowGrandTotals: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
-    summary: 'Esta propiedad indica el SubtotalLocationType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.'
-    name: subtotalLocation
-    fullName: subtotalLocation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'subtotalLocation: SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
-      return:
-        type:
-          - 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
-references:
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.DataPivotHierarchy:interface'
-    name: DataPivotHierarchy
-    fullName: Excel.DataPivotHierarchy
-  - uid: 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.PivotLayout#getPivotItems~0:complex'
-    name: 'ClientResult<PivotItem[]>'
-    fullName: 'Excel.ClientResult<Excel.PivotItem[]>'
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <
-        fullName: <
-      - uid: 'excel!Excel.PivotItem:interface'
-        name: PivotItem
-        fullName: Excel.PivotItem
-      - name: '[]>'
-        fullName: '[]>'
-  - uid: 'excel!Excel.PivotLayout#getPivotItems~1:complex'
-    name: PivotAxis | "Unknown" | "Row" | "Column" | "Data" | "Filter"
-    fullName: Excel.PivotAxis | "Unknown" | "Row" | "Column" | "Data" | "Filter"
-    spec.typeScript:
-      - uid: 'excel!Excel.PivotAxis:enum'
-        name: PivotAxis
-        fullName: Excel.PivotAxis
-      - name: ' | "Unknown" | "Row" | "Column" | "Data" | "Filter"'
-        fullName: ' | "Unknown" | "Row" | "Column" | "Data" | "Filter"'
-  - uid: 'excel!Excel.PivotLayout#getPivotItems~2:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: |2-
-           | string
-                  
-        fullName: |2-
-           | string
-                  
-  - uid: 'excel!Excel.PivotLayout#layoutType~0:complex'
-    name: PivotLayoutType | "Compact" | "Tabular" | "Outline"
-    fullName: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
-    spec.typeScript:
-      - uid: 'excel!Excel.PivotLayoutType:enum'
-        name: PivotLayoutType
-        fullName: Excel.PivotLayoutType
-      - name: ' | "Compact" | "Tabular" | "Outline"'
-        fullName: ' | "Compact" | "Tabular" | "Outline"'
-  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
-    name: SortBy | "Ascending" | "Descending"
-    fullName: Excel.SortBy | "Ascending" | "Descending"
-    spec.typeScript:
-      - uid: 'excel!Excel.SortBy:enum'
-        name: SortBy
-        fullName: Excel.SortBy
-      - name: |2-
-           | "Ascending" | "Descending"
-                  
-        fullName: |2-
-           | "Ascending" | "Descending"
-                  
-  - uid: 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
-    name: SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
-    fullName: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
-    spec.typeScript:
-      - uid: 'excel!Excel.SubtotalLocationType:enum'
-        name: SubtotalLocationType
-        fullName: Excel.SubtotalLocationType
-      - name: ' | "AtTop" | "AtBottom" | "Off"'
-        fullName: ' | "AtTop" | "AtBottom" | "Off"'
+### YamlMime:TSType
+name: Excel.PivotLayout
+uid: excel!Excel.PivotLayout:interface
+package: excel!
+fullName: Excel.PivotLayout
+summary: Representa el diseño visual de la tabla dinámica.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: autoFormat
+  uid: excel!Excel.PivotLayout#autoFormat:member
+  package: excel!
+  fullName: autoFormat
+  summary: Especifica si se aplica formato automáticamente al formato cuando se actualiza o cuando se mueven los campos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autoFormat: boolean;'
+    return:
+      type: boolean
+- name: enableFieldList
+  uid: excel!Excel.PivotLayout#enableFieldList:member
+  package: excel!
+  fullName: enableFieldList
+  summary: Especifica si se puede mostrar la lista de campos en la interfaz de usuario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enableFieldList: boolean;'
+    return:
+      type: boolean
+- name: layoutType
+  uid: excel!Excel.PivotLayout#layoutType:member
+  package: excel!
+  fullName: layoutType
+  summary: Esta propiedad indica el PivotLayoutType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'layoutType: PivotLayoutType | "Compact" | "Tabular" | "Outline";'
+    return:
+      type: <xref uid="excel!Excel.PivotLayoutType:enum" /> | "Compact" | "Tabular" | "Outline"
+- name: preserveFormatting
+  uid: excel!Excel.PivotLayout#preserveFormatting:member
+  package: excel!
+  fullName: preserveFormatting
+  summary: Especifica si se conserva el formato cuando el informe se actualiza o se vuelve a calcular por operaciones como la dinamización, ordenación o cambio de elementos del campo de página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'preserveFormatting: boolean;'
+    return:
+      type: boolean
+- name: showColumnGrandTotals
+  uid: excel!Excel.PivotLayout#showColumnGrandTotals:member
+  package: excel!
+  fullName: showColumnGrandTotals
+  summary: Especifica si el informe de tabla dinámica muestra el total general de las columnas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showColumnGrandTotals: boolean;'
+    return:
+      type: boolean
+- name: showRowGrandTotals
+  uid: excel!Excel.PivotLayout#showRowGrandTotals:member
+  package: excel!
+  fullName: showRowGrandTotals
+  summary: Especifica si el informe de tabla dinámica muestra el total general de las filas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showRowGrandTotals: boolean;'
+    return:
+      type: boolean
+- name: subtotalLocation
+  uid: excel!Excel.PivotLayout#subtotalLocation:member
+  package: excel!
+  fullName: subtotalLocation
+  summary: Esta propiedad indica el SubtotalLocationType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subtotalLocation: SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+    return:
+      type: <xref uid="excel!Excel.SubtotalLocationType:enum" /> | "AtTop" | "AtBottom" | "Off"
+methods:
+- name: getColumnLabelRange()
+  uid: excel!Excel.PivotLayout#getColumnLabelRange:member(1)
+  package: excel!
+  fullName: getColumnLabelRange()
+  summary: Devuelve el intervalo donde residen las etiquetas de columna de la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnLabelRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getDataBodyRange()
+  uid: excel!Excel.PivotLayout#getDataBodyRange:member(1)
+  package: excel!
+  fullName: getDataBodyRange()
+  summary: Devuelve el intervalo donde residen los valores de datos de tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataBodyRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem(\"Farm Sales\");\n\n    // the layout controls the ranges used by the PivotTable\n    let range = pivotTable.layout.getDataBodyRange();\n\n    // get all the data hierarchy totals\n    let grandTotalRange = range.getLastRow();\n    grandTotalRange.load(\"address\");\n    await context.sync();\n    \n    // use the wholesale and farm sale totals to make a final sum\n    let masterTotalRange = context.workbook.worksheets.getActiveWorksheet().getRange(\"B27:C27\");\n    masterTotalRange.formulas = [[\"All Crates\", \"=SUM(\" + grandTotalRange.address + \")\"]];\n    await context.sync();\n}\n```"
+- name: getDataHierarchy(cell)
+  uid: excel!Excel.PivotLayout#getDataHierarchy:member(1)
+  package: excel!
+  fullName: getDataHierarchy(cell)
+  summary: Obtiene la DataHierarchy que se usa para calcular el valor de un intervalo especificado en la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
+    parameters:
+    - id: cell
+      description: Una sola celda del cuerpo de datos de la tabla dinámica.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: <xref uid="excel!Excel.DataPivotHierarchy:interface" />
+      description: ''
+- name: getFilterAxisRange()
+  uid: excel!Excel.PivotLayout#getFilterAxisRange:member(1)
+  package: excel!
+  fullName: getFilterAxisRange()
+  summary: Devuelve el intervalo del área de filtro de la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFilterAxisRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getPivotItems(axis, cell)
+  uid: excel!Excel.PivotLayout#getPivotItems:member(1)
+  package: excel!
+  fullName: getPivotItems(axis, cell)
+  summary: Obtiene los elementos dinámicos de un eje que componen el valor de un intervalo especificado en la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getPivotItems(
+                  axis: PivotAxis | "Unknown" | "Row" | "Column" | "Data" | "Filter",
+                  cell: Range | string
+              ): ClientResult<PivotItem[]>;
+    parameters:
+    - id: axis
+      description: Eje del que se va a obtener el PivotItems. Debe ser "fila" o "columna".
+      type: <xref uid="excel!Excel.PivotAxis:enum" /> | "Unknown" | "Row" | "Column" | "Data" | "Filter"
+    - id: cell
+      description: Una sola celda del cuerpo de datos de la tabla dinámica.
+      type: "<xref uid=\"excel!Excel.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;<xref uid="excel!Excel.PivotItem:interface" />[]&gt;
+      description: ''
+- name: getRange()
+  uid: excel!Excel.PivotLayout#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: Devuelve el intervalo en el que existe la tabla dinámica, excluyendo el área de filtro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRowLabelRange()
+  uid: excel!Excel.PivotLayout#getRowLabelRange:member(1)
+  package: excel!
+  fullName: getRowLabelRange()
+  summary: Devuelve el intervalo donde residen las etiquetas de fila de la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowLabelRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.PivotLayout#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setAutoSortOnCell(cell, sortBy)
+  uid: excel!Excel.PivotLayout#setAutoSortOnCell:member(1)
+  package: excel!
+  fullName: setAutoSortOnCell(cell, sortBy)
+  summary: Establece la tabla dinámica para la ordenación automática mediante la celda especificada para seleccionar automáticamente el contexto y todos los criterios necesarios. Esto funciona igual que aplicar un Autoordenar desde la interfaz de usuario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setAutoSortOnCell(
+                  cell: Range | string,
+                  sortBy: SortBy | "Ascending" | "Descending"
+              ): void;
+    parameters:
+    - id: cell
+      description: Una sola celda que se utiliza para obtener los criterios de para aplicar la ordenación.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: sortBy
+      description: Dirección de la ordenación.
+      type: "<xref uid=\"excel!Excel.SortBy:enum\" /> | \"Ascending\" | \"Descending\"\n        "
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: aa0eb682e5bc0691bb35f865194a501a8642645a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413324"

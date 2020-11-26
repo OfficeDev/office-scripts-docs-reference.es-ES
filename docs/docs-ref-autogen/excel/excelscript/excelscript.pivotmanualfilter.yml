@@ -1,36 +1,30 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotManualFilter:interface'
-    summary: Plantilla configurable para aplicar un filtro manual a un campo dinámico. `condition`Define qué criterios se deben establecer para que funcione el filtro.
-    name: ExcelScript.PivotManualFilter
-    fullName: ExcelScript.PivotManualFilter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member'
-  - uid: 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member'
-    summary: Lista de elementos seleccionados que se va a filtrar manualmente. Estos deben ser elementos existentes y válidos del campo elegido.
-    name: selectedItems
-    fullName: selectedItems
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'selectedItems?: (string | PivotItem)[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems~0:complex'
-references:
-  - uid: 'ExcelScript!ExcelScript.PivotManualFilter#selectedItems~0:complex'
-    name: '(string | PivotItem)[]'
-    fullName: '(string | ExcelScript.PivotItem)[]'
-    spec.typeScript:
-      - name: '(string | '
-        fullName: '(string | '
-      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-        name: PivotItem
-        fullName: ExcelScript.PivotItem
-      - name: ')[]'
-        fullName: ')[]'
+### YamlMime:TSType
+name: ExcelScript.PivotManualFilter
+uid: ExcelScript!ExcelScript.PivotManualFilter:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotManualFilter
+summary: Plantilla configurable para aplicar un filtro manual a un campo dinámico. `condition`Define qué criterios se deben establecer para que funcione el filtro.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: selectedItems
+  uid: ExcelScript!ExcelScript.PivotManualFilter#selectedItems:member
+  package: ExcelScript!
+  fullName: selectedItems
+  summary: Lista de elementos seleccionados que se va a filtrar manualmente. Estos deben ser elementos existentes y válidos del campo elegido.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'selectedItems?: (string | PivotItem)[];'
+    return:
+      type: (string | <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />)[]
+metadata:
+  ms.openlocfilehash: 0d1cc3922a3900abb54d5dccbe117a38b37583ee
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412065"
