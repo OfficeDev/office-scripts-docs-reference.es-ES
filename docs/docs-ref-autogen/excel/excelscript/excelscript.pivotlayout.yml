@@ -1,416 +1,330 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotLayout:interface'
-    summary: Representa el diseño visual de la tabla dinámica.
-    name: ExcelScript.PivotLayout
-    fullName: ExcelScript.PivotLayout
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getBodyAndTotalRange:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getColumnLabelRange:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getDataHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getFilterAxisRange:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getLayoutType:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getRowLabelRange:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getShowRowGrandTotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setAutoSortOnCell:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setLayoutType:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)'
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)'
-    summary: Especifica si se aplica formato automáticamente al formato cuando se actualiza o cuando se mueven los campos.
-    name: getAutoFormat()
-    fullName: getAutoFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAutoFormat(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getBodyAndTotalRange:member(1)'
-    summary: Devuelve el intervalo donde residen los valores de datos de tabla dinámica.
-    name: getBodyAndTotalRange()
-    fullName: getBodyAndTotalRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBodyAndTotalRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```javascript
-          /**
-           * This sample finds the first PivotTable in the workbook and logs the values in the "Grand Total" cells.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the first PivotTable in the workbook.
-            let pivotTable = workbook.getPivotTables()[0];
-
-            // Get the names of each data column in the PivotTable.
-            let pivotColumnLabelRange = pivotTable.getLayout().getColumnLabelRange();
-
-            // Get the range displaying the pivoted data.
-            let pivotDataRange = pivotTable.getLayout().getBodyAndTotalRange();
-
-            // Get the range with the "grand totals" for the PivotTable columns.
-            let grandTotalRange = pivotDataRange.getLastRow();
-
-            // Print each of the "Grand Totals" to the console.
-            grandTotalRange.getValues()[0].forEach((column, columnIndex) => {
-              console.log(`Grand total of ${pivotColumnLabelRange.getValues()[0][columnIndex]}: ${grandTotalRange.getValues()[0][columnIndex]}`);
-              // Example log: "Grand total of Sum of Crates Sold Wholesale: 11000"
-            });
-          }
-          ```
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getColumnLabelRange:member(1)'
-    summary: Devuelve el intervalo donde residen las etiquetas de columna de la tabla dinámica.
-    name: getColumnLabelRange()
-    fullName: getColumnLabelRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnLabelRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getDataHierarchy:member(1)'
-    summary: Obtiene la DataHierarchy que se usa para calcular el valor de un intervalo especificado en la tabla dinámica.
-    name: getDataHierarchy(cell)
-    fullName: getDataHierarchy(cell)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-        description: ''
-      parameters:
-        - id: cell
-          description: Una sola celda del cuerpo de datos de la tabla dinámica.
-          type:
-            - 'ExcelScript!ExcelScript.PivotLayout#getDataHierarchy~0:complex'
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)'
-    summary: Especifica si se puede mostrar la lista de campos en la interfaz de usuario.
-    name: getEnableFieldList()
-    fullName: getEnableFieldList()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEnableFieldList(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getFilterAxisRange:member(1)'
-    summary: Devuelve el intervalo del área de filtro de la tabla dinámica.
-    name: getFilterAxisRange()
-    fullName: getFilterAxisRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFilterAxisRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getLayoutType:member(1)'
-    summary: 'Esta propiedad indica el PivotLayoutType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.'
-    name: getLayoutType()
-    fullName: getLayoutType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLayoutType(): PivotLayoutType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotLayoutType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)'
-    summary: 'Especifica si se conserva el formato cuando el informe se actualiza o se vuelve a calcular por operaciones como la dinamización, ordenación o cambio de elementos del campo de página.'
-    name: getPreserveFormatting()
-    fullName: getPreserveFormatting()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPreserveFormatting(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getRange:member(1)'
-    summary: 'Devuelve el intervalo en el que existe la tabla dinámica, excluyendo el área de filtro.'
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getRowLabelRange:member(1)'
-    summary: Devuelve el intervalo donde residen las etiquetas de fila de la tabla dinámica.
-    name: getRowLabelRange()
-    fullName: getRowLabelRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowLabelRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)'
-    summary: Especifica si el informe de tabla dinámica muestra el total general de las columnas.
-    name: getShowColumnGrandTotals()
-    fullName: getShowColumnGrandTotals()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowColumnGrandTotals(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getShowRowGrandTotals:member(1)'
-    summary: Especifica si el informe de tabla dinámica muestra el total general de las filas.
-    name: getShowRowGrandTotals()
-    fullName: getShowRowGrandTotals()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowRowGrandTotals(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)'
-    summary: 'Esta propiedad indica el SubtotalLocationType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.'
-    name: getSubtotalLocation()
-    fullName: getSubtotalLocation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSubtotalLocation(): SubtotalLocationType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SubtotalLocationType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)'
-    summary: Especifica si se aplica formato automáticamente al formato cuando se actualiza o cuando se mueven los campos.
-    name: setAutoFormat(autoFormat)
-    fullName: setAutoFormat(autoFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAutoFormat(autoFormat: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: autoFormat
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setAutoSortOnCell:member(1)'
-    summary: Establece la tabla dinámica para la ordenación automática mediante la celda especificada para seleccionar automáticamente el contexto y todos los criterios necesarios. Esto funciona igual que aplicar un Autoordenar desde la interfaz de usuario.
-    name: 'setAutoSortOnCell(cell, sortBy)'
-    fullName: 'setAutoSortOnCell(cell, sortBy)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: cell
-          description: Una sola celda que se utiliza para obtener los criterios de para aplicar la ordenación.
-          type:
-            - 'ExcelScript!ExcelScript.PivotLayout#setAutoSortOnCell~0:complex'
-        - id: sortBy
-          description: Dirección de la ordenación.
-          type:
-            - 'ExcelScript!ExcelScript.SortBy:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)'
-    summary: Especifica si se puede mostrar la lista de campos en la interfaz de usuario.
-    name: setEnableFieldList(enableFieldList)
-    fullName: setEnableFieldList(enableFieldList)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEnableFieldList(enableFieldList: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: enableFieldList
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setLayoutType:member(1)'
-    summary: 'Esta propiedad indica el PivotLayoutType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.'
-    name: setLayoutType(layoutType)
-    fullName: setLayoutType(layoutType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLayoutType(layoutType: PivotLayoutType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: layoutType
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.PivotLayoutType:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)'
-    summary: 'Especifica si se conserva el formato cuando el informe se actualiza o se vuelve a calcular por operaciones como la dinamización, ordenación o cambio de elementos del campo de página.'
-    name: setPreserveFormatting(preserveFormatting)
-    fullName: setPreserveFormatting(preserveFormatting)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPreserveFormatting(preserveFormatting: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: preserveFormatting
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)'
-    summary: Especifica si el informe de tabla dinámica muestra el total general de las columnas.
-    name: setShowColumnGrandTotals(showColumnGrandTotals)
-    fullName: setShowColumnGrandTotals(showColumnGrandTotals)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowColumnGrandTotals(showColumnGrandTotals: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showColumnGrandTotals
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)'
-    summary: Especifica si el informe de tabla dinámica muestra el total general de las filas.
-    name: setShowRowGrandTotals(showRowGrandTotals)
-    fullName: setShowRowGrandTotals(showRowGrandTotals)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowRowGrandTotals(showRowGrandTotals: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showRowGrandTotals
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)'
-    summary: 'Esta propiedad indica el SubtotalLocationType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.'
-    name: setSubtotalLocation(subtotalLocation)
-    fullName: setSubtotalLocation(subtotalLocation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSubtotalLocation(subtotalLocation: SubtotalLocationType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: subtotalLocation
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.SubtotalLocationType:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-    name: DataPivotHierarchy
-    fullName: ExcelScript.DataPivotHierarchy
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#getDataHierarchy~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
-    name: PivotLayoutType
-    fullName: ExcelScript.PivotLayoutType
-  - uid: 'ExcelScript!ExcelScript.SubtotalLocationType:enum'
-    name: SubtotalLocationType
-    fullName: ExcelScript.SubtotalLocationType
-  - uid: 'ExcelScript!ExcelScript.PivotLayout#setAutoSortOnCell~0:complex'
-    name: Range | string
-    fullName: ExcelScript.Range | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
-    name: SortBy
-    fullName: ExcelScript.SortBy
+### YamlMime:TSType
+name: ExcelScript.PivotLayout
+uid: ExcelScript!ExcelScript.PivotLayout:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotLayout
+summary: Representa el diseño visual de la tabla dinámica.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getAutoFormat()
+  uid: ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)
+  package: ExcelScript!
+  fullName: getAutoFormat()
+  summary: Especifica si se aplica formato automáticamente al formato cuando se actualiza o cuando se mueven los campos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoFormat(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getBodyAndTotalRange()
+  uid: ExcelScript!ExcelScript.PivotLayout#getBodyAndTotalRange:member(1)
+  package: ExcelScript!
+  fullName: getBodyAndTotalRange()
+  summary: Devuelve el intervalo donde residen los valores de datos de tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBodyAndTotalRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```javascript\n/**\n * This sample finds the first PivotTable in the workbook and logs the values in the \"Grand Total\" cells.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first PivotTable in the workbook.\n  let pivotTable = workbook.getPivotTables()[0];\n\n  // Get the names of each data column in the PivotTable.\n  let pivotColumnLabelRange = pivotTable.getLayout().getColumnLabelRange();\n\n  // Get the range displaying the pivoted data.\n  let pivotDataRange = pivotTable.getLayout().getBodyAndTotalRange();\n\n  // Get the range with the \"grand totals\" for the PivotTable columns.\n  let grandTotalRange = pivotDataRange.getLastRow();\n\n  // Print each of the \"Grand Totals\" to the console.\n  grandTotalRange.getValues()[0].forEach((column, columnIndex) => {\n    console.log(`Grand total of ${pivotColumnLabelRange.getValues()[0][columnIndex]}: ${grandTotalRange.getValues()[0][columnIndex]}`);\n    // Example log: \"Grand total of Sum of Crates Sold Wholesale: 11000\"\n  });\n}\n```"
+- name: getColumnLabelRange()
+  uid: ExcelScript!ExcelScript.PivotLayout#getColumnLabelRange:member(1)
+  package: ExcelScript!
+  fullName: getColumnLabelRange()
+  summary: Devuelve el intervalo donde residen las etiquetas de columna de la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnLabelRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getDataHierarchy(cell)
+  uid: ExcelScript!ExcelScript.PivotLayout#getDataHierarchy:member(1)
+  package: ExcelScript!
+  fullName: getDataHierarchy(cell)
+  summary: Obtiene la DataHierarchy que se usa para calcular el valor de un intervalo especificado en la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
+    parameters:
+    - id: cell
+      description: Una sola celda del cuerpo de datos de la tabla dinámica.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
+      description: ''
+- name: getEnableFieldList()
+  uid: ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)
+  package: ExcelScript!
+  fullName: getEnableFieldList()
+  summary: Especifica si se puede mostrar la lista de campos en la interfaz de usuario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEnableFieldList(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getFilterAxisRange()
+  uid: ExcelScript!ExcelScript.PivotLayout#getFilterAxisRange:member(1)
+  package: ExcelScript!
+  fullName: getFilterAxisRange()
+  summary: Devuelve el intervalo del área de filtro de la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFilterAxisRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getLayoutType()
+  uid: ExcelScript!ExcelScript.PivotLayout#getLayoutType:member(1)
+  package: ExcelScript!
+  fullName: getLayoutType()
+  summary: Esta propiedad indica el PivotLayoutType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLayoutType(): PivotLayoutType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotLayoutType:enum" />
+      description: ''
+- name: getPreserveFormatting()
+  uid: ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)
+  package: ExcelScript!
+  fullName: getPreserveFormatting()
+  summary: Especifica si se conserva el formato cuando el informe se actualiza o se vuelve a calcular por operaciones como la dinamización, ordenación o cambio de elementos del campo de página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPreserveFormatting(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.PivotLayout#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Devuelve el intervalo en el que existe la tabla dinámica, excluyendo el área de filtro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRowLabelRange()
+  uid: ExcelScript!ExcelScript.PivotLayout#getRowLabelRange:member(1)
+  package: ExcelScript!
+  fullName: getRowLabelRange()
+  summary: Devuelve el intervalo donde residen las etiquetas de fila de la tabla dinámica.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowLabelRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getShowColumnGrandTotals()
+  uid: ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)
+  package: ExcelScript!
+  fullName: getShowColumnGrandTotals()
+  summary: Especifica si el informe de tabla dinámica muestra el total general de las columnas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowColumnGrandTotals(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShowRowGrandTotals()
+  uid: ExcelScript!ExcelScript.PivotLayout#getShowRowGrandTotals:member(1)
+  package: ExcelScript!
+  fullName: getShowRowGrandTotals()
+  summary: Especifica si el informe de tabla dinámica muestra el total general de las filas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowRowGrandTotals(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSubtotalLocation()
+  uid: ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)
+  package: ExcelScript!
+  fullName: getSubtotalLocation()
+  summary: Esta propiedad indica el SubtotalLocationType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubtotalLocation(): SubtotalLocationType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SubtotalLocationType:enum" />
+      description: ''
+- name: setAutoFormat(autoFormat)
+  uid: ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)
+  package: ExcelScript!
+  fullName: setAutoFormat(autoFormat)
+  summary: Especifica si se aplica formato automáticamente al formato cuando se actualiza o cuando se mueven los campos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAutoFormat(autoFormat: boolean): void;'
+    parameters:
+    - id: autoFormat
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setAutoSortOnCell(cell, sortBy)
+  uid: ExcelScript!ExcelScript.PivotLayout#setAutoSortOnCell:member(1)
+  package: ExcelScript!
+  fullName: setAutoSortOnCell(cell, sortBy)
+  summary: Establece la tabla dinámica para la ordenación automática mediante la celda especificada para seleccionar automáticamente el contexto y todos los criterios necesarios. Esto funciona igual que aplicar un Autoordenar desde la interfaz de usuario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
+    parameters:
+    - id: cell
+      description: Una sola celda que se utiliza para obtener los criterios de para aplicar la ordenación.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    - id: sortBy
+      description: Dirección de la ordenación.
+      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
+    return:
+      type: void
+      description: ''
+- name: setEnableFieldList(enableFieldList)
+  uid: ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)
+  package: ExcelScript!
+  fullName: setEnableFieldList(enableFieldList)
+  summary: Especifica si se puede mostrar la lista de campos en la interfaz de usuario.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEnableFieldList(enableFieldList: boolean): void;'
+    parameters:
+    - id: enableFieldList
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setLayoutType(layoutType)
+  uid: ExcelScript!ExcelScript.PivotLayout#setLayoutType:member(1)
+  package: ExcelScript!
+  fullName: setLayoutType(layoutType)
+  summary: Esta propiedad indica el PivotLayoutType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLayoutType(layoutType: PivotLayoutType): void;'
+    parameters:
+    - id: layoutType
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PivotLayoutType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPreserveFormatting(preserveFormatting)
+  uid: ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)
+  package: ExcelScript!
+  fullName: setPreserveFormatting(preserveFormatting)
+  summary: Especifica si se conserva el formato cuando el informe se actualiza o se vuelve a calcular por operaciones como la dinamización, ordenación o cambio de elementos del campo de página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPreserveFormatting(preserveFormatting: boolean): void;'
+    parameters:
+    - id: preserveFormatting
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowColumnGrandTotals(showColumnGrandTotals)
+  uid: ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)
+  package: ExcelScript!
+  fullName: setShowColumnGrandTotals(showColumnGrandTotals)
+  summary: Especifica si el informe de tabla dinámica muestra el total general de las columnas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowColumnGrandTotals(showColumnGrandTotals: boolean): void;'
+    parameters:
+    - id: showColumnGrandTotals
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setShowRowGrandTotals(showRowGrandTotals)
+  uid: ExcelScript!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)
+  package: ExcelScript!
+  fullName: setShowRowGrandTotals(showRowGrandTotals)
+  summary: Especifica si el informe de tabla dinámica muestra el total general de las filas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowRowGrandTotals(showRowGrandTotals: boolean): void;'
+    parameters:
+    - id: showRowGrandTotals
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setSubtotalLocation(subtotalLocation)
+  uid: ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)
+  package: ExcelScript!
+  fullName: setSubtotalLocation(subtotalLocation)
+  summary: Esta propiedad indica el SubtotalLocationType de todos los campos de la tabla dinámica. Si los campos tienen diferentes estados, será null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSubtotalLocation(subtotalLocation: SubtotalLocationType): void;'
+    parameters:
+    - id: subtotalLocation
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.SubtotalLocationType:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: edb6b050eb6f004b74bf38c57764bf5292367016
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416739"

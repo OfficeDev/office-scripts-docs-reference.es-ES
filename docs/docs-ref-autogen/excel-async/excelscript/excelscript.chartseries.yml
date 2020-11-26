@@ -1,124 +1,159 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartSeries:interface'
-    summary: Representa una serie de un gráfico.
-    name: Excel.ChartSeries
-    fullName: Excel.ChartSeries
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartSeries#axisGroup:member'
-      - 'excel!Excel.ChartSeries#binOptions:member'
-      - 'excel!Excel.ChartSeries#boxwhiskerOptions:member'
-      - 'excel!Excel.ChartSeries#bubbleScale:member'
-      - 'excel!Excel.ChartSeries#chartType:member'
-      - 'excel!Excel.ChartSeries#dataLabels:member'
-      - 'excel!Excel.ChartSeries#delete:member(1)'
-      - 'excel!Excel.ChartSeries#doughnutHoleSize:member'
-      - 'excel!Excel.ChartSeries#explosion:member'
-      - 'excel!Excel.ChartSeries#filtered:member'
-      - 'excel!Excel.ChartSeries#firstSliceAngle:member'
-      - 'excel!Excel.ChartSeries#format:member'
-      - 'excel!Excel.ChartSeries#gapWidth:member'
-      - 'excel!Excel.ChartSeries#gradientMaximumColor:member'
-      - 'excel!Excel.ChartSeries#gradientMaximumType:member'
-      - 'excel!Excel.ChartSeries#gradientMaximumValue:member'
-      - 'excel!Excel.ChartSeries#gradientMidpointColor:member'
-      - 'excel!Excel.ChartSeries#gradientMidpointType:member'
-      - 'excel!Excel.ChartSeries#gradientMidpointValue:member'
-      - 'excel!Excel.ChartSeries#gradientMinimumColor:member'
-      - 'excel!Excel.ChartSeries#gradientMinimumType:member'
-      - 'excel!Excel.ChartSeries#gradientMinimumValue:member'
-      - 'excel!Excel.ChartSeries#gradientStyle:member'
-      - 'excel!Excel.ChartSeries#hasDataLabels:member'
-      - 'excel!Excel.ChartSeries#invertColor:member'
-      - 'excel!Excel.ChartSeries#invertIfNegative:member'
-      - 'excel!Excel.ChartSeries#load:member(1)'
-      - 'excel!Excel.ChartSeries#mapOptions:member'
-      - 'excel!Excel.ChartSeries#markerBackgroundColor:member'
-      - 'excel!Excel.ChartSeries#markerForegroundColor:member'
-      - 'excel!Excel.ChartSeries#markerSize:member'
-      - 'excel!Excel.ChartSeries#markerStyle:member'
-      - 'excel!Excel.ChartSeries#name:member'
-      - 'excel!Excel.ChartSeries#overlap:member'
-      - 'excel!Excel.ChartSeries#parentLabelStrategy:member'
-      - 'excel!Excel.ChartSeries#plotOrder:member'
-      - 'excel!Excel.ChartSeries#points:member'
-      - 'excel!Excel.ChartSeries#secondPlotSize:member'
-      - 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
-      - 'excel!Excel.ChartSeries#setValues:member(1)'
-      - 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
-      - 'excel!Excel.ChartSeries#showConnectorLines:member'
-      - 'excel!Excel.ChartSeries#showLeaderLines:member'
-      - 'excel!Excel.ChartSeries#showShadow:member'
-      - 'excel!Excel.ChartSeries#smooth:member'
-      - 'excel!Excel.ChartSeries#splitType:member'
-      - 'excel!Excel.ChartSeries#splitValue:member'
-      - 'excel!Excel.ChartSeries#trendlines:member'
-      - 'excel!Excel.ChartSeries#varyByCategories:member'
-      - 'excel!Excel.ChartSeries#xErrorBars:member'
-      - 'excel!Excel.ChartSeries#yErrorBars:member'
-  - uid: 'excel!Excel.ChartSeries#axisGroup:member'
-    summary: Especifica el grupo de la serie especificada.
-    name: axisGroup
-    fullName: axisGroup
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'axisGroup: ChartAxisGroup | "Primary" | "Secondary";'
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#axisGroup~0:complex'
-  - uid: 'excel!Excel.ChartSeries#binOptions:member'
-    summary: Contiene las opciones de intervalo para gráficos de histograma y diagramas de Pareto.
-    name: binOptions
-    fullName: binOptions
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly binOptions: ChartBinOptions;'
-      return:
-        type:
-          - 'excel!Excel.ChartBinOptions:interface'
-  - uid: 'excel!Excel.ChartSeries#boxwhiskerOptions:member'
-    summary: Contiene las opciones para el gráfico de cajas y bigotes.
-    name: boxwhiskerOptions
-    fullName: boxwhiskerOptions
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly boxwhiskerOptions: ChartBoxwhiskerOptions;'
-      return:
-        type:
-          - 'excel!Excel.ChartBoxwhiskerOptions:interface'
-  - uid: 'excel!Excel.ChartSeries#bubbleScale:member'
-    summary: 'Esto puede ser un valor entero entre 0 (cero) y 300, que representa el porcentaje del tamaño predeterminado. Esta propiedad solo se aplica a los gráficos de burbujas.'
-    name: bubbleScale
-    fullName: bubbleScale
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bubbleScale: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#chartType:member'
-    summary: Representa el tipo de gráfico de una serie. Consulte Excel. ChartType para obtener información detallada.
-    name: chartType
-    fullName: chartType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        chartType:
-                    | ChartType
+### YamlMime:TSType
+name: Excel.ChartSeries
+uid: excel!Excel.ChartSeries:interface
+package: excel!
+fullName: Excel.ChartSeries
+summary: Representa una serie de un gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: axisGroup
+  uid: excel!Excel.ChartSeries#axisGroup:member
+  package: excel!
+  fullName: axisGroup
+  summary: Especifica el grupo de la serie especificada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'axisGroup: ChartAxisGroup | "Primary" | "Secondary";'
+    return:
+      type: <xref uid="excel!Excel.ChartAxisGroup:enum" /> | "Primary" | "Secondary"
+- name: binOptions
+  uid: excel!Excel.ChartSeries#binOptions:member
+  package: excel!
+  fullName: binOptions
+  summary: Contiene las opciones de intervalo para gráficos de histograma y diagramas de Pareto.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly binOptions: ChartBinOptions;'
+    return:
+      type: <xref uid="excel!Excel.ChartBinOptions:interface" />
+- name: boxwhiskerOptions
+  uid: excel!Excel.ChartSeries#boxwhiskerOptions:member
+  package: excel!
+  fullName: boxwhiskerOptions
+  summary: Contiene las opciones para el gráfico de cajas y bigotes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly boxwhiskerOptions: ChartBoxwhiskerOptions;'
+    return:
+      type: <xref uid="excel!Excel.ChartBoxwhiskerOptions:interface" />
+- name: bubbleScale
+  uid: excel!Excel.ChartSeries#bubbleScale:member
+  package: excel!
+  fullName: bubbleScale
+  summary: Esto puede ser un valor entero entre 0 (cero) y 300, que representa el porcentaje del tamaño predeterminado. Esta propiedad solo se aplica a los gráficos de burbujas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bubbleScale: number;'
+    return:
+      type: number
+- name: chartType
+  uid: excel!Excel.ChartSeries#chartType:member
+  package: excel!
+  fullName: chartType
+  summary: Representa el tipo de gráfico de una serie. Consulte Excel. ChartType para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      chartType:
+                  | ChartType
+                  | "Invalid"
+                  | "ColumnClustered"
+                  | "ColumnStacked"
+                  | "ColumnStacked100"
+                  | "3DColumnClustered"
+                  | "3DColumnStacked"
+                  | "3DColumnStacked100"
+                  | "BarClustered"
+                  | "BarStacked"
+                  | "BarStacked100"
+                  | "3DBarClustered"
+                  | "3DBarStacked"
+                  | "3DBarStacked100"
+                  | "LineStacked"
+                  | "LineStacked100"
+                  | "LineMarkers"
+                  | "LineMarkersStacked"
+                  | "LineMarkersStacked100"
+                  | "PieOfPie"
+                  | "PieExploded"
+                  | "3DPieExploded"
+                  | "BarOfPie"
+                  | "XyscatterSmooth"
+                  | "XyscatterSmoothNoMarkers"
+                  | "XyscatterLines"
+                  | "XyscatterLinesNoMarkers"
+                  | "AreaStacked"
+                  | "AreaStacked100"
+                  | "3DAreaStacked"
+                  | "3DAreaStacked100"
+                  | "DoughnutExploded"
+                  | "RadarMarkers"
+                  | "RadarFilled"
+                  | "Surface"
+                  | "SurfaceWireframe"
+                  | "SurfaceTopView"
+                  | "SurfaceTopViewWireframe"
+                  | "Bubble"
+                  | "Bubble3DEffect"
+                  | "StockHLC"
+                  | "StockOHLC"
+                  | "StockVHLC"
+                  | "StockVOHLC"
+                  | "CylinderColClustered"
+                  | "CylinderColStacked"
+                  | "CylinderColStacked100"
+                  | "CylinderBarClustered"
+                  | "CylinderBarStacked"
+                  | "CylinderBarStacked100"
+                  | "CylinderCol"
+                  | "ConeColClustered"
+                  | "ConeColStacked"
+                  | "ConeColStacked100"
+                  | "ConeBarClustered"
+                  | "ConeBarStacked"
+                  | "ConeBarStacked100"
+                  | "ConeCol"
+                  | "PyramidColClustered"
+                  | "PyramidColStacked"
+                  | "PyramidColStacked100"
+                  | "PyramidBarClustered"
+                  | "PyramidBarStacked"
+                  | "PyramidBarStacked100"
+                  | "PyramidCol"
+                  | "3DColumn"
+                  | "Line"
+                  | "3DLine"
+                  | "3DPie"
+                  | "Pie"
+                  | "Xyscatter"
+                  | "3DArea"
+                  | "Area"
+                  | "Doughnut"
+                  | "Radar"
+                  | "Histogram"
+                  | "Boxwhisker"
+                  | "Pareto"
+                  | "RegionMap"
+                  | "Treemap"
+                  | "Waterfall"
+                  | "Sunburst"
+                  | "Funnel";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartType:enum" />
                     | "Invalid"
                     | "ColumnClustered"
                     | "ColumnStacked"
@@ -200,478 +235,353 @@ items:
                     | "Treemap"
                     | "Waterfall"
                     | "Sunburst"
-                    | "Funnel";
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#chartType~0:complex'
-  - uid: 'excel!Excel.ChartSeries#dataLabels:member'
-    summary: Representa una colección de todos las dataLabels de la serie.
-    name: dataLabels
-    fullName: dataLabels
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly dataLabels: ChartDataLabels;'
-      return:
-        type:
-          - 'excel!Excel.ChartDataLabels:interface'
-  - uid: 'excel!Excel.ChartSeries#delete:member(1)'
-    summary: Elimina la serie del gráfico.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-            let sheet = context.workbook.worksheets.getItem("Sample");
-            let seriesCollection = sheet.charts.getItemAt(0).series;
-            seriesCollection.load("count");
-            await context.sync();
-
-            if (seriesCollection.count > 0) {
-              let series = seriesCollection.getItemAt(0);
-
-              // Delete the first series.
-              series.delete();
-            }
-
-            await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.ChartSeries#doughnutHoleSize:member'
-    summary: Representa el tamaño del agujero de los anillos de una serie de gráfico. Solo es válida en los gráficos de anillos y doughnutExploded. Produce una excepción de argumento no válido en gráficos no válidos.
-    name: doughnutHoleSize
-    fullName: doughnutHoleSize
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'doughnutHoleSize: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#explosion:member'
-    summary: Especifica el valor de explosión de un sector del gráfico circular o de anillos. Devuelve 0 (cero) si no hay expansión (el vértice del sector está en el centro del círculo).
-    name: explosion
-    fullName: explosion
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'explosion: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#filtered:member'
-    summary: Especifica si se ha filtrado la serie. No aplicable para los gráficos de superficie.
-    name: filtered
-    fullName: filtered
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'filtered: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#firstSliceAngle:member'
-    summary: 'Especifica el ángulo del primer sector del gráfico circular o de anillos, en grados (en el sentido de las agujas del reloj desde vertical). Se aplica solo a gráficos circulares, circulares 3D y de anillos. Puede ser un valor comprendido entre 0 y 360.'
-    name: firstSliceAngle
-    fullName: firstSliceAngle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'firstSliceAngle: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#format:member'
-    summary: 'Representa el formato de una serie del gráfico, que incluye el formato de relleno y de línea.'
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ChartSeriesFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartSeriesFormat:interface'
-  - uid: 'excel!Excel.ChartSeries#gapWidth:member'
-    summary: 'Representa el ancho del rango de una serie de gráfico. Solo es válido en los gráficos de barras y columnas, así como en clases específicas de gráficos de líneas y circulares. Produce una excepción de argumento no válido en gráficos no válidos.'
-    name: gapWidth
-    fullName: gapWidth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gapWidth: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#gradientMaximumColor:member'
-    summary: Especifica el color del valor máximo de una serie de gráficos del mapa de región.
-    name: gradientMaximumColor
-    fullName: gradientMaximumColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientMaximumColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartSeries#gradientMaximumType:member'
-    summary: Especifica el tipo de valor máximo de una serie de gráficos del mapa de región.
-    name: gradientMaximumType
-    fullName: gradientMaximumType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        gradientMaximumType:
-                    | ChartGradientStyleType
+                    | "Funnel"
+- name: dataLabels
+  uid: excel!Excel.ChartSeries#dataLabels:member
+  package: excel!
+  fullName: dataLabels
+  summary: Representa una colección de todos las dataLabels de la serie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly dataLabels: ChartDataLabels;'
+    return:
+      type: <xref uid="excel!Excel.ChartDataLabels:interface" />
+- name: doughnutHoleSize
+  uid: excel!Excel.ChartSeries#doughnutHoleSize:member
+  package: excel!
+  fullName: doughnutHoleSize
+  summary: Representa el tamaño del agujero de los anillos de una serie de gráfico. Solo es válida en los gráficos de anillos y doughnutExploded. Produce una excepción de argumento no válido en gráficos no válidos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'doughnutHoleSize: number;'
+    return:
+      type: number
+- name: explosion
+  uid: excel!Excel.ChartSeries#explosion:member
+  package: excel!
+  fullName: explosion
+  summary: Especifica el valor de explosión de un sector del gráfico circular o de anillos. Devuelve 0 (cero) si no hay expansión (el vértice del sector está en el centro del círculo).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'explosion: number;'
+    return:
+      type: number
+- name: filtered
+  uid: excel!Excel.ChartSeries#filtered:member
+  package: excel!
+  fullName: filtered
+  summary: Especifica si se ha filtrado la serie. No aplicable para los gráficos de superficie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'filtered: boolean;'
+    return:
+      type: boolean
+- name: firstSliceAngle
+  uid: excel!Excel.ChartSeries#firstSliceAngle:member
+  package: excel!
+  fullName: firstSliceAngle
+  summary: Especifica el ángulo del primer sector del gráfico circular o de anillos, en grados (en el sentido de las agujas del reloj desde vertical). Se aplica solo a gráficos circulares, circulares 3D y de anillos. Puede ser un valor comprendido entre 0 y 360.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'firstSliceAngle: number;'
+    return:
+      type: number
+- name: format
+  uid: excel!Excel.ChartSeries#format:member
+  package: excel!
+  fullName: format
+  summary: Representa el formato de una serie del gráfico, que incluye el formato de relleno y de línea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ChartSeriesFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartSeriesFormat:interface" />
+- name: gapWidth
+  uid: excel!Excel.ChartSeries#gapWidth:member
+  package: excel!
+  fullName: gapWidth
+  summary: Representa el ancho del rango de una serie de gráfico. Solo es válido en los gráficos de barras y columnas, así como en clases específicas de gráficos de líneas y circulares. Produce una excepción de argumento no válido en gráficos no válidos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gapWidth: number;'
+    return:
+      type: number
+- name: gradientMaximumColor
+  uid: excel!Excel.ChartSeries#gradientMaximumColor:member
+  package: excel!
+  fullName: gradientMaximumColor
+  summary: Especifica el color del valor máximo de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientMaximumColor: string;'
+    return:
+      type: string
+- name: gradientMaximumType
+  uid: excel!Excel.ChartSeries#gradientMaximumType:member
+  package: excel!
+  fullName: gradientMaximumType
+  summary: Especifica el tipo de valor máximo de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      gradientMaximumType:
+                  | ChartGradientStyleType
+                  | "ExtremeValue"
+                  | "Number"
+                  | "Percent";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartGradientStyleType:enum" />
                     | "ExtremeValue"
                     | "Number"
-                    | "Percent";
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#gradientMaximumType~0:complex'
-  - uid: 'excel!Excel.ChartSeries#gradientMaximumValue:member'
-    summary: Especifica el valor máximo de una serie de gráficos del mapa de región.
-    name: gradientMaximumValue
-    fullName: gradientMaximumValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientMaximumValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#gradientMidpointColor:member'
-    summary: Especifica el color del valor de punto medio de una serie de gráficos del mapa de regiones.
-    name: gradientMidpointColor
-    fullName: gradientMidpointColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientMidpointColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartSeries#gradientMidpointType:member'
-    summary: Especifica el tipo de valor de punto medio de una serie de gráficos del mapa de región.
-    name: gradientMidpointType
-    fullName: gradientMidpointType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        gradientMidpointType:
-                    | ChartGradientStyleType
+                    | "Percent"
+- name: gradientMaximumValue
+  uid: excel!Excel.ChartSeries#gradientMaximumValue:member
+  package: excel!
+  fullName: gradientMaximumValue
+  summary: Especifica el valor máximo de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientMaximumValue: number;'
+    return:
+      type: number
+- name: gradientMidpointColor
+  uid: excel!Excel.ChartSeries#gradientMidpointColor:member
+  package: excel!
+  fullName: gradientMidpointColor
+  summary: Especifica el color del valor de punto medio de una serie de gráficos del mapa de regiones.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientMidpointColor: string;'
+    return:
+      type: string
+- name: gradientMidpointType
+  uid: excel!Excel.ChartSeries#gradientMidpointType:member
+  package: excel!
+  fullName: gradientMidpointType
+  summary: Especifica el tipo de valor de punto medio de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      gradientMidpointType:
+                  | ChartGradientStyleType
+                  | "ExtremeValue"
+                  | "Number"
+                  | "Percent";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartGradientStyleType:enum" />
                     | "ExtremeValue"
                     | "Number"
-                    | "Percent";
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#gradientMidpointType~0:complex'
-  - uid: 'excel!Excel.ChartSeries#gradientMidpointValue:member'
-    summary: Especifica el valor de punto medio de una serie de gráficos del mapa de región.
-    name: gradientMidpointValue
-    fullName: gradientMidpointValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientMidpointValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#gradientMinimumColor:member'
-    summary: Especifica el color del valor mínimo de una serie de gráficos del mapa de región.
-    name: gradientMinimumColor
-    fullName: gradientMinimumColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientMinimumColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartSeries#gradientMinimumType:member'
-    summary: Especifica el tipo de valor mínimo de una serie de gráficos del mapa de región.
-    name: gradientMinimumType
-    fullName: gradientMinimumType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        gradientMinimumType:
-                    | ChartGradientStyleType
+                    | "Percent"
+- name: gradientMidpointValue
+  uid: excel!Excel.ChartSeries#gradientMidpointValue:member
+  package: excel!
+  fullName: gradientMidpointValue
+  summary: Especifica el valor de punto medio de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientMidpointValue: number;'
+    return:
+      type: number
+- name: gradientMinimumColor
+  uid: excel!Excel.ChartSeries#gradientMinimumColor:member
+  package: excel!
+  fullName: gradientMinimumColor
+  summary: Especifica el color del valor mínimo de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientMinimumColor: string;'
+    return:
+      type: string
+- name: gradientMinimumType
+  uid: excel!Excel.ChartSeries#gradientMinimumType:member
+  package: excel!
+  fullName: gradientMinimumType
+  summary: Especifica el tipo de valor mínimo de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      gradientMinimumType:
+                  | ChartGradientStyleType
+                  | "ExtremeValue"
+                  | "Number"
+                  | "Percent";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartGradientStyleType:enum" />
                     | "ExtremeValue"
                     | "Number"
-                    | "Percent";
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#gradientMinimumType~0:complex'
-  - uid: 'excel!Excel.ChartSeries#gradientMinimumValue:member'
-    summary: Especifica el valor mínimo de una serie de gráficos del mapa de región.
-    name: gradientMinimumValue
-    fullName: gradientMinimumValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientMinimumValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#gradientStyle:member'
-    summary: Especifica el estilo de degradado de serie de un gráfico de mapa de región.
-    name: gradientStyle
-    fullName: gradientStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'gradientStyle: ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor";'
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#gradientStyle~0:complex'
-  - uid: 'excel!Excel.ChartSeries#hasDataLabels:member'
-    summary: Especifica si la serie tiene etiquetas de datos.
-    name: hasDataLabels
-    fullName: hasDataLabels
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasDataLabels: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#invertColor:member'
-    summary: Especifica el color de relleno de los puntos de datos negativos de una serie.
-    name: invertColor
-    fullName: invertColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'invertColor: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartSeries#invertIfNegative:member'
-    summary: True si Excel invierte el patrón en el elemento cuando corresponde a un número negativo.
-    name: invertIfNegative
-    fullName: invertIfNegative
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'invertIfNegative: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#load:member(1)'
-    summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar `context.sync()` antes de leer las propiedades.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartSeries#mapOptions:member'
-    summary: Contiene las opciones para un gráfico de mapa de región.
-    name: mapOptions
-    fullName: mapOptions
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly mapOptions: ChartMapOptions;'
-      return:
-        type:
-          - 'excel!Excel.ChartMapOptions:interface'
-  - uid: 'excel!Excel.ChartSeries#markerBackgroundColor:member'
-    summary: Especifica el color de fondo de los marcadores de una serie de gráficos.
-    name: markerBackgroundColor
-    fullName: markerBackgroundColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'markerBackgroundColor: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.ChartSeries#markerForegroundColor:member'
-    summary: Especifica el color de primer plano de los marcadores de una serie del gráfico.
-    name: markerForegroundColor
-    fullName: markerForegroundColor
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'markerForegroundColor: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.ChartSeries#markerSize:member'
-    summary: Especifica el tamaño del marcador de una serie de gráficos.
-    name: markerSize
-    fullName: markerSize
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'markerSize: number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.ChartSeries#markerStyle:member'
-    summary: Especifica el estilo de marcador de una serie de gráficos. Consulte Excel. ChartMarkerStyle para obtener información detallada.
-    name: markerStyle
-    fullName: markerStyle
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        markerStyle:
-                    | ChartMarkerStyle
+                    | "Percent"
+- name: gradientMinimumValue
+  uid: excel!Excel.ChartSeries#gradientMinimumValue:member
+  package: excel!
+  fullName: gradientMinimumValue
+  summary: Especifica el valor mínimo de una serie de gráficos del mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientMinimumValue: number;'
+    return:
+      type: number
+- name: gradientStyle
+  uid: excel!Excel.ChartSeries#gradientStyle:member
+  package: excel!
+  fullName: gradientStyle
+  summary: Especifica el estilo de degradado de serie de un gráfico de mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'gradientStyle: ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor";'
+    return:
+      type: <xref uid="excel!Excel.ChartGradientStyle:enum" /> | "TwoPhaseColor" | "ThreePhaseColor"
+- name: hasDataLabels
+  uid: excel!Excel.ChartSeries#hasDataLabels:member
+  package: excel!
+  fullName: hasDataLabels
+  summary: Especifica si la serie tiene etiquetas de datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'hasDataLabels: boolean;'
+    return:
+      type: boolean
+- name: invertColor
+  uid: excel!Excel.ChartSeries#invertColor:member
+  package: excel!
+  fullName: invertColor
+  summary: Especifica el color de relleno de los puntos de datos negativos de una serie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'invertColor: string;'
+    return:
+      type: string
+- name: invertIfNegative
+  uid: excel!Excel.ChartSeries#invertIfNegative:member
+  package: excel!
+  fullName: invertIfNegative
+  summary: True si Excel invierte el patrón en el elemento cuando corresponde a un número negativo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'invertIfNegative: boolean;'
+    return:
+      type: boolean
+- name: mapOptions
+  uid: excel!Excel.ChartSeries#mapOptions:member
+  package: excel!
+  fullName: mapOptions
+  summary: Contiene las opciones para un gráfico de mapa de región.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly mapOptions: ChartMapOptions;'
+    return:
+      type: <xref uid="excel!Excel.ChartMapOptions:interface" />
+- name: markerBackgroundColor
+  uid: excel!Excel.ChartSeries#markerBackgroundColor:member
+  package: excel!
+  fullName: markerBackgroundColor
+  summary: Especifica el color de fondo de los marcadores de una serie de gráficos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'markerBackgroundColor: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let salesTable = sheet.tables.getItem(\"SalesTable\");\n    let dataRange = sheet.getRange(\"A1:E7\");\n\n    // Create an XY scatter chart.\n    let chart = sheet.charts.add(\"XYScatterSmooth\", dataRange, \"Auto\");\n    chart.title.text = \"Bicycle Parts Quarterly Sales\"; \n  \n    let series = chart.series;\n    let series0 = series.getItemAt(0);\n    let series1 = series.getItemAt(1);\n    let series2 = series.getItemAt(2);\n    let series3 = series.getItemAt(3);\n\n    // Set markers.\n    series0.markerStyle = \"Dash\";\n    series0.markerForegroundColor = \"black\";\n    series1.markerStyle = \"Star\";\n    series1.markerForegroundColor = \"black\";\n    series2.markerStyle = \"X\";\n    series2.markerSize = 12;\n    series3.markerStyle = \"Triangle\";\n    series3.markerBackgroundColor = \"purple\";\n\n    await context.sync();\n}\n```"
+- name: markerForegroundColor
+  uid: excel!Excel.ChartSeries#markerForegroundColor:member
+  package: excel!
+  fullName: markerForegroundColor
+  summary: Especifica el color de primer plano de los marcadores de una serie del gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'markerForegroundColor: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let salesTable = sheet.tables.getItem(\"SalesTable\");\n    let dataRange = sheet.getRange(\"A1:E7\");\n\n    // Create an XY scatter chart.\n    let chart = sheet.charts.add(\"XYScatterSmooth\", dataRange, \"Auto\");\n    chart.title.text = \"Bicycle Parts Quarterly Sales\"; \n  \n    let series = chart.series;\n    let series0 = series.getItemAt(0);\n    let series1 = series.getItemAt(1);\n    let series2 = series.getItemAt(2);\n    let series3 = series.getItemAt(3);\n\n    // Set markers.\n    series0.markerStyle = \"Dash\";\n    series0.markerForegroundColor = \"black\";\n    series1.markerStyle = \"Star\";\n    series1.markerForegroundColor = \"black\";\n    series2.markerStyle = \"X\";\n    series2.markerSize = 12;\n    series3.markerStyle = \"Triangle\";\n    series3.markerBackgroundColor = \"purple\";\n\n    await context.sync();\n}\n```"
+- name: markerSize
+  uid: excel!Excel.ChartSeries#markerSize:member
+  package: excel!
+  fullName: markerSize
+  summary: Especifica el tamaño del marcador de una serie de gráficos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'markerSize: number;'
+    return:
+      type: number
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let salesTable = sheet.tables.getItem(\"SalesTable\");\n    let dataRange = sheet.getRange(\"A1:E7\");\n\n    // Create an XY scatter chart.\n    let chart = sheet.charts.add(\"XYScatterSmooth\", dataRange, \"Auto\");\n    chart.title.text = \"Bicycle Parts Quarterly Sales\"; \n  \n    let series = chart.series;\n    let series0 = series.getItemAt(0);\n    let series1 = series.getItemAt(1);\n    let series2 = series.getItemAt(2);\n    let series3 = series.getItemAt(3);\n\n    // Set markers.\n    series0.markerStyle = \"Dash\";\n    series0.markerForegroundColor = \"black\";\n    series1.markerStyle = \"Star\";\n    series1.markerForegroundColor = \"black\";\n    series2.markerStyle = \"X\";\n    series2.markerSize = 12;\n    series3.markerStyle = \"Triangle\";\n    series3.markerBackgroundColor = \"purple\";\n\n    await context.sync();\n}\n```"
+- name: markerStyle
+  uid: excel!Excel.ChartSeries#markerStyle:member
+  package: excel!
+  fullName: markerStyle
+  summary: Especifica el estilo de marcador de una serie de gráficos. Consulte Excel. ChartMarkerStyle para obtener información detallada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      markerStyle:
+                  | ChartMarkerStyle
+                  | "Invalid"
+                  | "Automatic"
+                  | "None"
+                  | "Square"
+                  | "Diamond"
+                  | "Triangle"
+                  | "X"
+                  | "Star"
+                  | "Dot"
+                  | "Dash"
+                  | "Circle"
+                  | "Plus"
+                  | "Picture";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartMarkerStyle:enum" />
                     | "Invalid"
                     | "Automatic"
                     | "None"
@@ -684,913 +594,306 @@ items:
                     | "Dash"
                     | "Circle"
                     | "Plus"
-                    | "Picture";
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#markerStyle~0:complex'
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.ChartSeries#name:member'
-    summary: Especifica el nombre de una serie de un gráfico.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartSeries#overlap:member'
-    summary: Especifica cómo se colocan las barras y columnas. Puede ser un valor comprendido entre-100 y 100. Se aplica solo a los gráficos 2D de barras y columnas.
-    name: overlap
-    fullName: overlap
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'overlap: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#parentLabelStrategy:member'
-    summary: Especifica el área de estrategia de la etiqueta primaria de la serie para un gráfico de rectángulos.
-    name: parentLabelStrategy
-    fullName: parentLabelStrategy
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        parentLabelStrategy:
-                    | ChartParentLabelStrategy
+                    | "Picture"
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let salesTable = sheet.tables.getItem(\"SalesTable\");\n    let dataRange = sheet.getRange(\"A1:E7\");\n\n    // Create an XY scatter chart.\n    let chart = sheet.charts.add(\"XYScatterSmooth\", dataRange, \"Auto\");\n    chart.title.text = \"Bicycle Parts Quarterly Sales\"; \n  \n    let series = chart.series;\n    let series0 = series.getItemAt(0);\n    let series1 = series.getItemAt(1);\n    let series2 = series.getItemAt(2);\n    let series3 = series.getItemAt(3);\n\n    // Set markers.\n    series0.markerStyle = \"Dash\";\n    series0.markerForegroundColor = \"black\";\n    series1.markerStyle = \"Star\";\n    series1.markerForegroundColor = \"black\";\n    series2.markerStyle = \"X\";\n    series2.markerSize = 12;\n    series3.markerStyle = \"Triangle\";\n    series3.markerBackgroundColor = \"purple\";\n\n    await context.sync();\n}\n```"
+- name: name
+  uid: excel!Excel.ChartSeries#name:member
+  package: excel!
+  fullName: name
+  summary: Especifica el nombre de una serie de un gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: overlap
+  uid: excel!Excel.ChartSeries#overlap:member
+  package: excel!
+  fullName: overlap
+  summary: Especifica cómo se colocan las barras y columnas. Puede ser un valor comprendido entre-100 y 100. Se aplica solo a los gráficos 2D de barras y columnas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'overlap: number;'
+    return:
+      type: number
+- name: parentLabelStrategy
+  uid: excel!Excel.ChartSeries#parentLabelStrategy:member
+  package: excel!
+  fullName: parentLabelStrategy
+  summary: Especifica el área de estrategia de la etiqueta primaria de la serie para un gráfico de rectángulos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      parentLabelStrategy:
+                  | ChartParentLabelStrategy
+                  | "None"
+                  | "Banner"
+                  | "Overlapping";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartParentLabelStrategy:enum" />
                     | "None"
                     | "Banner"
-                    | "Overlapping";
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#parentLabelStrategy~0:complex'
-  - uid: 'excel!Excel.ChartSeries#plotOrder:member'
-    summary: Especifica el orden de trazado de una serie de gráficos dentro del grupo de gráficos.
-    name: plotOrder
-    fullName: plotOrder
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'plotOrder: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#points:member'
-    summary: Devuelve una colección de todos los puntos de la serie.
-    name: points
-    fullName: points
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly points: ChartPointsCollection;'
-      return:
-        type:
-          - 'excel!Excel.ChartPointsCollection:interface'
-  - uid: 'excel!Excel.ChartSeries#secondPlotSize:member'
-    summary: 'Especifica el tamaño de la sección secundaria de un gráfico circular con subgráfico circular o con subgráfico de barras, como un porcentaje del tamaño del gráfico circular principal. Puede ser un valor comprendido entre 5 y 200.'
-    name: secondPlotSize
-    fullName: secondPlotSize
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'secondPlotSize: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
-    summary: Establece el tamaño de las burbujas de una serie de gráficos. Solo funciona para los gráficos de burbujas.
-    name: setBubbleSizes(sourceData)
-    fullName: setBubbleSizes(sourceData)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBubbleSizes(sourceData: Range): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceData
-          description: El objeto Range correspondiente a los datos de origen.
-          type:
-            - 'excel!Excel.Range:interface'
-  - uid: 'excel!Excel.ChartSeries#setValues:member(1)'
-    summary: 'Establece los valores de una serie de gráficos. En un gráfico de dispersión, significa los valores del eje Y.'
-    name: setValues(sourceData)
-    fullName: setValues(sourceData)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setValues(sourceData: Range): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Ejemplos
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-            let sheet = context.workbook.worksheets.getItem("Sample");
-
-            let seriesCollection = sheet.charts.getItemAt(0);
-            let rangeSelection = sheet.getRange("C2:C7");
-            let xRangeSelection = sheet.getRange("A1:A7");
-
-            // Add a series.
-            let newSeries = seriesCollection.series.add("Qtr2");
-            newSeries.setValues(rangeSelection);
-            newSeries.setXAxisValues(xRangeSelection);
-
-            await context.sync();
-          }
-          ```
-      parameters:
-        - id: sourceData
-          description: El objeto Range correspondiente a los datos de origen.
-          type:
-            - 'excel!Excel.Range:interface'
-  - uid: 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
-    summary: Establece los valores del eje X para una serie de gráficos. Solo funciona para los gráficos de dispersión.
-    name: setXAxisValues(sourceData)
-    fullName: setXAxisValues(sourceData)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setXAxisValues(sourceData: Range): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceData
-          description: El objeto Range correspondiente a los datos de origen.
-          type:
-            - 'excel!Excel.Range:interface'
-  - uid: 'excel!Excel.ChartSeries#showConnectorLines:member'
-    summary: Especifica si las líneas de conector se muestran en gráficos de cascada.
-    name: showConnectorLines
-    fullName: showConnectorLines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showConnectorLines: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#showLeaderLines:member'
-    summary: Especifica si se muestran líneas guía para cada etiqueta de datos de la serie.
-    name: showLeaderLines
-    fullName: showLeaderLines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showLeaderLines: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#showShadow:member'
-    summary: Especifica si la serie tiene una sombra.
-    name: showShadow
-    fullName: showShadow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showShadow: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#smooth:member'
-    summary: Especifica si la serie es fluida. Sólo aplicable a los gráficos de líneas y de dispersión.
-    name: smooth
-    fullName: smooth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'smooth: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#splitType:member'
-    summary: Especifica la forma en que se dividen las dos secciones de un gráfico circular con subgráfico circular o de barras.
-    name: splitType
-    fullName: splitType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        splitType:
-                    | ChartSplitType
+                    | "Overlapping"
+- name: plotOrder
+  uid: excel!Excel.ChartSeries#plotOrder:member
+  package: excel!
+  fullName: plotOrder
+  summary: Especifica el orden de trazado de una serie de gráficos dentro del grupo de gráficos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'plotOrder: number;'
+    return:
+      type: number
+- name: points
+  uid: excel!Excel.ChartSeries#points:member
+  package: excel!
+  fullName: points
+  summary: Devuelve una colección de todos los puntos de la serie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly points: ChartPointsCollection;'
+    return:
+      type: <xref uid="excel!Excel.ChartPointsCollection:interface" />
+- name: secondPlotSize
+  uid: excel!Excel.ChartSeries#secondPlotSize:member
+  package: excel!
+  fullName: secondPlotSize
+  summary: Especifica el tamaño de la sección secundaria de un gráfico circular con subgráfico circular o con subgráfico de barras, como un porcentaje del tamaño del gráfico circular principal. Puede ser un valor comprendido entre 5 y 200.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'secondPlotSize: number;'
+    return:
+      type: number
+- name: showConnectorLines
+  uid: excel!Excel.ChartSeries#showConnectorLines:member
+  package: excel!
+  fullName: showConnectorLines
+  summary: Especifica si las líneas de conector se muestran en gráficos de cascada.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showConnectorLines: boolean;'
+    return:
+      type: boolean
+- name: showLeaderLines
+  uid: excel!Excel.ChartSeries#showLeaderLines:member
+  package: excel!
+  fullName: showLeaderLines
+  summary: Especifica si se muestran líneas guía para cada etiqueta de datos de la serie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showLeaderLines: boolean;'
+    return:
+      type: boolean
+- name: showShadow
+  uid: excel!Excel.ChartSeries#showShadow:member
+  package: excel!
+  fullName: showShadow
+  summary: Especifica si la serie tiene una sombra.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showShadow: boolean;'
+    return:
+      type: boolean
+- name: smooth
+  uid: excel!Excel.ChartSeries#smooth:member
+  package: excel!
+  fullName: smooth
+  summary: Especifica si la serie es fluida. Sólo aplicable a los gráficos de líneas y de dispersión.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'smooth: boolean;'
+    return:
+      type: boolean
+- name: splitType
+  uid: excel!Excel.ChartSeries#splitType:member
+  package: excel!
+  fullName: splitType
+  summary: Especifica la forma en que se dividen las dos secciones de un gráfico circular con subgráfico circular o de barras.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      splitType:
+                  | ChartSplitType
+                  | "SplitByPosition"
+                  | "SplitByValue"
+                  | "SplitByPercentValue"
+                  | "SplitByCustomSplit";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartSplitType:enum" />
                     | "SplitByPosition"
                     | "SplitByValue"
                     | "SplitByPercentValue"
-                    | "SplitByCustomSplit";
-      return:
-        type:
-          - 'excel!Excel.ChartSeries#splitType~0:complex'
-  - uid: 'excel!Excel.ChartSeries#splitValue:member'
-    summary: Especifica el valor del umbral que separa dos secciones de un gráfico circular con subgráfico circular o de barras.
-    name: splitValue
-    fullName: splitValue
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'splitValue: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartSeries#trendlines:member'
-    summary: La colección de líneas de tendencia de la serie.
-    name: trendlines
-    fullName: trendlines
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly trendlines: ChartTrendlineCollection;'
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineCollection:interface'
-  - uid: 'excel!Excel.ChartSeries#varyByCategories:member'
-    summary: True si Excel asigna un color o trama diferente a cada marcador de datos. El gráfico debe contener una sola serie.
-    name: varyByCategories
-    fullName: varyByCategories
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'varyByCategories: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartSeries#xErrorBars:member'
-    summary: Indica el objeto de la barra de error de una serie de gráficos.
-    name: xErrorBars
-    fullName: xErrorBars
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly xErrorBars: ChartErrorBars;'
-      return:
-        type:
-          - 'excel!Excel.ChartErrorBars:interface'
-  - uid: 'excel!Excel.ChartSeries#yErrorBars:member'
-    summary: Indica el objeto de la barra de error de una serie de gráficos.
-    name: yErrorBars
-    fullName: yErrorBars
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly yErrorBars: ChartErrorBars;'
-      return:
-        type:
-          - 'excel!Excel.ChartErrorBars:interface'
-references:
-  - uid: 'excel!Excel.ChartSeries#axisGroup~0:complex'
-    name: ChartAxisGroup | "Primary" | "Secondary"
-    fullName: Excel.ChartAxisGroup | "Primary" | "Secondary"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartAxisGroup:enum'
-        name: ChartAxisGroup
-        fullName: Excel.ChartAxisGroup
-      - name: ' | "Primary" | "Secondary"'
-        fullName: ' | "Primary" | "Secondary"'
-  - uid: 'excel!Excel.ChartBinOptions:interface'
-    name: ChartBinOptions
-    fullName: Excel.ChartBinOptions
-  - uid: 'excel!Excel.ChartBoxwhiskerOptions:interface'
-    name: ChartBoxwhiskerOptions
-    fullName: Excel.ChartBoxwhiskerOptions
-  - uid: 'excel!Excel.ChartSeries#chartType~0:complex'
-    name: |-
-      | ChartType
-                  | "Invalid"
-                  | "ColumnClustered"
-                  | "ColumnStacked"
-                  | "ColumnStacked100"
-                  | "3DColumnClustered"
-                  | "3DColumnStacked"
-                  | "3DColumnStacked100"
-                  | "BarClustered"
-                  | "BarStacked"
-                  | "BarStacked100"
-                  | "3DBarClustered"
-                  | "3DBarStacked"
-                  | "3DBarStacked100"
-                  | "LineStacked"
-                  | "LineStacked100"
-                  | "LineMarkers"
-                  | "LineMarkersStacked"
-                  | "LineMarkersStacked100"
-                  | "PieOfPie"
-                  | "PieExploded"
-                  | "3DPieExploded"
-                  | "BarOfPie"
-                  | "XyscatterSmooth"
-                  | "XyscatterSmoothNoMarkers"
-                  | "XyscatterLines"
-                  | "XyscatterLinesNoMarkers"
-                  | "AreaStacked"
-                  | "AreaStacked100"
-                  | "3DAreaStacked"
-                  | "3DAreaStacked100"
-                  | "DoughnutExploded"
-                  | "RadarMarkers"
-                  | "RadarFilled"
-                  | "Surface"
-                  | "SurfaceWireframe"
-                  | "SurfaceTopView"
-                  | "SurfaceTopViewWireframe"
-                  | "Bubble"
-                  | "Bubble3DEffect"
-                  | "StockHLC"
-                  | "StockOHLC"
-                  | "StockVHLC"
-                  | "StockVOHLC"
-                  | "CylinderColClustered"
-                  | "CylinderColStacked"
-                  | "CylinderColStacked100"
-                  | "CylinderBarClustered"
-                  | "CylinderBarStacked"
-                  | "CylinderBarStacked100"
-                  | "CylinderCol"
-                  | "ConeColClustered"
-                  | "ConeColStacked"
-                  | "ConeColStacked100"
-                  | "ConeBarClustered"
-                  | "ConeBarStacked"
-                  | "ConeBarStacked100"
-                  | "ConeCol"
-                  | "PyramidColClustered"
-                  | "PyramidColStacked"
-                  | "PyramidColStacked100"
-                  | "PyramidBarClustered"
-                  | "PyramidBarStacked"
-                  | "PyramidBarStacked100"
-                  | "PyramidCol"
-                  | "3DColumn"
-                  | "Line"
-                  | "3DLine"
-                  | "3DPie"
-                  | "Pie"
-                  | "Xyscatter"
-                  | "3DArea"
-                  | "Area"
-                  | "Doughnut"
-                  | "Radar"
-                  | "Histogram"
-                  | "Boxwhisker"
-                  | "Pareto"
-                  | "RegionMap"
-                  | "Treemap"
-                  | "Waterfall"
-                  | "Sunburst"
-                  | "Funnel"
-    fullName: |-
-      | Excel.ChartType
-                  | "Invalid"
-                  | "ColumnClustered"
-                  | "ColumnStacked"
-                  | "ColumnStacked100"
-                  | "3DColumnClustered"
-                  | "3DColumnStacked"
-                  | "3DColumnStacked100"
-                  | "BarClustered"
-                  | "BarStacked"
-                  | "BarStacked100"
-                  | "3DBarClustered"
-                  | "3DBarStacked"
-                  | "3DBarStacked100"
-                  | "LineStacked"
-                  | "LineStacked100"
-                  | "LineMarkers"
-                  | "LineMarkersStacked"
-                  | "LineMarkersStacked100"
-                  | "PieOfPie"
-                  | "PieExploded"
-                  | "3DPieExploded"
-                  | "BarOfPie"
-                  | "XyscatterSmooth"
-                  | "XyscatterSmoothNoMarkers"
-                  | "XyscatterLines"
-                  | "XyscatterLinesNoMarkers"
-                  | "AreaStacked"
-                  | "AreaStacked100"
-                  | "3DAreaStacked"
-                  | "3DAreaStacked100"
-                  | "DoughnutExploded"
-                  | "RadarMarkers"
-                  | "RadarFilled"
-                  | "Surface"
-                  | "SurfaceWireframe"
-                  | "SurfaceTopView"
-                  | "SurfaceTopViewWireframe"
-                  | "Bubble"
-                  | "Bubble3DEffect"
-                  | "StockHLC"
-                  | "StockOHLC"
-                  | "StockVHLC"
-                  | "StockVOHLC"
-                  | "CylinderColClustered"
-                  | "CylinderColStacked"
-                  | "CylinderColStacked100"
-                  | "CylinderBarClustered"
-                  | "CylinderBarStacked"
-                  | "CylinderBarStacked100"
-                  | "CylinderCol"
-                  | "ConeColClustered"
-                  | "ConeColStacked"
-                  | "ConeColStacked100"
-                  | "ConeBarClustered"
-                  | "ConeBarStacked"
-                  | "ConeBarStacked100"
-                  | "ConeCol"
-                  | "PyramidColClustered"
-                  | "PyramidColStacked"
-                  | "PyramidColStacked100"
-                  | "PyramidBarClustered"
-                  | "PyramidBarStacked"
-                  | "PyramidBarStacked100"
-                  | "PyramidCol"
-                  | "3DColumn"
-                  | "Line"
-                  | "3DLine"
-                  | "3DPie"
-                  | "Pie"
-                  | "Xyscatter"
-                  | "3DArea"
-                  | "Area"
-                  | "Doughnut"
-                  | "Radar"
-                  | "Histogram"
-                  | "Boxwhisker"
-                  | "Pareto"
-                  | "RegionMap"
-                  | "Treemap"
-                  | "Waterfall"
-                  | "Sunburst"
-                  | "Funnel"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartType:enum'
-        name: ChartType
-        fullName: Excel.ChartType
-      - name: |2-
-
-                      | "Invalid"
-                      | "ColumnClustered"
-                      | "ColumnStacked"
-                      | "ColumnStacked100"
-                      | "3DColumnClustered"
-                      | "3DColumnStacked"
-                      | "3DColumnStacked100"
-                      | "BarClustered"
-                      | "BarStacked"
-                      | "BarStacked100"
-                      | "3DBarClustered"
-                      | "3DBarStacked"
-                      | "3DBarStacked100"
-                      | "LineStacked"
-                      | "LineStacked100"
-                      | "LineMarkers"
-                      | "LineMarkersStacked"
-                      | "LineMarkersStacked100"
-                      | "PieOfPie"
-                      | "PieExploded"
-                      | "3DPieExploded"
-                      | "BarOfPie"
-                      | "XyscatterSmooth"
-                      | "XyscatterSmoothNoMarkers"
-                      | "XyscatterLines"
-                      | "XyscatterLinesNoMarkers"
-                      | "AreaStacked"
-                      | "AreaStacked100"
-                      | "3DAreaStacked"
-                      | "3DAreaStacked100"
-                      | "DoughnutExploded"
-                      | "RadarMarkers"
-                      | "RadarFilled"
-                      | "Surface"
-                      | "SurfaceWireframe"
-                      | "SurfaceTopView"
-                      | "SurfaceTopViewWireframe"
-                      | "Bubble"
-                      | "Bubble3DEffect"
-                      | "StockHLC"
-                      | "StockOHLC"
-                      | "StockVHLC"
-                      | "StockVOHLC"
-                      | "CylinderColClustered"
-                      | "CylinderColStacked"
-                      | "CylinderColStacked100"
-                      | "CylinderBarClustered"
-                      | "CylinderBarStacked"
-                      | "CylinderBarStacked100"
-                      | "CylinderCol"
-                      | "ConeColClustered"
-                      | "ConeColStacked"
-                      | "ConeColStacked100"
-                      | "ConeBarClustered"
-                      | "ConeBarStacked"
-                      | "ConeBarStacked100"
-                      | "ConeCol"
-                      | "PyramidColClustered"
-                      | "PyramidColStacked"
-                      | "PyramidColStacked100"
-                      | "PyramidBarClustered"
-                      | "PyramidBarStacked"
-                      | "PyramidBarStacked100"
-                      | "PyramidCol"
-                      | "3DColumn"
-                      | "Line"
-                      | "3DLine"
-                      | "3DPie"
-                      | "Pie"
-                      | "Xyscatter"
-                      | "3DArea"
-                      | "Area"
-                      | "Doughnut"
-                      | "Radar"
-                      | "Histogram"
-                      | "Boxwhisker"
-                      | "Pareto"
-                      | "RegionMap"
-                      | "Treemap"
-                      | "Waterfall"
-                      | "Sunburst"
-                      | "Funnel"
-        fullName: |2-
-
-                      | "Invalid"
-                      | "ColumnClustered"
-                      | "ColumnStacked"
-                      | "ColumnStacked100"
-                      | "3DColumnClustered"
-                      | "3DColumnStacked"
-                      | "3DColumnStacked100"
-                      | "BarClustered"
-                      | "BarStacked"
-                      | "BarStacked100"
-                      | "3DBarClustered"
-                      | "3DBarStacked"
-                      | "3DBarStacked100"
-                      | "LineStacked"
-                      | "LineStacked100"
-                      | "LineMarkers"
-                      | "LineMarkersStacked"
-                      | "LineMarkersStacked100"
-                      | "PieOfPie"
-                      | "PieExploded"
-                      | "3DPieExploded"
-                      | "BarOfPie"
-                      | "XyscatterSmooth"
-                      | "XyscatterSmoothNoMarkers"
-                      | "XyscatterLines"
-                      | "XyscatterLinesNoMarkers"
-                      | "AreaStacked"
-                      | "AreaStacked100"
-                      | "3DAreaStacked"
-                      | "3DAreaStacked100"
-                      | "DoughnutExploded"
-                      | "RadarMarkers"
-                      | "RadarFilled"
-                      | "Surface"
-                      | "SurfaceWireframe"
-                      | "SurfaceTopView"
-                      | "SurfaceTopViewWireframe"
-                      | "Bubble"
-                      | "Bubble3DEffect"
-                      | "StockHLC"
-                      | "StockOHLC"
-                      | "StockVHLC"
-                      | "StockVOHLC"
-                      | "CylinderColClustered"
-                      | "CylinderColStacked"
-                      | "CylinderColStacked100"
-                      | "CylinderBarClustered"
-                      | "CylinderBarStacked"
-                      | "CylinderBarStacked100"
-                      | "CylinderCol"
-                      | "ConeColClustered"
-                      | "ConeColStacked"
-                      | "ConeColStacked100"
-                      | "ConeBarClustered"
-                      | "ConeBarStacked"
-                      | "ConeBarStacked100"
-                      | "ConeCol"
-                      | "PyramidColClustered"
-                      | "PyramidColStacked"
-                      | "PyramidColStacked100"
-                      | "PyramidBarClustered"
-                      | "PyramidBarStacked"
-                      | "PyramidBarStacked100"
-                      | "PyramidCol"
-                      | "3DColumn"
-                      | "Line"
-                      | "3DLine"
-                      | "3DPie"
-                      | "Pie"
-                      | "Xyscatter"
-                      | "3DArea"
-                      | "Area"
-                      | "Doughnut"
-                      | "Radar"
-                      | "Histogram"
-                      | "Boxwhisker"
-                      | "Pareto"
-                      | "RegionMap"
-                      | "Treemap"
-                      | "Waterfall"
-                      | "Sunburst"
-                      | "Funnel"
-  - uid: 'excel!Excel.ChartDataLabels:interface'
-    name: ChartDataLabels
-    fullName: Excel.ChartDataLabels
-  - uid: 'excel!Excel.ChartSeriesFormat:interface'
-    name: ChartSeriesFormat
-    fullName: Excel.ChartSeriesFormat
-  - uid: 'excel!Excel.ChartSeries#gradientMaximumType~0:complex'
-    name: |-
-      | ChartGradientStyleType
-                  | "ExtremeValue"
-                  | "Number"
-                  | "Percent"
-    fullName: |-
-      | Excel.ChartGradientStyleType
-                  | "ExtremeValue"
-                  | "Number"
-                  | "Percent"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartGradientStyleType:enum'
-        name: ChartGradientStyleType
-        fullName: Excel.ChartGradientStyleType
-      - name: |2-
-
-                      | "ExtremeValue"
-                      | "Number"
-                      | "Percent"
-        fullName: |2-
-
-                      | "ExtremeValue"
-                      | "Number"
-                      | "Percent"
-  - uid: 'excel!Excel.ChartSeries#gradientMidpointType~0:complex'
-    name: |-
-      | ChartGradientStyleType
-                  | "ExtremeValue"
-                  | "Number"
-                  | "Percent"
-    fullName: |-
-      | Excel.ChartGradientStyleType
-                  | "ExtremeValue"
-                  | "Number"
-                  | "Percent"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartGradientStyleType:enum'
-        name: ChartGradientStyleType
-        fullName: Excel.ChartGradientStyleType
-      - name: |2-
-
-                      | "ExtremeValue"
-                      | "Number"
-                      | "Percent"
-        fullName: |2-
-
-                      | "ExtremeValue"
-                      | "Number"
-                      | "Percent"
-  - uid: 'excel!Excel.ChartSeries#gradientMinimumType~0:complex'
-    name: |-
-      | ChartGradientStyleType
-                  | "ExtremeValue"
-                  | "Number"
-                  | "Percent"
-    fullName: |-
-      | Excel.ChartGradientStyleType
-                  | "ExtremeValue"
-                  | "Number"
-                  | "Percent"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartGradientStyleType:enum'
-        name: ChartGradientStyleType
-        fullName: Excel.ChartGradientStyleType
-      - name: |2-
-
-                      | "ExtremeValue"
-                      | "Number"
-                      | "Percent"
-        fullName: |2-
-
-                      | "ExtremeValue"
-                      | "Number"
-                      | "Percent"
-  - uid: 'excel!Excel.ChartSeries#gradientStyle~0:complex'
-    name: ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor"
-    fullName: Excel.ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartGradientStyle:enum'
-        name: ChartGradientStyle
-        fullName: Excel.ChartGradientStyle
-      - name: ' | "TwoPhaseColor" | "ThreePhaseColor"'
-        fullName: ' | "TwoPhaseColor" | "ThreePhaseColor"'
-  - uid: 'excel!Excel.ChartMapOptions:interface'
-    name: ChartMapOptions
-    fullName: Excel.ChartMapOptions
-  - uid: 'excel!Excel.ChartSeries#markerStyle~0:complex'
-    name: |-
-      | ChartMarkerStyle
-                  | "Invalid"
-                  | "Automatic"
-                  | "None"
-                  | "Square"
-                  | "Diamond"
-                  | "Triangle"
-                  | "X"
-                  | "Star"
-                  | "Dot"
-                  | "Dash"
-                  | "Circle"
-                  | "Plus"
-                  | "Picture"
-    fullName: |-
-      | Excel.ChartMarkerStyle
-                  | "Invalid"
-                  | "Automatic"
-                  | "None"
-                  | "Square"
-                  | "Diamond"
-                  | "Triangle"
-                  | "X"
-                  | "Star"
-                  | "Dot"
-                  | "Dash"
-                  | "Circle"
-                  | "Plus"
-                  | "Picture"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartMarkerStyle:enum'
-        name: ChartMarkerStyle
-        fullName: Excel.ChartMarkerStyle
-      - name: |2-
-
-                      | "Invalid"
-                      | "Automatic"
-                      | "None"
-                      | "Square"
-                      | "Diamond"
-                      | "Triangle"
-                      | "X"
-                      | "Star"
-                      | "Dot"
-                      | "Dash"
-                      | "Circle"
-                      | "Plus"
-                      | "Picture"
-        fullName: |2-
-
-                      | "Invalid"
-                      | "Automatic"
-                      | "None"
-                      | "Square"
-                      | "Diamond"
-                      | "Triangle"
-                      | "X"
-                      | "Star"
-                      | "Dot"
-                      | "Dash"
-                      | "Circle"
-                      | "Plus"
-                      | "Picture"
-  - uid: 'excel!Excel.ChartSeries#parentLabelStrategy~0:complex'
-    name: |-
-      | ChartParentLabelStrategy
-                  | "None"
-                  | "Banner"
-                  | "Overlapping"
-    fullName: |-
-      | Excel.ChartParentLabelStrategy
-                  | "None"
-                  | "Banner"
-                  | "Overlapping"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartParentLabelStrategy:enum'
-        name: ChartParentLabelStrategy
-        fullName: Excel.ChartParentLabelStrategy
-      - name: |2-
-
-                      | "None"
-                      | "Banner"
-                      | "Overlapping"
-        fullName: |2-
-
-                      | "None"
-                      | "Banner"
-                      | "Overlapping"
-  - uid: 'excel!Excel.ChartPointsCollection:interface'
-    name: ChartPointsCollection
-    fullName: Excel.ChartPointsCollection
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.ChartSeries#splitType~0:complex'
-    name: |-
-      | ChartSplitType
-                  | "SplitByPosition"
-                  | "SplitByValue"
-                  | "SplitByPercentValue"
-                  | "SplitByCustomSplit"
-    fullName: |-
-      | Excel.ChartSplitType
-                  | "SplitByPosition"
-                  | "SplitByValue"
-                  | "SplitByPercentValue"
-                  | "SplitByCustomSplit"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartSplitType:enum'
-        name: ChartSplitType
-        fullName: Excel.ChartSplitType
-      - name: |2-
-
-                      | "SplitByPosition"
-                      | "SplitByValue"
-                      | "SplitByPercentValue"
-                      | "SplitByCustomSplit"
-        fullName: |2-
-
-                      | "SplitByPosition"
-                      | "SplitByValue"
-                      | "SplitByPercentValue"
-                      | "SplitByCustomSplit"
-  - uid: 'excel!Excel.ChartTrendlineCollection:interface'
-    name: ChartTrendlineCollection
-    fullName: Excel.ChartTrendlineCollection
-  - uid: 'excel!Excel.ChartErrorBars:interface'
-    name: ChartErrorBars
-    fullName: Excel.ChartErrorBars
+                    | "SplitByCustomSplit"
+- name: splitValue
+  uid: excel!Excel.ChartSeries#splitValue:member
+  package: excel!
+  fullName: splitValue
+  summary: Especifica el valor del umbral que separa dos secciones de un gráfico circular con subgráfico circular o de barras.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'splitValue: number;'
+    return:
+      type: number
+- name: trendlines
+  uid: excel!Excel.ChartSeries#trendlines:member
+  package: excel!
+  fullName: trendlines
+  summary: La colección de líneas de tendencia de la serie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly trendlines: ChartTrendlineCollection;'
+    return:
+      type: <xref uid="excel!Excel.ChartTrendlineCollection:interface" />
+- name: varyByCategories
+  uid: excel!Excel.ChartSeries#varyByCategories:member
+  package: excel!
+  fullName: varyByCategories
+  summary: True si Excel asigna un color o trama diferente a cada marcador de datos. El gráfico debe contener una sola serie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'varyByCategories: boolean;'
+    return:
+      type: boolean
+- name: xErrorBars
+  uid: excel!Excel.ChartSeries#xErrorBars:member
+  package: excel!
+  fullName: xErrorBars
+  summary: Indica el objeto de la barra de error de una serie de gráficos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly xErrorBars: ChartErrorBars;'
+    return:
+      type: <xref uid="excel!Excel.ChartErrorBars:interface" />
+- name: yErrorBars
+  uid: excel!Excel.ChartSeries#yErrorBars:member
+  package: excel!
+  fullName: yErrorBars
+  summary: Indica el objeto de la barra de error de una serie de gráficos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly yErrorBars: ChartErrorBars;'
+    return:
+      type: <xref uid="excel!Excel.ChartErrorBars:interface" />
+methods:
+- name: delete()
+  uid: excel!Excel.ChartSeries#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Elimina la serie del gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n  let sheet = context.workbook.worksheets.getItem(\"Sample\");\n  let seriesCollection = sheet.charts.getItemAt(0).series;\n  seriesCollection.load(\"count\");\n  await context.sync();\n\n  if (seriesCollection.count > 0) {\n    let series = seriesCollection.getItemAt(0);\n\n    // Delete the first series.\n    series.delete();\n  }\n\n  await context.sync();\n}\n```"
+- name: load(propertyNames)
+  uid: excel!Excel.ChartSeries#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Pone en cola un comando para cargar las propiedades especificadas del objeto. Debe llamar a `context.sync()` antes de leer las propiedades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Una cadena delimitada por comas o una matriz de cadenas que especifican las propiedades que se van a cargar.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setBubbleSizes(sourceData)
+  uid: excel!Excel.ChartSeries#setBubbleSizes:member(1)
+  package: excel!
+  fullName: setBubbleSizes(sourceData)
+  summary: Establece el tamaño de las burbujas de una serie de gráficos. Solo funciona para los gráficos de burbujas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBubbleSizes(sourceData: Range): void;'
+    parameters:
+    - id: sourceData
+      description: El objeto Range correspondiente a los datos de origen.
+      type: <xref uid="excel!Excel.Range:interface" />
+    return:
+      type: void
+      description: ''
+- name: setValues(sourceData)
+  uid: excel!Excel.ChartSeries#setValues:member(1)
+  package: excel!
+  fullName: setValues(sourceData)
+  summary: Establece los valores de una serie de gráficos. En un gráfico de dispersión, significa los valores del eje Y.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setValues(sourceData: Range): void;'
+    parameters:
+    - id: sourceData
+      description: El objeto Range correspondiente a los datos de origen.
+      type: <xref uid="excel!Excel.Range:interface" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n  let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n  let seriesCollection = sheet.charts.getItemAt(0);\n  let rangeSelection = sheet.getRange(\"C2:C7\");\n  let xRangeSelection = sheet.getRange(\"A1:A7\");\n\n  // Add a series.\n  let newSeries = seriesCollection.series.add(\"Qtr2\");\n  newSeries.setValues(rangeSelection);\n  newSeries.setXAxisValues(xRangeSelection);\n\n  await context.sync();\n}\n```"
+- name: setXAxisValues(sourceData)
+  uid: excel!Excel.ChartSeries#setXAxisValues:member(1)
+  package: excel!
+  fullName: setXAxisValues(sourceData)
+  summary: Establece los valores del eje X para una serie de gráficos. Solo funciona para los gráficos de dispersión.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setXAxisValues(sourceData: Range): void;'
+    parameters:
+    - id: sourceData
+      description: El objeto Range correspondiente a los datos de origen.
+      type: <xref uid="excel!Excel.Range:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e8ebf838cae0b804c658bb24e282c6fe722e17df
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417998"

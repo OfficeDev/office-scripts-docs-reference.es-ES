@@ -1,63 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-    summary: Representa las cadenas necesarias para obtener o establecer un objeto Hyperlink (XHL).
-    name: ExcelScript.RangeHyperlink
-    fullName: ExcelScript.RangeHyperlink
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
-      - 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
-      - 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
-      - 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
-    summary: Representa la dirección url de destino del hipervínculo.
-    name: address
-    fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'address?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
-    summary: Representa el destino de referencia de documento para el hipervínculo.
-    name: documentReference
-    fullName: documentReference
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'documentReference?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
-    summary: Representa la cadena que se muestra al mantener el puntero sobre el hipervínculo.
-    name: screenTip
-    fullName: screenTip
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'screenTip?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
-    summary: Representa la cadena que se muestra en la celda superior izquierda del rango.
-    name: textToDisplay
-    fullName: textToDisplay
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textToDisplay?: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: ExcelScript.RangeHyperlink
+uid: ExcelScript!ExcelScript.RangeHyperlink:interface
+package: ExcelScript!
+fullName: ExcelScript.RangeHyperlink
+summary: Representa las cadenas necesarias para obtener o establecer un objeto Hyperlink (XHL).
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: address
+  uid: ExcelScript!ExcelScript.RangeHyperlink#address:member
+  package: ExcelScript!
+  fullName: address
+  summary: Representa la dirección url de destino del hipervínculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'address?: string;'
+    return:
+      type: string
+- name: documentReference
+  uid: ExcelScript!ExcelScript.RangeHyperlink#documentReference:member
+  package: ExcelScript!
+  fullName: documentReference
+  summary: Representa el destino de referencia de documento para el hipervínculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'documentReference?: string;'
+    return:
+      type: string
+- name: screenTip
+  uid: ExcelScript!ExcelScript.RangeHyperlink#screenTip:member
+  package: ExcelScript!
+  fullName: screenTip
+  summary: Representa la cadena que se muestra al mantener el puntero sobre el hipervínculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'screenTip?: string;'
+    return:
+      type: string
+- name: textToDisplay
+  uid: ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member
+  package: ExcelScript!
+  fullName: textToDisplay
+  summary: Representa la cadena que se muestra en la celda superior izquierda del rango.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textToDisplay?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 8ff934a57f355a4480ae8c939e77b1f07a7b6c3e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416599"

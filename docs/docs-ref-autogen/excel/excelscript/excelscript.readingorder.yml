@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
-    name: ExcelScript.ReadingOrder
-    fullName: ExcelScript.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-    summary: 'Orden de lectura determinado por el idioma del primer carácter introducido. Si se introduce un carácter de un idioma que se lee de derecha a izquierda, el orden de lectura es de derecha a izquierda. Si se introduce un carácter de un idioma que se lee de izquierda a derecha, el orden de lectura es de izquierda a derecha.'
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-    summary: Orden de lectura de izquierda a derecha
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-    summary: Orden de lectura de derecha a izquierda
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ReadingOrder
+uid: ExcelScript!ExcelScript.ReadingOrder:enum
+package: ExcelScript!
+fullName: ExcelScript.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
+  package: ExcelScript!
+  summary: Orden de lectura determinado por el idioma del primer carácter introducido. Si se introduce un carácter de un idioma que se lee de derecha a izquierda, el orden de lectura es de derecha a izquierda. Si se introduce un carácter de un idioma que se lee de izquierda a derecha, el orden de lectura es de izquierda a derecha.
+- name: leftToRight
+  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
+  package: ExcelScript!
+  summary: Orden de lectura de izquierda a derecha
+- name: rightToLeft
+  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
+  package: ExcelScript!
+  summary: Orden de lectura de derecha a izquierda
+metadata:
+  ms.openlocfilehash: 391ae0ad91303544e478b18cf04e6fcfbee4cec3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416564"

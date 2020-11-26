@@ -1,147 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
-    summary: Representa el título del eje de un gráfico.
-    name: ExcelScript.ChartAxisTitle
-    fullName: ExcelScript.ChartAxisTitle
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)'
-    summary: Especifica el formato del título del eje del gráfico.
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartAxisTitleFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)'
-    summary: Especifica el título del eje.
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)'
-    summary: 'Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.'
-    name: getTextOrientation()
-    fullName: getTextOrientation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)'
-    summary: Especifica si el título del eje es visibile.
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)'
-    summary: Un valor de cadena que representa la fórmula del título del eje del gráfico mediante la notación de estilo A1.
-    name: setFormula(formula)
-    fullName: setFormula(formula)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFormula(formula: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formula
-          description: una cadena que presenta la fórmula que se va a establecer
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)'
-    summary: Especifica el título del eje.
-    name: setText(text)
-    fullName: setText(text)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setText(text: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: text
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)'
-    summary: 'Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.'
-    name: setTextOrientation(textOrientation)
-    fullName: setTextOrientation(textOrientation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: textOrientation
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)'
-    summary: Especifica si el título del eje es visibile.
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
-    name: ChartAxisTitleFormat
-    fullName: ExcelScript.ChartAxisTitleFormat
+### YamlMime:TSType
+name: ExcelScript.ChartAxisTitle
+uid: ExcelScript!ExcelScript.ChartAxisTitle:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxisTitle
+summary: Representa el título del eje de un gráfico.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Especifica el formato del título del eje del gráfico.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartAxisTitleFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTitleFormat:interface" />
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: Especifica el título del eje.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Especifica si el título del eje es visibile.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setFormula(formula)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)
+  package: ExcelScript!
+  fullName: setFormula(formula)
+  summary: Un valor de cadena que representa la fórmula del título del eje del gráfico mediante la notación de estilo A1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFormula(formula: string): void;'
+    parameters:
+    - id: formula
+      description: una cadena que presenta la fórmula que se va a establecer
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setText(text)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)
+  package: ExcelScript!
+  fullName: setText(text)
+  summary: Especifica el título del eje.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setText(text: string): void;'
+    parameters:
+    - id: text
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Especifica si el título del eje es visibile.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: cc90d8c96c4846a97eb80b1c44317def1d5a9e51
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417012"
