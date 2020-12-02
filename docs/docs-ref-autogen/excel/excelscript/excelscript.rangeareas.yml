@@ -265,7 +265,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Devuelve el objeto RangeAreas que representa la intersección de los rangos o RangeAreas especificados. Si no se encuentra ninguna intersección, se devuelve un objeto null.
+  summary: Devuelve el objeto RangeAreas que representa la intersección de los rangos o RangeAreas especificados. Si no se encuentra ninguna intersección, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
   package: ExcelScript!
   fullName: getUsedRangeAreas(valuesOnly)
-  summary: Devuelve el RangeAreas usado que incluye todas las áreas usadas de intervalos rectangulares individuales en el objeto RangeAreas. Si no hay ninguna celda usada en la RangeAreas, se devolverá un objeto null.
+  summary: Devuelve el RangeAreas usado que incluye todas las áreas usadas de intervalos rectangulares individuales en el objeto RangeAreas. Si no hay ninguna celda usada dentro de RangeAreas, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c32fbe6396b0e5ae78ec78536f827a98e1b2c360
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: da8fcd2adf7d4a33bbe25dd802fd0585a738557c
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416648"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554548"

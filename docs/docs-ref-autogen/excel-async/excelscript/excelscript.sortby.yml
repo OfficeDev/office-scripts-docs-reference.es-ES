@@ -12,14 +12,16 @@ fields:
   uid: excel!Excel.SortBy.ascending:member
   package: excel!
   summary: Ordenación ascendente. Menor a mayor o de la a a la Z.
+  value: "\"Ascending\""
 - name: descending
   uid: excel!Excel.SortBy.descending:member
   package: excel!
   summary: Orden descendente. De mayor a menor o de Z a A.
+  value: "\"Descending\""
 metadata:
-  ms.openlocfilehash: 42e9b274b6b8706ce2d4d78bfc0f7bccaaf06f86
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5e1465f0e9506e156265af24dad42824380e224c
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418376"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553839"

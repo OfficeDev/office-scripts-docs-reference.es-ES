@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
   package: ExcelScript!
   fullName: getPrintArea()
-  summary: Obtiene el objeto RangeAreas, que incluye uno o más intervalos rectangulares, que representa el área de impresión de la hoja de cálculo. Si no hay ningún área de impresión, se devolverá un objeto null.
+  summary: Obtiene el objeto RangeAreas, que incluye uno o más intervalos rectangulares, que representa el área de impresión de la hoja de cálculo. Si no hay ningún área de impresión, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)
   package: ExcelScript!
   fullName: getPrintTitleColumns()
-  summary: Obtiene el objeto de intervalo que representa las columnas de título. Si no se establece, se devolverá un objeto null.
+  summary: Obtiene el objeto de intervalo que representa las columnas de título. Si no se establece, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)
   package: ExcelScript!
   fullName: getPrintTitleRows()
-  summary: Obtiene el objeto de intervalo que representa las filas de título. Si no se establece, se devolverá un objeto null.
+  summary: Obtiene el objeto de intervalo que representa las filas de título. Si no se establece, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,9 +707,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 74b8785a8bdb6bf707a38b5feab9870e6a0907c3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c66cd735b4fd357bcd164da80cd31bf6c71e7272
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412191"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554625"

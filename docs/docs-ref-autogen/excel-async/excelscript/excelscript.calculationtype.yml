@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.CalculationType.full:member
   package: excel!
   summary: " Esto marca todas las celdas como modificadas y, a continuación, vuelva a calcularlas."
+  value: "\"Full\""
 - name: fullRebuild
   uid: excel!Excel.CalculationType.fullRebuild:member
   package: excel!
   summary: De este modo, se reconstruirá la cadena de dependencias completa, se marcarán todas las celdas como desfasadas y, a continuación, se actualizarán.
+  value: "\"FullRebuild\""
 - name: recalculate
   uid: excel!Excel.CalculationType.recalculate:member
   package: excel!
   summary: Actualiza todas las celdas que Excel marca como desfasadas, es decir, los dependientes de datos vol�tiles o modificados, y las celdas marcadas mediante programaci�n como desfasadas.
+  value: "\"Recalculate\""
 metadata:
-  ms.openlocfilehash: 25fe7b5eb154651f83bdc01d22904022063d32f6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4b1050d010df8c010056647d1b628cbac8c2d765
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414422"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553560"

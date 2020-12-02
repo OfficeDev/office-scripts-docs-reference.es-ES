@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ReadingOrder.context:member
   package: excel!
   summary: Orden de lectura determinado por el idioma del primer carácter introducido. Si se introduce un carácter de un idioma que se lee de derecha a izquierda, el orden de lectura es de derecha a izquierda. Si se introduce un carácter de un idioma que se lee de izquierda a derecha, el orden de lectura es de izquierda a derecha.
+  value: "\"Context\""
 - name: leftToRight
   uid: excel!Excel.ReadingOrder.leftToRight:member
   package: excel!
   summary: Orden de lectura de izquierda a derecha
+  value: "\"LeftToRight\""
 - name: rightToLeft
   uid: excel!Excel.ReadingOrder.rightToLeft:member
   package: excel!
   summary: Orden de lectura de derecha a izquierda
+  value: "\"RightToLeft\""
 metadata:
-  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fd53fe7af6e6a01fa2192edc5252082824fd4e8e
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418670"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554380"

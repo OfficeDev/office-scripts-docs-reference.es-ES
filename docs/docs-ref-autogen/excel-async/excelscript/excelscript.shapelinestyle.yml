@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ShapeLineStyle.single:member
   package: excel!
   summary: Línea única.
+  value: "\"Single\""
 - name: thickBetweenThin
   uid: excel!Excel.ShapeLineStyle.thickBetweenThin:member
   package: excel!
   summary: Línea gruesa con una línea fina a cada lado.
+  value: "\"ThickBetweenThin\""
 - name: thickThin
   uid: excel!Excel.ShapeLineStyle.thickThin:member
   package: excel!
   summary: Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por encima de la línea fina. Para líneas verticales, la línea gruesa está a la izquierda de la línea fina.
+  value: "\"ThickThin\""
 - name: thinThick
   uid: excel!Excel.ShapeLineStyle.thinThick:member
   package: excel!
   summary: Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por debajo de la línea fina. Para líneas verticales, la línea gruesa está a la derecha de la línea fina.
+  value: "\"ThinThick\""
 - name: thinThin
   uid: excel!Excel.ShapeLineStyle.thinThin:member
   package: excel!
   summary: Dos líneas finas.
+  value: "\"ThinThin\""
 metadata:
-  ms.openlocfilehash: 9fe097a67002a02d837927f22183c04d7831da90
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e8ac502f3e66886a82656f94a1919b78f4a935e8
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418530"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554226"
