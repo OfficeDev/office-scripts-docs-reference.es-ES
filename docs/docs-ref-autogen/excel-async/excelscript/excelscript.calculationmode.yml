@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.CalculationMode.automatic:member
   package: excel!
   summary: Comportamiento de recálculo predeterminado en el que Excel calcula los resultados de una nueva fórmula cada vez que se modifican los datos relevantes.
+  value: "\"Automatic\""
 - name: automaticExceptTables
   uid: excel!Excel.CalculationMode.automaticExceptTables:member
   package: excel!
   summary: Calcula nuevos resultados de fórmula cada vez que se cambian los datos relevantes, a menos que la fórmula se encuentra en una tabla de datos.
+  value: "\"AutomaticExceptTables\""
 - name: manual
   uid: excel!Excel.CalculationMode.manual:member
   package: excel!
   summary: Los cálculos solo se producen cuando el usuario o el complemento los solicita.
+  value: "\"Manual\""
 metadata:
-  ms.openlocfilehash: 039d1e22c000baae0e15e788c8df68173ebf984d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 09e90102086d8eb3addfe3bc196fa607d1447bdd
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414436"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553640"

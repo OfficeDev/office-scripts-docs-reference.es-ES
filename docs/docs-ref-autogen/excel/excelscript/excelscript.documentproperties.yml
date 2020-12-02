@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Obligatorio. La tecla de la propiedad personalizada, que no distingue mayúsculas de minúsculas. La clave está limitada a 255 caracteres fuera de Excel en la web (las claves más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
+      description: Necesario. La tecla de la propiedad personalizada, que no distingue mayúsculas de minúsculas. La clave está limitada a 255 caracteres fuera de Excel en la web (las claves más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
       type: string
     - id: value
-      description: Obligatorio. El valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la web (los valores mayores se recortan automáticamente a 255 caracteres en otras plataformas).
+      description: Necesario. El valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la web (los valores mayores se recortan automáticamente a 255 caracteres en otras plataformas).
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Devuelve un objeto NULL si la propiedad personalizada no existe.
+  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Si la propiedad personalizada no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: Obligatorio. Clave que identifica el objeto de la propiedad personalizada.
+      description: Necesario. Clave que identifica el objeto de la propiedad personalizada.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d16f7fd2e93078d4aca94a3637ea0378a7163798
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5eab007d84d344b973beabd9d62c7753486d3895
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415417"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554656"

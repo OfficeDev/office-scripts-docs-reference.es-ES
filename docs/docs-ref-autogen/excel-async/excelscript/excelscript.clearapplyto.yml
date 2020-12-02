@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ClearApplyTo.all:member
   package: excel!
   summary: ''
+  value: "\"All\""
 - name: contents
   uid: excel!Excel.ClearApplyTo.contents:member
   package: excel!
   summary: Borra el contenido del rango.
+  value: "\"Contents\""
 - name: formats
   uid: excel!Excel.ClearApplyTo.formats:member
   package: excel!
   summary: Borra todo el formato del rango.
+  value: "\"Formats\""
 - name: hyperlinks
   uid: excel!Excel.ClearApplyTo.hyperlinks:member
   package: excel!
   summary: Borra todos los hipervínculos, pero deja intacto todo el contenido y el formato.
+  value: "\"Hyperlinks\""
 - name: removeHyperlinks
   uid: excel!Excel.ClearApplyTo.removeHyperlinks:member
   package: excel!
   summary: Quita los hipervínculos y el formato de la celda, pero deja el contenido, los formatos condicionales y la validación de datos intactos.
+  value: "\"RemoveHyperlinks\""
 metadata:
-  ms.openlocfilehash: fdfc571c1c3ee7c55ec3835c9514449505f3db94
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 70531d6e40e192020d239376532636c37ba15992
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49414722"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553091"

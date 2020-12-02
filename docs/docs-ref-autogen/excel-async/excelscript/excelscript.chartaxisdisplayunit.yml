@@ -12,50 +12,61 @@ fields:
   uid: excel!Excel.ChartAxisDisplayUnit.billions:member
   package: excel!
   summary: Se establecerá el eje en unidades de miles de millones.
+  value: "\"Billions\""
 - name: custom
   uid: excel!Excel.ChartAxisDisplayUnit.custom:member
   package: excel!
   summary: Se establecerá el eje en unidades de valor personalizado.
+  value: "\"Custom\""
 - name: hundredMillions
   uid: excel!Excel.ChartAxisDisplayUnit.hundredMillions:member
   package: excel!
   summary: Esto hará que el eje se establezca en unidades de centenas de millones.
+  value: "\"HundredMillions\""
 - name: hundreds
   uid: excel!Excel.ChartAxisDisplayUnit.hundreds:member
   package: excel!
   summary: Se establecerá el eje en unidades de centenas.
+  value: "\"Hundreds\""
 - name: hundredThousands
   uid: excel!Excel.ChartAxisDisplayUnit.hundredThousands:member
   package: excel!
   summary: Esto hará que el eje se configurará en unidades de cientos de miles.
+  value: "\"HundredThousands\""
 - name: millions
   uid: excel!Excel.ChartAxisDisplayUnit.millions:member
   package: excel!
   summary: Se establecerá el eje en unidades de millones.
+  value: "\"Millions\""
 - name: none
   uid: excel!Excel.ChartAxisDisplayUnit.none:member
   package: excel!
   summary: Opción predeterminada. Esto restablecerá la unidad de visualización en el eje y la etiqueta de unidad será invisible.
+  value: "\"None\""
 - name: tenMillions
   uid: excel!Excel.ChartAxisDisplayUnit.tenMillions:member
   package: excel!
   summary: Esto hará que el eje se establezca en unidades de decenas de millones.
+  value: "\"TenMillions\""
 - name: tenThousands
   uid: excel!Excel.ChartAxisDisplayUnit.tenThousands:member
   package: excel!
   summary: Se establecerá el eje en unidades de decenas de miles.
+  value: "\"TenThousands\""
 - name: thousands
   uid: excel!Excel.ChartAxisDisplayUnit.thousands:member
   package: excel!
   summary: Se establecerá el eje en unidades de miles.
+  value: "\"Thousands\""
 - name: trillions
   uid: excel!Excel.ChartAxisDisplayUnit.trillions:member
   package: excel!
   summary: Esto hará que el eje se establezca en unidades de billones.
+  value: "\"Trillions\""
 metadata:
-  ms.openlocfilehash: 1379f0e9b24566105905735d443e1848dcd282f7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3dd92f6978e6c10e4e45d1cf2f79b4dfe57925fb
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417711"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553539"

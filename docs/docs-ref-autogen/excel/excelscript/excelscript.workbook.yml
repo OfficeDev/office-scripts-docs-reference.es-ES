@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: Obtiene el gráfico activo del libro. Si no hay ningún gráfico activo, se devuelve un objeto null.
+  summary: Obtiene el gráfico activo del libro. Si no hay ningún gráfico activo, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: Obtiene la segmentación activa del libro. Si no hay ninguna segmentación de datos activa, se devuelve un objeto nulo.
+  summary: Obtiene la segmentación activa del libro. Si no hay ninguna segmentación de información activa, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -462,7 +462,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: Obtiene un objeto de enlace por identificador. Si no existe el objeto de enlace, devolverá un objeto nulo.
+  summary: Obtiene un objeto de enlace por identificador. Si el objeto Binding no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -599,7 +599,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPartByNamespace(namespaceUri)
-  summary: Obtiene una nueva colección con ámbito de elementos XML personalizados cuyos espacios de nombres coinciden con el espacio de nombres determinado.
+  summary: Obtiene una nueva colección de elementos XML personalizados cuyos espacios de nombres coinciden con el espacio de nombres especificado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -741,7 +741,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Obtiene un objeto NamedItem mediante su nombre. Si no existe el objeto NamedItem, devolverá un objeto NULL.
+  summary: Obtiene un `NamedItem` objeto mediante su nombre. Si el objeto no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: Obtiene un PivotTableStyle por nombre. Si no existe PivotTableStyle, devolverá un objeto nulo.
+  summary: Obtiene un PivotTableStyle por nombre. Si la PivotTableStyle no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -939,7 +939,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Obtiene una segmentación mediante su nombre o identificador. Si la segmentación no existe, devolverá un objeto null.
+  summary: Obtiene un rebanador mediante su nombre o identificador. Si la segmentación de información no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -969,7 +969,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: Obtiene un SlicerStyle por nombre. Si no existe SlicerStyle, devolverá un objeto nulo.
+  summary: Obtiene un SlicerStyle por nombre. Si la SlicerStyle no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -999,7 +999,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Obtiene una tabla por nombre o identificador. Si la tabla no existe, devolverá un objeto NULL.
+  summary: Obtiene una tabla por nombre o identificador. Si la tabla no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1029,7 +1029,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: Obtiene un TableStyle por nombre. Si no existe TableStyle, devolverá un objeto nulo.
+  summary: Obtiene un TableStyle por nombre. Si el TableStyle no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1059,7 +1059,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: Obtiene un TimelineStyle por nombre. Si no existe TimelineStyle, devolverá un objeto nulo.
+  summary: Obtiene un TimelineStyle por nombre. Si la TimelineStyle no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1102,7 +1102,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Obtiene un objeto de hoja de cálculo mediante su nombre o identificador. Si la hoja de cálculo no existe, devolverá un objeto NULL.
+  summary: Obtiene un objeto de hoja de cálculo mediante su nombre o identificador. Si la hoja de cálculo no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1277,9 +1277,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 63c89957d0a69f7f4c53440e74567153a98cc4bb
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 23e4276bec55df7612e4bb11dfab3aec59ee5cfa
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419253"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554739"

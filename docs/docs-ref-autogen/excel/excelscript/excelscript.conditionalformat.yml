@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Devuelve el intervalo al que se aplica el formato condicional o un objeto NULL si el formato condicional se aplica a varios rangos.
+  summary: Devuelve el intervalo al que se aplica el formato de condiciones. Si el formato condicional se aplica a varios rangos, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: feaf6283a35e8ddcbf05ec4ed806dfb460ffc46b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 340917734a75d932d8cbc80d2dd569421fd8c707
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415886"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554663"

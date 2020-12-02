@@ -483,7 +483,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: Obtiene un gráfico mediante su nombre. Si hay varias tablas con el mismo nombre, se devolverá la primera. Si el gráfico no existe, se devolverá un objeto null.
+  summary: Obtiene un gráfico mediante su nombre. Si hay varias tablas con el mismo nombre, se devolverá la primera. Si el gráfico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -655,7 +655,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Obtiene un objeto NamedItem mediante su nombre. Si no existe el objeto NamedItem, devolverá un objeto NULL.
+  summary: Obtiene un `NamedItem` objeto mediante su nombre. Si el objeto no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -685,7 +685,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Obtiene la hoja de cálculo que sigue a este. Si no hay ninguna hoja de cálculo después de ésta, este método devolverá un objeto null.
+  summary: Obtiene la hoja de cálculo que sigue a este. Si no hay ninguna hoja de cálculo después de esta, este método devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -910,7 +910,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Obtiene una segmentación mediante su nombre o identificador. Si la segmentación no existe, devolverá un objeto null.
+  summary: Obtiene un rebanador mediante su nombre o identificador. Si la segmentación de información no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -979,7 +979,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Obtiene una tabla por nombre o identificador. Si la tabla no existe, devolverá un objeto NULL.
+  summary: Obtiene una tabla por nombre o identificador. Si la tabla no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1009,7 +1009,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: El rango usado es el rango más pequeño que abarque todas las celdas que tengan asignado un valor o un formato. Si toda la hoja está en blanco, esta función devolverá un objeto NULL.
+  summary: ''
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Devuelve un objeto NULL si la propiedad personalizada no existe.
+  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Si la propiedad personalizada no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1292,9 +1292,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c647b16d668a36d1fe00a7b6c3422e9cd1d9a5c7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 76406c9a40bad3c850c09cdb198eabdad4a2b1c3
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415151"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554065"
