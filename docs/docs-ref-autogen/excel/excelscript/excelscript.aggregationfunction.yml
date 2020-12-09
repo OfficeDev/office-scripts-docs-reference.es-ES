@@ -1,115 +1,69 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
-    summary: Función de agregación para el campo de tabla dinámica de datos.
-    name: ExcelScript.AggregationFunction
-    fullName: ExcelScript.AggregationFunction
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.average:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.count:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.max:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.min:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.product:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
-      - 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
-    summary: Excel seleccionará automáticamente la agregación en función de los elementos de datos.
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
-    summary: 'Agregar utilizando el promedio de los datos, equivalente a la función AVERAGE.'
-    name: average
-    fullName: average
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
-    summary: 'Agregar mediante el recuento de elementos de los datos, equivalente a la función COUNTa.'
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
-    summary: 'Agregar mediante el número de números de los datos, equivalente a la función COUNT.'
-    name: countNumbers
-    fullName: countNumbers
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
-    summary: 'Agregue utilizando el valor máximo de los datos, equivalente a la función MAX.'
-    name: max
-    fullName: max
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
-    summary: 'Agregar mediante el valor mínimo de los datos, equivalente a la función MIN.'
-    name: min
-    fullName: min
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
-    summary: 'Agregar mediante el producto de los datos, equivalente a la función PRODUCT.'
-    name: product
-    fullName: product
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
-    summary: 'Agregar mediante la desviación estándar de los datos, equivalente a la función STDEV.'
-    name: standardDeviation
-    fullName: standardDeviation
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
-    summary: 'Agregar mediante la desviación estándar de los datos, equivalente a la función STDEVP.'
-    name: standardDeviationP
-    fullName: standardDeviationP
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
-    summary: 'Agregue mediante la suma de los datos, equivalente a la función SUM.'
-    name: sum
-    fullName: sum
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
-    summary: La función de agregación es desconocida o no es compatible.
-    name: unknown
-    fullName: unknown
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
-    summary: 'Agregar mediante la varianza de los datos, equivalente a la función VAR.'
-    name: variance
-    fullName: variance
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
-    summary: 'Agregar mediante la varianza de los datos, equivalente a la función VARP.'
-    name: varianceP
-    fullName: varianceP
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.AggregationFunction
+uid: ExcelScript!ExcelScript.AggregationFunction:enum
+package: ExcelScript!
+fullName: ExcelScript.AggregationFunction
+summary: Función de agregación para el campo de tabla dinámica de datos.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
+  package: ExcelScript!
+  summary: Excel seleccionará automáticamente la agregación en función de los elementos de datos.
+- name: average
+  uid: ExcelScript!ExcelScript.AggregationFunction.average:member
+  package: ExcelScript!
+  summary: Agregar utilizando el promedio de los datos, equivalente a la función AVERAGE.
+- name: count
+  uid: ExcelScript!ExcelScript.AggregationFunction.count:member
+  package: ExcelScript!
+  summary: Agregar mediante el recuento de elementos de los datos, equivalente a la función COUNTa.
+- name: countNumbers
+  uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
+  package: ExcelScript!
+  summary: Agregar mediante el número de números de los datos, equivalente a la función COUNT.
+- name: max
+  uid: ExcelScript!ExcelScript.AggregationFunction.max:member
+  package: ExcelScript!
+  summary: Agregue utilizando el valor máximo de los datos, equivalente a la función MAX.
+- name: min
+  uid: ExcelScript!ExcelScript.AggregationFunction.min:member
+  package: ExcelScript!
+  summary: Agregar mediante el valor mínimo de los datos, equivalente a la función MIN.
+- name: product
+  uid: ExcelScript!ExcelScript.AggregationFunction.product:member
+  package: ExcelScript!
+  summary: Agregar mediante el producto de los datos, equivalente a la función PRODUCT.
+- name: standardDeviation
+  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
+  package: ExcelScript!
+  summary: Agregar mediante la desviación estándar de los datos, equivalente a la función STDEV.
+- name: standardDeviationP
+  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
+  package: ExcelScript!
+  summary: Agregar mediante la desviación estándar de los datos, equivalente a la función STDEVP.
+- name: sum
+  uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
+  package: ExcelScript!
+  summary: Agregue mediante la suma de los datos, equivalente a la función SUM.
+- name: unknown
+  uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
+  package: ExcelScript!
+  summary: La función de agregación es desconocida o no es compatible.
+- name: variance
+  uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
+  package: ExcelScript!
+  summary: Agregar mediante la varianza de los datos, equivalente a la función VAR.
+- name: varianceP
+  uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
+  package: ExcelScript!
+  summary: Agregar mediante la varianza de los datos, equivalente a la función VARP.
+metadata:
+  ms.openlocfilehash: fd80d4534a8db2e7a409a6b8e45e529b9bfcaddc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417375"
