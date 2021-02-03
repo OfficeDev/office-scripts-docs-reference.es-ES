@@ -512,7 +512,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene fórmula, su valor se devuelve en su lugar.
+  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene fórmula, se devuelve su valor en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -525,7 +525,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene fórmula, su valor se devuelve en su lugar.
+  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene fórmula, se devuelve su valor en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -538,7 +538,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene fórmula, su valor se devuelve en su lugar.
+  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene fórmula, se devuelve su valor en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,6 +771,19 @@ methods:
     content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
+      description: ''
+- name: getNumberFormatCategory()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategory()
+  summary: Especifica la categoría de formato de número de la primera celda del rango (representada por el índice de fila de 0 y el índice de columna de 0).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
       description: ''
 - name: getNumberFormatLocal()
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
@@ -1425,7 +1438,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
-  summary: Establezca la fórmula de celda en la notación de estilo A1, en el idioma del usuario y en la configuración regional de formato de número. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si el rango contiene varias celdas, cada celda del rango especificado se actualizará con los datos de entrada.
+  summary: Establezca la fórmula de celda en la notación de estilo A1, en la configuración regional de idioma y formato de número del usuario. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si el rango contiene varias celdas, cada celda del rango especificado se actualizará con los datos de entrada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1459,7 +1472,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene fórmula, su valor se devuelve en su lugar.
+  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene fórmula, se devuelve su valor en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1476,7 +1489,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene fórmula, su valor se devuelve en su lugar.
+  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene fórmula, se devuelve su valor en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1493,7 +1506,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene fórmula, su valor se devuelve en su lugar.
+  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene fórmula, se devuelve su valor en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1684,7 +1697,7 @@ methods:
     content: 'showGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Especifica si se deben mostrar los detalles de filas agrupadas o columnas agrupadas.
+      description: Especifica si se deben mostrar los detalles de las filas agrupadas o las columnas agrupadas.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1720,9 +1733,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
-  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
+  ms.openlocfilehash: 0f16a00124cd360f9a0ac72ab7a7bcf96af7930a
+  ms.sourcegitcommit: 2224b5a1c9da58cc58b310ccbdc0b58c63ab501b
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "49784460"
+  ms.lasthandoff: 02/03/2021
+  ms.locfileid: "50091818"
