@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getCellAddresses:member(1)
   package: ExcelScript!
   fullName: getCellAddresses()
-  summary: Representa las direcciones de celda de RangeView.
+  summary: Representa las direcciones de celda de la `RangeView`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getColumnCount:member(1)
   package: ExcelScript!
   fullName: getColumnCount()
-  summary: El número de columnas visibles.
+  summary: Número de columnas visibles.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: Representa la fórmula en notación de estilo A1.
+  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.
+  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: Representa la fórmula en notación de estilo R1C1.
+  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getIndex:member(1)
   package: ExcelScript!
   fullName: getIndex()
-  summary: Devuelve un valor que representa el índice de RangeView.
+  summary: Devuelve un valor que representa el índice de la `RangeView`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Obtiene el intervalo primario asociado al RangeView actual.
+  summary: Obtiene el intervalo primario asociado con el actual `RangeView`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Valores de texto del rango especificado. El valor Text no dependerá del ancho de la celda. La \# sustitución de firma que se produce en la interfaz de usuario de Excel no afecta al valor de texto devuelto por la API.
+  summary: Valores de texto del intervalo especificado. El valor Text no dependerá del ancho de la celda. La \# sustitución de signos que se produce en la interfaz de usuario de Excel no afectará al valor de texto devuelto por la API.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: Representa la fórmula en notación de estilo A1.
+  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán.
+  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,7 +216,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeView#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: Representa la fórmula en notación de estilo R1C1.
+  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -264,9 +264,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 56aef354a188f0e93b1b1e467949247a677351d0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e01eaccac964df4dff40b95781acb9e04794a395
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411911"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606171"

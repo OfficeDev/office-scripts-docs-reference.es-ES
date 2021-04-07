@@ -34,15 +34,15 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+      description: Código de color HTML que representa el color del fondo, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
       type: string
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d33b09062079157785b412603d9f36f7736e6d92
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e90710f2f898cebee541ca3eb4eb9923eb8dfe14
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416893"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606589"

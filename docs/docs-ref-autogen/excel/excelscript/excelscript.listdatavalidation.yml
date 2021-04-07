@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
   package: ExcelScript!
   fullName: inCellDropDown
-  summary: Muestra la lista en la celda desplegable o no, el valor predeterminado es true.
+  summary: Especifica si se va a mostrar la lista en una celda desplegable. El valor predeterminado es `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#source:member
   package: ExcelScript!
   fullName: source
-  summary: Origen de la lista para la validación de datos al establecer el valor, se puede pasar como un objeto Range de Excel o como una cadena que contiene números separados por comas, valores booleanos o de fecha.
+  summary: Origen de la lista de validación de datos Al establecer el valor, se puede pasar como un objeto o una cadena que contiene un número separado por `Range` comas, un valor booleano o una fecha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
 metadata:
-  ms.openlocfilehash: cf8940b22ffc0ff1b79c1a55297fc2f97e4b43ea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 9b241254b4ff28826e267a10e68a801a7535d4bf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412184"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607224"

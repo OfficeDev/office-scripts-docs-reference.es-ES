@@ -3,7 +3,7 @@ name: ExcelScript.CellPropertiesBorderLoadOptions
 uid: ExcelScript!ExcelScript.CellPropertiesBorderLoadOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.CellPropertiesBorderLoadOptions
-summary: Especifica qué propiedades se van a cargar en el `format.borders` objeto.
+summary: Especifica las propiedades que se cargarán en el `format.borders` objeto.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesBorderLoadOptions#color:member
   package: ExcelScript!
   fullName: color
-  summary: Especifica si se va a cargar en la `color` propiedad.
+  summary: Especifica si se va a cargar la `color` propiedad.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesBorderLoadOptions#style:member
   package: ExcelScript!
   fullName: style
-  summary: Especifica si se va a cargar en la `style` propiedad.
+  summary: Especifica si se va a cargar la `style` propiedad.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesBorderLoadOptions#tintAndShade:member
   package: ExcelScript!
   fullName: tintAndShade
-  summary: Especifica si se va a cargar en la `tintAndShade` propiedad.
+  summary: Especifica si se va a cargar la `tintAndShade` propiedad.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesBorderLoadOptions#weight:member
   package: ExcelScript!
   fullName: weight
-  summary: Especifica si se va a cargar en la `weight` propiedad.
+  summary: Especifica si se va a cargar la `weight` propiedad.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 24bb1a07154b4aa30b10e06b155d9ffb6307f0dd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 611534b5d432d2788e6654aacf200eaf64f4cc2d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417152"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606986"

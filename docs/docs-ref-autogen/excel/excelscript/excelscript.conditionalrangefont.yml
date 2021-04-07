@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).
+  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa rojo).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ConditionalRangeFontUnderlineStyle para obtener información detallada.
+  summary: Tipo de subrayado aplicado a la fuente. Vea `ExcelScript.ConditionalRangeFontUnderlineStyle` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).
+  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa rojo).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ConditionalRangeFontUnderlineStyle para obtener información detallada.
+  summary: Tipo de subrayado aplicado a la fuente. Vea `ExcelScript.ConditionalRangeFontUnderlineStyle` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4b59e433ac3535d4aa352158485d17289731760a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0baa0c9251cd94135e208c7592d45e78dace77ca
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419372"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606713"

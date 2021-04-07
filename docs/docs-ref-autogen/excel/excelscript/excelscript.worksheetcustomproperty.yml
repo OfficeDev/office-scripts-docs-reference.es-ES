@@ -3,7 +3,7 @@ name: ExcelScript.WorksheetCustomProperty
 uid: ExcelScript!ExcelScript.WorksheetCustomProperty:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetCustomProperty
-summary: Representa una propiedad personalizada en el nivel de hoja de cálculo.
+summary: Representa una propiedad personalizada de nivel de hoja de cálculo.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: Obtiene la clave de la propiedad personalizada. Las claves de propiedades personalizadas no distinguen mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes harán que se produzca un error "InvalidArgument").
+  summary: Obtiene la clave de la propiedad personalizada. Las claves de propiedad personalizadas no tienen mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes provocarán `InvalidArgument` un error).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 663e655b4570ccbf1294b000127f86bf21e2d844
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 1ff07614ff8fe9bc3921fae37293065a192aead1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419239"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605264"

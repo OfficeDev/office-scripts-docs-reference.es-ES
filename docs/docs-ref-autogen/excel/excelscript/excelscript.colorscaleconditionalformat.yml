@@ -3,7 +3,7 @@ name: ExcelScript.ColorScaleConditionalFormat
 uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ColorScaleConditionalFormat
-summary: Representa los criterios de ColorScale para el formato condicional.
+summary: Representa los criterios de escala de color para el formato condicional.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)
   package: ExcelScript!
   fullName: getThreeColorScale()
-  summary: Si es true, la escala de colores tendrá tres puntos (mínimo, punto medio, máximo); de lo contrario, tendrá dos (mínimo, máximo).
+  summary: If `true`<!-- -->, la escala de colores tendrá tres puntos (mínimo, punto medio, máximo), de lo contrario tendrá dos (mínimo, máximo).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 205bac27656484bc9e52d59f40d9d0dc4b826a8b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d8ddc5ccca6eb6fec86803edb68e9f3c917a47b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416823"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606782"

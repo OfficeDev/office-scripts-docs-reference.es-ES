@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)
   package: ExcelScript!
   fullName: getAlignment()
-  summary: Especifica la alineación de la etiqueta de la marca del eje especificado. Consulte ExcelScript. ChartTextHorizontalAlignment para obtener información detallada.
+  summary: Especifica la alineación de la etiqueta de graduación del eje especificada. Vea `ExcelScript.ChartTextHorizontalAlignment` para obtener más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)
   package: ExcelScript!
   fullName: getAxisGroup()
-  summary: Especifica el grupo del eje especificado. Consulte ExcelScript. ChartAxisGroup para obtener información detallada.
+  summary: Especifica el grupo del eje especificado. Vea `ExcelScript.ChartAxisGroup` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)
   package: ExcelScript!
   fullName: getCustomDisplayUnit()
-  summary: Especifica el valor de la unidad de visualización del eje personalizado. Para establecer esta propiedad, use el método SetCustomDisplayUnit(double).
+  summary: Especifica el valor de unidad de visualización del eje personalizado. Para establecer esta propiedad, use el `SetCustomDisplayUnit(double)` método.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)
   package: ExcelScript!
   fullName: getDisplayUnit()
-  summary: Representa la unidad de visualización del eje. Consulte ExcelScript. ChartAxisDisplayUnit para obtener información detallada.
+  summary: Representa la unidad de visualización del eje. Vea `ExcelScript.ChartAxisDisplayUnit` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Especifica el alto, en puntos, del eje del gráfico. NULL si el eje no es visible.
+  summary: Especifica el alto, en puntos, del eje del gráfico. Devuelve `null` si el eje no está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Especifica la distancia, en puntos, desde el borde izquierdo del eje a la izquierda del área del gráfico. NULL si el eje no es visible.
+  summary: Especifica la distancia, en puntos, desde el borde izquierdo del eje a la izquierda del área del gráfico. Devuelve `null` si el eje no está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Especifica si el formato de número está vinculado a las celdas. Si es verdadero, cambiará el formato de número en las etiquetas cuando cambie en las celdas.
+  summary: Especifica si el formato de número está vinculado a las celdas. If `true`<!-- -->, el formato de número cambiará en las etiquetas cuando cambie en las celdas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)
   package: ExcelScript!
   fullName: getMajorGridlines()
-  summary: Devuelve un objeto de línea de cuadrícula que representa las líneas de cuadrícula principales del eje especificado.
+  summary: Devuelve un objeto que representa las líneas de cuadrícula principales del eje especificado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)
   package: ExcelScript!
   fullName: getMajorTickMark()
-  summary: Especifica el tipo de marca de graduación principal del eje especificado. Consulte ExcelScript. ChartAxisTickMark para obtener información detallada.
+  summary: Especifica el tipo de marca de graduación principal para el eje especificado. Vea `ExcelScript.ChartAxisTickMark` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: getMajorTimeUnitScale()
-  summary: Especifica el valor de la escala de unidades principales del eje de categorías cuando la propiedad CategoryType está establecida en escala temporal.
+  summary: Especifica el valor de escala unitaria principal para el eje de categorías cuando la `categoryType` propiedad está establecida en `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -221,7 +221,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)
   package: ExcelScript!
   fullName: getMaximum()
-  summary: Especifica el valor máximo del eje de valores.
+  summary: Especifica el valor máximo en el eje de valores.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)
   package: ExcelScript!
   fullName: getMinimum()
-  summary: Especifica el valor mínimo del eje de valores.
+  summary: Especifica el valor mínimo en el eje de valores.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)
   package: ExcelScript!
   fullName: getMinorGridlines()
-  summary: Devuelve un objeto de línea de cuadrícula que representa las líneas de cuadrícula secundarias del eje especificado.
+  summary: Devuelve un objeto que representa las líneas de cuadrícula secundarias del eje especificado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)
   package: ExcelScript!
   fullName: getMinorTickMark()
-  summary: Especifica el tipo de marca de graduación secundaria del eje especificado. Consulte ExcelScript. ChartAxisTickMark para obtener información detallada.
+  summary: Especifica el tipo de marca de graduación secundaria para el eje especificado. Vea `ExcelScript.ChartAxisTickMark` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: getMinorTimeUnitScale()
-  summary: Especifica el valor de la escala de unidades secundaria del eje de categorías cuando la propiedad CategoryType está establecida en escala temporal.
+  summary: Especifica el valor de escala de unidad secundaria para el eje de categorías cuando la `categoryType` propiedad está establecida en `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Especifica el código de formato para la etiqueta de la marca del eje.
+  summary: Especifica el código de formato de la etiqueta de graduación del eje.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -325,7 +325,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)
   package: ExcelScript!
   fullName: getOffset()
-  summary: Especifica la distancia entre los niveles de las etiquetas y la distancia entre el primer nivel y la línea del eje. El valor debe ser un número entero entre 0 y 1000.
+  summary: Especifica la distancia entre los niveles de etiquetas y la distancia entre el primer nivel y la línea del eje. El valor debe ser un número entero entre 0 y 1000.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Especifica la posición del eje especificado donde se cruza el otro eje. Consulte ExcelScript. ChartAxisPosition para obtener información detallada.
+  summary: Especifica la posición del eje especificada donde se cruza el otro eje. Vea `ExcelScript.ChartAxisPosition` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -351,7 +351,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)
   package: ExcelScript!
   fullName: getPositionAt()
-  summary: Especifica la posición del eje especificado donde se cruza el otro eje. Debe usar el método SetPositionAt(double) para establecer esta propiedad.
+  summary: Especifica la posición del eje en la que se cruza el otro eje. Debe usar el método `SetPositionAt(double)` para establecer esta propiedad.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,7 +364,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)
   package: ExcelScript!
   fullName: getReversePlotOrder()
-  summary: Especifica si Excel traza los puntos de datos desde el último hasta el primero.
+  summary: Especifica si Excel traza puntos de datos del último al primero.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -377,7 +377,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)
   package: ExcelScript!
   fullName: getScaleType()
-  summary: Especifica el tipo de escala del eje de valores. Consulte ExcelScript. ChartAxisScaleType para obtener información detallada.
+  summary: Especifica el tipo de escala del eje de valores. Vea `ExcelScript.ChartAxisScaleType` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,7 +390,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)
   package: ExcelScript!
   fullName: getShowDisplayUnitLabel()
-  summary: Especifica si la etiqueta de la unidad de visualización del eje es visible.
+  summary: Especifica si la etiqueta de unidad de visualización del eje está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -403,7 +403,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Especifica el ángulo al que está orientado el texto para la etiqueta de marca del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  summary: Especifica el ángulo al que está orientado el texto para la etiqueta de graduación del eje del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)
   package: ExcelScript!
   fullName: getTickLabelPosition()
-  summary: Especifica la posición de los rótulos de marcas de graduación en el eje especificado. Consulte ExcelScript. ChartAxisTickLabelPosition para obtener información detallada.
+  summary: Especifica la posición de los rótulos de marcas de graduación en el eje especificado. Vea `ExcelScript.ChartAxisTickLabelPosition` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -429,7 +429,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)
   package: ExcelScript!
   fullName: getTickLabelSpacing()
-  summary: Especifica el número de categorías o series entre rótulos de marcas de graduación. Puede ser un valor comprendido entre 1 y 31999.
+  summary: Especifica el número de categorías o series entre etiquetas de marca de graduación. Puede ser un valor comprendido entre 1 y 31999.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -442,7 +442,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)
   package: ExcelScript!
   fullName: getTickMarkSpacing()
-  summary: Especifica el número de categorías o series entre las marcas de graduación.
+  summary: Especifica el número de categorías o series entre marcas de graduación.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -468,7 +468,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Especifica la distancia, en puntos, desde el borde superior del eje hasta la parte superior del área del gráfico. NULL si el eje no es visible.
+  summary: Especifica la distancia, en puntos, desde el borde superior del eje hasta la parte superior del área del gráfico. Devuelve `null` si el eje no está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Especifica el tipo de eje. Consulte ExcelScript. ChartAxisType para obtener información detallada.
+  summary: Especifica el tipo de eje. Vea `ExcelScript.ChartAxisType` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -494,7 +494,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Especifica si el eje es visible.
+  summary: Especifica si el eje está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -507,7 +507,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Especifica el ancho, en puntos, del eje del gráfico. NULL si el eje no es visible.
+  summary: Especifica el ancho, en puntos, del eje del gráfico. Devuelve `null` si el eje no está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -520,7 +520,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)
   package: ExcelScript!
   fullName: setAlignment(alignment)
-  summary: Especifica la alineación de la etiqueta de la marca del eje especificado. Consulte ExcelScript. ChartTextHorizontalAlignment para obtener información detallada.
+  summary: Especifica la alineación de la etiqueta de graduación del eje especificada. Vea `ExcelScript.ChartTextHorizontalAlignment` para obtener más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -562,7 +562,7 @@ methods:
     content: 'setCategoryNames(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: El objeto Range correspondiente a los datos de origen.
+      description: El `Range` objeto correspondiente a los datos de origen.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -605,7 +605,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)
   package: ExcelScript!
   fullName: setDisplayUnit(displayUnit)
-  summary: Representa la unidad de visualización del eje. Consulte ExcelScript. ChartAxisDisplayUnit para obtener información detallada.
+  summary: Representa la unidad de visualización del eje. Vea `ExcelScript.ChartAxisDisplayUnit` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -639,7 +639,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Especifica si el formato de número está vinculado a las celdas. Si es verdadero, cambiará el formato de número en las etiquetas cuando cambie en las celdas.
+  summary: Especifica si el formato de número está vinculado a las celdas. If `true`<!-- -->, el formato de número cambiará en las etiquetas cuando cambie en las celdas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -673,7 +673,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)
   package: ExcelScript!
   fullName: setMajorTickMark(majorTickMark)
-  summary: Especifica el tipo de marca de graduación principal del eje especificado. Consulte ExcelScript. ChartAxisTickMark para obtener información detallada.
+  summary: Especifica el tipo de marca de graduación principal para el eje especificado. Vea `ExcelScript.ChartAxisTickMark` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -690,7 +690,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: setMajorTimeUnitScale(majorTimeUnitScale)
-  summary: Especifica el valor de la escala de unidades principales del eje de categorías cuando la propiedad CategoryType está establecida en escala temporal.
+  summary: Especifica el valor de escala unitaria principal para el eje de categorías cuando la `categoryType` propiedad está establecida en `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -724,7 +724,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)
   package: ExcelScript!
   fullName: setMaximum(maximum)
-  summary: Especifica el valor máximo del eje de valores.
+  summary: Especifica el valor máximo en el eje de valores.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -741,7 +741,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)
   package: ExcelScript!
   fullName: setMinimum(minimum)
-  summary: Especifica el valor mínimo del eje de valores.
+  summary: Especifica el valor mínimo en el eje de valores.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -758,7 +758,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)
   package: ExcelScript!
   fullName: setMinorTickMark(minorTickMark)
-  summary: Especifica el tipo de marca de graduación secundaria del eje especificado. Consulte ExcelScript. ChartAxisTickMark para obtener información detallada.
+  summary: Especifica el tipo de marca de graduación secundaria para el eje especificado. Vea `ExcelScript.ChartAxisTickMark` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -775,7 +775,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: setMinorTimeUnitScale(minorTimeUnitScale)
-  summary: Especifica el valor de la escala de unidades secundaria del eje de categorías cuando la propiedad CategoryType está establecida en escala temporal.
+  summary: Especifica el valor de escala de unidad secundaria para el eje de categorías cuando la `categoryType` propiedad está establecida en `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -826,7 +826,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Especifica el código de formato para la etiqueta de la marca del eje.
+  summary: Especifica el código de formato de la etiqueta de graduación del eje.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)
   package: ExcelScript!
   fullName: setOffset(offset)
-  summary: Especifica la distancia entre los niveles de las etiquetas y la distancia entre el primer nivel y la línea del eje. El valor debe ser un número entero entre 0 y 1000.
+  summary: Especifica la distancia entre los niveles de etiquetas y la distancia entre el primer nivel y la línea del eje. El valor debe ser un número entero entre 0 y 1000.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -860,7 +860,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Especifica la posición del eje especificado donde se cruza el otro eje. Consulte ExcelScript. ChartAxisPosition para obtener información detallada.
+  summary: Especifica la posición del eje especificada donde se cruza el otro eje. Vea `ExcelScript.ChartAxisPosition` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -877,7 +877,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)
   package: ExcelScript!
   fullName: setPositionAt(value)
-  summary: Establece la posición del eje especificado donde se cruza el otro eje.
+  summary: Establece la posición del eje especificada donde se cruza el otro eje.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -885,7 +885,7 @@ methods:
     content: 'setPositionAt(value: number): void;'
     parameters:
     - id: value
-      description: Valor personalizado de la Cruz en
+      description: Valor personalizado del punto de cruce.
       type: number
     return:
       type: void
@@ -894,7 +894,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)
   package: ExcelScript!
   fullName: setReversePlotOrder(reversePlotOrder)
-  summary: Especifica si Excel traza los puntos de datos desde el último hasta el primero.
+  summary: Especifica si Excel traza puntos de datos del último al primero.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -911,7 +911,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)
   package: ExcelScript!
   fullName: setScaleType(scaleType)
-  summary: Especifica el tipo de escala del eje de valores. Consulte ExcelScript. ChartAxisScaleType para obtener información detallada.
+  summary: Especifica el tipo de escala del eje de valores. Vea `ExcelScript.ChartAxisScaleType` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -928,7 +928,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)
   package: ExcelScript!
   fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
-  summary: Especifica si la etiqueta de la unidad de visualización del eje es visible.
+  summary: Especifica si la etiqueta de unidad de visualización del eje está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -945,7 +945,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Especifica el ángulo al que está orientado el texto para la etiqueta de marca del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  summary: Especifica el ángulo al que está orientado el texto para la etiqueta de graduación del eje del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -962,7 +962,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)
   package: ExcelScript!
   fullName: setTickLabelPosition(tickLabelPosition)
-  summary: Especifica la posición de los rótulos de marcas de graduación en el eje especificado. Consulte ExcelScript. ChartAxisTickLabelPosition para obtener información detallada.
+  summary: Especifica la posición de los rótulos de marcas de graduación en el eje especificado. Vea `ExcelScript.ChartAxisTickLabelPosition` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -982,7 +982,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)
   package: ExcelScript!
   fullName: setTickLabelSpacing(tickLabelSpacing)
-  summary: Especifica el número de categorías o series entre rótulos de marcas de graduación. Puede ser un valor comprendido entre 1 y 31999.
+  summary: Especifica el número de categorías o series entre etiquetas de marca de graduación. Puede ser un valor comprendido entre 1 y 31999.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -999,7 +999,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)
   package: ExcelScript!
   fullName: setTickMarkSpacing(tickMarkSpacing)
-  summary: Especifica el número de categorías o series entre las marcas de graduación.
+  summary: Especifica el número de categorías o series entre marcas de graduación.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1016,7 +1016,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Especifica si el eje es visible.
+  summary: Especifica si el eje está visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1030,9 +1030,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a8c050c98e73332c5362ffa16f3b35306b331810
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 758f8cb951ab73f11cc4c5aa49a03ffb1a7dd2eb
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417103"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606944"

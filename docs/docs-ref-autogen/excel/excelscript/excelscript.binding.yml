@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.Binding#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Devuelve el intervalo representado por el enlace. Se producirá un error si el enlace no es del tipo correcto.
+  summary: Devuelve el intervalo representado por el enlace. Producirá un error si el enlace no es del tipo correcto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.Binding#getTable:member(1)
   package: ExcelScript!
   fullName: getTable()
-  summary: Devuelve la tabla representada por el enlace. Se producirá un error si el enlace no es del tipo correcto.
+  summary: Devuelve la tabla representada por el enlace. Producirá un error si el enlace no es del tipo correcto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.Binding#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Devuelve el texto representado por el enlace. Se producirá un error si el enlace no es del tipo correcto.
+  summary: Devuelve el texto representado por el enlace. Producirá un error si el enlace no es del tipo correcto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.Binding#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Devuelve el tipo de enlace. Consulte ExcelScript. BindingType para obtener información detallada.
+  summary: Devuelve el tipo de enlace. Vea `ExcelScript.BindingType` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -88,9 +88,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
       description: ''
 metadata:
-  ms.openlocfilehash: dbc040f8940983d3292d272d4d19d7f21a794d9e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 8136878c252afcb6a1d1412551c0a38aa65aaa13
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418089"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606610"

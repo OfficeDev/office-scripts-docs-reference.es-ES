@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#ascending:member
   package: ExcelScript!
   fullName: ascending
-  summary: Especifica si la ordenación se realiza de manera ascendente.
+  summary: Especifica si la ordenación se realiza de forma ascendente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#color:member
   package: ExcelScript!
   fullName: color
-  summary: Especifica el color que es el destino de la condición si la ordenación se establece en fuente o en color de celda.
+  summary: Especifica el color que es el destino de la condición si la ordenación está en el color de la fuente o de la celda.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#icon:member
   package: ExcelScript!
   fullName: icon
-  summary: Especifica el icono que es el destino de la condición si la ordenación se establece en el icono de la celda.
+  summary: Especifica el icono que es el destino de la condición, si la ordenación está en el icono de la celda.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#key:member
   package: ExcelScript!
   fullName: key
-  summary: Especifica la columna (o fila, en función de la orientación de ordenación) en la que se encuentra la condición. Se representa como un desplazamiento de la primera columna (o fila).
+  summary: Especifica la columna (o fila, según la orientación de ordenación) en la que se encuentra la condición. Se representa como un desplazamiento de la primera columna (o fila).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#subField:member
   package: ExcelScript!
   fullName: subField
-  summary: Especifica el subcampo que es el nombre de la propiedad de destino de un valor enriquecido según el cual se va a ordenar.
+  summary: Especifica el subcampo que es el nombre de la propiedad de destino de un valor enriquecido para ordenar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -94,9 +94,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: ebc6a6627cee8a97f7f156534f43fb99f731efa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e357fd813e45dcb01b36c18a57e930c7b07708da
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420387"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606000"

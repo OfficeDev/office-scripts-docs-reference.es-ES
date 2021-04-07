@@ -3,7 +3,7 @@ name: ExcelScript.ChartFont
 uid: ExcelScript!ExcelScript.ChartFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartFont
-summary: Este objeto representa los atributos de fuente (nombre de fuente, tamaño de fuente, color, etc.) de un objeto de gráfico.
+summary: Este objeto representa los atributos de fuente (como el nombre de fuente, el tamaño de fuente y el color) de un objeto de gráfico.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).
+  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa rojo).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ChartUnderlineStyle para obtener información detallada.
+  summary: Tipo de subrayado aplicado a la fuente. Vea `ExcelScript.ChartUnderlineStyle` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa el rojo).
+  summary: Representación del código de color HTML del color del texto (por ejemplo, \# FF0000 representa rojo).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Tipo de subrayado aplicado a la fuente. Consulte ExcelScript. ChartUnderlineStyle para obtener información detallada.
+  summary: Tipo de subrayado aplicado a la fuente. Vea `ExcelScript.ChartUnderlineStyle` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef4d91ec8835380a3af1b0de7def9ab52d8dda8c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 58486871c20f86feee8008975bd8790f284b09d0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419939"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606902"

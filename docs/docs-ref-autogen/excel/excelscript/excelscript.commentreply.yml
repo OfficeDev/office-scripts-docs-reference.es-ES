@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getContentType:member(1)
   package: ExcelScript!
   fullName: getContentType()
-  summary: El tipo de contenido de la respuesta.
+  summary: Tipo de contenido de la respuesta.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Obtiene la celda en la que se encuentra este comentario de respuesta.
+  summary: Obtiene la celda donde se encuentra esta respuesta de comentario.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: El estado de la respuesta del comentario. Un valor de "true" significa que la respuesta está en estado resuelto.
+  summary: Estado de respuesta del comentario. Un valor de `true` significa que la respuesta está en estado resuelto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: Contenido de comentario enriquecido (por ejemplo, menciones en comentarios). Esta cadena no está pensada para mostrarse a los usuarios finales. El complemento solo debe usarlo para analizar el contenido de comentarios enriquecidos.
+  summary: Contenido de comentario enriquecido (por ejemplo, menciones en comentarios). Esta cadena no está pensada para mostrarse a los usuarios finales. El complemento solo debe usarlo para analizar contenido de comentarios enriquecidos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,15 +194,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: El contenido del comentario. Contiene una cadena con un formato especial y una lista de menciones que se analizará en la cadena cuando la muestre Excel.
+      description: El contenido del comentario. Contiene una cadena con formato especial y una lista de menciones que se analizarán en la cadena cuando Excel lo muestre.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 31bdb0a4b91653fb02a9f9d3d5612bc4de4dcc97
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 979eadeede217100141cf9aa45a39fbaf0c6ab6f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416802"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606783"

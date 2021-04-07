@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterDatetime#specificity:member
   package: ExcelScript!
   fullName: specificity
-  summary: El grado de especificidad de la fecha que se usará para mantener datos. Por ejemplo, si la fecha es 02-04-2005 y la especificidad se establece en "mes", la operación de filtrado conservará todas las filas con fecha de abril de 2005.
+  summary: El grado de especificidad de la fecha que se usará para mantener datos. Por ejemplo, si la fecha es 2005-04-02 y la especificación se establece en "mes", la operación de filtro mantendrá todas las filas con una fecha en el mes de abril de 2005.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />
 metadata:
-  ms.openlocfilehash: 279bad360e47a9c9987f878d85fa9f6f132d9dbf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3304efeeeafde7f2db34f4cd867e3013db90bc63
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412513"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607021"

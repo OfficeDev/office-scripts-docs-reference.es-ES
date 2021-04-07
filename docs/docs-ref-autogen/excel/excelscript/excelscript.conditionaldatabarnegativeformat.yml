@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalDataBarNegativeFormat
 uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarNegativeFormat
-summary: Representa un formato de barra de datos de formato condicional para el lado negativo de la barra de datos.
+summary: Representa un formato condicional para el lado negativo de la barra de datos.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)
   package: ExcelScript!
   fullName: getBorderColor()
-  summary: Código de color HTML que representa el color de la línea de borde, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). "Cadena vacía" si no hay ningún borde presente o establecido.
+  summary: Código de color HTML que representa el color de la línea de borde, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). El valor es "" (una cadena vacía) si no hay ningún borde presente o establecido.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)
   package: ExcelScript!
   fullName: getFillColor()
-  summary: Código de color HTML que representa el color de relleno, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: Código de color HTML que representa el color de relleno, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)
   package: ExcelScript!
   fullName: getMatchPositiveBorderColor()
-  summary: Especifica si la barra de la barra de la barra de la barra de la barra de la barra de la barra positiva es igual.
+  summary: Especifica si la barra de datos negativa tiene el mismo color de borde que la barra de datos positiva.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)
   package: ExcelScript!
   fullName: getMatchPositiveFillColor()
-  summary: Especifica si la barra de la barra de números negativo tiene el mismo color de relleno que la barra de la barra de números positivo.
+  summary: Especifica si la barra de datos negativa tiene el mismo color de relleno que la barra de datos positivo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)
   package: ExcelScript!
   fullName: setBorderColor(borderColor)
-  summary: Código de color HTML que representa el color de la línea de borde, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). "Cadena vacía" si no hay ningún borde presente o establecido.
+  summary: Código de color HTML que representa el color de la línea de borde, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). El valor es "" (una cadena vacía) si no hay ningún borde presente o establecido.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)
   package: ExcelScript!
   fullName: setFillColor(fillColor)
-  summary: Código de color HTML que representa el color de relleno, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: Código de color HTML que representa el color de relleno, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)
   package: ExcelScript!
   fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
-  summary: Especifica si la barra de la barra de la barra de la barra de la barra de la barra de la barra positiva es igual.
+  summary: Especifica si la barra de datos negativa tiene el mismo color de borde que la barra de datos positiva.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)
   package: ExcelScript!
   fullName: setMatchPositiveFillColor(matchPositiveFillColor)
-  summary: Especifica si la barra de la barra de números negativo tiene el mismo color de relleno que la barra de la barra de números positivo.
+  summary: Especifica si la barra de datos negativa tiene el mismo color de relleno que la barra de datos positivo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 95cd68ae74d6ea3c0765aa03717d71d3da0494ef
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: bf8d679bc9be9e20f4ad6873c43101de44083437
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416760"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606741"

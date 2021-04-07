@@ -15,7 +15,7 @@ fields:
 - name: conditionalFormats
   uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
   package: ExcelScript!
-  summary: Todas las celdas con formatos condicionales
+  summary: Todas las celdas con formatos condicionales.
 - name: constants
   uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
   package: ExcelScript!
@@ -31,19 +31,19 @@ fields:
 - name: sameConditionalFormat
   uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
   package: ExcelScript!
-  summary: Celdas que tengan el mismo formato condicional que la primera celda del rango.
+  summary: Celdas con el mismo formato condicional que la primera celda del rango.
 - name: sameDataValidation
   uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
   package: ExcelScript!
-  summary: Celdas que tengan los mismos criterios de validación de datos que la primera celda del rango.
+  summary: Celdas con los mismos criterios de validación de datos que la primera celda del rango.
 - name: visible
   uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
   package: ExcelScript!
   summary: Celdas que están visibles.
 metadata:
-  ms.openlocfilehash: e267008031fc63a772a4410ae996daf5b1352f86
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abfcbb551319211b6da5a509bc9ab75e2f24dea8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420352"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605993"
