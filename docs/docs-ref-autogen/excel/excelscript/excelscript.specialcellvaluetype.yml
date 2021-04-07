@@ -11,7 +11,7 @@ fields:
 - name: all
   uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
   package: ExcelScript!
-  summary: Celdas que tienen errores, true/false, Numeric o un valor de cadena.
+  summary: Celdas que tienen errores, valores booleanos, numéricos o de cadena.
 - name: errors
   uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
   package: ExcelScript!
@@ -19,43 +19,43 @@ fields:
 - name: errorsLogical
   uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
   package: ExcelScript!
-  summary: Celdas que tienen errores o un valor verdadero/falso.
+  summary: Celdas que tienen errores o valores booleanos.
 - name: errorsLogicalNumber
   uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
   package: ExcelScript!
-  summary: Celdas con errores, true/false o un valor numérico.
+  summary: Celdas que tienen errores, valores booleanos o numéricos.
 - name: errorsLogicalText
   uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
   package: ExcelScript!
-  summary: Celdas que tienen errores, true/false o un valor de cadena.
+  summary: Celdas que tienen errores, booleanos o valores de cadena.
 - name: errorsNumbers
   uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
   package: ExcelScript!
-  summary: Celdas que tienen errores o un valor numérico.
+  summary: Celdas que tienen errores o valores numéricos.
 - name: errorsNumberText
   uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
   package: ExcelScript!
-  summary: Celdas que tienen errores, números o un valor de cadena.
+  summary: Celdas que tienen errores, valores numéricos o de cadena.
 - name: errorsText
   uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
   package: ExcelScript!
-  summary: Celdas que tienen errores o un valor de cadena.
+  summary: Celdas que tienen errores o valores de cadena.
 - name: logical
   uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
   package: ExcelScript!
-  summary: Celdas que tienen un valor true/false.
+  summary: Celdas que tienen un valor booleano.
 - name: logicalNumbers
   uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
   package: ExcelScript!
-  summary: Celdas que tienen un valor true/false o un valor numérico.
+  summary: Celdas que tienen un valor booleano o numérico.
 - name: logicalNumbersText
   uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
   package: ExcelScript!
-  summary: Celdas que tienen un valor de tipo verdadero/falso, numérico o de cadena.
+  summary: Celdas que tienen un valor booleano, numérico o de cadena.
 - name: logicalText
   uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
   package: ExcelScript!
-  summary: Celdas que tienen un valor true/false o String.
+  summary: Celdas que tienen un valor booleano o de cadena.
 - name: numbers
   uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
   package: ExcelScript!
@@ -69,9 +69,9 @@ fields:
   package: ExcelScript!
   summary: Celdas que tienen un valor de cadena.
 metadata:
-  ms.openlocfilehash: 904bfc40ae83c845e58f566d41db47e05e38af4a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 93f2ab2e05785f1f93bc26839d20d9c060205384
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420345"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607343"

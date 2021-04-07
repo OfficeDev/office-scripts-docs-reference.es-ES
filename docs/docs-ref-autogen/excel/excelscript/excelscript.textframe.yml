@@ -3,7 +3,7 @@ name: ExcelScript.TextFrame
 uid: ExcelScript!ExcelScript.TextFrame:interface
 package: ExcelScript!
 fullName: ExcelScript.TextFrame
-summary: Representa el marco de texto de un objeto Shape.
+summary: Representa el marco de texto de un objeto shape.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: getAutoSizeSetting()
-  summary: Configuración de tamaño automático del marco de texto. Un marco de texto puede establecerse para ajustar automáticamente el texto al marco de texto, ajustar automáticamente el marco de texto al texto o no realizar ningún cambio de tamaño automático.
+  summary: La configuración automática de tamaño del marco de texto. Un marco de texto puede establecerse para ajustar automáticamente el texto al marco de texto, ajustar automáticamente el marco de texto al texto o no realizar ningún cambio de tamaño automático.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Indica la alineación horizontal del marco de texto. Consulte ExcelScript. ShapeTextHorizontalAlignment para obtener información detallada.
+  summary: Indica la alineación horizontal del marco de texto. Vea `ExcelScript.ShapeTextHorizontalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: getHorizontalOverflow()
-  summary: Indica el comportamiento de desbordamiento horizontal del marco de texto. Consulte ExcelScript. ShapeTextHorizontalOverflow para obtener información detallada.
+  summary: Indica el comportamiento de desbordamiento horizontal del marco de texto. Vea `ExcelScript.ShapeTextHorizontalOverflow` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: Representa el ángulo al que está orientado el texto para el marco de texto. Consulte ExcelScript. ShapeTextOrientation para obtener información detallada.
+  summary: Representa el ángulo al que está orientado el texto para el marco de texto. Vea `ExcelScript.ShapeTextOrientation` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getReadingOrder:member(1)
   package: ExcelScript!
   fullName: getReadingOrder()
-  summary: Representa el orden de lectura del marco de texto, ya sea de izquierda a derecha o de derecha a izquierda. Consulte ExcelScript. ShapeTextReadingOrder para obtener información detallada.
+  summary: Representa el orden de lectura del marco de texto, ya sea de izquierda a derecha o de derecha a izquierda. Vea `ExcelScript.ShapeTextReadingOrder` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getTextRange:member(1)
   package: ExcelScript!
   fullName: getTextRange()
-  summary: Representa el texto que hay unido a una forma en el marco de texto y las propiedades y los métodos de manipulación del texto. Consulte ExcelScript. TextRange para obtener información detallada.
+  summary: Representa el texto que hay unido a una forma en el marco de texto y las propiedades y los métodos de manipulación del texto. Vea `ExcelScript.TextRange` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Indica la alineación vertical del marco de texto. Consulte ExcelScript. ShapeTextVerticalAlignment para obtener información detallada.
+  summary: Indica la alineación vertical del marco de texto. Vea `ExcelScript.ShapeTextVerticalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#getVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: getVerticalOverflow()
-  summary: Representa el comportamiento de desbordamiento vertical del marco de texto. Consulte ExcelScript. ShapeTextVerticalOverflow para obtener información detallada.
+  summary: Representa el comportamiento de desbordamiento vertical del marco de texto. Vea `ExcelScript.ShapeTextVerticalOverflow` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setAutoSizeSetting:member(1)
   package: ExcelScript!
   fullName: setAutoSizeSetting(autoSizeSetting)
-  summary: Configuración de tamaño automático del marco de texto. Un marco de texto puede establecerse para ajustar automáticamente el texto al marco de texto, ajustar automáticamente el marco de texto al texto o no realizar ningún cambio de tamaño automático.
+  summary: La configuración automática de tamaño del marco de texto. Un marco de texto puede establecerse para ajustar automáticamente el texto al marco de texto, ajustar automáticamente el marco de texto al texto o no realizar ningún cambio de tamaño automático.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Indica la alineación horizontal del marco de texto. Consulte ExcelScript. ShapeTextHorizontalAlignment para obtener información detallada.
+  summary: Indica la alineación horizontal del marco de texto. Vea `ExcelScript.ShapeTextHorizontalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -249,7 +249,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setHorizontalOverflow:member(1)
   package: ExcelScript!
   fullName: setHorizontalOverflow(horizontalOverflow)
-  summary: Indica el comportamiento de desbordamiento horizontal del marco de texto. Consulte ExcelScript. ShapeTextHorizontalOverflow para obtener información detallada.
+  summary: Indica el comportamiento de desbordamiento horizontal del marco de texto. Vea `ExcelScript.ShapeTextHorizontalOverflow` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: Representa el ángulo al que está orientado el texto para el marco de texto. Consulte ExcelScript. ShapeTextOrientation para obtener información detallada.
+  summary: Representa el ángulo al que está orientado el texto para el marco de texto. Vea `ExcelScript.ShapeTextOrientation` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -303,7 +303,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setReadingOrder:member(1)
   package: ExcelScript!
   fullName: setReadingOrder(readingOrder)
-  summary: Representa el orden de lectura del marco de texto, ya sea de izquierda a derecha o de derecha a izquierda. Consulte ExcelScript. ShapeTextReadingOrder para obtener información detallada.
+  summary: Representa el orden de lectura del marco de texto, ya sea de izquierda a derecha o de derecha a izquierda. Vea `ExcelScript.ShapeTextReadingOrder` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -354,7 +354,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Indica la alineación vertical del marco de texto. Consulte ExcelScript. ShapeTextVerticalAlignment para obtener información detallada.
+  summary: Indica la alineación vertical del marco de texto. Vea `ExcelScript.ShapeTextVerticalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -374,7 +374,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextFrame#setVerticalOverflow:member(1)
   package: ExcelScript!
   fullName: setVerticalOverflow(verticalOverflow)
-  summary: Representa el comportamiento de desbordamiento vertical del marco de texto. Consulte ExcelScript. ShapeTextVerticalOverflow para obtener información detallada.
+  summary: Representa el comportamiento de desbordamiento vertical del marco de texto. Vea `ExcelScript.ShapeTextVerticalOverflow` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -388,9 +388,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ecc8ca404ec0d89960a592962c74e1f4e0fd5ce
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cea8dceea74129d42e754dfb4acde0c1518acd90
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419267"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607315"

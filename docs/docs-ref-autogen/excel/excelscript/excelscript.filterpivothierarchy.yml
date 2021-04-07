@@ -3,7 +3,7 @@ name: ExcelScript.FilterPivotHierarchy
 uid: ExcelScript!ExcelScript.FilterPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.FilterPivotHierarchy
-summary: Representa el FilterPivotHierarchy de Excel.
+summary: Representa el filtro de ExcelPivotHierarchy.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Identificador de FilterPivotHierarchy.
+  summary: Id. de FilterPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: Obtiene un PivotField por nombre. Si el campo dinámico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene un campo dinámico por su nombre. Si el campo dinámico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,9 +156,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: af7fd69594be9ce4e054accf9bbc368055e51b8d
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: cf431a5718822ee8d157fdfa96ceca84d87c5323
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554649"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607259"

@@ -3,7 +3,7 @@ name: ExcelScript.SlicerItem
 uid: ExcelScript!ExcelScript.SlicerItem:interface
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
-summary: Representa un elemento de segmentación de un rebanador.
+summary: Representa un elemento de segmentación de datos en una segmentación de datos.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
   package: ExcelScript!
   fullName: getHasData()
-  summary: True si el elemento de segmentación tiene datos.
+  summary: El valor `true` es si el elemento de segmentación de datos tiene datos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
   package: ExcelScript!
   fullName: getIsSelected()
-  summary: Es True si se selecciona el elemento de segmentación. Establecer esta valor no limpiará el estado de selección de otros SlicerItems. De forma predeterminada, si el elemento de segmentación de elementos es el único seleccionado, al anular la selección, se seleccionarán todos los elementos.
+  summary: El valor `true` es si el elemento de segmentación de datos está seleccionado. Si se establece este valor, no se borrará el estado seleccionado de otros elementos de segmentación de datos. De forma predeterminada, si el elemento de segmentación de datos es el único seleccionado, cuando se deseleccione, se seleccionarán todos los elementos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Representa el título que se muestra en la interfaz de usuario.
+  summary: Representa el título que se muestra en la interfaz de usuario de Excel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
   package: ExcelScript!
   fullName: setIsSelected(isSelected)
-  summary: Es True si se selecciona el elemento de segmentación. Establecer esta valor no limpiará el estado de selección de otros SlicerItems. De forma predeterminada, si el elemento de segmentación de elementos es el único seleccionado, al anular la selección, se seleccionarán todos los elementos.
+  summary: El valor `true` es si el elemento de segmentación de datos está seleccionado. Si se establece este valor, no se borrará el estado seleccionado de otros elementos de segmentación de datos. De forma predeterminada, si el elemento de segmentación de datos es el único seleccionado, cuando se deseleccione, se seleccionarán todos los elementos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 198e28e187b64e9c64d0b94e95fb91eb7720156c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdfae7429391b3992f4f885b23794f5876c6c7fd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420485"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607357"

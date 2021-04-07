@@ -3,7 +3,7 @@ name: ExcelScript.ShapeFill
 uid: ExcelScript!ExcelScript.ShapeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeFill
-summary: Representa el formato de relleno de un objeto Shape.
+summary: Representa el formato de relleno de un objeto shape.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
   package: ExcelScript!
   fullName: getForegroundColor()
-  summary: Representa el color de primer plano de relleno de la forma en formato de color HTML, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: Representa el color de primer plano de relleno de forma en formato de color HTML, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: Especifica el porcentaje de transparencia del relleno como un valor de 0,0 (opaco) a 1,0 (claro). Devuelve un valor nulo si el tipo de forma no es compatible con la transparencia o si la transparencia no es coherente en el relleno de forma, como en un tipo de relleno de degradado.
+  summary: Especifica el porcentaje de transparencia del relleno como un valor de 0,0 (opaco) a 1,0 (claro). Devuelve si el tipo de forma no admite transparencia o si el relleno de forma tiene transparencias incoherentes, como con un tipo de `null` relleno degradado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Devuelve el tipo de relleno de la forma. Consulte ExcelScript. ShapeFillType para obtener información detallada.
+  summary: Devuelve el tipo de relleno de la forma. Vea `ExcelScript.ShapeFillType` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
   package: ExcelScript!
   fullName: setForegroundColor(foregroundColor)
-  summary: Representa el color de primer plano de relleno de la forma en formato de color HTML, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: Representa el color de primer plano de relleno de forma en formato de color HTML, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -90,7 +90,7 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: Una cadena que representa el color de relleno en formato de color HTML, con la forma \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+      description: Cadena que representa el color de relleno en formato de color HTML, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
       type: string
     return:
       type: void
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: Especifica el porcentaje de transparencia del relleno como un valor de 0,0 (opaco) a 1,0 (claro). Devuelve un valor nulo si el tipo de forma no es compatible con la transparencia o si la transparencia no es coherente en el relleno de forma, como en un tipo de relleno de degradado.
+  summary: Especifica el porcentaje de transparencia del relleno como un valor de 0,0 (opaco) a 1,0 (claro). Devuelve si el tipo de forma no admite transparencia o si el relleno de forma tiene transparencias incoherentes, como con un tipo de `null` relleno degradado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,9 +113,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 48b38d153693b4ffc41e670286c67f362dd83c89
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5c00db0f8c8884c051c570938f1141d2c08bbd94
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420660"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607392"
