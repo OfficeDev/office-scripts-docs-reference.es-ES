@@ -3,7 +3,7 @@ name: ExcelScript.AutoFillType
 uid: ExcelScript!ExcelScript.AutoFillType:enum
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
-summary: Los tipos de comportamiento cuando se utiliza Autorrellenar en un rango del libro.
+summary: El comportamiento se tipo cuando se usa Autofill en un rango del libro.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,15 +11,15 @@ fields:
 - name: fillCopy
   uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
   package: ExcelScript!
-  summary: Rellena las celdas adyacentes con datos basándose en los datos seleccionados.
+  summary: Rellena las celdas adyacentes con datos basados en los datos seleccionados.
 - name: fillDays
   uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
   package: ExcelScript!
-  summary: Una versión de "FillSeries" para las fechas que basan el patrón en el día del mes o en el día de la semana, en función del contexto.
+  summary: Una versión de "FillSeries" para fechas que basa el patrón en el día del mes o el día de la semana, según el contexto.
 - name: fillDefault
   uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
   package: ExcelScript!
-  summary: Rellena las celdas adyacentes en función de los datos circundantes (el comportamiento de Autorrelleno estándar).
+  summary: Rellena las celdas adyacentes en función de los datos circundantes (el comportamiento estándar de Autorrellenar).
 - name: fillFormats
   uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
   package: ExcelScript!
@@ -27,7 +27,7 @@ fields:
 - name: fillMonths
   uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
   package: ExcelScript!
-  summary: Una versión de "FillSeries" para las fechas que basan el patrón en el mes.
+  summary: Una versión de "FillSeries" para fechas que basa el patrón en el mes.
 - name: fillSeries
   uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
   package: ExcelScript!
@@ -39,27 +39,27 @@ fields:
 - name: fillWeekdays
   uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
   package: ExcelScript!
-  summary: Una versión de "FillSeries" para las fechas que basa el patrón en el día de la semana y solo incluye días de la semana.
+  summary: Una versión de "FillSeries" para fechas que basa el patrón en el día de la semana y solo incluye días laborables.
 - name: fillYears
   uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
   package: ExcelScript!
-  summary: Una versión de "FillSeries" para las fechas que basan el patrón en el año.
+  summary: Una versión de "FillSeries" para fechas que basa el patrón en el año.
 - name: flashFill
   uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
   package: ExcelScript!
-  summary: Rellena las celdas adyacentes mediante el uso de la característica FlashFill de Excel.
+  summary: Rellena las celdas adyacentes mediante la característica De relleno flash de Excel.
 - name: growthTrend
   uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
   package: ExcelScript!
-  summary: Una versión de "FillSeries" para números que rellenan los valores de las celdas adyacentes de acuerdo con un modelo de tendencia geométrica.
+  summary: Una versión de "FillSeries" para números que rellena los valores de las celdas adyacentes según un modelo de tendencia de crecimiento.
 - name: linearTrend
   uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
   package: ExcelScript!
-  summary: Una versión de "FillSeries" para números que rellenan los valores de las celdas adyacentes de acuerdo con un modelo de tendencia lineal.
+  summary: Una versión de "FillSeries" para números que rellena los valores de las celdas adyacentes según un modelo de tendencia lineal.
 metadata:
-  ms.openlocfilehash: d9d6e6a7f8b28503a3c39ab71c66cbcbf5581dec
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 60a16fedc18165357a796d52d714408cb4288ca7
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417316"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606631"

@@ -21,7 +21,7 @@ methods:
     content: 'calculate(calculationType: CalculationType): void;'
     parameters:
     - id: calculationType
-      description: Especifica el tipo de cálculo que se va a usar. Consulte ExcelScript. CalculationType para obtener información detallada.
+      description: Especifica el tipo de cálculo que se va a usar. Vea `ExcelScript.CalculationType` para más información.
       type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
     return:
       type: void
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
   package: ExcelScript!
   fullName: getCalculationMode()
-  summary: 'Devuelve el modo de cálculo usado en el libro, tal y como se define en las constantes de ExcelScript. CalculationMode. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla la actualización de los cálculos; `AutomaticExceptTables`<!-- -->, donde Excel controla la actualización de cálculos, pero ignora los cambios en las tablas; `Manual`<!-- -->, donde se realiza el cálculo cuando el usuario lo solicita.'
+  summary: 'Devuelve el modo de cálculo usado en el libro, tal como lo definen las constantes en `ExcelScript.CalculationMode`<!-- -->. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla el recálculo; `AutomaticExceptTables`<!-- -->, donde Excel controla el recálculo pero omite los cambios en las tablas; `Manual`<!-- -->, donde el cálculo se realiza cuando el usuario lo solicita.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
   package: ExcelScript!
   fullName: getCalculationState()
-  summary: Devuelve el estado del cálculo de la aplicación. Consulte ExcelScript. CalculationState para obtener información detallada.
+  summary: Devuelve el estado del cálculo de la aplicación. Vea `ExcelScript.CalculationState` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
   package: ExcelScript!
   fullName: getCultureInfo()
-  summary: Proporciona información basada en la configuración actual de la referencia cultural del sistema. Esto incluye los nombres de las referencias culturales, el formato de los números y otras configuraciones que dependen de la referencia cultural.
+  summary: Proporciona información basada en la configuración de referencia cultural del sistema actual. Esto incluye los nombres de referencia cultural, el formato de número y otras configuraciones culturalmente dependientes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getDecimalSeparator()
-  summary: Obtiene la cadena usada como separador decimal para los valores numéricos. Esto se basa en la configuración local de Excel.
+  summary: Obtiene la cadena usada como separador decimal para valores numéricos. Esto se basa en la configuración de Excel local.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
   package: ExcelScript!
   fullName: getIterativeCalculation()
-  summary: Devuelve la configuración de cálculo iterativo. En Excel en Windows y Mac, la configuración se aplicará a la aplicación de Excel. En Excel en la web y en otras plataformas, la configuración se aplicará al libro activo.
+  summary: Devuelve la configuración del cálculo iterativo. En Excel en Windows y Mac, la configuración se aplicará a la aplicación de Excel. En Excel en la web y otras plataformas, la configuración se aplicará al libro activo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
   package: ExcelScript!
   fullName: getThousandsSeparator()
-  summary: Obtiene la cadena que se usa para separar los grupos de dígitos a la izquierda de la coma decimal para los valores numéricos. Esto se basa en la configuración local de Excel.
+  summary: Obtiene la cadena usada para separar grupos de dígitos a la izquierda del decimal para los valores numéricos. Esto se basa en la configuración de Excel local.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
   package: ExcelScript!
   fullName: setCalculationMode(calculationMode)
-  summary: 'Devuelve el modo de cálculo usado en el libro, tal y como se define en las constantes de ExcelScript. CalculationMode. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla la actualización de los cálculos; `AutomaticExceptTables`<!-- -->, donde Excel controla la actualización de cálculos, pero ignora los cambios en las tablas; `Manual`<!-- -->, donde se realiza el cálculo cuando el usuario lo solicita.'
+  summary: 'Devuelve el modo de cálculo usado en el libro, tal como lo definen las constantes en `ExcelScript.CalculationMode`<!-- -->. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla el recálculo; `AutomaticExceptTables`<!-- -->, donde Excel controla el recálculo pero omite los cambios en las tablas; `Manual`<!-- -->, donde el cálculo se realiza cuando el usuario lo solicita.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -148,9 +148,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3bb99af272686a3303d2564bbed7e972f6cde6e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdcd7a220d23bc540129c9547789a241c15fd3b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418131"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606638"

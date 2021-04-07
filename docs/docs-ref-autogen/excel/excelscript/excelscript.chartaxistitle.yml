@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  summary: Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
     content: 'setFormula(formula: string): void;'
     parameters:
     - id: formula
-      description: una cadena que presenta la fórmula que se va a establecer
+      description: Cadena que representa la fórmula que se debe establecer.
       type: string
     return:
       type: void
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero comprendido entre-90 y 90, o el número entero 180 para texto orientado verticalmente.
+  summary: Especifica el ángulo al que está orientado el texto para el título del eje del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cc90d8c96c4846a97eb80b1c44317def1d5a9e51
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3ac4a54e34535c1f4198a7ea2f714ef83f0e45b1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417012"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606937"

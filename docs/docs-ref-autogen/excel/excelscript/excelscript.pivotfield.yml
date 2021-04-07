@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: Establece uno o varios los filtros dinámicos actuales del campo y los aplica al campo. Si los filtros proporcionados no son válidos o no se pueden aplicar, se produce una excepción.
+  summary: Establece uno o varios de los filtros dinámicos actuales del campo y los aplica al campo. Si los filtros proporcionados no son válidos o no se pueden aplicar, se produce una excepción.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: Una interfaz PivotFilter específica configurada o de filtro dinámico que contiene varios filtros configurados.
+      description: Un filtro dinámico específico configurado o una interfaz pivotFilters que contiene varios filtros configurados.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: Borra todos los criterios de todos los filtros del campo. De esta forma, se quitan los filtros activos del campo.
+  summary: Borra todos los criterios de todos los filtros del campo. Esto quita cualquier filtrado activo en el campo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Identificador de PivotField.
+  summary: Id. del campo dinámico.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: Obtiene un PivotItem por nombre. Si el PivotItem no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene un objeto PivotItem por su nombre. Si el objeto PivotItem no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -120,7 +120,7 @@ methods:
     content: 'getPivotItem(name: string): PivotItem | undefined;'
     parameters:
     - id: name
-      description: Nombre del PivotItem que se va a recuperar.
+      description: Nombre del objeto PivotItem que se va a recuperar.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: Tipo de filtro que se va a comprobar. Si no se proporciona ningún tipo, este método comprobará si se ha aplicado algún filtro.
+      description: Tipo de filtro que se debe comprobar. Si no se proporciona ningún tipo, este método comprobará si se aplica algún filtro.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: Ordena el campo de tabla dinámica por los valores especificados en un ámbito determinado. El ámbito define los valores específicos que se usarán para ordenar cuando hay varios valores de la misma DataPivotHierarchy.
+  summary: Ordena el campo de tabla dinámica por los valores especificados en un ámbito determinado. El ámbito define qué valores específicos se usarán para ordenar cuando haya varios valores del mismo DataPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -256,18 +256,18 @@ methods:
       description: Especifica si la ordenación se realiza en orden ascendente o descendente.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
-      description: Especifica la jerarquía de valores del eje de datos que se va a usar para la ordenación.
+      description: Especifica la jerarquía de valores en el eje de datos que se usará para la ordenación.
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: Elementos que se deben usar para el ámbito de la ordenación. Estos serán los elementos que componen la fila o la columna por la que desea ordenar. Si se usa una cadena en lugar de un PivotItem, la cadena representa el identificador de PivotItem. Si no hay ningún elemento que no sea una jerarquía de datos en el eje que desea ordenar, puede estar vacío.
+      description: Los elementos que se deben usar para el ámbito de la ordenación. Estos serán los elementos que formarán la fila o columna en la que desea ordenar. Si se usa una cadena en lugar de un objeto PivotItem, la cadena representa el identificador del objeto PivotItem. Si no hay elementos distintos de la jerarquía de datos en el eje en el que desea ordenar, puede estar vacío.
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f9bc753c30f6ec8c165cdf9966aab8c5be2040cc
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 4228e7c2e7435e23e1566b570c05a7c18505e14e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554618"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606402"

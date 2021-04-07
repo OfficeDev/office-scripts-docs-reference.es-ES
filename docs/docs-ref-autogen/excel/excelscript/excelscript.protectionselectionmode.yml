@@ -11,19 +11,19 @@ fields:
 - name: none
   uid: ExcelScript!ExcelScript.ProtectionSelectionMode.none:member
   package: ExcelScript!
-  summary: La selección no está permitida en todas las celdas.
+  summary: La selección no está permitida para ninguna celda.
 - name: normal
   uid: ExcelScript!ExcelScript.ProtectionSelectionMode.normal:member
   package: ExcelScript!
-  summary: La selección se permite para todas las celdas.
+  summary: Se permite la selección para todas las celdas.
 - name: unlocked
   uid: ExcelScript!ExcelScript.ProtectionSelectionMode.unlocked:member
   package: ExcelScript!
   summary: La selección solo se permite para las celdas que no están bloqueadas.
 metadata:
-  ms.openlocfilehash: 3966a87c87392fb913ed3d6c43d1a772e09df9bf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 7785335f2a75e072de6401873f37f801c85feddf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416669"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606206"

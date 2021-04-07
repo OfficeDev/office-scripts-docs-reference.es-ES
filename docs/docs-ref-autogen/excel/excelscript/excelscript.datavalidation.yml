@@ -3,7 +3,7 @@ name: ExcelScript.DataValidation
 uid: ExcelScript!ExcelScript.DataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
-summary: Representa la validación de datos que se aplica al intervalo actual.
+summary: Representa la validación de datos aplicada al intervalo actual.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: getIgnoreBlanks()
-  summary: Especifica si la validación de datos se realizará en celdas en blanco; el valor predeterminado es true.
+  summary: Especifica si la validación de datos se realizará en celdas en blanco. El valor predeterminado es `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: Devuelve un objeto RangeAreas, que incluye uno o más intervalos rectangulares, con valores de celda no válidos. Si todos los valores de celda son válidos, esta función devuelve null.
+  summary: Devuelve un `RangeAreas` objeto, que consta de uno o más intervalos rectangulares, con valores de celda no válidos. Si todos los valores de celda son válidos, esta función devolverá `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getPrompt:member(1)
   package: ExcelScript!
   fullName: getPrompt()
-  summary: Pregunta cuando los usuarios seleccionan una celda.
+  summary: Preguntar cuando los usuarios seleccionan una celda.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Regla de validación de datos que contiene distintos tipos de criterios de validación de datos.
+  summary: Regla de validación de datos que contiene diferentes tipos de criterios de validación de datos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Tipo de validación de datos, consulte ExcelScript. DataValidationType para obtener información detallada.
+  summary: Tipo de validación de datos, vea `ExcelScript.DataValidationType` para obtener más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: Representa si todos los valores de celda son válidos de acuerdo con las reglas de validación de datos. Devuelve true si todos los valores de celda son válidos o false si todos los valores de celda no son válidos. Devuelve NULL si hay valores de celda válidos y no válidos dentro del rango.
+  summary: Representa si todos los valores de celda son válidos de acuerdo con las reglas de validación de datos. Devuelve `true` si todos los valores de celda son válidos o si todos los valores de celda no son `false` válidos. Devuelve `null` si hay valores de celda válidos e no válidos dentro del intervalo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: setIgnoreBlanks(ignoreBlanks)
-  summary: Especifica si la validación de datos se realizará en celdas en blanco; el valor predeterminado es true.
+  summary: Especifica si la validación de datos se realizará en celdas en blanco. El valor predeterminado es `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setPrompt:member(1)
   package: ExcelScript!
   fullName: setPrompt(prompt)
-  summary: Pregunta cuando los usuarios seleccionan una celda.
+  summary: Preguntar cuando los usuarios seleccionan una celda.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: Regla de validación de datos que contiene distintos tipos de criterios de validación de datos.
+  summary: Regla de validación de datos que contiene diferentes tipos de criterios de validación de datos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,9 +182,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0a1ef3975375fe45241680d6b0228b2ba31aefd0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6d3151f99740e7628302eb6bea65e58fe153cc6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415564"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606540"

@@ -3,7 +3,7 @@ name: ExcelScript.Line
 uid: ExcelScript!ExcelScript.Line:interface
 package: ExcelScript!
 fullName: ExcelScript.Line
-summary: Representa una línea dentro de una hoja de cálculo. Para obtener el objeto Shape correspondiente, use `Line.shape`<!-- -->.
+summary: Representa una línea dentro de una hoja de cálculo. Para obtener el objeto `Shape` correspondiente, use `Line.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
     parameters:
     - id: shape
-      description: Forma que se va a conectar.
+      description: La forma que se conectará.
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: El sitio de conexión en la forma a la que se adjunta el principio del conector. Debe ser un número entero entre 0 (ambos inclusive) y el número de sitios de conexión de la forma especificada (exclusiva).
+      description: El sitio de conexión en la forma a la que se adjunta el principio del conector. Debe ser un número entero entre 0 (ambos incluidos) y el recuento de sitios de conexión de la forma especificada (exclusivo).
       type: number
     return:
       type: void
@@ -41,10 +41,10 @@ methods:
     content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
     parameters:
     - id: shape
-      description: Forma que se va a conectar.
+      description: La forma que se conectará.
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
     - id: connectionSite
-      description: El sitio de conexión en la forma a la que se adjunta el final del conector. Debe ser un número entero entre 0 (ambos inclusive) y el número de sitios de conexión de la forma especificada (exclusiva).
+      description: El sitio de conexión en la forma a la que se adjunta el final del conector. Debe ser un número entero entre 0 (ambos incluidos) y el recuento de sitios de conexión de la forma especificada (exclusivo).
       type: number
     return:
       type: void
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)
   package: ExcelScript!
   fullName: getBeginConnectedSite()
-  summary: Representa el sitio de conexión al que está conectado el principio de un conector. Devuelve un valor nulo si el principio de la línea no está unido a ninguna forma.
+  summary: Representa el sitio de conexión al que está conectado el principio de un conector. Devuelve `null` cuando el principio de la línea no está unido a ninguna forma.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -209,7 +209,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)
   package: ExcelScript!
   fullName: getEndConnectedSite()
-  summary: Representa el sitio de conexión al que está conectado el extremo de un conector. Devuelve un valor nulo si el final de la línea no está unido a ninguna forma.
+  summary: Representa el sitio de conexión al que está conectado el extremo de un conector. Devuelve `null` cuando el final de la línea no está unido a ninguna forma.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -222,7 +222,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Especifica el identificador de la forma.
+  summary: Especifica el identificador de forma.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -261,7 +261,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getShape:member(1)
   package: ExcelScript!
   fullName: getShape()
-  summary: Devuelve el objeto de la forma asociado a la línea.
+  summary: Devuelve el `Shape` objeto asociado a la línea.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,9 +390,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 07e52040452894f6382b0b022b9642037d8d4168
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 629957813ed37575e86ba1cf38ed57403a7d2b20
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412261"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606430"

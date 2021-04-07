@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 'Especifica el operando derecho cuando la propiedad Operator se establece en un operador binario como GreaterThan (el operando izquierdo es el valor que el usuario intenta escribir en la celda). Con los operadores ternarios between y NotBetween, especifica el operando de límite inferior. Al establecer el valor, se puede pasar como una fecha, un objeto Range o una fórmula de cadena (donde la cadena es una fecha y hora de stringified en formato ISO8601, una referencia de celda como "= a1" o una fórmula como "= MIN (a1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
+  summary: 'Especifica el operando derecho cuando la propiedad operator se establece en un operador binario como GreaterThan (el operando izquierdo es el valor que el usuario intenta escribir en la celda). Con los operadores ternarios Between y NotBetween, especifica el operando enlazado inferior. Al establecer el valor, se puede pasar como un objeto Date, un objeto Range o una fórmula de cadena (donde la cadena es una fecha y hora con cadena en formato ISO8601, una referencia de celda como "=A1" o una fórmula como "=MIN(A1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: 'Con los operadores ternarios between y NotBetween, especifica el operando de límite superior. No se utiliza con los operadores binarios, como GreaterThan. Al establecer el valor, se puede pasar como una fecha, un objeto Range o una cadena (donde la cadena es una fecha y hora de stringified en formato ISO8601, una referencia de celda como "= a1" o una fórmula como "= MIN (a1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "= 10", "= a1", "= SUM (a1: B5)", etc.'
+  summary: 'Con los operadores ternarios Between y NotBetween, especifica el operando de límite superior. No se usa con los operadores binarios, como GreaterThan. Al establecer el valor, se puede pasar como date, un objeto Range o una cadena (donde la cadena es una fecha y hora con cadena en formato ISO8601, una referencia de celda como "=A1" o una fórmula como "=MIN(A1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
 metadata:
-  ms.openlocfilehash: e996fdc017fd932a17031a0bb57255f84f01759c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c1b292157a719eed4f7ba1716623d9e64f359ae2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415433"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607042"

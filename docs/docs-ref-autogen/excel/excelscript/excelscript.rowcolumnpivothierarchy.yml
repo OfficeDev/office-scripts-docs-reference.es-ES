@@ -3,7 +3,7 @@ name: ExcelScript.RowColumnPivotHierarchy
 uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.RowColumnPivotHierarchy
-summary: Representa el RowColumnPivotHierarchy de Excel.
+summary: Representa el objeto RowColumnPivotHierarchy de Excel.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Identificador de la RowColumnPivotHierarchy.
+  summary: Id. de RowColumnPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: Obtiene un PivotField por nombre. Si el campo dinámico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene un campo dinámico por su nombre. Si el campo dinámico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -126,9 +126,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5a134274f2e2e795189bda817df67130072ea113
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 9a12efdc954ddec358bb105966562175906974f0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554534"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606091"

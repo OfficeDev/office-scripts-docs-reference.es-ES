@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TextRange#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Devuelve un objeto ShapeFont que representa los atributos de fuente para el intervalo de texto.
+  summary: Devuelve un `ShapeFont` objeto que representa los atributos de fuente del intervalo de texto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,7 +34,7 @@ methods:
     content: 'getSubstring(start: number, length?: number): TextRange;'
     parameters:
     - id: start
-      description: Índice de base cero del primer carácter que se va a obtener del intervalo de texto.
+      description: Índice basado en cero del primer carácter que se obtiene del intervalo de texto.
       type: number
     - id: length
       description: Opcional. Número de caracteres que se devolverán en el nuevo intervalo de texto. Si se omite length, se devolverán todos los caracteres desde el principio hasta el final del último párrafo del intervalo de texto.
@@ -73,9 +73,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6a02ebe67d08adff8c825586a96ada8c4177a1d4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b83f4e4ba30aafab3008fd7370d17230213f13f3
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420240"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605286"

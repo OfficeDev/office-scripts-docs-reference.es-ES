@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: Una fórmula de validación de datos personalizados. Esto crea reglas de entrada especiales, como evitar duplicados o limitar el total de un rango de celdas.
+  summary: Una fórmula de validación de datos personalizados. Esto crea reglas de entrada especiales, como impedir duplicados o limitar el total en un rango de celdas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -22,9 +22,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 00ca951e7f8db10335c4f605a4b8d1e9a44d1a0a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abceba6296f70e4098ed3fd999ce8e04638d3048
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415641"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607154"

@@ -3,7 +3,7 @@ name: ExcelScript.ChartSeriesBy
 uid: ExcelScript!ExcelScript.ChartSeriesBy:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesBy
-summary: Especifica si la serie se establece por filas o por columnas. En el escritorio, la opción "automático" inspeccionará la forma de los datos de origen para adivinar automáticamente si los datos están por filas o columnas; en Excel en la web, "auto" se establece de forma predeterminada en "Columns".
+summary: Especifica si la serie está por filas o por columnas. En Excel en el escritorio, la opción "auto" inspeccionará la forma de datos de origen para adivinar automáticamente si los datos son por filas o columnas. En Excel en la web, "auto" simplemente tendrá el valor predeterminado "columns".
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,7 +11,7 @@ fields:
 - name: auto
   uid: ExcelScript!ExcelScript.ChartSeriesBy.auto:member
   package: ExcelScript!
-  summary: En el escritorio, la opción "automático" inspeccionará la forma de los datos de origen para adivinar automáticamente si los datos están por filas o columnas; en Excel en la web, "auto" se establece de forma predeterminada en "Columns".
+  summary: En Excel en el escritorio, la opción "auto" inspeccionará la forma de datos de origen para adivinar automáticamente si los datos son por filas o columnas. En Excel en la web, "auto" simplemente tendrá el valor predeterminado "columns".
 - name: columns
   uid: ExcelScript!ExcelScript.ChartSeriesBy.columns:member
   package: ExcelScript!
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: f238e90af515a6bea1ddaf405d08fa645ce353f3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fb096e4967f4cba2bae1762ea3f5cd8685a54ccf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416061"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606846"

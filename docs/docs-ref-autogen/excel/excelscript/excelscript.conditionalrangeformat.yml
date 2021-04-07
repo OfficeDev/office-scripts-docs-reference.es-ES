@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFormat
 uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
-summary: Un objeto Format que encapsula la fuente del rango de formatos condicionales, el relleno, los bordes y otras propiedades.
+summary: Un objeto format que encapsula la fuente, el relleno, los bordes y otras propiedades del intervalo de formatos condicionales.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: Colección de objetos Border que se aplican al intervalo de formato condicional general.
+  summary: Colección de objetos de borde que se aplican al intervalo de formato condicional general.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ methods:
               ): ConditionalRangeBorder;
     parameters:
     - id: index
-      description: Valor de índice del objeto de borde que va a recuperarse. Consulte ExcelScript. ConditionalRangeBorderIndex para obtener información detallada.
+      description: Valor de índice del objeto de borde que va a recuperarse. Vea `ExcelScript.ConditionalRangeBorderIndex` para más información.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Devuelve el objeto de relleno definido en el intervalo de formato condicional general.
+  summary: Devuelve el objeto fill definido en el intervalo de formato condicional general.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Devuelve el objeto Font definido en el intervalo de formatos condicionales general.
+  summary: Devuelve el objeto de fuente definido en el intervalo de formato condicional general.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Representa el código de formato numérico de Excel para el intervalo especificado. Se borra si se pasa null.
+  summary: Representa el código de formato de número de Excel para el intervalo especificado. Se borra si `null` se pasa.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Representa el código de formato numérico de Excel para el intervalo especificado. Se borra si se pasa null.
+  summary: Representa el código de formato de número de Excel para el intervalo especificado. Se borra si `null` se pasa.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,9 +151,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: be58369049f9a2cb9cd0fe4054310f143edad700
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e63b2c2a317b000595bc16de7e43ca89a08fa57a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419379"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606706"

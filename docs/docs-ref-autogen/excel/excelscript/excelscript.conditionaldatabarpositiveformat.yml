@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalDataBarPositiveFormat
 uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarPositiveFormat
-summary: Representa un formato de barra de datos de formato condicional para el lado positivo de la barra de datos.
+summary: Representa un formato condicional para el lado positivo de la barra de datos.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)
   package: ExcelScript!
   fullName: getBorderColor()
-  summary: Código de color HTML que representa el color de la línea de borde, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). "" (cadena vacía) si no hay ningún borde presente o establecido.
+  summary: Código de color HTML que representa el color de la línea de borde, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). El valor es "" (una cadena vacía) si no hay ningún borde presente o establecido.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)
   package: ExcelScript!
   fullName: getFillColor()
-  summary: Código de color HTML que representa el color de relleno, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: Código de color HTML que representa el color de relleno, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)
   package: ExcelScript!
   fullName: getGradientFill()
-  summary: Especifica si DataBar tiene un degradado.
+  summary: Especifica si la barra de datos tiene un degradado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)
   package: ExcelScript!
   fullName: setBorderColor(borderColor)
-  summary: Código de color HTML que representa el color de la línea de borde, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). "" (cadena vacía) si no hay ningún borde presente o establecido.
+  summary: Código de color HTML que representa el color de la línea de borde, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja"). El valor es "" (una cadena vacía) si no hay ningún borde presente o establecido.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)
   package: ExcelScript!
   fullName: setFillColor(fillColor)
-  summary: Código de color HTML que representa el color de relleno, \# con la forma RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: Código de color HTML que representa el color de relleno, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)
   package: ExcelScript!
   fullName: setGradientFill(gradientFill)
-  summary: Especifica si DataBar tiene un degradado.
+  summary: Especifica si la barra de datos tiene un degradado.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,9 +100,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e2477aab79cb1074e976aa71eb0748a362c1cda3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 14b0d49be1628d431e11f9eeb3b2534ab09bbeb2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420688"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607105"

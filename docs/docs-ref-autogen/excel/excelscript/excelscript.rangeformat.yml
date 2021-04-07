@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
   package: ExcelScript!
   fullName: adjustIndent(amount)
-  summary: Ajusta la sangría del formato de intervalo. El valor de sangría oscila entre 0 y 250 y se mide en caracteres.
+  summary: Ajusta la sangría del formato del intervalo. El valor de sangría oscila entre 0 y 250 y se mide en caracteres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'adjustIndent(amount: number): void;'
     parameters:
     - id: amount
-      description: 'Número de espacios de carácter que se ajustan a la sangría actual. Este valor debe estar comprendido entre-250 y 250. **Nota**: Si la cantidad aumentaría el nivel de sangría superior a 250, el nivel de sangría permanecerá con 250. De forma similar, si la cantidad disminuye el nivel de sangría por debajo de 0, el nivel de sangría sigue siendo 0.'
+      description: Número de espacios de caracteres por los que se ajusta la sangría actual. Este valor debe estar entre -250 y 250. **Nota:** Si la cantidad elevaría el nivel de sangría por encima de 250, el nivel de sangría permanece en 250. Del mismo modo, si la cantidad reduciría el nivel de sangría por debajo de 0, el nivel de sangría permanece 0.
       type: number
     return:
       type: void
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: Especifica si se aplica sangría al texto automáticamente cuando la alineación del texto se establece en una distribución igual.
+  summary: Especifica si el texto se aplica sangría automáticamente cuando la alineación de texto se establece en distribución igual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
   package: ExcelScript!
   fullName: getColumnWidth()
-  summary: Especifica el ancho de todos los colums dentro del intervalo. Si los anchos de columna no son uniformes, se devolverá null.
+  summary: Especifica el ancho de todas las colums dentro del intervalo. Si los anchos de columna no son uniformes, `null` se devolverán.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Representa la alineación horizontal del objeto especificado. Consulte ExcelScript. HorizontalAlignment para obtener más información.
+  summary: Representa la alineación horizontal del objeto especificado. Vea `ExcelScript.HorizontalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: Valor de índice del objeto de borde que va a recuperarse. Consulte ExcelScript. BorderIndex para obtener información detallada.
+      description: Valor de índice del objeto de borde que va a recuperarse. Vea `ExcelScript.BorderIndex` para más información.
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: Especifica un doble que aclara u oscurece un color para los bordes del intervalo, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor null indica que todas las colecciones de bordes no tienen un valor de tintAndShade uniforme.
+  summary: Especifica un doble que aligera u oscurece un color para los bordes del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que toda la colección de borde no tiene una configuración `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
   package: ExcelScript!
   fullName: getRowHeight()
-  summary: Alto de todas las filas del rango. Si el alto de las filas no es uniforme, se devolverá null.
+  summary: Alto de todas las filas del rango. Si los altos de fila no son uniformes, `null` se devolverán.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -229,7 +229,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Orientación del texto de todas las celdas dentro del rango. La orientación del texto debe ser un número entero entre-90 y 90, o bien 180 para el texto orientado verticalmente. Si la orientación dentro de un rango no es uniforme, se devolverá null.
+  summary: Orientación del texto de todas las celdas dentro del rango. La orientación del texto debe ser un entero de -90 a 90 o 180 para texto orientado verticalmente. Si la orientación dentro de un rango no es uniforme, `null` se devolverá.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: getUseStandardHeight()
-  summary: Determina si la altura de la fila del objeto Range es igual a la altura estándar de la hoja. Devuelve true si el alto de la fila del objeto Range es igual al alto estándar de la hoja. Devuelve NULL si el rango contiene más de una fila y no todas las filas tienen el mismo alto. Devuelve false en caso contrario.
+  summary: 'Determina si el alto de fila del `Range` objeto es igual al alto estándar de la hoja. Devuelve `true` si el alto de fila del objeto es igual al alto estándar de la `Range` hoja. Devuelve `null` si el intervalo contiene más de una fila y las filas no tienen el mismo alto. Devuelve `false` lo contrario. Nota: Esta propiedad solo está diseñada para establecerse en `true`<!-- -->. Establecerlo en `false` no tiene ningún efecto.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: getUseStandardWidth()
-  summary: Especifica si el ancho de columna del objeto Range es igual al ancho estándar de la hoja. Devuelve true si el ancho de columna del objeto Range es igual al ancho estándar de la hoja. Devuelve NULL si el rango contiene más de una columna y no todas las columnas tienen el mismo alto. Devuelve false en caso contrario.
+  summary: 'Especifica si el ancho de columna del `Range` objeto es igual al ancho estándar de la hoja. Devuelve `true` si el ancho de columna del objeto es igual al ancho estándar de la `Range` hoja. Devuelve `null` si el rango contiene más de una columna y las columnas no tienen el mismo alto. Devuelve `false` lo contrario. Nota: Esta propiedad solo está diseñada para establecerse en `true`<!-- -->. Establecerlo en `false` no tiene ningún efecto.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Representa la alineación vertical del objeto especificado. Consulte ExcelScript. VerticalAlignment para obtener más información.
+  summary: Representa la alineación vertical del objeto especificado. Vea `ExcelScript.VerticalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -281,7 +281,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
   package: ExcelScript!
   fullName: getWrapText()
-  summary: Especifica si Excel ajusta el texto del objeto. Un valor NULL indica que el intervalo completo no tiene una configuración de ajuste uniforme.
+  summary: Especifica si Excel ajusta el texto del objeto. Un `null` valor indica que todo el intervalo no tiene una configuración de ajuste uniforme
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -294,7 +294,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: Especifica si se aplica sangría al texto automáticamente cuando la alineación del texto se establece en una distribución igual.
+  summary: Especifica si el texto se aplica sangría automáticamente cuando la alineación de texto se establece en distribución igual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -311,7 +311,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
   package: ExcelScript!
   fullName: setColumnWidth(columnWidth)
-  summary: Especifica el ancho de todos los colums dentro del intervalo. Si los anchos de columna no son uniformes, se devolverá null.
+  summary: Especifica el ancho de todas las colums dentro del intervalo. Si los anchos de columna no son uniformes, `null` se devolverán.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -328,7 +328,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Representa la alineación horizontal del objeto especificado. Consulte ExcelScript. HorizontalAlignment para obtener más información.
+  summary: Representa la alineación horizontal del objeto especificado. Vea `ExcelScript.HorizontalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -362,7 +362,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: Especifica un doble que aclara u oscurece un color para los bordes del intervalo, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor null indica que todas las colecciones de bordes no tienen un valor de tintAndShade uniforme.
+  summary: Especifica un doble que aligera u oscurece un color para los bordes del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que toda la colección de borde no tiene una configuración `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -396,7 +396,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
   package: ExcelScript!
   fullName: setRowHeight(rowHeight)
-  summary: Alto de todas las filas del rango. Si el alto de las filas no es uniforme, se devolverá null.
+  summary: Alto de todas las filas del rango. Si los altos de fila no son uniformes, `null` se devolverán.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -430,7 +430,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Orientación del texto de todas las celdas dentro del rango. La orientación del texto debe ser un número entero entre-90 y 90, o bien 180 para el texto orientado verticalmente. Si la orientación dentro de un rango no es uniforme, se devolverá null.
+  summary: Orientación del texto de todas las celdas dentro del rango. La orientación del texto debe ser un entero de -90 a 90 o 180 para texto orientado verticalmente. Si la orientación dentro de un rango no es uniforme, `null` se devolverá.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
   package: ExcelScript!
   fullName: setUseStandardHeight(useStandardHeight)
-  summary: Determina si la altura de la fila del objeto Range es igual a la altura estándar de la hoja. Devuelve true si el alto de la fila del objeto Range es igual al alto estándar de la hoja. Devuelve NULL si el rango contiene más de una fila y no todas las filas tienen el mismo alto. Devuelve false en caso contrario.
+  summary: 'Determina si el alto de fila del `Range` objeto es igual al alto estándar de la hoja. Devuelve `true` si el alto de fila del objeto es igual al alto estándar de la `Range` hoja. Devuelve `null` si el intervalo contiene más de una fila y las filas no tienen el mismo alto. Devuelve `false` lo contrario. Nota: Esta propiedad solo está diseñada para establecerse en `true`<!-- -->. Establecerlo en `false` no tiene ningún efecto.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
   package: ExcelScript!
   fullName: setUseStandardWidth(useStandardWidth)
-  summary: Especifica si el ancho de columna del objeto Range es igual al ancho estándar de la hoja. Devuelve true si el ancho de columna del objeto Range es igual al ancho estándar de la hoja. Devuelve NULL si el rango contiene más de una columna y no todas las columnas tienen el mismo alto. Devuelve false en caso contrario.
+  summary: 'Especifica si el ancho de columna del `Range` objeto es igual al ancho estándar de la hoja. Devuelve `true` si el ancho de columna del objeto es igual al ancho estándar de la `Range` hoja. Devuelve `null` si el rango contiene más de una columna y las columnas no tienen el mismo alto. Devuelve `false` lo contrario. Nota: Esta propiedad solo está diseñada para establecerse en `true`<!-- -->. Establecerlo en `false` no tiene ningún efecto.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Representa la alineación vertical del objeto especificado. Consulte ExcelScript. VerticalAlignment para obtener más información.
+  summary: Representa la alineación vertical del objeto especificado. Vea `ExcelScript.VerticalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -498,7 +498,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
   package: ExcelScript!
   fullName: setWrapText(wrapText)
-  summary: Especifica si Excel ajusta el texto del objeto. Un valor NULL indica que el intervalo completo no tiene una configuración de ajuste uniforme.
+  summary: Especifica si Excel ajusta el texto del objeto. Un `null` valor indica que todo el intervalo no tiene una configuración de ajuste uniforme
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,9 +512,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 427882c57a1da4adab9f1e74ed60f018af3fd110
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d1ab7aaf1d0c3966e7137f58c35b5fc3d0d9e557
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411925"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607168"

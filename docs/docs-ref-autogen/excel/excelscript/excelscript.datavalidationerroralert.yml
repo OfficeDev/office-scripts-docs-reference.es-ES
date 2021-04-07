@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
   package: ExcelScript!
   fullName: showAlert
-  summary: Especifica si se muestra un cuadro de diálogo de alerta de error cuando un usuario escribe datos no válidos. El valor predeterminado es true.
+  summary: Especifica si se va a mostrar un cuadro de diálogo de alerta de error cuando un usuario escribe datos no válidos. El valor predeterminado es `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
   package: ExcelScript!
   fullName: style
-  summary: El tipo de alerta de validación de datos, consulte ExcelScript. DataValidationAlertStyle para obtener información detallada.
+  summary: El tipo de alerta de validación de datos, consulte `ExcelScript.DataValidationAlertStyle` para obtener más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
   package: ExcelScript!
   fullName: title
-  summary: Representa el título del cuadro de diálogo de alerta de error.
+  summary: Representa el título del cuadro de diálogo alerta de error.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 03292fc7608c01c280e7eb5e22dc9fe5bb89f659
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 64aa138911f1d67dd1bf48512168281cbacfda3b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415550"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606526"

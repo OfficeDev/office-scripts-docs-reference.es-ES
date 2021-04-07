@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationRule
 uid: ExcelScript!ExcelScript.DataValidationRule:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationRule
-summary: La regla de validación de datos contiene distintos tipos de validación de datos. Solo puede usar uno de ellos a la vez según ExcelScript. DataValidationType.
+summary: Una regla de validación de datos contiene diferentes tipos de validación de datos. Solo puede usar uno de ellos a la vez según el `ExcelScript.DataValidationType`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationRule#textLength:member
   package: ExcelScript!
   fullName: textLength
-  summary: Criterios de validación de datos TextLength.
+  summary: Criterios de validación de datos de longitud de texto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationRule#wholeNumber:member
   package: ExcelScript!
   fullName: wholeNumber
-  summary: Criterios de validación de datos de WholeNumber.
+  summary: Criterios de validación de datos de números enteros.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -94,9 +94,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.BasicDataValidation:interface" />
 metadata:
-  ms.openlocfilehash: 06c10b581e27d5f81cb480765f4307b769ef0b2e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 591a2aa528053bbdeadcb4c97a0da42b99f075a6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415508"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606512"

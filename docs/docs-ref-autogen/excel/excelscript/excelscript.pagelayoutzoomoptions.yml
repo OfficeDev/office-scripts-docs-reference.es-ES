@@ -3,7 +3,7 @@ name: ExcelScript.PageLayoutZoomOptions
 uid: ExcelScript!ExcelScript.PageLayoutZoomOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayoutZoomOptions
-summary: Representa propiedades de zoom de página.
+summary: Representa las propiedades de zoom de página.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member
   package: ExcelScript!
   fullName: horizontalFitToPages
-  summary: Número de páginas para ajustar horizontalmente. Este valor puede ser null si se utiliza la escala de porcentaje.
+  summary: Número de páginas para ajustar horizontalmente. Este valor puede ser `null` si se usa la escala porcentual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#scale:member
   package: ExcelScript!
   fullName: scale
-  summary: El valor de la escala de página de impresión puede estar entre 10 y 400. Este valor puede ser null si no se especifica que debe ajustarse al ancho o alto de la página.
+  summary: El valor de la escala de página de impresión puede estar entre 10 y 400. Este valor puede ser si se especifica ajustar a la página `null` alta o ancha.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member
   package: ExcelScript!
   fullName: verticalFitToPages
-  summary: Número de páginas para ajustar verticalmente. Este valor puede ser null si se utiliza la escala de porcentaje.
+  summary: Número de páginas para ajustar verticalmente. Este valor puede ser `null` si se usa la escala porcentual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: number
 metadata:
-  ms.openlocfilehash: 2a2da1f74156c03a28170a94b0d2fc9aabfd960f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 745f7759380e98af90f43cb3a032629642bed648
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412177"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606409"

@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
   package: ExcelScript!
   fullName: allowAutoFilter
-  summary: Representa la opción de protección de la hoja de cálculo que permite usar la característica de filtro automático.
+  summary: Representa la opción de protección de hoja de cálculo que permite el uso de la característica Autofiltro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member
   package: ExcelScript!
   fullName: allowDeleteColumns
-  summary: Representa la opción de protección de la hoja de cálculo que permite eliminar columnas.
+  summary: Representa la opción de protección de hoja de cálculo que permite eliminar columnas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member
   package: ExcelScript!
   fullName: allowDeleteRows
-  summary: Representa la opción de protección de la hoja de cálculo que permite eliminar filas.
+  summary: Representa la opción de protección de hoja de cálculo que permite eliminar filas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member
   package: ExcelScript!
   fullName: allowEditObjects
-  summary: Representa la opción de protección de la hoja de cálculo que permite editar objetos.
+  summary: Representa la opción de protección de hoja de cálculo que permite editar objetos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
   package: ExcelScript!
   fullName: allowEditScenarios
-  summary: Representa la opción de protección de la hoja de cálculo que permite editar escenarios.
+  summary: Representa la opción de protección de hoja de cálculo que permite editar escenarios.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatCells:member
   package: ExcelScript!
   fullName: allowFormatCells
-  summary: Representa la opción de protección de la hoja de cálculo que permite aplicar formato a celdas.
+  summary: Representa la opción de protección de hoja de cálculo que permite el formato de las celdas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatColumns:member
   package: ExcelScript!
   fullName: allowFormatColumns
-  summary: Representa la opción de protección de la hoja de cálculo que permite aplicar formato a columnas.
+  summary: Representa la opción de protección de hoja de cálculo que permite dar formato a las columnas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowFormatRows:member
   package: ExcelScript!
   fullName: allowFormatRows
-  summary: Representa la opción de protección de la hoja de cálculo que permite aplicar formato a filas.
+  summary: Representa la opción de protección de hoja de cálculo que permite dar formato a las filas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,7 +109,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member
   package: ExcelScript!
   fullName: allowInsertColumns
-  summary: Representa la opción de protección de la hoja de cálculo que permite insertar columnas.
+  summary: Representa la opción de protección de hoja de cálculo que permite insertar columnas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member
   package: ExcelScript!
   fullName: allowInsertHyperlinks
-  summary: Representa la opción de protección de la hoja de cálculo que permite insertar hipervínculos.
+  summary: Representa la opción de protección de hoja de cálculo que permite insertar hipervínculos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member
   package: ExcelScript!
   fullName: allowInsertRows
-  summary: Representa la opción de protección de la hoja de cálculo que permite insertar filas.
+  summary: Representa la opción de protección de hoja de cálculo que permite insertar filas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
   package: ExcelScript!
   fullName: allowPivotTables
-  summary: Representa la opción de protección de la hoja de cálculo que permite usar la característica de tabla dinámica.
+  summary: Representa la opción de protección de hoja de cálculo que permite el uso de la característica de tabla dinámica.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -157,7 +157,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
   package: ExcelScript!
   fullName: allowSort
-  summary: Representa la opción de protección de la hoja de cálculo que permite usar la característica de ordenación.
+  summary: Representa la opción de protección de hoja de cálculo que permite el uso de la característica de ordenación.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -178,9 +178,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
 metadata:
-  ms.openlocfilehash: d4d1d23a781e1be35d76429ab5af1d60d5d696c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0772bfad59e8d426f5f989afdd69557ba5d49c10
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419232"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605293"
