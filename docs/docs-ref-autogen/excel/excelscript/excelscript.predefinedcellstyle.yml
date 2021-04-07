@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getAutoIndent:member(1)
   package: ExcelScript!
   fullName: getAutoIndent()
-  summary: Especifica si se aplica sangría al texto automáticamente cuando la alineación del texto de una celda se establece en una distribución igualada.
+  summary: Especifica si el texto se aplica sangría automáticamente cuando la alineación de texto de una celda se establece en distribución igual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: Una colección de bordes de cuatro objetos Border que representan el estilo de los cuatro bordes.
+  summary: Colección de cuatro objetos de borde que representan el estilo de los cuatro bordes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: El relleno del estilo.
+  summary: Relleno del estilo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Un objeto de fuente que representa la fuente del estilo.
+  summary: Objeto `Font` que representa la fuente del estilo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Representa la alineación horizontal del estilo. Consulte ExcelScript. HorizontalAlignment para obtener más información.
+  summary: Representa la alineación horizontal del estilo. Vea `ExcelScript.HorizontalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: getIncludeAlignment()
-  summary: Especifica si el estilo incluye las propiedades autodent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel y TextOrientation.
+  summary: Especifica si el estilo incluye las propiedades de sangría automática, alineación horizontal, alineación vertical, texto de ajuste, nivel de sangría y orientación de texto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeBorder:member(1)
   package: ExcelScript!
   fullName: getIncludeBorder()
-  summary: Especifica si el estilo incluye las propiedades color, ColorIndex, LineStyle y Weight Border.
+  summary: Especifica si el estilo incluye las propiedades de color, índice de color, estilo de línea y borde de grosor.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeFont:member(1)
   package: ExcelScript!
   fullName: getIncludeFont()
-  summary: Especifica si el estilo incluye las propiedades Background, Bold, color, ColorIndex, FontStyle, Italic, Name, size, StrikeThrough, subscript, Superscript y subrayado de la fuente.
+  summary: Especifica si el estilo incluye las propiedades background, bold, color, color index, font style, italic, name, size, strikethrough, subscript, superscript y underline font.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeNumber:member(1)
   package: ExcelScript!
   fullName: getIncludeNumber()
-  summary: Especifica si el estilo incluye la propiedad NumberFormat.
+  summary: Especifica si el estilo incluye la propiedad number format.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludePatterns:member(1)
   package: ExcelScript!
   fullName: getIncludePatterns()
-  summary: Especifica si el estilo incluye las propiedades interiores color, ColorIndex, InvertIfNegative, Pattern, PatternColor y PatternColorIndex.
+  summary: Especifica si el estilo incluye las propiedades de color, índice de color, invertir si es negativo, patrón, color de patrón e índice de color de patrón.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getIncludeProtection:member(1)
   package: ExcelScript!
   fullName: getIncludeProtection()
-  summary: Especifica si el estilo incluye las propiedades de protección FormulaHidden y locked.
+  summary: Especifica si el estilo incluye las propiedades de protección ocultas y bloqueadas de fórmula.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -268,7 +268,7 @@ methods:
     content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
     parameters:
     - id: index
-      description: Valor de índice del objeto de borde que va a recuperarse. Consulte ExcelScript. BorderIndex para obtener información detallada.
+      description: Valor de índice del objeto de borde que va a recuperarse. Vea `ExcelScript.BorderIndex` para más información.
       type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
@@ -277,7 +277,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: getRangeBorderTintAndShade()
-  summary: Especifica un doble que aclara u oscurece un color para los bordes del intervalo, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor null indica que todas las colecciones de bordes no tienen un valor de tintAndShade uniforme.
+  summary: Especifica un doble que aligera u oscurece un color para los bordes del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que toda la colección de borde no tiene una configuración `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -329,7 +329,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Especifica la alineación vertical del estilo. Consulte ExcelScript. VerticalAlignment para obtener más información.
+  summary: Especifica la alineación vertical del estilo. Vea `ExcelScript.VerticalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setAutoIndent:member(1)
   package: ExcelScript!
   fullName: setAutoIndent(autoIndent)
-  summary: Especifica si se aplica sangría al texto automáticamente cuando la alineación del texto de una celda se establece en una distribución igualada.
+  summary: Especifica si el texto se aplica sangría automáticamente cuando la alineación de texto de una celda se establece en distribución igual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -389,7 +389,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Representa la alineación horizontal del estilo. Consulte ExcelScript. HorizontalAlignment para obtener más información.
+  summary: Representa la alineación horizontal del estilo. Vea `ExcelScript.HorizontalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -406,7 +406,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeAlignment:member(1)
   package: ExcelScript!
   fullName: setIncludeAlignment(includeAlignment)
-  summary: Especifica si el estilo incluye las propiedades autodent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel y TextOrientation.
+  summary: Especifica si el estilo incluye las propiedades de sangría automática, alineación horizontal, alineación vertical, texto de ajuste, nivel de sangría y orientación de texto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeBorder:member(1)
   package: ExcelScript!
   fullName: setIncludeBorder(includeBorder)
-  summary: Especifica si el estilo incluye las propiedades color, ColorIndex, LineStyle y Weight Border.
+  summary: Especifica si el estilo incluye las propiedades de color, índice de color, estilo de línea y borde de grosor.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -440,7 +440,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeFont:member(1)
   package: ExcelScript!
   fullName: setIncludeFont(includeFont)
-  summary: Especifica si el estilo incluye las propiedades Background, Bold, color, ColorIndex, FontStyle, Italic, Name, size, StrikeThrough, subscript, Superscript y subrayado de la fuente.
+  summary: Especifica si el estilo incluye las propiedades background, bold, color, color index, font style, italic, name, size, strikethrough, subscript, superscript y underline font.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -457,7 +457,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeNumber:member(1)
   package: ExcelScript!
   fullName: setIncludeNumber(includeNumber)
-  summary: Especifica si el estilo incluye la propiedad NumberFormat.
+  summary: Especifica si el estilo incluye la propiedad number format.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -474,7 +474,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludePatterns:member(1)
   package: ExcelScript!
   fullName: setIncludePatterns(includePatterns)
-  summary: Especifica si el estilo incluye las propiedades interiores color, ColorIndex, InvertIfNegative, Pattern, PatternColor y PatternColorIndex.
+  summary: Especifica si el estilo incluye las propiedades de color, índice de color, invertir si es negativo, patrón, color de patrón e índice de color de patrón.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -491,7 +491,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setIncludeProtection:member(1)
   package: ExcelScript!
   fullName: setIncludeProtection(includeProtection)
-  summary: Especifica si el estilo incluye las propiedades de protección FormulaHidden y locked.
+  summary: Especifica si el estilo incluye las propiedades de protección ocultas y bloqueadas de fórmula.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -576,7 +576,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)
   package: ExcelScript!
   fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-  summary: Especifica un doble que aclara u oscurece un color para los bordes del intervalo, el valor está comprendido entre-1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un valor null indica que todas las colecciones de bordes no tienen un valor de tintAndShade uniforme.
+  summary: Especifica un doble que aligera u oscurece un color para los bordes del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que toda la colección de borde no tiene una configuración `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Especifica la alineación vertical del estilo. Consulte ExcelScript. VerticalAlignment para obtener más información.
+  summary: Especifica la alineación vertical del estilo. Vea `ExcelScript.VerticalAlignment` para más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -675,9 +675,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5969a129dc30629684c79765be7c43892cf87600
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 90d16417266aad48b871faec7c48f2fd03d52985
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416704"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607448"

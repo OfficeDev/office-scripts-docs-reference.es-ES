@@ -3,7 +3,7 @@ name: ExcelScript.ReplaceCriteria
 uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.ReplaceCriteria
-summary: Representa los criterios de reemplazo que se van a usar.
+summary: Representa los criterios de reemplazo que se usarán.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: Especifica si la coincidencia debe estar completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, `cat` coincidencias parciales `caterpillar` y `scatter`<!-- -->). El valor predeterminado es false (parcial).
+  summary: Especifica si la coincidencia debe ser completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, coincide `cat` parcialmente `caterpillar` y `scatter`<!-- -->). El valor predeterminado `false` es (parcial).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
   package: ExcelScript!
   fullName: matchCase
-  summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor predeterminado es false (no se distinguen).
+  summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor `false` predeterminado es (no tiene mayúsculas de minúsculas).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 1894a4f11b497b0f71859489023b1c3d69e3e0d6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 12d571fa44027a6f1bb2a3ad94ac2192171dc363
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420681"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607413"
