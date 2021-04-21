@@ -3,7 +3,7 @@ name: ExcelScript.ShapeLineStyle
 uid: ExcelScript!ExcelScript.ShapeLineStyle:enum
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineStyle
-summary: Estilo de una línea.
+summary: El estilo de una línea.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -19,19 +19,19 @@ fields:
 - name: thickThin
   uid: ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member
   package: ExcelScript!
-  summary: Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por encima de la línea fina. Para líneas verticales, la línea gruesa está a la izquierda de la línea fina.
+  summary: Línea gruesa junto a línea fina. Para las líneas horizontales, la línea gruesa está por encima de la línea delgada. Para las líneas verticales, la línea gruesa está a la izquierda de la línea delgada.
 - name: thinThick
   uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member
   package: ExcelScript!
-  summary: Línea gruesa junto a línea fina. Para líneas horizontales, la línea gruesa está por debajo de la línea fina. Para líneas verticales, la línea gruesa está a la derecha de la línea fina.
+  summary: Línea gruesa junto a línea fina. Para las líneas horizontales, la línea gruesa está debajo de la línea delgada. Para las líneas verticales, la línea gruesa está a la derecha de la línea delgada.
 - name: thinThin
   uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member
   package: ExcelScript!
   summary: Dos líneas finas.
 metadata:
-  ms.openlocfilehash: b3b5d5a888b7055f50e0ae080eff50a898717a93
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 05c9927a86ac3301390897d4f09c15ccdb49606a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411750"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913401"

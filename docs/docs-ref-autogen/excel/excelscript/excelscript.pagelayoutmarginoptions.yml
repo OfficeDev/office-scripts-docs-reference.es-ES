@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member
   package: ExcelScript!
   fullName: bottom
-  summary: Especifica el margen inferior del diseño de página en la unidad especificada para usar para la impresión.
+  summary: Especifica el margen inferior del diseño de página en la unidad especificada para la impresión.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member
   package: ExcelScript!
   fullName: footer
-  summary: Especifica el margen del pie de página de diseño de página en la unidad especificada para usar para la impresión.
+  summary: Especifica el margen de pie de página del diseño de página en la unidad especificada para la impresión.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member
   package: ExcelScript!
   fullName: header
-  summary: Especifica el margen del encabezado de diseño de página en la unidad especificada para usar para la impresión.
+  summary: Especifica el margen de encabezado de diseño de página en la unidad especificada para la impresión.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member
   package: ExcelScript!
   fullName: left
-  summary: Especifica el margen izquierdo de diseño de página en la unidad especificada para usar para la impresión.
+  summary: Especifica el margen izquierdo del diseño de página en la unidad especificada para la impresión.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member
   package: ExcelScript!
   fullName: right
-  summary: Especifica el margen derecho de diseño de página en la unidad especificada para usar para la impresión.
+  summary: Especifica el margen derecho del diseño de página en la unidad especificada para la impresión.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member
   package: ExcelScript!
   fullName: top
-  summary: Especifica el margen superior de diseño de página en la unidad especificada para usar para la impresión.
+  summary: Especifica el margen superior del diseño de página en la unidad especificada para la impresión.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,9 +82,9 @@ properties:
     return:
       type: number
 metadata:
-  ms.openlocfilehash: 3cd60d73c21b4ed612a6cd7b470c5e26f961056d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2f778f3a4f1d6b23382ec7b2dc956671a9bba9a8
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415291"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914331"

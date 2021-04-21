@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationPrompt
 uid: ExcelScript!ExcelScript.DataValidationPrompt:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationPrompt
-summary: Representa las propiedades de la solicitud de usuario para la validación de datos.
+summary: Representa las propiedades del símbolo del sistema del usuario para la validación de datos.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationPrompt#message:member
   package: ExcelScript!
   fullName: message
-  summary: Especifica el mensaje del aviso.
+  summary: Especifica el mensaje del símbolo del sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationPrompt#title:member
   package: ExcelScript!
   fullName: title
-  summary: Especifica el título del mensaje.
+  summary: Especifica el título del símbolo del sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 2fdb5a9bca93bd708016c210ba507a43087c4429
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 19034794c229abf7f140b73412e08361de43f189
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415501"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913670"

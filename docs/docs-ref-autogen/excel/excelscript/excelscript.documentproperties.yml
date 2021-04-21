@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Necesario. La tecla de la propiedad personalizada, que no distingue mayúsculas de minúsculas. La clave está limitada a 255 caracteres fuera de Excel en la web (las claves más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
+      description: Obligatorio. La clave de la propiedad personalizada, que no diferencia entre mayúsculas y minúsculas. La clave está limitada a 255 caracteres fuera de Excel en la web (las claves más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
       type: string
     - id: value
-      description: Necesario. El valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la web (los valores mayores se recortan automáticamente a 255 caracteres en otras plataformas).
+      description: Obligatorio. Valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la web (los valores más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)
   package: ExcelScript!
   fullName: getComments()
-  summary: Comentarios del libro.
+  summary: Los comentarios del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)
   package: ExcelScript!
   fullName: getCompany()
-  summary: La empresa del libro.
+  summary: La compañía del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: Necesario. Clave que identifica el objeto de la propiedad personalizada.
+      description: Obligatorio. La clave que identifica el objeto de propiedad personalizado.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -206,7 +206,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: Título del libro.
+  summary: El título del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,7 +253,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)
   package: ExcelScript!
   fullName: setComments(comments)
-  summary: Comentarios del libro.
+  summary: Los comentarios del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -270,7 +270,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)
   package: ExcelScript!
   fullName: setCompany(company)
-  summary: La empresa del libro.
+  summary: La compañía del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)
   package: ExcelScript!
   fullName: setTitle(title)
-  summary: Título del libro.
+  summary: El título del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5eab007d84d344b973beabd9d62c7753486d3895
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: b6ba5c9e2e1da6c6fddfee819fc8bc43a4cf24a9
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554656"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914418"

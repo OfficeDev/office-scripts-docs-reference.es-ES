@@ -11,51 +11,51 @@ fields:
 - name: billions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member
   package: ExcelScript!
-  summary: Se establecerá el eje en unidades de miles de millones.
+  summary: Esto establecerá el eje en unidades de miles de millones.
 - name: custom
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member
   package: ExcelScript!
-  summary: Se establecerá el eje en unidades de valor personalizado.
+  summary: Esto establecerá el eje en unidades de valor personalizado.
 - name: hundredMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member
   package: ExcelScript!
-  summary: Esto hará que el eje se establezca en unidades de centenas de millones.
+  summary: Esto establecerá el eje en unidades de cientos de millones.
 - name: hundreds
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member
   package: ExcelScript!
-  summary: Se establecerá el eje en unidades de centenas.
+  summary: Esto establecerá el eje en unidades de cientos.
 - name: hundredThousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member
   package: ExcelScript!
-  summary: Esto hará que el eje se configurará en unidades de cientos de miles.
+  summary: Esto establecerá el eje en unidades de cientos de miles.
 - name: millions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member
   package: ExcelScript!
-  summary: Se establecerá el eje en unidades de millones.
+  summary: Esto establecerá el eje en unidades de millones.
 - name: none
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member
   package: ExcelScript!
-  summary: Opción predeterminada. Esto restablecerá la unidad de visualización en el eje y la etiqueta de unidad será invisible.
+  summary: Opción predeterminada. Esto restablecerá la unidad de visualización en el eje y establecerá la etiqueta de unidad invisible.
 - name: tenMillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member
   package: ExcelScript!
-  summary: Esto hará que el eje se establezca en unidades de decenas de millones.
+  summary: Esto establecerá el eje en unidades de decenas de millones.
 - name: tenThousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member
   package: ExcelScript!
-  summary: Se establecerá el eje en unidades de decenas de miles.
+  summary: Esto establecerá el eje en unidades de decenas de miles.
 - name: thousands
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member
   package: ExcelScript!
-  summary: Se establecerá el eje en unidades de miles.
+  summary: Esto establecerá el eje en unidades de miles.
 - name: trillions
   uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member
   package: ExcelScript!
-  summary: Esto hará que el eje se establezca en unidades de billones.
+  summary: Esto establecerá el eje en unidades de trillones.
 metadata:
-  ms.openlocfilehash: ce73f608460520b055d6e811a4691fc16517df76
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 08e418c2cfe3a94b7d9293a1c4fa239af1044b0e
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417089"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913262"

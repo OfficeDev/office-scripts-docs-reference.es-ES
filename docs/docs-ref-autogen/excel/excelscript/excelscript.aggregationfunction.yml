@@ -61,9 +61,9 @@ fields:
   package: ExcelScript!
   summary: Agregado mediante la varianza de los datos, equivalente a la función VARP.
 metadata:
-  ms.openlocfilehash: e7c0e255ebfdaf6446c2c8cca20171cff0fdcbcf
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 092cb76f526a517d2395ea21634e90044d9fd05d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606699"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914016"

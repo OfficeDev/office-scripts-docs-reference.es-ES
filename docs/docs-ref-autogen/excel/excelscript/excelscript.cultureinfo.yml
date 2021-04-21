@@ -3,7 +3,7 @@ name: ExcelScript.CultureInfo
 uid: ExcelScript!ExcelScript.CultureInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.CultureInfo
-summary: Proporciona información basada en la configuración actual de la referencia cultural del sistema. Esto incluye los nombres de las referencias culturales, el formato de los números y otras configuraciones que dependen de la referencia cultural.
+summary: Proporciona información basada en la configuración de referencia cultural del sistema actual. Esto incluye los nombres de referencia cultural, el formato de número y otras configuraciones culturalmente dependientes.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
   package: ExcelScript!
   fullName: getDatetimeFormat()
-  summary: Define el formato adecuado culturalmente para mostrar la fecha y la hora. Esto se basa en la configuración actual de la referencia cultural del sistema.
+  summary: Define el formato culturalmente adecuado para mostrar fecha y hora. Esto se basa en la configuración de referencia cultural del sistema actual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Obtiene el nombre de la referencia cultural en el formato languagecode2-Country/regioncode2 (por ejemplo, "zh-CN" o "en-US"). Esto se basa en la configuración actual del sistema.
+  summary: Obtiene el nombre de la referencia cultural con el formato languagecode2-country/regioncode2 (por ejemplo, "zh-cn" o "en-us"). Esto se basa en la configuración actual del sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Define el formato adecuado culturalmente para mostrar números. Esto se basa en la configuración actual de la referencia cultural del sistema.
+  summary: Define el formato culturalmente adecuado para mostrar números. Esto se basa en la configuración de referencia cultural del sistema actual.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: a399c6a2970feddfa20b995cbb9e55cb565f9f07
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6d1e2ed04dfcdbb0275fc42382fa9a9e3f0c819b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415662"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913713"

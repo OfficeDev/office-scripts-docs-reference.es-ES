@@ -238,6 +238,23 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
       description: ''
+- name: addNamedSheetView(name)
+  uid: ExcelScript!ExcelScript.Worksheet#addNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: addNamedSheetView(name)
+  summary: Crea una nueva vista de hoja con el nombre especificado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addNamedSheetView(name: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: Nombre de la vista de hoja que se va a crear. Produce un error cuando el nombre proporcionado ya existe, está vacío o es un nombre reservado por la hoja de cálculo.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
 - name: addPivotTable(name, source, destination)
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
@@ -426,6 +443,32 @@ methods:
     return:
       type: void
       description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```javascript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
+- name: enterTemporaryNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: enterTemporaryNamedSheetView()
+  summary: Crea y activa una nueva vista de hoja temporal. Las vistas temporales se quitan al cerrar la aplicación, salir de la vista temporal con el método exit o cambiar a otra vista de hoja. La vista de hoja temporal también se puede acceder con la cadena vacía (""), si existe la vista temporal.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enterTemporaryNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: exitActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: exitActiveNamedSheetView()
+  summary: Sale de la vista de hoja activa actualmente.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exitActiveNamedSheetView(): void;'
+    return:
+      type: void
+      description: ''
 - name: findAll(text, criteria)
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
@@ -445,6 +488,19 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getActiveNamedSheetView()
+  uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getActiveNamedSheetView()
+  summary: Obtiene la vista de hoja activa actualmente de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getActiveNamedSheetView(): NamedSheetView;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
       description: ''
 - name: getAutoFilter()
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
@@ -667,6 +723,36 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
+      description: ''
+- name: getNamedSheetView(key)
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetView:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetView(key)
+  summary: Obtiene una vista de hoja con su nombre.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetView(key: string): NamedSheetView;'
+    parameters:
+    - id: key
+      description: Nombre que distingue mayúsculas de minúsculas de la vista de hoja. Use la cadena vacía ("") para obtener la vista de hoja temporal, si la vista temporal existe.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getNamedSheetViews()
+  uid: ExcelScript!ExcelScript.Worksheet#getNamedSheetViews:member(1)
+  package: ExcelScript!
+  fullName: getNamedSheetViews()
+  summary: Devuelve una colección de vistas de hoja que están presentes en la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNamedSheetViews(): NamedSheetView[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />[]
       description: ''
 - name: getNames()
   uid: ExcelScript!ExcelScript.Worksheet#getNames:member(1)
@@ -1292,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 821018eb13c005fc3de20385737536175e4686e4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 0264cc15d8a8218728682ed849333c8b5222960a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607287"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914666"
