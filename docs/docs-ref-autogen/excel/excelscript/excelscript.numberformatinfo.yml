@@ -3,7 +3,7 @@ name: ExcelScript.NumberFormatInfo
 uid: ExcelScript!ExcelScript.NumberFormatInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatInfo
-summary: Define el formato adecuado culturalmente para mostrar números. Esto se basa en la configuración actual de la referencia cultural del sistema.
+summary: Define el formato culturalmente adecuado para mostrar números. Esto se basa en la configuración de referencia cultural del sistema actual.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getNumberDecimalSeparator()
-  summary: Obtiene la cadena usada como separador decimal para los valores numéricos. Esto se basa en la configuración actual del sistema.
+  summary: Obtiene la cadena usada como separador decimal para valores numéricos. Esto se basa en la configuración actual del sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.NumberFormatInfo#getNumberGroupSeparator:member(1)
   package: ExcelScript!
   fullName: getNumberGroupSeparator()
-  summary: Obtiene la cadena que se usa para separar los grupos de dígitos a la izquierda de la coma decimal para los valores numéricos. Esto se basa en la configuración actual del sistema.
+  summary: Obtiene la cadena usada para separar grupos de dígitos a la izquierda del decimal para los valores numéricos. Esto se basa en la configuración actual del sistema.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: 1fcd1c48e99ecf014cfbef77d2a8cfb2dd79ba55
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a789fa3e10f31daa00bcc359f7bfd09f4d87121a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412198"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913585"

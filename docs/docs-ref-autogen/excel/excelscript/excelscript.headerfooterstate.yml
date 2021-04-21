@@ -15,19 +15,19 @@ fields:
 - name: firstAndDefault
   uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
   package: ExcelScript!
-  summary: Hay un encabezado o pie de página en primera página independiente y un encabezado o pie de página general que se usa para todas las demás páginas.
+  summary: Hay un encabezado/pie de página de primera página independiente y un encabezado/pie de página general usado para todas las demás páginas.
 - name: firstOddAndEven
   uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
   package: ExcelScript!
-  summary: Hay un encabezado o pie de página en primera página independiente y, a continuación, hay un encabezado o pie de página independiente para las páginas pares e impares.
+  summary: Hay un encabezado o pie de página de primera página independiente y, a continuación, hay un encabezado o pie de página independiente para páginas impares e pares.
 - name: oddAndEven
   uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
   package: ExcelScript!
-  summary: Hay un encabezado o pie de página diferente para las páginas pares e impares.
+  summary: Hay un encabezado o pie de página diferente para páginas impares e pares.
 metadata:
-  ms.openlocfilehash: c8340881b74c9fb1761bbe3721c6031136668e3b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 56adb02d9f1d03352bfb5382c00767ba553f376f
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412347"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913621"

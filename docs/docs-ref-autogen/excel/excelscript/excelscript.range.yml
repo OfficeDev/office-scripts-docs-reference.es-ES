@@ -456,6 +456,30 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
+- name: getExtendedRange(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
+  package: ExcelScript!
+  fullName: getExtendedRange(direction, activeCell)
+  summary: Devuelve un objeto range que incluye el intervalo actual y hasta el borde del intervalo, en función de la dirección proporcionada. Esto coincide con el comportamiento de la tecla Ctrl+Mayús+Flecha en la interfaz de usuario de Excel en Windows.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getExtendedRange(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: La dirección de la celda activa.
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: La celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este rango.
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
 - name: getFormat()
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
@@ -733,19 +757,6 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
-- name: getMergedAreas()
-  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
-  package: ExcelScript!
-  fullName: getMergedAreas()
-  summary: Devuelve un `RangeAreas` objeto que representa las áreas combinadas de este intervalo. Tenga en cuenta que si las áreas combinadas cuentan en este intervalo es superior a 512, se `InvalidOperation` producirá un error.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMergedAreas(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
@@ -873,6 +884,30 @@ methods:
     content: 'getPredefinedCellStyle(): string;'
     return:
       type: string
+      description: ''
+- name: getRangeEdge(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
+  package: ExcelScript!
+  fullName: getRangeEdge(direction, activeCell)
+  summary: Devuelve un objeto range que es la celda perimetral de la región de datos que corresponde a la dirección proporcionada. Esto coincide con el comportamiento de la tecla Ctrl+Flecha en la interfaz de usuario de Excel en Windows.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeEdge(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: La dirección de la celda activa.
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: La celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este rango.
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
 - name: getResizedRange(deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
@@ -1733,9 +1768,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 14625f148749589d974e094e1dc33f24a04b8a06
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: da511bf9e95a19149c3cf48a6df97c9a50ba5299
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607189"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914261"

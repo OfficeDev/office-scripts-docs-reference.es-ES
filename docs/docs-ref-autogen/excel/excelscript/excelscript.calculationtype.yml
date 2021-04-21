@@ -15,15 +15,15 @@ fields:
 - name: fullRebuild
   uid: ExcelScript!ExcelScript.CalculationType.fullRebuild:member
   package: ExcelScript!
-  summary: De este modo, se reconstruirá la cadena de dependencias completa, se marcarán todas las celdas como desfasadas y, a continuación, se actualizarán.
+  summary: Esto volverá a generar la cadena de dependencia completa, marcará todas las celdas como sucias y, a continuación, las recalculará.
 - name: recalculate
   uid: ExcelScript!ExcelScript.CalculationType.recalculate:member
   package: ExcelScript!
   summary: Actualiza todas las celdas que Excel marca como desfasadas, es decir, los dependientes de datos vol�tiles o modificados, y las celdas marcadas mediante programaci�n como desfasadas.
 metadata:
-  ms.openlocfilehash: 8e772f6bfbf855d21f480d9a024c4e6c73eee2c8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 8ea006b639ccac5ebe3f44e5c3cf960973b79665
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417215"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913981"

@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxQuartileCalculation
 uid: ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxQuartileCalculation
-summary: Representa el tipo de cálculo cuartil del diseño de la serie del gráfico. Solo se aplica a un gráfico de caja y bigotes.
+summary: Representa el tipo de cálculo de cuartil del diseño de serie de gráficos. Solo se aplica a un cuadro y un gráfico de bigotes.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -17,9 +17,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: c0a40a371a515687d67fab953cc7321300bc10d5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5cfb86474f54105a9c938574813904e9ea665eb7
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416984"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914572"

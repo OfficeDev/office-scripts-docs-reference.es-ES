@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxwhiskerOptions
 uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxwhiskerOptions
-summary: Representa las propiedades de un gráfico de cuadros y bigotes.
+summary: Representa las propiedades de un cuadro y un gráfico de bigotes.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: getQuartileCalculation()
-  summary: Especifica si el tipo de cálculo cuartil de un gráfico de cuadro y bigotes.
+  summary: Especifica si el tipo de cálculo de cuartil de un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: getShowInnerPoints()
-  summary: Especifica si los puntos internos se muestran en un gráfico de cuadros y bigotes.
+  summary: Especifica si los puntos internos se muestran en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)
   package: ExcelScript!
   fullName: getShowMeanLine()
-  summary: Especifica si la línea media se muestra en un gráfico de cuadros y bigotes.
+  summary: Especifica si la línea media se muestra en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: getShowMeanMarker()
-  summary: Especifica si el marcador de media se muestra en un gráfico de cuadros y bigotes.
+  summary: Especifica si el marcador medio se muestra en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: getShowOutlierPoints()
-  summary: Especifica si los puntos atípicos se muestran en un gráfico de cuadros y bigotes.
+  summary: Especifica si los puntos atípicos se muestran en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: setQuartileCalculation(quartileCalculation)
-  summary: Especifica si el tipo de cálculo cuartil de un gráfico de cuadro y bigotes.
+  summary: Especifica si el tipo de cálculo de cuartil de un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: setShowInnerPoints(showInnerPoints)
-  summary: Especifica si los puntos internos se muestran en un gráfico de cuadros y bigotes.
+  summary: Especifica si los puntos internos se muestran en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -115,7 +115,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)
   package: ExcelScript!
   fullName: setShowMeanLine(showMeanLine)
-  summary: Especifica si la línea media se muestra en un gráfico de cuadros y bigotes.
+  summary: Especifica si la línea media se muestra en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: setShowMeanMarker(showMeanMarker)
-  summary: Especifica si el marcador de media se muestra en un gráfico de cuadros y bigotes.
+  summary: Especifica si el marcador medio se muestra en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -149,7 +149,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: setShowOutlierPoints(showOutlierPoints)
-  summary: Especifica si los puntos atípicos se muestran en un gráfico de cuadros y bigotes.
+  summary: Especifica si los puntos atípicos se muestran en un cuadro y un gráfico de bigotes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,9 +163,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 12b3f06b1036fee3892bdc0ab9a63c1dbff335b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b53c861761fa2dbead962e9ec6e1b011af51f12b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420023"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914565"

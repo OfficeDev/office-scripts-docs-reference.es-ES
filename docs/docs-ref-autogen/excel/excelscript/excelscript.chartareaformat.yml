@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Representa el formato de borde del área del gráfico, que incluye color, LineStyle y weight.
+  summary: Representa el formato de borde del área del gráfico, que incluye color, estilo de línea y grosor.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,9 +109,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6894650c0e66dcdef8411a1877aa0f7eb2d96c06
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eac32298d707fb25dc7fb8584ba83799ac279453
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417110"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913269"
