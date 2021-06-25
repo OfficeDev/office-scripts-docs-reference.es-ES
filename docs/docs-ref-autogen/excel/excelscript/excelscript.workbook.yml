@@ -602,7 +602,8 @@ methods:
   summary: Obtiene una nueva colección de elementos XML personalizados cuyos espacios de nombres coinciden con el espacio de nombres especificado.
   remarks: ''
   isPreview: false
-  isDeprecated: false
+  isDeprecated: true
+  customDeprecatedMessage: Use `getCustomXmlPartsByNamespace` instead.
   syntax:
     content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
@@ -622,6 +623,23 @@ methods:
   isDeprecated: false
   syntax:
     content: 'getCustomXmlParts(): CustomXmlPart[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
+      description: ''
+- name: getCustomXmlPartsByNamespace(namespaceUri)
+  uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartsByNamespace:member(1)
+  package: ExcelScript!
+  fullName: getCustomXmlPartsByNamespace(namespaceUri)
+  summary: Obtiene una nueva colección de elementos XML personalizados cuyos espacios de nombres coinciden con el espacio de nombres especificado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomXmlPartsByNamespace(namespaceUri: string): CustomXmlPart[];'
+    parameters:
+    - id: namespaceUri
+      description: Debe ser un URI de esquema completo; por ejemplo, " http://schemas.contoso.com/review/1.0 ".
+      type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
       description: ''
@@ -1277,9 +1295,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ba82a40b51a08dec4e026d99bcd69f4783fe59d
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
+  ms.openlocfilehash: 2f75d4bf3e477731c8919ac209b614d562c7753e
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330372"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068241"

@@ -1,0 +1,257 @@
+### YamlMime:TSEnum
+name: ExcelScript.BuiltInTableStyle
+uid: ExcelScript!ExcelScript.BuiltInTableStyle:enum
+package: ExcelScript!
+fullName: ExcelScript.BuiltInTableStyle
+summary: Representa un estilo de tabla integrado.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: dark1
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark1:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y oscuro."
+- name: dark10
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark10:member
+  package: ExcelScript!
+  summary: Amarillo con encabezado relleno, filas a rayas, luz
+- name: dark11
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark11:member
+  package: ExcelScript!
+  summary: Verde con encabezado relleno, filas a rayas, luz
+- name: dark2
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark2:member
+  package: ExcelScript!
+  summary: "\"Énfénfal 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y oscuro."
+- name: dark3
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark3:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y oscuro."
+- name: dark4
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark4:member
+  package: ExcelScript!
+  summary: "\"Énfal 3\" (gris en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y oscuro."
+- name: dark5
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark5:member
+  package: ExcelScript!
+  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y oscuro."
+- name: dark6
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark6:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y oscuro."
+- name: dark7
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark7:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y oscuro."
+- name: dark8
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark8:member
+  package: ExcelScript!
+  summary: Negro con encabezado relleno, filas a rayas, luz
+- name: dark9
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.dark9:member
+  package: ExcelScript!
+  summary: Naranja con encabezado relleno, filas a rayas, luz
+- name: light1
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light1:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con bordes de encabezado y borde inferior."
+- name: light10
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light10:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, borde exterior y bordes de fila."
+- name: light11
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light11:member
+  package: ExcelScript!
+  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno, borde exterior y bordes de fila."
+- name: light12
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light12:member
+  package: ExcelScript!
+  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, borde exterior y bordes de fila."
+- name: light13
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light13:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, borde exterior y bordes de fila."
+- name: light14
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light14:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, borde exterior y bordes de fila."
+- name: light15
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light15:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con bordes de celda."
+- name: light16
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light16:member
+  package: ExcelScript!
+  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con bordes de celda."
+- name: light17
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light17:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con bordes de celda."
+- name: light18
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light18:member
+  package: ExcelScript!
+  summary: "\"Énfal 3\" (gris en el tema \"Office\" predeterminado) con bordes de celda."
+- name: light19
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light19:member
+  package: ExcelScript!
+  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con bordes de celda."
+- name: light2
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light2:member
+  package: ExcelScript!
+  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con bordes de encabezado y borde inferior."
+- name: light20
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light20:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema predeterminado \"Office\") con bordes de celda."
+- name: light21
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light21:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con bordes de celda."
+- name: light3
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light3:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con bordes de encabezado y borde inferior."
+- name: light4
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light4:member
+  package: ExcelScript!
+  summary: "\"Acento 3\" (gris en el tema \"Office\" predeterminado) con bordes de encabezado y borde inferior."
+- name: light5
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light5:member
+  package: ExcelScript!
+  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con bordes de encabezado y borde inferior."
+- name: light6
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light6:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con bordes de encabezado y borde inferior."
+- name: light7
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light7:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con bordes de encabezado y borde inferior."
+- name: light8
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light8:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, borde exterior y bordes de fila."
+- name: light9
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.light9:member
+  package: ExcelScript!
+  summary: "\"Énfénfal 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, borde exterior y bordes de fila."
+- name: medium1
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium1:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas, borde exterior y bordes de fila."
+- name: medium10
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium10:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno y filas a rayas."
+- name: medium11
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium11:member
+  package: ExcelScript!
+  summary: "\"Acento 3\" (gris en el tema \"Office\" predeterminado) con encabezado relleno y filas a rayas."
+- name: medium12
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium12:member
+  package: ExcelScript!
+  summary: "\"Énfénfal 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno y filas a rayas."
+- name: medium13
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium13:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno y filas a rayas."
+- name: medium14
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium14:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno y filas a rayas."
+- name: medium15
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium15:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y bordes de celda."
+- name: medium16
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium16:member
+  package: ExcelScript!
+  summary: "\"Énfénfal 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y bordes de celda."
+- name: medium17
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium17:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y bordes de celda."
+- name: medium18
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium18:member
+  package: ExcelScript!
+  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y bordes de celda."
+- name: medium19
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium19:member
+  package: ExcelScript!
+  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y bordes de celda."
+- name: medium2
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium2:member
+  package: ExcelScript!
+  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas, borde exterior y bordes de fila."
+- name: medium20
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium20:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y bordes de celda."
+- name: medium21
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium21:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y bordes de celda."
+- name: medium22
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium22:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema \"Office\" predeterminado) con filas a rayas y bordes de celda."
+- name: medium23
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium23:member
+  package: ExcelScript!
+  summary: "\"Énfal 1\" (azul en el tema \"Office\" predeterminado) con filas a rayas y bordes de celda."
+- name: medium24
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium24:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con filas a rayas y bordes de celda."
+- name: medium25
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium25:member
+  package: ExcelScript!
+  summary: "\"Énfal 3\" (gris en el tema \"Office\" predeterminado) con filas a rayas y bordes de celda."
+- name: medium26
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium26:member
+  package: ExcelScript!
+  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con filas a rayas y bordes de celda."
+- name: medium27
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium27:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con filas a rayas y bordes de celda."
+- name: medium28
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium28:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema predeterminado \"Office\") con filas a rayas y bordes de celda."
+- name: medium3
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium3:member
+  package: ExcelScript!
+  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas, borde exterior y bordes de fila."
+- name: medium4
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium4:member
+  package: ExcelScript!
+  summary: "\"Acento 3\" (gris en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas, borde exterior y bordes de fila."
+- name: medium5
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium5:member
+  package: ExcelScript!
+  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas, borde exterior y bordes de fila."
+- name: medium6
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium6:member
+  package: ExcelScript!
+  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas, borde exterior y bordes de fila."
+- name: medium7
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium7:member
+  package: ExcelScript!
+  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas, borde exterior y bordes de fila."
+- name: medium8
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium8:member
+  package: ExcelScript!
+  summary: "\"Oscuro 1\" (negro en el tema \"Office\" predeterminado) con encabezado relleno y filas a rayas."
+- name: medium9
+  uid: ExcelScript!ExcelScript.BuiltInTableStyle.medium9:member
+  package: ExcelScript!
+  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno y filas a rayas."
+metadata:
+  ms.openlocfilehash: d428840052f4b23e8ceea563919a342cb39ef8ab
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068224"
