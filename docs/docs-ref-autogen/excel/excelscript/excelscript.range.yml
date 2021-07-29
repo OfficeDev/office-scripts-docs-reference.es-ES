@@ -35,11 +35,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      autoFill(
-                  destinationRange?: Range | string,
-                  autoFillType?: AutoFillType
-              ): void;
+    content: 'autoFill( destinationRange?: Range | string, autoFillType?: AutoFillType ): void;'
     parameters:
     - id: destinationRange
       description: El intervalo de destino a Autofill. Si el intervalo de destino es `null`<!-- -->, los datos se rellenan en función de las celdas circundantes (que es el comportamiento al hacer doble clic en el controlador de relleno de intervalo de la interfaz de usuario).
@@ -115,13 +111,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      copyFrom(
-                  sourceRange: Range | RangeAreas | string,
-                  copyType?: RangeCopyType,
-                  skipBlanks?: boolean,
-                  transpose?: boolean
-              ): void;
+    content: 'copyFrom( sourceRange: Range | RangeAreas | string, copyType?: RangeCopyType, skipBlanks?: boolean, transpose?: boolean ): void;'
     parameters:
     - id: sourceRange
       description: Intervalo de origen o `RangeAreas` desde el que se va a copiar. Cuando el origen tiene varios intervalos, su formulario debe poder crearse quitando filas o columnas completas `RangeAreas` de un intervalo rectangular.
@@ -323,7 +313,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnHidden(): boolean;'
+    content: 'getColumnHidden(): booleano;'
     return:
       type: boolean
       description: ''
@@ -465,11 +455,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getExtendedRange(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getExtendedRange( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
     parameters:
     - id: direction
       description: La dirección de la celda activa.
@@ -580,7 +566,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHasSpill(): boolean;'
+    content: 'getHasSpill(): booleano;'
     return:
       type: boolean
       description: ''
@@ -606,7 +592,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHidden(): boolean;'
+    content: 'getHidden(): booleano;'
     return:
       type: boolean
       description: ''
@@ -662,7 +648,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIsEntireColumn(): boolean;'
+    content: 'getIsEntireColumn(): booleano;'
     return:
       type: boolean
       description: ''
@@ -675,7 +661,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIsEntireRow(): boolean;'
+    content: 'getIsEntireRow(): booleano;'
     return:
       type: boolean
       description: ''
@@ -907,11 +893,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getRangeEdge(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getRangeEdge( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
     parameters:
     - id: direction
       description: La dirección de la celda activa.
@@ -981,7 +963,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowHidden(): boolean;'
+    content: 'getRowHidden(): booleano;'
     return:
       type: boolean
       description: ''
@@ -1041,7 +1023,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSavedAsArray(): boolean;'
+    content: 'getSavedAsArray(): booleano;'
     return:
       type: boolean
       description: ''
@@ -1067,11 +1049,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getSpecialCells(
-                  cellType: SpecialCellType,
-                  cellValueType?: SpecialCellValueType
-              ): RangeAreas;
+    content: 'getSpecialCells( cellType: SpecialCellType, cellValueType?: SpecialCellValueType ): RangeAreas;'
     parameters:
     - id: cellType
       description: Tipo de celdas que se incluirán.
@@ -1203,7 +1181,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): string | number | boolean;'
+    content: 'getValue(): cadena | número | boolean;'
     return:
       type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
@@ -1216,7 +1194,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): (string | number | boolean)[][];'
+    content: 'getValues(): (cadena | número | booleano)[][];'
     return:
       type: (string | number | boolean)[][]
       description: ''
@@ -1379,11 +1357,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      removeDuplicates(
-                  columns: number[],
-                  includesHeader: boolean
-              ): RemoveDuplicatesResult;
+    content: 'removeDuplicates( columns: number[], includesHeader: boolean ): RemoveDuplicatesResult;'
     parameters:
     - id: columns
       description: Las columnas dentro del rango que pueden contener duplicados. Debe especificarse al menos una columna. Indizado con cero.
@@ -1403,12 +1377,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
+    content: 'replaceAll( text: string, replacement: string, criteria: ReplaceCriteria ): number;'
     parameters:
     - id: text
       description: Cadena que se busca.
@@ -1707,7 +1676,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Representa los valores sin formato del rango especificado. Los datos devueltos pueden ser una cadena, un número o un valor booleano. Las celdas que contienen un error devolverán la cadena de error. Si el valor devuelto comienza con un signo más ("+"), menos ("-") o igual ("="), Excel interpreta este valor como una fórmula.
+  summary: Establece los valores sin procesar del intervalo especificado. Los datos proporcionados pueden ser una cadena, un número o un valor booleano. Si el valor proporcionado comienza con un signo más ("+"), menos ("-") o igual ("="), Excel interpreta este valor como una fórmula.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1750,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
+  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068292"
+  ms.lasthandoff: 07/28/2021
+  ms.locfileid: "53617916"
