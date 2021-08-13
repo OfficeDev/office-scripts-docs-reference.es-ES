@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartBoxQuartileCalculation
-uid: ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum
+uid: 'ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxQuartileCalculation
 summary: Representa el tipo de cálculo de cuartil del diseño de serie de gráficos. Solo se aplica a un cuadro y un gráfico de bigotes.
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: exclusive
-  uid: ExcelScript!ExcelScript.ChartBoxQuartileCalculation.exclusive:member
-  package: ExcelScript!
-  summary: ''
-- name: inclusive
-  uid: ExcelScript!ExcelScript.ChartBoxQuartileCalculation.inclusive:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 5cfb86474f54105a9c938574813904e9ea665eb7
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914572"
+  - name: exclusive
+    uid: 'ExcelScript!ExcelScript.ChartBoxQuartileCalculation.exclusive:member'
+    package: ExcelScript!
+    summary: ''
+  - name: inclusive
+    uid: 'ExcelScript!ExcelScript.ChartBoxQuartileCalculation.inclusive:member'
+    package: ExcelScript!
+    summary: ''

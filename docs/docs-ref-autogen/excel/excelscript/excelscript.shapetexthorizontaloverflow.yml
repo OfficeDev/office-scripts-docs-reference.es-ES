@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeTextHorizontalOverflow
-uid: ExcelScript!ExcelScript.ShapeTextHorizontalOverflow:enum
+uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalOverflow:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextHorizontalOverflow
 summary: Especifica el desbordamiento horizontal del marco de texto de una forma.
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: clip
-  uid: ExcelScript!ExcelScript.ShapeTextHorizontalOverflow.clip:member
-  package: ExcelScript!
-  summary: ''
-- name: overflow
-  uid: ExcelScript!ExcelScript.ShapeTextHorizontalOverflow.overflow:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 6303c42400993c79a6945e91e2fe048100ed0297
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411757"
+  - name: clip
+    uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalOverflow.clip:member'
+    package: ExcelScript!
+    summary: ''
+  - name: overflow
+    uid: 'ExcelScript!ExcelScript.ShapeTextHorizontalOverflow.overflow:member'
+    package: ExcelScript!
+    summary: ''

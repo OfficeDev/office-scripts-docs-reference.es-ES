@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SearchDirection
-uid: ExcelScript!ExcelScript.SearchDirection:enum
+uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
 package: ExcelScript!
 fullName: ExcelScript.SearchDirection
 summary: Especifica la dirección de la búsqueda
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: backwards
-  uid: ExcelScript!ExcelScript.SearchDirection.backwards:member
-  package: ExcelScript!
-  summary: Buscar en orden inverso.
-- name: forward
-  uid: ExcelScript!ExcelScript.SearchDirection.forward:member
-  package: ExcelScript!
-  summary: Buscar en orden hacia adelante.
-metadata:
-  ms.openlocfilehash: 408814f1085bba49774282701cfbbf05da72e0ab
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411883"
+  - name: backwards
+    uid: 'ExcelScript!ExcelScript.SearchDirection.backwards:member'
+    package: ExcelScript!
+    summary: Buscar en orden inverso.
+  - name: forward
+    uid: 'ExcelScript!ExcelScript.SearchDirection.forward:member'
+    package: ExcelScript!
+    summary: Buscar en orden de reenvío.

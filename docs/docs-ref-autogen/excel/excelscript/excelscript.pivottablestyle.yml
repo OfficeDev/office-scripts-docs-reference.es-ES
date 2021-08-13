@@ -1,87 +1,80 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotTableStyle
-uid: ExcelScript!ExcelScript.PivotTableStyle:interface
+uid: 'ExcelScript!ExcelScript.PivotTableStyle:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotTableStyle
-summary: Representa un estilo de tabla dinámica, que define los elementos de estilo por región de tabla dinámica.
+summary: 'Representa un estilo de tabla dinámica, que define los elementos de estilo por región de tabla dinámica.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Elimina el estilo de tabla dinámica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate()
-  summary: Crea un duplicado de este estilo de tabla dinámica con copias de todos los elementos de estilo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(): PivotTableStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Obtiene el nombre del estilo de tabla dinámica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getReadOnly()
-  uid: ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)
-  package: ExcelScript!
-  fullName: getReadOnly()
-  summary: Especifica si este `PivotTableStyle` objeto es de solo lectura.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReadOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Obtiene el nombre del estilo de tabla dinámica.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 2d6d006c9e198241b5ff4ebd75cc58b992ef2e43
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914282"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Elimina el estilo de tabla dinámica.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate()
+    summary: Crea un duplicado de este estilo de tabla dinámica con copias de todos los elementos de estilo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(): PivotTableStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Obtiene el nombre del estilo de tabla dinámica.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getReadOnly()
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)'
+    package: ExcelScript!
+    fullName: getReadOnly()
+    summary: Especifica si este `PivotTableStyle` objeto es de solo lectura.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Obtiene el nombre del estilo de tabla dinámica.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

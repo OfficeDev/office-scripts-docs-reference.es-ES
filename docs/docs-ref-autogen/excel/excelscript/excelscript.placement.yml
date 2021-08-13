@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.Placement
-uid: ExcelScript!ExcelScript.Placement:enum
+uid: 'ExcelScript!ExcelScript.Placement:enum'
 package: ExcelScript!
 fullName: ExcelScript.Placement
 summary: Especifica la manera en que se adjunta un objeto a sus celdas subyacentes.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: absolute
-  uid: ExcelScript!ExcelScript.Placement.absolute:member
-  package: ExcelScript!
-  summary: El objeto es flotante libre.
-- name: oneCell
-  uid: ExcelScript!ExcelScript.Placement.oneCell:member
-  package: ExcelScript!
-  summary: El objeto se mueve y cambia de tamaño con las celdas.
-- name: twoCell
-  uid: ExcelScript!ExcelScript.Placement.twoCell:member
-  package: ExcelScript!
-  summary: El objeto se mueve con las celdas.
-metadata:
-  ms.openlocfilehash: bed1f80265c46b02b792cd5f423cc864dc1c7d76
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412051"
+  - name: absolute
+    uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
+    package: ExcelScript!
+    summary: El objeto es flotante libre.
+  - name: oneCell
+    uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
+    package: ExcelScript!
+    summary: El objeto se mueve y se dimensiona con las celdas.
+  - name: twoCell
+    uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
+    package: ExcelScript!
+    summary: El objeto se mueve con las celdas.
