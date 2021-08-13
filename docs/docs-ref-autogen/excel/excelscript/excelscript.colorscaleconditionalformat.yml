@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ColorScaleConditionalFormat
-uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ColorScaleConditionalFormat
 summary: Representa los criterios de escala de color para el formato condicional.
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCriteria()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)
-  package: ExcelScript!
-  fullName: getCriteria()
-  summary: Criterios de la escala de colores. El punto medio es opcional cuando se usa una escala de color de dos puntos.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCriteria(): ConditionalColorScaleCriteria;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-      description: ''
-- name: getThreeColorScale()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)
-  package: ExcelScript!
-  fullName: getThreeColorScale()
-  summary: If `true`<!-- -->, la escala de colores tendrá tres puntos (mínimo, punto medio, máximo), de lo contrario tendrá dos (mínimo, máximo).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getThreeColorScale(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setCriteria(criteria)
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)
-  package: ExcelScript!
-  fullName: setCriteria(criteria)
-  summary: Criterios de la escala de colores. El punto medio es opcional cuando se usa una escala de color de dos puntos.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
-    parameters:
-    - id: criteria
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 8a890f2b95d90663083c6a1141142e5585f6c160
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913868"
+  - name: getCriteria()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)'
+    package: ExcelScript!
+    fullName: getCriteria()
+    summary: Criterios de la escala de colores. El punto medio es opcional cuando se usa una escala de colores de dos puntos.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCriteria(): ConditionalColorScaleCriteria;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+        description: ''
+  - name: getThreeColorScale()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)'
+    package: ExcelScript!
+    fullName: getThreeColorScale()
+    summary: 'If `true`<!-- -->, la escala de colores tendrá tres puntos (mínimo, punto medio, máximo), de lo contrario tendrá dos (mínimo, máximo).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getThreeColorScale(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setCriteria(criteria)
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)'
+    package: ExcelScript!
+    fullName: setCriteria(criteria)
+    summary: Criterios de la escala de colores. El punto medio es opcional cuando se usa una escala de colores de dos puntos.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
+      parameters:
+        - id: criteria
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+      return:
+        type: void
+        description: ''

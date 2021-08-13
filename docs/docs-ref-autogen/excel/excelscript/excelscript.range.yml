@@ -1,1758 +1,2222 @@
 ### YamlMime:TSType
 name: ExcelScript.Range
-uid: ExcelScript!ExcelScript.Range:interface
+uid: 'ExcelScript!ExcelScript.Range:interface'
 package: ExcelScript!
 fullName: ExcelScript.Range
-summary: Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc.
+summary: 'Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: addConditionalFormat(type)
-  uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
-  package: ExcelScript!
-  fullName: addConditionalFormat(type)
-  summary: Agrega un nuevo formato condicional a la colección con la prioridad primera o superior.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
-    parameters:
-    - id: type
-      description: El tipo de formato condicional que se va a agregar. Vea `ExcelScript.ConditionalFormatType` para más información.
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
-- name: autoFill(destinationRange, autoFillType)
-  uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
-  package: ExcelScript!
-  fullName: autoFill(destinationRange, autoFillType)
-  summary: Rellena el intervalo desde el intervalo actual hasta el intervalo de destino mediante la lógica de autorrelleno especificada. El intervalo de destino puede ser `null`<!-- -->, o puede extender el origen horizontal o verticalmente. No se admiten intervalos desconcertados.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'autoFill( destinationRange?: Range | string, autoFillType?: AutoFillType ): void;'
-    parameters:
-    - id: destinationRange
-      description: El intervalo de destino a Autofill. Si el intervalo de destino es `null`<!-- -->, los datos se rellenan en función de las celdas circundantes (que es el comportamiento al hacer doble clic en el controlador de relleno de intervalo de la interfaz de usuario).
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    - id: autoFillType
-      description: Tipo de Autofill. Especifica cómo se va a rellenar el intervalo de destino, en función del contenido del intervalo actual. El valor predeterminado es "FillDefault".
-      type: <xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />
-    return:
-      type: void
-      description: ''
-- name: calculate()
-  uid: ExcelScript!ExcelScript.Range#calculate:member(1)
-  package: ExcelScript!
-  fullName: calculate()
-  summary: Calcula un rango de celdas en una hoja de cálculo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'calculate(): void;'
-    return:
-      type: void
-      description: ''
-- name: clear(applyTo)
-  uid: ExcelScript!ExcelScript.Range#clear:member(1)
-  package: ExcelScript!
-  fullName: clear(applyTo)
-  summary: Borra valores de rango, formato, relleno, borde, etc.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(applyTo?: ClearApplyTo): void;'
-    parameters:
-    - id: applyTo
-      description: Opcional. Determina el tipo de acción de borrado. Vea `ExcelScript.ClearApplyTo` para más información.
-      type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
-- name: clearAllConditionalFormats()
-  uid: ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)
-  package: ExcelScript!
-  fullName: clearAllConditionalFormats()
-  summary: Borra todos los formatos condicionales activos en el intervalo actual especificado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearAllConditionalFormats(): void;'
-    return:
-      type: void
-      description: ''
-- name: convertDataTypeToText()
-  uid: ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)
-  package: ExcelScript!
-  fullName: convertDataTypeToText()
-  summary: Convierte las celdas de rango con tipos de datos en texto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'convertDataTypeToText(): void;'
-    return:
-      type: void
-      description: ''
-- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
-  package: ExcelScript!
-  fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: Copia los datos de celda o el formato del intervalo de origen o `RangeAreas` del intervalo actual. El intervalo de destino puede tener un tamaño diferente al intervalo de origen o `RangeAreas`<!-- -->. El destino se expandirá automáticamente si es menor que el origen.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'copyFrom( sourceRange: Range | RangeAreas | string, copyType?: RangeCopyType, skipBlanks?: boolean, transpose?: boolean ): void;'
-    parameters:
-    - id: sourceRange
-      description: Intervalo de origen o `RangeAreas` desde el que se va a copiar. Cuando el origen tiene varios intervalos, su formulario debe poder crearse quitando filas o columnas completas `RangeAreas` de un intervalo rectangular.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
-    - id: copyType
-      description: Tipo de datos de celda o formato sobre los que copiar. El valor predeterminado es "All".
-      type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
-    - id: skipBlanks
-      description: True si se omiten las celdas en blanco en el rango de origen. El valor predeterminado es false.
-      type: boolean
-    - id: transpose
-      description: True si se transponen las celdas en el intervalo de destino. El valor predeterminado es false.
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: delete(shift)
-  uid: ExcelScript!ExcelScript.Range#delete:member(1)
-  package: ExcelScript!
-  fullName: delete(shift)
-  summary: Elimina las celdas asociadas al rango.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(shift: DeleteShiftDirection): void;'
-    parameters:
-    - id: shift
-      description: Especifica hacia dónde se desplazarán las celdas. Vea `ExcelScript.DeleteShiftDirection` para más información.
-      type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample creates a sample range, then deletes\n * \"A1\" using different DeleteShiftDirection values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add sample data to better visualize the delete changes.\n  const currentSheet = workbook.getActiveWorksheet();\n  currentSheet.getRange(\"A1:D4\").setValues([\n    [1,2,3,4],\n    [5,6,7,8],\n    [9,10,11,12],\n    [13,14,15,16]]);\n\n  // Delete A1 and shift the cells from the right to fill the space.\n  // The value being deleted is 1.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.left);\n\n  // Delete A1 and shift the cells from the bottom to fill the space.\n  // The value being deleted is 2.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.up);\n\n  // Log the sample range. The values should be:\n  /*\n    5, 3, 4, \"\",\n    9, 6, 7, 8,\n    13, 10, 11, 12,\n    \"\", 14, 15, 16\n  */\n  console.log(currentSheet.getRange(\"A1:D4\").getValues()); \n}\n```"
-- name: find(text, criteria)
-  uid: ExcelScript!ExcelScript.Range#find:member(1)
-  package: ExcelScript!
-  fullName: find(text, criteria)
-  summary: Busca la cadena especificada, según los criterios especificados. Si el intervalo actual es mayor que una sola celda, la búsqueda se limitará a ese intervalo, de lo contrario, la búsqueda cubrirá toda la hoja a partir de esa celda. Si no hay coincidencias, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'find(text: string, criteria: SearchCriteria): Range;'
-    parameters:
-    - id: text
-      description: La cadena que se busca.
-      type: string
-    - id: criteria
-      description: Criterios de búsqueda adicionales, incluida la dirección de búsqueda y si la búsqueda debe coincidir con toda la celda o distingue mayúsculas de minúsculas.
-      type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: flashFill()
-  uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
-  package: ExcelScript!
-  fullName: flashFill()
-  summary: Realiza un relleno de flash en el intervalo actual. Relleno de flash rellena automáticamente los datos cuando detecta un patrón, por lo que el intervalo debe ser un intervalo de una sola columna y tener datos a su alrededor para encontrar un patrón.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'flashFill(): void;'
-    return:
-      type: void
-      description: ''
-- name: getAbsoluteResizedRange(numRows, numColumns)
-  uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
-  package: ExcelScript!
-  fullName: getAbsoluteResizedRange(numRows, numColumns)
-  summary: Obtiene un objeto con la misma celda superior izquierda que el objeto actual, pero con los números especificados `Range` `Range` de filas y columnas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
-    parameters:
-    - id: numRows
-      description: El número de filas del nuevo tamaño de intervalo.
-      type: number
-    - id: numColumns
-      description: El número de columnas del nuevo tamaño del intervalo.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getAddress()
-  uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
-  package: ExcelScript!
-  fullName: getAddress()
-  summary: Especifica la referencia de intervalo en estilo A1. El valor de dirección contiene la referencia de hoja (por ejemplo, "Sheet1! A1:B4").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAddress(): string;'
-    return:
-      type: string
-      description: ''
-- name: getAddressLocal()
-  uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
-  package: ExcelScript!
-  fullName: getAddressLocal()
-  summary: Representa la referencia de intervalo para el intervalo especificado en el idioma del usuario.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAddressLocal(): string;'
-    return:
-      type: string
-      description: ''
-- name: getBoundingRect(anotherRange)
-  uid: ExcelScript!ExcelScript.Range#getBoundingRect:member(1)
-  package: ExcelScript!
-  fullName: getBoundingRect(anotherRange)
-  summary: Obtiene el objeto de intervalo más pequeño que abarca los intervalos especificados. Por ejemplo, `GetBoundingRect` el de "B2:C5" y "D10:E15" es "B2:E15".
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBoundingRect(anotherRange: Range | string): Range;'
-    parameters:
-    - id: anotherRange
-      description: El objeto de intervalo, la dirección o el nombre del intervalo.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getCell(row, column)
-  uid: ExcelScript!ExcelScript.Range#getCell:member(1)
-  package: ExcelScript!
-  fullName: getCell(row, column)
-  summary: Obtiene el objeto de intervalo que contiene la celda en función de los números de fila y columna. La celda puede estar fuera de los límites de su intervalo primario, siempre que permanezca dentro de la cuadrícula de la hoja de cálculo. La celda devuelta se ubica con respecto a la celda superior izquierda del intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCell(row: number, column: number): Range;'
-    parameters:
-    - id: row
-      description: Número de fila de la celda que se va a recuperar. Indizado con cero.
-      type: number
-    - id: column
-      description: Número de columna de la celda que se va a recuperar. Indizado con cero.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getCellCount()
-  uid: ExcelScript!ExcelScript.Range#getCellCount:member(1)
-  package: ExcelScript!
-  fullName: getCellCount()
-  summary: Especifica el número de celdas del rango. Esta API devolverá -1 si el recuento de celdas supera 2^31-1 (2 147 483 647).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCellCount(): number;'
-    return:
-      type: number
-      description: ''
-- name: getColumn(column)
-  uid: ExcelScript!ExcelScript.Range#getColumn:member(1)
-  package: ExcelScript!
-  fullName: getColumn(column)
-  summary: Obtiene una columna contenida en el intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumn(column: number): Range;'
-    parameters:
-    - id: column
-      description: Número de columna del intervalo que se va a recuperar. Indizado con cero.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getColumnCount()
-  uid: ExcelScript!ExcelScript.Range#getColumnCount:member(1)
-  package: ExcelScript!
-  fullName: getColumnCount()
-  summary: Especifica el número total de columnas del intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnCount(): number;'
-    return:
-      type: number
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
-- name: getColumnHidden()
-  uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
-  package: ExcelScript!
-  fullName: getColumnHidden()
-  summary: Representa si todas las columnas del intervalo actual están ocultas. El valor `true` es cuando todas las columnas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna columna del rango. El valor es cuando algunas columnas de un rango están ocultas y otras `null` columnas del mismo intervalo no están ocultas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnHidden(): booleano;'
-    return:
-      type: boolean
-      description: ''
-- name: getColumnIndex()
-  uid: ExcelScript!ExcelScript.Range#getColumnIndex:member(1)
-  package: ExcelScript!
-  fullName: getColumnIndex()
-  summary: Especifica el número de columna de la primera celda del rango. Indizado con cero.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnIndex(): number;'
-    return:
-      type: number
-      description: ''
-- name: getColumnsAfter(count)
-  uid: ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)
-  package: ExcelScript!
-  fullName: getColumnsAfter(count)
-  summary: Obtiene un número determinado de columnas a la derecha del objeto `Range` actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnsAfter(count?: number): Range;'
-    parameters:
-    - id: count
-      description: Opcional. El número de columnas que se va a incluir en el rango resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getColumnsBefore(count)
-  uid: ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)
-  package: ExcelScript!
-  fullName: getColumnsBefore(count)
-  summary: Obtiene un número determinado de columnas a la izquierda del objeto `Range` actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnsBefore(count?: number): Range;'
-    parameters:
-    - id: count
-      description: Opcional. El número de columnas que se va a incluir en el rango resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getConditionalFormat(id)
-  uid: ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)
-  package: ExcelScript!
-  fullName: getConditionalFormat(id)
-  summary: Devuelve un formato condicional para el identificador especificado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalFormat(id: string): ConditionalFormat;'
-    parameters:
-    - id: id
-      description: El identificador del formato condicional.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
-      description: ''
-- name: getConditionalFormats()
-  uid: ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)
-  package: ExcelScript!
-  fullName: getConditionalFormats()
-  summary: La colección de `ConditionalFormats` esa intersección del intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalFormats(): ConditionalFormat[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]
-      description: ''
-- name: getDataValidation()
-  uid: ExcelScript!ExcelScript.Range#getDataValidation:member(1)
-  package: ExcelScript!
-  fullName: getDataValidation()
-  summary: Devuelve un objeto de validación de datos.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDataValidation(): DataValidation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates a drop-down selection list for a cell. It uses the existing values of the selected range as the choices for the list.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the values for data validation.\n  let selectedRange = workbook.getSelectedRange();\n  let rangeValues = selectedRange.getValues();\n\n  // Convert the values into a comma-delimited string.\n  let dataValidationListString = \"\";\n  rangeValues.forEach((rangeValueRow) => {\n    rangeValueRow.forEach((value) => {\n      dataValidationListString += value + \",\";\n    });\n  });\n\n  // Clear the old range.\n  selectedRange.clear(ExcelScript.ClearApplyTo.contents);\n\n  // Apply the data validation to the first cell in the selected range.\n  let targetCell = selectedRange.getCell(0,0);\n  let dataValidation = targetCell.getDataValidation();\n\n  // Set the content of the drop-down list.\n  dataValidation.setRule({\n      list: {\n        inCellDropDown: true,\n        source: dataValidationListString\n      }\n    });\n}\n```"
-- name: getDirectPrecedents()
-  uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
-  package: ExcelScript!
-  fullName: getDirectPrecedents()
-  summary: Devuelve un objeto que representa el rango que contiene todos los precedentes directos de una celda en la misma hoja de cálculo o `WorkbookRangeAreas` en varias hojas de cálculo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDirectPrecedents(): WorkbookRangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.WorkbookRangeAreas:interface" />
-      description: ''
-- name: getEntireColumn()
-  uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
-  package: ExcelScript!
-  fullName: getEntireColumn()
-  summary: Obtiene un objeto que representa toda la columna del rango (por ejemplo, si el rango actual representa celdas "B4:E11", es un rango que representa las columnas `getEntireColumn` "B:E").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEntireColumn(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getEntireRow()
-  uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
-  package: ExcelScript!
-  fullName: getEntireRow()
-  summary: Obtiene un objeto que representa toda la fila del rango (por ejemplo, si el rango actual representa celdas "B4:E11", es un rango que representa las filas `GetEntireRow` "4:11").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEntireRow(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getExtendedRange(direction, activeCell)
-  uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
-  package: ExcelScript!
-  fullName: getExtendedRange(direction, activeCell)
-  summary: Devuelve un objeto range que incluye el intervalo actual y hasta el borde del intervalo, en función de la dirección proporcionada. Esto coincide con el comportamiento de la tecla Ctrl+Mayús+Flecha en el Excel en Windows interfaz de usuario.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getExtendedRange( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
-    parameters:
-    - id: direction
-      description: La dirección de la celda activa.
-      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
-    - id: activeCell
-      description: La celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este rango.
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Devuelve un objeto de formato que encapsula la fuente, el relleno, los bordes, la alineación y otras propiedades del rango.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): RangeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
-      description: ''
-- name: getFormula()
-  uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
-  package: ExcelScript!
-  fullName: getFormula()
-  summary: Representa la fórmula de celda en la notación de estilo A1. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormula(): string;'
-    return:
-      type: string
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
-- name: getFormulaLocal()
-  uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
-  package: ExcelScript!
-  fullName: getFormulaLocal()
-  summary: Representa la fórmula de celda en la notación de estilo A1, en el idioma del usuario y la configuración regional de formato de número. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormulaLocal(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFormulaR1C1()
-  uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
-  package: ExcelScript!
-  fullName: getFormulaR1C1()
-  summary: Representa la fórmula de celda en la notación de estilo R1C1. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormulaR1C1(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFormulas()
-  uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
-  package: ExcelScript!
-  fullName: getFormulas()
-  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormulas(): string[][];'
-    return:
-      type: string[][]
-      description: ''
-- name: getFormulasLocal()
-  uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
-  package: ExcelScript!
-  fullName: getFormulasLocal()
-  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormulasLocal(): string[][];'
-    return:
-      type: string[][]
-      description: ''
-- name: getFormulasR1C1()
-  uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
-  package: ExcelScript!
-  fullName: getFormulasR1C1()
-  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormulasR1C1(): string[][];'
-    return:
-      type: string[][]
-      description: ''
-- name: getHasSpill()
-  uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
-  package: ExcelScript!
-  fullName: getHasSpill()
-  summary: Indica si todas las celdas tienen un borde de desbordamiento. Devuelve si todas las celdas tienen un borde de desbordamiento o si todas las celdas `true` no tienen un borde de `false` desbordamiento. Devuelve si hay celdas con y `null` sin bordes de desbordamiento dentro del rango.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHasSpill(): booleano;'
-    return:
-      type: boolean
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.Range#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: Devuelve la distancia en puntos, para el zoom 100%, desde el borde superior del rango hasta el borde inferior del intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getHidden()
-  uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
-  package: ExcelScript!
-  fullName: getHidden()
-  summary: Representa si todas las celdas del rango actual están ocultas. El valor `true` es cuando todas las celdas de un rango están ocultas. El valor `false` es cuando no hay celdas en el rango ocultas. El valor `null` es cuando algunas celdas de un rango están ocultas y otras celdas del mismo rango no están ocultas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHidden(): booleano;'
-    return:
-      type: boolean
-      description: ''
-- name: getHyperlink()
-  uid: ExcelScript!ExcelScript.Range#getHyperlink:member(1)
-  package: ExcelScript!
-  fullName: getHyperlink()
-  summary: Representa el hipervínculo del intervalo actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHyperlink(): RangeHyperlink;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample clears all of the hyperlinks from the current worksheet\n * and removes the usual hyperlink formatting.\n */\nfunction main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {\n  // Get the active worksheet. \n  let sheet = workbook.getWorksheet(sheetName);\n\n  // Get the used range to operate on.\n  // For large ranges (over 10000 entries), consider splitting the operation into batches for performance.\n  const targetRange = sheet.getUsedRange(true);\n  console.log(`Target Range to clear hyperlinks from: ${targetRange.getAddress()}`);\n\n  const rowCount = targetRange.getRowCount();\n  const colCount = targetRange.getColumnCount();\n  console.log(`Searching for hyperlinks in ${targetRange.getAddress()} which contains ${(rowCount * colCount)} cells`);\n\n  // Go through each individual cell looking for a hyperlink. \n  // This allows us to limit the formatting changes to only the cells with hyperlink formatting.\n  let clearedCount = 0;\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < colCount; j++) {\n      const cell = targetRange.getCell(i, j);\n      const hyperlink = cell.getHyperlink();\n      if (hyperlink) {\n        cell.clear(ExcelScript.ClearApplyTo.hyperlinks);\n        cell.getFormat().getFont().setUnderline(ExcelScript.RangeUnderlineStyle.none);\n        cell.getFormat().getFont().setColor('Black');\n        clearedCount++;\n      }\n    }\n  }\n\n  console.log(`Done. Cleared hyperlinks from ${clearedCount} cells`);\n}\n```"
-- name: getImage()
-  uid: ExcelScript!ExcelScript.Range#getImage:member(1)
-  package: ExcelScript!
-  fullName: getImage()
-  summary: Representa el intervalo como una imagen png codificada en base64.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getImage(): string;'
-    return:
-      type: string
-      description: ''
-- name: getIntersection(anotherRange)
-  uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
-  package: ExcelScript!
-  fullName: getIntersection(anotherRange)
-  summary: Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados. Si no se encuentra ninguna intersección, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIntersection(anotherRange: Range | string): Range;'
-    parameters:
-    - id: anotherRange
-      description: Objeto de intervalo o dirección de intervalo que se usará para determinar la intersección de los intervalos.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getIsEntireColumn()
-  uid: ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)
-  package: ExcelScript!
-  fullName: getIsEntireColumn()
-  summary: Representa si el intervalo actual es una columna completa.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsEntireColumn(): booleano;'
-    return:
-      type: boolean
-      description: ''
-- name: getIsEntireRow()
-  uid: ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)
-  package: ExcelScript!
-  fullName: getIsEntireRow()
-  summary: Representa si el intervalo actual es una fila completa.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsEntireRow(): booleano;'
-    return:
-      type: boolean
-      description: ''
-- name: getLastCell()
-  uid: ExcelScript!ExcelScript.Range#getLastCell:member(1)
-  package: ExcelScript!
-  fullName: getLastCell()
-  summary: Obtiene la última celda del intervalo. Por ejemplo, la última celda de "B2:D5" es "D5".
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLastCell(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getLastColumn()
-  uid: ExcelScript!ExcelScript.Range#getLastColumn:member(1)
-  package: ExcelScript!
-  fullName: getLastColumn()
-  summary: Obtiene la última columna del intervalo. Por ejemplo, la última columna de "B2:D5" es "D2:D5".
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLastColumn(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getLastRow()
-  uid: ExcelScript!ExcelScript.Range#getLastRow:member(1)
-  package: ExcelScript!
-  fullName: getLastRow()
-  summary: Obtiene la última fila del intervalo. Por ejemplo, la última fila de "B2:D5" es "B5:D5".
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLastRow(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.Range#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: Devuelve la distancia en puntos, para el zoom 100%, desde el borde izquierdo de la hoja de cálculo hasta el borde izquierdo del rango.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLinkedDataTypeState()
-  uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)
-  package: ExcelScript!
-  fullName: getLinkedDataTypeState()
-  summary: Representa el estado del tipo de datos de la celda.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />
-      description: ''
-- name: getLinkedDataTypeStates()
-  uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)
-  package: ExcelScript!
-  fullName: getLinkedDataTypeStates()
-  summary: Indica el estado del tipo de datos de cada celda.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLinkedDataTypeStates(): LinkedDataTypeState[][];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
-      description: ''
-- name: getMergedAreas()
-  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
-  package: ExcelScript!
-  fullName: getMergedAreas()
-  summary: Devuelve un objeto RangeAreas que representa las áreas combinadas de este rango. Tenga en cuenta que si las áreas combinadas cuentan en este intervalo es más de 512, la API no devolverá el resultado. Si rangeAreas no existe, devolverá un objeto null.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMergedAreas(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: Representa el Excel de formato de número de celda para el intervalo especificado. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: getNumberFormatCategories()
-  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormatCategories()
-  summary: Representa la categoría del formato de número de cada celda.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
-      description: ''
-- name: getNumberFormatCategory()
-  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormatCategory()
-  summary: Especifica la categoría de formato de número de la primera celda del rango (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormatCategory(): NumberFormatCategory;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
-      description: ''
-- name: getNumberFormatLocal()
-  uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormatLocal()
-  summary: Representa el Excel de formato de número de celda para el intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormatLocal(): string;'
-    return:
-      type: string
-      description: ''
-- name: getNumberFormats()
-  uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormats()
-  summary: Representa Excel código de formato de número del intervalo especificado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormats(): string[][];'
-    return:
-      type: string[][]
-      description: ''
-- name: getNumberFormatsLocal()
-  uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormatsLocal()
-  summary: Representa Excel código de formato de número del intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormatsLocal(): string[][];'
-    return:
-      type: string[][]
-      description: ''
-- name: getOffsetRange(rowOffset, columnOffset)
-  uid: ExcelScript!ExcelScript.Range#getOffsetRange:member(1)
-  package: ExcelScript!
-  fullName: getOffsetRange(rowOffset, columnOffset)
-  summary: Obtiene un objeto que representa un intervalo desplazado con respecto al intervalo especificado. La dimensión del rango devuelto coincidirá con este rango. Si el rango resultante se fuerza más allá de los límites de la cuadrícula de la hoja de cálculo, se producirá un error.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
-    parameters:
-    - id: rowOffset
-      description: Número de filas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia abajo, mientras que los negativos lo hacen hacia arriba.
-      type: number
-    - id: columnOffset
-      description: Número de columnas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
-- name: getPivotTables(fullyContained)
-  uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
-  package: ExcelScript!
-  fullName: getPivotTables(fullyContained)
-  summary: Obtiene una colección con ámbito de tablas dinámicas que se superponen con el intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
-    parameters:
-    - id: fullyContained
-      description: If `true`<!-- -->, devuelve solo tablas dinámicas que están totalmente contenidas dentro de los límites del intervalo. El valor predeterminado es `false`<!-- -->.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]
-      description: ''
-- name: getPredefinedCellStyle()
-  uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
-  package: ExcelScript!
-  fullName: getPredefinedCellStyle()
-  summary: Representa el estilo del rango actual. Si los estilos de las celdas son incoherentes, `null` se devolverán. Para los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor `BuiltInStyle` de la enumeración.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPredefinedCellStyle(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRangeEdge(direction, activeCell)
-  uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
-  package: ExcelScript!
-  fullName: getRangeEdge(direction, activeCell)
-  summary: Devuelve un objeto range que es la celda perimetral de la región de datos que corresponde a la dirección proporcionada. Esto coincide con el comportamiento de la tecla Ctrl+Flecha en el Excel en Windows interfaz de usuario.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRangeEdge( direction: KeyboardDirection, activeCell?: Range | string ): Range;'
-    parameters:
-    - id: direction
-      description: La dirección de la celda activa.
-      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
-    - id: activeCell
-      description: La celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este rango.
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getResizedRange(deltaRows, deltaColumns)
-  uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
-  package: ExcelScript!
-  fullName: getResizedRange(deltaRows, deltaColumns)
-  summary: Obtiene un objeto similar al objeto actual, pero con su esquina inferior derecha expandida (o contratada) por un número de `Range` `Range` filas y columnas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
-    parameters:
-    - id: deltaRows
-      description: El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.
-      type: number
-    - id: deltaColumns
-      description: Número de columnas por las que expandir la esquina inferior derecha, en relación con el intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n  );\n}\n```"
-- name: getRow(row)
-  uid: ExcelScript!ExcelScript.Range#getRow:member(1)
-  package: ExcelScript!
-  fullName: getRow(row)
-  summary: Obtiene una fila contenida en el intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRow(row: number): Range;'
-    parameters:
-    - id: row
-      description: Número de fila del intervalo que se va a recuperar. Indizado con cero.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRowCount()
-  uid: ExcelScript!ExcelScript.Range#getRowCount:member(1)
-  package: ExcelScript!
-  fullName: getRowCount()
-  summary: Devuelve el número total de filas del intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowCount(): number;'
-    return:
-      type: number
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
-- name: getRowHidden()
-  uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
-  package: ExcelScript!
-  fullName: getRowHidden()
-  summary: Representa si todas las filas del intervalo actual están ocultas. El valor `true` es cuando todas las filas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna fila del rango. El valor es cuando algunas filas de un rango están ocultas y otras `null` filas del mismo rango no están ocultas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowHidden(): booleano;'
-    return:
-      type: boolean
-      description: ''
-- name: getRowIndex()
-  uid: ExcelScript!ExcelScript.Range#getRowIndex:member(1)
-  package: ExcelScript!
-  fullName: getRowIndex()
-  summary: Devuelve el número de fila de la primera celda del intervalo. Indizado con cero.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowIndex(): number;'
-    return:
-      type: number
-      description: ''
-- name: getRowsAbove(count)
-  uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
-  package: ExcelScript!
-  fullName: getRowsAbove(count)
-  summary: Obtiene un número determinado de filas por encima del objeto `Range` actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowsAbove(count?: number): Range;'
-    parameters:
-    - id: count
-      description: Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRowsBelow(count)
-  uid: ExcelScript!ExcelScript.Range#getRowsBelow:member(1)
-  package: ExcelScript!
-  fullName: getRowsBelow(count)
-  summary: Obtiene un número determinado de filas por debajo del objeto `Range` actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowsBelow(count?: number): Range;'
-    parameters:
-    - id: count
-      description: Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getSavedAsArray()
-  uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
-  package: ExcelScript!
-  fullName: getSavedAsArray()
-  summary: Representa si todas las celdas se guardarían como una fórmula de matriz. Devuelve si todas las celdas se guardarían como una fórmula de matriz o si todas las celdas no se guardarían `true` `false` como fórmula de matriz. Devuelve `null` si algunas celdas se guardarían como una fórmula de matriz y otras no lo serían.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSavedAsArray(): booleano;'
-    return:
-      type: boolean
-      description: ''
-- name: getSort()
-  uid: ExcelScript!ExcelScript.Range#getSort:member(1)
-  package: ExcelScript!
-  fullName: getSort()
-  summary: Representa la ordenación del intervalo del intervalo actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSort(): RangeSort;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeSort:interface" />
-      description: ''
-- name: getSpecialCells(cellType, cellValueType)
-  uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
-  package: ExcelScript!
-  fullName: getSpecialCells(cellType, cellValueType)
-  summary: Obtiene el objeto, que comprende uno o varios intervalos, que representa todas las celdas que `RangeAreas` coinciden con el tipo y el valor especificados. Si no se encuentran celdas especiales, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSpecialCells( cellType: SpecialCellType, cellValueType?: SpecialCellValueType ): RangeAreas;'
-    parameters:
-    - id: cellType
-      description: Tipo de celdas que se incluirán.
-      type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
-    - id: cellValueType
-      description: Si `cellType` es o `constants``formulas`<!-- -->, este argumento se usa para determinar qué tipos de celdas incluir en el resultado. Estos valores se pueden combinar para devolver más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.
-      type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample gets all the blank cells in the current worksheet's used range. It then highlights all those cells with a yellow background.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Get the current used range.\n    let range = workbook.getActiveWorksheet().getUsedRange();\n    \n    // Get all the blank cells.\n    let blankCells = range.getSpecialCells(ExcelScript.SpecialCellType.blanks);\n    // Highlight the blank cells with a yellow background.\n    blankCells.getFormat().getFill().setColor(\"yellow\");\n}\n```"
-- name: getSpillingToRange()
-  uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
-  package: ExcelScript!
-  fullName: getSpillingToRange()
-  summary: Obtiene el objeto de intervalo que contiene el intervalo de desbordamiento al llamar en una celda de delimitador. Si el intervalo no es una celda delimitadora o no se encuentra el intervalo de distribución, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSpillingToRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getSpillParent()
-  uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
-  package: ExcelScript!
-  fullName: getSpillParent()
-  summary: Obtiene el objeto de intervalo que contiene la celda delimitadora de la celda en la que se va a desbordar. Si no es una celda desbordada o se proporciona más de una celda, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSpillParent(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getSurroundingRegion()
-  uid: ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)
-  package: ExcelScript!
-  fullName: getSurroundingRegion()
-  summary: Devuelve un `Range` objeto que representa la región circundante de la celda superior izquierda de este rango. Una región circundante es un intervalo limitado por cualquier combinación de filas y columnas en blanco en relación a este intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSurroundingRegion(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getTables(fullyContained)
-  uid: ExcelScript!ExcelScript.Range#getTables:member(1)
-  package: ExcelScript!
-  fullName: getTables(fullyContained)
-  summary: Obtiene una colección con ámbito de tablas que se superpone con el intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTables(fullyContained?: boolean): Table[];'
-    parameters:
-    - id: fullyContained
-      description: If `true`<!-- -->, devuelve solo tablas que están totalmente contenidas dentro de los límites del intervalo. El valor predeterminado es `false`<!-- -->.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.Range#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: Representa el valor Text del intervalo especificado. El valor Text no dependerá del ancho de la celda. La \# sustitución de signos que se produce Excel interfaz de usuario no afectará al valor de texto devuelto por la API. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTexts()
-  uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
-  package: ExcelScript!
-  fullName: getTexts()
-  summary: Valores de texto del intervalo especificado. El valor Text no dependerá del ancho de la celda. La sustitución de signo de número ( ) que se produce en la interfaz Excel no afectará al \# valor de texto devuelto por la API.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTexts(): string[][];'
-    return:
-      type: string[][]
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.Range#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: Devuelve la distancia en puntos, para el zoom 100%, desde el borde superior de la hoja de cálculo hasta el borde superior del rango.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getUsedRange(valuesOnly)
-  uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
-  package: ExcelScript!
-  fullName: getUsedRange(valuesOnly)
-  summary: Devuelve el intervalo usado del objeto de rango especificado. Si no hay celdas usadas dentro del intervalo, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUsedRange(valuesOnly?: boolean): Range;'
-    parameters:
-    - id: valuesOnly
-      description: Solo tiene en cuenta las celdas con valores como celdas usadas.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.Range#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: Representa el valor sin procesar del intervalo especificado. Los datos devueltos pueden ser de tipo cadena, número o booleano. La celda que contenga un error devolverá la cadena de error. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): cadena | número | boolean;'
-    return:
-      type: string | number | boolean
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
-- name: getValues()
-  uid: ExcelScript!ExcelScript.Range#getValues:member(1)
-  package: ExcelScript!
-  fullName: getValues()
-  summary: Representa los valores sin formato del rango especificado. Los datos devueltos pueden ser una cadena, un número o un valor booleano. Las celdas que contienen un error devolverán la cadena de error. Si el valor devuelto comienza con un signo más ("+"), menos ("-") o igual ("="), Excel interpreta este valor como una fórmula.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValues(): (cadena | número | booleano)[][];'
-    return:
-      type: (string | number | boolean)[][]
-      description: ''
-- name: getValueType()
-  uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
-  package: ExcelScript!
-  fullName: getValueType()
-  summary: Representa el tipo de datos de la celda. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValueType(): RangeValueType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />
-      description: ''
-- name: getValueTypes()
-  uid: ExcelScript!ExcelScript.Range#getValueTypes:member(1)
-  package: ExcelScript!
-  fullName: getValueTypes()
-  summary: Especifica el tipo de datos de cada celda.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValueTypes(): RangeValueType[][];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
-      description: ''
-- name: getVisibleView()
-  uid: ExcelScript!ExcelScript.Range#getVisibleView:member(1)
-  package: ExcelScript!
-  fullName: getVisibleView()
-  summary: Representa las filas visibles del intervalo actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisibleView(): RangeView;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeView:interface" />
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.Range#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: Devuelve la distancia en puntos, para el zoom 100%, desde el borde izquierdo del rango hasta el borde derecho del intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: getWorksheet()
-  uid: ExcelScript!ExcelScript.Range#getWorksheet:member(1)
-  package: ExcelScript!
-  fullName: getWorksheet()
-  summary: Hoja de cálculo que contiene el rango actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWorksheet(): Worksheet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: group(groupOption)
-  uid: ExcelScript!ExcelScript.Range#group:member(1)
-  package: ExcelScript!
-  fullName: group(groupOption)
-  summary: Agrupa columnas y filas para un esquema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'group(groupOption: GroupOption): void;'
-    parameters:
-    - id: groupOption
-      description: Especifica cómo se puede agrupar el intervalo por filas o columnas. Se produce un error cuando la opción de grupo difiere de la propiedad o del intervalo (es decir, es true y es "ByColumns" o es true y `InvalidArgument` `isEntireRow` es `isEntireColumn` `range.isEntireRow` `groupOption` `range.isEntireColumn` `groupOption` "ByRows").
-      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
-    return:
-      type: void
-      description: ''
-- name: hideGroupDetails(groupOption)
-  uid: ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)
-  package: ExcelScript!
-  fullName: hideGroupDetails(groupOption)
-  summary: Oculta los detalles del grupo de filas o columnas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'hideGroupDetails(groupOption: GroupOption): void;'
-    parameters:
-    - id: groupOption
-      description: Especifica si se ocultan los detalles de las filas agrupadas o las columnas agrupadas.
-      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
-    return:
-      type: void
-      description: ''
-- name: insert(shift)
-  uid: ExcelScript!ExcelScript.Range#insert:member(1)
-  package: ExcelScript!
-  fullName: insert(shift)
-  summary: Inserta una celda o un intervalo de celdas en la hoja de cálculo en lugar de este intervalo y desplaza las demás celdas para crear espacio. Devuelve un nuevo `Range` objeto en el espacio en blanco ahora.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'insert(shift: InsertShiftDirection): Range;'
-    parameters:
-    - id: shift
-      description: Especifica hacia dónde se desplazarán las celdas. Vea `ExcelScript.InsertShiftDirection` para más información.
-      type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: merge(across)
-  uid: ExcelScript!ExcelScript.Range#merge:member(1)
-  package: ExcelScript!
-  fullName: merge(across)
-  summary: Combina las celdas del intervalo en una región de la hoja de cálculo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'merge(across?: boolean): void;'
-    parameters:
-    - id: across
-      description: Opcional. Se `true` establece para combinar celdas en cada fila del rango especificado como celdas combinadas independientes. El valor predeterminado es `false`<!-- -->.
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: moveTo(destinationRange)
-  uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
-  package: ExcelScript!
-  fullName: moveTo(destinationRange)
-  summary: Mueve los valores de celda, el formato y las fórmulas del rango actual al intervalo de destino, reemplazando la información antigua de dichas celdas. El intervalo de destino se expandirá automáticamente si es menor que el intervalo actual. No se modifican las celdas del rango de destino que estén fuera del área del rango original.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'moveTo(destinationRange: Range | string): void;'
-    parameters:
-    - id: destinationRange
-      description: destinationRange Especifica el intervalo al que se desplazará la información de este intervalo.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: void
-      description: ''
-- name: removeDuplicates(columns, includesHeader)
-  uid: ExcelScript!ExcelScript.Range#removeDuplicates:member(1)
-  package: ExcelScript!
-  fullName: removeDuplicates(columns, includesHeader)
-  summary: Quita los valores duplicados del intervalo especificado por las columnas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'removeDuplicates( columns: number[], includesHeader: boolean ): RemoveDuplicatesResult;'
-    parameters:
-    - id: columns
-      description: Las columnas dentro del rango que pueden contener duplicados. Debe especificarse al menos una columna. Indizado con cero.
-      type: number[]
-    - id: includesHeader
-      description: True si los datos de entrada contienen encabezado. El valor predeterminado es false.
-      type: boolean
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
-      description: ''
-- name: replaceAll(text, replacement, criteria)
-  uid: ExcelScript!ExcelScript.Range#replaceAll:member(1)
-  package: ExcelScript!
-  fullName: replaceAll(text, replacement, criteria)
-  summary: Busca y reemplaza la cadena especificada, según los criterios especificados dentro del intervalo actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'replaceAll( text: string, replacement: string, criteria: ReplaceCriteria ): number;'
-    parameters:
-    - id: text
-      description: Cadena que se busca.
-      type: string
-    - id: replacement
-      description: La cadena que reemplaza a la cadena original.
-      type: string
-    - id: criteria
-      description: Criterios de reemplazo adicionales.
-      type: <xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />
-    return:
-      type: number
-      description: ''
-- name: select()
-  uid: ExcelScript!ExcelScript.Range#select:member(1)
-  package: ExcelScript!
-  fullName: select()
-  summary: Selecciona el intervalo especificado en la interfaz de usuario de Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'select(): void;'
-    return:
-      type: void
-      description: ''
-- name: setColumnHidden(columnHidden)
-  uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
-  package: ExcelScript!
-  fullName: setColumnHidden(columnHidden)
-  summary: Representa si todas las columnas del intervalo actual están ocultas. El valor `true` es cuando todas las columnas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna columna del rango. El valor es cuando algunas columnas de un rango están ocultas y otras `null` columnas del mismo intervalo no están ocultas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColumnHidden(columnHidden: boolean): void;'
-    parameters:
-    - id: columnHidden
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setDirty()
-  uid: ExcelScript!ExcelScript.Range#setDirty:member(1)
-  package: ExcelScript!
-  fullName: setDirty()
-  summary: Establece un intervalo que se deberá actualizar cuando se realice la próxima actualización.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setDirty(): void;'
-    return:
-      type: void
-      description: ''
-- name: setFormula(formula)
-  uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
-  package: ExcelScript!
-  fullName: setFormula(formula)
-  summary: Establece la fórmula de celda en la notación de estilo A1. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormula(formula: string): void;'
-    parameters:
-    - id: formula
-      description: ''
-      type: string
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
-- name: setFormulaLocal(formulaLocal)
-  uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
-  package: ExcelScript!
-  fullName: setFormulaLocal(formulaLocal)
-  summary: Establezca la fórmula de celda en la notación de estilo A1, en el idioma del usuario y la configuración regional de formato de número. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormulaLocal(formulaLocal: string): void;'
-    parameters:
-    - id: formulaLocal
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFormulaR1C1(formulaR1C1)
-  uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
-  package: ExcelScript!
-  fullName: setFormulaR1C1(formulaR1C1)
-  summary: Establece la fórmula de celda en la notación de estilo R1C1. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormulaR1C1(formulaR1C1: string): void;'
-    parameters:
-    - id: formulaR1C1
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFormulas(formulas)
-  uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
-  package: ExcelScript!
-  fullName: setFormulas(formulas)
-  summary: Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormulas(formulas: string[][]): void;'
-    parameters:
-    - id: formulas
-      description: ''
-      type: string[][]
-    return:
-      type: void
-      description: ''
-- name: setFormulasLocal(formulasLocal)
-  uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
-  package: ExcelScript!
-  fullName: setFormulasLocal(formulasLocal)
-  summary: Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormulasLocal(formulasLocal: string[][]): void;'
-    parameters:
-    - id: formulasLocal
-      description: ''
-      type: string[][]
-    return:
-      type: void
-      description: ''
-- name: setFormulasR1C1(formulasR1C1)
-  uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
-  package: ExcelScript!
-  fullName: setFormulasR1C1(formulasR1C1)
-  summary: Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
-    parameters:
-    - id: formulasR1C1
-      description: ''
-      type: string[][]
-    return:
-      type: void
-      description: ''
-- name: setHyperlink(hyperlink)
-  uid: ExcelScript!ExcelScript.Range#setHyperlink:member(1)
-  package: ExcelScript!
-  fullName: setHyperlink(hyperlink)
-  summary: Representa el hipervínculo del intervalo actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
-    parameters:
-    - id: hyperlink
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: Establece el Excel de formato de número de celda para el intervalo especificado. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setNumberFormatLocal(numberFormatLocal)
-  uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Establece el Excel de formato de número de celda para el intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
-    parameters:
-    - id: numberFormatLocal
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setNumberFormats(numberFormats)
-  uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormats(numberFormats)
-  summary: Representa Excel código de formato de número del intervalo especificado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormats(numberFormats: string[][]): void;'
-    parameters:
-    - id: numberFormats
-      description: ''
-      type: string[][]
-    return:
-      type: void
-      description: ''
-- name: setNumberFormatsLocal(numberFormatsLocal)
-  uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Representa Excel código de formato de número del intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
-    parameters:
-    - id: numberFormatsLocal
-      description: ''
-      type: string[][]
-    return:
-      type: void
-      description: ''
-- name: setPredefinedCellStyle(predefinedCellStyle)
-  uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
-  package: ExcelScript!
-  fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Representa el estilo del rango actual. Si los estilos de las celdas son incoherentes, `null` se devolverán. Para los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor `BuiltInStyle` de la enumeración.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
-    parameters:
-    - id: predefinedCellStyle
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setRowHidden(rowHidden)
-  uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
-  package: ExcelScript!
-  fullName: setRowHidden(rowHidden)
-  summary: Representa si todas las filas del intervalo actual están ocultas. El valor `true` es cuando todas las filas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna fila del rango. El valor es cuando algunas filas de un rango están ocultas y otras `null` filas del mismo rango no están ocultas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRowHidden(rowHidden: boolean): void;'
-    parameters:
-    - id: rowHidden
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setValue(value)
-  uid: ExcelScript!ExcelScript.Range#setValue:member(1)
-  package: ExcelScript!
-  fullName: setValue(value)
-  summary: Establece el valor sin procesar del intervalo especificado. Los datos que se establecen pueden ser de tipo string, number o boolean. `null`se omitirá el valor (no se establece ni se sobrescribe en Excel). Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setValue(value: any): void;'
-    parameters:
-    - id: value
-      description: ''
-      type: any
-    return:
-      type: void
-      description: ''
-- name: setValues(values)
-  uid: ExcelScript!ExcelScript.Range#setValues:member(1)
-  package: ExcelScript!
-  fullName: setValues(values)
-  summary: Establece los valores sin procesar del intervalo especificado. Los datos proporcionados pueden ser una cadena, un número o un valor booleano. Si el valor proporcionado comienza con un signo más ("+"), menos ("-") o igual ("="), Excel interpreta este valor como una fórmula.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setValues(values: (string | number | boolean)[][]): void;'
-    parameters:
-    - id: values
-      description: ''
-      type: (string | number | boolean)[][]
-    return:
-      type: void
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
-- name: showCard()
-  uid: ExcelScript!ExcelScript.Range#showCard:member(1)
-  package: ExcelScript!
-  fullName: showCard()
-  summary: Muestra la tarjeta de una celda activa si tiene contenido de valor enriquecido.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'showCard(): void;'
-    return:
-      type: void
-      description: ''
-- name: showGroupDetails(groupOption)
-  uid: ExcelScript!ExcelScript.Range#showGroupDetails:member(1)
-  package: ExcelScript!
-  fullName: showGroupDetails(groupOption)
-  summary: Muestra los detalles del grupo de filas o columnas.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'showGroupDetails(groupOption: GroupOption): void;'
-    parameters:
-    - id: groupOption
-      description: Especifica si se deben mostrar los detalles de las filas agrupadas o las columnas agrupadas.
-      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
-    return:
-      type: void
-      description: ''
-- name: ungroup(groupOption)
-  uid: ExcelScript!ExcelScript.Range#ungroup:member(1)
-  package: ExcelScript!
-  fullName: ungroup(groupOption)
-  summary: Desagrupa columnas y filas para un esquema.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'ungroup(groupOption: GroupOption): void;'
-    parameters:
-    - id: groupOption
-      description: Especifica cómo se puede desagrupar el intervalo mediante filas o columnas.
-      type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
-    return:
-      type: void
-      description: ''
-- name: unmerge()
-  uid: ExcelScript!ExcelScript.Range#unmerge:member(1)
-  package: ExcelScript!
-  fullName: unmerge()
-  summary: Separa las celdas del intervalo en celdas independientes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'unmerge(): void;'
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
-  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 07/28/2021
-  ms.locfileid: "53617916"
+  - name: addConditionalFormat(type)
+    uid: 'ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)'
+    package: ExcelScript!
+    fullName: addConditionalFormat(type)
+    summary: Agrega un nuevo formato condicional a la colección con la prioridad primera o superior.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+      parameters:
+        - id: type
+          description: El tipo de formato condicional que se va a agregar. Vea `ExcelScript.ConditionalFormatType` para más información.
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample applies conditional formatting to the currently used range in the worksheet. 
+           * The conditional formatting is a green fill for the top 10% of values.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current worksheet.
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Get the used range in the worksheet.
+            let range = selectedSheet.getUsedRange();
+
+            // Set the fill color to green for the top 10% of values in the range.
+            let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)
+            conditionalFormat.getTopBottom().getFormat().getFill().setColor("green");
+            conditionalFormat.getTopBottom().setRule({
+              rank: 10, // The percentage threshold.
+              type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.
+            });
+          }
+          ```
+  - name: 'autoFill(destinationRange, autoFillType)'
+    uid: 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
+    package: ExcelScript!
+    fullName: 'autoFill(destinationRange, autoFillType)'
+    summary: 'Rellena el intervalo desde el intervalo actual hasta el intervalo de destino mediante la lógica de autorrelleno especificada. El intervalo de destino puede ser `null`<!-- -->, o puede extender el origen horizontal o verticalmente. No se admiten intervalos desconcertados.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        autoFill(
+                    destinationRange?: Range | string,
+                    autoFillType?: AutoFillType
+                ): void;
+      parameters:
+        - id: destinationRange
+          description: 'El intervalo de destino a Autofill. Si el intervalo de destino es `null`<!-- -->, los datos se rellenan en función de las celdas circundantes (que es el comportamiento al hacer doble clic en el controlador de relleno de intervalo de la interfaz de usuario).'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+        - id: autoFillType
+          description: 'Tipo de Autofill. Especifica cómo se va a rellenar el intervalo de destino, en función del contenido del intervalo actual. El valor predeterminado es "FillDefault".'
+          type: '<xref uid="ExcelScript!ExcelScript.AutoFillType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: calculate()
+    uid: 'ExcelScript!ExcelScript.Range#calculate:member(1)'
+    package: ExcelScript!
+    fullName: calculate()
+    summary: Calcula un rango de celdas en una hoja de cálculo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: clear(applyTo)
+    uid: 'ExcelScript!ExcelScript.Range#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear(applyTo)
+    summary: 'Borra valores de rango, formato, relleno, borde, etc.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(applyTo?: ClearApplyTo): void;'
+      parameters:
+        - id: applyTo
+          description: Opcional. Determina el tipo de acción de borrado. Vea `ExcelScript.ClearApplyTo` para más información.
+          type: '<xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />'
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This script removes all the formatting from the selected range.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the selected range.
+            let range = workbook.getSelectedRange();
+
+            // Clear all the formatting in that range.
+            range.clear(ExcelScript.ClearApplyTo.formats);
+          }
+          ```
+  - name: clearAllConditionalFormats()
+    uid: 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
+    package: ExcelScript!
+    fullName: clearAllConditionalFormats()
+    summary: Borra todos los formatos condicionales activos en el intervalo actual especificado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearAllConditionalFormats(): void;'
+      return:
+        type: void
+        description: ''
+  - name: convertDataTypeToText()
+    uid: 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
+    package: ExcelScript!
+    fullName: convertDataTypeToText()
+    summary: Convierte las celdas de rango con tipos de datos en texto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'convertDataTypeToText(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
+    package: ExcelScript!
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    summary: Copia los datos de celda o el formato del intervalo de origen o `RangeAreas` del intervalo actual. El intervalo de destino puede tener un tamaño diferente al intervalo de origen o `RangeAreas`<!-- -->. El destino se expandirá automáticamente si es menor que el origen.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        copyFrom(
+                    sourceRange: Range | RangeAreas | string,
+                    copyType?: RangeCopyType,
+                    skipBlanks?: boolean,
+                    transpose?: boolean
+                ): void;
+      parameters:
+        - id: sourceRange
+          description: 'Intervalo de origen o `RangeAreas` desde el que se va a copiar. Cuando el origen tiene varios intervalos, su formulario debe poder crearse quitando filas o columnas completas `RangeAreas` de un intervalo rectangular.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string'
+        - id: copyType
+          description: Tipo de datos de celda o formato sobre los que copiar. El valor predeterminado es "All".
+          type: '<xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />'
+        - id: skipBlanks
+          description: True si se omiten las celdas en blanco en el rango de origen. El valor predeterminado es false.
+          type: boolean
+        - id: transpose
+          description: True si se transponen las celdas en el intervalo de destino. El valor predeterminado es false.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: delete(shift)
+    uid: 'ExcelScript!ExcelScript.Range#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete(shift)
+    summary: Elimina las celdas asociadas al rango.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(shift: DeleteShiftDirection): void;'
+      parameters:
+        - id: shift
+          description: Especifica hacia dónde se desplazarán las celdas. Vea `ExcelScript.DeleteShiftDirection` para más información.
+          type: '<xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />'
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample creates a sample range, then deletes
+           * "A1" using different DeleteShiftDirection values.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Add sample data to better visualize the delete changes.
+            const currentSheet = workbook.getActiveWorksheet();
+            currentSheet.getRange("A1:D4").setValues([
+              [1,2,3,4],
+              [5,6,7,8],
+              [9,10,11,12],
+              [13,14,15,16]]);
+
+            // Delete A1 and shift the cells from the right to fill the space.
+            // The value being deleted is 1.
+            currentSheet.getRange("A1").delete(ExcelScript.DeleteShiftDirection.left);
+
+            // Delete A1 and shift the cells from the bottom to fill the space.
+            // The value being deleted is 2.
+            currentSheet.getRange("A1").delete(ExcelScript.DeleteShiftDirection.up);
+
+            // Log the sample range. The values should be:
+            /*
+              5, 3, 4, "",
+              9, 6, 7, 8,
+              13, 10, 11, 12,
+              "", 14, 15, 16
+            */
+            console.log(currentSheet.getRange("A1:D4").getValues()); 
+          }
+          ```
+  - name: 'find(text, criteria)'
+    uid: 'ExcelScript!ExcelScript.Range#find:member(1)'
+    package: ExcelScript!
+    fullName: 'find(text, criteria)'
+    summary: 'Busca la cadena especificada, según los criterios especificados. Si el intervalo actual es mayor que una sola celda, la búsqueda se limitará a ese intervalo, de lo contrario, la búsqueda cubrirá toda la hoja a partir de esa celda. Si no hay coincidencias, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'find(text: string, criteria: SearchCriteria): Range;'
+      parameters:
+        - id: text
+          description: La cadena que se busca.
+          type: string
+        - id: criteria
+          description: 'Criterios de búsqueda adicionales, incluida la dirección de búsqueda y si la búsqueda debe coincidir con toda la celda o distingue mayúsculas de minúsculas.'
+          type: '<xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: flashFill()
+    uid: 'ExcelScript!ExcelScript.Range#flashFill:member(1)'
+    package: ExcelScript!
+    fullName: flashFill()
+    summary: 'Realiza un relleno de flash en el intervalo actual. Relleno de flash rellena automáticamente los datos cuando detecta un patrón, por lo que el intervalo debe ser un intervalo de una sola columna y tener datos a su alrededor para encontrar un patrón.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'flashFill(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'getAbsoluteResizedRange(numRows, numColumns)'
+    uid: 'ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)'
+    package: ExcelScript!
+    fullName: 'getAbsoluteResizedRange(numRows, numColumns)'
+    summary: 'Obtiene un objeto con la misma celda superior izquierda que el objeto actual, pero con los números especificados `Range` `Range` de filas y columnas.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
+      parameters:
+        - id: numRows
+          description: El número de filas del nuevo tamaño de intervalo.
+          type: number
+        - id: numColumns
+          description: El número de columnas del nuevo tamaño del intervalo.
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getAddress()
+    uid: 'ExcelScript!ExcelScript.Range#getAddress:member(1)'
+    package: ExcelScript!
+    fullName: getAddress()
+    summary: 'Especifica la referencia de intervalo en estilo A1. El valor de dirección contiene la referencia de hoja (por ejemplo, "Sheet1! A1:B4").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAddress(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getAddressLocal()
+    uid: 'ExcelScript!ExcelScript.Range#getAddressLocal:member(1)'
+    package: ExcelScript!
+    fullName: getAddressLocal()
+    summary: Representa la referencia de intervalo para el intervalo especificado en el idioma del usuario.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAddressLocal(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getBoundingRect(anotherRange)
+    uid: 'ExcelScript!ExcelScript.Range#getBoundingRect:member(1)'
+    package: ExcelScript!
+    fullName: getBoundingRect(anotherRange)
+    summary: 'Obtiene el objeto de intervalo más pequeño que abarca los intervalos especificados. Por ejemplo, `GetBoundingRect` el de "B2:C5" y "D10:E15" es "B2:E15".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBoundingRect(anotherRange: Range | string): Range;'
+      parameters:
+        - id: anotherRange
+          description: 'El objeto de intervalo, la dirección o el nombre del intervalo.'
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: 'getCell(row, column)'
+    uid: 'ExcelScript!ExcelScript.Range#getCell:member(1)'
+    package: ExcelScript!
+    fullName: 'getCell(row, column)'
+    summary: 'Obtiene el objeto de intervalo que contiene la celda en función de los números de fila y columna. La celda puede estar fuera de los límites de su intervalo primario, siempre que permanezca dentro de la cuadrícula de la hoja de cálculo. La celda devuelta se ubica con respecto a la celda superior izquierda del intervalo.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCell(row: number, column: number): Range;'
+      parameters:
+        - id: row
+          description: Número de fila de la celda que se va a recuperar. Indizado con cero.
+          type: number
+        - id: column
+          description: Número de columna de la celda que se va a recuperar. Indizado con cero.
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getCellCount()
+    uid: 'ExcelScript!ExcelScript.Range#getCellCount:member(1)'
+    package: ExcelScript!
+    fullName: getCellCount()
+    summary: Especifica el número de celdas del rango. Esta API devolverá -1 si el recuento de celdas supera 2^31-1 (2 147 483 647).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCellCount(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getColumn(column)
+    uid: 'ExcelScript!ExcelScript.Range#getColumn:member(1)'
+    package: ExcelScript!
+    fullName: getColumn(column)
+    summary: Obtiene una columna contenida en el intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumn(column: number): Range;'
+      parameters:
+        - id: column
+          description: Número de columna del intervalo que se va a recuperar. Indizado con cero.
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getColumnCount()
+    uid: 'ExcelScript!ExcelScript.Range#getColumnCount:member(1)'
+    package: ExcelScript!
+    fullName: getColumnCount()
+    summary: Especifica el número total de columnas del intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnCount(): number;'
+      return:
+        type: number
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample provides the count of negative numbers that are present
+           * in the used range of the current worksheet.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the working range.
+            let usedRange = workbook.getActiveWorksheet().getUsedRange();
+            let rowCount = usedRange.getRowCount();
+            let columnCount = usedRange.getColumnCount();
+
+            // Save the values locally to avoid repeatedly asking the workbook.
+            let usedRangeValues = usedRange.getValues();
+
+            // Start the negative number counter.
+            let negativeCount = 0;
+
+            // Iterate over the entire range looking for negative numbers.
+            for (let i = 0; i < rowCount; i++) {
+              for (let j = 0; j < columnCount; j++) {
+                if (usedRangeValues[i][j] < 0) {
+                  negativeCount++;
+                }
+              }
+            }
+
+            // Log the negative number count to the console.
+            console.log(negativeCount);
+          }
+          ```
+  - name: getColumnHidden()
+    uid: 'ExcelScript!ExcelScript.Range#getColumnHidden:member(1)'
+    package: ExcelScript!
+    fullName: getColumnHidden()
+    summary: Representa si todas las columnas del intervalo actual están ocultas. El valor `true` es cuando todas las columnas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna columna del rango. El valor es cuando algunas columnas de un rango están ocultas y otras `null` columnas del mismo intervalo no están ocultas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnHidden(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getColumnIndex()
+    uid: 'ExcelScript!ExcelScript.Range#getColumnIndex:member(1)'
+    package: ExcelScript!
+    fullName: getColumnIndex()
+    summary: Especifica el número de columna de la primera celda del rango. Indizado con cero.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnIndex(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getColumnsAfter(count)
+    uid: 'ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)'
+    package: ExcelScript!
+    fullName: getColumnsAfter(count)
+    summary: Obtiene un número determinado de columnas a la derecha del objeto `Range` actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnsAfter(count?: number): Range;'
+      parameters:
+        - id: count
+          description: 'Opcional. El número de columnas que se va a incluir en el rango resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getColumnsBefore(count)
+    uid: 'ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)'
+    package: ExcelScript!
+    fullName: getColumnsBefore(count)
+    summary: Obtiene un número determinado de columnas a la izquierda del objeto `Range` actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnsBefore(count?: number): Range;'
+      parameters:
+        - id: count
+          description: 'Opcional. El número de columnas que se va a incluir en el rango resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getConditionalFormat(id)
+    uid: 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalFormat(id)
+    summary: Devuelve un formato condicional para el identificador especificado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalFormat(id: string): ConditionalFormat;'
+      parameters:
+        - id: id
+          description: El identificador del formato condicional.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />'
+        description: ''
+  - name: getConditionalFormats()
+    uid: 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalFormats()
+    summary: La colección de `ConditionalFormats` esa intersección del intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalFormats(): ConditionalFormat[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]'
+        description: ''
+  - name: getDataValidation()
+    uid: 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
+    package: ExcelScript!
+    fullName: getDataValidation()
+    summary: Devuelve un objeto de validación de datos.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDataValidation(): DataValidation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidation:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This script creates a drop-down selection list for a cell. It uses the existing values of the selected range as the choices for the list.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the values for data validation.
+            let selectedRange = workbook.getSelectedRange();
+            let rangeValues = selectedRange.getValues();
+
+            // Convert the values into a comma-delimited string.
+            let dataValidationListString = "";
+            rangeValues.forEach((rangeValueRow) => {
+              rangeValueRow.forEach((value) => {
+                dataValidationListString += value + ",";
+              });
+            });
+
+            // Clear the old range.
+            selectedRange.clear(ExcelScript.ClearApplyTo.contents);
+
+            // Apply the data validation to the first cell in the selected range.
+            let targetCell = selectedRange.getCell(0,0);
+            let dataValidation = targetCell.getDataValidation();
+
+            // Set the content of the drop-down list.
+            dataValidation.setRule({
+                list: {
+                  inCellDropDown: true,
+                  source: dataValidationListString
+                }
+              });
+          }
+          ```
+  - name: getDirectPrecedents()
+    uid: 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
+    package: ExcelScript!
+    fullName: getDirectPrecedents()
+    summary: Devuelve un objeto que representa el rango que contiene todos los precedentes directos de una celda en la misma hoja de cálculo o `WorkbookRangeAreas` en varias hojas de cálculo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.WorkbookRangeAreas:interface" />'
+        description: ''
+  - name: getEntireColumn()
+    uid: 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
+    package: ExcelScript!
+    fullName: getEntireColumn()
+    summary: 'Obtiene un objeto que representa toda la columna del rango (por ejemplo, si el rango actual representa celdas "B4:E11", es un rango que representa las columnas `getEntireColumn` "B:E").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEntireColumn(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getEntireRow()
+    uid: 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
+    package: ExcelScript!
+    fullName: getEntireRow()
+    summary: 'Obtiene un objeto que representa toda la fila del rango (por ejemplo, si el rango actual representa celdas "B4:E11", es un rango que representa las filas `GetEntireRow` "4:11").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEntireRow(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: 'getExtendedRange(direction, activeCell)'
+    uid: 'ExcelScript!ExcelScript.Range#getExtendedRange:member(1)'
+    package: ExcelScript!
+    fullName: 'getExtendedRange(direction, activeCell)'
+    summary: 'Devuelve un objeto range que incluye el intervalo actual y hasta el borde del intervalo, en función de la dirección proporcionada. Esto coincide con el comportamiento de la tecla Ctrl+Mayús+Flecha en el Excel en Windows interfaz de usuario.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getExtendedRange(
+                    direction: KeyboardDirection,
+                    activeCell?: Range | string
+                ): Range;
+      parameters:
+        - id: direction
+          description: La dirección de la celda activa.
+          type: '<xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />'
+        - id: activeCell
+          description: 'La celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este rango.'
+          type: |-
+            <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+                    
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 'Devuelve un objeto de formato que encapsula la fuente, el relleno, los bordes, la alineación y otras propiedades del rango.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): RangeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />'
+        description: ''
+  - name: getFormula()
+    uid: 'ExcelScript!ExcelScript.Range#getFormula:member(1)'
+    package: ExcelScript!
+    fullName: getFormula()
+    summary: 'Representa la fórmula de celda en la notación de estilo A1. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type: string
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /*
+           * This script sets a cell's formula, 
+           * then displays how Excel stores the cell's formula and value separately.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Set A1 to 2.
+            let a1 = selectedSheet.getRange("A1");
+            a1.setValue(2);
+
+            // Set B1 to the formula =(2*A1), which should equal 4.
+            let b1 = selectedSheet.getRange("B1")
+            b1.setFormula("=(2*A1)");
+
+            // Log the current results for `getFormula` and `getValue` at B1.
+            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
+          }
+          ```
+  - name: getFormulaLocal()
+    uid: 'ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)'
+    package: ExcelScript!
+    fullName: getFormulaLocal()
+    summary: 'Representa la fórmula de celda en la notación de estilo A1, en el idioma del usuario y la configuración regional de formato de número. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormulaLocal(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFormulaR1C1()
+    uid: 'ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)'
+    package: ExcelScript!
+    fullName: getFormulaR1C1()
+    summary: 'Representa la fórmula de celda en la notación de estilo R1C1. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormulaR1C1(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFormulas()
+    uid: 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
+    package: ExcelScript!
+    fullName: getFormulas()
+    summary: 'Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormulas(): string[][];'
+      return:
+        type: 'string[][]'
+        description: ''
+  - name: getFormulasLocal()
+    uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
+    package: ExcelScript!
+    fullName: getFormulasLocal()
+    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormulasLocal(): string[][];'
+      return:
+        type: 'string[][]'
+        description: ''
+  - name: getFormulasR1C1()
+    uid: 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
+    package: ExcelScript!
+    fullName: getFormulasR1C1()
+    summary: 'Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormulasR1C1(): string[][];'
+      return:
+        type: 'string[][]'
+        description: ''
+  - name: getHasSpill()
+    uid: 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
+    package: ExcelScript!
+    fullName: getHasSpill()
+    summary: Indica si todas las celdas tienen un borde de desbordamiento. Devuelve si todas las celdas tienen un borde de desbordamiento o si todas las celdas `true` no tienen un borde de `false` desbordamiento. Devuelve si hay celdas con y `null` sin bordes de desbordamiento dentro del rango.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHasSpill(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: 'Devuelve la distancia en puntos, para el zoom 100%, desde el borde superior del rango hasta el borde inferior del intervalo.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getHidden()
+    uid: 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
+    package: ExcelScript!
+    fullName: getHidden()
+    summary: Representa si todas las celdas del rango actual están ocultas. El valor `true` es cuando todas las celdas de un rango están ocultas. El valor `false` es cuando no hay celdas en el rango ocultas. El valor `null` es cuando algunas celdas de un rango están ocultas y otras celdas del mismo rango no están ocultas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHidden(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getHyperlink()
+    uid: 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
+    package: ExcelScript!
+    fullName: getHyperlink()
+    summary: Representa el hipervínculo del intervalo actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHyperlink(): RangeHyperlink;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample clears all of the hyperlinks from the current worksheet
+           * and removes the usual hyperlink formatting.
+           */
+          function main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {
+            // Get the active worksheet. 
+            let sheet = workbook.getWorksheet(sheetName);
+
+            // Get the used range to operate on.
+            // For large ranges (over 10000 entries), consider splitting the operation into batches for performance.
+            const targetRange = sheet.getUsedRange(true);
+            console.log(`Target Range to clear hyperlinks from: ${targetRange.getAddress()}`);
+
+            const rowCount = targetRange.getRowCount();
+            const colCount = targetRange.getColumnCount();
+            console.log(`Searching for hyperlinks in ${targetRange.getAddress()} which contains ${(rowCount * colCount)} cells`);
+
+            // Go through each individual cell looking for a hyperlink. 
+            // This allows us to limit the formatting changes to only the cells with hyperlink formatting.
+            let clearedCount = 0;
+            for (let i = 0; i < rowCount; i++) {
+              for (let j = 0; j < colCount; j++) {
+                const cell = targetRange.getCell(i, j);
+                const hyperlink = cell.getHyperlink();
+                if (hyperlink) {
+                  cell.clear(ExcelScript.ClearApplyTo.hyperlinks);
+                  cell.getFormat().getFont().setUnderline(ExcelScript.RangeUnderlineStyle.none);
+                  cell.getFormat().getFont().setColor('Black');
+                  clearedCount++;
+                }
+              }
+            }
+
+            console.log(`Done. Cleared hyperlinks from ${clearedCount} cells`);
+          }
+          ```
+  - name: getImage()
+    uid: 'ExcelScript!ExcelScript.Range#getImage:member(1)'
+    package: ExcelScript!
+    fullName: getImage()
+    summary: Representa el intervalo como una imagen png codificada en base64.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getImage(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getIntersection(anotherRange)
+    uid: 'ExcelScript!ExcelScript.Range#getIntersection:member(1)'
+    package: ExcelScript!
+    fullName: getIntersection(anotherRange)
+    summary: 'Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados. Si no se encuentra ninguna intersección, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIntersection(anotherRange: Range | string): Range;'
+      parameters:
+        - id: anotherRange
+          description: Objeto de intervalo o dirección de intervalo que se usará para determinar la intersección de los intervalos.
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getIsEntireColumn()
+    uid: 'ExcelScript!ExcelScript.Range#getIsEntireColumn:member(1)'
+    package: ExcelScript!
+    fullName: getIsEntireColumn()
+    summary: Representa si el intervalo actual es una columna completa.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsEntireColumn(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getIsEntireRow()
+    uid: 'ExcelScript!ExcelScript.Range#getIsEntireRow:member(1)'
+    package: ExcelScript!
+    fullName: getIsEntireRow()
+    summary: Representa si el intervalo actual es una fila completa.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsEntireRow(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getLastCell()
+    uid: 'ExcelScript!ExcelScript.Range#getLastCell:member(1)'
+    package: ExcelScript!
+    fullName: getLastCell()
+    summary: 'Obtiene la última celda del intervalo. Por ejemplo, la última celda de "B2:D5" es "D5".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLastCell(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getLastColumn()
+    uid: 'ExcelScript!ExcelScript.Range#getLastColumn:member(1)'
+    package: ExcelScript!
+    fullName: getLastColumn()
+    summary: 'Obtiene la última columna del intervalo. Por ejemplo, la última columna de "B2:D5" es "D2:D5".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLastColumn(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getLastRow()
+    uid: 'ExcelScript!ExcelScript.Range#getLastRow:member(1)'
+    package: ExcelScript!
+    fullName: getLastRow()
+    summary: 'Obtiene la última fila del intervalo. Por ejemplo, la última fila de "B2:D5" es "B5:D5".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLastRow(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: 'Devuelve la distancia en puntos, para el zoom 100%, desde el borde izquierdo de la hoja de cálculo hasta el borde izquierdo del rango.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLinkedDataTypeState()
+    uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
+    package: ExcelScript!
+    fullName: getLinkedDataTypeState()
+    summary: Representa el estado del tipo de datos de la celda.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />'
+        description: ''
+  - name: getLinkedDataTypeStates()
+    uid: 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
+    package: ExcelScript!
+    fullName: getLinkedDataTypeStates()
+    summary: Indica el estado del tipo de datos de cada celda.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLinkedDataTypeStates(): LinkedDataTypeState[][];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]'
+        description: ''
+  - name: getMergedAreas()
+    uid: 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
+    package: ExcelScript!
+    fullName: getMergedAreas()
+    summary: 'Devuelve un objeto RangeAreas que representa las áreas combinadas de este rango. Tenga en cuenta que si las áreas combinadas cuentan en este intervalo es más de 512, la API no devolverá el resultado. Si rangeAreas no existe, devolverá un objeto null.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMergedAreas(): RangeAreas;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: 'Representa el Excel de formato de número de celda para el intervalo especificado. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getNumberFormatCategories()
+    uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormatCategories()
+    summary: Representa la categoría del formato de número de cada celda.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]'
+        description: ''
+  - name: getNumberFormatCategory()
+    uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormatCategory()
+    summary: Especifica la categoría de formato de número de la primera celda del rango (representada por el índice de fila de 0 y el índice de columna de 0).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormatCategory(): NumberFormatCategory;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />'
+        description: ''
+  - name: getNumberFormatLocal()
+    uid: 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormatLocal()
+    summary: 'Representa el Excel de formato de número de celda para el intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormatLocal(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getNumberFormats()
+    uid: 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormats()
+    summary: Representa Excel código de formato de número del intervalo especificado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormats(): string[][];'
+      return:
+        type: 'string[][]'
+        description: ''
+  - name: getNumberFormatsLocal()
+    uid: 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormatsLocal()
+    summary: 'Representa Excel código de formato de número del intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormatsLocal(): string[][];'
+      return:
+        type: 'string[][]'
+        description: ''
+  - name: 'getOffsetRange(rowOffset, columnOffset)'
+    uid: 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
+    package: ExcelScript!
+    fullName: 'getOffsetRange(rowOffset, columnOffset)'
+    summary: 'Obtiene un objeto que representa un intervalo desplazado con respecto al intervalo especificado. La dimensión del rango devuelto coincidirá con este rango. Si el rango resultante se fuerza más allá de los límites de la cuadrícula de la hoja de cálculo, se producirá un error.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
+      parameters:
+        - id: rowOffset
+          description: 'Número de filas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia abajo, mientras que los negativos lo hacen hacia arriba.'
+          type: number
+        - id: columnOffset
+          description: 'Número de columnas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This script gets adjacent cells using relative references.
+           * Note that if the active cell is on the top row, part of the script fails, 
+           * because it references the cell above the currently selected one.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the currently active cell in the workbook.
+            let activeCell = workbook.getActiveCell();
+            console.log(`The active cell's address is: ${activeCell.getAddress()}`);
+
+            // Get the cell to the right of the active cell and set its value and color.
+            let rightCell = activeCell.getOffsetRange(0,1);
+            rightCell.setValue("Right cell");
+            console.log(`The right cell's address is: ${rightCell.getAddress()}`);
+            rightCell.getFormat().getFont().setColor("Magenta");
+            rightCell.getFormat().getFill().setColor("Cyan");
+
+            // Get the cell to the above of the active cell and set its value and color.
+            // Note that this operation will fail if the active cell is in the top row.
+            let aboveCell = activeCell.getOffsetRange(-1, 0);
+            aboveCell.setValue("Above cell");
+            console.log(`The above cell's address is: ${aboveCell.getAddress()}`);
+            aboveCell.getFormat().getFont().setColor("White");
+            aboveCell.getFormat().getFill().setColor("Black");
+          }
+          ```
+  - name: getPivotTables(fullyContained)
+    uid: 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
+    package: ExcelScript!
+    fullName: getPivotTables(fullyContained)
+    summary: Obtiene una colección con ámbito de tablas dinámicas que se superponen con el intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
+      parameters:
+        - id: fullyContained
+          description: 'If `true`<!-- -->, devuelve solo tablas dinámicas que están totalmente contenidas dentro de los límites del intervalo. El valor predeterminado es `false`<!-- -->.'
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotTable:interface" />[]'
+        description: ''
+  - name: getPredefinedCellStyle()
+    uid: 'ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)'
+    package: ExcelScript!
+    fullName: getPredefinedCellStyle()
+    summary: 'Representa el estilo del rango actual. Si los estilos de las celdas son incoherentes, `null` se devolverán. Para los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor `BuiltInStyle` de la enumeración.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPredefinedCellStyle(): string;'
+      return:
+        type: string
+        description: ''
+  - name: 'getRangeEdge(direction, activeCell)'
+    uid: 'ExcelScript!ExcelScript.Range#getRangeEdge:member(1)'
+    package: ExcelScript!
+    fullName: 'getRangeEdge(direction, activeCell)'
+    summary: Devuelve un objeto range que es la celda perimetral de la región de datos que corresponde a la dirección proporcionada. Esto coincide con el comportamiento de la tecla Ctrl+Flecha en el Excel en Windows interfaz de usuario.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getRangeEdge(
+                    direction: KeyboardDirection,
+                    activeCell?: Range | string
+                ): Range;
+      parameters:
+        - id: direction
+          description: La dirección de la celda activa.
+          type: '<xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />'
+        - id: activeCell
+          description: 'La celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este rango.'
+          type: |-
+            <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+                    
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: 'getResizedRange(deltaRows, deltaColumns)'
+    uid: 'ExcelScript!ExcelScript.Range#getResizedRange:member(1)'
+    package: ExcelScript!
+    fullName: 'getResizedRange(deltaRows, deltaColumns)'
+    summary: 'Obtiene un objeto similar al objeto actual, pero con su esquina inferior derecha expandida (o contratada) por un número de `Range` `Range` filas y columnas.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+      parameters:
+        - id: deltaRows
+          description: 'El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.'
+          type: number
+        - id: deltaColumns
+          description: 'Número de columnas por las que expandir la esquina inferior derecha, en relación con el intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This script copies the formatting in the active cell to the neighboring cells.
+           * Note that this script only works when the active cell isn't on an edge of the worksheet.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the active cell.
+            let activeCell = workbook.getActiveCell();
+
+            // Get the cell that's one row above and one column to the left of the active cell.
+            let cornerCell = activeCell.getOffsetRange(-1,-1);
+
+            // Get a range that includes all the cells surrounding the active cell.
+            let surroundingRange = cornerCell.getResizedRange(2, 2)
+
+            // Copy the formatting from the active cell to the new range.
+            surroundingRange.copyFrom(
+              activeCell, /* The source range. */
+              ExcelScript.RangeCopyType.formats /* What to copy. */
+            );
+          }
+          ```
+  - name: getRow(row)
+    uid: 'ExcelScript!ExcelScript.Range#getRow:member(1)'
+    package: ExcelScript!
+    fullName: getRow(row)
+    summary: Obtiene una fila contenida en el intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRow(row: number): Range;'
+      parameters:
+        - id: row
+          description: Número de fila del intervalo que se va a recuperar. Indizado con cero.
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRowCount()
+    uid: 'ExcelScript!ExcelScript.Range#getRowCount:member(1)'
+    package: ExcelScript!
+    fullName: getRowCount()
+    summary: Devuelve el número total de filas del intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type: number
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample provides the count of negative numbers that are present
+           * in the used range of the current worksheet.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the working range.
+            let usedRange = workbook.getActiveWorksheet().getUsedRange();
+            let rowCount = usedRange.getRowCount();
+            let columnCount = usedRange.getColumnCount();
+
+            // Save the values locally to avoid repeatedly asking the workbook.
+            let usedRangeValues = usedRange.getValues();
+
+            // Start the negative number counter.
+            let negativeCount = 0;
+
+            // Iterate over the entire range looking for negative numbers.
+            for (let i = 0; i < rowCount; i++) {
+              for (let j = 0; j < columnCount; j++) {
+                if (usedRangeValues[i][j] < 0) {
+                  negativeCount++;
+                }
+              }
+            }
+
+            // Log the negative number count to the console.
+            console.log(negativeCount);
+          }
+          ```
+  - name: getRowHidden()
+    uid: 'ExcelScript!ExcelScript.Range#getRowHidden:member(1)'
+    package: ExcelScript!
+    fullName: getRowHidden()
+    summary: Representa si todas las filas del intervalo actual están ocultas. El valor `true` es cuando todas las filas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna fila del rango. El valor es cuando algunas filas de un rango están ocultas y otras `null` filas del mismo rango no están ocultas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowHidden(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getRowIndex()
+    uid: 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
+    package: ExcelScript!
+    fullName: getRowIndex()
+    summary: Devuelve el número de fila de la primera celda del intervalo. Indizado con cero.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowIndex(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getRowsAbove(count)
+    uid: 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
+    package: ExcelScript!
+    fullName: getRowsAbove(count)
+    summary: Obtiene un número determinado de filas por encima del objeto `Range` actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowsAbove(count?: number): Range;'
+      parameters:
+        - id: count
+          description: 'Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRowsBelow(count)
+    uid: 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
+    package: ExcelScript!
+    fullName: getRowsBelow(count)
+    summary: Obtiene un número determinado de filas por debajo del objeto `Range` actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowsBelow(count?: number): Range;'
+      parameters:
+        - id: count
+          description: 'Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.'
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getSavedAsArray()
+    uid: 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
+    package: ExcelScript!
+    fullName: getSavedAsArray()
+    summary: Representa si todas las celdas se guardarían como una fórmula de matriz. Devuelve si todas las celdas se guardarían como una fórmula de matriz o si todas las celdas no se guardarían `true` `false` como fórmula de matriz. Devuelve `null` si algunas celdas se guardarían como una fórmula de matriz y otras no lo serían.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSavedAsArray(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSort()
+    uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
+    package: ExcelScript!
+    fullName: getSort()
+    summary: Representa la ordenación del intervalo del intervalo actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSort(): RangeSort;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeSort:interface" />'
+        description: ''
+  - name: 'getSpecialCells(cellType, cellValueType)'
+    uid: 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
+    package: ExcelScript!
+    fullName: 'getSpecialCells(cellType, cellValueType)'
+    summary: 'Obtiene el objeto, que comprende uno o varios intervalos, que representa todas las celdas que `RangeAreas` coinciden con el tipo y el valor especificados. Si no se encuentran celdas especiales, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getSpecialCells(
+                    cellType: SpecialCellType,
+                    cellValueType?: SpecialCellValueType
+                ): RangeAreas;
+      parameters:
+        - id: cellType
+          description: Tipo de celdas que se incluirán.
+          type: '<xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />'
+        - id: cellValueType
+          description: 'Si `cellType` es o `constants``formulas`<!-- -->, este argumento se usa para determinar qué tipos de celdas incluir en el resultado. Estos valores se pueden combinar para devolver más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.'
+          type: '<xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample gets all the blank cells in the current worksheet's used range. It then highlights all those cells with a yellow background.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+              // Get the current used range.
+              let range = workbook.getActiveWorksheet().getUsedRange();
+              
+              // Get all the blank cells.
+              let blankCells = range.getSpecialCells(ExcelScript.SpecialCellType.blanks);
+              // Highlight the blank cells with a yellow background.
+              blankCells.getFormat().getFill().setColor("yellow");
+          }
+          ```
+  - name: getSpillingToRange()
+    uid: 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
+    package: ExcelScript!
+    fullName: getSpillingToRange()
+    summary: 'Obtiene el objeto de intervalo que contiene el intervalo de desbordamiento al llamar en una celda de delimitador. Si el intervalo no es una celda delimitadora o no se encuentra el intervalo de distribución, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSpillingToRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getSpillParent()
+    uid: 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
+    package: ExcelScript!
+    fullName: getSpillParent()
+    summary: 'Obtiene el objeto de intervalo que contiene la celda delimitadora de la celda en la que se va a desbordar. Si no es una celda desbordada o se proporciona más de una celda, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSpillParent(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getSurroundingRegion()
+    uid: 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
+    package: ExcelScript!
+    fullName: getSurroundingRegion()
+    summary: Devuelve un `Range` objeto que representa la región circundante de la celda superior izquierda de este rango. Una región circundante es un intervalo limitado por cualquier combinación de filas y columnas en blanco en relación a este intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSurroundingRegion(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getTables(fullyContained)
+    uid: 'ExcelScript!ExcelScript.Range#getTables:member(1)'
+    package: ExcelScript!
+    fullName: getTables(fullyContained)
+    summary: Obtiene una colección con ámbito de tablas que se superpone con el intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Table[];'
+      parameters:
+        - id: fullyContained
+          description: 'If `true`<!-- -->, devuelve solo tablas que están totalmente contenidas dentro de los límites del intervalo. El valor predeterminado es `false`<!-- -->.'
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Table:interface" />[]'
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.Range#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: 'Representa el valor Text del intervalo especificado. El valor Text no dependerá del ancho de la celda. La \# sustitución de signos que se produce Excel interfaz de usuario no afectará al valor de texto devuelto por la API. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTexts()
+    uid: 'ExcelScript!ExcelScript.Range#getTexts:member(1)'
+    package: ExcelScript!
+    fullName: getTexts()
+    summary: Valores de texto del intervalo especificado. El valor Text no dependerá del ancho de la celda. La sustitución de signo de número ( ) que se produce en la interfaz Excel no afectará al \# valor de texto devuelto por la API.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTexts(): string[][];'
+      return:
+        type: 'string[][]'
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.Range#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: 'Devuelve la distancia en puntos, para el zoom 100%, desde el borde superior de la hoja de cálculo hasta el borde superior del rango.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getUsedRange(valuesOnly)
+    uid: 'ExcelScript!ExcelScript.Range#getUsedRange:member(1)'
+    package: ExcelScript!
+    fullName: getUsedRange(valuesOnly)
+    summary: 'Devuelve el intervalo usado del objeto de rango especificado. Si no hay celdas usadas dentro del intervalo, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Range;'
+      parameters:
+        - id: valuesOnly
+          description: Solo tiene en cuenta las celdas con valores como celdas usadas.
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.Range#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: 'Representa el valor sin procesar del intervalo especificado. Los datos devueltos pueden ser de tipo cadena, número o booleano. La celda que contenga un error devolverá la cadena de error. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): string | number | boolean;'
+      return:
+        type: string | number | boolean
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample reads the value of A1 and prints it to the console.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the current worksheet.
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Get the value of cell A1.
+            let range = selectedSheet.getRange("A1");
+            
+            // Print the value of A1.
+            console.log(range.getValue());
+          }
+          ```
+  - name: getValues()
+    uid: 'ExcelScript!ExcelScript.Range#getValues:member(1)'
+    package: ExcelScript!
+    fullName: getValues()
+    summary: 'Representa los valores sin formato del rango especificado. Los datos devueltos pueden ser una cadena, un número o un valor booleano. Las celdas que contienen un error devolverán la cadena de error. Si el valor devuelto comienza con un signo más ("+"), menos ("-") o igual ("="), Excel interpreta este valor como una fórmula.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValues(): (string | number | boolean)[][];'
+      return:
+        type: '(string | number | boolean)[][]'
+        description: ''
+  - name: getValueType()
+    uid: 'ExcelScript!ExcelScript.Range#getValueType:member(1)'
+    package: ExcelScript!
+    fullName: getValueType()
+    summary: 'Representa el tipo de datos de la celda. Si el rango contiene varias celdas, se devolverán los datos de la primera celda (representada por el índice de fila de 0 y el índice de columna de 0).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValueType(): RangeValueType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />'
+        description: ''
+  - name: getValueTypes()
+    uid: 'ExcelScript!ExcelScript.Range#getValueTypes:member(1)'
+    package: ExcelScript!
+    fullName: getValueTypes()
+    summary: Especifica el tipo de datos de cada celda.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValueTypes(): RangeValueType[][];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]'
+        description: ''
+  - name: getVisibleView()
+    uid: 'ExcelScript!ExcelScript.Range#getVisibleView:member(1)'
+    package: ExcelScript!
+    fullName: getVisibleView()
+    summary: Representa las filas visibles del intervalo actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisibleView(): RangeView;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeView:interface" />'
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.Range#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: 'Devuelve la distancia en puntos, para el zoom 100%, desde el borde izquierdo del rango hasta el borde derecho del intervalo.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getWorksheet()
+    uid: 'ExcelScript!ExcelScript.Range#getWorksheet:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheet()
+    summary: Hoja de cálculo que contiene el rango actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: group(groupOption)
+    uid: 'ExcelScript!ExcelScript.Range#group:member(1)'
+    package: ExcelScript!
+    fullName: group(groupOption)
+    summary: Agrupa columnas y filas para un esquema.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'group(groupOption: GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: 'Especifica cómo se puede agrupar el intervalo por filas o columnas. Se produce un error cuando la opción de grupo difiere de la propiedad o del intervalo (es decir, es true y es "ByColumns" o es true y `InvalidArgument` `isEntireRow` es `isEntireColumn` `range.isEntireRow` `groupOption` `range.isEntireColumn` `groupOption` "ByRows").'
+          type: '<xref uid="ExcelScript!ExcelScript.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: hideGroupDetails(groupOption)
+    uid: 'ExcelScript!ExcelScript.Range#hideGroupDetails:member(1)'
+    package: ExcelScript!
+    fullName: hideGroupDetails(groupOption)
+    summary: Oculta los detalles del grupo de filas o columnas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hideGroupDetails(groupOption: GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: Especifica si se ocultan los detalles de las filas agrupadas o las columnas agrupadas.
+          type: '<xref uid="ExcelScript!ExcelScript.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: insert(shift)
+    uid: 'ExcelScript!ExcelScript.Range#insert:member(1)'
+    package: ExcelScript!
+    fullName: insert(shift)
+    summary: Inserta una celda o un intervalo de celdas en la hoja de cálculo en lugar de este intervalo y desplaza las demás celdas para crear espacio. Devuelve un nuevo `Range` objeto en el espacio en blanco ahora.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insert(shift: InsertShiftDirection): Range;'
+      parameters:
+        - id: shift
+          description: Especifica hacia dónde se desplazarán las celdas. Vea `ExcelScript.InsertShiftDirection` para más información.
+          type: '<xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: merge(across)
+    uid: 'ExcelScript!ExcelScript.Range#merge:member(1)'
+    package: ExcelScript!
+    fullName: merge(across)
+    summary: Combina las celdas del intervalo en una región de la hoja de cálculo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'merge(across?: boolean): void;'
+      parameters:
+        - id: across
+          description: Opcional. Se `true` establece para combinar celdas en cada fila del rango especificado como celdas combinadas independientes. El valor predeterminado es `false`<!-- -->.
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: moveTo(destinationRange)
+    uid: 'ExcelScript!ExcelScript.Range#moveTo:member(1)'
+    package: ExcelScript!
+    fullName: moveTo(destinationRange)
+    summary: 'Mueve los valores de celda, el formato y las fórmulas del rango actual al intervalo de destino, reemplazando la información antigua de dichas celdas. El intervalo de destino se expandirá automáticamente si es menor que el intervalo actual. No se modifican las celdas del rango de destino que estén fuera del área del rango original.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'moveTo(destinationRange: Range | string): void;'
+      parameters:
+        - id: destinationRange
+          description: destinationRange Especifica el intervalo al que se desplazará la información de este intervalo.
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: void
+        description: ''
+  - name: 'removeDuplicates(columns, includesHeader)'
+    uid: 'ExcelScript!ExcelScript.Range#removeDuplicates:member(1)'
+    package: ExcelScript!
+    fullName: 'removeDuplicates(columns, includesHeader)'
+    summary: Quita los valores duplicados del intervalo especificado por las columnas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        removeDuplicates(
+                    columns: number[],
+                    includesHeader: boolean
+                ): RemoveDuplicatesResult;
+      parameters:
+        - id: columns
+          description: Las columnas dentro del rango que pueden contener duplicados. Debe especificarse al menos una columna. Indizado con cero.
+          type: 'number[]'
+        - id: includesHeader
+          description: True si los datos de entrada contienen encabezado. El valor predeterminado es false.
+          type: boolean
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />'
+        description: ''
+  - name: 'replaceAll(text, replacement, criteria)'
+    uid: 'ExcelScript!ExcelScript.Range#replaceAll:member(1)'
+    package: ExcelScript!
+    fullName: 'replaceAll(text, replacement, criteria)'
+    summary: 'Busca y reemplaza la cadena especificada, según los criterios especificados dentro del intervalo actual.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        replaceAll(
+                    text: string,
+                    replacement: string,
+                    criteria: ReplaceCriteria
+                ): number;
+      parameters:
+        - id: text
+          description: Cadena que se busca.
+          type: string
+        - id: replacement
+          description: La cadena que reemplaza a la cadena original.
+          type: string
+        - id: criteria
+          description: Criterios de reemplazo adicionales.
+          type: '<xref uid="ExcelScript!ExcelScript.ReplaceCriteria:interface" />'
+      return:
+        type: number
+        description: ''
+  - name: select()
+    uid: 'ExcelScript!ExcelScript.Range#select:member(1)'
+    package: ExcelScript!
+    fullName: select()
+    summary: Selecciona el intervalo especificado en la interfaz de usuario de Excel.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'select(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setColumnHidden(columnHidden)
+    uid: 'ExcelScript!ExcelScript.Range#setColumnHidden:member(1)'
+    package: ExcelScript!
+    fullName: setColumnHidden(columnHidden)
+    summary: Representa si todas las columnas del intervalo actual están ocultas. El valor `true` es cuando todas las columnas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna columna del rango. El valor es cuando algunas columnas de un rango están ocultas y otras `null` columnas del mismo intervalo no están ocultas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColumnHidden(columnHidden: boolean): void;'
+      parameters:
+        - id: columnHidden
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setDirty()
+    uid: 'ExcelScript!ExcelScript.Range#setDirty:member(1)'
+    package: ExcelScript!
+    fullName: setDirty()
+    summary: Establece un intervalo que se deberá actualizar cuando se realice la próxima actualización.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setDirty(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setFormula(formula)
+    uid: 'ExcelScript!ExcelScript.Range#setFormula:member(1)'
+    package: ExcelScript!
+    fullName: setFormula(formula)
+    summary: 'Establece la fórmula de celda en la notación de estilo A1. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      parameters:
+        - id: formula
+          description: ''
+          type: string
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /*
+           * This script sets a cell's formula, 
+           * then displays how Excel stores the cell's formula and value separately.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            let selectedSheet = workbook.getActiveWorksheet();
+
+            // Set A1 to 2.
+            let a1 = selectedSheet.getRange("A1");
+            a1.setValue(2);
+
+            // Set B1 to the formula =(2*A1), which should equal 4.
+            let b1 = selectedSheet.getRange("B1")
+            b1.setFormula("=(2*A1)");
+
+            // Log the current results for `getFormula` and `getValue` at B1.
+            console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);
+          }
+          ```
+  - name: setFormulaLocal(formulaLocal)
+    uid: 'ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)'
+    package: ExcelScript!
+    fullName: setFormulaLocal(formulaLocal)
+    summary: 'Establezca la fórmula de celda en la notación de estilo A1, en el idioma del usuario y la configuración regional de formato de número. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormulaLocal(formulaLocal: string): void;'
+      parameters:
+        - id: formulaLocal
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFormulaR1C1(formulaR1C1)
+    uid: 'ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)'
+    package: ExcelScript!
+    fullName: setFormulaR1C1(formulaR1C1)
+    summary: 'Establece la fórmula de celda en la notación de estilo R1C1. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormulaR1C1(formulaR1C1: string): void;'
+      parameters:
+        - id: formulaR1C1
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFormulas(formulas)
+    uid: 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
+    package: ExcelScript!
+    fullName: setFormulas(formulas)
+    summary: 'Representa la fórmula en notación de estilo A1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormulas(formulas: string[][]): void;'
+      parameters:
+        - id: formulas
+          description: ''
+          type: 'string[][]'
+      return:
+        type: void
+        description: ''
+  - name: setFormulasLocal(formulasLocal)
+    uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
+    package: ExcelScript!
+    fullName: setFormulasLocal(formulasLocal)
+    summary: 'Representa la fórmula en notación de estilo A1, en el idioma del usuario y en la configuración regional del formato numérico. Por ejemplo, la fórmula "=SUM(A1, 1.5)" en inglés se convertiría en "=SUMME(A1; 1,5)" en alemán. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormulasLocal(formulasLocal: string[][]): void;'
+      parameters:
+        - id: formulasLocal
+          description: ''
+          type: 'string[][]'
+      return:
+        type: void
+        description: ''
+  - name: setFormulasR1C1(formulasR1C1)
+    uid: 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
+    package: ExcelScript!
+    fullName: setFormulasR1C1(formulasR1C1)
+    summary: 'Representa la fórmula en notación de estilo R1C1. Si una celda no tiene ninguna fórmula, su valor se devuelve en su lugar.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormulasR1C1(formulasR1C1: string[][]): void;'
+      parameters:
+        - id: formulasR1C1
+          description: ''
+          type: 'string[][]'
+      return:
+        type: void
+        description: ''
+  - name: setHyperlink(hyperlink)
+    uid: 'ExcelScript!ExcelScript.Range#setHyperlink:member(1)'
+    package: ExcelScript!
+    fullName: setHyperlink(hyperlink)
+    summary: Representa el hipervínculo del intervalo actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHyperlink(hyperlink: RangeHyperlink): void;'
+      parameters:
+        - id: hyperlink
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />'
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /** 
+           * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get the active cell.
+            let cell = workbook.getActiveCell();
+
+            // Get the last worksheet in the workbook.
+            // Note that this might be the current sheet if there's only one worksheet.
+            let lastSheet = workbook.getLastWorksheet();
+
+            // Get sheet name. 
+            let linkedSheetName = lastSheet.getName();
+            console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);
+
+            // Set the text for the hyperlink.
+            let value = `Click to go to: ${linkedSheetName}`;
+
+            // Create the hyperlink using that cell's value.
+            cell.setHyperlink({
+              textToDisplay: value.toString(),
+              screenTip: `Navigate to ${linkedSheetName}`,
+              documentReference: `${linkedSheetName}!A1`
+            });
+          }
+          ```
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.Range#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: 'Establece el Excel de formato de número de celda para el intervalo especificado. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormatLocal(numberFormatLocal)
+    uid: 'ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormatLocal(numberFormatLocal)
+    summary: 'Establece el Excel de formato de número de celda para el intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema. Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormatLocal(numberFormatLocal: string): void;'
+      parameters:
+        - id: numberFormatLocal
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormats(numberFormats)
+    uid: 'ExcelScript!ExcelScript.Range#setNumberFormats:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormats(numberFormats)
+    summary: Representa Excel código de formato de número del intervalo especificado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormats(numberFormats: string[][]): void;'
+      parameters:
+        - id: numberFormats
+          description: ''
+          type: 'string[][]'
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormatsLocal(numberFormatsLocal)
+    uid: 'ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormatsLocal(numberFormatsLocal)
+    summary: 'Representa Excel código de formato de número del intervalo especificado, en función de la configuración de idioma del usuario. Excel no realiza ninguna coerción de idioma o formato al obtener o establecer la `numberFormatLocal` propiedad. Cualquier texto devuelto usa las cadenas con formato local según el idioma especificado en la configuración del sistema.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormatsLocal(numberFormatsLocal: string[][]): void;'
+      parameters:
+        - id: numberFormatsLocal
+          description: ''
+          type: 'string[][]'
+      return:
+        type: void
+        description: ''
+  - name: setPredefinedCellStyle(predefinedCellStyle)
+    uid: 'ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)'
+    package: ExcelScript!
+    fullName: setPredefinedCellStyle(predefinedCellStyle)
+    summary: 'Representa el estilo del rango actual. Si los estilos de las celdas son incoherentes, `null` se devolverán. Para los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor `BuiltInStyle` de la enumeración.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPredefinedCellStyle(predefinedCellStyle: string): void;'
+      parameters:
+        - id: predefinedCellStyle
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setRowHidden(rowHidden)
+    uid: 'ExcelScript!ExcelScript.Range#setRowHidden:member(1)'
+    package: ExcelScript!
+    fullName: setRowHidden(rowHidden)
+    summary: Representa si todas las filas del intervalo actual están ocultas. El valor `true` es cuando todas las filas de un rango están ocultas. El valor `false` es cuando no se oculta ninguna fila del rango. El valor es cuando algunas filas de un rango están ocultas y otras `null` filas del mismo rango no están ocultas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRowHidden(rowHidden: boolean): void;'
+      parameters:
+        - id: rowHidden
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setValue(value)
+    uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
+    package: ExcelScript!
+    fullName: setValue(value)
+    summary: 'Establece el valor sin procesar del intervalo especificado. Los datos que se establecen pueden ser de tipo string, number o boolean. `null`se omitirá el valor (no se establece ni se sobrescribe en Excel). Si el rango contiene varias celdas, cada celda del intervalo especificado se actualizará con los datos de entrada.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValue(value: any): void;'
+      parameters:
+        - id: value
+          description: ''
+          type: any
+      return:
+        type: void
+        description: ''
+  - name: setValues(values)
+    uid: 'ExcelScript!ExcelScript.Range#setValues:member(1)'
+    package: ExcelScript!
+    fullName: setValues(values)
+    summary: 'Establece los valores sin procesar del intervalo especificado. Los datos proporcionados pueden ser una cadena, un número o un valor booleano. Si el valor proporcionado comienza con un signo más ("+"), menos ("-") o igual ("="), Excel interpreta este valor como una fórmula.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValues(values: (string | number | boolean)[][]): void;'
+      parameters:
+        - id: values
+          description: ''
+          type: '(string | number | boolean)[][]'
+      return:
+        type: void
+        description: |-
+
+
+          #### <a name="examples"></a>Ejemplos
+
+          ```TypeScript
+          /**
+           * This sample inserts some pre-loaded data into a range.
+           * It also shows how to get a range that fits the data.
+           */
+           function main(workbook: ExcelScript.Workbook) {
+             // Get the active cell.
+             let currentCell = workbook.getActiveCell();
+             
+             // Calculate the range needed to fit the given data.
+             let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);
+
+             // Set range values to the data.
+             targetRange.setValues(DATA);
+
+             // Autofit the columns so the worksheet is readable. 
+             targetRange.getFormat().autofitColumns();
+           }
+
+           /* 
+            * This sample's data is in a static 2-dimensional array.
+            * You could also get the input from other ranges or sources.
+            * Note that each row must have the same number of columns to be valid. 
+            */
+           const DATA = [
+             ['Date', 'Salesperson', 'Product', 'Amount']
+             , ['3/2/2020', 'Anne', 'Pizza', '$1400']
+             , ['3/2/2020', 'Mariya', 'Pizza', '$1700']
+             , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']
+             , ['3/24/2020', 'Anne', 'Pizza', '$750']
+             , ['3/28/2020', 'Mark', 'Salads', '$510']
+             , ['4/17/2020', 'Laura', 'Salads', '$900']
+             , ['4/17/2020', 'Mariya', 'Salads', '$1600']
+             , ['4/28/2020', 'Laura', 'Sandwiches', '$680']
+           ];
+          ```
+  - name: showCard()
+    uid: 'ExcelScript!ExcelScript.Range#showCard:member(1)'
+    package: ExcelScript!
+    fullName: showCard()
+    summary: Muestra la tarjeta de una celda activa si tiene contenido de valor enriquecido.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showCard(): void;'
+      return:
+        type: void
+        description: ''
+  - name: showGroupDetails(groupOption)
+    uid: 'ExcelScript!ExcelScript.Range#showGroupDetails:member(1)'
+    package: ExcelScript!
+    fullName: showGroupDetails(groupOption)
+    summary: Muestra los detalles del grupo de filas o columnas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showGroupDetails(groupOption: GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: Especifica si se deben mostrar los detalles de las filas agrupadas o las columnas agrupadas.
+          type: '<xref uid="ExcelScript!ExcelScript.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: ungroup(groupOption)
+    uid: 'ExcelScript!ExcelScript.Range#ungroup:member(1)'
+    package: ExcelScript!
+    fullName: ungroup(groupOption)
+    summary: Desagrupa columnas y filas para un esquema.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ungroup(groupOption: GroupOption): void;'
+      parameters:
+        - id: groupOption
+          description: Especifica cómo se puede desagrupar el intervalo mediante filas o columnas.
+          type: '<xref uid="ExcelScript!ExcelScript.GroupOption:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: unmerge()
+    uid: 'ExcelScript!ExcelScript.Range#unmerge:member(1)'
+    package: ExcelScript!
+    fullName: unmerge()
+    summary: Separa las celdas del intervalo en celdas independientes.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'unmerge(): void;'
+      return:
+        type: void
+        description: ''

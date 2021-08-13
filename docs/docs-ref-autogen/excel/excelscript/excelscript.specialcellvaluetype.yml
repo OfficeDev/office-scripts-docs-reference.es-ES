@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SpecialCellValueType
-uid: ExcelScript!ExcelScript.SpecialCellValueType:enum
+uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SpecialCellValueType
 summary: ''
@@ -8,70 +8,63 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores, valores booleanos, numéricos o de cadena.
-- name: errors
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores.
-- name: errorsLogical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores o valores booleanos.
-- name: errorsLogicalNumber
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores, valores booleanos o numéricos.
-- name: errorsLogicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores, booleanos o valores de cadena.
-- name: errorsNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores o valores numéricos.
-- name: errorsNumberText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores, valores numéricos o de cadena.
-- name: errorsText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
-  package: ExcelScript!
-  summary: Celdas que tienen errores o valores de cadena.
-- name: logical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
-  package: ExcelScript!
-  summary: Celdas que tienen un valor booleano.
-- name: logicalNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
-  package: ExcelScript!
-  summary: Celdas que tienen un valor booleano o numérico.
-- name: logicalNumbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
-  package: ExcelScript!
-  summary: Celdas que tienen un valor booleano, numérico o de cadena.
-- name: logicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
-  package: ExcelScript!
-  summary: Celdas que tienen un valor booleano o de cadena.
-- name: numbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
-  package: ExcelScript!
-  summary: Celdas que tienen un valor numérico.
-- name: numbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member
-  package: ExcelScript!
-  summary: Celdas que tienen un valor numérico o de cadena.
-- name: text
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.text:member
-  package: ExcelScript!
-  summary: Celdas que tienen un valor de cadena.
-metadata:
-  ms.openlocfilehash: 93f2ab2e05785f1f93bc26839d20d9c060205384
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607343"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+    package: ExcelScript!
+    summary: 'Celdas que tienen errores, valores booleanos, numéricos o de cadena.'
+  - name: errors
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+    package: ExcelScript!
+    summary: Celdas que tienen errores.
+  - name: errorsLogical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+    package: ExcelScript!
+    summary: Celdas que tienen errores o valores booleanos.
+  - name: errorsLogicalNumber
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+    package: ExcelScript!
+    summary: 'Celdas que tienen errores, valores booleanos o numéricos.'
+  - name: errorsLogicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+    package: ExcelScript!
+    summary: 'Celdas que tienen errores, booleanos o valores de cadena.'
+  - name: errorsNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+    package: ExcelScript!
+    summary: Celdas que tienen errores o valores numéricos.
+  - name: errorsNumberText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+    package: ExcelScript!
+    summary: 'Celdas que tienen errores, valores numéricos o de cadena.'
+  - name: errorsText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+    package: ExcelScript!
+    summary: Celdas que tienen errores o valores de cadena.
+  - name: logical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+    package: ExcelScript!
+    summary: Celdas que tienen un valor booleano.
+  - name: logicalNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+    package: ExcelScript!
+    summary: Celdas que tienen un valor booleano o numérico.
+  - name: logicalNumbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+    package: ExcelScript!
+    summary: 'Celdas que tienen un valor booleano, numérico o de cadena.'
+  - name: logicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+    package: ExcelScript!
+    summary: Celdas que tienen un valor booleano o de cadena.
+  - name: numbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+    package: ExcelScript!
+    summary: Celdas que tienen un valor numérico.
+  - name: numbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+    package: ExcelScript!
+    summary: Celdas que tienen un valor numérico o de cadena.
+  - name: text
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+    package: ExcelScript!
+    summary: Celdas que tienen un valor de cadena.

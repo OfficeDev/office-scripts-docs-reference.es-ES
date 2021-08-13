@@ -1,57 +1,74 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DataValidationType
-uid: ExcelScript!ExcelScript.DataValidationType:enum
+uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationType
 summary: Representa la enumeración de tipo de validación de datos.
-remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
+remarks: |-
+
+
+  #### <a name="examples"></a>Ejemplos
+
+  ```TypeScript
+  /**
+   * This sample reads and logs the data validation type of the currently selected range.
+   */
+  function main(workbook: ExcelScript.Workbook) {
+    // Get the currently selected range.
+    let range = workbook.getSelectedRange();
+
+    // Get the type (`DataValidationType`) of data validation applied to the range.
+    let validationType = range.getDataValidation().getType();
+
+    /*
+     * Log the data validation type.
+     * If the range has a single value, it logs that type.
+     * If the range doesn't have data validation applied, it logs "None".
+     * If the range has multiple different types of data validation, it logs "Inconsistent" or "MixedCriteria".
+     */
+    console.log(validationType.toString());
+  }
+  ```
 isPreview: false
 isDeprecated: false
 fields:
-- name: custom
-  uid: ExcelScript!ExcelScript.DataValidationType.custom:member
-  package: ExcelScript!
-  summary: Tipo de validación de datos personalizado.
-- name: date
-  uid: ExcelScript!ExcelScript.DataValidationType.date:member
-  package: ExcelScript!
-  summary: Tipo de validación de datos de fecha.
-- name: decimal
-  uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
-  package: ExcelScript!
-  summary: Tipo de validación de datos decimales.
-- name: inconsistent
-  uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
-  package: ExcelScript!
-  summary: Incoherente significa que el intervalo tiene una validación de datos incoherente, lo que indica que hay diferentes reglas en distintas celdas.
-- name: list
-  uid: ExcelScript!ExcelScript.DataValidationType.list:member
-  package: ExcelScript!
-  summary: Tipo de validación de datos de lista.
-- name: mixedCriteria
-  uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
-  package: ExcelScript!
-  summary: Criterios mixtos significa que el rango tiene validación de datos presente en algunas celdas, pero no en todas.
-- name: none
-  uid: ExcelScript!ExcelScript.DataValidationType.none:member
-  package: ExcelScript!
-  summary: Ninguno significa permitir ningún valor, lo que indica que no hay ninguna validación de datos en el intervalo.
-- name: textLength
-  uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
-  package: ExcelScript!
-  summary: Tipo de validación de datos de longitud de texto.
-- name: time
-  uid: ExcelScript!ExcelScript.DataValidationType.time:member
-  package: ExcelScript!
-  summary: Tipo de validación de datos de hora.
-- name: wholeNumber
-  uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
-  package: ExcelScript!
-  summary: Tipo de validación de datos de número completo.
-metadata:
-  ms.openlocfilehash: 9b0bb4199eff15b3613be84d248341a5484a2bd8
-  ms.sourcegitcommit: 0b4ded26cbb2aa6e90e05b3e0af88b67da159021
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53451603"
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+    package: ExcelScript!
+    summary: Tipo de validación de datos personalizado.
+  - name: date
+    uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
+    package: ExcelScript!
+    summary: Tipo de validación de datos de fecha.
+  - name: decimal
+    uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+    package: ExcelScript!
+    summary: Tipo de validación de datos decimales.
+  - name: inconsistent
+    uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+    package: ExcelScript!
+    summary: 'Incoherente significa que el intervalo tiene una validación de datos incoherente, lo que indica que hay diferentes reglas en distintas celdas.'
+  - name: list
+    uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
+    package: ExcelScript!
+    summary: Tipo de validación de datos de lista.
+  - name: mixedCriteria
+    uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+    package: ExcelScript!
+    summary: 'Criterios mixtos significa que el rango tiene validación de datos presente en algunas celdas, pero no en todas.'
+  - name: none
+    uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
+    package: ExcelScript!
+    summary: 'Ninguno significa permitir ningún valor, lo que indica que no hay ninguna validación de datos en el intervalo.'
+  - name: textLength
+    uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+    package: ExcelScript!
+    summary: Tipo de validación de datos de longitud de texto.
+  - name: time
+    uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
+    package: ExcelScript!
+    summary: Tipo de validación de datos de hora.
+  - name: wholeNumber
+    uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+    package: ExcelScript!
+    summary: Tipo de validación de datos de número completo.

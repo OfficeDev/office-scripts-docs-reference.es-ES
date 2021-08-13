@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Application
-uid: ExcelScript!ExcelScript.Application:interface
+uid: 'ExcelScript!ExcelScript.Application:interface'
 package: ExcelScript!
 fullName: ExcelScript.Application
 summary: Representa la aplicación de Excel que administra el libro.
@@ -9,148 +9,141 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: calculate(calculationType)
-  uid: ExcelScript!ExcelScript.Application#calculate:member(1)
-  package: ExcelScript!
-  fullName: calculate(calculationType)
-  summary: Recalcula todos los libros abiertos actualmente en Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'calculate(calculationType: CalculationType): void;'
-    parameters:
-    - id: calculationType
-      description: Especifica el tipo de cálculo que se va a usar. Vea `ExcelScript.CalculationType` para más información.
-      type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
-    return:
-      type: void
-      description: ''
-- name: getCalculationEngineVersion()
-  uid: ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)
-  package: ExcelScript!
-  fullName: getCalculationEngineVersion()
-  summary: Devuelve la versión del motor de cálculo de Excel usada para la última actualización completa.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCalculationEngineVersion(): number;'
-    return:
-      type: number
-      description: ''
-- name: getCalculationMode()
-  uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
-  package: ExcelScript!
-  fullName: getCalculationMode()
-  summary: 'Devuelve el modo de cálculo usado en el libro, tal como lo definen las constantes en `ExcelScript.CalculationMode`<!-- -->. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla el recálculo; `AutomaticExceptTables`<!-- -->, donde Excel controla el recálculo pero omite los cambios en las tablas; `Manual`<!-- -->, donde el cálculo se realiza cuando el usuario lo solicita.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCalculationMode(): CalculationMode;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />
-      description: ''
-- name: getCalculationState()
-  uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
-  package: ExcelScript!
-  fullName: getCalculationState()
-  summary: Devuelve el estado del cálculo de la aplicación. Vea `ExcelScript.CalculationState` para más información.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCalculationState(): CalculationState;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CalculationState:enum" />
-      description: ''
-- name: getCultureInfo()
-  uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
-  package: ExcelScript!
-  fullName: getCultureInfo()
-  summary: Proporciona información basada en la configuración de referencia cultural del sistema actual. Esto incluye los nombres de referencia cultural, el formato de número y otras configuraciones culturalmente dependientes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCultureInfo(): CultureInfo;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CultureInfo:interface" />
-      description: ''
-- name: getDecimalSeparator()
-  uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
-  package: ExcelScript!
-  fullName: getDecimalSeparator()
-  summary: Obtiene la cadena usada como separador decimal para valores numéricos. Esto se basa en la configuración de Excel local.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDecimalSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getIterativeCalculation()
-  uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
-  package: ExcelScript!
-  fullName: getIterativeCalculation()
-  summary: Devuelve la configuración del cálculo iterativo. En Excel en Windows y Mac, la configuración se aplicará a la aplicación de Excel. En Excel en la web y otras plataformas, la configuración se aplicará al libro activo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIterativeCalculation(): IterativeCalculation;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.IterativeCalculation:interface" />
-      description: ''
-- name: getThousandsSeparator()
-  uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
-  package: ExcelScript!
-  fullName: getThousandsSeparator()
-  summary: Obtiene la cadena usada para separar grupos de dígitos a la izquierda del decimal para los valores numéricos. Esto se basa en la configuración de Excel local.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getThousandsSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getUseSystemSeparators()
-  uid: ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)
-  package: ExcelScript!
-  fullName: getUseSystemSeparators()
-  summary: Especifica si los separadores del sistema de Excel están habilitados. Los separadores del sistema incluyen el separador decimal y el separador de miles.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUseSystemSeparators(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setCalculationMode(calculationMode)
-  uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
-  package: ExcelScript!
-  fullName: setCalculationMode(calculationMode)
-  summary: 'Devuelve el modo de cálculo usado en el libro, tal como lo definen las constantes en `ExcelScript.CalculationMode`<!-- -->. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla el recálculo; `AutomaticExceptTables`<!-- -->, donde Excel controla el recálculo pero omite los cambios en las tablas; `Manual`<!-- -->, donde el cálculo se realiza cuando el usuario lo solicita.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCalculationMode(calculationMode: CalculationMode): void;'
-    parameters:
-    - id: calculationMode
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: bef93d1a143f1bf94aa7a2ccfb5d2b0856352f1b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914009"
+  - name: calculate(calculationType)
+    uid: 'ExcelScript!ExcelScript.Application#calculate:member(1)'
+    package: ExcelScript!
+    fullName: calculate(calculationType)
+    summary: Recalcula todos los libros abiertos actualmente en Excel.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculate(calculationType: CalculationType): void;'
+      parameters:
+        - id: calculationType
+          description: Especifica el tipo de cálculo que se va a usar. Vea `ExcelScript.CalculationType` para más información.
+          type: '<xref uid="ExcelScript!ExcelScript.CalculationType:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: getCalculationEngineVersion()
+    uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
+    package: ExcelScript!
+    fullName: getCalculationEngineVersion()
+    summary: Devuelve la versión del motor de cálculo de Excel usada para la última actualización completa.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCalculationEngineVersion(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getCalculationMode()
+    uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
+    package: ExcelScript!
+    fullName: getCalculationMode()
+    summary: 'Devuelve el modo de cálculo usado en el libro, tal como lo definen las constantes en `ExcelScript.CalculationMode`<!-- -->. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla el recálculo;`AutomaticExceptTables`<!-- -->, donde Excel controla el recálculo pero omite los cambios en las tablas;`Manual`<!-- -->, donde el cálculo se realiza cuando el usuario lo solicita.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCalculationMode(): CalculationMode;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />'
+        description: ''
+  - name: getCalculationState()
+    uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
+    package: ExcelScript!
+    fullName: getCalculationState()
+    summary: Devuelve el estado del cálculo de la aplicación. Vea `ExcelScript.CalculationState` para más información.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCalculationState(): CalculationState;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CalculationState:enum" />'
+        description: ''
+  - name: getCultureInfo()
+    uid: 'ExcelScript!ExcelScript.Application#getCultureInfo:member(1)'
+    package: ExcelScript!
+    fullName: getCultureInfo()
+    summary: 'Proporciona información basada en la configuración de referencia cultural del sistema actual. Esto incluye los nombres de referencia cultural, el formato de número y otras configuraciones culturalmente dependientes.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCultureInfo(): CultureInfo;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CultureInfo:interface" />'
+        description: ''
+  - name: getDecimalSeparator()
+    uid: 'ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getDecimalSeparator()
+    summary: Obtiene la cadena usada como separador decimal para valores numéricos. Esto se basa en la configuración de Excel local.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDecimalSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getIterativeCalculation()
+    uid: 'ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)'
+    package: ExcelScript!
+    fullName: getIterativeCalculation()
+    summary: 'Devuelve la configuración del cálculo iterativo. En Excel en Windows y Mac, la configuración se aplicará a la Excel aplicación. En Excel en la Web y otras plataformas, la configuración se aplicará al libro activo.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIterativeCalculation(): IterativeCalculation;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.IterativeCalculation:interface" />'
+        description: ''
+  - name: getThousandsSeparator()
+    uid: 'ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getThousandsSeparator()
+    summary: Obtiene la cadena usada para separar grupos de dígitos a la izquierda del decimal para los valores numéricos. Esto se basa en la configuración de Excel local.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getThousandsSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getUseSystemSeparators()
+    uid: 'ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)'
+    package: ExcelScript!
+    fullName: getUseSystemSeparators()
+    summary: Especifica si los separadores del sistema de Excel están habilitados. Los separadores del sistema incluyen el separador decimal y el separador de miles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUseSystemSeparators(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setCalculationMode(calculationMode)
+    uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
+    package: ExcelScript!
+    fullName: setCalculationMode(calculationMode)
+    summary: 'Devuelve el modo de cálculo usado en el libro, tal como lo definen las constantes en `ExcelScript.CalculationMode`<!-- -->. Los valores posibles son: `Automatic`<!-- -->, donde Excel controla el recálculo;`AutomaticExceptTables`<!-- -->, donde Excel controla el recálculo pero omite los cambios en las tablas;`Manual`<!-- -->, donde el cálculo se realiza cuando el usuario lo solicita.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCalculationMode(calculationMode: CalculationMode): void;'
+      parameters:
+        - id: calculationMode
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.CalculationMode:enum" />'
+      return:
+        type: void
+        description: ''

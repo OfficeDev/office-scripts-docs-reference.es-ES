@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFill
-uid: ExcelScript!ExcelScript.ChartFill:interface
+uid: 'ExcelScript!ExcelScript.ChartFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFill
 summary: Representa el formato de relleno para un elemento de gráfico.
@@ -9,40 +9,33 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ChartFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: Borra el color de relleno de un elemento de gráfico.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: setSolidColor(color)
-  uid: ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)
-  package: ExcelScript!
-  fullName: setSolidColor(color)
-  summary: Establece el formato de relleno de un elemento de gráfico en un color uniforme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSolidColor(color: string): void;'
-    parameters:
-    - id: color
-      description: Código de color HTML que representa el color del fondo, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: df36de06fa52b5c2265c88a0d10c4b462357b4d2
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914100"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ChartFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: Borra el color de relleno de un elemento de gráfico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: setSolidColor(color)
+    uid: 'ExcelScript!ExcelScript.ChartFill#setSolidColor:member(1)'
+    package: ExcelScript!
+    fullName: setSolidColor(color)
+    summary: Establece el formato de relleno de un elemento de gráfico en un color uniforme.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      parameters:
+        - id: color
+          description: 'Código de color HTML que representa el color del fondo, con el formato \# RRGGBB (por ejemplo, "FFA500") o como un color HTML con nombre (por ejemplo, "naranja").'
+          type: string
+      return:
+        type: void
+        description: ''

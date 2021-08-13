@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeLineStyle
-uid: ExcelScript!ExcelScript.ShapeLineStyle:enum
+uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineStyle
 summary: El estilo de una línea.
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: single
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.single:member
-  package: ExcelScript!
-  summary: Línea única.
-- name: thickBetweenThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member
-  package: ExcelScript!
-  summary: Línea gruesa con una línea fina a cada lado.
-- name: thickThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member
-  package: ExcelScript!
-  summary: Línea gruesa junto a línea fina. Para las líneas horizontales, la línea gruesa está por encima de la línea delgada. Para las líneas verticales, la línea gruesa está a la izquierda de la línea delgada.
-- name: thinThick
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member
-  package: ExcelScript!
-  summary: Línea gruesa junto a línea fina. Para las líneas horizontales, la línea gruesa está debajo de la línea delgada. Para las líneas verticales, la línea gruesa está a la derecha de la línea delgada.
-- name: thinThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member
-  package: ExcelScript!
-  summary: Dos líneas finas.
-metadata:
-  ms.openlocfilehash: 05c9927a86ac3301390897d4f09c15ccdb49606a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913401"
+  - name: single
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+    package: ExcelScript!
+    summary: Línea única.
+  - name: thickBetweenThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+    package: ExcelScript!
+    summary: Línea gruesa con una línea fina a cada lado.
+  - name: thickThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+    package: ExcelScript!
+    summary: 'Línea gruesa junto a línea fina. Para las líneas horizontales, la línea gruesa está por encima de la línea delgada. Para las líneas verticales, la línea gruesa está a la izquierda de la línea delgada.'
+  - name: thinThick
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+    package: ExcelScript!
+    summary: 'Línea gruesa junto a línea fina. Para las líneas horizontales, la línea gruesa está debajo de la línea delgada. Para las líneas verticales, la línea gruesa está a la derecha de la línea delgada.'
+  - name: thinThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+    package: ExcelScript!
+    summary: Dos líneas finas.

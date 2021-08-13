@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFill
-uid: ExcelScript!ExcelScript.RangeFill:interface
+uid: 'ExcelScript!ExcelScript.RangeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.RangeFill
 summary: Representa el fondo de un objeto de intervalo.
@@ -9,173 +9,166 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.RangeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: Restablece el fondo del intervalo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPattern()
-  uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
-  package: ExcelScript!
-  fullName: getPattern()
-  summary: El patrón de un intervalo. Vea `ExcelScript.FillPattern` para más información. LinearGradient y RectangularGradient no son compatibles. Un `null` valor indica que todo el intervalo no tiene una configuración de patrón uniforme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPattern(): FillPattern;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
-      description: ''
-- name: getPatternColor()
-  uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
-  package: ExcelScript!
-  fullName: getPatternColor()
-  summary: El código de color HTML que representa el color del patrón de intervalo, con el formato \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPatternColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPatternTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getPatternTintAndShade()
-  summary: Especifica un doble que aligera u oscurece un color de patrón para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `patternTintAndShade` uniforme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPatternTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTintAndShade()
-  uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: getTintAndShade()
-  summary: Especifica un doble que aligera u oscurece un color para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `tintAndShade` uniforme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTintAndShade(): number;'
-    return:
-      type: number
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPattern(pattern)
-  uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
-  package: ExcelScript!
-  fullName: setPattern(pattern)
-  summary: El patrón de un intervalo. Vea `ExcelScript.FillPattern` para más información. LinearGradient y RectangularGradient no son compatibles. Un `null` valor indica que todo el intervalo no tiene una configuración de patrón uniforme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPattern(pattern: FillPattern): void;'
-    parameters:
-    - id: pattern
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
-    return:
-      type: void
-      description: ''
-- name: setPatternColor(patternColor)
-  uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
-  package: ExcelScript!
-  fullName: setPatternColor(patternColor)
-  summary: El código de color HTML que representa el color del patrón de intervalo, con el formato \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPatternColor(patternColor: string): void;'
-    parameters:
-    - id: patternColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPatternTintAndShade(patternTintAndShade)
-  uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: Especifica un doble que aligera u oscurece un color de patrón para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `patternTintAndShade` uniforme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
-    parameters:
-    - id: patternTintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTintAndShade(tintAndShade)
-  uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
-  package: ExcelScript!
-  fullName: setTintAndShade(tintAndShade)
-  summary: Especifica un doble que aligera u oscurece un color para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `tintAndShade` uniforme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTintAndShade(tintAndShade: number): void;'
-    parameters:
-    - id: tintAndShade
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: dafa67da456c4e91adef5f2af1b7f06b3460152d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914247"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.RangeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: Restablece el fondo del intervalo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 'Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPattern()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
+    package: ExcelScript!
+    fullName: getPattern()
+    summary: El patrón de un intervalo. Vea `ExcelScript.FillPattern` para más información. LinearGradient y RectangularGradient no son compatibles. Un `null` valor indica que todo el intervalo no tiene una configuración de patrón uniforme.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPattern(): FillPattern;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FillPattern:enum" />'
+        description: ''
+  - name: getPatternColor()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
+    package: ExcelScript!
+    fullName: getPatternColor()
+    summary: 'El código de color HTML que representa el color del patrón de intervalo, con el formato \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPatternColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPatternTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getPatternTintAndShade()
+    summary: 'Especifica un doble que aligera u oscurece un color de patrón para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `patternTintAndShade` uniforme.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPatternTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTintAndShade()
+    uid: 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: getTintAndShade()
+    summary: 'Especifica un doble que aligera u oscurece un color para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `tintAndShade` uniforme.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 'Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPattern(pattern)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
+    package: ExcelScript!
+    fullName: setPattern(pattern)
+    summary: El patrón de un intervalo. Vea `ExcelScript.FillPattern` para más información. LinearGradient y RectangularGradient no son compatibles. Un `null` valor indica que todo el intervalo no tiene una configuración de patrón uniforme.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPattern(pattern: FillPattern): void;'
+      parameters:
+        - id: pattern
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.FillPattern:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setPatternColor(patternColor)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
+    package: ExcelScript!
+    fullName: setPatternColor(patternColor)
+    summary: 'El código de color HTML que representa el color del patrón de intervalo, con el formato \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPatternColor(patternColor: string): void;'
+      parameters:
+        - id: patternColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPatternTintAndShade(patternTintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setPatternTintAndShade(patternTintAndShade)
+    summary: 'Especifica un doble que aligera u oscurece un color de patrón para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `patternTintAndShade` uniforme.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
+      parameters:
+        - id: patternTintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTintAndShade(tintAndShade)
+    uid: 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
+    package: ExcelScript!
+    fullName: setTintAndShade(tintAndShade)
+    summary: 'Especifica un doble que aligera u oscurece un color para el relleno del intervalo. El valor está entre -1 (más oscuro) y 1 (más brillante), con 0 para el color original. Un `null` valor indica que el intervalo no tiene una configuración `tintAndShade` uniforme.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

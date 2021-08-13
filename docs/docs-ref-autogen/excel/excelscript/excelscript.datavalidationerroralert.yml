@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidationErrorAlert
-uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
+uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert:interface'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationErrorAlert
 summary: Representa las propiedades de alerta de error para la validación de datos.
@@ -9,58 +9,51 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: message
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
-  package: ExcelScript!
-  fullName: message
-  summary: Representa el mensaje de alerta de error.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'message: string;'
-    return:
-      type: string
-- name: showAlert
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
-  package: ExcelScript!
-  fullName: showAlert
-  summary: Especifica si se va a mostrar un cuadro de diálogo de alerta de error cuando un usuario escribe datos no válidos. El valor predeterminado es `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'showAlert: boolean;'
-    return:
-      type: boolean
-- name: style
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
-  package: ExcelScript!
-  fullName: style
-  summary: El tipo de alerta de validación de datos, consulte `ExcelScript.DataValidationAlertStyle` para obtener más información.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'style: DataValidationAlertStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />
-- name: title
-  uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
-  package: ExcelScript!
-  fullName: title
-  summary: Representa el título del cuadro de diálogo alerta de error.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'title: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: 9d8d4761c2e4e0870d03a3c1fafb66a46d9a839a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913677"
+  - name: message
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#message:member'
+    package: ExcelScript!
+    fullName: message
+    summary: Representa el mensaje de alerta de error.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string;'
+      return:
+        type: string
+  - name: showAlert
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member'
+    package: ExcelScript!
+    fullName: showAlert
+    summary: Especifica si se va a mostrar un cuadro de diálogo de alerta de error cuando un usuario escribe datos no válidos. El valor predeterminado es `true`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
+    package: ExcelScript!
+    fullName: style
+    summary: 'El tipo de alerta de validación de datos, consulte `ExcelScript.DataValidationAlertStyle` para obtener más información.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style: DataValidationAlertStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataValidationAlertStyle:enum" />'
+  - name: title
+    uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#title:member'
+    package: ExcelScript!
+    fullName: title
+    summary: Representa el título del cuadro de diálogo alerta de error.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string

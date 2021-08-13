@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartGridlines
-uid: ExcelScript!ExcelScript.ChartGridlines:interface
+uid: 'ExcelScript!ExcelScript.ChartGridlines:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartGridlines
 summary: Representa las líneas de división principales o secundarias del eje de un gráfico.
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Representa el formato de las líneas de cuadrícula del gráfico.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartGridlinesFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartGridlinesFormat:interface" />
-      description: ''
-- name: getVisible()
-  uid: ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)
-  package: ExcelScript!
-  fullName: getVisible()
-  summary: Especifica si las líneas de cuadrícula del eje están visibles.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVisible(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setVisible(visible)
-  uid: ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)
-  package: ExcelScript!
-  fullName: setVisible(visible)
-  summary: Especifica si las líneas de cuadrícula del eje están visibles.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setVisible(visible: boolean): void;'
-    parameters:
-    - id: visible
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 81ec22aa839c012149c0b7facd8ffc69b417b398
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419806"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: Representa el formato de las líneas de cuadrícula del gráfico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartGridlinesFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartGridlinesFormat:interface" />'
+        description: ''
+  - name: getVisible()
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#getVisible:member(1)'
+    package: ExcelScript!
+    fullName: getVisible()
+    summary: Especifica si las líneas de cuadrícula del eje están visibles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setVisible(visible)
+    uid: 'ExcelScript!ExcelScript.ChartGridlines#setVisible:member(1)'
+    package: ExcelScript!
+    fullName: setVisible(visible)
+    summary: Especifica si las líneas de cuadrícula del eje están visibles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      parameters:
+        - id: visible
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

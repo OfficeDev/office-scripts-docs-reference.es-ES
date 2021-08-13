@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.BuiltInPivotTableStyle
-uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum
+uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.BuiltInPivotTableStyle
 summary: Representa un estilo de tabla dinámica integrado
@@ -8,350 +8,343 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: dark1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y cuerpo sombreado."
-- name: dark10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member
-  package: ExcelScript!
-  summary: "\"Acento 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde exterior."
-- name: dark11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y borde exterior."
-- name: dark12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde exterior."
-- name: dark13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde exterior."
-- name: dark14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde exterior."
-- name: dark15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, pie de página relleno y filas a rayas."
-- name: dark16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas."
-- name: dark17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member
-  package: ExcelScript!
-  summary: "\"Acento 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas."
-- name: dark18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno, pie de página relleno y filas a rayas."
-- name: dark19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas."
-- name: dark2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado."
-- name: dark20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas."
-- name: dark21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema predeterminado \"Office\") con encabezado relleno, pie de página relleno y filas a rayas."
-- name: dark22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con el cuerpo sombreado y bordes blancos."
-- name: dark23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member
-  package: ExcelScript!
-  summary: "\"Énfal 1\" (azul en el tema predeterminado \"Office\") con el cuerpo sombreado y bordes blancos."
-- name: dark24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con el cuerpo sombreado y bordes blancos."
-- name: dark25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member
-  package: ExcelScript!
-  summary: "\"Énfal 3\" (gris en el tema predeterminado \"Office\") con el cuerpo sombreado y bordes blancos."
-- name: dark26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con el cuerpo sombreado y bordes blancos."
-- name: dark27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member
-  package: ExcelScript!
-  summary: "\"Énfal 5\" (azul claro en el tema \"Office\" predeterminado) con el cuerpo sombreado y bordes blancos."
-- name: dark28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema predeterminado \"Office\") con el cuerpo sombreado y bordes blancos."
-- name: dark3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y cuerpo sombreado."
-- name: dark4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y cuerpo sombreado."
-- name: dark5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado."
-- name: dark6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado."
-- name: dark7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado."
-- name: dark8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y borde exterior."
-- name: dark9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde exterior."
-- name: light1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema \"Office\" predeterminado) con bordes de encabezado y bordes de pie de página."
-- name: light10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas."
-- name: light11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas."
-- name: light12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas."
-- name: light13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas."
-- name: light14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas."
-- name: light15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno y filas bordeadas a rayas."
-- name: light16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema predeterminado \"Office\") con encabezado relleno y filas bordeadas a rayas."
-- name: light17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member
-  package: ExcelScript!
-  summary: "\"Acento 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno y filas bordeadas a rayas."
-- name: light18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno y filas bordeadas a rayas."
-- name: light19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno y filas bordeadas a rayas."
-- name: light2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member
-  package: ExcelScript!
-  summary: "\"Énfal 1\" (azul en el tema \"Office\" predeterminado) con bordes de encabezado y bordes de pie de página."
-- name: light20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno y filas bordeadas a rayas."
-- name: light21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno y filas bordeadas a rayas."
-- name: light22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con bordes de encabezado, bordes de pie de página y columnas bordeadas."
-- name: light23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas."
-- name: light24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas."
-- name: light25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas."
-- name: light26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas."
-- name: light27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas."
-- name: light28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas."
-- name: light3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con bordes de encabezado y bordes de pie de página."
-- name: light4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema \"Office\" predeterminado) con bordes de encabezado y bordes de pie de página."
-- name: light5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con bordes de encabezado y bordes de pie de página."
-- name: light6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema predeterminado \"Office\") con bordes de encabezado y bordes de pie de página."
-- name: light7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member
-  package: ExcelScript!
-  summary: "\"Énfénfal 6\" (verde en el tema \"Office\" predeterminado) con bordes de encabezado y bordes de pie de página."
-- name: light8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas."
-- name: light9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema predeterminado \"Office\") con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas."
-- name: medium1
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y borde de pie de página."
-- name: medium10
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde total de fila."
-- name: medium11
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y borde total de fila."
-- name: medium12
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde total de fila."
-- name: medium13
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde total de fila."
-- name: medium14
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde total de fila."
-- name: medium15
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, pie de página relleno y cuerpo sombreado."
-- name: medium16
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado."
-- name: medium17
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema predeterminado \"Office\") con encabezado relleno, pie de página relleno y cuerpo sombreado."
-- name: medium18
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con encabezado relleno, pie de página relleno y cuerpo sombreado."
-- name: medium19
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado."
-- name: medium2
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página."
-- name: medium20
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado."
-- name: medium21
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado."
-- name: medium22
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con primera columna rellena y cuerpo sombreado."
-- name: medium23
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member
-  package: ExcelScript!
-  summary: "\"Énfal 1\" (azul en el tema predeterminado \"Office\") con la primera columna rellena y el cuerpo sombreado."
-- name: medium24
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member
-  package: ExcelScript!
-  summary: "\"Énfall 2\" (naranja en el tema predeterminado \"Office\") con la primera columna rellena y el cuerpo sombreado."
-- name: medium25
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema predeterminado \"Office\") con primera columna rellena y cuerpo sombreado."
-- name: medium26
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema predeterminado \"Office\") con primera columna rellena y cuerpo sombreado."
-- name: medium27
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema predeterminado \"Office\") con primera columna rellena y cuerpo sombreado."
-- name: medium28
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema predeterminado \"Office\") con primera columna rellena y cuerpo sombreado."
-- name: medium3
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member
-  package: ExcelScript!
-  summary: "\"Acento 2\" (naranja en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página."
-- name: medium4
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member
-  package: ExcelScript!
-  summary: "\"Acento 3\" (gris en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página."
-- name: medium5
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member
-  package: ExcelScript!
-  summary: "\"Acento 4\" (amarillo en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página."
-- name: medium6
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member
-  package: ExcelScript!
-  summary: "\"Acento 5\" (azul claro en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página."
-- name: medium7
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member
-  package: ExcelScript!
-  summary: "\"Acento 6\" (verde en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página."
-- name: medium8
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member
-  package: ExcelScript!
-  summary: "\"Oscuro 1\" (negro en el tema predeterminado \"Office\") con encabezado relleno, filas a rayas y borde total de fila."
-- name: medium9
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member
-  package: ExcelScript!
-  summary: "\"Acento 1\" (azul en el tema \"Office\" predeterminado) con encabezado relleno, filas a rayas y borde total de fila."
-- name: none
-  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member
-  package: ExcelScript!
-  summary: Ninguno
-metadata:
-  ms.openlocfilehash: 3d3c366ae0a5114c1cf82f16bf4dd37bc476d202
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068304"
+  - name: dark1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con encabezado relleno, filas a rayas y cuerpo sombreado.'
+  - name: dark10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member'
+    package: ExcelScript!
+    summary: '"Acento 2" (naranja en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde exterior.'
+  - name: dark11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema predeterminado "Office") con encabezado relleno, filas a rayas y borde exterior.'
+  - name: dark12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde exterior.'
+  - name: dark13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde exterior.'
+  - name: dark14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde exterior.'
+  - name: dark15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con encabezado relleno, pie de página relleno y filas a rayas.'
+  - name: dark16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas.'
+  - name: dark17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member'
+    package: ExcelScript!
+    summary: '"Acento 2" (naranja en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas.'
+  - name: dark18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema predeterminado "Office") con encabezado relleno, pie de página relleno y filas a rayas.'
+  - name: dark19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas.'
+  - name: dark2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado.'
+  - name: dark20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y filas a rayas.'
+  - name: dark21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema predeterminado "Office") con encabezado relleno, pie de página relleno y filas a rayas.'
+  - name: dark22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con el cuerpo sombreado y bordes blancos.'
+  - name: dark23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member'
+    package: ExcelScript!
+    summary: '"Énfal 1" (azul en el tema predeterminado "Office") con el cuerpo sombreado y bordes blancos.'
+  - name: dark24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema "Office" predeterminado) con el cuerpo sombreado y bordes blancos.'
+  - name: dark25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member'
+    package: ExcelScript!
+    summary: '"Énfal 3" (gris en el tema predeterminado "Office") con el cuerpo sombreado y bordes blancos.'
+  - name: dark26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con el cuerpo sombreado y bordes blancos.'
+  - name: dark27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member'
+    package: ExcelScript!
+    summary: '"Énfal 5" (azul claro en el tema "Office" predeterminado) con el cuerpo sombreado y bordes blancos.'
+  - name: dark28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema predeterminado "Office") con el cuerpo sombreado y bordes blancos.'
+  - name: dark3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema predeterminado "Office") con encabezado relleno, filas a rayas y cuerpo sombreado.'
+  - name: dark4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema predeterminado "Office") con encabezado relleno, filas a rayas y cuerpo sombreado.'
+  - name: dark5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado.'
+  - name: dark6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado.'
+  - name: dark7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y cuerpo sombreado.'
+  - name: dark8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con encabezado relleno, filas a rayas y borde exterior.'
+  - name: dark9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde exterior.'
+  - name: light1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema "Office" predeterminado) con bordes de encabezado y bordes de pie de página.'
+  - name: light10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas.'
+  - name: light11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas.'
+  - name: light12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas.'
+  - name: light13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas.'
+  - name: light14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas.'
+  - name: light15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con encabezado relleno y filas bordeadas a rayas.'
+  - name: light16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema predeterminado "Office") con encabezado relleno y filas bordeadas a rayas.'
+  - name: light17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member'
+    package: ExcelScript!
+    summary: '"Acento 2" (naranja en el tema "Office" predeterminado) con encabezado relleno y filas bordeadas a rayas.'
+  - name: light18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema predeterminado "Office") con encabezado relleno y filas bordeadas a rayas.'
+  - name: light19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con encabezado relleno y filas bordeadas a rayas.'
+  - name: light2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member'
+    package: ExcelScript!
+    summary: '"Énfal 1" (azul en el tema "Office" predeterminado) con bordes de encabezado y bordes de pie de página.'
+  - name: light20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con encabezado relleno y filas bordeadas a rayas.'
+  - name: light21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con encabezado relleno y filas bordeadas a rayas.'
+  - name: light22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con bordes de encabezado, bordes de pie de página y columnas bordeadas.'
+  - name: light23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas.'
+  - name: light24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas.'
+  - name: light25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas.'
+  - name: light26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas.'
+  - name: light27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas.'
+  - name: light28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con bordes de encabezado, bordes de pie de página y columnas bordeadas.'
+  - name: light3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema "Office" predeterminado) con bordes de encabezado y bordes de pie de página.'
+  - name: light4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema "Office" predeterminado) con bordes de encabezado y bordes de pie de página.'
+  - name: light5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con bordes de encabezado y bordes de pie de página.'
+  - name: light6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema predeterminado "Office") con bordes de encabezado y bordes de pie de página.'
+  - name: light7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member'
+    package: ExcelScript!
+    summary: '"Énfénfal 6" (verde en el tema "Office" predeterminado) con bordes de encabezado y bordes de pie de página.'
+  - name: light8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas.'
+  - name: light9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema predeterminado "Office") con bordes de encabezado, bordes de pie de página, borde de primera columna y filas a rayas.'
+  - name: medium1
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con encabezado relleno, filas a rayas y borde de pie de página.'
+  - name: medium10
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde total de fila.'
+  - name: medium11
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema predeterminado "Office") con encabezado relleno, filas a rayas y borde total de fila.'
+  - name: medium12
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde total de fila.'
+  - name: medium13
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde total de fila.'
+  - name: medium14
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde total de fila.'
+  - name: medium15
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con encabezado relleno, pie de página relleno y cuerpo sombreado.'
+  - name: medium16
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado.'
+  - name: medium17
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema predeterminado "Office") con encabezado relleno, pie de página relleno y cuerpo sombreado.'
+  - name: medium18
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema predeterminado "Office") con encabezado relleno, pie de página relleno y cuerpo sombreado.'
+  - name: medium19
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado.'
+  - name: medium2
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página.'
+  - name: medium20
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado.'
+  - name: medium21
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con encabezado relleno, pie de página relleno y cuerpo sombreado.'
+  - name: medium22
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con primera columna rellena y cuerpo sombreado.'
+  - name: medium23
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member'
+    package: ExcelScript!
+    summary: '"Énfal 1" (azul en el tema predeterminado "Office") con la primera columna rellena y el cuerpo sombreado.'
+  - name: medium24
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member'
+    package: ExcelScript!
+    summary: '"Énfall 2" (naranja en el tema predeterminado "Office") con la primera columna rellena y el cuerpo sombreado.'
+  - name: medium25
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema predeterminado "Office") con primera columna rellena y cuerpo sombreado.'
+  - name: medium26
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema predeterminado "Office") con primera columna rellena y cuerpo sombreado.'
+  - name: medium27
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema predeterminado "Office") con primera columna rellena y cuerpo sombreado.'
+  - name: medium28
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema predeterminado "Office") con primera columna rellena y cuerpo sombreado.'
+  - name: medium3
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member'
+    package: ExcelScript!
+    summary: '"Acento 2" (naranja en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página.'
+  - name: medium4
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member'
+    package: ExcelScript!
+    summary: '"Acento 3" (gris en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página.'
+  - name: medium5
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member'
+    package: ExcelScript!
+    summary: '"Acento 4" (amarillo en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página.'
+  - name: medium6
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member'
+    package: ExcelScript!
+    summary: '"Acento 5" (azul claro en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página.'
+  - name: medium7
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member'
+    package: ExcelScript!
+    summary: '"Acento 6" (verde en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde de pie de página.'
+  - name: medium8
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member'
+    package: ExcelScript!
+    summary: '"Oscuro 1" (negro en el tema predeterminado "Office") con encabezado relleno, filas a rayas y borde total de fila.'
+  - name: medium9
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member'
+    package: ExcelScript!
+    summary: '"Acento 1" (azul en el tema "Office" predeterminado) con encabezado relleno, filas a rayas y borde total de fila.'
+  - name: none
+    uid: 'ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member'
+    package: ExcelScript!
+    summary: Ninguno

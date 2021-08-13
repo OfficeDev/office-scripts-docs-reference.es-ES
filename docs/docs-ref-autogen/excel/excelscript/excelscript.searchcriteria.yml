@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SearchCriteria
-uid: ExcelScript!ExcelScript.SearchCriteria:interface
+uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.SearchCriteria
 summary: Representa los criterios de búsqueda que se usarán.
@@ -9,46 +9,39 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: completeMatch
-  uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
-  package: ExcelScript!
-  fullName: completeMatch
-  summary: Especifica si la coincidencia debe ser completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, coincide `cat` parcialmente `caterpillar` y `scatter`<!-- -->). El valor predeterminado `false` es (parcial).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'completeMatch?: boolean;'
-    return:
-      type: boolean
-- name: matchCase
-  uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
-  package: ExcelScript!
-  fullName: matchCase
-  summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor `false` predeterminado es (no tiene mayúsculas de minúsculas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'matchCase?: boolean;'
-    return:
-      type: boolean
-- name: searchDirection
-  uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
-  package: ExcelScript!
-  fullName: searchDirection
-  summary: Especifica la dirección de la búsqueda El valor predeterminado es adelante. Ver `ExcelScript.SearchDirection`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'searchDirection?: SearchDirection;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
-metadata:
-  ms.openlocfilehash: 62a8753c9a00042de9c1a25b12e2b74730a5a0d3
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914219"
+  - name: completeMatch
+    uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
+    package: ExcelScript!
+    fullName: completeMatch
+    summary: 'Especifica si la coincidencia debe ser completa o parcial. Una coincidencia completa coincide con todo el contenido de la celda. Una coincidencia parcial coincide con una subcadena dentro del contenido de la celda (por ejemplo, coincide `cat` parcialmente `caterpillar` y `scatter`<!-- -->). El valor predeterminado `false` es (parcial).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
+    package: ExcelScript!
+    fullName: matchCase
+    summary: Especifica si la coincidencia distingue mayúsculas de minúsculas. El valor `false` predeterminado es (no tiene mayúsculas de minúsculas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean
+  - name: searchDirection
+    uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
+    package: ExcelScript!
+    fullName: searchDirection
+    summary: Especifica la dirección de la búsqueda El valor predeterminado es adelante. Ver `ExcelScript.SearchDirection`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'searchDirection?: SearchDirection;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />'

@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.TopBottomSelectionType
-uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
-summary: Una enumeración sencilla para los filtros superior/inferior para seleccionar si se va a filtrar por el porcentaje N superior o inferior N, el número o la suma de valores.
+summary: 'Una enumeración sencilla para los filtros superior/inferior para seleccionar si se va a filtrar por el porcentaje N superior o inferior N, el número o la suma de valores.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: items
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
-  package: ExcelScript!
-  summary: Filtre el número N superior/inferior de elementos según lo medido por el valor elegido.
-- name: percent
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
-  package: ExcelScript!
-  summary: Filtre el porcentaje N superior/inferior de los elementos según lo medido por el valor elegido.
-- name: sum
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
-  package: ExcelScript!
-  summary: Filtre la suma N superior/inferior según lo medido por el valor elegido.
-metadata:
-  ms.openlocfilehash: c58781b98eee7b27807577f9f00af54e048877a9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914673"
+  - name: items
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    package: ExcelScript!
+    summary: Filtre el número N superior/inferior de elementos según lo medido por el valor elegido.
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    package: ExcelScript!
+    summary: Filtre el porcentaje N superior/inferior de los elementos según lo medido por el valor elegido.
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    package: ExcelScript!
+    summary: Filtre la suma N superior/inferior según lo medido por el valor elegido.

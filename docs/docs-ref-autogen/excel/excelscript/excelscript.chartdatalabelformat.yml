@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartDataLabelFormat
-uid: ExcelScript!ExcelScript.ChartDataLabelFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartDataLabelFormat
 summary: Encapsula las propiedades de formato de las etiquetas de datos del gráfico.
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: Representa el formato de borde, que incluye el color, grosor y estilo de línea.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Representa el formato de relleno de la etiqueta de datos del gráfico actual.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Representa los atributos de fuente (como el nombre de fuente, el tamaño de fuente y el color) de una etiqueta de datos del gráfico.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: ca45cbda01363dcfecb9801d29166f9a217c2438
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914114"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 'Representa el formato de borde, que incluye el color, grosor y estilo de línea.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: Representa el formato de relleno de la etiqueta de datos del gráfico actual.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabelFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Representa los atributos de fuente (como el nombre de fuente, el tamaño de fuente y el color) de una etiqueta de datos del gráfico.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

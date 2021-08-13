@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartTrendlineLabel
-uid: ExcelScript!ExcelScript.ChartTrendlineLabel:interface
+uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendlineLabel
 summary: Este objeto representa los atributos de un objeto de etiqueta de línea de tendencia del gráfico.
@@ -9,355 +9,348 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAutoText()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getAutoText:member(1)
-  package: ExcelScript!
-  fullName: getAutoText()
-  summary: Especifica si la etiqueta de línea de tendencia genera automáticamente texto adecuado en función del contexto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAutoText(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Formato de la etiqueta de línea de tendencia del gráfico.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartTrendlineLabelFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface" />
-      description: ''
-- name: getFormula()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getFormula:member(1)
-  package: ExcelScript!
-  fullName: getFormula()
-  summary: Valor de cadena que representa la fórmula de la etiqueta de línea de tendencia del gráfico mediante la notación de estilo A1.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormula(): string;'
-    return:
-      type: string
-      description: ''
-- name: getHeight()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getHeight:member(1)
-  package: ExcelScript!
-  fullName: getHeight()
-  summary: Devuelve la altura, en puntos, de la etiqueta de línea de tendencia del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: getHorizontalAlignment()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getHorizontalAlignment()
-  summary: Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextHorizontalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de tendencia es `TextOrientation` -90, 90 o 180.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-      description: ''
-- name: getLeft()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getLeft:member(1)
-  package: ExcelScript!
-  fullName: getLeft()
-  summary: Representa la distancia, en puntos, desde el borde izquierdo de la etiqueta de línea de tendencia del gráfico hasta el borde izquierdo del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeft(): number;'
-    return:
-      type: number
-      description: ''
-- name: getLinkNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getLinkNumberFormat()
-  summary: Especifica si el formato de número está vinculado a las celdas (para que el formato de número cambie en las etiquetas cuando cambie en las celdas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLinkNumberFormat(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: Valor de cadena que representa el código de formato de la etiqueta de línea de tendencia.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: getText()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getText:member(1)
-  package: ExcelScript!
-  fullName: getText()
-  summary: Cadena que representa el texto de la etiqueta de línea de tendencia en un gráfico.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getText(): string;'
-    return:
-      type: string
-      description: ''
-- name: getTextOrientation()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: getTextOrientation()
-  summary: Representa el ángulo al que está orientado el texto para la etiqueta de línea de tendencia del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextOrientation(): number;'
-    return:
-      type: number
-      description: ''
-- name: getTop()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getTop:member(1)
-  package: ExcelScript!
-  fullName: getTop()
-  summary: Representa la distancia, en puntos, desde el borde superior de la etiqueta de línea de tendencia del gráfico hasta la parte superior del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTop(): number;'
-    return:
-      type: number
-      description: ''
-- name: getVerticalAlignment()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getVerticalAlignment()
-  summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextVerticalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de `TextOrientation` tendencia es 0.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-      description: ''
-- name: getWidth()
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getWidth:member(1)
-  package: ExcelScript!
-  fullName: getWidth()
-  summary: Devuelve la anchura, en puntos, de la etiqueta de línea de tendencia del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWidth(): number;'
-    return:
-      type: number
-      description: ''
-- name: setAutoText(autoText)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setAutoText:member(1)
-  package: ExcelScript!
-  fullName: setAutoText(autoText)
-  summary: Especifica si la etiqueta de línea de tendencia genera automáticamente texto adecuado en función del contexto.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAutoText(autoText: boolean): void;'
-    parameters:
-    - id: autoText
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setFormula(formula)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setFormula:member(1)
-  package: ExcelScript!
-  fullName: setFormula(formula)
-  summary: Valor de cadena que representa la fórmula de la etiqueta de línea de tendencia del gráfico mediante la notación de estilo A1.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFormula(formula: string): void;'
-    parameters:
-    - id: formula
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setHorizontalAlignment(horizontalAlignment)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextHorizontalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de tendencia es `TextOrientation` -90, 90 o 180.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setHorizontalAlignment(
-                  horizontalAlignment: ChartTextHorizontalAlignment
-              ): void;
-    parameters:
-    - id: horizontalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-- name: setLeft(left)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setLeft:member(1)
-  package: ExcelScript!
-  fullName: setLeft(left)
-  summary: Representa la distancia, en puntos, desde el borde izquierdo de la etiqueta de línea de tendencia del gráfico hasta el borde izquierdo del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLeft(left: number): void;'
-    parameters:
-    - id: left
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setLinkNumberFormat(linkNumberFormat)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Especifica si el formato de número está vinculado a las celdas (para que el formato de número cambie en las etiquetas cuando cambie en las celdas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
-    parameters:
-    - id: linkNumberFormat
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: Valor de cadena que representa el código de formato de la etiqueta de línea de tendencia.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setText(text)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setText:member(1)
-  package: ExcelScript!
-  fullName: setText(text)
-  summary: Cadena que representa el texto de la etiqueta de línea de tendencia en un gráfico.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setText(text: string): void;'
-    parameters:
-    - id: text
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setTextOrientation(textOrientation)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: setTextOrientation(textOrientation)
-  summary: Representa el ángulo al que está orientado el texto para la etiqueta de línea de tendencia del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTextOrientation(textOrientation: number): void;'
-    parameters:
-    - id: textOrientation
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setTop(top)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setTop:member(1)
-  package: ExcelScript!
-  fullName: setTop(top)
-  summary: Representa la distancia, en puntos, desde el borde superior de la etiqueta de línea de tendencia del gráfico hasta la parte superior del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTop(top: number): void;'
-    parameters:
-    - id: top
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVerticalAlignment(verticalAlignment)
-  uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setVerticalAlignment(verticalAlignment)
-  summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextVerticalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de `TextOrientation` tendencia es 0.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setVerticalAlignment(
-                  verticalAlignment: ChartTextVerticalAlignment
-              ): void;
-    parameters:
-    - id: verticalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9e2e5fc4947a3469339b617a5e7d8236d5ec2343
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914530"
+  - name: getAutoText()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getAutoText:member(1)'
+    package: ExcelScript!
+    fullName: getAutoText()
+    summary: Especifica si la etiqueta de línea de tendencia genera automáticamente texto adecuado en función del contexto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAutoText(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: Formato de la etiqueta de línea de tendencia del gráfico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartTrendlineLabelFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface" />'
+        description: ''
+  - name: getFormula()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getFormula:member(1)'
+    package: ExcelScript!
+    fullName: getFormula()
+    summary: Valor de cadena que representa la fórmula de la etiqueta de línea de tendencia del gráfico mediante la notación de estilo A1.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getHeight()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHeight:member(1)'
+    package: ExcelScript!
+    fullName: getHeight()
+    summary: 'Devuelve la altura, en puntos, de la etiqueta de línea de tendencia del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getHorizontalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getHorizontalAlignment()
+    summary: 'Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextHorizontalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de tendencia es `TextOrientation` -90, 90 o 180.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+        description: ''
+  - name: getLeft()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getLeft:member(1)'
+    package: ExcelScript!
+    fullName: getLeft()
+    summary: 'Representa la distancia, en puntos, desde el borde izquierdo de la etiqueta de línea de tendencia del gráfico hasta el borde izquierdo del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getLinkNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getLinkNumberFormat()
+    summary: Especifica si el formato de número está vinculado a las celdas (para que el formato de número cambie en las etiquetas cuando cambie en las celdas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: Valor de cadena que representa el código de formato de la etiqueta de línea de tendencia.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getText()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getText:member(1)'
+    package: ExcelScript!
+    fullName: getText()
+    summary: Cadena que representa el texto de la etiqueta de línea de tendencia en un gráfico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getTextOrientation()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: getTextOrientation()
+    summary: Representa el ángulo al que está orientado el texto para la etiqueta de línea de tendencia del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getTop()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getTop:member(1)'
+    package: ExcelScript!
+    fullName: getTop()
+    summary: 'Representa la distancia, en puntos, desde el borde superior de la etiqueta de línea de tendencia del gráfico hasta la parte superior del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getVerticalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getVerticalAlignment()
+    summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextVerticalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de `TextOrientation` tendencia es 0.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+        description: ''
+  - name: getWidth()
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#getWidth:member(1)'
+    package: ExcelScript!
+    fullName: getWidth()
+    summary: 'Devuelve la anchura, en puntos, de la etiqueta de línea de tendencia del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setAutoText(autoText)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setAutoText:member(1)'
+    package: ExcelScript!
+    fullName: setAutoText(autoText)
+    summary: Especifica si la etiqueta de línea de tendencia genera automáticamente texto adecuado en función del contexto.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAutoText(autoText: boolean): void;'
+      parameters:
+        - id: autoText
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setFormula(formula)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setFormula:member(1)'
+    package: ExcelScript!
+    fullName: setFormula(formula)
+    summary: Valor de cadena que representa la fórmula de la etiqueta de línea de tendencia del gráfico mediante la notación de estilo A1.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      parameters:
+        - id: formula
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setHorizontalAlignment(horizontalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    summary: 'Representa la alineación horizontal de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextHorizontalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de tendencia es `TextOrientation` -90, 90 o 180.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setHorizontalAlignment(
+                    horizontalAlignment: ChartTextHorizontalAlignment
+                ): void;
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setLeft(left)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setLeft:member(1)'
+    package: ExcelScript!
+    fullName: setLeft(left)
+    summary: 'Representa la distancia, en puntos, desde el borde izquierdo de la etiqueta de línea de tendencia del gráfico hasta el borde izquierdo del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLeft(left: number): void;'
+      parameters:
+        - id: left
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setLinkNumberFormat(linkNumberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    summary: Especifica si el formato de número está vinculado a las celdas (para que el formato de número cambie en las etiquetas cuando cambie en las celdas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: Valor de cadena que representa el código de formato de la etiqueta de línea de tendencia.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setText(text)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setText:member(1)'
+    package: ExcelScript!
+    fullName: setText(text)
+    summary: Cadena que representa el texto de la etiqueta de línea de tendencia en un gráfico.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setText(text: string): void;'
+      parameters:
+        - id: text
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setTextOrientation(textOrientation)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: setTextOrientation(textOrientation)
+    summary: Representa el ángulo al que está orientado el texto para la etiqueta de línea de tendencia del gráfico. El valor debe ser un entero de -90 a 90 o el entero 180 para texto orientado verticalmente.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      parameters:
+        - id: textOrientation
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setTop(top)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setTop:member(1)'
+    package: ExcelScript!
+    fullName: setTop(top)
+    summary: 'Representa la distancia, en puntos, desde el borde superior de la etiqueta de línea de tendencia del gráfico hasta la parte superior del área del gráfico. El valor es si la etiqueta de línea de tendencia del gráfico `null` no está visible.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTop(top: number): void;'
+      parameters:
+        - id: top
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVerticalAlignment(verticalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setVerticalAlignment(verticalAlignment)
+    summary: Representa la alineación vertical de la etiqueta de línea de tendencia del gráfico. Vea `ExcelScript.ChartTextVerticalAlignment` para más información. Esta propiedad solo es válida cuando una etiqueta de línea de `TextOrientation` tendencia es 0.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setVerticalAlignment(
+                    verticalAlignment: ChartTextVerticalAlignment
+                ): void;
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+      return:
+        type: void
+        description: ''

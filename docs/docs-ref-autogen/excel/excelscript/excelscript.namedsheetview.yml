@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedSheetView
-uid: ExcelScript!ExcelScript.NamedSheetView:interface
+uid: 'ExcelScript!ExcelScript.NamedSheetView:interface'
 package: ExcelScript!
 fullName: ExcelScript.NamedSheetView
 summary: Representa una vista de hoja con nombre de una hoja de cálculo. Una vista de hoja almacena las reglas de ordenación y filtro de una hoja de cálculo determinada. Cada vista de hoja (incluso una vista de hoja temporal) tiene un nombre único con ámbito de hoja de cálculo que se usa para tener acceso a la vista.
@@ -9,83 +9,76 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: activate()
-  uid: ExcelScript!ExcelScript.NamedSheetView#activate:member(1)
-  package: ExcelScript!
-  fullName: activate()
-  summary: Activa esta vista de hoja. Esto equivale a usar "Cambiar a" en la interfaz de usuario de Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'activate(): void;'
-    return:
-      type: void
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.NamedSheetView#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Quita la vista de hoja de la hoja de cálculo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate(name)
-  uid: ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate(name)
-  summary: Crea una copia de esta vista de hoja.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(name?: string): NamedSheetView;'
-    parameters:
-    - id: name
-      description: Nombre de la vista de hoja duplicada. Si no se proporciona ningún nombre, se generará uno.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.NamedSheetView#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Obtiene o establece el nombre de la vista de hoja. El nombre de vista de hoja temporal es la cadena vacía (""). Si se asigna un nombre a la vista mediante la propiedad name, se guarda la vista de hoja.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.NamedSheetView#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Obtiene o establece el nombre de la vista de hoja. El nombre de vista de hoja temporal es la cadena vacía (""). Si se asigna un nombre a la vista mediante la propiedad name, se guarda la vista de hoja.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 1db6ac57a9824763fd56594c4d8e94abb9ad9211
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913687"
+  - name: activate()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#activate:member(1)'
+    package: ExcelScript!
+    fullName: activate()
+    summary: Activa esta vista de hoja. Esto equivale a usar "Cambiar a" en la interfaz Excel usuario.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Quita la vista de hoja de la hoja de cálculo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate(name)
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate(name)
+    summary: Crea una copia de esta vista de hoja.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(name?: string): NamedSheetView;'
+      parameters:
+        - id: name
+          description: 'Nombre de la vista de hoja duplicada. Si no se proporciona ningún nombre, se generará uno.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 'Obtiene o establece el nombre de la vista de hoja. El nombre de vista de hoja temporal es la cadena vacía (""). Si se asigna un nombre a la vista mediante la propiedad name, se guarda la vista de hoja.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.NamedSheetView#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: 'Obtiene o establece el nombre de la vista de hoja. El nombre de vista de hoja temporal es la cadena vacía (""). Si se asigna un nombre a la vista mediante la propiedad name, se guarda la vista de hoja.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

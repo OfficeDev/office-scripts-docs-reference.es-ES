@@ -1,91 +1,84 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotHierarchy
-uid: ExcelScript!ExcelScript.PivotHierarchy:interface
+uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
 package: ExcelScript!
 fullName: ExcelScript.PivotHierarchy
-summary: Representa la pivotHierarchy de Excel.
+summary: Representa el Excel PivotHierarchy.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFields()
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)
-  package: ExcelScript!
-  fullName: getFields()
-  summary: Devuelve los PivotFields asociados con PivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFields(): PivotField[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Id. de pivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Nombre de la PivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPivotField(name)
-  uid: ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)
-  package: ExcelScript!
-  fullName: getPivotField(name)
-  summary: Obtiene un campo dinámico por su nombre. Si el campo dinámico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPivotField(name: string): PivotField | undefined;'
-    parameters:
-    - id: name
-      description: Nombre del campo dinámico que se va a recuperar.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Nombre de la PivotHierarchy.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 1821a35e313b6fea2de130ac34d6b8fec43570be
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913557"
+  - name: getFields()
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getFields:member(1)'
+    package: ExcelScript!
+    fullName: getFields()
+    summary: Devuelve los PivotFields asociados con PivotHierarchy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFields(): PivotField[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" />[]'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Id. de pivotHierarchy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Nombre de la PivotHierarchy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPivotField(name)
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#getPivotField:member(1)'
+    package: ExcelScript!
+    fullName: getPivotField(name)
+    summary: 'Obtiene un campo dinámico por su nombre. Si el campo dinámico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPivotField(name: string): PivotField | undefined;'
+      parameters:
+        - id: name
+          description: Nombre del campo dinámico que se va a recuperar.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | undefined'
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.PivotHierarchy#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Nombre de la PivotHierarchy.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

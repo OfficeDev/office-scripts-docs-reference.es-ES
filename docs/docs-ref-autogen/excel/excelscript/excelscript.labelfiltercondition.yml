@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.LabelFilterCondition
-uid: ExcelScript!ExcelScript.LabelFilterCondition:enum
+uid: 'ExcelScript!ExcelScript.LabelFilterCondition:enum'
 package: ExcelScript!
 fullName: ExcelScript.LabelFilterCondition
 summary: Enumeración que representa todas las condiciones aceptadas por las que se puede aplicar un filtro de etiqueta. Se usa para configurar el tipo de PivotFilter que se aplica al campo. `PivotFilter.criteria.exclusive` puede establecerse para `true` invertir muchas de estas condiciones.
@@ -8,86 +8,70 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: beginsWith
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member
-  package: ExcelScript!
-  summary: >-
-    La etiqueta comienza con el criterio de subcadena.
+  - name: beginsWith
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member'
+    package: ExcelScript!
+    summary: |-
+      La etiqueta comienza con el criterio de subcadena.
 
+      Criterios obligatorios: {`substring`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
+  - name: between
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.between:member'
+    package: ExcelScript!
+    summary: |-
+      Entre `lowerBound` y `upperBound` criterios.
 
-    Criterios obligatorios: {`substring`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
-- name: between
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.between:member
-  package: ExcelScript!
-  summary: >-
-    Entre `lowerBound` y `upperBound` criterios.
+      Criterios obligatorios: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
+  - name: contains
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.contains:member'
+    package: ExcelScript!
+    summary: |-
+      La etiqueta contiene el criterio de subcadena.
 
+      Criterios obligatorios: {`substring`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
+  - name: endsWith
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member'
+    package: ExcelScript!
+    summary: |-
+      La etiqueta termina con el criterio de subcadena.
 
-    Criterios obligatorios: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
-- name: contains
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.contains:member
-  package: ExcelScript!
-  summary: >-
-    La etiqueta contiene el criterio de subcadena.
+      Criterios obligatorios: {`substring`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
+  - name: equals
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.equals:member'
+    package: ExcelScript!
+    summary: |-
+      Es igual al criterio del comparador.
 
+      Criterios obligatorios: {`comparator`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
+  - name: greaterThan
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member'
+    package: ExcelScript!
+    summary: |-
+      Mayor que el criterio del comparador.
 
-    Criterios obligatorios: {`substring`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
-- name: endsWith
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member
-  package: ExcelScript!
-  summary: >-
-    La etiqueta termina con el criterio de subcadena.
+      Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
+  - name: greaterThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Mayor o igual que el criterio del comparador.
 
+      Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
+  - name: lessThan
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member'
+    package: ExcelScript!
+    summary: |-
+      Menor que el criterio del comparador.
 
-    Criterios obligatorios: {`substring`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
-- name: equals
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.equals:member
-  package: ExcelScript!
-  summary: >-
-    Es igual al criterio del comparador.
+      Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
+  - name: lessThanOrEqualTo
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member'
+    package: ExcelScript!
+    summary: |-
+      Menor o igual que el criterio del comparador.
 
-
-    Criterios obligatorios: {`comparator`<!-- -->}<!-- -->. Criterios opcionales: {`exclusive`<!-- -->}<!-- -->.
-- name: greaterThan
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThan:member
-  package: ExcelScript!
-  summary: >-
-    Mayor que el criterio del comparador.
-
-
-    Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
-- name: greaterThanOrEqualTo
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.greaterThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Mayor o igual que el criterio del comparador.
-
-
-    Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
-- name: lessThan
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThan:member
-  package: ExcelScript!
-  summary: >-
-    Menor que el criterio del comparador.
-
-
-    Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
-- name: lessThanOrEqualTo
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.lessThanOrEqualTo:member
-  package: ExcelScript!
-  summary: >-
-    Menor o igual que el criterio del comparador.
-
-
-    Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
-- name: unknown
-  uid: ExcelScript!ExcelScript.LabelFilterCondition.unknown:member
-  package: ExcelScript!
-  summary: '`LabelFilterCondition` es desconocido o no es compatible.'
-metadata:
-  ms.openlocfilehash: fef83ff91682edfcb31821be1ed8fb89bf98ea79
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913599"
+      Criterios obligatorios: {`comparator`<!-- -->}<!-- -->.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.LabelFilterCondition.unknown:member'
+    package: ExcelScript!
+    summary: '`LabelFilterCondition` es desconocido o no es compatible.'

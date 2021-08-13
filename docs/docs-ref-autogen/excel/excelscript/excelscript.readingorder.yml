@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ReadingOrder
-uid: ExcelScript!ExcelScript.ReadingOrder:enum
+uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.ReadingOrder
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: context
-  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
-  package: ExcelScript!
-  summary: Orden de lectura determinado por el idioma del primer carácter introducido. Si se introduce un carácter de un idioma que se lee de derecha a izquierda, el orden de lectura es de derecha a izquierda. Si se introduce un carácter de un idioma que se lee de izquierda a derecha, el orden de lectura es de izquierda a derecha.
-- name: leftToRight
-  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
-  package: ExcelScript!
-  summary: Orden de lectura de izquierda a derecha
-- name: rightToLeft
-  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
-  package: ExcelScript!
-  summary: Orden de lectura de derecha a izquierda
-metadata:
-  ms.openlocfilehash: 364d838721992c4fb52488de1652cc03750a8eaa
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914233"
+  - name: context
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
+    package: ExcelScript!
+    summary: 'Orden de lectura determinado por el idioma del primer carácter introducido. Si se introduce un carácter de un idioma que se lee de derecha a izquierda, el orden de lectura es de derecha a izquierda. Si se introduce un carácter de un idioma que se lee de izquierda a derecha, el orden de lectura es de izquierda a derecha.'
+  - name: leftToRight
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
+    package: ExcelScript!
+    summary: Orden de lectura de izquierda a derecha
+  - name: rightToLeft
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
+    package: ExcelScript!
+    summary: Orden de lectura de derecha a izquierda

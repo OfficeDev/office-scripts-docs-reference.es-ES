@@ -1,247 +1,240 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalFormat
-uid: ExcelScript!ExcelScript.ConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormat
-summary: Un objeto que encapsula el intervalo, el formato, la regla y otras propiedades de un formato condicional.
+summary: 'Un objeto que encapsula el intervalo, el formato, la regla y otras propiedades de un formato condicional.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Elimina este formato condicional.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getCellValue()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
-  package: ExcelScript!
-  fullName: getCellValue()
-  summary: Devuelve las propiedades del formato condicional del valor de celda si el formato condicional actual es un `CellValue` tipo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCellValue(): CellValueConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CellValueConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getColorScale()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
-  package: ExcelScript!
-  fullName: getColorScale()
-  summary: Devuelve las propiedades del formato condicional de escala de color si el formato condicional actual es un `ColorScale` tipo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getCustom()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)
-  package: ExcelScript!
-  fullName: getCustom()
-  summary: Devuelve las propiedades de formato condicional personalizado si el formato condicional actual es un tipo personalizado.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCustom(): CustomConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getDataBar()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)
-  package: ExcelScript!
-  fullName: getDataBar()
-  summary: Devuelve las propiedades de la barra de datos si el formato condicional actual es una barra de datos.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getDataBar(): DataBarConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DataBarConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getIconSet()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
-  package: ExcelScript!
-  fullName: getIconSet()
-  summary: Devuelve las propiedades del formato condicional establecido por el icono si el formato condicional actual es un `IconSet` tipo.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIconSet(): IconSetConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.IconSetConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: La prioridad del formato condicional en el formato actual `ConditionalFormatCollection`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPreset()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
-  package: ExcelScript!
-  fullName: getPreset()
-  summary: Devuelve el formato condicional de criterios preestablecidos. Consulte `ExcelScript.PresetCriteriaConditionalFormat` para más información.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getPriority()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
-  package: ExcelScript!
-  fullName: getPriority()
-  summary: La prioridad (o índice) de la colección de formato condicional en la que existe actualmente este formato condicional. Al cambiar esto también se cambian las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para empezar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, debe volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPriority(): number;'
-    return:
-      type: number
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: Devuelve el intervalo al que se aplica el formato conditonal. Si el formato condicional se aplica a varios intervalos, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRanges()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
-  package: ExcelScript!
-  fullName: getRanges()
-  summary: Devuelve el `RangeAreas`<!-- -->, que consta de uno o más intervalos rectangulares, a los que se aplica el formato conditonal.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRanges(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getStopIfTrue()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
-  package: ExcelScript!
-  fullName: getStopIfTrue()
-  summary: Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está en barras de datos, conjuntos de iconos y escalas de colores, ya que `null` no hay ningún concepto de `StopIfTrue` estos.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getStopIfTrue(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getTextComparison()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
-  package: ExcelScript!
-  fullName: getTextComparison()
-  summary: Devuelve las propiedades del formato condicional de texto específico si el formato condicional actual es un tipo de texto. Por ejemplo, para dar formato a las celdas que coincidan con la palabra "Text".
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextComparison(): TextConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TextConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getTopBottom()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
-  package: ExcelScript!
-  fullName: getTopBottom()
-  summary: Devuelve las propiedades del formato condicional superior/inferior si el formato condicional actual es un `TopBottom` tipo. Por ejemplo, para dar formato a los 10 elementos superiores o inferiores.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TopBottomConditionalFormat:interface" /> | undefined
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: Un tipo de formato condicional. Solo se puede establecer uno a la vez.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): ConditionalFormatType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
-      description: ''
-- name: setPriority(priority)
-  uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
-  package: ExcelScript!
-  fullName: setPriority(priority)
-  summary: La prioridad (o índice) de la colección de formato condicional en la que existe actualmente este formato condicional. Al cambiar esto también se cambian las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para empezar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, debe volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPriority(priority: number): void;'
-    parameters:
-    - id: priority
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setStopIfTrue(stopIfTrue)
-  uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
-  package: ExcelScript!
-  fullName: setStopIfTrue(stopIfTrue)
-  summary: Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está en barras de datos, conjuntos de iconos y escalas de colores, ya que `null` no hay ningún concepto de `StopIfTrue` estos.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setStopIfTrue(stopIfTrue: boolean): void;'
-    parameters:
-    - id: stopIfTrue
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 5cd0ead34677a84a4b10e36b1eafab34eef4739c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913840"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Elimina este formato condicional.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getCellValue()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)'
+    package: ExcelScript!
+    fullName: getCellValue()
+    summary: Devuelve las propiedades del formato condicional del valor de celda si el formato condicional actual es un `CellValue` tipo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCellValue(): CellValueConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CellValueConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getColorScale()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)'
+    package: ExcelScript!
+    fullName: getColorScale()
+    summary: Devuelve las propiedades del formato condicional de escala de color si el formato condicional actual es un `ColorScale` tipo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getCustom()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)'
+    package: ExcelScript!
+    fullName: getCustom()
+    summary: Devuelve las propiedades de formato condicional personalizado si el formato condicional actual es un tipo personalizado.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCustom(): CustomConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getDataBar()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)'
+    package: ExcelScript!
+    fullName: getDataBar()
+    summary: Devuelve las propiedades de la barra de datos si el formato condicional actual es una barra de datos.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getDataBar(): DataBarConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DataBarConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getIconSet()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)'
+    package: ExcelScript!
+    fullName: getIconSet()
+    summary: Devuelve las propiedades del formato condicional establecido por el icono si el formato condicional actual es un `IconSet` tipo.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIconSet(): IconSetConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.IconSetConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: La prioridad del formato condicional en el formato actual `ConditionalFormatCollection`<!-- -->.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPreset()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
+    package: ExcelScript!
+    fullName: getPreset()
+    summary: Devuelve el formato condicional de criterios preestablecidos. Consulte `ExcelScript.PresetCriteriaConditionalFormat`para obtener más información.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPreset(): PresetCriteriaConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getPriority()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)'
+    package: ExcelScript!
+    fullName: getPriority()
+    summary: 'La prioridad (o índice) de la colección de formato condicional en la que existe actualmente este formato condicional. Al cambiar esto también se cambian las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para empezar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, debe volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPriority(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: 'Devuelve el intervalo al que se aplica el formato conditonal. Si el formato condicional se aplica a varios intervalos, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRanges()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)'
+    package: ExcelScript!
+    fullName: getRanges()
+    summary: 'Devuelve el `RangeAreas`<!-- -->, que consta de uno o más intervalos rectangulares, a los que se aplica el formato conditonal.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRanges(): RangeAreas;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getStopIfTrue()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)'
+    package: ExcelScript!
+    fullName: getStopIfTrue()
+    summary: 'Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está en barras de datos, conjuntos de iconos y escalas de colores, ya que `null` no hay ningún concepto de `StopIfTrue` estos.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getStopIfTrue(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getTextComparison()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)'
+    package: ExcelScript!
+    fullName: getTextComparison()
+    summary: 'Devuelve las propiedades del formato condicional de texto específico si el formato condicional actual es un tipo de texto. Por ejemplo, para dar formato a las celdas que coincidan con la palabra "Text".'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextComparison(): TextConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TextConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getTopBottom()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)'
+    package: ExcelScript!
+    fullName: getTopBottom()
+    summary: 'Devuelve las propiedades del formato condicional superior/inferior si el formato condicional actual es un `TopBottom` tipo. Por ejemplo, para dar formato a los 10 elementos superiores o inferiores.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTopBottom(): TopBottomConditionalFormat | undefined;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TopBottomConditionalFormat:interface" /> | undefined'
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: Un tipo de formato condicional. Solo se puede establecer uno a la vez.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): ConditionalFormatType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />'
+        description: ''
+  - name: setPriority(priority)
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)'
+    package: ExcelScript!
+    fullName: setPriority(priority)
+    summary: 'La prioridad (o índice) de la colección de formato condicional en la que existe actualmente este formato condicional. Al cambiar esto también se cambian las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para empezar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, debe volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPriority(priority: number): void;'
+      parameters:
+        - id: priority
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setStopIfTrue(stopIfTrue)
+    uid: 'ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)'
+    package: ExcelScript!
+    fullName: setStopIfTrue(stopIfTrue)
+    summary: 'Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está en barras de datos, conjuntos de iconos y escalas de colores, ya que `null` no hay ningún concepto de `StopIfTrue` estos.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setStopIfTrue(stopIfTrue: boolean): void;'
+      parameters:
+        - id: stopIfTrue
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

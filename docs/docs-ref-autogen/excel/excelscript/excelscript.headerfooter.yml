@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.HeaderFooter
-uid: ExcelScript!ExcelScript.HeaderFooter:interface
+uid: 'ExcelScript!ExcelScript.HeaderFooter:interface'
 package: ExcelScript!
 fullName: ExcelScript.HeaderFooter
 summary: ''
@@ -9,190 +9,183 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCenterFooter()
-  uid: ExcelScript!ExcelScript.HeaderFooter#getCenterFooter:member(1)
-  package: ExcelScript!
-  fullName: getCenterFooter()
-  summary: 'Pie de página central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCenterFooter(): string;'
-    return:
-      type: string
-      description: ''
-- name: getCenterHeader()
-  uid: ExcelScript!ExcelScript.HeaderFooter#getCenterHeader:member(1)
-  package: ExcelScript!
-  fullName: getCenterHeader()
-  summary: 'Encabezado central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCenterHeader(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLeftFooter()
-  uid: ExcelScript!ExcelScript.HeaderFooter#getLeftFooter:member(1)
-  package: ExcelScript!
-  fullName: getLeftFooter()
-  summary: 'Pie de página izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeftFooter(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLeftHeader()
-  uid: ExcelScript!ExcelScript.HeaderFooter#getLeftHeader:member(1)
-  package: ExcelScript!
-  fullName: getLeftHeader()
-  summary: 'Encabezado izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLeftHeader(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRightFooter()
-  uid: ExcelScript!ExcelScript.HeaderFooter#getRightFooter:member(1)
-  package: ExcelScript!
-  fullName: getRightFooter()
-  summary: 'Pie de página derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRightFooter(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRightHeader()
-  uid: ExcelScript!ExcelScript.HeaderFooter#getRightHeader:member(1)
-  package: ExcelScript!
-  fullName: getRightHeader()
-  summary: 'Encabezado derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRightHeader(): string;'
-    return:
-      type: string
-      description: ''
-- name: setCenterFooter(centerFooter)
-  uid: ExcelScript!ExcelScript.HeaderFooter#setCenterFooter:member(1)
-  package: ExcelScript!
-  fullName: setCenterFooter(centerFooter)
-  summary: 'Pie de página central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCenterFooter(centerFooter: string): void;'
-    parameters:
-    - id: centerFooter
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setCenterHeader(centerHeader)
-  uid: ExcelScript!ExcelScript.HeaderFooter#setCenterHeader:member(1)
-  package: ExcelScript!
-  fullName: setCenterHeader(centerHeader)
-  summary: 'Encabezado central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCenterHeader(centerHeader: string): void;'
-    parameters:
-    - id: centerHeader
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setLeftFooter(leftFooter)
-  uid: ExcelScript!ExcelScript.HeaderFooter#setLeftFooter:member(1)
-  package: ExcelScript!
-  fullName: setLeftFooter(leftFooter)
-  summary: 'Pie de página izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLeftFooter(leftFooter: string): void;'
-    parameters:
-    - id: leftFooter
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setLeftHeader(leftHeader)
-  uid: ExcelScript!ExcelScript.HeaderFooter#setLeftHeader:member(1)
-  package: ExcelScript!
-  fullName: setLeftHeader(leftHeader)
-  summary: 'Encabezado izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLeftHeader(leftHeader: string): void;'
-    parameters:
-    - id: leftHeader
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setRightFooter(rightFooter)
-  uid: ExcelScript!ExcelScript.HeaderFooter#setRightFooter:member(1)
-  package: ExcelScript!
-  fullName: setRightFooter(rightFooter)
-  summary: 'Pie de página derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRightFooter(rightFooter: string): void;'
-    parameters:
-    - id: rightFooter
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setRightHeader(rightHeader)
-  uid: ExcelScript!ExcelScript.HeaderFooter#setRightHeader:member(1)
-  package: ExcelScript!
-  fullName: setRightHeader(rightHeader)
-  summary: 'Encabezado derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRightHeader(rightHeader: string): void;'
-    parameters:
-    - id: rightHeader
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 578a04d20b570cfbc2da1458fd3b79e74cf67dfe
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913628"
+  - name: getCenterFooter()
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#getCenterFooter:member(1)'
+    package: ExcelScript!
+    fullName: getCenterFooter()
+    summary: 'Pie de página central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCenterFooter(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getCenterHeader()
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#getCenterHeader:member(1)'
+    package: ExcelScript!
+    fullName: getCenterHeader()
+    summary: 'Encabezado central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCenterHeader(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLeftFooter()
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#getLeftFooter:member(1)'
+    package: ExcelScript!
+    fullName: getLeftFooter()
+    summary: 'Pie de página izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeftFooter(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLeftHeader()
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#getLeftHeader:member(1)'
+    package: ExcelScript!
+    fullName: getLeftHeader()
+    summary: 'Encabezado izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLeftHeader(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRightFooter()
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#getRightFooter:member(1)'
+    package: ExcelScript!
+    fullName: getRightFooter()
+    summary: 'Pie de página derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRightFooter(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRightHeader()
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#getRightHeader:member(1)'
+    package: ExcelScript!
+    fullName: getRightHeader()
+    summary: 'Encabezado derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRightHeader(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setCenterFooter(centerFooter)
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#setCenterFooter:member(1)'
+    package: ExcelScript!
+    fullName: setCenterFooter(centerFooter)
+    summary: 'Pie de página central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCenterFooter(centerFooter: string): void;'
+      parameters:
+        - id: centerFooter
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setCenterHeader(centerHeader)
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#setCenterHeader:member(1)'
+    package: ExcelScript!
+    fullName: setCenterHeader(centerHeader)
+    summary: 'Encabezado central de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCenterHeader(centerHeader: string): void;'
+      parameters:
+        - id: centerHeader
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setLeftFooter(leftFooter)
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#setLeftFooter:member(1)'
+    package: ExcelScript!
+    fullName: setLeftFooter(leftFooter)
+    summary: 'Pie de página izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLeftFooter(leftFooter: string): void;'
+      parameters:
+        - id: leftFooter
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setLeftHeader(leftHeader)
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#setLeftHeader:member(1)'
+    package: ExcelScript!
+    fullName: setLeftHeader(leftHeader)
+    summary: 'Encabezado izquierdo de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLeftHeader(leftHeader: string): void;'
+      parameters:
+        - id: leftHeader
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setRightFooter(rightFooter)
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#setRightFooter:member(1)'
+    package: ExcelScript!
+    fullName: setRightFooter(rightFooter)
+    summary: 'Pie de página derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRightFooter(rightFooter: string): void;'
+      parameters:
+        - id: rightFooter
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setRightHeader(rightHeader)
+    uid: 'ExcelScript!ExcelScript.HeaderFooter#setRightHeader:member(1)'
+    package: ExcelScript!
+    fullName: setRightHeader(rightHeader)
+    summary: 'Encabezado derecho de la hoja de cálculo. Para aplicar formato de fuente o insertar un valor de variable, use los códigos de formato especificados aquí: https://msdn.microsoft.com/library/bb225426.aspx .'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRightHeader(rightHeader: string): void;'
+      parameters:
+        - id: rightHeader
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

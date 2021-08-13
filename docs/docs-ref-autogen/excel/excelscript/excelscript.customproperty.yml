@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CustomProperty
-uid: ExcelScript!ExcelScript.CustomProperty:interface
+uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
 package: ExcelScript!
 fullName: ExcelScript.CustomProperty
 summary: Representa una propiedad personalizada.
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.CustomProperty#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Elimina la propiedad personalizada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.CustomProperty#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: La clave de la propiedad personalizada. La clave está limitada a 255 caracteres fuera de Excel en la web (las claves más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getType()
-  uid: ExcelScript!ExcelScript.CustomProperty#getType:member(1)
-  package: ExcelScript!
-  fullName: getType()
-  summary: Tipo del valor usado para la propiedad personalizada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getType(): DocumentPropertyType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DocumentPropertyType:enum" />
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.CustomProperty#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: Valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la web (los valores más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): any;'
-    return:
-      type: any
-      description: ''
-- name: setValue(value)
-  uid: ExcelScript!ExcelScript.CustomProperty#setValue:member(1)
-  package: ExcelScript!
-  fullName: setValue(value)
-  summary: Valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la web (los valores más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setValue(value: any): void;'
-    parameters:
-    - id: value
-      description: ''
-      type: any
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 816d6f4b2634092596bba7e6f92e5d414be58d7b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914495"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Elimina la propiedad personalizada.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: La clave de la propiedad personalizada. La clave está limitada a 255 caracteres fuera de Excel en la Web (las teclas más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getType()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getType:member(1)'
+    package: ExcelScript!
+    fullName: getType()
+    summary: Tipo del valor usado para la propiedad personalizada.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getType(): DocumentPropertyType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DocumentPropertyType:enum" />'
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.CustomProperty#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: Valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la Web (los valores más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): any;'
+      return:
+        type: any
+        description: ''
+  - name: setValue(value)
+    uid: 'ExcelScript!ExcelScript.CustomProperty#setValue:member(1)'
+    package: ExcelScript!
+    fullName: setValue(value)
+    summary: Valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la Web (los valores más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValue(value: any): void;'
+      parameters:
+        - id: value
+          description: ''
+          type: any
+      return:
+        type: void
+        description: ''

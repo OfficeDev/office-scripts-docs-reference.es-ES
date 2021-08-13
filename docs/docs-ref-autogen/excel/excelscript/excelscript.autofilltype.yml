@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AutoFillType
-uid: ExcelScript!ExcelScript.AutoFillType:enum
+uid: 'ExcelScript!ExcelScript.AutoFillType:enum'
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
 summary: El comportamiento se tipo cuando se usa Autofill en un rango del libro.
@@ -8,58 +8,51 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: fillCopy
-  uid: ExcelScript!ExcelScript.AutoFillType.fillCopy:member
-  package: ExcelScript!
-  summary: Rellena las celdas adyacentes con datos basados en los datos seleccionados.
-- name: fillDays
-  uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
-  package: ExcelScript!
-  summary: Una versión de "FillSeries" para fechas que basa el patrón en el día del mes o el día de la semana, según el contexto.
-- name: fillDefault
-  uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
-  package: ExcelScript!
-  summary: Rellena las celdas adyacentes en función de los datos circundantes (el comportamiento estándar de Autorrellenar).
-- name: fillFormats
-  uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
-  package: ExcelScript!
-  summary: Rellena las celdas adyacentes con las fórmulas seleccionadas.
-- name: fillMonths
-  uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
-  package: ExcelScript!
-  summary: Una versión de "FillSeries" para fechas que basa el patrón en el mes.
-- name: fillSeries
-  uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
-  package: ExcelScript!
-  summary: Rellena las celdas adyacentes con datos que siguen un patrón en las celdas copiadas.
-- name: fillValues
-  uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
-  package: ExcelScript!
-  summary: Rellena las celdas adyacentes con los valores seleccionados.
-- name: fillWeekdays
-  uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
-  package: ExcelScript!
-  summary: Una versión de "FillSeries" para fechas que basa el patrón en el día de la semana y solo incluye días laborables.
-- name: fillYears
-  uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
-  package: ExcelScript!
-  summary: Una versión de "FillSeries" para fechas que basa el patrón en el año.
-- name: flashFill
-  uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
-  package: ExcelScript!
-  summary: Rellena las celdas adyacentes mediante la característica De relleno flash de Excel.
-- name: growthTrend
-  uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
-  package: ExcelScript!
-  summary: Una versión de "FillSeries" para números que rellena los valores de las celdas adyacentes según un modelo de tendencia de crecimiento.
-- name: linearTrend
-  uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
-  package: ExcelScript!
-  summary: Una versión de "FillSeries" para números que rellena los valores de las celdas adyacentes según un modelo de tendencia lineal.
-metadata:
-  ms.openlocfilehash: 2035fcda973e33df938bcfc54db8f110be392f06
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913939"
+  - name: fillCopy
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillCopy:member'
+    package: ExcelScript!
+    summary: Rellena las celdas adyacentes con datos basados en los datos seleccionados.
+  - name: fillDays
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDays:member'
+    package: ExcelScript!
+    summary: 'Una versión de "FillSeries" para fechas que basa el patrón en el día del mes o el día de la semana, según el contexto.'
+  - name: fillDefault
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillDefault:member'
+    package: ExcelScript!
+    summary: Rellena las celdas adyacentes en función de los datos circundantes (el comportamiento estándar de Autorrellenar).
+  - name: fillFormats
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillFormats:member'
+    package: ExcelScript!
+    summary: Rellena las celdas adyacentes con las fórmulas seleccionadas.
+  - name: fillMonths
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillMonths:member'
+    package: ExcelScript!
+    summary: Una versión de "FillSeries" para fechas que basa el patrón en el mes.
+  - name: fillSeries
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillSeries:member'
+    package: ExcelScript!
+    summary: Rellena las celdas adyacentes con datos que siguen un patrón en las celdas copiadas.
+  - name: fillValues
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillValues:member'
+    package: ExcelScript!
+    summary: Rellena las celdas adyacentes con los valores seleccionados.
+  - name: fillWeekdays
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member'
+    package: ExcelScript!
+    summary: Una versión de "FillSeries" para fechas que basa el patrón en el día de la semana y solo incluye días laborables.
+  - name: fillYears
+    uid: 'ExcelScript!ExcelScript.AutoFillType.fillYears:member'
+    package: ExcelScript!
+    summary: Una versión de "FillSeries" para fechas que basa el patrón en el año.
+  - name: flashFill
+    uid: 'ExcelScript!ExcelScript.AutoFillType.flashFill:member'
+    package: ExcelScript!
+    summary: Rellena las celdas adyacentes mediante la característica de relleno flash de Excel de la aplicación.
+  - name: growthTrend
+    uid: 'ExcelScript!ExcelScript.AutoFillType.growthTrend:member'
+    package: ExcelScript!
+    summary: Una versión de "FillSeries" para números que rellena los valores de las celdas adyacentes según un modelo de tendencia de crecimiento.
+  - name: linearTrend
+    uid: 'ExcelScript!ExcelScript.AutoFillType.linearTrend:member'
+    package: ExcelScript!
+    summary: Una versión de "FillSeries" para números que rellena los valores de las celdas adyacentes según un modelo de tendencia lineal.

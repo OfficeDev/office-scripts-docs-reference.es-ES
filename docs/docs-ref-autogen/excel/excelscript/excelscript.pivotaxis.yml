@@ -1,37 +1,30 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotAxis
-uid: ExcelScript!ExcelScript.PivotAxis:enum
+uid: 'ExcelScript!ExcelScript.PivotAxis:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotAxis
-summary: Representa el eje desde el que se va a obtener el PivotItems.
+summary: Representa el eje desde el que se obtienen los pivotitems.
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: column
-  uid: ExcelScript!ExcelScript.PivotAxis.column:member
-  package: ExcelScript!
-  summary: El eje de columna.
-- name: data
-  uid: ExcelScript!ExcelScript.PivotAxis.data:member
-  package: ExcelScript!
-  summary: El eje de datos.
-- name: filter
-  uid: ExcelScript!ExcelScript.PivotAxis.filter:member
-  package: ExcelScript!
-  summary: El eje de filtro.
-- name: row
-  uid: ExcelScript!ExcelScript.PivotAxis.row:member
-  package: ExcelScript!
-  summary: El eje de filas.
-- name: unknown
-  uid: ExcelScript!ExcelScript.PivotAxis.unknown:member
-  package: ExcelScript!
-  summary: El eje o la región son desconocidos o no son compatibles.
-metadata:
-  ms.openlocfilehash: 7d076824c922253177ad28477f105f499431e4d0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412163"
+  - name: column
+    uid: 'ExcelScript!ExcelScript.PivotAxis.column:member'
+    package: ExcelScript!
+    summary: Eje de columna.
+  - name: data
+    uid: 'ExcelScript!ExcelScript.PivotAxis.data:member'
+    package: ExcelScript!
+    summary: Eje de datos.
+  - name: filter
+    uid: 'ExcelScript!ExcelScript.PivotAxis.filter:member'
+    package: ExcelScript!
+    summary: El eje de filtro.
+  - name: row
+    uid: 'ExcelScript!ExcelScript.PivotAxis.row:member'
+    package: ExcelScript!
+    summary: Eje de fila.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PivotAxis.unknown:member'
+    package: ExcelScript!
+    summary: El eje o región es desconocido o no es compatible.

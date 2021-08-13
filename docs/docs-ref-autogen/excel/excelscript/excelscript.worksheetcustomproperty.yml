@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetCustomProperty
-uid: ExcelScript!ExcelScript.WorksheetCustomProperty:interface
+uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorksheetCustomProperty
 summary: Representa una propiedad personalizada de nivel de hoja de cálculo.
@@ -9,66 +9,59 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Elimina la propiedad personalizada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: Obtiene la clave de la propiedad personalizada. Las claves de propiedad personalizadas no tienen mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes provocarán `InvalidArgument` un error).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getValue()
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)
-  package: ExcelScript!
-  fullName: getValue()
-  summary: Obtiene o establece el valor de la propiedad personalizada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValue(): string;'
-    return:
-      type: string
-      description: ''
-- name: setValue(value)
-  uid: ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)
-  package: ExcelScript!
-  fullName: setValue(value)
-  summary: Obtiene o establece el valor de la propiedad personalizada.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setValue(value: string): void;'
-    parameters:
-    - id: value
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 6654f21268a1b68607283f91010afc6d00221981
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914596"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Elimina la propiedad personalizada.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: Obtiene la clave de la propiedad personalizada. Las claves de propiedad personalizadas no tienen mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes provocarán `InvalidArgument` un error).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getValue()
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+    package: ExcelScript!
+    fullName: getValue()
+    summary: Obtiene o establece el valor de la propiedad personalizada.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValue(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setValue(value)
+    uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+    package: ExcelScript!
+    fullName: setValue(value)
+    summary: Obtiene o establece el valor de la propiedad personalizada.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setValue(value: string): void;'
+      parameters:
+        - id: value
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

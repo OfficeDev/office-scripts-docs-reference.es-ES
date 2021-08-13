@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotLayoutType
-uid: ExcelScript!ExcelScript.PivotLayoutType:enum
+uid: 'ExcelScript!ExcelScript.PivotLayoutType:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotLayoutType
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: compact
-  uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
-  package: ExcelScript!
-  summary: Un formulario comprimido horizontalmente con etiquetas del siguiente campo de la misma columna.
-- name: outline
-  uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
-  package: ExcelScript!
-  summary: Los elementos de los campos internos están en la misma fila que los elementos de los campos externos y los subtotales siempre están en la parte inferior.
-- name: tabular
-  uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
-  package: ExcelScript!
-  summary: Los elementos de los campos internos siempre están en una nueva línea con respecto a los elementos de los campos externos.
-metadata:
-  ms.openlocfilehash: 00e8342cd618db35b9f2f4a49bf8ab454be15c58
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913543"
+  - name: compact
+    uid: 'ExcelScript!ExcelScript.PivotLayoutType.compact:member'
+    package: ExcelScript!
+    summary: Un formulario comprimido horizontalmente con etiquetas del siguiente campo de la misma columna.
+  - name: outline
+    uid: 'ExcelScript!ExcelScript.PivotLayoutType.outline:member'
+    package: ExcelScript!
+    summary: Los elementos de los campos internos están en la misma fila que los elementos de los campos externos y los subtotales siempre están en la parte inferior.
+  - name: tabular
+    uid: 'ExcelScript!ExcelScript.PivotLayoutType.tabular:member'
+    package: ExcelScript!
+    summary: Los elementos de los campos internos siempre están en una nueva línea con respecto a los elementos de los campos externos.
