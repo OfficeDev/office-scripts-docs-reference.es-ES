@@ -3,7 +3,7 @@ name: ExcelScript.Range
 uid: ExcelScript!ExcelScript.Range:interface
 package: ExcelScript!
 fullName: ExcelScript.Range
-summary: Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna, un bloque de celdas, etc.
+summary: Range representa un conjunto de una o más celdas contiguas, como una celda, una fila, una columna o un bloque de celdas.
 remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script logs the address of the used range in the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let currentWorksheet = workbook.getActiveWorksheet();\n\n  // Get the range containing all the cells with data or formatting.\n  let usedRange = currentWorksheet.getUsedRange();\n\n  // Log the range's address to the console.\n  console.log(usedRange.getAddress());\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Busca la cadena especificada, según los criterios especificados. Si el intervalo actual es mayor que una sola celda, la búsqueda se limitará a ese intervalo, de lo contrario, la búsqueda cubrirá toda la hoja a partir de esa celda. Si no hay coincidencias, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Busca la cadena especificada, según los criterios especificados. Si el intervalo actual es mayor que una sola celda, la búsqueda se limitará a ese intervalo, de lo contrario, la búsqueda cubrirá toda la hoja a partir de esa celda. Si no hay coincidencias, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,10 +167,10 @@ methods:
     content: 'find(text: string, criteria: SearchCriteria): Range;'
     parameters:
     - id: text
-      description: La cadena que se busca.
+      description: ''
       type: string
     - id: criteria
-      description: Criterios de búsqueda adicionales, incluida la dirección de búsqueda y si la búsqueda debe coincidir con toda la celda o distingue mayúsculas de minúsculas.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -640,7 +640,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados. Si no se encuentra ninguna intersección, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados. Si no se encuentra ninguna intersección, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -648,7 +648,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | string): Range;'
     parameters:
     - id: anotherRange
-      description: Objeto de intervalo o dirección de intervalo que se usará para determinar la intersección de los intervalos.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1062,7 +1062,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Obtiene el objeto, que comprende uno o varios intervalos, que representa todas las celdas que `RangeAreas` coinciden con el tipo y el valor especificados. Si no se encuentran celdas especiales, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene el objeto, que comprende uno o varios intervalos, que representa todas las celdas que `RangeAreas` coinciden con el tipo y el valor especificados. Si no se encuentran celdas especiales, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1074,10 +1074,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: cellType
-      description: Tipo de celdas que se incluirán.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Si `cellType` es o `constants``formulas`<!-- -->, este argumento se usa para determinar qué tipos de celdas incluir en el resultado. Estos valores se pueden combinar para devolver más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.
+      description: ''
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1086,7 +1086,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Obtiene el objeto de intervalo que contiene el intervalo de desbordamiento al llamar en una celda de delimitador. Si el intervalo no es una celda delimitadora o no se encuentra el intervalo de distribución, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene el objeto de intervalo que contiene el intervalo de desbordamiento al llamar en una celda de delimitador. Si el rango no es una celda delimitadora o no se puede encontrar el intervalo de distribución, entonces esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1099,7 +1099,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtiene el objeto de intervalo que contiene la celda delimitadora de la celda en la que se va a desbordar. Si no es una celda desbordada o se proporciona más de una celda, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene el objeto de intervalo que contiene la celda delimitadora de la celda en la que se va a desbordar. Si no es una celda desbordada o se da más de una celda, entonces esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1181,7 +1181,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Devuelve el intervalo usado del objeto de rango especificado. Si no hay celdas usadas dentro del intervalo, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Devuelve el intervalo usado del objeto de rango especificado. Si no hay celdas usadas dentro del rango, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1189,7 +1189,7 @@ methods:
     content: 'getUsedRange(valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
-      description: Solo tiene en cuenta las celdas con valores como celdas usadas.
+      description: ''
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1781,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e44255d9c8f0023ddc124fd4a84f7583ce094a97
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355766"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793383"

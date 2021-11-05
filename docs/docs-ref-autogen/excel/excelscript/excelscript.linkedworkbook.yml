@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: ExcelScript.LinkedWorkbook
+uid: ExcelScript!ExcelScript.LinkedWorkbook:interface
+package: ExcelScript!
+fullName: ExcelScript.LinkedWorkbook
+summary: Contiene información sobre un libro vinculado. Si un libro tiene vínculos que apuntan a datos de otro libro, el segundo libro está vinculado al primer libro. En este escenario, el segundo libro se denomina "libro vinculado".
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: breakLinks()
+  uid: ExcelScript!ExcelScript.LinkedWorkbook#breakLinks:member(1)
+  package: ExcelScript!
+  fullName: breakLinks()
+  summary: Realiza una solicitud para romper los vínculos que apuntan al libro vinculado. Los vínculos de las fórmulas se reemplazan por los últimos datos obtenidos. El objeto `LinkedWorkbook` actual se invalida y se quita de `LinkedWorkbookCollection`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'breakLinks(): void;'
+    return:
+      type: void
+      description: ''
+- name: refreshLinks()
+  uid: ExcelScript!ExcelScript.LinkedWorkbook#refreshLinks:member(1)
+  package: ExcelScript!
+  fullName: refreshLinks()
+  summary: Realiza una solicitud para actualizar los datos recuperados del libro vinculado.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshLinks(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 62aaa5917dd461c5b2e2b9b12281f41897ecfc57
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793436"
