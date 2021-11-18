@@ -539,7 +539,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getChart:member(1)
   package: ExcelScript!
   fullName: getChart(name)
-  summary: Obtiene un gráfico mediante su nombre. Si hay varias tablas con el mismo nombre, se devolverá la primera. Si el gráfico no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene un gráfico mediante su nombre. Si hay varias tablas con el mismo nombre, se devolverá la primera. Si el gráfico no existe, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +711,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Obtiene un `NamedItem` objeto con su nombre. Si el objeto no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene un `NamedItem` objeto con su nombre. Si el objeto no existe, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Obtiene la hoja de cálculo que sigue a esta. Si no hay hojas de cálculo siguientes a esta, este método devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene la hoja de cálculo que sigue a esta. Si no hay hojas de cálculo siguientes a esta, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Obtiene una tabla dinámica por nombre. Si la tabla dinámica no existe, esta función devuelve un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene una tabla dinámica por nombre. Si la tabla dinámica no existe, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -844,7 +844,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPrevious:member(1)
   package: ExcelScript!
   fullName: getPrevious(visibleOnly)
-  summary: Obtiene la hoja de cálculo que precede a esta. Si no hay hojas de cálculo anteriores, este método devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene la hoja de cálculo que precede a esta. Si no hay hojas de cálculo anteriores, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -996,7 +996,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Obtiene una segmentación de datos con su nombre o identificador. Si la segmentación de datos no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene una segmentación de datos con su nombre o identificador. Si la segmentación de datos no existe, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1065,7 +1065,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Obtener una tabla por nombre o identificador. Si la tabla no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtener una tabla por nombre o identificador. Si la tabla no existe, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1138,7 +1138,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getWorksheetCustomProperty:member(1)
   package: ExcelScript!
   fullName: getWorksheetCustomProperty(key)
-  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Si la propiedad personalizada no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Si la propiedad personalizada no existe, esta función devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: b57e4675686b008cc43f13043451f1be337f9b23
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355738"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064804"

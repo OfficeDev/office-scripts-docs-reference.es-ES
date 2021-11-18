@@ -1,708 +1,715 @@
 ### YamlMime:TSType
 name: ExcelScript.PageLayout
-uid: 'ExcelScript!ExcelScript.PageLayout:interface'
+uid: ExcelScript!ExcelScript.PageLayout:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayout
-summary: 'Representa la configuración de diseño e impresión que no depende de ninguna implementación específica de la impresora. Estas opciones incluyen los márgenes, orientación, numeración, filas de título y el área de impresión.'
+summary: Representa la configuración de diseño e impresión que no depende de ninguna implementación específica de la impresora. Estas opciones incluyen los márgenes, orientación, numeración, filas de título y el área de impresión.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getBlackAndWhite()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getBlackAndWhite:member(1)'
-    package: ExcelScript!
-    fullName: getBlackAndWhite()
-    summary: Opción de impresión en blanco y negro de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getBlackAndWhite(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getBottomMargin()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getBottomMargin:member(1)'
-    package: ExcelScript!
-    fullName: getBottomMargin()
-    summary: Margen de página inferior de la hoja de cálculo que se usará para imprimir en puntos.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getBottomMargin(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getCenterHorizontally()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getCenterHorizontally:member(1)'
-    package: ExcelScript!
-    fullName: getCenterHorizontally()
-    summary: Marca horizontal del centro de la hoja de cálculo. Esta marca determina si se centrará horizontalmente la hoja de cálculo cuando se imprime.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCenterHorizontally(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getCenterVertically()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getCenterVertically:member(1)'
-    package: ExcelScript!
-    fullName: getCenterVertically()
-    summary: Marca vertical del centro de la hoja de cálculo. Esta marca determina si se centrará verticalmente la hoja de cálculo cuando se imprime.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getCenterVertically(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getDraftMode()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getDraftMode:member(1)'
-    package: ExcelScript!
-    fullName: getDraftMode()
-    summary: 'Opción de modo borrador de la hoja de cálculo. If `true`<!-- -->, la hoja se imprimirá sin gráficos.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getDraftMode(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getFirstPageNumber()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)'
-    package: ExcelScript!
-    fullName: getFirstPageNumber()
-    summary: El primer número de página de la hoja de cálculo que se va a imprimir. Un `null` valor representa la numeración de página "automática".
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFirstPageNumber(): number | "";'
-      return:
-        type: number | ""
-        description: ''
-  - name: getFooterMargin()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)'
-    package: ExcelScript!
-    fullName: getFooterMargin()
-    summary: 'Margen de pie de página de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFooterMargin(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getHeaderMargin()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getHeaderMargin:member(1)'
-    package: ExcelScript!
-    fullName: getHeaderMargin()
-    summary: 'Margen de encabezado de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getHeaderMargin(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getHeadersFooters()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getHeadersFooters:member(1)'
-    package: ExcelScript!
-    fullName: getHeadersFooters()
-    summary: Configuración de encabezado y pie de página de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getHeadersFooters(): HeaderFooterGroup;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.HeaderFooterGroup:interface" />'
-        description: ''
-  - name: getLeftMargin()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getLeftMargin:member(1)'
-    package: ExcelScript!
-    fullName: getLeftMargin()
-    summary: 'Margen izquierdo de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLeftMargin(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getOrientation()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getOrientation:member(1)'
-    package: ExcelScript!
-    fullName: getOrientation()
-    summary: La orientación de la hoja de cálculo de la página.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getOrientation(): PageOrientation;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PageOrientation:enum" />'
-        description: ''
-  - name: getPaperSize()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPaperSize:member(1)'
-    package: ExcelScript!
-    fullName: getPaperSize()
-    summary: Tamaño de papel de la hoja de cálculo de la página.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPaperSize(): PaperType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PaperType:enum" />'
-        description: ''
-  - name: getPrintArea()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)'
-    package: ExcelScript!
-    fullName: getPrintArea()
-    summary: 'Obtiene el `RangeAreas` objeto, que comprende uno o más intervalos rectangulares, que representa el área de impresión de la hoja de cálculo. Si no hay ningún área de impresión, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintArea(): RangeAreas;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getPrintComments()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintComments:member(1)'
-    package: ExcelScript!
-    fullName: getPrintComments()
-    summary: Especifica si los comentarios de la hoja de cálculo deben mostrarse al imprimir.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintComments(): PrintComments;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PrintComments:enum" />'
-        description: ''
-  - name: getPrintErrors()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintErrors:member(1)'
-    package: ExcelScript!
-    fullName: getPrintErrors()
-    summary: Opción de errores de impresión de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintErrors(): PrintErrorType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PrintErrorType:enum" />'
-        description: ''
-  - name: getPrintGridlines()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintGridlines:member(1)'
-    package: ExcelScript!
-    fullName: getPrintGridlines()
-    summary: Especifica si se imprimirán las líneas de cuadrícula de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintGridlines(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getPrintHeadings()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintHeadings:member(1)'
-    package: ExcelScript!
-    fullName: getPrintHeadings()
-    summary: Especifica si se imprimirán los encabezados de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintHeadings(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getPrintOrder()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintOrder:member(1)'
-    package: ExcelScript!
-    fullName: getPrintOrder()
-    summary: Opción de orden de impresión de página de la hoja de cálculo. Especifica el orden para procesar el número de página que se imprime.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintOrder(): PrintOrder;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PrintOrder:enum" />'
-        description: ''
-  - name: getPrintTitleColumns()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)'
-    package: ExcelScript!
-    fullName: getPrintTitleColumns()
-    summary: 'Obtiene el objeto de intervalo que representa las columnas de título. Si no se establece, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintTitleColumns(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: getPrintTitleRows()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)'
-    package: ExcelScript!
-    fullName: getPrintTitleRows()
-    summary: 'Obtiene el objeto de intervalo que representa las filas de título. Si no se establece, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrintTitleRows(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: getRightMargin()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getRightMargin:member(1)'
-    package: ExcelScript!
-    fullName: getRightMargin()
-    summary: 'Margen derecho de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRightMargin(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getTopMargin()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getTopMargin:member(1)'
-    package: ExcelScript!
-    fullName: getTopMargin()
-    summary: 'Margen superior de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTopMargin(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getZoom()
-    uid: 'ExcelScript!ExcelScript.PageLayout#getZoom:member(1)'
-    package: ExcelScript!
-    fullName: getZoom()
-    summary: 'Opciones de zoom de impresión de la hoja de cálculo. El `PageLayoutZoomOptions` objeto debe establecerse como un objeto JSON (usar `x.zoom = {...}` en lugar de `x.zoom.scale = ...`<!-- -->).'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getZoom(): PageLayoutZoomOptions;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PageLayoutZoomOptions:interface" />'
-        description: ''
-  - name: setBlackAndWhite(blackAndWhite)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setBlackAndWhite:member(1)'
-    package: ExcelScript!
-    fullName: setBlackAndWhite(blackAndWhite)
-    summary: Opción de impresión en blanco y negro de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setBlackAndWhite(blackAndWhite: boolean): void;'
-      parameters:
-        - id: blackAndWhite
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setBottomMargin(bottomMargin)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setBottomMargin:member(1)'
-    package: ExcelScript!
-    fullName: setBottomMargin(bottomMargin)
-    summary: Margen de página inferior de la hoja de cálculo que se usará para imprimir en puntos.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setBottomMargin(bottomMargin: number): void;'
-      parameters:
-        - id: bottomMargin
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setCenterHorizontally(centerHorizontally)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setCenterHorizontally:member(1)'
-    package: ExcelScript!
-    fullName: setCenterHorizontally(centerHorizontally)
-    summary: Marca horizontal del centro de la hoja de cálculo. Esta marca determina si se centrará horizontalmente la hoja de cálculo cuando se imprime.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setCenterHorizontally(centerHorizontally: boolean): void;'
-      parameters:
-        - id: centerHorizontally
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setCenterVertically(centerVertically)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setCenterVertically:member(1)'
-    package: ExcelScript!
-    fullName: setCenterVertically(centerVertically)
-    summary: Marca vertical del centro de la hoja de cálculo. Esta marca determina si se centrará verticalmente la hoja de cálculo cuando se imprime.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setCenterVertically(centerVertically: boolean): void;'
-      parameters:
-        - id: centerVertically
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setDraftMode(draftMode)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setDraftMode:member(1)'
-    package: ExcelScript!
-    fullName: setDraftMode(draftMode)
-    summary: 'Opción de modo borrador de la hoja de cálculo. If `true`<!-- -->, la hoja se imprimirá sin gráficos.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setDraftMode(draftMode: boolean): void;'
-      parameters:
-        - id: draftMode
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setFirstPageNumber(firstPageNumber)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)'
-    package: ExcelScript!
-    fullName: setFirstPageNumber(firstPageNumber)
-    summary: El primer número de página de la hoja de cálculo que se va a imprimir. Un `null` valor representa la numeración de página "automática".
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFirstPageNumber(firstPageNumber: number | ""): void;'
-      parameters:
-        - id: firstPageNumber
-          description: ''
-          type: number | ""
-      return:
-        type: void
-        description: ''
-  - name: setFooterMargin(footerMargin)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)'
-    package: ExcelScript!
-    fullName: setFooterMargin(footerMargin)
-    summary: 'Margen de pie de página de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setFooterMargin(footerMargin: number): void;'
-      parameters:
-        - id: footerMargin
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setHeaderMargin(headerMargin)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setHeaderMargin:member(1)'
-    package: ExcelScript!
-    fullName: setHeaderMargin(headerMargin)
-    summary: 'Margen de encabezado de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setHeaderMargin(headerMargin: number): void;'
-      parameters:
-        - id: headerMargin
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setLeftMargin(leftMargin)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setLeftMargin:member(1)'
-    package: ExcelScript!
-    fullName: setLeftMargin(leftMargin)
-    summary: 'Margen izquierdo de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setLeftMargin(leftMargin: number): void;'
-      parameters:
-        - id: leftMargin
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setOrientation(orientation)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setOrientation:member(1)'
-    package: ExcelScript!
-    fullName: setOrientation(orientation)
-    summary: La orientación de la hoja de cálculo de la página.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setOrientation(orientation: PageOrientation): void;'
-      parameters:
-        - id: orientation
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.PageOrientation:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setPaperSize(paperSize)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPaperSize:member(1)'
-    package: ExcelScript!
-    fullName: setPaperSize(paperSize)
-    summary: Tamaño de papel de la hoja de cálculo de la página.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPaperSize(paperSize: PaperType): void;'
-      parameters:
-        - id: paperSize
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.PaperType:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setPrintArea(printArea)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintArea:member(1)'
-    package: ExcelScript!
-    fullName: setPrintArea(printArea)
-    summary: Establece el área de impresión de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
-      parameters:
-        - id: printArea
-          description: Intervalos o intervalos del contenido que se va a imprimir.
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string'
-      return:
-        type: void
-        description: ''
-  - name: setPrintComments(printComments)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintComments:member(1)'
-    package: ExcelScript!
-    fullName: setPrintComments(printComments)
-    summary: Especifica si los comentarios de la hoja de cálculo deben mostrarse al imprimir.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintComments(printComments: PrintComments): void;'
-      parameters:
-        - id: printComments
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.PrintComments:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setPrintErrors(printErrors)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)'
-    package: ExcelScript!
-    fullName: setPrintErrors(printErrors)
-    summary: Opción de errores de impresión de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintErrors(printErrors: PrintErrorType): void;'
-      parameters:
-        - id: printErrors
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.PrintErrorType:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setPrintGridlines(printGridlines)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintGridlines:member(1)'
-    package: ExcelScript!
-    fullName: setPrintGridlines(printGridlines)
-    summary: Especifica si se imprimirán las líneas de cuadrícula de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintGridlines(printGridlines: boolean): void;'
-      parameters:
-        - id: printGridlines
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setPrintHeadings(printHeadings)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintHeadings:member(1)'
-    package: ExcelScript!
-    fullName: setPrintHeadings(printHeadings)
-    summary: Especifica si se imprimirán los encabezados de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintHeadings(printHeadings: boolean): void;'
-      parameters:
-        - id: printHeadings
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: 'setPrintMargins(unit, marginOptions)'
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintMargins:member(1)'
-    package: ExcelScript!
-    fullName: 'setPrintMargins(unit, marginOptions)'
-    summary: Establece los márgenes de página de la hoja de cálculo con unidades.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: |-
-        setPrintMargins(
-                    unit: PrintMarginUnit,
-                    marginOptions: PageLayoutMarginOptions
-                ): void;
-      parameters:
-        - id: unit
-          description: Unidad de medida para los márgenes proporcionados.
-          type: '<xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />'
-        - id: marginOptions
-          description: Valores de margen que se establecerán. Los márgenes no proporcionados permanecen sin cambios.
-          type: '<xref uid="ExcelScript!ExcelScript.PageLayoutMarginOptions:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: setPrintOrder(printOrder)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintOrder:member(1)'
-    package: ExcelScript!
-    fullName: setPrintOrder(printOrder)
-    summary: Opción de orden de impresión de página de la hoja de cálculo. Especifica el orden para procesar el número de página que se imprime.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintOrder(printOrder: PrintOrder): void;'
-      parameters:
-        - id: printOrder
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.PrintOrder:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setPrintTitleColumns(printTitleColumns)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintTitleColumns:member(1)'
-    package: ExcelScript!
-    fullName: setPrintTitleColumns(printTitleColumns)
-    summary: Establece las columnas que contienen las celdas que se repetirán a la izquierda de cada página de la hoja de cálculo que se va a imprimir.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
-      parameters:
-        - id: printTitleColumns
-          description: Las columnas que se repetirán a la izquierda de cada página. El intervalo debe abarcar toda la columna para que sea válido.
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-      return:
-        type: void
-        description: ''
-  - name: setPrintTitleRows(printTitleRows)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setPrintTitleRows:member(1)'
-    package: ExcelScript!
-    fullName: setPrintTitleRows(printTitleRows)
-    summary: Establece las filas que contienen las celdas que se repetirán en la parte superior de cada página de la hoja de cálculo que se va a imprimir.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
-      parameters:
-        - id: printTitleRows
-          description: Las filas que se repetirán en la parte superior de cada página. El intervalo debe abarcar toda la fila para que sea válido.
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-      return:
-        type: void
-        description: ''
-  - name: setRightMargin(rightMargin)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setRightMargin:member(1)'
-    package: ExcelScript!
-    fullName: setRightMargin(rightMargin)
-    summary: 'Margen derecho de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRightMargin(rightMargin: number): void;'
-      parameters:
-        - id: rightMargin
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setTopMargin(topMargin)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setTopMargin:member(1)'
-    package: ExcelScript!
-    fullName: setTopMargin(topMargin)
-    summary: 'Margen superior de la hoja de cálculo, en puntos, para su uso al imprimir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setTopMargin(topMargin: number): void;'
-      parameters:
-        - id: topMargin
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setZoom(zoom)
-    uid: 'ExcelScript!ExcelScript.PageLayout#setZoom:member(1)'
-    package: ExcelScript!
-    fullName: setZoom(zoom)
-    summary: 'Opciones de zoom de impresión de la hoja de cálculo. El `PageLayoutZoomOptions` objeto debe establecerse como un objeto JSON (usar `x.zoom = {...}` en lugar de `x.zoom.scale = ...`<!-- -->).'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setZoom(zoom: PageLayoutZoomOptions): void;'
-      parameters:
-        - id: zoom
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.PageLayoutZoomOptions:interface" />'
-      return:
-        type: void
-        description: ''
+- name: getBlackAndWhite()
+  uid: ExcelScript!ExcelScript.PageLayout#getBlackAndWhite:member(1)
+  package: ExcelScript!
+  fullName: getBlackAndWhite()
+  summary: Opción de impresión en blanco y negro de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBlackAndWhite(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getBottomMargin()
+  uid: ExcelScript!ExcelScript.PageLayout#getBottomMargin:member(1)
+  package: ExcelScript!
+  fullName: getBottomMargin()
+  summary: Margen de página inferior de la hoja de cálculo que se usará para imprimir en puntos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBottomMargin(): number;'
+    return:
+      type: number
+      description: ''
+- name: getCenterHorizontally()
+  uid: ExcelScript!ExcelScript.PageLayout#getCenterHorizontally:member(1)
+  package: ExcelScript!
+  fullName: getCenterHorizontally()
+  summary: Marca horizontal del centro de la hoja de cálculo. Esta marca determina si se centrará horizontalmente la hoja de cálculo cuando se imprime.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCenterHorizontally(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getCenterVertically()
+  uid: ExcelScript!ExcelScript.PageLayout#getCenterVertically:member(1)
+  package: ExcelScript!
+  fullName: getCenterVertically()
+  summary: Marca vertical del centro de la hoja de cálculo. Esta marca determina si se centrará verticalmente la hoja de cálculo cuando se imprime.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCenterVertically(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getDraftMode()
+  uid: ExcelScript!ExcelScript.PageLayout#getDraftMode:member(1)
+  package: ExcelScript!
+  fullName: getDraftMode()
+  summary: Opción de modo borrador de la hoja de cálculo. If `true`<!-- -->, la hoja se imprimirá sin gráficos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDraftMode(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getFirstPageNumber()
+  uid: ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)
+  package: ExcelScript!
+  fullName: getFirstPageNumber()
+  summary: El primer número de página de la hoja de cálculo que se va a imprimir. Un `null` valor representa la numeración de página "automática".
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFirstPageNumber(): number | "";'
+    return:
+      type: number | ""
+      description: ''
+- name: getFooterMargin()
+  uid: ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)
+  package: ExcelScript!
+  fullName: getFooterMargin()
+  summary: Margen de pie de página de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFooterMargin(): number;'
+    return:
+      type: number
+      description: ''
+- name: getHeaderMargin()
+  uid: ExcelScript!ExcelScript.PageLayout#getHeaderMargin:member(1)
+  package: ExcelScript!
+  fullName: getHeaderMargin()
+  summary: Margen de encabezado de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeaderMargin(): number;'
+    return:
+      type: number
+      description: ''
+- name: getHeadersFooters()
+  uid: ExcelScript!ExcelScript.PageLayout#getHeadersFooters:member(1)
+  package: ExcelScript!
+  fullName: getHeadersFooters()
+  summary: Configuración de encabezado y pie de página de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeadersFooters(): HeaderFooterGroup;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HeaderFooterGroup:interface" />
+      description: ''
+- name: getLeftMargin()
+  uid: ExcelScript!ExcelScript.PageLayout#getLeftMargin:member(1)
+  package: ExcelScript!
+  fullName: getLeftMargin()
+  summary: Margen izquierdo de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeftMargin(): number;'
+    return:
+      type: number
+      description: ''
+- name: getOrientation()
+  uid: ExcelScript!ExcelScript.PageLayout#getOrientation:member(1)
+  package: ExcelScript!
+  fullName: getOrientation()
+  summary: La orientación de la hoja de cálculo de la página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOrientation(): PageOrientation;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PageOrientation:enum" />
+      description: ''
+- name: getPaperSize()
+  uid: ExcelScript!ExcelScript.PageLayout#getPaperSize:member(1)
+  package: ExcelScript!
+  fullName: getPaperSize()
+  summary: Tamaño de papel de la hoja de cálculo de la página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPaperSize(): PaperType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PaperType:enum" />
+      description: ''
+- name: getPrintArea()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
+  package: ExcelScript!
+  fullName: getPrintArea()
+  summary: Obtiene el `RangeAreas` objeto, que comprende uno o más intervalos rectangulares, que representa el área de impresión de la hoja de cálculo. Si no hay ningún área de impresión, esta función devuelve `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintArea(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getPrintComments()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintComments:member(1)
+  package: ExcelScript!
+  fullName: getPrintComments()
+  summary: Especifica si los comentarios de la hoja de cálculo deben mostrarse al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintComments(): PrintComments;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PrintComments:enum" />
+      description: ''
+- name: getPrintErrors()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintErrors:member(1)
+  package: ExcelScript!
+  fullName: getPrintErrors()
+  summary: Opción de errores de impresión de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintErrors(): PrintErrorType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PrintErrorType:enum" />
+      description: ''
+- name: getPrintGridlines()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintGridlines:member(1)
+  package: ExcelScript!
+  fullName: getPrintGridlines()
+  summary: Especifica si se imprimirán las líneas de cuadrícula de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintGridlines(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getPrintHeadings()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintHeadings:member(1)
+  package: ExcelScript!
+  fullName: getPrintHeadings()
+  summary: Especifica si se imprimirán los encabezados de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintHeadings(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getPrintOrder()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintOrder:member(1)
+  package: ExcelScript!
+  fullName: getPrintOrder()
+  summary: Opción de orden de impresión de página de la hoja de cálculo. Especifica el orden para procesar el número de página que se imprime.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintOrder(): PrintOrder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PrintOrder:enum" />
+      description: ''
+- name: getPrintTitleColumns()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)
+  package: ExcelScript!
+  fullName: getPrintTitleColumns()
+  summary: Obtiene el objeto de intervalo que representa las columnas de título. Si no se establece, esta función devuelve `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintTitleColumns(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getPrintTitleRows()
+  uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)
+  package: ExcelScript!
+  fullName: getPrintTitleRows()
+  summary: Obtiene el objeto de intervalo que representa las filas de título. Si no se establece, esta función devuelve `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrintTitleRows(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getRightMargin()
+  uid: ExcelScript!ExcelScript.PageLayout#getRightMargin:member(1)
+  package: ExcelScript!
+  fullName: getRightMargin()
+  summary: Margen derecho de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRightMargin(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTopMargin()
+  uid: ExcelScript!ExcelScript.PageLayout#getTopMargin:member(1)
+  package: ExcelScript!
+  fullName: getTopMargin()
+  summary: Margen superior de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTopMargin(): number;'
+    return:
+      type: number
+      description: ''
+- name: getZoom()
+  uid: ExcelScript!ExcelScript.PageLayout#getZoom:member(1)
+  package: ExcelScript!
+  fullName: getZoom()
+  summary: Opciones de zoom de impresión de la hoja de cálculo. El `PageLayoutZoomOptions` objeto debe establecerse como un objeto JSON (usar `x.zoom = {...}` en lugar de `x.zoom.scale = ...`<!-- -->).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getZoom(): PageLayoutZoomOptions;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PageLayoutZoomOptions:interface" />
+      description: ''
+- name: setBlackAndWhite(blackAndWhite)
+  uid: ExcelScript!ExcelScript.PageLayout#setBlackAndWhite:member(1)
+  package: ExcelScript!
+  fullName: setBlackAndWhite(blackAndWhite)
+  summary: Opción de impresión en blanco y negro de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBlackAndWhite(blackAndWhite: boolean): void;'
+    parameters:
+    - id: blackAndWhite
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setBottomMargin(bottomMargin)
+  uid: ExcelScript!ExcelScript.PageLayout#setBottomMargin:member(1)
+  package: ExcelScript!
+  fullName: setBottomMargin(bottomMargin)
+  summary: Margen de página inferior de la hoja de cálculo que se usará para imprimir en puntos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBottomMargin(bottomMargin: number): void;'
+    parameters:
+    - id: bottomMargin
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setCenterHorizontally(centerHorizontally)
+  uid: ExcelScript!ExcelScript.PageLayout#setCenterHorizontally:member(1)
+  package: ExcelScript!
+  fullName: setCenterHorizontally(centerHorizontally)
+  summary: Marca horizontal del centro de la hoja de cálculo. Esta marca determina si se centrará horizontalmente la hoja de cálculo cuando se imprime.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCenterHorizontally(centerHorizontally: boolean): void;'
+    parameters:
+    - id: centerHorizontally
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setCenterVertically(centerVertically)
+  uid: ExcelScript!ExcelScript.PageLayout#setCenterVertically:member(1)
+  package: ExcelScript!
+  fullName: setCenterVertically(centerVertically)
+  summary: Marca vertical del centro de la hoja de cálculo. Esta marca determina si se centrará verticalmente la hoja de cálculo cuando se imprime.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCenterVertically(centerVertically: boolean): void;'
+    parameters:
+    - id: centerVertically
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setDraftMode(draftMode)
+  uid: ExcelScript!ExcelScript.PageLayout#setDraftMode:member(1)
+  package: ExcelScript!
+  fullName: setDraftMode(draftMode)
+  summary: Opción de modo borrador de la hoja de cálculo. If `true`<!-- -->, la hoja se imprimirá sin gráficos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDraftMode(draftMode: boolean): void;'
+    parameters:
+    - id: draftMode
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setFirstPageNumber(firstPageNumber)
+  uid: ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)
+  package: ExcelScript!
+  fullName: setFirstPageNumber(firstPageNumber)
+  summary: El primer número de página de la hoja de cálculo que se va a imprimir. Un `null` valor representa la numeración de página "automática".
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFirstPageNumber(firstPageNumber: number | ""): void;'
+    parameters:
+    - id: firstPageNumber
+      description: ''
+      type: number | ""
+    return:
+      type: void
+      description: ''
+- name: setFooterMargin(footerMargin)
+  uid: ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)
+  package: ExcelScript!
+  fullName: setFooterMargin(footerMargin)
+  summary: Margen de pie de página de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFooterMargin(footerMargin: number): void;'
+    parameters:
+    - id: footerMargin
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setHeaderMargin(headerMargin)
+  uid: ExcelScript!ExcelScript.PageLayout#setHeaderMargin:member(1)
+  package: ExcelScript!
+  fullName: setHeaderMargin(headerMargin)
+  summary: Margen de encabezado de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHeaderMargin(headerMargin: number): void;'
+    parameters:
+    - id: headerMargin
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setLeftMargin(leftMargin)
+  uid: ExcelScript!ExcelScript.PageLayout#setLeftMargin:member(1)
+  package: ExcelScript!
+  fullName: setLeftMargin(leftMargin)
+  summary: Margen izquierdo de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLeftMargin(leftMargin: number): void;'
+    parameters:
+    - id: leftMargin
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setOrientation(orientation)
+  uid: ExcelScript!ExcelScript.PageLayout#setOrientation:member(1)
+  package: ExcelScript!
+  fullName: setOrientation(orientation)
+  summary: La orientación de la hoja de cálculo de la página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setOrientation(orientation: PageOrientation): void;'
+    parameters:
+    - id: orientation
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PageOrientation:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPaperSize(paperSize)
+  uid: ExcelScript!ExcelScript.PageLayout#setPaperSize:member(1)
+  package: ExcelScript!
+  fullName: setPaperSize(paperSize)
+  summary: Tamaño de papel de la hoja de cálculo de la página.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPaperSize(paperSize: PaperType): void;'
+    parameters:
+    - id: paperSize
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PaperType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPrintArea(printArea)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintArea:member(1)
+  package: ExcelScript!
+  fullName: setPrintArea(printArea)
+  summary: Establece el área de impresión de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
+    parameters:
+    - id: printArea
+      description: Intervalos o intervalos del contenido que se va a imprimir.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setPrintComments(printComments)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintComments:member(1)
+  package: ExcelScript!
+  fullName: setPrintComments(printComments)
+  summary: Especifica si los comentarios de la hoja de cálculo deben mostrarse al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintComments(printComments: PrintComments): void;'
+    parameters:
+    - id: printComments
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PrintComments:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPrintErrors(printErrors)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)
+  package: ExcelScript!
+  fullName: setPrintErrors(printErrors)
+  summary: Opción de errores de impresión de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintErrors(printErrors: PrintErrorType): void;'
+    parameters:
+    - id: printErrors
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PrintErrorType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPrintGridlines(printGridlines)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintGridlines:member(1)
+  package: ExcelScript!
+  fullName: setPrintGridlines(printGridlines)
+  summary: Especifica si se imprimirán las líneas de cuadrícula de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintGridlines(printGridlines: boolean): void;'
+    parameters:
+    - id: printGridlines
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setPrintHeadings(printHeadings)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintHeadings:member(1)
+  package: ExcelScript!
+  fullName: setPrintHeadings(printHeadings)
+  summary: Especifica si se imprimirán los encabezados de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintHeadings(printHeadings: boolean): void;'
+    parameters:
+    - id: printHeadings
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setPrintMargins(unit, marginOptions)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintMargins:member(1)
+  package: ExcelScript!
+  fullName: setPrintMargins(unit, marginOptions)
+  summary: Establece los márgenes de página de la hoja de cálculo con unidades.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setPrintMargins(
+                  unit: PrintMarginUnit,
+                  marginOptions: PageLayoutMarginOptions
+              ): void;
+    parameters:
+    - id: unit
+      description: Unidad de medida para los márgenes proporcionados.
+      type: <xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />
+    - id: marginOptions
+      description: Valores de margen que se establecerán. Los márgenes no proporcionados permanecen sin cambios.
+      type: <xref uid="ExcelScript!ExcelScript.PageLayoutMarginOptions:interface" />
+    return:
+      type: void
+      description: ''
+- name: setPrintOrder(printOrder)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintOrder:member(1)
+  package: ExcelScript!
+  fullName: setPrintOrder(printOrder)
+  summary: Opción de orden de impresión de página de la hoja de cálculo. Especifica el orden para procesar el número de página que se imprime.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintOrder(printOrder: PrintOrder): void;'
+    parameters:
+    - id: printOrder
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PrintOrder:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPrintTitleColumns(printTitleColumns)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintTitleColumns:member(1)
+  package: ExcelScript!
+  fullName: setPrintTitleColumns(printTitleColumns)
+  summary: Establece las columnas que contienen las celdas que se repetirán a la izquierda de cada página de la hoja de cálculo que se va a imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
+    parameters:
+    - id: printTitleColumns
+      description: Las columnas que se repetirán a la izquierda de cada página. El intervalo debe abarcar toda la columna para que sea válido.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setPrintTitleRows(printTitleRows)
+  uid: ExcelScript!ExcelScript.PageLayout#setPrintTitleRows:member(1)
+  package: ExcelScript!
+  fullName: setPrintTitleRows(printTitleRows)
+  summary: Establece las filas que contienen las celdas que se repetirán en la parte superior de cada página de la hoja de cálculo que se va a imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
+    parameters:
+    - id: printTitleRows
+      description: Las filas que se repetirán en la parte superior de cada página. El intervalo debe abarcar toda la fila para que sea válido.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: setRightMargin(rightMargin)
+  uid: ExcelScript!ExcelScript.PageLayout#setRightMargin:member(1)
+  package: ExcelScript!
+  fullName: setRightMargin(rightMargin)
+  summary: Margen derecho de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRightMargin(rightMargin: number): void;'
+    parameters:
+    - id: rightMargin
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTopMargin(topMargin)
+  uid: ExcelScript!ExcelScript.PageLayout#setTopMargin:member(1)
+  package: ExcelScript!
+  fullName: setTopMargin(topMargin)
+  summary: Margen superior de la hoja de cálculo, en puntos, para su uso al imprimir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTopMargin(topMargin: number): void;'
+    parameters:
+    - id: topMargin
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setZoom(zoom)
+  uid: ExcelScript!ExcelScript.PageLayout#setZoom:member(1)
+  package: ExcelScript!
+  fullName: setZoom(zoom)
+  summary: Opciones de zoom de impresión de la hoja de cálculo. El `PageLayoutZoomOptions` objeto debe establecerse como un objeto JSON (usar `x.zoom = {...}` en lugar de `x.zoom.scale = ...`<!-- -->).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setZoom(zoom: PageLayoutZoomOptions): void;'
+    parameters:
+    - id: zoom
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PageLayoutZoomOptions:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7f9a97d565c2be0eb8530d038ffb011c3b272a73
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064811"

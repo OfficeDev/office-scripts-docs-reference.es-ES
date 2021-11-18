@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.WorksheetFreezePanes
-uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
+uid: ExcelScript!ExcelScript.WorksheetFreezePanes:interface
 package: ExcelScript!
 fullName: ExcelScript.WorksheetFreezePanes
 summary: ''
@@ -9,80 +9,87 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: freezeAt(frozenRange)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
-    package: ExcelScript!
-    fullName: freezeAt(frozenRange)
-    summary: Establece las celdas inmovilizadas en la vista de la hoja de cálculo activa. El intervalo proporcionado corresponde a las celdas que se inmovilizarán en el panel superior e izquierdo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeAt(frozenRange: Range | string): void;'
-      parameters:
-        - id: frozenRange
-          description: Rango que representa las celdas que se van a inmovilizar o `null` para quitar todos los paneles inmovilizados.
-          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
-      return:
-        type: void
-        description: ''
-  - name: freezeColumns(count)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
-    package: ExcelScript!
-    fullName: freezeColumns(count)
-    summary: Inmovilizar la primera columna o columnas de la hoja de cálculo en su lugar.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeColumns(count?: number): void;'
-      parameters:
-        - id: count
-          description: Número opcional de columnas que se inmovilizarán o cero para descongelar todas las columnas
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: freezeRows(count)
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
-    package: ExcelScript!
-    fullName: freezeRows(count)
-    summary: Inmovilizar la fila o filas superiores de la hoja de cálculo en su lugar.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'freezeRows(count?: number): void;'
-      parameters:
-        - id: count
-          description: Número opcional de filas que se inmovilizarán o cero para descongelar todas las filas
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: getLocation()
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
-    package: ExcelScript!
-    fullName: getLocation()
-    summary: 'Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado corresponde a las celdas que se inmovilizan en el panel superior e izquierdo. Si no hay ningún panel inmovilizado, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getLocation(): Range;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
-        description: ''
-  - name: unfreeze()
-    uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
-    package: ExcelScript!
-    fullName: unfreeze()
-    summary: Elimina todos los paneles inmovilizados de la hoja de cálculo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'unfreeze(): void;'
-      return:
-        type: void
-        description: ''
+- name: freezeAt(frozenRange)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
+  package: ExcelScript!
+  fullName: freezeAt(frozenRange)
+  summary: Establece las celdas inmovilizadas en la vista de la hoja de cálculo activa. El intervalo proporcionado corresponde a las celdas que se inmovilizarán en el panel superior e izquierdo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeAt(frozenRange: Range | string): void;'
+    parameters:
+    - id: frozenRange
+      description: Rango que representa las celdas que se van a inmovilizar o `null` para quitar todos los paneles inmovilizados.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: freezeColumns(count)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
+  package: ExcelScript!
+  fullName: freezeColumns(count)
+  summary: Inmovilizar la primera columna o columnas de la hoja de cálculo en su lugar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeColumns(count?: number): void;'
+    parameters:
+    - id: count
+      description: Número opcional de columnas que se inmovilizarán o cero para descongelar todas las columnas
+      type: number
+    return:
+      type: void
+      description: ''
+- name: freezeRows(count)
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
+  package: ExcelScript!
+  fullName: freezeRows(count)
+  summary: Inmovilizar la fila o filas superiores de la hoja de cálculo en su lugar.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'freezeRows(count?: number): void;'
+    parameters:
+    - id: count
+      description: Número opcional de filas que se inmovilizarán o cero para descongelar todas las filas
+      type: number
+    return:
+      type: void
+      description: ''
+- name: getLocation()
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
+  package: ExcelScript!
+  fullName: getLocation()
+  summary: Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado corresponde a las celdas que se inmovilizan en el panel superior e izquierdo. Si no hay ningún panel inmovilizado, esta función devuelve `undefined`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocation(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: unfreeze()
+  uid: ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)
+  package: ExcelScript!
+  fullName: unfreeze()
+  summary: Elimina todos los paneles inmovilizados de la hoja de cálculo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unfreeze(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 98ee21716269e9fcbb26b7cb2623708b083d54df
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064825"
