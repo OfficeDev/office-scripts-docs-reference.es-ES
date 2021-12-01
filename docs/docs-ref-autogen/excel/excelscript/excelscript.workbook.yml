@@ -213,7 +213,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to an existing worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n * It also assumes there is a worksheet named \"PivotSheet\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n  let pivotTable = workbook.addPivotTable(\"My Pivot\", table, \"PivotSheet!A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
 - name: addPivotTableStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)
   package: ExcelScript!
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 253c69d6b18673802e35526c93056f0640cf8fbd
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 0cf6be7bea44595eb8cdce4d1000268f330f9073
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064790"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240615"

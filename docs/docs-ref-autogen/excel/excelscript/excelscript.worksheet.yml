@@ -282,7 +282,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n\n  // Switch to the new worksheet.\n  newSheet.activate();\n}\n```"
 - name: addSlicer(slicerSource, sourceField, slicerDestination)
   uid: ExcelScript!ExcelScript.Worksheet#addSlicer:member(1)
   package: ExcelScript!
@@ -488,7 +488,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script looks through a worksheet and finds cells containing \"No\". \n * Those cells are filled red.\n * Use Range.find instead of Worksheet.findAll when you want to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let noCells = worksheet.findAll(\"No\", { completeMatch: true });\n\n  // Set the fill color to red.\n  noCells.getFormat().getFill().setColor(\"red\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script searches through a worksheet and finds cells containing \"No\". \n * Those cells are filled red.\n * Use Range.find instead of Worksheet.findAll when you want to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let noCells = worksheet.findAll(\"No\", { completeMatch: true });\n\n  // Set the fill color to red.\n  noCells.getFormat().getFill().setColor(\"red\");\n}\n```"
 - name: getActiveNamedSheetView()
   uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
   package: ExcelScript!
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b57e4675686b008cc43f13043451f1be337f9b23
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 1eef5e7e31219028c6c86b4b4784ef9f0a74011f
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064804"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240566"
