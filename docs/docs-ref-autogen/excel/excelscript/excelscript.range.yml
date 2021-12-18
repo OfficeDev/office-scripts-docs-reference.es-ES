@@ -167,10 +167,10 @@ methods:
     content: 'find(text: string, criteria: SearchCriteria): Range;'
     parameters:
     - id: text
-      description: ''
+      description: La cadena que se busca.
       type: string
     - id: criteria
-      description: ''
+      description: Criterios de búsqueda adicionales, incluida la dirección de búsqueda y si la búsqueda debe coincidir con toda la celda o distingue mayúsculas de minúsculas.
       type: <xref uid="ExcelScript!ExcelScript.SearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -652,7 +652,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | string): Range;'
     parameters:
     - id: anotherRange
-      description: ''
+      description: Objeto de intervalo o dirección de intervalo que se usará para determinar la intersección de los intervalos.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1078,10 +1078,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: cellType
-      description: ''
+      description: Tipo de celdas que se incluirán.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: ''
+      description: Si `cellType` es o `constants``formulas`<!-- -->, este argumento se usa para determinar qué tipos de celdas incluir en el resultado. Estos valores se pueden combinar para devolver más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1193,7 +1193,7 @@ methods:
     content: 'getUsedRange(valuesOnly?: boolean): Range;'
     parameters:
     - id: valuesOnly
-      description: ''
+      description: Solo tiene en cuenta las celdas con valores como celdas usadas.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f53fee1a0c937cb705b0890bc9e783670fcb6e58
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: a5e4a206a975656e3441d91791c0ae29cce414b0
+  ms.sourcegitcommit: 01a0e187975bd85f9ba8d25f63337803613ab6b3
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240650"
+  ms.lasthandoff: 12/18/2021
+  ms.locfileid: "61566972"
