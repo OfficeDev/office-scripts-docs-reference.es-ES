@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFill
 summary: Representa el fondo de un objeto de intervalo.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script sets the fill color of the used range to green.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeFill object.\n  let fill = usedRange.getFormat().getFill();\n\n  // Set the fill color to green.\n  fill.setColor(\"green\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,12 +21,12 @@ methods:
     content: 'clear(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script removes all fill color and styles from the used range.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Clear the fill from the entire range.\n  usedRange.getFormat().getFill().clear();\n}\n```"
 - name: getColor()
   uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")
+  summary: Código de color HTML que representa el color del fondo, \#con la forma RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
   package: ExcelScript!
   fullName: getPatternColor()
-  summary: El código de color HTML que representa el color del patrón de intervalo, con el formato \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: El código de color HTML que representa el color del patrón de intervalo, \#con el formato RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Código de color HTML que representa el color del fondo, con la forma \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")
+  summary: Código de color HTML que representa el color del fondo, \#con la forma RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja")
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
   package: ExcelScript!
   fullName: setPatternColor(patternColor)
-  summary: El código de color HTML que representa el color del patrón de intervalo, con el formato \# RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").
+  summary: El código de color HTML que representa el color del patrón de intervalo, \#con el formato RRGGBB (por ejemplo, "FFA500"), o como un color HTML con nombre (por ejemplo, "naranja").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 50a9ed8476ce3f2bbcc2d8a3209cec35097a6657
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: a6ffc69ccf2ef802d028fb2df60ca6e4a752c352
+  ms.sourcegitcommit: 95d4c3dc3d1a6a84b10430cfe796f4d883d5dbf4
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003732"
+  ms.lasthandoff: 03/09/2022
+  ms.locfileid: "63391613"
