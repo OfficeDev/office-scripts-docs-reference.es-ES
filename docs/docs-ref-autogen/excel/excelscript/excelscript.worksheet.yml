@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.Worksheet:interface
 package: ExcelScript!
 fullName: ExcelScript.Worksheet
 summary: Una hoja de cálculo de Excel es una cuadrícula de celdas. Puede contener datos, tablas, gráficos, etc.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates a new worksheet named \"Plum\" and sets its tab color to purple.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const newSheet = workbook.addWorksheet(\"Plum\")\n  newSheet.setTabColor(\"purple\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -67,10 +67,10 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: Celda a la que se agrega el comentario. Puede ser un `Range` objeto o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se `InvalidArgument` produce un error si el intervalo proporcionado es mayor que una celda.
+      description: Celda a la que se agrega el comentario. Puede ser un objeto `Range` o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se `InvalidArgument` produce un error si el intervalo proporcionado es mayor que una celda.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: El contenido del comentario. Puede ser una cadena u `CommentRichContent` objeto. Las cadenas se usan para texto sin formato. `CommentRichContent` los objetos permiten otras características de comentario, como menciones.
+      description: El contenido del comentario. Puede ser una cadena u objeto `CommentRichContent` . Las cadenas se usan para texto sin formato. `CommentRichContent` los objetos permiten otras características de comentario, como menciones.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
       description: Opcional. El tipo de contenido contenido en el comentario. El valor predeterminado es enumeración `ContentType.Plain`<!-- -->.
@@ -300,10 +300,10 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: Origen de datos en el que se basará la nueva segmentación de datos. Puede ser un `PivotTable` objeto, un `Table` objeto o una cadena. Cuando se pasa un objeto PivotTable, el origen de datos es el origen del `PivotTable` objeto. Cuando se `Table` pasa un objeto, el origen de datos es el `Table` objeto. Cuando se pasa una cadena, se interpreta como el nombre o el identificador de una tabla dinámica o tabla.
+      description: Origen de datos en el que se basará la nueva segmentación de datos. Puede ser un objeto `PivotTable` , un `Table` objeto o una cadena. Cuando se pasa un objeto PivotTable, el origen de datos es el origen del `PivotTable` objeto. Cuando se `Table` pasa un objeto, el origen de datos es el `Table` objeto. Cuando se pasa una cadena, se interpreta como el nombre o el identificador de una tabla dinámica o tabla.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: Campo del origen de datos por el que se filtrará. Puede ser un `PivotField` objeto, un `TableColumn` objeto, el identificador de un `PivotField` o el nombre o identificador de un `TableColumn`<!-- -->.
+      description: Campo del origen de datos por el que se filtrará. Puede ser un objeto `PivotField` , un objeto `TableColumn` , el identificador de un `PivotField` o el nombre o identificador de un `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
       description: Opcional. Hoja de cálculo en la que se creará la nueva segmentación de datos. Puede ser un objeto `Worksheet` o el nombre o el identificador de una hoja de cálculo. Este parámetro se puede omitir si la colección de segmentación de datos se recupera de una hoja de cálculo.
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Elimina la hoja de cálculo del libro. Tenga en cuenta que si la visibilidad de la hoja de cálculo está establecida en "VeryHidden", la operación de eliminación producirá un error con una `InvalidOperation` excepción. Primero debe cambiar su visibilidad a oculta o visible antes de eliminarla.
+  summary: Elimina la hoja de cálculo del libro. Tenga en cuenta que si la visibilidad de la hoja de cálculo está establecida en "VeryHidden", la operación de eliminación producirá un error con una excepción `InvalidOperation` . Primero debe cambiar su visibilidad a oculta o visible antes de eliminarla.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: Busca todas las repeticiones de la cadena determinada en función de los criterios especificados y las devuelve como un objeto, que comprende `RangeAreas` uno o más intervalos rectangulares.
+  summary: Busca todas las repeticiones de la cadena `RangeAreas` determinada en función de los criterios especificados y las devuelve como un objeto, que comprende uno o más intervalos rectangulares.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -514,7 +514,7 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
@@ -594,7 +594,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: Celda en la que se encuentra el comentario. Puede ser un `Range` objeto o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se `InvalidArgument` produce un error si el intervalo proporcionado es mayor que una celda.
+      description: Celda en la que se encuentra el comentario. Puede ser un objeto `Range` o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se `InvalidArgument` produce un error si el intervalo proporcionado es mayor que una celda.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: Obtiene el objeto que comienza en un índice de fila y un índice de columna determinados y abarca `Range` un número determinado de filas y columnas.
+  summary: Obtiene el `Range` objeto que comienza en un índice de fila y un índice de columna determinados y abarca un número determinado de filas y columnas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña está establecido en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \# RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "automático" o un color real de lo contrario.
+  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña está establecido en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \#RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "automático" o un color real de lo contrario.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña está establecido en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \# RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "automático" o un color real de lo contrario.
+  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña está establecido en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \#RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "automático" o un color real de lo contrario.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Muestra los grupos de filas o columnas por sus niveles de esquema. Describe grupos y resume una lista de datos en la hoja de cálculo. Los `rowLevels` parámetros y especifican cuántos niveles del esquema se `columnLevels` mostrarán. El intervalo de argumentos aceptable está entre 0 y 8. Un valor de 0 no cambia la presentación actual. Un valor mayor que el número actual de niveles muestra todos los niveles.
+  summary: Muestra los grupos de filas o columnas por sus niveles de esquema. Describe grupos y resume una lista de datos en la hoja de cálculo. Los `rowLevels` parámetros y `columnLevels` especifican cuántos niveles del esquema se mostrarán. El intervalo de argumentos aceptable está entre 0 y 8. Un valor de 0 no cambia la presentación actual. Un valor mayor que el número actual de niveles muestra todos los niveles.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1eef5e7e31219028c6c86b4b4784ef9f0a74011f
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
+  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240566"
+  ms.lasthandoff: 03/11/2022
+  ms.locfileid: "63434831"
