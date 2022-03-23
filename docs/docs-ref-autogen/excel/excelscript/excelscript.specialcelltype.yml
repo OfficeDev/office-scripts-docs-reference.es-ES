@@ -1,42 +1,49 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SpecialCellType
-uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
+uid: ExcelScript!ExcelScript.SpecialCellType:enum
 package: ExcelScript!
 fullName: ExcelScript.SpecialCellType
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script finds and highlights all the cells in the current worksheet that contain a formula.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula.\n  const formulaCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas);\n\n  // Add a light blue background to the cells containing formulas.\n  formulaCells.getFormat().getFill().setColor(\"#ADD8E6\");\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: blanks
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.blanks:member'
-    package: ExcelScript!
-    summary: Celdas sin contenido.
-  - name: conditionalFormats
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member'
-    package: ExcelScript!
-    summary: Todas las celdas con formatos condicionales.
-  - name: constants
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.constants:member'
-    package: ExcelScript!
-    summary: Celdas que contienen constantes.
-  - name: dataValidations
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.dataValidations:member'
-    package: ExcelScript!
-    summary: Celdas con criterios de validación.
-  - name: formulas
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.formulas:member'
-    package: ExcelScript!
-    summary: Celdas que contienen fórmulas.
-  - name: sameConditionalFormat
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member'
-    package: ExcelScript!
-    summary: Celdas con el mismo formato condicional que la primera celda del rango.
-  - name: sameDataValidation
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member'
-    package: ExcelScript!
-    summary: Celdas con los mismos criterios de validación de datos que la primera celda del rango.
-  - name: visible
-    uid: 'ExcelScript!ExcelScript.SpecialCellType.visible:member'
-    package: ExcelScript!
-    summary: Celdas que están visibles.
+- name: blanks
+  uid: ExcelScript!ExcelScript.SpecialCellType.blanks:member
+  package: ExcelScript!
+  summary: Celdas sin contenido.
+- name: conditionalFormats
+  uid: ExcelScript!ExcelScript.SpecialCellType.conditionalFormats:member
+  package: ExcelScript!
+  summary: Todas las celdas con formatos condicionales.
+- name: constants
+  uid: ExcelScript!ExcelScript.SpecialCellType.constants:member
+  package: ExcelScript!
+  summary: Celdas que contienen constantes.
+- name: dataValidations
+  uid: ExcelScript!ExcelScript.SpecialCellType.dataValidations:member
+  package: ExcelScript!
+  summary: Celdas con criterios de validación.
+- name: formulas
+  uid: ExcelScript!ExcelScript.SpecialCellType.formulas:member
+  package: ExcelScript!
+  summary: Celdas que contienen fórmulas.
+- name: sameConditionalFormat
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameConditionalFormat:member
+  package: ExcelScript!
+  summary: Celdas con el mismo formato condicional que la primera celda del rango.
+- name: sameDataValidation
+  uid: ExcelScript!ExcelScript.SpecialCellType.sameDataValidation:member
+  package: ExcelScript!
+  summary: Celdas con los mismos criterios de validación de datos que la primera celda del rango.
+- name: visible
+  uid: ExcelScript!ExcelScript.SpecialCellType.visible:member
+  package: ExcelScript!
+  summary: Celdas que están visibles.
+metadata:
+  ms.openlocfilehash: 9a5fdd98d522b86985eadea08df2fe65b4cbd817
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755959"
