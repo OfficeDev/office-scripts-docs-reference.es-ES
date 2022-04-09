@@ -42,7 +42,7 @@ methods:
       description: Representa el tipo de un gráfico. Vea `ExcelScript.ChartType` para más información.
       type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
     - id: sourceData
-      description: El `Range` objeto correspondiente a los datos de origen.
+      description: Objeto `Range` correspondiente a los datos de origen.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
       description: Opcional. Especifica la manera en que las columnas o las filas se usan como series de datos en el gráfico. Vea `ExcelScript.ChartSeriesBy` para más información.
@@ -54,7 +54,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addComment:member(1)
   package: ExcelScript!
   fullName: addComment(cellAddress, content, contentType)
-  summary: Crea un nuevo comentario con el contenido específico de la celda. Se `InvalidArgument` produce un error si el intervalo proporcionado es mayor que una celda.
+  summary: Crea un nuevo comentario con el contenido específico de la celda. Se produce un `InvalidArgument` error si el intervalo proporcionado es mayor que una celda.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -67,13 +67,13 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: Celda a la que se agrega el comentario. Puede ser un objeto `Range` o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se `InvalidArgument` produce un error si el intervalo proporcionado es mayor que una celda.
+      description: Celda a la que se agrega el comentario. Puede ser un `Range` objeto o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se produce un `InvalidArgument` error si el intervalo proporcionado es mayor que una celda.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: El contenido del comentario. Puede ser una cadena u objeto `CommentRichContent` . Las cadenas se usan para texto sin formato. `CommentRichContent` los objetos permiten otras características de comentario, como menciones.
+      description: Contenido del comentario. Puede ser una cadena o `CommentRichContent` un objeto. Las cadenas se usan para el texto sin formato. `CommentRichContent` los objetos permiten otras características de comentario, como menciones.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
-      description: Opcional. El tipo de contenido contenido en el comentario. El valor predeterminado es enumeración `ContentType.Plain`<!-- -->.
+      description: Opcional. Tipo de contenido contenido en el comentario. El valor predeterminado es enum `ContentType.Plain`<!-- -->.
       type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -90,7 +90,7 @@ methods:
     content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
     parameters:
     - id: geometricShapeType
-      description: Representa el tipo de forma geométrica. Vea `ExcelScript.GeometricShapeType` para más información.
+      description: Representa el tipo de la forma geométrica. Vea `ExcelScript.GeometricShapeType` para más información.
       type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -107,7 +107,7 @@ methods:
     content: 'addGroup(values: Array<string | Shape>): Shape;'
     parameters:
     - id: values
-      description: Matriz de IDs de formas u objetos shape.
+      description: Matriz de identificadores de forma u objetos de forma.
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.Shape:interface" />&gt;
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -141,7 +141,7 @@ methods:
     content: 'addImage(base64ImageString: string): Shape;'
     parameters:
     - id: base64ImageString
-      description: Una cadena codificada en base64 que representa una imagen en formato JPEG o PNG.
+      description: Cadena codificada en base64 que representa una imagen en formato JPEG o PNG.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -205,7 +205,7 @@ methods:
       description: Fórmula o rango a los que se refiere el nombre.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: comment
-      description: Opcional. El comentario asociado con el elemento con nombre.
+      description: Opcional. Comentario asociado al elemento con nombre.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -233,7 +233,7 @@ methods:
       description: Fórmula de la configuración regional del usuario a la que se refiere el nombre.
       type: string
     - id: comment
-      description: Opcional. El comentario asociado con el elemento con nombre.
+      description: Opcional. Comentario asociado al elemento con nombre.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" />
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addPivotTable:member(1)
   package: ExcelScript!
   fullName: addPivotTable(name, source, destination)
-  summary: Agregue una tabla dinámica basada en los datos de origen especificados e insértela en la celda superior izquierda del intervalo de destino.
+  summary: Agregue una tabla dinámica basada en los datos de origen especificados e insérela en la celda superior izquierda del intervalo de destino.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -275,7 +275,7 @@ methods:
       description: Nombre de la nueva tabla dinámica.
       type: string
     - id: source
-      description: Los datos de origen de la nueva tabla dinámica, pueden ser un intervalo (o una dirección de cadena, incluido el nombre de la hoja de cálculo) o una tabla.
+      description: Los datos de origen de la nueva tabla dinámica, pueden ser un rango (o una dirección de cadena, incluido el nombre de la hoja de cálculo) o una tabla.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
       description: Celda de la esquina superior izquierda del rango de destino del informe de tabla dinámica (el rango de la hoja de cálculo en el que se colocará el informe de tabla dinámica resultante).
@@ -300,13 +300,13 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: Origen de datos en el que se basará la nueva segmentación de datos. Puede ser un objeto `PivotTable` , un `Table` objeto o una cadena. Cuando se pasa un objeto PivotTable, el origen de datos es el origen del `PivotTable` objeto. Cuando se `Table` pasa un objeto, el origen de datos es el `Table` objeto. Cuando se pasa una cadena, se interpreta como el nombre o el identificador de una tabla dinámica o tabla.
+      description: Origen de datos en el que se basará la nueva segmentación de datos. Puede ser un `PivotTable` objeto, un `Table` objeto o una cadena. Cuando se pasa un objeto de tabla dinámica, el origen de datos es el origen del `PivotTable` objeto. Cuando se pasa un `Table` objeto, el origen de datos es el `Table` objeto . Cuando se pasa una cadena, se interpreta como el nombre o identificador de una tabla dinámica o tabla.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: Campo del origen de datos por el que se filtrará. Puede ser un objeto `PivotField` , un objeto `TableColumn` , el identificador de un `PivotField` o el nombre o identificador de un `TableColumn`<!-- -->.
+      description: Campo del origen de datos por el que se va a filtrar. Puede ser un `PivotField` objeto, un `TableColumn` objeto, el identificador de o `PivotField` el nombre o identificador de un objeto `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Opcional. Hoja de cálculo en la que se creará la nueva segmentación de datos. Puede ser un objeto `Worksheet` o el nombre o el identificador de una hoja de cálculo. Este parámetro se puede omitir si la colección de segmentación de datos se recupera de una hoja de cálculo.
+      description: Opcional. Hoja de cálculo en la que se creará la nueva segmentación de datos. Puede ser un `Worksheet` objeto o el nombre o identificador de una hoja de cálculo. Este parámetro se puede omitir si la colección de segmentación de datos se recupera de una hoja de cálculo.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -323,7 +323,7 @@ methods:
     content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
     parameters:
     - id: address
-      description: Un `Range` objeto o una dirección de cadena o un nombre del intervalo que representa el origen de datos. Si la dirección no contiene un nombre de hoja, se usa la hoja activa en ese momento.
+      description: Un `Range` objeto, una dirección de cadena o un nombre del intervalo que representa el origen de datos. Si la dirección no contiene un nombre de hoja, se usa la hoja activa en ese momento.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
       description: Valor booleano que indica si los datos que se importan tienen etiquetas de columna. Si el origen no contiene encabezados (es decir, cuando esta propiedad se establece en `false`<!-- -->), Excel generará automáticamente un encabezado y desplazará los datos hacia abajo por una fila.
@@ -381,7 +381,7 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: La clave que identifica el objeto de propiedad personalizado. No tiene mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes provocarán `InvalidArgument` un error).
+      description: Clave que identifica el objeto de propiedad personalizada. No distingue mayúsculas de minúsculas. La clave está limitada a 255 caracteres (los valores más grandes provocarán un `InvalidArgument` error).
       type: string
     - id: value
       description: Valor de esta propiedad personalizada.
@@ -425,7 +425,7 @@ methods:
       description: Ubicación del libro para colocar la hoja de cálculo recién creada. El valor predeterminado es "None", que inserta la hoja de cálculo al principio de la hoja de cálculo.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
-      description: Hoja de cálculo existente que determina la posición de la hoja de cálculo recién creada. Esto solo es necesario si `positionType` es "Before" o "After".
+      description: Hoja de cálculo existente que determina la posición de la hoja de cálculo recién creada. Esto solo es necesario si `positionType` es "Antes" o "Después".
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Elimina la hoja de cálculo del libro. Tenga en cuenta que si la visibilidad de la hoja de cálculo está establecida en "VeryHidden", la operación de eliminación producirá un error con una excepción `InvalidOperation` . Primero debe cambiar su visibilidad a oculta o visible antes de eliminarla.
+  summary: Elimina la hoja de cálculo del libro. Tenga en cuenta que si la visibilidad de la hoja de cálculo está establecida en "VeryHidden", se producirá un error en la operación de eliminación con una `InvalidOperation` excepción. Primero debe cambiar su visibilidad a oculta o visible antes de eliminarla.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
   fullName: enterTemporaryNamedSheetView()
-  summary: Crea y activa una nueva vista de hoja temporal. Las vistas temporales se quitan al cerrar la aplicación, salir de la vista temporal con el método exit o cambiar a otra vista de hoja. La vista de hoja temporal también se puede acceder con la cadena vacía (""), si existe la vista temporal.
+  summary: Crea y activa una nueva vista de hoja temporal. Las vistas temporales se quitan al cerrar la aplicación, salir de la vista temporal con el método exit o cambiar a otra vista de hoja. La vista de hoja temporal también se puede obtener con la cadena vacía (""), si existe la vista temporal.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#exitActiveNamedSheetView:member(1)
   package: ExcelScript!
   fullName: exitActiveNamedSheetView()
-  summary: Sale de la vista de hoja activa actualmente.
+  summary: Sale de la vista de hoja actualmente activa.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: Busca todas las repeticiones de la cadena `RangeAreas` determinada en función de los criterios especificados y las devuelve como un objeto, que comprende uno o más intervalos rectangulares.
+  summary: Busca todas las repeticiones de la cadena especificada en función de los criterios especificados y las devuelve como un `RangeAreas` objeto, que comprende uno o varios intervalos rectangulares.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,10 +481,10 @@ methods:
     content: 'findAll(text: string, criteria: WorksheetSearchCriteria): RangeAreas;'
     parameters:
     - id: text
-      description: La cadena que se busca.
+      description: Cadena que se va a buscar.
       type: string
     - id: criteria
-      description: Criterios de búsqueda adicionales, incluido si la búsqueda debe coincidir con toda la celda o distingue mayúsculas de minúsculas.
+      description: Criterios de búsqueda adicionales, incluido si la búsqueda debe coincidir con toda la celda o distinguir entre mayúsculas y minúsculas.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
   package: ExcelScript!
   fullName: getActiveNamedSheetView()
-  summary: Obtiene la vista de hoja activa actualmente de la hoja de cálculo.
+  summary: Obtiene la vista de hoja actualmente activa de la hoja.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -514,12 +514,12 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates an autoFilter on the worksheet that filters out rows based on column values. \n * The autoFilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Obtiene el `Range` objeto que contiene la celda única en función de los números de fila y columna. La celda puede estar fuera de los límites de su intervalo primario, siempre que permanezca dentro de la cuadrícula de la hoja de cálculo.
+  summary: Obtiene el `Range` objeto que contiene la celda única en función de los números de fila y columna. La celda puede estar fuera de los límites de su rango primario, siempre y cuando permanezca dentro de la cuadrícula de la hoja de cálculo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -594,7 +594,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: Celda en la que se encuentra el comentario. Puede ser un objeto `Range` o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se `InvalidArgument` produce un error si el intervalo proporcionado es mayor que una celda.
+      description: Celda en la que se encuentra el comentario. Puede ser un `Range` objeto o una cadena. Si es una cadena, debe contener la dirección completa, incluido el nombre de la hoja. Se produce un `InvalidArgument` error si el intervalo proporcionado es mayor que una celda.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -603,7 +603,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCommentByReplyId:member(1)
   package: ExcelScript!
   fullName: getCommentByReplyId(replyId)
-  summary: Obtiene el comentario al que está conectada la respuesta dada.
+  summary: Obtiene el comentario al que está conectada la respuesta especificada.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -611,7 +611,7 @@ methods:
     content: 'getCommentByReplyId(replyId: string): Comment;'
     parameters:
     - id: replyId
-      description: Identificador de respuesta de comentario.
+      description: Identificador de la respuesta de comentario.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -633,7 +633,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getCustomProperties:member(1)
   package: ExcelScript!
   fullName: getCustomProperties()
-  summary: Obtiene una colección de propiedades personalizadas a nivel de hoja de cálculo.
+  summary: Obtiene una colección de propiedades personalizadas de nivel de hoja de cálculo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -646,7 +646,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getEnableCalculation:member(1)
   package: ExcelScript!
   fullName: getEnableCalculation()
-  summary: Determina si Excel debe volver a calcular la hoja de cálculo cuando sea necesario. True si Excel actualiza la hoja de cálculo cuando sea necesario. False si Excel no actualiza la hoja.
+  summary: Determina si Excel debe volver a calcular la hoja de cálculo cuando sea necesario. True si Excel vuelve a calcular la hoja de cálculo cuando sea necesario. False si Excel no actualiza la hoja.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -719,7 +719,7 @@ methods:
     content: 'getNamedItem(name: string): NamedItem | undefined;'
     parameters:
     - id: name
-      description: Nombre nameditem.
+      description: Nombre del elemento con nombre.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedItem:interface" /> | undefined
@@ -736,7 +736,7 @@ methods:
     content: 'getNamedSheetView(key: string): NamedSheetView;'
     parameters:
     - id: key
-      description: Nombre que distingue mayúsculas de minúsculas de la vista de hoja. Use la cadena vacía ("") para obtener la vista de hoja temporal, si la vista temporal existe.
+      description: Nombre que distingue mayúsculas de minúsculas de la vista de hoja. Use la cadena vacía ("") para obtener la vista de hoja temporal, si existe la vista temporal.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Obtiene la hoja de cálculo que sigue a esta. Si no hay hojas de cálculo siguientes a esta, este método devuelve `undefined`<!-- -->.
+  summary: Obtiene la hoja de cálculo que sigue a esta. Si no hay ninguna hoja de cálculo después de esta, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Opcional. If `true`<!-- -->, solo tiene en cuenta las hojas de cálculo visibles, omitiendo las ocultas.
+      description: Opcional. Si `true`<!-- -->, solo tiene en cuenta las hojas de cálculo visibles, omitiendo las ocultas.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Opcional. If `true`<!-- -->, solo tiene en cuenta las hojas de cálculo visibles, omitiendo las ocultas.
+      description: Opcional. Si `true`<!-- -->, solo tiene en cuenta las hojas de cálculo visibles, omitiendo las ocultas.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -861,7 +861,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getProtection:member(1)
   package: ExcelScript!
   fullName: getProtection()
-  summary: Devuelve el objeto de protección de hoja para una hoja de cálculo.
+  summary: Devuelve el objeto de protección de hoja de una hoja de cálculo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -874,7 +874,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
   package: ExcelScript!
   fullName: getRange(address)
-  summary: Obtiene el `Range` objeto, que representa un único bloque rectangular de celdas, especificado por la dirección o el nombre.
+  summary: Obtiene el `Range` objeto , que representa un único bloque rectangular de celdas, especificado por la dirección o el nombre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -882,7 +882,7 @@ methods:
     content: 'getRange(address?: string): Range;'
     parameters:
     - id: address
-      description: Opcional. La cadena que representa la dirección o el nombre del intervalo. Por ejemplo, "A1:B2". Si no se especifica, se devuelve todo el intervalo de la hoja de cálculo.
+      description: Opcional. Cadena que representa la dirección o el nombre del intervalo. Por ejemplo, "A1:B2". Si no se especifica, se devuelve todo el intervalo de la hoja de cálculo.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -891,7 +891,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: Obtiene el `Range` objeto que comienza en un índice de fila y un índice de columna determinados y abarca un número determinado de filas y columnas.
+  summary: Obtiene el `Range` objeto que comienza en un índice de fila y un índice de columna determinados, y abarca un determinado número de filas y columnas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -905,10 +905,10 @@ methods:
               ): Range;
     parameters:
     - id: startRow
-      description: Fila Inicio (indizado cero).
+      description: Fila de inicio (indizada en cero).
       type: number
     - id: startColumn
-      description: Columna Inicio (indizado cero).
+      description: Columna De inicio (indizada en cero).
       type: number
     - id: rowCount
       description: Número de filas que se van a incluir en el intervalo.
@@ -923,7 +923,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges(address)
-  summary: Obtiene el `RangeAreas` objeto, que representa uno o varios bloques de intervalos rectangulares, especificados por la dirección o el nombre.
+  summary: Obtiene el `RangeAreas` objeto , que representa uno o varios bloques de intervalos rectangulares, especificados por la dirección o el nombre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -931,7 +931,7 @@ methods:
     content: 'getRanges(address?: string): RangeAreas;'
     parameters:
     - id: address
-      description: Opcional. Cadena que contiene las direcciones separadas por comas o los nombres de los intervalos individuales. Por ejemplo, "A1:B2, A5:B5". Si no se especifica, se devuelve un objeto RangeArea para toda la hoja de cálculo.
+      description: Opcional. Cadena que contiene las direcciones o nombres separados por comas de los intervalos individuales. Por ejemplo, "A1:B2, A5:B5". Si no se especifica, se devuelve un objeto RangeArea para toda la hoja de cálculo.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña está establecido en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \#RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "automático" o un color real de lo contrario.
+  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de la pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña se establece en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \#RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "auto" o un color real en caso contrario.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1149,7 +1149,7 @@ methods:
               ): WorksheetCustomProperty | undefined;
     parameters:
     - id: key
-      description: La clave que identifica el objeto de propiedad personalizado. No tiene mayúsculas de minúsculas.
+      description: Clave que identifica el objeto de propiedad personalizada. No distingue mayúsculas de minúsculas.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetCustomProperty:interface" /> | undefined
@@ -1210,10 +1210,10 @@ methods:
               ): number;
     parameters:
     - id: text
-      description: Cadena que se busca.
+      description: Cadena que se va a buscar.
       type: string
     - id: replacement
-      description: La cadena que reemplaza a la cadena original.
+      description: Cadena que reemplaza a la cadena original.
       type: string
     - id: criteria
       description: Criterios de reemplazo adicionales.
@@ -1225,7 +1225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setEnableCalculation:member(1)
   package: ExcelScript!
   fullName: setEnableCalculation(enableCalculation)
-  summary: Determina si Excel debe volver a calcular la hoja de cálculo cuando sea necesario. True si Excel actualiza la hoja de cálculo cuando sea necesario. False si Excel no actualiza la hoja.
+  summary: Determina si Excel debe volver a calcular la hoja de cálculo cuando sea necesario. True si Excel vuelve a calcular la hoja de cálculo cuando sea necesario. False si Excel no actualiza la hoja.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña está establecido en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \#RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "automático" o un color real de lo contrario.
+  summary: Color de pestaña de la hoja de cálculo. Al recuperar el color de la pestaña, si la hoja de cálculo es invisible, el valor será `null`<!-- -->. Si la hoja de cálculo está visible pero el color de la pestaña se establece en automático, se devolverá una cadena vacía. De lo contrario, la propiedad se establecerá en un color, con el formato \#RRGGBB (por ejemplo, "FFA500"). Al establecer el color, use una cadena vacía para establecer un color "auto" o un color real en caso contrario.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Muestra los grupos de filas o columnas por sus niveles de esquema. Describe grupos y resume una lista de datos en la hoja de cálculo. Los `rowLevels` parámetros y `columnLevels` especifican cuántos niveles del esquema se mostrarán. El intervalo de argumentos aceptable está entre 0 y 8. Un valor de 0 no cambia la presentación actual. Un valor mayor que el número actual de niveles muestra todos los niveles.
+  summary: Muestra los grupos de filas o columnas por sus niveles de esquema. Describe los grupos y resume una lista de datos en la hoja de cálculo. Los `rowLevels` parámetros y `columnLevels` especifican cuántos niveles del esquema se mostrarán. El intervalo de argumentos aceptable está comprendido entre 0 y 8. Un valor de 0 no cambia la presentación actual. Un valor mayor que el número actual de niveles muestra todos los niveles.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1369,18 +1369,18 @@ methods:
     content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
     parameters:
     - id: rowLevels
-      description: Número de niveles de fila de un esquema que se debe mostrar.
+      description: Número de niveles de fila de un esquema que se van a mostrar.
       type: number
     - id: columnLevels
-      description: Número de niveles de columna de un esquema que se debe mostrar.
+      description: Número de niveles de columna de un esquema que se va a mostrar.
       type: number
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
-  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
+  ms.openlocfilehash: e2f112cd55fb4eef8c72cf1ab283bda7250afd63
+  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/11/2022
-  ms.locfileid: "63434831"
+  ms.lasthandoff: 04/08/2022
+  ms.locfileid: "64715970"
