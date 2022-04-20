@@ -1,80 +1,87 @@
 ### YamlMime:TSType
 name: ExcelScript.SlicerStyle
-uid: 'ExcelScript!ExcelScript.SlicerStyle:interface'
+uid: ExcelScript!ExcelScript.SlicerStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.SlicerStyle
-summary: 'Representa un estilo de segmentación de datos, que define los elementos de estilo por región de la segmentación de datos.'
+summary: Representa un estilo de segmentación de datos, que define los elementos de estilo por región de la segmentación de datos.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: delete()
-    uid: 'ExcelScript!ExcelScript.SlicerStyle#delete:member(1)'
-    package: ExcelScript!
-    fullName: delete()
-    summary: Elimina el estilo de segmentación de datos.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type: void
-        description: ''
-  - name: duplicate()
-    uid: 'ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)'
-    package: ExcelScript!
-    fullName: duplicate()
-    summary: Crea un duplicado de este estilo de segmentación de datos con copias de todos los elementos de estilo.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'duplicate(): SlicerStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />'
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.SlicerStyle#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: Obtiene el nombre del estilo de segmentación de datos.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getReadOnly()
-    uid: 'ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)'
-    package: ExcelScript!
-    fullName: getReadOnly()
-    summary: Especifica si este `SlicerStyle` objeto es de solo lectura.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getReadOnly(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.SlicerStyle#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: Obtiene el nombre del estilo de segmentación de datos.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.SlicerStyle#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Elimina el estilo de segmentación de datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate()
+  summary: Crea un duplicado de este estilo de segmentación de datos con copias de todos los elementos de estilo.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): SlicerStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SlicerStyle:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.SlicerStyle#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Obtiene el nombre del estilo de segmentación de datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getReadOnly()
+  uid: ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)
+  package: ExcelScript!
+  fullName: getReadOnly()
+  summary: Especifica si este `SlicerStyle` objeto es de solo lectura.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadOnly(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.SlicerStyle#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Establece el nombre del estilo de segmentación de datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d02d9efb7b74c81ee3096423c6d6160492d976ec
+  ms.sourcegitcommit: 5e9cd6fc2480832684fc0dbc264cfcf8e422c735
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 04/20/2022
+  ms.locfileid: "64963557"
