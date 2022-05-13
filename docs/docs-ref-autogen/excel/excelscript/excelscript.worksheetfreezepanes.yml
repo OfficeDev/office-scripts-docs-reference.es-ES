@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
   package: ExcelScript!
   fullName: freezeAt(frozenRange)
-  summary: Establece las celdas inmovilizadas en la vista de la hoja de cálculo activa. El intervalo proporcionado corresponde a las celdas que se inmovilizarán en el panel superior e izquierdo.
+  summary: Establece las celdas inmovilizadas en la vista de la hoja de cálculo activa. El rango proporcionado corresponde a las celdas que se inmovilizarán en el panel superior e izquierdo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: Número opcional de columnas que se inmovilizarán o cero para descongelar todas las columnas
+      description: Número opcional de columnas que se inmovilizan o cero para descongelar todas las columnas
       type: number
     return:
       type: void
@@ -47,7 +47,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
   package: ExcelScript!
   fullName: freezeRows(count)
-  summary: Inmovilizar la fila o filas superiores de la hoja de cálculo en su lugar.
+  summary: Inmovilizar la fila superior o las filas de la hoja de cálculo en su lugar.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: Número opcional de filas que se inmovilizarán o cero para descongelar todas las filas
+      description: Número opcional de filas que se inmovilizan o cero para descongelar todas las filas
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado corresponde a las celdas que se inmovilizan en el panel superior e izquierdo. Si no hay ningún panel inmovilizado, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un rango que describe las celdas bloqueadas en la vista de hoja de cálculo activa. El intervalo inmovilizado corresponde a las celdas que están inmovilizadas en el panel superior e izquierdo. Si no hay ningún panel inmovilizado, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 98ee21716269e9fcbb26b7cb2623708b083d54df
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 805a3dc4b9cb94abb0cdc75c7cb177c0786510d3
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064825"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394145"

@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: Obtiene el gráfico activo del libro. Si no hay ningún gráfico activo, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene el gráfico activo del libro. Si no hay ningún gráfico activo, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: Obtiene la segmentación activa del libro. Si no hay ninguna segmentación de datos activa, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene la segmentación activa del libro. Si no hay ninguna segmentación de datos activa, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -475,7 +475,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: Obtiene un objeto de enlace por identificador. Si el objeto de enlace no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un objeto de enlace por identificador. Si el objeto de enlace no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPart(id)
-  summary: Obtiene un elemento XML personalizado a partir de su identificador. `CustomXmlPart` Si no existe, esta función devuelve`undefined`<!-- -->.
+  summary: Obtiene un elemento XML personalizado a partir de su identificador. `CustomXmlPart` Si no existe, este método devuelve`undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -759,7 +759,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbookByUrl(key)
-  summary: Obtiene información sobre un libro vinculado por su dirección URL. Si el libro no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
+  summary: Obtiene información sobre un libro vinculado por su dirección URL. Si el libro no existe, este método devuelve un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -815,7 +815,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Obtiene un `NamedItem` objeto con su nombre. Si el objeto no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un `NamedItem` objeto con su nombre. Si el objeto no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Obtiene una tabla dinámica por nombre. Si la tabla dinámica no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene una tabla dinámica por nombre. Si la tabla dinámica no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -875,7 +875,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: Obtiene un valor `PivotTableStyle` por nombre. `PivotTableStyle` Si no existe, esta función devuelve`undefined`<!-- -->.
+  summary: Obtiene un valor `PivotTableStyle` por nombre. `PivotTableStyle` Si no existe, este método devuelve`undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1013,7 +1013,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Obtiene una segmentación de datos con su nombre o identificador. Si la segmentación de datos no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene una segmentación de datos con su nombre o identificador. Si la segmentación de datos no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1043,7 +1043,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: Obtiene un valor `SlicerStyle` por nombre. Si el estilo de segmentación de datos no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un valor `SlicerStyle` por nombre. Si el estilo de segmentación de datos no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1073,7 +1073,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Obtener una tabla por nombre o identificador. Si la tabla no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtener una tabla por nombre o identificador. Si la tabla no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: Obtiene un valor `TableStyle` por nombre. Si el estilo de tabla no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un valor `TableStyle` por nombre. Si el estilo de tabla no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1133,7 +1133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: Obtiene un valor `TimelineStyle` por nombre. Si el estilo de escala de tiempo no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un valor `TimelineStyle` por nombre. Si el estilo de escala de tiempo no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1176,7 +1176,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Obtiene un objeto de hoja de cálculo mediante su nombre o identificador. Si la hoja de cálculo no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un objeto de hoja de cálculo mediante su nombre o identificador. Si la hoja de cálculo no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 52a3ed7e88d6452aa71cd8efd9bcdb459065dd98
-  ms.sourcegitcommit: 62fb657a306ed43211bc29b7e4ee016260dcc810
+  ms.openlocfilehash: c59ddc105a519d4e120bc94d88f0c99817598214
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65076877"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394019"

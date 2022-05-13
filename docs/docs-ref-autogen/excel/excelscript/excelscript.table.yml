@@ -29,7 +29,7 @@ methods:
       description: Opcional. Especifica la posición relativa de la nueva columna. Si es NULL o -1, la columna se agrega al final. Las columnas con un índice más alto se desplazarán a un lado. Indizado con cero.
       type: number
     - id: values
-      description: Opcional. Matriz 1 dimensional de valores sin formato de la columna de tabla.
+      description: Opcional. Matriz unidimensional de valores sin formato de la columna de tabla.
       type: (boolean | string | number)[]
     - id: name
       description: Opcional. Especifica el nombre de la nueva columna. Si es NULL, se utilizará el nombre predeterminado.
@@ -52,7 +52,7 @@ methods:
       description: Opcional. Especifica la posición relativa de la nueva fila. Si es NULL o -1, se produce la adición al final. Las filas situadas debajo de la fila insertada se desplazan hacia abajo. Indizado con cero.
       type: number
     - id: values
-      description: Opcional. Matriz 1 dimensional de valores sin formato de la fila de tabla.
+      description: Opcional. Matriz unidimensional de valores sin formato de la fila de tabla.
       type: (boolean | string | number)[]
     return:
       type: void
@@ -128,10 +128,10 @@ methods:
     content: 'deleteRowsAt(index: number, count?: number): void;'
     parameters:
     - id: index
-      description: 'Valor de índice de la fila que se va a eliminar. Precaución: es posible que el índice de la fila se haya movido desde el momento en que se determinó el valor que se usará para la eliminación.'
+      description: 'Valor de índice de la fila que se va a eliminar. Precaución: es posible que el índice de la fila se haya movido desde el momento en que determinó que el valor se usaría para la eliminación.'
       type: number
     - id: count
-      description: 'Número de filas que se eliminarán. De forma predeterminada, se eliminará una sola fila. Nota: Al eliminar más de 1000 filas al mismo tiempo, se podría producir un Power Automate de espera.'
+      description: 'Número de filas que se van a eliminar. De forma predeterminada, se eliminará una sola fila. Nota: La eliminación de más de 1000 filas al mismo tiempo podría dar lugar a un tiempo de espera de Power Automate.'
       type: number
     return:
       type: void
@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: Obtiene un objeto de columna por nombre o identificador. Si la columna no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un objeto de columna por nombre o identificador. Si la columna no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedTableStyle()
-  summary: 'Valor constante que representa el estilo de tabla. Los valores posibles son: "TableStyleLight1" a través de "TableStyleLight21", "TableStyleMedium1" a través de "TableStyleMedium28", "TableStyleDark1" a "TableStyleDark11". También puede especificarse un estilo personalizado definido por el usuario presente en el libro.'
+  summary: 'Valor constante que representa el estilo de tabla. Los valores posibles son: "TableStyleLight1" a "TableStyleLight21", "TableStyleMedium1" a "TableStyleMedium28", "TableStyleDark1" a "TableStyleDark11". También puede especificarse un estilo personalizado definido por el usuario presente en el libro.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: getShowBandedColumns()
-  summary: Especifica si las columnas muestran un formato con bandas en el que las columnas impares se resaltan de forma diferente a incluso las columnas, para facilitar la lectura de la tabla.
+  summary: Especifica si las columnas muestran formatos en bandas en los que las columnas impares se resaltan de forma diferente a las pares, para facilitar la lectura de la tabla.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
   package: ExcelScript!
   fullName: getShowBandedRows()
-  summary: Especifica si las filas muestran un formato con bandas en el que las filas impares se resaltan de forma diferente a las pares, para facilitar la lectura de la tabla.
+  summary: Especifica si las filas muestran formatos en banda en los que las filas impares se resaltan de forma diferente a las pares, para facilitar la lectura de la tabla.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -472,7 +472,7 @@ methods:
     content: 'resize(newRange: Range | string): void;'
     parameters:
     - id: newRange
-      description: El objeto de intervalo o la dirección de intervalo que se usará para determinar el nuevo tamaño de la tabla.
+      description: Objeto de rango o dirección de intervalo que se usará para determinar el nuevo tamaño de la tabla.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 'Valor constante que representa el estilo de tabla. Los valores posibles son: "TableStyleLight1" a través de "TableStyleLight21", "TableStyleMedium1" a través de "TableStyleMedium28", "TableStyleDark1" a "TableStyleDark11". También puede especificarse un estilo personalizado definido por el usuario presente en el libro.'
+  summary: 'Valor constante que representa el estilo de tabla. Los valores posibles son: "TableStyleLight1" a "TableStyleLight21", "TableStyleMedium1" a "TableStyleMedium28", "TableStyleDark1" a "TableStyleDark11". También puede especificarse un estilo personalizado definido por el usuario presente en el libro.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: setShowBandedColumns(showBandedColumns)
-  summary: Especifica si las columnas muestran un formato con bandas en el que las columnas impares se resaltan de forma diferente a incluso las columnas, para facilitar la lectura de la tabla.
+  summary: Especifica si las columnas muestran formatos en bandas en los que las columnas impares se resaltan de forma diferente a las pares, para facilitar la lectura de la tabla.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
   package: ExcelScript!
   fullName: setShowBandedRows(showBandedRows)
-  summary: Especifica si las filas muestran un formato con bandas en el que las filas impares se resaltan de forma diferente a las pares, para facilitar la lectura de la tabla.
+  summary: Especifica si las filas muestran formatos en banda en los que las filas impares se resaltan de forma diferente a las pares, para facilitar la lectura de la tabla.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6519d6987825c7f3c316f3f153115fb4d83a2bef
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: d257901ee686a182d2891bb7ccf63cba1116a1dd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240657"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394040"

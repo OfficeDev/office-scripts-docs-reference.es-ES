@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalFormat
 uid: ExcelScript!ExcelScript.ConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormat
-summary: Un objeto que encapsula el intervalo, el formato, la regla y otras propiedades de un formato condicional.
+summary: Objeto que encapsula el intervalo, el formato, la regla y otras propiedades de un formato condicional.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
   package: ExcelScript!
   fullName: getCellValue()
-  summary: Devuelve las propiedades del formato condicional del valor de celda si el formato condicional actual es un `CellValue` tipo.
+  summary: Devuelve las propiedades de formato condicional del valor de celda si el formato condicional actual es un `CellValue` tipo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
   package: ExcelScript!
   fullName: getColorScale()
-  summary: Devuelve las propiedades del formato condicional de escala de color si el formato condicional actual es un `ColorScale` tipo.
+  summary: Devuelve las propiedades de formato condicional de escala de colores si el formato condicional actual es un `ColorScale` tipo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
   package: ExcelScript!
   fullName: getIconSet()
-  summary: Devuelve las propiedades del formato condicional establecido por el icono si el formato condicional actual es un `IconSet` tipo.
+  summary: Devuelve las propiedades de formato condicional del conjunto de iconos si el formato condicional actual es un `IconSet` tipo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: La prioridad del formato condicional en el formato actual `ConditionalFormatCollection`<!-- -->.
+  summary: Prioridad del formato condicional en el actual `ConditionalFormatCollection`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
   package: ExcelScript!
   fullName: getPreset()
-  summary: Devuelve el formato condicional de criterios preestablecidos. Consulte `ExcelScript.PresetCriteriaConditionalFormat`para obtener más información.
+  summary: Devuelve el formato condicional de los criterios preestablecidos. Consulte `ExcelScript.PresetCriteriaConditionalFormat`para obtener más información.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
   package: ExcelScript!
   fullName: getPriority()
-  summary: La prioridad (o índice) de la colección de formato condicional en la que existe actualmente este formato condicional. Al cambiar esto también se cambian las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para empezar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, debe volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.
+  summary: Prioridad (o índice) dentro de la colección de formato condicional en la que existe actualmente este formato condicional. Cambiar esto también cambia las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para comenzar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, tendrá que volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Devuelve el intervalo al que se aplica el formato conditonal. Si el formato condicional se aplica a varios intervalos, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve el intervalo al que se aplica el formato conditonal. Si el formato condicional se aplica a varios intervalos, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: Devuelve el `RangeAreas`<!-- -->, que consta de uno o más intervalos rectangulares, a los que se aplica el formato conditonal.
+  summary: Devuelve el valor `RangeAreas`<!-- -->, que comprende uno o varios intervalos rectangulares, a los que se aplica el formato conditonal.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
   package: ExcelScript!
   fullName: getStopIfTrue()
-  summary: Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está en barras de datos, conjuntos de iconos y escalas de colores, ya que `null` no hay ningún concepto de `StopIfTrue` estos.
+  summary: Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está `null` en las barras de datos, los conjuntos de iconos y las escalas de colores, ya que no hay ningún concepto de `StopIfTrue` para ellas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
   package: ExcelScript!
   fullName: getTextComparison()
-  summary: Devuelve las propiedades del formato condicional de texto específico si el formato condicional actual es un tipo de texto. Por ejemplo, para dar formato a las celdas que coincidan con la palabra "Text".
+  summary: Devuelve las propiedades de formato condicional de texto específicas si el formato condicional actual es un tipo de texto. Por ejemplo, para dar formato a celdas que coincidan con la palabra "Texto".
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
   package: ExcelScript!
   fullName: getTopBottom()
-  summary: Devuelve las propiedades del formato condicional superior/inferior si el formato condicional actual es un `TopBottom` tipo. Por ejemplo, para dar formato a los 10 elementos superiores o inferiores.
+  summary: Devuelve las propiedades de formato condicional superior e inferior si el formato condicional actual es un `TopBottom` tipo. Por ejemplo, para dar formato al 10 % superior o inferior 10 elementos.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Un tipo de formato condicional. Solo se puede establecer uno a la vez.
+  summary: Tipo de formato condicional. Solo se puede establecer uno a la vez.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
   package: ExcelScript!
   fullName: setPriority(priority)
-  summary: La prioridad (o índice) de la colección de formato condicional en la que existe actualmente este formato condicional. Al cambiar esto también se cambian las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para empezar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, debe volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.
+  summary: Prioridad (o índice) dentro de la colección de formato condicional en la que existe actualmente este formato condicional. Cambiar esto también cambia las prioridades de otros formatos condicionales, para permitir un orden de prioridad contiguo. Use una prioridad negativa para comenzar desde atrás. Las prioridades mayores que los límites se obtienen y establecen en la prioridad máxima (o mínima si es negativa). Tenga en cuenta también que si cambia la prioridad, tendrá que volver a capturar una nueva copia del objeto en esa nueva ubicación de prioridad si desea realizar más cambios en él.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
   package: ExcelScript!
   fullName: setStopIfTrue(stopIfTrue)
-  summary: Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está en barras de datos, conjuntos de iconos y escalas de colores, ya que `null` no hay ningún concepto de `StopIfTrue` estos.
+  summary: Si se cumplen las condiciones de este formato condicional, los formatos de menor prioridad no surtirán efecto en esa celda. El valor está `null` en las barras de datos, los conjuntos de iconos y las escalas de colores, ya que no hay ningún concepto de `StopIfTrue` para ellas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d76b9ca2141a89c44983f5dda3bd7b0609016220
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 268983e49cd3b24c52841add0c9c6cc39613b7c7
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240580"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394166"
