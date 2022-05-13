@@ -3,7 +3,7 @@ name: ExcelScript.RangeAreas
 uid: ExcelScript!ExcelScript.RangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeAreas
-summary: '`RangeAreas` representa una colección de uno o más intervalos rectangulares en la misma hoja de cálculo.'
+summary: '`RangeAreas` representa una colección de uno o más rangos rectangulares en la misma hoja de cálculo.'
 remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
-      description: El tipo de formato condicional que se va a agregar. Vea `ExcelScript.ConditionalFormatType` para más información.
+      description: Tipo de formato condicional que se va a agregar. Vea `ExcelScript.ConditionalFormatType` para más información.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#calculate:member(1)
   package: ExcelScript!
   fullName: calculate()
-  summary: Calcula todas las celdas del `RangeAreas`<!-- -->.
+  summary: Calcula todas las celdas de `RangeAreas`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#clear:member(1)
   package: ExcelScript!
   fullName: clear(applyTo)
-  summary: Borra valores, formato, relleno, borde y otras propiedades en cada una de las áreas que componen este `RangeAreas` objeto.
+  summary: Borra los valores, el formato, el relleno, el borde y otras propiedades en cada una de las áreas que componen este `RangeAreas` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)
   package: ExcelScript!
   fullName: convertDataTypeToText()
-  summary: Convierte todas las celdas de los `RangeAreas` tipos de datos with en texto.
+  summary: Convierte todas las celdas de `RangeAreas` con tipos de datos en texto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: Copia los datos de celda o el formato del intervalo de origen o `RangeAreas` al actual `RangeAreas`<!-- -->. El destino `RangeAreas` puede tener un tamaño diferente al intervalo de origen o `RangeAreas`<!-- -->. El destino se expandirá automáticamente si es menor que el origen.
+  summary: Copia los datos de celda o el formato del intervalo de origen o `RangeAreas` al actual `RangeAreas`<!-- -->. El destino `RangeAreas` puede tener un tamaño diferente al del intervalo de origen o `RangeAreas`<!-- -->. El destino se expandirá automáticamente si es menor que el origen.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,16 +100,16 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Intervalo de origen o desde `RangeAreas` el que se va a copiar. Cuando el origen `RangeAreas` tiene varios intervalos, su formulario debe poder crearse quitando filas o columnas completas de un intervalo rectangular.
+      description: Intervalo de origen o `RangeAreas` desde el que se va a copiar. Cuando el origen `RangeAreas` tiene varios intervalos, su formulario debe poder crearse quitando filas o columnas completas de un intervalo rectangular.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
-      description: Tipo de datos de celda o formato sobre los que copiar. El valor predeterminado es "All".
+      description: Tipo de datos de celda o formato que se va a copiar. El valor predeterminado es "All".
       type: <xref uid="ExcelScript!ExcelScript.RangeCopyType:enum" />
     - id: skipBlanks
-      description: True si se omiten celdas en blanco en el intervalo de origen o `RangeAreas`<!-- -->. El valor predeterminado es false.
+      description: True si se omiten las celdas en blanco en el rango de origen o `RangeAreas`<!-- -->. El valor predeterminado es false.
       type: boolean
     - id: transpose
-      description: True si se transponen las celdas en el destino `RangeAreas`<!-- -->. El valor predeterminado es false.
+      description: True si se van a transponer las celdas en el destino `RangeAreas`<!-- -->. El valor predeterminado es false.
       type: boolean
     return:
       type: void
@@ -118,7 +118,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: Devuelve la `RangeAreas` referencia en estilo A1. El valor de dirección contendrá el nombre de la hoja de cálculo para cada bloque rectangular de celdas (por ejemplo, "Sheet1! A1:B4, Sheet1! D1:D4").
+  summary: Devuelve la `RangeAreas` referencia en estilo A1. El valor de dirección contendrá el nombre de la hoja de cálculo de cada bloque rectangular de celdas (por ejemplo, "Sheet1! A1:B4, Sheet1! D1:D4").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)
   package: ExcelScript!
   fullName: getCellCount()
-  summary: Devuelve el número de celdas del `RangeAreas` objeto, sumando los recuentos de celdas de todos los intervalos rectangulares individuales. Devuelve -1 si el número de celdas es superior a 2^31-1 (2 147 483 647).
+  summary: Devuelve el número de celdas del `RangeAreas` objeto, sumando los recuentos de celdas de todos los rangos rectangulares individuales. Devuelve -1 si el número de celdas es superior a 2^31-1 (2 147 483 647).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -191,7 +191,7 @@ methods:
     content: 'getConditionalFormat(id: string): ConditionalFormat;'
     parameters:
     - id: id
-      description: El identificador del formato condicional.
+      description: Identificador del formato condicional.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -200,7 +200,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getConditionalFormats:member(1)
   package: ExcelScript!
   fullName: getConditionalFormats()
-  summary: Devuelve una colección de formatos condicionales que se cruzan con las celdas de este `RangeAreas` objeto.
+  summary: Devuelve una colección de formatos condicionales que intersecan con cualquier celda de este `RangeAreas` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -213,7 +213,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getDataValidation:member(1)
   package: ExcelScript!
   fullName: getDataValidation()
-  summary: Devuelve un objeto de validación de datos para todos los intervalos de la `RangeAreas`<!-- -->.
+  summary: Devuelve un objeto de validación de datos para todos los intervalos de `RangeAreas`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -226,7 +226,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Devuelve un `RangeAreas` objeto `RangeAreas` que representa todas las columnas de la (por ejemplo, `RangeAreas` si la corriente representa las celdas "B4:E11, H2", devuelve una `RangeAreas` que representa las columnas "B:E, H:H").
+  summary: Devuelve un `RangeAreas` objeto que representa todas las columnas de `RangeAreas` (por ejemplo, si el actual `RangeAreas` representa las celdas "B4:E11, H2", devuelve un `RangeAreas` que representa las columnas "B:E, H:H").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Devuelve un `RangeAreas` objeto `RangeAreas` que representa todas las filas de la (por ejemplo, `RangeAreas` si la corriente representa las celdas "B4:E11", devuelve un `RangeAreas` que representa las filas "4:11").
+  summary: Devuelve un `RangeAreas` objeto que representa todas las filas de `RangeAreas` (por ejemplo, si el actual `RangeAreas` representa las celdas "B4:E11", devuelve un `RangeAreas` que representa las filas "4:11").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -265,7 +265,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Devuelve el `RangeAreas` objeto que representa la intersección de los intervalos especificados o `RangeAreas`<!-- -->. Si no se encuentra ninguna intersección, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve el `RangeAreas` objeto que representa la intersección de los intervalos especificados o `RangeAreas`<!-- -->. Si no se encuentra ninguna intersección, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
     parameters:
     - id: anotherRange
-      description: Intervalo, objeto `RangeAreas` o dirección que se usará para determinar la intersección.
+      description: Intervalo, `RangeAreas` objeto o dirección que se usará para determinar la intersección.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -282,7 +282,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireColumn:member(1)
   package: ExcelScript!
   fullName: getIsEntireColumn()
-  summary: Especifica si todos los intervalos `RangeAreas` de este objeto representan columnas enteras (por ejemplo, "A:C, Q:Z").
+  summary: Especifica si todos los intervalos de este `RangeAreas` objeto representan columnas completas (por ejemplo, "A:C, Q:Z").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)
   package: ExcelScript!
   fullName: getIsEntireRow()
-  summary: Especifica si todos los intervalos `RangeAreas` de este objeto representan filas completas (por ejemplo, "1:3, 5:7").
+  summary: Especifica si todos los intervalos de este `RangeAreas` objeto representan filas completas (por ejemplo, "1:3, 5:7").
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)
   package: ExcelScript!
   fullName: getOffsetRangeAreas(rowOffset, columnOffset)
-  summary: Devuelve un `RangeAreas` objeto que se desplaza por el desplazamiento específico de fila y columna. La dimensión del devuelto `RangeAreas` coincidirá con el objeto original. Si el resultado `RangeAreas` se fuerza fuera de los límites de la cuadrícula de la hoja de cálculo, se producirá un error.
+  summary: Devuelve un `RangeAreas` objeto que se desplaza por el desplazamiento de fila y columna específico. La dimensión del objeto devuelto `RangeAreas` coincidirá con el objeto original. Si el resultado `RangeAreas` se fuerza fuera de los límites de la cuadrícula de la hoja de cálculo, se producirá un error.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,10 +320,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: rowOffset
-      description: Número de filas (positivas, negativas o 0) por las que se `RangeAreas` va a desplazar. Los valores positivos desplazan hacia abajo, mientras que los negativos lo hacen hacia arriba.
+      description: Número de filas (positivo, negativo o 0) por el que se va a desplazar.`RangeAreas` Los valores positivos desplazan hacia abajo, mientras que los negativos lo hacen hacia arriba.
       type: number
     - id: columnOffset
-      description: Número de columnas (positivas, negativas o 0) por las que se `RangeAreas` va a desplazar. Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.
+      description: Número de columnas (positivas, negativas o 0) por las que se va a desplazar.`RangeAreas` Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -332,7 +332,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Representa el estilo de todos los rangos de este `RangeAreas` objeto. Si los estilos de las celdas son incoherentes, `null` se devolverán. Para los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor `BuiltInStyle` de la enumeración.
+  summary: Representa el estilo de todos los rangos de este `RangeAreas` objeto. Si los estilos de las celdas son incoherentes, `null` se devolverán. En el caso de los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor en la `BuiltInStyle` enumeración.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -345,7 +345,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Devuelve un `RangeAreas` objeto que representa todas las celdas que coinciden con el tipo y el valor especificados. Si no se encuentra ninguna celda especial que coincida con los criterios, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve un `RangeAreas` objeto que representa todas las celdas que coinciden con el tipo y valor especificados. Si no se encuentra ninguna celda especial que coincida con los criterios, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -357,10 +357,10 @@ methods:
               ): RangeAreas;
     parameters:
     - id: cellType
-      description: Tipo de celdas que se incluirán.
+      description: Tipo de celdas que se van a incluir.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Si `cellType` es o `constants``formulas`<!-- -->, este argumento se usa para determinar qué tipos de celdas incluir en el resultado. Estos valores se pueden combinar para devolver más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.
+      description: Si `cellType` es o `constants``formulas`<!-- -->, este argumento se usa para determinar qué tipos de celdas se van a incluir en el resultado. Estos valores se pueden combinar para devolver más de un tipo. El valor predeterminado es seleccionar todas las constantes o fórmulas, sea cual sea el tipo.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -369,7 +369,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getTables:member(1)
   package: ExcelScript!
   fullName: getTables(fullyContained)
-  summary: Devuelve una colección de tablas con ámbito que se superponen con cualquier intervalo de este `RangeAreas` objeto.
+  summary: Devuelve una colección con ámbito de tablas que se superponen con cualquier intervalo de este `RangeAreas` objeto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -377,7 +377,7 @@ methods:
     content: 'getTables(fullyContained?: boolean): Table[];'
     parameters:
     - id: fullyContained
-      description: If `true`<!-- -->, devuelve solo tablas que están totalmente contenidas dentro de los límites del intervalo. El valor predeterminado es `false`<!-- -->.
+      description: Si `true`<!-- -->, devuelve solo las tablas que están totalmente contenidas dentro de los límites del intervalo. El valor predeterminado es `false`<!-- -->.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />[]
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
   package: ExcelScript!
   fullName: getUsedRangeAreas(valuesOnly)
-  summary: Devuelve el usado `RangeAreas` que comprende todas las áreas usadas de intervalos rectangulares individuales del `RangeAreas` objeto. Si no hay celdas usadas dentro del `RangeAreas`<!-- -->, a continuación, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve el objeto usado `RangeAreas` que comprende todas las áreas usadas de intervalos rectangulares individuales en el `RangeAreas` objeto . Si no hay celdas usadas dentro de `RangeAreas`<!-- -->, a continuación, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -394,7 +394,7 @@ methods:
     content: 'getUsedRangeAreas(valuesOnly?: boolean): RangeAreas;'
     parameters:
     - id: valuesOnly
-      description: Si solo se consideran celdas con valores como celdas usadas.
+      description: Si solo se deben tener en cuenta las celdas con valores como celdas usadas.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -403,7 +403,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Devuelve la hoja de cálculo de la actual `RangeAreas`<!-- -->.
+  summary: Devuelve la hoja de cálculo del objeto actual. `RangeAreas`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#setDirty:member(1)
   package: ExcelScript!
   fullName: setDirty()
-  summary: Establece el `RangeAreas` que se va a volver a calcular cuando se produzca la siguiente actualización.
+  summary: Establece que `RangeAreas` se va a recalcular cuando se produzca la siguiente actualización.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -429,7 +429,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Representa el estilo de todos los rangos de este `RangeAreas` objeto. Si los estilos de las celdas son incoherentes, `null` se devolverán. Para los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor `BuiltInStyle` de la enumeración.
+  summary: Representa el estilo de todos los rangos de este `RangeAreas` objeto. Si los estilos de las celdas son incoherentes, `null` se devolverán. En el caso de los estilos personalizados, se devolverá el nombre del estilo. Para los estilos integrados, se devolverá una cadena que representa un valor en la `BuiltInStyle` enumeración.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 61f1c5d9f766f016055f7398b9ba2bada8b22e0d
-  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
+  ms.openlocfilehash: deeed74d9af561f16d5d338f6f886584949ef602
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/23/2022
-  ms.locfileid: "63755973"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394012"

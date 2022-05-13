@@ -21,7 +21,7 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Obligatorio. La clave de la propiedad personalizada, que no diferencia entre mayúsculas y minúsculas. La clave está limitada a 255 caracteres fuera de Excel en la Web (las teclas más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
+      description: Obligatorio. Clave de la propiedad personalizada, que no distingue mayúsculas de minúsculas. La clave está limitada a 255 caracteres fuera de Excel en la Web (las teclas más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
       type: string
     - id: value
       description: Obligatorio. Valor de la propiedad personalizada. El valor está limitado a 255 caracteres fuera de Excel en la Web (los valores más grandes se recortan automáticamente a 255 caracteres en otras plataformas).
@@ -46,7 +46,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)
   package: ExcelScript!
   fullName: getAuthor()
-  summary: El autor del libro.
+  summary: Autor del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)
   package: ExcelScript!
   fullName: getCompany()
-  summary: La compañía del libro.
+  summary: La empresa del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Obtiene la fecha de creación del libro. Solo lectura.
+  summary: Obtiene la fecha de creación del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)
   package: ExcelScript!
   fullName: getCustom()
-  summary: Obtiene la colección de propiedades personalizadas del libro. Solo lectura.
+  summary: Obtiene la colección de propiedades personalizadas del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Si la propiedad personalizada no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene un objeto de propiedad personalizada mediante su clave, que no distingue mayúsculas de minúsculas. Si la propiedad personalizada no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: Obligatorio. La clave que identifica el objeto de propiedad personalizado.
+      description: Obligatorio. Clave que identifica el objeto de propiedad personalizada.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -141,7 +141,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)
   package: ExcelScript!
   fullName: getKeywords()
-  summary: Las palabras clave del libro.
+  summary: Palabras clave del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,7 +154,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)
   package: ExcelScript!
   fullName: getLastAuthor()
-  summary: Obtiene el último autor del libro. Solo lectura.
+  summary: Obtiene el último autor del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,7 +167,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)
   package: ExcelScript!
   fullName: getManager()
-  summary: El administrador del libro.
+  summary: Administrador del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,7 +180,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)
   package: ExcelScript!
   fullName: getRevisionNumber()
-  summary: Obtiene el número de revisión del libro. Solo lectura.
+  summary: Obtiene el número de revisión del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -193,7 +193,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)
   package: ExcelScript!
   fullName: getSubject()
-  summary: El asunto del libro.
+  summary: Asunto del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -206,7 +206,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: El título del libro.
+  summary: Título del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -219,7 +219,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)
   package: ExcelScript!
   fullName: setAuthor(author)
-  summary: El autor del libro.
+  summary: Autor del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -270,7 +270,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)
   package: ExcelScript!
   fullName: setCompany(company)
-  summary: La compañía del libro.
+  summary: La empresa del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -287,7 +287,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)
   package: ExcelScript!
   fullName: setKeywords(keywords)
-  summary: Las palabras clave del libro.
+  summary: Palabras clave del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)
   package: ExcelScript!
   fullName: setManager(manager)
-  summary: El administrador del libro.
+  summary: Administrador del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)
   package: ExcelScript!
   fullName: setRevisionNumber(revisionNumber)
-  summary: Obtiene el número de revisión del libro. Solo lectura.
+  summary: Obtiene el número de revisión del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)
   package: ExcelScript!
   fullName: setSubject(subject)
-  summary: El asunto del libro.
+  summary: Asunto del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)
   package: ExcelScript!
   fullName: setTitle(title)
-  summary: El título del libro.
+  summary: Título del libro.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 625ea9b1b9ce99a2f4b8e750ba181865016dc6ad
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: b145a889420ad995959a9445c8cd936f8e588d39
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064916"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394144"

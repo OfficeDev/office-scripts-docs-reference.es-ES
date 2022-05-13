@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Rellena el intervalo del intervalo actual al intervalo de destino mediante la lógica de autorrellenar especificada. El intervalo de destino puede ser `null`<!-- -->, o puede extender el origen horizontal o verticalmente. No se admiten intervalos de discontiguous.
+  summary: Rellena un intervalo desde el intervalo actual hasta el intervalo de destino mediante la lógica de autorrellenar especificada. El intervalo de destino puede ser `null` o puede extender el intervalo de origen horizontal o verticalmente. No se admiten intervalos de discontiguous.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Busca la cadena especificada, según los criterios especificados. Si el rango actual es mayor que una sola celda, la búsqueda se limitará a ese rango; de lo contrario, la búsqueda cubrirá toda la hoja a partir de esa celda. Si no hay coincidencias, esta función devuelve `undefined`<!-- -->.
+  summary: Busca la cadena especificada, según los criterios especificados. Si el rango actual es mayor que una sola celda, la búsqueda se limitará a ese rango; de lo contrario, la búsqueda cubrirá toda la hoja a partir de esa celda. Si no hay coincidencias, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -179,7 +179,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
   fullName: flashFill()
-  summary: Realiza un relleno flash en el intervalo actual. El relleno flash rellena automáticamente los datos cuando detecta un patrón, por lo que el intervalo debe ser un único rango de columnas y tener datos alrededor de él para encontrar un patrón.
+  summary: Realiza un Flash Fill en el intervalo actual. Flash Fill rellena automáticamente los datos cuando detecta un patrón, por lo que el rango debe ser un único rango de columnas y tener datos alrededor de él para encontrar un patrón.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -644,7 +644,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados. Si no se encuentra ninguna intersección, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene el objeto de rango que representa la intersección rectangular de los rangos especificados. Si no se encuentra ninguna intersección, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -765,7 +765,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
   package: ExcelScript!
   fullName: getMergedAreas()
-  summary: Devuelve un objeto RangeAreas que representa las áreas combinadas de este intervalo. Tenga en cuenta que si el recuento de áreas combinadas en este intervalo es superior a 512, la API no devolverá el resultado. Si rangeAreas no existe, devolverá un objeto NULL.
+  summary: Devuelve un `RangeAreas` objeto que representa las áreas combinadas de este intervalo. Tenga en cuenta que si el recuento de áreas combinadas en este intervalo es superior a 512, este método no devolverá el resultado. Si el `RangeAreas` objeto no existe, esta función devolverá un objeto con su `isNullObject` propiedad establecida en `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1066,7 +1066,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Obtiene el `RangeAreas` objeto, que consta de uno o varios rangos, que representa todas las celdas que coinciden con el tipo y valor especificados. Si no se encuentra ninguna celda especial, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene el `RangeAreas` objeto, que consta de uno o varios rangos, que representa todas las celdas que coinciden con el tipo y valor especificados. Si no se encuentra ninguna celda especial, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1090,7 +1090,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Obtiene el objeto de intervalo que contiene el intervalo de desbordamiento al llamar en una celda de delimitador. Si el rango no es una celda delimitadora o no se encuentra el intervalo de desbordamiento, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene el objeto de intervalo que contiene el intervalo de desbordamiento al llamar en una celda de delimitador. Si el rango no es una celda delimitadora o no se encuentra el intervalo de desbordamiento, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtiene el objeto de rango que contiene la celda delimitadora en la que se derrama la celda. Si no es una celda derramada o se proporciona más de una celda, esta función devuelve `undefined`<!-- -->.
+  summary: Obtiene el objeto de rango que contiene la celda delimitadora en la que se derrama la celda. Si no es una celda derramada o se proporciona más de una celda, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Devuelve el intervalo usado del objeto de rango especificado. Si no hay celdas usadas dentro del rango, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve el intervalo usado del objeto de rango especificado. Si no hay celdas usadas dentro del intervalo, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8d30c738908e33ddb292f08f12814d25c0ce30c9
-  ms.sourcegitcommit: 1dccdb18053820ef3bc635279479d0cba4f0f482
+  ms.openlocfilehash: 131c648e35d13d5d8bc28d44514f8c893b4250d8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/08/2022
-  ms.locfileid: "64715963"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394152"

@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: Representa un nombre definido para un rango de celdas o un valor. Los nombres pueden ser objetos con nombre primitivos (como se ve en el tipo siguiente), objeto range o una referencia a un intervalo. Este objeto puede usarse para obtener un objeto de rango asociado a nombres.
+summary: Representa un nombre definido para un rango de celdas o un valor. Los nombres pueden ser objetos con nombre primitivos (como se muestra en el tipo siguiente), objeto de rango o una referencia a un rango. Este objeto puede usarse para obtener un objeto de rango asociado a nombres.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getComment:member(1)
   package: ExcelScript!
   fullName: getComment()
-  summary: Especifica el comentario asociado con este nombre.
+  summary: Especifica el comentario asociado a este nombre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Devuelve el objeto de rango asociado al nombre. Si el tipo del elemento con nombre no es un rango, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve el objeto de rango asociado al nombre. Si el tipo del elemento con nombre no es un intervalo, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 'Especifica si el nombre está en el ámbito del libro o de una hoja de cálculo específica. Los valores posibles son: Worksheet, Workbook.'
+  summary: 'Especifica si el nombre se limita al libro o a una hoja de cálculo específica. Los valores posibles son: Worksheet, Workbook.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Devuelve la hoja de cálculo a la que está ámbito el elemento con nombre. Si el elemento está en el ámbito del libro en su lugar, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve la hoja de cálculo a la que se limita el elemento con nombre. Si el elemento se limita al libro en su lugar, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setComment:member(1)
   package: ExcelScript!
   fullName: setComment(comment)
-  summary: Especifica el comentario asociado con este nombre.
+  summary: Especifica el comentario asociado a este nombre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 182f0fc8a5e12d2bc525d28c22f8c6734abbcffd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064839"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394124"

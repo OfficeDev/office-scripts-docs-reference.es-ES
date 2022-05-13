@@ -3,7 +3,7 @@ name: ExcelScript.WorkbookRangeAreas
 uid: ExcelScript!ExcelScript.WorkbookRangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.WorkbookRangeAreas
-summary: Representa una colección de uno o más intervalos rectangulares en varias hojas de cálculo.
+summary: Representa una colección de uno o varios rangos rectangulares en varias hojas de cálculo.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
   package: ExcelScript!
   fullName: getAddresses()
-  summary: Devuelve una matriz de direcciones al estilo A1. Los valores de dirección contienen el nombre de la hoja de cálculo para cada bloque rectangular de celdas (por ejemplo, "Sheet1! A1:B4, Sheet1! D1:D4"). Solo lectura.
+  summary: Devuelve una matriz de direcciones en estilo A1. Los valores de dirección contienen el nombre de la hoja de cálculo para cada bloque rectangular de celdas (por ejemplo, "Sheet1! A1:B4, Sheet1! D1:D4"). Solo lectura.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
   package: ExcelScript!
   fullName: getAreas()
-  summary: Devuelve el `RangeAreasCollection` objeto. Cada `RangeAreas` uno de la colección representa uno o más intervalos de rectángulos en una hoja de cálculo.
+  summary: Devuelve el `RangeAreasCollection` objeto . Cada uno `RangeAreas` de la colección representa uno o varios rangos de rectángulos en una hoja de cálculo.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: Devuelve el `RangeAreas` objeto basado en el nombre de la hoja de cálculo o el identificador de la colección. Si la hoja de cálculo no existe, esta función devuelve `undefined`<!-- -->.
+  summary: Devuelve el objeto según el `RangeAreas` nombre o el identificador de la hoja de cálculo de la colección. Si la hoja de cálculo no existe, este método devuelve `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: Devuelve intervalos que componen este objeto en un `RangeCollection` objeto.
+  summary: Devuelve intervalos que componen este objeto en un `RangeCollection` objeto .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: d564fd517a586b22ce7a8b00545027741b87f31b
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 6b82b4ad4c506c0fb4f56ed78928db930f5e1b7e
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064930"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394194"
