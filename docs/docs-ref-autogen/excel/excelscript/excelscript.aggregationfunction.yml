@@ -1,62 +1,69 @@
 ### YamlMime:TSEnum
 name: ExcelScript.AggregationFunction
-uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
+uid: ExcelScript!ExcelScript.AggregationFunction:enum
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
-summary: Función de agregación de DataPivotField.
-remarks: ''
+summary: Función de agregación para DataPivotField.
+remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script changes how the data in a PivotTable is aggregated.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first PivotTable in the workbook.\n  const pivotTable = workbook.getPivotTables()[0];\n  \n  // Set the first data hierarchy to summarize with an average value, instead of a sum.\n  const dataHierarchy = pivotTable.getDataHierarchies()[0];\n  dataHierarchy.setSummarizeBy(ExcelScript.AggregationFunction.average);\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: automatic
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
-    package: ExcelScript!
-    summary: Excel seleccionará automáticamente la agregación en función de los elementos de datos.
-  - name: average
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
-    package: ExcelScript!
-    summary: 'Agrega usando el promedio de los datos, equivalente a la función AVERAGE.'
-  - name: count
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
-    package: ExcelScript!
-    summary: 'Agrega usando el recuento de elementos de los datos, equivalente a la función COUNTA.'
-  - name: countNumbers
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
-    package: ExcelScript!
-    summary: 'Agrega usando el recuento de números en los datos, equivalente a la función COUNT.'
-  - name: max
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
-    package: ExcelScript!
-    summary: 'Agregado usando el valor máximo de los datos, equivalente a la función MAX.'
-  - name: min
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
-    package: ExcelScript!
-    summary: 'Agregado mediante el valor mínimo de los datos, equivalente a la función MIN.'
-  - name: product
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
-    package: ExcelScript!
-    summary: 'Agrega usando el producto de los datos, equivalente a la función PRODUCT.'
-  - name: standardDeviation
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
-    package: ExcelScript!
-    summary: 'Agregado mediante la desviación estándar de los datos, equivalente a la función STDEV.'
-  - name: standardDeviationP
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
-    package: ExcelScript!
-    summary: 'Agregado mediante la desviación estándar de los datos, equivalente a la función STDEVP.'
-  - name: sum
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
-    package: ExcelScript!
-    summary: 'Agregado mediante la suma de los datos, equivalente a la función SUM.'
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
-    package: ExcelScript!
-    summary: La función de agregación es desconocida o no es compatible.
-  - name: variance
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
-    package: ExcelScript!
-    summary: 'Agregado mediante la variación de los datos, equivalente a la función VAR.'
-  - name: varianceP
-    uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
-    package: ExcelScript!
-    summary: 'Agregado mediante la varianza de los datos, equivalente a la función VARP.'
+- name: automatic
+  uid: ExcelScript!ExcelScript.AggregationFunction.automatic:member
+  package: ExcelScript!
+  summary: Excel seleccionará automáticamente la agregación en función de los elementos de datos.
+- name: average
+  uid: ExcelScript!ExcelScript.AggregationFunction.average:member
+  package: ExcelScript!
+  summary: Agregue utilizando el promedio de los datos, equivalente a la función AVERAGE.
+- name: count
+  uid: ExcelScript!ExcelScript.AggregationFunction.count:member
+  package: ExcelScript!
+  summary: Agregue mediante el recuento de elementos de los datos, equivalente a la función COUNTA.
+- name: countNumbers
+  uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
+  package: ExcelScript!
+  summary: Agregue utilizando el recuento de números en los datos, equivalente a la función COUNT.
+- name: max
+  uid: ExcelScript!ExcelScript.AggregationFunction.max:member
+  package: ExcelScript!
+  summary: Agregue utilizando el valor máximo de los datos, equivalente a la función MAX.
+- name: min
+  uid: ExcelScript!ExcelScript.AggregationFunction.min:member
+  package: ExcelScript!
+  summary: Agregue utilizando el valor mínimo de los datos, equivalente a la función MIN.
+- name: product
+  uid: ExcelScript!ExcelScript.AggregationFunction.product:member
+  package: ExcelScript!
+  summary: Agregue mediante el producto de los datos, equivalente a la función PRODUCT.
+- name: standardDeviation
+  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
+  package: ExcelScript!
+  summary: Agregue mediante la desviación estándar de los datos, equivalente a la función STDEV.
+- name: standardDeviationP
+  uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
+  package: ExcelScript!
+  summary: Agregue mediante la desviación estándar de los datos, equivalente a la función STDEVP.
+- name: sum
+  uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
+  package: ExcelScript!
+  summary: Agregue mediante la suma de los datos, equivalente a la función SUM.
+- name: unknown
+  uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
+  package: ExcelScript!
+  summary: La función de agregación es desconocida o no es compatible.
+- name: variance
+  uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
+  package: ExcelScript!
+  summary: Agregue utilizando la varianza de los datos, equivalente a la función VAR.
+- name: varianceP
+  uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
+  package: ExcelScript!
+  summary: Agregue utilizando la varianza de los datos, equivalente a la función VARP.
+metadata:
+  ms.openlocfilehash: 92fb6180ca1c2f87c699f1997f96dfa724483352
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767087"
