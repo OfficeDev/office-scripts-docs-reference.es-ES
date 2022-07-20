@@ -1,35 +1,42 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterDatetime
-uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
+uid: ExcelScript!ExcelScript.FilterDatetime:interface
 package: ExcelScript!
 fullName: ExcelScript.FilterDatetime
 summary: Representa cómo se filtra una fecha cuando se filtran valores.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script applies a filter to a PivotTable that filters it\n * to only show rows from between June 20th, 2022 and July 10th, 2022.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Date Recorded\" field to filter. \n  // The data in this field must be dates in order for the filter to work.\n  const pivot = workbook.getPivotTables()[0];\n  const rowHierarchy = pivot.getRowHierarchy(\"Date Recorded\");\n  const rowField = rowHierarchy.getFields()[0];\n\n  // Create the filter's date boundaries.\n  let earliestDate: ExcelScript.FilterDatetime = {\n    date: \"2022-06-20\",\n    specificity: ExcelScript.FilterDatetimeSpecificity.day\n  };\n  let latestDate: ExcelScript.FilterDatetime = {\n    date: \"2022-07-10\",\n    specificity: ExcelScript.FilterDatetimeSpecificity.day\n  };\n\n  // Apply the date filter.\n  rowField.applyFilter({\n    dateFilter: {\n      condition: ExcelScript.DateFilterCondition.between,\n      lowerBound: earliestDate,\n      upperBound: latestDate\n    }\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: date
-    uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
-    package: ExcelScript!
-    fullName: date
-    summary: La fecha en formato ISO8601 usada para filtrar los datos.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'date: string;'
-      return:
-        type: string
-  - name: specificity
-    uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
-    package: ExcelScript!
-    fullName: specificity
-    summary: 'El grado de especificidad de la fecha que se usará para mantener datos. Por ejemplo, si la fecha es 2005-04-02 y la especificación se establece en "mes", la operación de filtro mantendrá todas las filas con una fecha en el mes de abril de 2005.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'specificity: FilterDatetimeSpecificity;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />'
+- name: date
+  uid: ExcelScript!ExcelScript.FilterDatetime#date:member
+  package: ExcelScript!
+  fullName: date
+  summary: La fecha en formato ISO8601 usada para filtrar los datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'date: string;'
+    return:
+      type: string
+- name: specificity
+  uid: ExcelScript!ExcelScript.FilterDatetime#specificity:member
+  package: ExcelScript!
+  fullName: specificity
+  summary: El grado de especificidad de la fecha que se usará para mantener datos. Por ejemplo, si la fecha es 2005-04-02 y la especificación se establece en "mes", la operación de filtro mantendrá todas las filas con una fecha en el mes de abril de 2005.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'specificity: FilterDatetimeSpecificity;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />
+metadata:
+  ms.openlocfilehash: 68b1e143834737fc624b36a641c197f5fff21772
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890495"
