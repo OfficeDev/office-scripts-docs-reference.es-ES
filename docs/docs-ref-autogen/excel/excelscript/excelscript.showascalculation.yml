@@ -1,74 +1,81 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShowAsCalculation
-uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
+uid: ExcelScript!ExcelScript.ShowAsCalculation:enum
 package: ExcelScript!
 fullName: ExcelScript.ShowAsCalculation
-summary: Función de cálculo ShowAs para DataPivotField.
+summary: Enumeración de cálculo ShowAs para DataPivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-  - name: differenceFrom
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member'
-    package: ExcelScript!
-    summary: Diferencia entre el campo Base especificado y el elemento Base.
-  - name: index
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.index:member'
-    package: ExcelScript!
-    summary: 'Calcula los valores de la siguiente manera: ((valor en la celda) x (Gran total de totales totales)) / ((Total de gran fila) x (Total de gran columna))'
-  - name: none
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.none:member'
-    package: ExcelScript!
-    summary: No se aplica ningún cálculo.
-  - name: percentDifferenceFrom
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member'
-    package: ExcelScript!
-    summary: Diferencia entre el campo Base especificado y el elemento Base.
-  - name: percentOf
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member'
-    package: ExcelScript!
-    summary: Porcentaje del campo Base especificado y del elemento Base.
-  - name: percentOfColumnTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member'
-    package: ExcelScript!
-    summary: Porcentaje del total de columnas.
-  - name: percentOfGrandTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member'
-    package: ExcelScript!
-    summary: Porcentaje del total general.
-  - name: percentOfParentColumnTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member'
-    package: ExcelScript!
-    summary: Porcentaje del total de columnas del campo Base especificado.
-  - name: percentOfParentRowTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member'
-    package: ExcelScript!
-    summary: Porcentaje del total de fila para el campo Base especificado.
-  - name: percentOfParentTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member'
-    package: ExcelScript!
-    summary: Porcentaje del total general del campo Base especificado.
-  - name: percentOfRowTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member'
-    package: ExcelScript!
-    summary: Porcentaje del total de fila.
-  - name: percentRunningTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member'
-    package: ExcelScript!
-    summary: Porcentaje de ejecución total del campo Base especificado.
-  - name: rankAscending
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member'
-    package: ExcelScript!
-    summary: Clasificación ascendente del campo Base especificado.
-  - name: rankDecending
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member'
-    package: ExcelScript!
-    summary: Clasificación descendente del campo Base especificado.
-  - name: runningTotal
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member'
-    package: ExcelScript!
-    summary: Ejecución total del campo Base especificado.
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.ShowAsCalculation.unknown:member'
-    package: ExcelScript!
-    summary: El cálculo es desconocido o no es compatible.
+- name: differenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.differenceFrom:member
+  package: ExcelScript!
+  summary: Diferencia con respecto al campo Base y el elemento Base especificados.
+- name: index
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.index:member
+  package: ExcelScript!
+  summary: 'Calcula los valores de la siguiente manera: ((valor en la celda) x (Total general de totales generales)) / ((Total de fila grande) x (Total de gran columna))'
+- name: none
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.none:member
+  package: ExcelScript!
+  summary: No se aplica ningún cálculo.
+- name: percentDifferenceFrom
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentDifferenceFrom:member
+  package: ExcelScript!
+  summary: Diferencia con respecto al campo Base y el elemento Base especificados.
+- name: percentOf
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOf:member
+  package: ExcelScript!
+  summary: Porcentaje del campo Base y el elemento base especificados.
+- name: percentOfColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfColumnTotal:member
+  package: ExcelScript!
+  summary: Porcentaje del total de la columna.
+- name: percentOfGrandTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member
+  package: ExcelScript!
+  summary: Porcentaje del total general.
+- name: percentOfParentColumnTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member
+  package: ExcelScript!
+  summary: Porcentaje del total de columna para el campo Base especificado.
+- name: percentOfParentRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member
+  package: ExcelScript!
+  summary: Porcentaje del total de filas del campo Base especificado.
+- name: percentOfParentTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member
+  package: ExcelScript!
+  summary: Porcentaje del total general del campo Base especificado.
+- name: percentOfRowTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member
+  package: ExcelScript!
+  summary: Porcentaje del total de filas.
+- name: percentRunningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member
+  package: ExcelScript!
+  summary: Porcentaje que ejecuta el total del campo Base especificado.
+- name: rankAscending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member
+  package: ExcelScript!
+  summary: Rango ascendente del campo Base especificado.
+- name: rankDecending
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member
+  package: ExcelScript!
+  summary: Clasificación descendente del campo Base especificado.
+- name: runningTotal
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member
+  package: ExcelScript!
+  summary: Total de ejecución del campo Base especificado.
+- name: unknown
+  uid: ExcelScript!ExcelScript.ShowAsCalculation.unknown:member
+  package: ExcelScript!
+  summary: El cálculo es desconocido o no se admite.
+metadata:
+  ms.openlocfilehash: 1f518205e48840d46942669391456e7ab1c2d8b4
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423984"
