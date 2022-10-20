@@ -352,7 +352,7 @@ methods:
     content: 'getColumnsAfter(count?: number): Range;'
     parameters:
     - id: count
-      description: Opcional. El número de columnas que se va a incluir en el rango resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
+      description: Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -369,7 +369,7 @@ methods:
     content: 'getColumnsBefore(count?: number): Range;'
     parameters:
     - id: count
-      description: Opcional. El número de columnas que se va a incluir en el rango resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
+      description: Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -476,7 +476,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
     - id: activeCell
       description: Celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este intervalo.
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script makes the font bold on all the contiguous cells between \n * A1 and the bottom of the used range of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get every cell that's used between A1 and the end of the column.\n  // This recreates the Ctrl+Shift+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = firstCell.getExtendedRange(ExcelScript.KeyboardDirection.down);\n\n  // Set the font to bold in that range.\n  firstColumn.getFormat().getFont().setBold(true);\n}\n```"
@@ -856,7 +856,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getOffsetRange:member(1)
   package: ExcelScript!
   fullName: getOffsetRange(rowOffset, columnOffset)
-  summary: Obtiene un objeto que representa un intervalo desplazado con respecto al intervalo especificado. La dimensión del rango devuelto coincidirá con este rango. Si el rango resultante se fuerza más allá de los límites de la cuadrícula de la hoja de cálculo, se producirá un error.
+  summary: Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -864,10 +864,10 @@ methods:
     content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
     parameters:
     - id: rowOffset
-      description: Número de filas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia abajo, mientras que los negativos lo hacen hacia arriba.
+      description: The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.
       type: number
     - id: columnOffset
-      description: Número de columnas (número positivo, negativo o 0) que debe desplazarse el intervalo. Los valores positivos desplazan hacia la derecha, mientras que los negativos lo hacen hacia la izquierda.
+      description: The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -922,7 +922,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
     - id: activeCell
       description: Celda activa de este rango. De forma predeterminada, la celda activa es la celda superior izquierda del rango. Se produce un error si la celda activa no está en este intervalo.
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script adds the value \"Total\" after the end of the first column.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the last used cell at the end of the column.\n  // This recreates the Ctrl+Down arrow key behavior.\n  let firstCell = selectedSheet.getRange(\"A1\");\n  let firstColumn = selectedSheet.getRange(\"A1\").getRangeEdge(ExcelScript.KeyboardDirection.down);\n  let cellAfter = firstColumn.getOffsetRange(1, 0);\n\n  // Set the value of the cell after the current end of the used column to \"Total\".\n  cellAfter.setValue(\"Total\");\n}\n```"
@@ -938,7 +938,7 @@ methods:
     content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
     parameters:
     - id: deltaRows
-      description: El número de filas en el que se va a expandir la esquina inferior derecha, con respecto al intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.
+      description: The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
       type: number
     - id: deltaColumns
       description: Número de columnas por las que se va a expandir la esquina inferior derecha, en relación con el intervalo actual. Use un número positivo para expandir el intervalo, o un número negativo para reducirlo.
@@ -1014,7 +1014,7 @@ methods:
     content: 'getRowsAbove(count?: number): Range;'
     parameters:
     - id: count
-      description: Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
+      description: Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1031,7 +1031,7 @@ methods:
     content: 'getRowsBelow(count?: number): Range;'
     parameters:
     - id: count
-      description: Opcional. El número de filas que se va a incluir en el intervalo resultante. En general, use un número positivo para crear un intervalo fuera del intervalo actual. También puede usar un número negativo para crear un intervalo dentro del intervalo actual. El valor predeterminado es 1.
+      description: Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1785,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c5f9d9b38db8314e8e2c558f0dbb8738453e7ddc
-  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.openlocfilehash: 08b79a318b4c81cdc469390b4a322fb1b0ab7344
+  ms.sourcegitcommit: 497d2ecc546aecf311c23c82110f8f0dfbcde0b9
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/24/2022
-  ms.locfileid: "67423970"
+  ms.lasthandoff: 10/20/2022
+  ms.locfileid: "68619494"
