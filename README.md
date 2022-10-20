@@ -1,6 +1,6 @@
 # <a name="office-scripts-api-reference"></a>Referencia de la API de scripts de Office
 
-Bienvenido al repositorio de documentación de referencia de la API de Scripts de Office. Para obtener la mejor experiencia, se recomienda ver este contenido en [Microsoft Docs](https://docs.microsoft.com/javascript/api/office-scripts/overview).
+Bienvenido al repositorio de documentación de referencia de la API de Scripts de Office. Para obtener la mejor experiencia, se recomienda ver este contenido en [Microsoft Learn](https://learn.microsoft.com/javascript/api/office-scripts/overview).
 
 > **NOTA**: Puede encontrar archivos de origen para la documentación de Scripts de Office, incluidos tutoriales y guías de procedimientos, en el repositorio de GitHub [OfficeDev/office-scripts-docs](https://github.com/OfficeDev/office-scripts-docs) .
 
