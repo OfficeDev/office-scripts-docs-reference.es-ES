@@ -1,47 +1,54 @@
 ### YamlMime:TSType
 name: ExcelScript.BasicDataValidation
-uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
+uid: ExcelScript!ExcelScript.BasicDataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.BasicDataValidation
 summary: Representa los criterios básicos de validación de datos de tipo.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Ejemplos\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: formula1
-    uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
-    package: ExcelScript!
-    fullName: formula1
-    summary: 'Especifica el operando derecho cuando la propiedad operator se establece en un operador binario como GreaterThan (el operando izquierdo es el valor que el usuario intenta escribir en la celda). Con los operadores ternarios Between y NotBetween, especifica el operando enlazado inferior. Por ejemplo, establecer la fórmula1 en 10 y el operador en GreaterThan significa que los datos válidos para el rango deben ser mayores que 10. Al establecer el valor, se puede pasar como un número, un objeto range o una fórmula de cadena (donde la cadena es un número cadenado, una referencia de celda como "=A1" o una fórmula como "=MIN(A1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'formula1: string | number | Range;'
-      return:
-        type: 'string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />'
-  - name: formula2
-    uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
-    package: ExcelScript!
-    fullName: formula2
-    summary: 'Con los operadores ternarios Between y NotBetween, especifica el operando de límite superior. No se usa con los operadores binarios, como GreaterThan. Al establecer el valor, se puede pasar como un número, un objeto range o una fórmula de cadena (donde la cadena es un número cadenado, una referencia de celda como "=A1" o una fórmula como "=MIN(A1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'formula2?: string | number | Range;'
-      return:
-        type: 'string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />'
-  - name: operator
-    uid: 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
-    package: ExcelScript!
-    fullName: operator
-    summary: El operador para validar los datos.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'operator: DataValidationOperator;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />'
+- name: formula1
+  uid: ExcelScript!ExcelScript.BasicDataValidation#formula1:member
+  package: ExcelScript!
+  fullName: formula1
+  summary: 'Especifica el operando derecho cuando la propiedad operator se establece en un operador binario como GreaterThan (el operando izquierdo es el valor que el usuario intenta escribir en la celda). Con los operadores ternarios Between y NotBetween, especifica el operando de límite inferior. Por ejemplo, establecer formula1 en 10 y operador en GreaterThan significa que los datos válidos para el intervalo deben ser mayores que 10. Al establecer el valor, se puede pasar como un número, un objeto de rango o una fórmula de cadena (donde la cadena es un número stringified, una referencia de celda como "=A1" o una fórmula como "=MIN(A1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string | number | Range;'
+    return:
+      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: formula2
+  uid: ExcelScript!ExcelScript.BasicDataValidation#formula2:member
+  package: ExcelScript!
+  fullName: formula2
+  summary: 'Con los operadores ternarios Between y NotBetween, especifica el operando de límite superior. No se usa con los operadores binarios, como GreaterThan. Al establecer el valor, se puede pasar como un número, un objeto de rango o una fórmula de cadena (donde la cadena es un número stringified, una referencia de celda como "=A1" o una fórmula como "=MIN(A1, B1)"). Al recuperar el valor, siempre se devolverá como una fórmula de cadena, por ejemplo: "=10", "=A1", "=SUM(A1:B5)", etc.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string | number | Range;'
+    return:
+      type: string | number | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: operator
+  uid: ExcelScript!ExcelScript.BasicDataValidation#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: El operador para validar los datos.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator: DataValidationOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
+metadata:
+  ms.openlocfilehash: 3834dec5500b5631f99daf2f65608975ea9480e3
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698197"
